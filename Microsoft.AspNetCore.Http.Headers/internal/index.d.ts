@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Http.Extensions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -51,12 +51,12 @@ export interface RequestHeaders$instance {
     set Range(value: RangeHeaderValue | null);
     get Referer(): Uri | null;
     set Referer(value: Uri | null);
-    Append(name: string, value: JsValue): void;
-    AppendList<T>(name: string, values: IList_1<T>): void;
-    Get<T>(name: string): T | null;
-    GetList<T>(name: string): IList_1<T>;
-    Set(name: string, value: JsValue | null): void;
-    SetList<T>(name: string, values: IList_1<T> | null): void;
+    Append(name: string, value: unknown): void;
+    AppendList<T extends unknown>(name: string, values: IList_1<T>): void;
+    Get<T extends unknown>(name: string): T | null;
+    GetList<T extends unknown>(name: string): IList_1<T>;
+    Set(name: string, value: unknown | null): void;
+    SetList<T extends unknown>(name: string, values: IList_1<T> | null): void;
 }
 
 
@@ -92,12 +92,12 @@ export interface ResponseHeaders$instance {
     get Location(): Uri | null;
     set Location(value: Uri | null);
     SetCookie: IList_1<SetCookieHeaderValue>;
-    Append(name: string, value: JsValue): void;
-    AppendList<T>(name: string, values: IList_1<T>): void;
-    Get<T>(name: string): T | null;
-    GetList<T>(name: string): IList_1<T>;
-    Set(name: string, value: JsValue | null): void;
-    SetList<T>(name: string, values: IList_1<T> | null): void;
+    Append(name: string, value: unknown): void;
+    AppendList<T extends unknown>(name: string, values: IList_1<T>): void;
+    Get<T extends unknown>(name: string): T | null;
+    GetList<T extends unknown>(name: string): IList_1<T>;
+    Set(name: string, value: unknown | null): void;
+    SetList<T extends unknown>(name: string, values: IList_1<T> | null): void;
 }
 
 

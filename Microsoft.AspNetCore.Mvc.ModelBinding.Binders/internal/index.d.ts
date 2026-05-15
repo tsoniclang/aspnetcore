@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -20,32 +20,32 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
-export interface ArrayModelBinder_1$instance<TElement> extends CollectionModelBinder_1$instance<TElement> {
+export interface ArrayModelBinder_1$instance<TElement extends unknown> extends CollectionModelBinder_1$instance<TElement>, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.ICollectionModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_ArrayModelBinder_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
 
     CanCreateInstance(targetType: Type): boolean;
-    ConvertToCollectionType(targetType: Type, collection: IEnumerable_1<TElement | null>): JsValue | null;
-    CopyToModel(target: JsValue, sourceCollection: IEnumerable_1<TElement | null>): void;
-    CreateEmptyCollection(targetType: Type): JsValue;
+    ConvertToCollectionType(targetType: Type, collection: IEnumerable_1<TElement | null>): unknown | null;
+    CopyToModel(target: unknown, sourceCollection: IEnumerable_1<TElement | null>): void;
+    CreateEmptyCollection(targetType: Type): unknown;
 }
 
 
 export const ArrayModelBinder_1: {
-    new<TElement>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory): ArrayModelBinder_1<TElement>;
-    new<TElement>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean): ArrayModelBinder_1<TElement>;
-    new<TElement>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean, mvcOptions: MvcOptions): ArrayModelBinder_1<TElement>;
+    new<TElement extends unknown>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory): ArrayModelBinder_1<TElement>;
+    new<TElement extends unknown>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean): ArrayModelBinder_1<TElement>;
+    new<TElement extends unknown>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean, mvcOptions: MvcOptions): ArrayModelBinder_1<TElement>;
 };
 
 
-export interface __ArrayModelBinder_1$views<TElement> {
+export interface __ArrayModelBinder_1$views<TElement extends unknown> {
     As_IModelBinder(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance;
     As_ICollectionModelBinder(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.ICollectionModelBinder$instance;
 }
 
-export type ArrayModelBinder_1<TElement> = ArrayModelBinder_1$instance<TElement> & __ArrayModelBinder_1$views<TElement>;
+export type ArrayModelBinder_1<TElement extends unknown> = ArrayModelBinder_1$instance<TElement> & __ArrayModelBinder_1$views<TElement>;
 
 
 export interface ArrayModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
@@ -241,7 +241,7 @@ export interface __CancellationTokenModelBinderProvider$views {
 export type CancellationTokenModelBinderProvider = CancellationTokenModelBinderProvider$instance & __CancellationTokenModelBinderProvider$views;
 
 
-export interface CollectionModelBinder_1$instance<TElement> {
+export interface CollectionModelBinder_1$instance<TElement extends unknown> extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.ICollectionModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_CollectionModelBinder_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder: never;
@@ -249,25 +249,25 @@ export interface CollectionModelBinder_1$instance<TElement> {
 
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     CanCreateInstance(targetType: Type): boolean;
-    ConvertToCollectionType(targetType: Type, collection: IEnumerable_1<TElement | null>): JsValue | null;
-    CopyToModel(target: JsValue, sourceCollection: IEnumerable_1<TElement | null>): void;
-    CreateEmptyCollection(targetType: Type): JsValue;
+    ConvertToCollectionType(targetType: Type, collection: IEnumerable_1<TElement | null>): unknown | null;
+    CopyToModel(target: unknown, sourceCollection: IEnumerable_1<TElement | null>): void;
+    CreateEmptyCollection(targetType: Type): unknown;
 }
 
 
 export const CollectionModelBinder_1: {
-    new<TElement>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory): CollectionModelBinder_1<TElement>;
-    new<TElement>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean): CollectionModelBinder_1<TElement>;
-    new<TElement>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean, mvcOptions: MvcOptions): CollectionModelBinder_1<TElement>;
+    new<TElement extends unknown>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory): CollectionModelBinder_1<TElement>;
+    new<TElement extends unknown>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean): CollectionModelBinder_1<TElement>;
+    new<TElement extends unknown>(elementBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean, mvcOptions: MvcOptions): CollectionModelBinder_1<TElement>;
 };
 
 
-export interface __CollectionModelBinder_1$views<TElement> {
+export interface __CollectionModelBinder_1$views<TElement extends unknown> {
     As_IModelBinder(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance;
     As_ICollectionModelBinder(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.ICollectionModelBinder$instance;
 }
 
-export type CollectionModelBinder_1<TElement> = CollectionModelBinder_1$instance<TElement> & __CollectionModelBinder_1$views<TElement>;
+export type CollectionModelBinder_1<TElement extends unknown> = CollectionModelBinder_1$instance<TElement> & __CollectionModelBinder_1$views<TElement>;
 
 
 export interface CollectionModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
@@ -340,7 +340,7 @@ export interface ComplexTypeModelBinder$instance extends Microsoft_AspNetCore_Mv
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     BindProperty(bindingContext: ModelBindingContext): Task;
     CanBindProperty(bindingContext: ModelBindingContext, propertyMetadata: ModelMetadata): boolean;
-    CreateModel(bindingContext: ModelBindingContext): JsValue;
+    CreateModel(bindingContext: ModelBindingContext): unknown;
     SetProperty(bindingContext: ModelBindingContext, modelName: string, propertyMetadata: ModelMetadata, result: ModelBindingResult): void;
 }
 
@@ -442,7 +442,7 @@ export interface __DecimalModelBinder$views {
 export type DecimalModelBinder = DecimalModelBinder$instance & __DecimalModelBinder$views;
 
 
-export interface DictionaryModelBinder_2$instance<TKey, TValue> extends CollectionModelBinder_1$instance<KeyValuePair_2<TKey, TValue>> {
+export interface DictionaryModelBinder_2$instance<TKey extends unknown, TValue extends unknown> extends CollectionModelBinder_1$instance<KeyValuePair_2<TKey, TValue>>, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.ICollectionModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_DictionaryModelBinder_2: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder: never;
@@ -450,24 +450,24 @@ export interface DictionaryModelBinder_2$instance<TKey, TValue> extends Collecti
 
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     CanCreateInstance(targetType: Type): boolean;
-    ConvertToCollectionType(targetType: Type, collection: IEnumerable_1<KeyValuePair_2<TKey, TValue>>): JsValue | null;
-    CreateEmptyCollection(targetType: Type): JsValue;
+    ConvertToCollectionType(targetType: Type, collection: IEnumerable_1<KeyValuePair_2<TKey, TValue>>): unknown | null;
+    CreateEmptyCollection(targetType: Type): unknown;
 }
 
 
 export const DictionaryModelBinder_2: {
-    new<TKey, TValue>(keyBinder: IModelBinder, valueBinder: IModelBinder, loggerFactory: ILoggerFactory): DictionaryModelBinder_2<TKey, TValue>;
-    new<TKey, TValue>(keyBinder: IModelBinder, valueBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean): DictionaryModelBinder_2<TKey, TValue>;
-    new<TKey, TValue>(keyBinder: IModelBinder, valueBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean, mvcOptions: MvcOptions): DictionaryModelBinder_2<TKey, TValue>;
+    new<TKey extends unknown, TValue extends unknown>(keyBinder: IModelBinder, valueBinder: IModelBinder, loggerFactory: ILoggerFactory): DictionaryModelBinder_2<TKey, TValue>;
+    new<TKey extends unknown, TValue extends unknown>(keyBinder: IModelBinder, valueBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean): DictionaryModelBinder_2<TKey, TValue>;
+    new<TKey extends unknown, TValue extends unknown>(keyBinder: IModelBinder, valueBinder: IModelBinder, loggerFactory: ILoggerFactory, allowValidatingTopLevelNodes: boolean, mvcOptions: MvcOptions): DictionaryModelBinder_2<TKey, TValue>;
 };
 
 
-export interface __DictionaryModelBinder_2$views<TKey, TValue> {
+export interface __DictionaryModelBinder_2$views<TKey extends unknown, TValue extends unknown> {
     As_IModelBinder(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance;
     As_ICollectionModelBinder(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.ICollectionModelBinder$instance;
 }
 
-export type DictionaryModelBinder_2<TKey, TValue> = DictionaryModelBinder_2$instance<TKey, TValue> & __DictionaryModelBinder_2$views<TKey, TValue>;
+export type DictionaryModelBinder_2<TKey extends unknown, TValue extends unknown> = DictionaryModelBinder_2$instance<TKey, TValue> & __DictionaryModelBinder_2$views<TKey, TValue>;
 
 
 export interface DictionaryModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
@@ -517,7 +517,7 @@ export interface EnumTypeModelBinder$instance extends SimpleTypeModelBinder$inst
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
 
-    CheckModel(bindingContext: ModelBindingContext, valueProviderResult: ValueProviderResult, model: JsValue | null): void;
+    CheckModel(bindingContext: ModelBindingContext, valueProviderResult: ValueProviderResult, model: unknown | null): void;
 }
 
 
@@ -723,7 +723,7 @@ export interface __HeaderModelBinderProvider$views {
 export type HeaderModelBinderProvider = HeaderModelBinderProvider$instance & __HeaderModelBinderProvider$views;
 
 
-export interface KeyValuePairModelBinder_2$instance<TKey, TValue> extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface KeyValuePairModelBinder_2$instance<TKey extends unknown, TValue extends unknown> extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_KeyValuePairModelBinder_2: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -733,15 +733,15 @@ export interface KeyValuePairModelBinder_2$instance<TKey, TValue> extends Micros
 
 
 export const KeyValuePairModelBinder_2: {
-    new<TKey, TValue>(keyBinder: IModelBinder, valueBinder: IModelBinder, loggerFactory: ILoggerFactory): KeyValuePairModelBinder_2<TKey, TValue>;
+    new<TKey extends unknown, TValue extends unknown>(keyBinder: IModelBinder, valueBinder: IModelBinder, loggerFactory: ILoggerFactory): KeyValuePairModelBinder_2<TKey, TValue>;
 };
 
 
-export interface __KeyValuePairModelBinder_2$views<TKey, TValue> {
+export interface __KeyValuePairModelBinder_2$views<TKey extends unknown, TValue extends unknown> {
     As_IModelBinder(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance;
 }
 
-export type KeyValuePairModelBinder_2<TKey, TValue> = KeyValuePairModelBinder_2$instance<TKey, TValue> & __KeyValuePairModelBinder_2$views<TKey, TValue>;
+export type KeyValuePairModelBinder_2<TKey extends unknown, TValue extends unknown> = KeyValuePairModelBinder_2$instance<TKey, TValue> & __KeyValuePairModelBinder_2$views<TKey, TValue>;
 
 
 export interface KeyValuePairModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
@@ -813,7 +813,7 @@ export interface SimpleTypeModelBinder$instance extends Microsoft_AspNetCore_Mvc
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
 
     BindModelAsync(bindingContext: ModelBindingContext): Task;
-    CheckModel(bindingContext: ModelBindingContext, valueProviderResult: ValueProviderResult, model: JsValue | null): void;
+    CheckModel(bindingContext: ModelBindingContext, valueProviderResult: ValueProviderResult, model: unknown | null): void;
 }
 
 

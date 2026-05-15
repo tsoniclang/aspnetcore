@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Components.Web.Virtualization/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { RenderTreeBuilder } from './Microsoft.AspNetCore.Components.Rendering/internal/index.js';
 import type { ComponentBase, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection } from './Microsoft.AspNetCore.Components/internal/index.js';
@@ -15,7 +19,7 @@ import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
-export type ItemsProviderDelegate<TItem> = Internal.ItemsProviderDelegate_1<TItem>;
+export type ItemsProviderDelegate<TItem extends unknown> = Internal.ItemsProviderDelegate_1<TItem>;
 export { ItemsProviderRequest as ItemsProviderRequest } from './Microsoft.AspNetCore.Components.Web.Virtualization/internal/index.js';
 export { ItemsProviderResult_1 as ItemsProviderResult } from './Microsoft.AspNetCore.Components.Web.Virtualization/internal/index.js';
 export { PlaceholderContext as PlaceholderContext } from './Microsoft.AspNetCore.Components.Web.Virtualization/internal/index.js';

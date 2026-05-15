@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.ResponseCompression
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -94,7 +94,7 @@ export interface CompressionProviderCollection$instance extends Collection_1<ICo
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    Add<TCompressionProvider extends ICompressionProvider>(): void;
+    Add<TCompressionProvider extends unknown & ICompressionProvider>(): void;
     Add(providerType: Type): void;
 }
 

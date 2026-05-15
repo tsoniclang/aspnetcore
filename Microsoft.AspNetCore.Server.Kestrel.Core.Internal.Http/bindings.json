@@ -43,7 +43,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::value__System.Byte",
           "clrName": "value__",
-          "metadataToken": 67110620,
+          "metadataToken": 67110624,
           "normalizedSignature": "value__|System.Byte|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
@@ -55,7 +55,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::GetMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Get",
-          "metadataToken": 67110621,
+          "metadataToken": 67110625,
           "normalizedSignature": "Get|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -67,7 +67,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::PutMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Put",
-          "metadataToken": 67110622,
+          "metadataToken": 67110626,
           "normalizedSignature": "Put|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -79,7 +79,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::DeleteMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Delete",
-          "metadataToken": 67110623,
+          "metadataToken": 67110627,
           "normalizedSignature": "Delete|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -91,7 +91,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::PostMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Post",
-          "metadataToken": 67110624,
+          "metadataToken": 67110628,
           "normalizedSignature": "Post|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -103,7 +103,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::HeadMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Head",
-          "metadataToken": 67110625,
+          "metadataToken": 67110629,
           "normalizedSignature": "Head|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -115,7 +115,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::TraceMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Trace",
-          "metadataToken": 67110626,
+          "metadataToken": 67110630,
           "normalizedSignature": "Trace|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -127,7 +127,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::PatchMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Patch",
-          "metadataToken": 67110627,
+          "metadataToken": 67110631,
           "normalizedSignature": "Patch|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -139,7 +139,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::ConnectMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Connect",
-          "metadataToken": 67110628,
+          "metadataToken": 67110632,
           "normalizedSignature": "Connect|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -151,7 +151,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::OptionsMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Options",
-          "metadataToken": 67110629,
+          "metadataToken": 67110633,
           "normalizedSignature": "Options|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -163,7 +163,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::CustomMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Custom",
-          "metadataToken": 67110630,
+          "metadataToken": 67110634,
           "normalizedSignature": "Custom|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -175,7 +175,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::NoneMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "None",
-          "metadataToken": 67110631,
+          "metadataToken": 67110635,
           "normalizedSignature": "None|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -227,7 +227,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme::value__System.Int32",
           "clrName": "value__",
-          "metadataToken": 67110766,
+          "metadataToken": 67110770,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
@@ -239,7 +239,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme::UnknownMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme",
           "clrName": "Unknown",
-          "metadataToken": 67110767,
+          "metadataToken": 67110771,
           "normalizedSignature": "Unknown|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -251,7 +251,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme::HttpMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme",
           "clrName": "Http",
-          "metadataToken": 67110768,
+          "metadataToken": 67110772,
           "normalizedSignature": "Http|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -263,7 +263,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme::HttpsMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme",
           "clrName": "Https",
-          "metadataToken": 67110769,
+          "metadataToken": 67110773,
           "normalizedSignature": "Https|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -315,7 +315,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion::value__System.SByte",
           "clrName": "value__",
-          "metadataToken": 67110776,
+          "metadataToken": 67110780,
           "normalizedSignature": "value__|System.SByte|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
@@ -327,7 +327,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion::UnknownMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion",
           "clrName": "Unknown",
-          "metadataToken": 67110777,
+          "metadataToken": 67110781,
           "normalizedSignature": "Unknown|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -339,7 +339,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion::Http10Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion",
           "clrName": "Http10",
-          "metadataToken": 67110778,
+          "metadataToken": 67110782,
           "normalizedSignature": "Http10|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -351,7 +351,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion::Http11Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion",
           "clrName": "Http11",
-          "metadataToken": 67110779,
+          "metadataToken": 67110783,
           "normalizedSignature": "Http11|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -363,7 +363,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion::Http2Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion",
           "clrName": "Http2",
-          "metadataToken": 67110780,
+          "metadataToken": 67110784,
           "normalizedSignature": "Http2|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -375,7 +375,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion::Http3Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion",
           "clrName": "Http3",
-          "metadataToken": 67110781,
+          "metadataToken": 67110785,
           "normalizedSignature": "Http3|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -403,7 +403,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.IHttpHeadersHandler::OnStaticIndexedHeader(System.Int32):System.Void",
           "clrName": "OnStaticIndexedHeader",
-          "metadataToken": 100667375,
+          "metadataToken": 100667379,
           "canonicalSignature": "(System.Int32):System.Void",
           "normalizedSignature": "OnStaticIndexedHeader|(System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -423,7 +423,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.IHttpHeadersHandler::OnStaticIndexedHeader(System.Int32,System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "OnStaticIndexedHeader",
-          "metadataToken": 100667376,
+          "metadataToken": 100667380,
           "canonicalSignature": "(System.Int32,System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "OnStaticIndexedHeader|(System.Int32,System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -443,7 +443,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.IHttpHeadersHandler::OnHeader(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "OnHeader",
-          "metadataToken": 100667377,
+          "metadataToken": 100667381,
           "canonicalSignature": "(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "OnHeader|(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -463,7 +463,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.IHttpHeadersHandler::OnHeadersComplete(System.Boolean):System.Void",
           "clrName": "OnHeadersComplete",
-          "metadataToken": 100667378,
+          "metadataToken": 100667382,
           "canonicalSignature": "(System.Boolean):System.Void",
           "normalizedSignature": "OnHeadersComplete|(System.Boolean):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -501,7 +501,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.IHttpRequestLineHandler::OnStartLine(Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersionAndMethod,Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.TargetOffsetPathLength,System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "OnStartLine",
-          "metadataToken": 100667399,
+          "metadataToken": 100667403,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersionAndMethod,Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.TargetOffsetPathLength,System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "OnStartLine|(Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersionAndMethod,Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.TargetOffsetPathLength,System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -604,7 +604,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersionAndMethod::.ctor(Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod,System.Int32):void",
-          "metadataToken": 100667400,
+          "metadataToken": 100667404,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod,System.Int32):void",
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod,System.Int32):void|static=false",
           "isStatic": false,
@@ -695,7 +695,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.TargetOffsetPathLength::.ctor(System.Int32,System.Int32,System.Boolean):void",
-          "metadataToken": 100667405,
+          "metadataToken": 100667409,
           "canonicalSignature": "(System.Int32,System.Int32,System.Boolean):void",
           "normalizedSignature": "constructor|(System.Int32,System.Int32,System.Boolean):void|static=false",
           "isStatic": false,
@@ -737,7 +737,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser\u00601::ParseRequestLine(TRequestHandler,System.Buffers.SequenceReader_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean",
           "clrName": "ParseRequestLine",
-          "metadataToken": 100666995,
+          "metadataToken": 100666999,
           "canonicalSignature": "(TRequestHandler,System.Buffers.SequenceReader_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean",
           "normalizedSignature": "ParseRequestLine|(TRequestHandler,System.Buffers.SequenceReader_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -763,7 +763,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser\u00601::ParseHeaders(TRequestHandler,System.Buffers.SequenceReader_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean",
           "clrName": "ParseHeaders",
-          "metadataToken": 100666996,
+          "metadataToken": 100667000,
           "canonicalSignature": "(TRequestHandler,System.Buffers.SequenceReader_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean",
           "normalizedSignature": "ParseHeaders|(TRequestHandler,System.Buffers.SequenceReader_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -793,7 +793,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser\u00601::.ctor():void",
-          "metadataToken": 100666991,
+          "metadataToken": 100666995,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -804,7 +804,7 @@
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser\u00601::.ctor(System.Boolean):void",
-          "metadataToken": 100666992,
+          "metadataToken": 100666996,
           "canonicalSignature": "(System.Boolean):void",
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,

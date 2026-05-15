@@ -22,7 +22,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IClientProxy::SendCoreAsync(System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "SendCoreAsync",
-          "metadataToken": 100663645,
+          "metadataToken": 100663647,
           "canonicalSignature": "(System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SendCoreAsync|(System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -60,7 +60,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IGroupManager::AddToGroupAsync(System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "AddToGroupAsync",
-          "metadataToken": 100663646,
+          "metadataToken": 100663648,
           "canonicalSignature": "(System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "AddToGroupAsync|(System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -101,7 +101,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubActivator\u00601::Create():THub",
           "clrName": "Create",
-          "metadataToken": 100663648,
+          "metadataToken": 100663650,
           "canonicalSignature": "():THub",
           "normalizedSignature": "Create|():THub|static=false",
           "emitScope": "ClassSurface",
@@ -121,7 +121,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubActivator\u00601::Release(THub):System.Void",
           "clrName": "Release",
-          "metadataToken": 100663649,
+          "metadataToken": 100663651,
           "canonicalSignature": "(THub):System.Void",
           "normalizedSignature": "Release|(THub):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -175,7 +175,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubCallerClients::Client(System.String):Microsoft.AspNetCore.SignalR.ISingleClientProxy",
           "clrName": "Client",
-          "metadataToken": 100663650,
+          "metadataToken": 100663652,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.SignalR.ISingleClientProxy",
           "normalizedSignature": "Client|(System.String):Microsoft.AspNetCore.SignalR.ISingleClientProxy|static=false",
           "emitScope": "ClassSurface",
@@ -195,7 +195,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubCallerClients\u00601::OthersInGroup(System.String):T",
           "clrName": "OthersInGroup",
-          "metadataToken": 100663654,
+          "metadataToken": 100663656,
           "canonicalSignature": "(System.String):T",
           "normalizedSignature": "OthersInGroup|(System.String):T|static=false",
           "emitScope": "ClassSurface",
@@ -215,7 +215,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients\u00601::AllExcept(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "clrName": "AllExcept",
-          "metadataToken": 100663657,
+          "metadataToken": 100663659,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "AllExcept|(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=false",
           "emitScope": "ClassSurface",
@@ -235,7 +235,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients\u00601::GroupExcept(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "clrName": "GroupExcept",
-          "metadataToken": 100663662,
+          "metadataToken": 100663664,
           "canonicalSignature": "(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "GroupExcept|(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=false",
           "emitScope": "ClassSurface",
@@ -343,7 +343,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubCallerClients\u00601::OthersInGroup(System.String):T",
           "clrName": "OthersInGroup",
-          "metadataToken": 100663654,
+          "metadataToken": 100663656,
           "canonicalSignature": "(System.String):T",
           "normalizedSignature": "OthersInGroup|(System.String):T|static=false",
           "emitScope": "ClassSurface",
@@ -363,7 +363,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients\u00601::AllExcept(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "clrName": "AllExcept",
-          "metadataToken": 100663657,
+          "metadataToken": 100663659,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "AllExcept|(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=false",
           "emitScope": "ClassSurface",
@@ -383,7 +383,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients\u00601::Client(System.String):T",
           "clrName": "Client",
-          "metadataToken": 100663658,
+          "metadataToken": 100663660,
           "canonicalSignature": "(System.String):T",
           "normalizedSignature": "Client|(System.String):T|static=false",
           "emitScope": "ClassSurface",
@@ -403,7 +403,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients\u00601::GroupExcept(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "clrName": "GroupExcept",
-          "metadataToken": 100663662,
+          "metadataToken": 100663664,
           "canonicalSignature": "(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "GroupExcept|(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=false",
           "emitScope": "ClassSurface",
@@ -508,7 +508,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients::Client(System.String):Microsoft.AspNetCore.SignalR.ISingleClientProxy",
           "clrName": "Client",
-          "metadataToken": 100663655,
+          "metadataToken": 100663657,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.SignalR.ISingleClientProxy",
           "normalizedSignature": "Client|(System.String):Microsoft.AspNetCore.SignalR.ISingleClientProxy|static=false",
           "emitScope": "ClassSurface",
@@ -528,7 +528,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients\u00601::AllExcept(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "clrName": "AllExcept",
-          "metadataToken": 100663657,
+          "metadataToken": 100663659,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "AllExcept|(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=false",
           "emitScope": "ClassSurface",
@@ -548,7 +548,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients\u00601::Client(System.String):T",
           "clrName": "Client",
-          "metadataToken": 100663658,
+          "metadataToken": 100663660,
           "canonicalSignature": "(System.String):T",
           "normalizedSignature": "Client|(System.String):T|static=false",
           "emitScope": "ClassSurface",
@@ -568,7 +568,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients\u00601::GroupExcept(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "clrName": "GroupExcept",
-          "metadataToken": 100663662,
+          "metadataToken": 100663664,
           "canonicalSignature": "(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "GroupExcept|(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=false",
           "emitScope": "ClassSurface",
@@ -629,7 +629,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients\u00601::AllExcept(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "clrName": "AllExcept",
-          "metadataToken": 100663657,
+          "metadataToken": 100663659,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "AllExcept|(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=false",
           "emitScope": "ClassSurface",
@@ -649,7 +649,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients\u00601::Client(System.String):T",
           "clrName": "Client",
-          "metadataToken": 100663658,
+          "metadataToken": 100663660,
           "canonicalSignature": "(System.String):T",
           "normalizedSignature": "Client|(System.String):T|static=false",
           "emitScope": "ClassSurface",
@@ -669,7 +669,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubClients\u00601::GroupExcept(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "clrName": "GroupExcept",
-          "metadataToken": 100663662,
+          "metadataToken": 100663664,
           "canonicalSignature": "(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "GroupExcept|(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=false",
           "emitScope": "ClassSurface",
@@ -902,7 +902,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubFilter::InvokeMethodAsync(Microsoft.AspNetCore.SignalR.HubInvocationContext,System.Func_2[[Microsoft.AspNetCore.SignalR.HubInvocationContext,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "InvokeMethodAsync",
-          "metadataToken": 100663671,
+          "metadataToken": 100663673,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubInvocationContext,System.Func_2[[Microsoft.AspNetCore.SignalR.HubInvocationContext,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "InvokeMethodAsync|(Microsoft.AspNetCore.SignalR.HubInvocationContext,System.Func_2[[Microsoft.AspNetCore.SignalR.HubInvocationContext,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
@@ -922,7 +922,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubFilter::OnConnectedAsync(Microsoft.AspNetCore.SignalR.HubLifetimeContext,System.Func_2[[Microsoft.AspNetCore.SignalR.HubLifetimeContext,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task",
           "clrName": "OnConnectedAsync",
-          "metadataToken": 100663672,
+          "metadataToken": 100663674,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubLifetimeContext,System.Func_2[[Microsoft.AspNetCore.SignalR.HubLifetimeContext,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task",
           "normalizedSignature": "OnConnectedAsync|(Microsoft.AspNetCore.SignalR.HubLifetimeContext,System.Func_2[[Microsoft.AspNetCore.SignalR.HubLifetimeContext,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -942,7 +942,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubFilter::OnDisconnectedAsync(Microsoft.AspNetCore.SignalR.HubLifetimeContext,System.Exception,System.Func_3[[Microsoft.AspNetCore.SignalR.HubLifetimeContext,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Exception,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task",
           "clrName": "OnDisconnectedAsync",
-          "metadataToken": 100663673,
+          "metadataToken": 100663675,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubLifetimeContext,System.Exception,System.Func_3[[Microsoft.AspNetCore.SignalR.HubLifetimeContext,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Exception,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task",
           "normalizedSignature": "OnDisconnectedAsync|(Microsoft.AspNetCore.SignalR.HubLifetimeContext,System.Exception,System.Func_3[[Microsoft.AspNetCore.SignalR.HubLifetimeContext,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Exception,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -980,7 +980,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IHubProtocolResolver::GetProtocol(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "clrName": "GetProtocol",
-          "metadataToken": 100663675,
+          "metadataToken": 100663677,
           "canonicalSignature": "(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "normalizedSignature": "GetProtocol|(System.String,System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol|static=false",
           "emitScope": "ClassSurface",
@@ -1202,7 +1202,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.ISingleClientProxy::InvokeCoreAsync(System.String,System.Object[],System.Threading.CancellationToken):Task_1",
           "clrName": "InvokeCoreAsync",
-          "metadataToken": 100663676,
+          "metadataToken": 100663678,
           "canonicalSignature": "(System.String,System.Object[],System.Threading.CancellationToken):Task_1",
           "normalizedSignature": "InvokeCoreAsync|(System.String,System.Object[],System.Threading.CancellationToken):Task_1|static=false",
           "emitScope": "ClassSurface",
@@ -1222,7 +1222,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IClientProxy::SendCoreAsync(System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "SendCoreAsync",
-          "metadataToken": 100663645,
+          "metadataToken": 100663647,
           "canonicalSignature": "(System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SendCoreAsync|(System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -1260,7 +1260,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IUserIdProvider::GetUserId(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.String",
           "clrName": "GetUserId",
-          "metadataToken": 100663677,
+          "metadataToken": 100663679,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.String",
           "normalizedSignature": "GetUserId|(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.String|static=false",
           "emitScope": "ClassSurface",
@@ -1344,7 +1344,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.SerializedMessage::.ctor(System.String,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
-          "metadataToken": 100663687,
+          "metadataToken": 100663689,
           "canonicalSignature": "(System.String,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
           "normalizedSignature": "constructor|(System.String,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
@@ -1786,7 +1786,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.IUserIdProvider::GetUserId(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.String",
           "clrName": "GetUserId",
-          "metadataToken": 100663677,
+          "metadataToken": 100663679,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.String",
           "normalizedSignature": "GetUserId|(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.String|static=false",
           "emitScope": "ViewOnly",
@@ -2382,7 +2382,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.Hub\u00601::.ctor():void",
-          "metadataToken": 100663644,
+          "metadataToken": 100663646,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -2908,7 +2908,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubConnectionContextOptions::.ctor():void",
-          "metadataToken": 100663550,
+          "metadataToken": 100663552,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -2941,7 +2941,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubConnectionHandler\u00601::OnConnectedAsync(Microsoft.AspNetCore.Connections.ConnectionContext):System.Threading.Tasks.Task",
           "clrName": "OnConnectedAsync",
-          "metadataToken": 100663554,
+          "metadataToken": 100663556,
           "canonicalSignature": "(Microsoft.AspNetCore.Connections.ConnectionContext):System.Threading.Tasks.Task",
           "normalizedSignature": "OnConnectedAsync|(Microsoft.AspNetCore.Connections.ConnectionContext):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -2965,7 +2965,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubConnectionHandler\u00601::.ctor(HubLifetimeManager_1,Microsoft.AspNetCore.SignalR.IHubProtocolResolver,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],IOptions_1,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.SignalR.IUserIdProvider,Microsoft.Extensions.DependencyInjection.IServiceScopeFactory):void",
-          "metadataToken": 100663553,
+          "metadataToken": 100663555,
           "canonicalSignature": "(HubLifetimeManager_1,Microsoft.AspNetCore.SignalR.IHubProtocolResolver,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],IOptions_1,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.SignalR.IUserIdProvider,Microsoft.Extensions.DependencyInjection.IServiceScopeFactory):void",
           "normalizedSignature": "constructor|(HubLifetimeManager_1,Microsoft.AspNetCore.SignalR.IHubProtocolResolver,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],IOptions_1,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.SignalR.IUserIdProvider,Microsoft.Extensions.DependencyInjection.IServiceScopeFactory):void|static=false",
           "isStatic": false,
@@ -2995,7 +2995,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubConnectionStore::Add(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Void",
           "clrName": "Add",
-          "metadataToken": 100663568,
+          "metadataToken": 100663570,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Void",
           "normalizedSignature": "Add|(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3015,7 +3015,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubConnectionStore::Remove(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Void",
           "clrName": "Remove",
-          "metadataToken": 100663569,
+          "metadataToken": 100663571,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Void",
           "normalizedSignature": "Remove|(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3035,7 +3035,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubConnectionStore::GetEnumerator():Microsoft.AspNetCore.SignalR.HubConnectionStore\u002BEnumerator",
           "clrName": "GetEnumerator",
-          "metadataToken": 100663570,
+          "metadataToken": 100663572,
           "canonicalSignature": "():Microsoft.AspNetCore.SignalR.HubConnectionStore\u002BEnumerator",
           "normalizedSignature": "GetEnumerator|():Microsoft.AspNetCore.SignalR.HubConnectionStore\u002BEnumerator|static=false",
           "emitScope": "ClassSurface",
@@ -3098,7 +3098,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubConnectionStore::.ctor():void",
-          "metadataToken": 100663571,
+          "metadataToken": 100663573,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -3145,7 +3145,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubConnectionStore\u002BEnumerator::Dispose():System.Void",
           "clrName": "Dispose",
-          "metadataToken": 100664154,
+          "metadataToken": 100664160,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3165,7 +3165,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubConnectionStore\u002BEnumerator::MoveNext():System.Boolean",
           "clrName": "MoveNext",
-          "metadataToken": 100664155,
+          "metadataToken": 100664161,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "MoveNext|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3185,7 +3185,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubConnectionStore\u002BEnumerator::Reset():System.Void",
           "clrName": "Reset",
-          "metadataToken": 100664156,
+          "metadataToken": 100664162,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Reset|():System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3229,7 +3229,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubConnectionStore\u002BEnumerator::.ctor(Microsoft.AspNetCore.SignalR.HubConnectionStore):void",
-          "metadataToken": 100664151,
+          "metadataToken": 100664157,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubConnectionStore):void",
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.SignalR.HubConnectionStore):void|static=false",
           "isStatic": false,
@@ -3449,7 +3449,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubInvocationContext::.ctor(Microsoft.AspNetCore.SignalR.HubCallerContext,System.IServiceProvider,Microsoft.AspNetCore.SignalR.Hub,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
-          "metadataToken": 100663573,
+          "metadataToken": 100663575,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubCallerContext,System.IServiceProvider,Microsoft.AspNetCore.SignalR.Hub,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.SignalR.HubCallerContext,System.IServiceProvider,Microsoft.AspNetCore.SignalR.Hub,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
@@ -3540,7 +3540,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeContext::.ctor(Microsoft.AspNetCore.SignalR.HubCallerContext,System.IServiceProvider,Microsoft.AspNetCore.SignalR.Hub):void",
-          "metadataToken": 100663581,
+          "metadataToken": 100663583,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubCallerContext,System.IServiceProvider,Microsoft.AspNetCore.SignalR.Hub):void",
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.SignalR.HubCallerContext,System.IServiceProvider,Microsoft.AspNetCore.SignalR.Hub):void|static=false",
           "isStatic": false,
@@ -3573,7 +3573,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::OnConnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Threading.Tasks.Task",
           "clrName": "OnConnectedAsync",
-          "metadataToken": 100663585,
+          "metadataToken": 100663587,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Threading.Tasks.Task",
           "normalizedSignature": "OnConnectedAsync|(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3593,7 +3593,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::OnDisconnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Threading.Tasks.Task",
           "clrName": "OnDisconnectedAsync",
-          "metadataToken": 100663586,
+          "metadataToken": 100663588,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Threading.Tasks.Task",
           "normalizedSignature": "OnDisconnectedAsync|(Microsoft.AspNetCore.SignalR.HubConnectionContext):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3613,7 +3613,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::SendAllAsync(System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "SendAllAsync",
-          "metadataToken": 100663587,
+          "metadataToken": 100663589,
           "canonicalSignature": "(System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SendAllAsync|(System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3633,7 +3633,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::SendAllExceptAsync(System.String,System.Object[],System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "SendAllExceptAsync",
-          "metadataToken": 100663588,
+          "metadataToken": 100663590,
           "canonicalSignature": "(System.String,System.Object[],System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SendAllExceptAsync|(System.String,System.Object[],System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3653,7 +3653,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::SendConnectionAsync(System.String,System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "SendConnectionAsync",
-          "metadataToken": 100663589,
+          "metadataToken": 100663591,
           "canonicalSignature": "(System.String,System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SendConnectionAsync|(System.String,System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3673,7 +3673,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::SendConnectionsAsync(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "SendConnectionsAsync",
-          "metadataToken": 100663590,
+          "metadataToken": 100663592,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SendConnectionsAsync|(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3693,7 +3693,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::SendGroupAsync(System.String,System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "SendGroupAsync",
-          "metadataToken": 100663591,
+          "metadataToken": 100663593,
           "canonicalSignature": "(System.String,System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SendGroupAsync|(System.String,System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3713,7 +3713,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::SendGroupsAsync(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "SendGroupsAsync",
-          "metadataToken": 100663592,
+          "metadataToken": 100663594,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SendGroupsAsync|(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3733,7 +3733,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::SendGroupExceptAsync(System.String,System.String,System.Object[],System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "SendGroupExceptAsync",
-          "metadataToken": 100663593,
+          "metadataToken": 100663595,
           "canonicalSignature": "(System.String,System.String,System.Object[],System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SendGroupExceptAsync|(System.String,System.String,System.Object[],System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3753,7 +3753,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::SendUserAsync(System.String,System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "SendUserAsync",
-          "metadataToken": 100663594,
+          "metadataToken": 100663596,
           "canonicalSignature": "(System.String,System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SendUserAsync|(System.String,System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3773,7 +3773,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::SendUsersAsync(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "SendUsersAsync",
-          "metadataToken": 100663595,
+          "metadataToken": 100663597,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SendUsersAsync|(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.Object[],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3793,7 +3793,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::AddToGroupAsync(System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "AddToGroupAsync",
-          "metadataToken": 100663596,
+          "metadataToken": 100663598,
           "canonicalSignature": "(System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "AddToGroupAsync|(System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3813,7 +3813,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::RemoveFromGroupAsync(System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "RemoveFromGroupAsync",
-          "metadataToken": 100663597,
+          "metadataToken": 100663599,
           "canonicalSignature": "(System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RemoveFromGroupAsync|(System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3833,7 +3833,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::InvokeConnectionAsync(System.String,System.String,System.Object[],System.Threading.CancellationToken):Task_1",
           "clrName": "InvokeConnectionAsync",
-          "metadataToken": 100663598,
+          "metadataToken": 100663600,
           "canonicalSignature": "(System.String,System.String,System.Object[],System.Threading.CancellationToken):Task_1",
           "normalizedSignature": "InvokeConnectionAsync|(System.String,System.String,System.Object[],System.Threading.CancellationToken):Task_1|static=false",
           "emitScope": "ClassSurface",
@@ -3853,7 +3853,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::SetConnectionResultAsync(System.String,Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage):System.Threading.Tasks.Task",
           "clrName": "SetConnectionResultAsync",
-          "metadataToken": 100663599,
+          "metadataToken": 100663601,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage):System.Threading.Tasks.Task",
           "normalizedSignature": "SetConnectionResultAsync|(System.String,Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
@@ -3873,7 +3873,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::TryGetReturnType(System.String,System.Type\u0026):System.Boolean",
           "clrName": "TryGetReturnType",
-          "metadataToken": 100663600,
+          "metadataToken": 100663602,
           "canonicalSignature": "(System.String,System.Type\u0026):System.Boolean",
           "normalizedSignature": "TryGetReturnType|(System.String,System.Type\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3903,7 +3903,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubLifetimeManager\u00601::.ctor():void",
-          "metadataToken": 100663601,
+          "metadataToken": 100663603,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -3956,7 +3956,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubMetadata::.ctor(System.Type):void",
-          "metadataToken": 100663602,
+          "metadataToken": 100663604,
           "canonicalSignature": "(System.Type):void",
           "normalizedSignature": "constructor|(System.Type):void|static=false",
           "isStatic": false,
@@ -4009,7 +4009,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubMethodNameAttribute::.ctor(System.String):void",
-          "metadataToken": 100663605,
+          "metadataToken": 100663607,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -4233,7 +4233,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubOptions::.ctor():void",
-          "metadataToken": 100663628,
+          "metadataToken": 100663630,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -4269,7 +4269,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubOptions\u00601::.ctor():void",
-          "metadataToken": 100663641,
+          "metadataToken": 100663643,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -4308,7 +4308,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubOptionsSetup::Configure(Microsoft.AspNetCore.SignalR.HubOptions):System.Void",
           "clrName": "Configure",
-          "metadataToken": 100663636,
+          "metadataToken": 100663638,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubOptions):System.Void",
           "normalizedSignature": "Configure|(Microsoft.AspNetCore.SignalR.HubOptions):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4332,7 +4332,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubOptionsSetup::.ctor(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol,Microsoft.AspNetCore.SignalR.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "metadataToken": 100663635,
+          "metadataToken": 100663637,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol,Microsoft.AspNetCore.SignalR.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol,Microsoft.AspNetCore.SignalR.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
@@ -4374,7 +4374,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubOptionsSetup\u00601::Configure(HubOptions_1):System.Void",
           "clrName": "Configure",
-          "metadataToken": 100663638,
+          "metadataToken": 100663640,
           "canonicalSignature": "(HubOptions_1):System.Void",
           "normalizedSignature": "Configure|(HubOptions_1):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4398,7 +4398,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubOptionsSetup\u00601::.ctor(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "metadataToken": 100663637,
+          "metadataToken": 100663639,
           "canonicalSignature": "(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
@@ -4481,7 +4481,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.SerializedHubMessage::GetSerializedMessage(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetSerializedMessage",
-          "metadataToken": 100663681,
+          "metadataToken": 100663683,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetSerializedMessage|(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
@@ -4525,7 +4525,7 @@
       "constructors": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.SerializedHubMessage::.ctor(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.SignalR.SerializedMessage,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "metadataToken": 100663679,
+          "metadataToken": 100663681,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.SignalR.SerializedMessage,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
           "normalizedSignature": "constructor|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.SignalR.SerializedMessage,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
@@ -4536,7 +4536,7 @@
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.SerializedHubMessage::.ctor(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):void",
-          "metadataToken": 100663680,
+          "metadataToken": 100663682,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):void",
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):void|static=false",
           "isStatic": false,
@@ -6012,7 +6012,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubOptionsExtensions::AddFilter(Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.IHubFilter):System.Void",
           "clrName": "AddFilter",
-          "metadataToken": 100663629,
+          "metadataToken": 100663631,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.IHubFilter):System.Void",
           "normalizedSignature": "AddFilter|(Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.IHubFilter):System.Void|static=true",
           "emitScope": "ClassSurface",
@@ -6032,7 +6032,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubOptionsExtensions::AddFilter(Microsoft.AspNetCore.SignalR.HubOptions):System.Void",
           "clrName": "AddFilter",
-          "metadataToken": 100663630,
+          "metadataToken": 100663632,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubOptions):System.Void",
           "normalizedSignature": "AddFilter|(Microsoft.AspNetCore.SignalR.HubOptions):System.Void|static=true",
           "emitScope": "ClassSurface",
@@ -6052,7 +6052,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.HubOptionsExtensions::AddFilter(Microsoft.AspNetCore.SignalR.HubOptions,System.Type):System.Void",
           "clrName": "AddFilter",
-          "metadataToken": 100663631,
+          "metadataToken": 100663633,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.HubOptions,System.Type):System.Void",
           "normalizedSignature": "AddFilter|(Microsoft.AspNetCore.SignalR.HubOptions,System.Type):System.Void|static=true",
           "emitScope": "ClassSurface",
@@ -6094,7 +6094,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.AspNetCore.SignalR.SignalRConnectionBuilderExtensions::UseHub(Microsoft.AspNetCore.Connections.IConnectionBuilder):Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "clrName": "UseHub",
-          "metadataToken": 100663688,
+          "metadataToken": 100663690,
           "canonicalSignature": "(Microsoft.AspNetCore.Connections.IConnectionBuilder):Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "normalizedSignature": "UseHub|(Microsoft.AspNetCore.Connections.IConnectionBuilder):Microsoft.AspNetCore.Connections.IConnectionBuilder|static=true",
           "emitScope": "ClassSurface",

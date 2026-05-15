@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Authorization, Microsoft.AspNetCore.Authorization.Policy, Microsoft.AspNetCore.Metadata
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -47,7 +47,7 @@ export type IAuthorizationHandler = IAuthorizationHandler$instance;
 export interface IAuthorizationHandlerContextFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandlerContextFactory: never;
 
-    CreateContext(requirements: IEnumerable_1<IAuthorizationRequirement>, user: ClaimsPrincipal, resource: JsValue | null): AuthorizationHandlerContext;
+    CreateContext(requirements: IEnumerable_1<IAuthorizationRequirement>, user: ClaimsPrincipal, resource: unknown | null): AuthorizationHandlerContext;
 }
 
 
@@ -102,8 +102,8 @@ export type IAuthorizationRequirementData = IAuthorizationRequirementData$instan
 export interface IAuthorizationService$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationService: never;
 
-    AuthorizeAsync(user: ClaimsPrincipal, resource: JsValue | null, requirements: IEnumerable_1<IAuthorizationRequirement>): Task_1<AuthorizationResult>;
-    AuthorizeAsync(user: ClaimsPrincipal, resource: JsValue | null, policyName: string): Task_1<AuthorizationResult>;
+    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown | null, requirements: IEnumerable_1<IAuthorizationRequirement>): Task_1<AuthorizationResult>;
+    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown | null, policyName: string): Task_1<AuthorizationResult>;
 }
 
 
@@ -195,7 +195,7 @@ export const AuthorizationFailureReason: {
 
 export type AuthorizationFailureReason = AuthorizationFailureReason$instance;
 
-export interface AuthorizationHandler_1$instance<TRequirement extends IAuthorizationRequirement> extends IAuthorizationHandler$instance {
+export interface AuthorizationHandler_1$instance<TRequirement extends unknown & IAuthorizationRequirement> extends IAuthorizationHandler$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_AuthorizationHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
@@ -205,18 +205,18 @@ export interface AuthorizationHandler_1$instance<TRequirement extends IAuthoriza
 }
 
 
-export const AuthorizationHandler_1: (abstract new<TRequirement extends IAuthorizationRequirement>() => AuthorizationHandler_1<TRequirement>) & {
+export const AuthorizationHandler_1: (abstract new<TRequirement extends unknown & IAuthorizationRequirement>() => AuthorizationHandler_1<TRequirement>) & {
 };
 
 
-export interface __AuthorizationHandler_1$views<TRequirement extends IAuthorizationRequirement> {
+export interface __AuthorizationHandler_1$views<TRequirement extends unknown & IAuthorizationRequirement> {
     As_IAuthorizationHandler(): IAuthorizationHandler$instance;
 }
 
-export type AuthorizationHandler_1<TRequirement extends IAuthorizationRequirement> = AuthorizationHandler_1$instance<TRequirement> & __AuthorizationHandler_1$views<TRequirement>;
+export type AuthorizationHandler_1<TRequirement extends unknown & IAuthorizationRequirement> = AuthorizationHandler_1$instance<TRequirement> & __AuthorizationHandler_1$views<TRequirement>;
 
 
-export interface AuthorizationHandler_2$instance<TRequirement extends IAuthorizationRequirement, TResource> extends IAuthorizationHandler$instance {
+export interface AuthorizationHandler_2$instance<TRequirement extends unknown & IAuthorizationRequirement, TResource extends unknown> extends IAuthorizationHandler$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_AuthorizationHandler_2: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
@@ -226,15 +226,15 @@ export interface AuthorizationHandler_2$instance<TRequirement extends IAuthoriza
 }
 
 
-export const AuthorizationHandler_2: (abstract new<TRequirement extends IAuthorizationRequirement, TResource>() => AuthorizationHandler_2<TRequirement, TResource>) & {
+export const AuthorizationHandler_2: (abstract new<TRequirement extends unknown & IAuthorizationRequirement, TResource extends unknown>() => AuthorizationHandler_2<TRequirement, TResource>) & {
 };
 
 
-export interface __AuthorizationHandler_2$views<TRequirement extends IAuthorizationRequirement, TResource> {
+export interface __AuthorizationHandler_2$views<TRequirement extends unknown & IAuthorizationRequirement, TResource extends unknown> {
     As_IAuthorizationHandler(): IAuthorizationHandler$instance;
 }
 
-export type AuthorizationHandler_2<TRequirement extends IAuthorizationRequirement, TResource> = AuthorizationHandler_2$instance<TRequirement, TResource> & __AuthorizationHandler_2$views<TRequirement, TResource>;
+export type AuthorizationHandler_2<TRequirement extends unknown & IAuthorizationRequirement, TResource extends unknown> = AuthorizationHandler_2$instance<TRequirement, TResource> & __AuthorizationHandler_2$views<TRequirement, TResource>;
 
 
 export interface AuthorizationHandlerContext$instance {
@@ -245,7 +245,7 @@ export interface AuthorizationHandlerContext$instance {
     readonly HasSucceeded: boolean;
     readonly PendingRequirements: IEnumerable_1<IAuthorizationRequirement>;
     readonly Requirements: IEnumerable_1<IAuthorizationRequirement>;
-    readonly Resource: JsValue | null;
+    readonly Resource: unknown | null;
     readonly User: ClaimsPrincipal;
     Fail(): void;
     Fail(reason: AuthorizationFailureReason): void;
@@ -254,7 +254,7 @@ export interface AuthorizationHandlerContext$instance {
 
 
 export const AuthorizationHandlerContext: {
-    new(requirements: IEnumerable_1<IAuthorizationRequirement>, user: ClaimsPrincipal, resource: JsValue | null): AuthorizationHandlerContext;
+    new(requirements: IEnumerable_1<IAuthorizationRequirement>, user: ClaimsPrincipal, resource: unknown | null): AuthorizationHandlerContext;
 };
 
 
@@ -416,7 +416,7 @@ export interface DefaultAuthorizationHandlerContextFactory$instance extends IAut
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandlerContextFactory: never;
 
-    CreateContext(requirements: IEnumerable_1<IAuthorizationRequirement>, user: ClaimsPrincipal, resource: JsValue | null): AuthorizationHandlerContext;
+    CreateContext(requirements: IEnumerable_1<IAuthorizationRequirement>, user: ClaimsPrincipal, resource: unknown | null): AuthorizationHandlerContext;
 }
 
 
@@ -482,8 +482,8 @@ export interface DefaultAuthorizationService$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationService: never;
 
-    AuthorizeAsync(user: ClaimsPrincipal, resource: JsValue | null, requirements: IEnumerable_1<IAuthorizationRequirement>): Task_1<AuthorizationResult>;
-    AuthorizeAsync(user: ClaimsPrincipal, resource: JsValue | null, policyName: string): Task_1<AuthorizationResult>;
+    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown | null, requirements: IEnumerable_1<IAuthorizationRequirement>): Task_1<AuthorizationResult>;
+    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown | null, policyName: string): Task_1<AuthorizationResult>;
 }
 
 
@@ -501,8 +501,8 @@ export type DefaultAuthorizationService = DefaultAuthorizationService$instance &
 
 export abstract class AuthorizationServiceExtensions$instance {
     static AuthorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, policy: AuthorizationPolicy): Task_1<AuthorizationResult>;
-    static AuthorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, resource: JsValue | null, policy: AuthorizationPolicy): Task_1<AuthorizationResult>;
-    static AuthorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, resource: JsValue | null, requirement: IAuthorizationRequirement): Task_1<AuthorizationResult>;
+    static AuthorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, resource: unknown | null, policy: AuthorizationPolicy): Task_1<AuthorizationResult>;
+    static AuthorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, resource: unknown | null, requirement: IAuthorizationRequirement): Task_1<AuthorizationResult>;
     static AuthorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, policyName: string): Task_1<AuthorizationResult>;
 }
 

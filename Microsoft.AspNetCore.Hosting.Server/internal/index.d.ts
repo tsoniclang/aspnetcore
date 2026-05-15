@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Hosting.Server.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -13,7 +13,7 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Exception, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IHttpApplication_1$instance<TContext> {
+export interface IHttpApplication_1$instance<TContext extends unknown> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1: never;
 
     CreateContext(contextFeatures: IFeatureCollection): TContext;
@@ -22,13 +22,13 @@ export interface IHttpApplication_1$instance<TContext> {
 }
 
 
-export type IHttpApplication_1<TContext> = IHttpApplication_1$instance<TContext>;
+export type IHttpApplication_1<TContext extends unknown> = IHttpApplication_1$instance<TContext>;
 
 export interface IServer$instance extends IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IServer: never;
 
     readonly Features: IFeatureCollection;
-    StartAsync<TContext>(application: IHttpApplication_1<TContext>, cancellationToken: CancellationToken): Task;
+    StartAsync<TContext extends unknown>(application: IHttpApplication_1<TContext>, cancellationToken: CancellationToken): Task;
     StopAsync(cancellationToken: CancellationToken): Task;
 }
 

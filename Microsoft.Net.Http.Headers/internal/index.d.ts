@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Net.Http.Headers
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -45,7 +45,7 @@ export interface CacheControlHeaderValue$instance {
     Public: boolean;
     get SharedMaxAge(): Nullable_1<TimeSpan>;
     set SharedMaxAge(value: Nullable_1<TimeSpan> | TimeSpan);
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -88,7 +88,7 @@ export interface ContentDispositionHeaderValue$instance {
     set ReadDate(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     get Size(): Nullable_1<System_Internal.Int64>;
     set Size(value: Nullable_1<System_Internal.Int64> | long);
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     SetHttpFileName(fileName: StringSegment): void;
     SetMimeFileName(fileName: StringSegment): void;
@@ -117,7 +117,7 @@ export interface ContentRangeHeaderValue$instance {
     get To(): Nullable_1<System_Internal.Int64>;
     set To(value: Nullable_1<System_Internal.Int64> | long);
     Unit: StringSegment;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -139,7 +139,7 @@ export interface CookieHeaderValue$instance {
 
     Name: StringSegment;
     Value: StringSegment;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -165,7 +165,7 @@ export interface EntityTagHeaderValue$instance {
     readonly IsWeak: boolean;
     readonly Tag: StringSegment;
     Compare(other: EntityTagHeaderValue | null, useStrongComparison: boolean): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -208,7 +208,7 @@ export interface MediaTypeHeaderValue$instance {
     readonly Type: StringSegment;
     Copy(): MediaTypeHeaderValue;
     CopyAsReadOnly(): MediaTypeHeaderValue;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     IsSubsetOf(otherMediaType: MediaTypeHeaderValue): boolean;
     MatchesMediaType(otherMediaType: StringSegment): boolean;
@@ -254,7 +254,7 @@ export interface NameValueHeaderValue$instance {
     Value: StringSegment;
     Copy(): NameValueHeaderValue;
     CopyAsReadOnly(): NameValueHeaderValue;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     GetUnescapedValue(): StringSegment;
     SetAndEscapeValue(value: StringSegment): void;
@@ -282,7 +282,7 @@ export interface RangeConditionHeaderValue$instance {
 
     readonly EntityTag: EntityTagHeaderValue | null;
     readonly LastModified: Nullable_1<DateTimeOffset>;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -304,7 +304,7 @@ export interface RangeHeaderValue$instance {
 
     readonly Ranges: ICollection_1<RangeItemHeaderValue>;
     Unit: StringSegment;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -325,7 +325,7 @@ export interface RangeItemHeaderValue$instance {
 
     readonly From: Nullable_1<System_Internal.Int64>;
     readonly To: Nullable_1<System_Internal.Int64>;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -354,7 +354,7 @@ export interface SetCookieHeaderValue$instance {
     Secure: boolean;
     Value: StringSegment;
     AppendToStringBuilder(builder: StringBuilder): void;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -379,7 +379,7 @@ export interface StringWithQualityHeaderValue$instance {
 
     readonly Quality: Nullable_1<System_Internal.Double>;
     readonly Value: StringSegment;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }

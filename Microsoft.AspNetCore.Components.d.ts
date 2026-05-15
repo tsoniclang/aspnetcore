@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Components/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { RenderTreeBuilder } from './Microsoft.AspNetCore.Components.Rendering/internal/index.js';
 import type { LocationChangedEventArgs, LocationChangingContext, NotFoundEventArgs } from './Microsoft.AspNetCore.Components.Routing/internal/index.js';
@@ -100,22 +104,22 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type EventCallback<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.EventCallback :
-  Internal.EventCallback_1<T1>;
+  [T1] extends [unknown] ? Internal.EventCallback_1<T1> : never;
 
 export type OwningComponentBase<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.OwningComponentBase :
-  Internal.OwningComponentBase_1<T1>;
+  [T1] extends [unknown] ? Internal.OwningComponentBase_1<T1> : never;
 
 export type RenderFragment<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? ((() => void) | Internal.RenderFragment) :
-  (((arg1: T1) => void) | Internal.RenderFragment_1<T1>);
+  [T1] extends [unknown] ? (((arg1: T1) => void) | Internal.RenderFragment_1<T1>) : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Components as ExtensionMethods } from './__internal/extensions/index.js';

@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Authentication.OAuth
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -34,7 +34,7 @@ export interface OAuthChallengeProperties$instance extends AuthenticationPropert
 export const OAuthChallengeProperties: {
     new(): OAuthChallengeProperties;
     new(items: IDictionary_2<System_Internal.String, string | null>): OAuthChallengeProperties;
-    new(items: IDictionary_2<System_Internal.String, string | null> | null, parameters: IDictionary_2<System_Internal.String, JsValue | null> | null): OAuthChallengeProperties;
+    new(items: IDictionary_2<System_Internal.String, string | null> | null, parameters: IDictionary_2<System_Internal.String, unknown | null> | null): OAuthChallengeProperties;
     readonly ScopeKey: string;
 };
 
@@ -97,14 +97,14 @@ export const OAuthEvents: {
 
 export type OAuthEvents = OAuthEvents$instance;
 
-export interface OAuthHandler_1$instance<TOptions extends OAuthOptions> extends RemoteAuthenticationHandler_1<TOptions> {
+export interface OAuthHandler_1$instance<TOptions extends unknown & OAuthOptions> extends RemoteAuthenticationHandler_1<TOptions>, Microsoft_AspNetCore_Authentication_Internal.IAuthenticationRequestHandler$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
 
     BuildChallengeUrl(properties: AuthenticationProperties, redirectUri: string): string;
-    CreateEventsAsync(): Task_1<JsValue>;
+    CreateEventsAsync(): Task_1<unknown>;
     CreateTicketAsync(identity: ClaimsIdentity, properties: AuthenticationProperties, tokens: OAuthTokenResponse): Task_1<AuthenticationTicket>;
     ExchangeCodeAsync(context: OAuthCodeExchangeContext): Task_1<OAuthTokenResponse>;
     FormatScope(scopes: IEnumerable_1<System_Internal.String>): string;
@@ -115,16 +115,16 @@ export interface OAuthHandler_1$instance<TOptions extends OAuthOptions> extends 
 
 
 export const OAuthHandler_1: {
-    new<TOptions extends OAuthOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock): OAuthHandler_1<TOptions>;
-    new<TOptions extends OAuthOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder): OAuthHandler_1<TOptions>;
+    new<TOptions extends unknown & OAuthOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock): OAuthHandler_1<TOptions>;
+    new<TOptions extends unknown & OAuthOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder): OAuthHandler_1<TOptions>;
 };
 
 
-export interface __OAuthHandler_1$views<TOptions extends OAuthOptions> {
+export interface __OAuthHandler_1$views<TOptions extends unknown & OAuthOptions> {
     As_IAuthenticationHandler(): Microsoft_AspNetCore_Authentication_Internal.IAuthenticationHandler$instance;
 }
 
-export type OAuthHandler_1<TOptions extends OAuthOptions> = OAuthHandler_1$instance<TOptions> & __OAuthHandler_1$views<TOptions>;
+export type OAuthHandler_1<TOptions extends unknown & OAuthOptions> = OAuthHandler_1$instance<TOptions> & __OAuthHandler_1$views<TOptions>;
 
 
 export interface OAuthOptions$instance extends RemoteAuthenticationOptions {
@@ -135,7 +135,7 @@ export interface OAuthOptions$instance extends RemoteAuthenticationOptions {
     readonly ClaimActions: ClaimActionCollection;
     ClientId: string;
     ClientSecret: string;
-    Events: JsValue | OAuthEvents | RemoteAuthenticationEvents;
+    Events: OAuthEvents | RemoteAuthenticationEvents | unknown;
     readonly Scope: ICollection_1<System_Internal.String>;
     StateDataFormat: ISecureDataFormat_1<AuthenticationProperties>;
     TokenEndpoint: string;

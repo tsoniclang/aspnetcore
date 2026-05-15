@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Core, Microsoft.AspNetCore.Mvc.Razor
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -21,16 +21,16 @@ export interface IApplicationFeatureProvider$instance {
 
 export type IApplicationFeatureProvider = IApplicationFeatureProvider$instance;
 
-export interface IApplicationFeatureProvider_1$instance<TFeature> extends IApplicationFeatureProvider {
+export interface IApplicationFeatureProvider_1$instance<TFeature extends unknown> extends IApplicationFeatureProvider {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1: never;
 
     PopulateFeature(parts: IEnumerable_1<ApplicationPart>, feature: TFeature): void;
 }
 
 
-export interface IApplicationFeatureProvider_1$instance<TFeature> extends IApplicationFeatureProvider$instance {}
+export interface IApplicationFeatureProvider_1$instance<TFeature extends unknown> extends IApplicationFeatureProvider$instance {}
 
-export type IApplicationFeatureProvider_1<TFeature> = IApplicationFeatureProvider_1$instance<TFeature>;
+export type IApplicationFeatureProvider_1<TFeature extends unknown> = IApplicationFeatureProvider_1$instance<TFeature>;
 
 export interface IApplicationPartTypeProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider: never;
@@ -105,7 +105,7 @@ export interface ApplicationPartManager$instance {
 
     readonly ApplicationParts: IList_1<ApplicationPart>;
     readonly FeatureProviders: IList_1<IApplicationFeatureProvider>;
-    PopulateFeature<TFeature>(feature: TFeature): void;
+    PopulateFeature<TFeature extends unknown>(feature: TFeature): void;
 }
 
 

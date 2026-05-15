@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Http.Extensions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -27,7 +27,7 @@ export interface QueryBuilder$instance {
 
     Add(key: string, values: IEnumerable_1<System_Internal.String>): void;
     Add(key: string, value: string): void;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
     GetHashCode(): int;
     ToQueryString(): QueryString;

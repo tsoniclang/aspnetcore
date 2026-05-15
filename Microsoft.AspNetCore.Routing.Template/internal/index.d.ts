@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Routing
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -59,7 +59,7 @@ export interface TemplateBinder$instance {
 
 
 export const TemplateBinder: {
-    RoutePartsEqual(a: JsValue | null, b: JsValue | null): boolean;
+    RoutePartsEqual(a: unknown | null, b: unknown | null): boolean;
 };
 
 
@@ -98,8 +98,8 @@ export type TemplateMatcher = TemplateMatcher$instance;
 export interface TemplatePart$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_TemplatePart: never;
 
-    get DefaultValue(): JsValue | null;
-    set DefaultValue(value: JsValue | null);
+    get DefaultValue(): unknown | null;
+    set DefaultValue(value: unknown | null);
     InlineConstraints: IEnumerable_1<InlineConstraint>;
     IsCatchAll: boolean;
     IsLiteral: boolean;
@@ -118,7 +118,7 @@ export const TemplatePart: {
     new(): TemplatePart;
     new(other: RoutePatternPart): TemplatePart;
     CreateLiteral(text: string): TemplatePart;
-    CreateParameter(name: string, isCatchAll: boolean, isOptional: boolean, defaultValue: JsValue | null, inlineConstraints: IEnumerable_1<InlineConstraint> | null): TemplatePart;
+    CreateParameter(name: string, isCatchAll: boolean, isOptional: boolean, defaultValue: unknown | null, inlineConstraints: IEnumerable_1<InlineConstraint> | null): TemplatePart;
 };
 
 

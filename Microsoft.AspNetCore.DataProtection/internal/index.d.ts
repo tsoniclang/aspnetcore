@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.DataProtection, Microsoft.AspNetCore.DataProtection.Abstractions, Microsoft.AspNetCore.DataProtection.Extensions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -57,6 +57,8 @@ export interface IPersistedDataProtector$instance extends IDataProtector, IDataP
     Protect(plaintext: byte[]): byte[];
 }
 
+
+export interface IPersistedDataProtector$instance extends IDataProtector$instance {}
 
 export type IPersistedDataProtector = IPersistedDataProtector$instance;
 
@@ -165,7 +167,7 @@ export type DataProtectionAdvancedExtensions = DataProtectionAdvancedExtensions$
 export abstract class DataProtectionBuilderExtensions$instance {
     static AddKeyEscrowSink(builder: IDataProtectionBuilder, sink: IKeyEscrowSink): IDataProtectionBuilder;
     static AddKeyEscrowSink(builder: IDataProtectionBuilder, factory: Func_2<IServiceProvider, IKeyEscrowSink>): IDataProtectionBuilder;
-    static AddKeyEscrowSink<TImplementation extends IKeyEscrowSink>(builder: IDataProtectionBuilder): IDataProtectionBuilder;
+    static AddKeyEscrowSink<TImplementation extends (object | null) & IKeyEscrowSink>(builder: IDataProtectionBuilder): IDataProtectionBuilder;
     static AddKeyManagementOptions(builder: IDataProtectionBuilder, setupAction: Action_1<KeyManagementOptions>): IDataProtectionBuilder;
     static DisableAutomaticKeyGeneration(builder: IDataProtectionBuilder): IDataProtectionBuilder;
     static PersistKeysToFileSystem(builder: IDataProtectionBuilder, directory: DirectoryInfo): IDataProtectionBuilder;

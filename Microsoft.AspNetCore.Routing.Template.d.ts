@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Routing.Template/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { HttpContext, PathString } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { RoutePattern, RoutePatternParameterPolicyReference, RoutePatternPart, RoutePatternPathSegment } from './Microsoft.AspNetCore.Routing.Patterns/internal/index.js';

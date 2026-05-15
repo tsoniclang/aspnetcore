@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Components, Microsoft.AspNetCore.Components.Endpoints, Microsoft.AspNetCore.Components.Web
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -41,7 +41,7 @@ export enum RestoreBehavior {
 export type RenderFragment = (builder: RenderTreeBuilder) => void;
 
 
-export type RenderFragment_1<TValue> = (value: TValue) => RenderFragment;
+export type RenderFragment_1<TValue extends unknown> = (value: TValue) => RenderFragment;
 
 
 export interface IComponent$instance {
@@ -83,7 +83,7 @@ export type IHandleAfterRender = IHandleAfterRender$instance;
 export interface IHandleEvent$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    HandleEventAsync(item: EventCallbackWorkItem, arg: JsValue | null): Task;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown | null): Task;
 }
 
 
@@ -138,9 +138,9 @@ export interface EventCallback$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IEventCallback: never;
 
     readonly HasDelegate: boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
-    InvokeAsync(arg: JsValue | null): Task;
+    InvokeAsync(arg: unknown | null): Task;
     InvokeAsync(): Task;
 }
 
@@ -154,13 +154,13 @@ export const EventCallback: {
 
 export type EventCallback = EventCallback$instance;
 
-export interface EventCallback_1$instance<TValue> {
+export interface EventCallback_1$instance<TValue extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_EventCallback_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IEventCallback: never;
 
     readonly HasDelegate: boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     InvokeAsync(arg: TValue | null): Task;
     InvokeAsync(): Task;
@@ -168,17 +168,17 @@ export interface EventCallback_1$instance<TValue> {
 
 
 export const EventCallback_1: {
-    new<TValue>(receiver: IHandleEvent | null, delegate: Function | null): EventCallback_1<TValue>;
-    readonly Empty: <TValue>() => EventCallback_1<TValue>;
+    new<TValue extends unknown>(receiver: IHandleEvent | null, delegate: Function | null): EventCallback_1<TValue>;
+    readonly Empty: <TValue extends unknown>() => EventCallback_1<TValue>;
 };
 
 
-export type EventCallback_1<TValue> = EventCallback_1$instance<TValue>;
+export type EventCallback_1<TValue extends unknown> = EventCallback_1$instance<TValue>;
 
 export interface EventCallbackWorkItem$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_EventCallbackWorkItem: never;
 
-    InvokeAsync(arg: JsValue | null): Task;
+    InvokeAsync(arg: unknown | null): Task;
 }
 
 
@@ -227,7 +227,7 @@ export interface ParameterValue$instance {
 
     readonly Cascading: boolean;
     readonly Name: string;
-    readonly Value: JsValue;
+    readonly Value: unknown;
 }
 
 
@@ -242,18 +242,18 @@ export interface ParameterView$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_ParameterView: never;
 
     GetEnumerator(): ParameterView_Enumerator;
-    GetValueOrDefault<TValue>(parameterName: string): TValue | null;
-    GetValueOrDefault<TValue>(parameterName: string, defaultValue: TValue): TValue;
-    SetParameterProperties(target: JsValue): void;
-    ToDictionary(): IReadOnlyDictionary_2<System_Internal.String, JsValue | null>;
-    TryGetValue<TValue>(parameterName: string, result: TValue): boolean;
+    GetValueOrDefault<TValue extends unknown>(parameterName: string): TValue | null;
+    GetValueOrDefault<TValue extends unknown>(parameterName: string, defaultValue: TValue): TValue;
+    SetParameterProperties(target: unknown): void;
+    ToDictionary(): IReadOnlyDictionary_2<System_Internal.String, unknown | null>;
+    TryGetValue<TValue extends unknown>(parameterName: string, result: TValue): boolean;
 }
 
 
 export const ParameterView: {
     new(): ParameterView;
     readonly Empty: ParameterView;
-    FromDictionary(parameters: IDictionary_2<System_Internal.String, JsValue | null>): ParameterView;
+    FromDictionary(parameters: IDictionary_2<System_Internal.String, unknown | null>): ParameterView;
 };
 
 
@@ -419,7 +419,7 @@ export const CascadingTypeParameterAttribute: {
 
 export type CascadingTypeParameterAttribute = CascadingTypeParameterAttribute$instance;
 
-export interface CascadingValue_1$instance<TValue> extends IComponent$instance {
+export interface CascadingValue_1$instance<TValue extends unknown> extends IComponent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_CascadingValue_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_ICascadingValueSupplier: never;
@@ -437,18 +437,18 @@ export interface CascadingValue_1$instance<TValue> extends IComponent$instance {
 
 
 export const CascadingValue_1: {
-    new<TValue>(): CascadingValue_1<TValue>;
+    new<TValue extends unknown>(): CascadingValue_1<TValue>;
 };
 
 
-export interface __CascadingValue_1$views<TValue> {
+export interface __CascadingValue_1$views<TValue extends unknown> {
     As_IComponent(): IComponent$instance;
 }
 
-export type CascadingValue_1<TValue> = CascadingValue_1$instance<TValue> & __CascadingValue_1$views<TValue>;
+export type CascadingValue_1<TValue extends unknown> = CascadingValue_1$instance<TValue> & __CascadingValue_1$views<TValue>;
 
 
-export interface CascadingValueSource_1$instance<TValue> {
+export interface CascadingValueSource_1$instance<TValue extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_CascadingValueSource_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_ICascadingValueSupplier: never;
@@ -459,20 +459,20 @@ export interface CascadingValueSource_1$instance<TValue> {
 
 
 export const CascadingValueSource_1: {
-    new<TValue>(value: TValue, isFixed: boolean): CascadingValueSource_1<TValue>;
-    new<TValue>(name: string, value: TValue, isFixed: boolean): CascadingValueSource_1<TValue>;
-    new<TValue>(initialValueFactory: Func_1<TValue>, isFixed: boolean): CascadingValueSource_1<TValue>;
-    new<TValue>(name: string, initialValueFactory: Func_1<TValue>, isFixed: boolean): CascadingValueSource_1<TValue>;
+    new<TValue extends unknown>(value: TValue, isFixed: boolean): CascadingValueSource_1<TValue>;
+    new<TValue extends unknown>(name: string, value: TValue, isFixed: boolean): CascadingValueSource_1<TValue>;
+    new<TValue extends unknown>(initialValueFactory: Func_1<TValue>, isFixed: boolean): CascadingValueSource_1<TValue>;
+    new<TValue extends unknown>(name: string, initialValueFactory: Func_1<TValue>, isFixed: boolean): CascadingValueSource_1<TValue>;
 };
 
 
-export type CascadingValueSource_1<TValue> = CascadingValueSource_1$instance<TValue>;
+export type CascadingValueSource_1<TValue extends unknown> = CascadingValueSource_1$instance<TValue>;
 
 export interface ChangeEventArgs$instance extends EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_ChangeEventArgs: never;
 
-    get Value(): JsValue | null;
-    set Value(value: JsValue | null);
+    get Value(): unknown | null;
+    set Value(value: unknown | null);
 }
 
 
@@ -522,7 +522,7 @@ export interface Dispatcher$instance {
     CheckAccess(): boolean;
     InvokeAsync(workItem: Action): Task;
     InvokeAsync(workItem: Func_1<Task>): Task;
-    InvokeAsync<TResult>(workItem: Func_1<TResult>): Task_1<TResult>;
+    InvokeAsync<TResult extends unknown>(workItem: Func_1<TResult>): Task_1<TResult>;
 }
 
 
@@ -538,10 +538,10 @@ export interface DynamicComponent$instance extends IComponent$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
 
-    get Instance(): JsValue | null;
-    set Instance(value: JsValue | null);
-    get Parameters(): IDictionary_2<System_Internal.String, JsValue> | null;
-    set Parameters(value: IDictionary_2<System_Internal.String, JsValue> | null);
+    get Instance(): unknown | null;
+    set Instance(value: unknown | null);
+    get Parameters(): IDictionary_2<System_Internal.String, unknown> | null;
+    set Parameters(value: IDictionary_2<System_Internal.String, unknown> | null);
     Type: Type;
     Attach(renderHandle: RenderHandle): void;
     SetParametersAsync(parameters: ParameterView): Task;
@@ -619,19 +619,19 @@ export type ErrorBoundaryBase = ErrorBoundaryBase$instance & __ErrorBoundaryBase
 export interface EventCallbackFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_EventCallbackFactory: never;
 
-    Create(receiver: JsValue, callback: EventCallback): EventCallback;
-    Create(receiver: JsValue, callback: Action): EventCallback;
-    Create(receiver: JsValue, callback: Action_1<JsValue>): EventCallback;
-    Create(receiver: JsValue, callback: Func_1<Task>): EventCallback;
-    Create(receiver: JsValue, callback: Func_2<JsValue, Task>): EventCallback;
-    Create<TValue>(receiver: JsValue, callback: EventCallback): EventCallback_1<TValue>;
-    Create<TValue>(receiver: JsValue, callback: EventCallback_1<TValue>): EventCallback_1<TValue>;
-    Create<TValue>(receiver: JsValue, callback: Action): EventCallback_1<TValue>;
-    Create<TValue>(receiver: JsValue, callback: Action_1<TValue>): EventCallback_1<TValue>;
-    Create<TValue>(receiver: JsValue, callback: Func_1<Task>): EventCallback_1<TValue>;
-    Create<TValue>(receiver: JsValue, callback: Func_2<TValue, Task>): EventCallback_1<TValue>;
-    CreateInferred<TValue>(receiver: JsValue, callback: Action_1<TValue>, value: TValue): EventCallback_1<TValue>;
-    CreateInferred<TValue>(receiver: JsValue, callback: Func_2<TValue, Task>, value: TValue): EventCallback_1<TValue>;
+    Create(receiver: unknown, callback: EventCallback): EventCallback;
+    Create(receiver: unknown, callback: Action): EventCallback;
+    Create(receiver: unknown, callback: Action_1<unknown>): EventCallback;
+    Create(receiver: unknown, callback: Func_1<Task>): EventCallback;
+    Create(receiver: unknown, callback: Func_2<unknown, Task>): EventCallback;
+    Create<TValue extends unknown>(receiver: unknown, callback: EventCallback): EventCallback_1<TValue>;
+    Create<TValue extends unknown>(receiver: unknown, callback: EventCallback_1<TValue>): EventCallback_1<TValue>;
+    Create<TValue extends unknown>(receiver: unknown, callback: Action): EventCallback_1<TValue>;
+    Create<TValue extends unknown>(receiver: unknown, callback: Action_1<TValue>): EventCallback_1<TValue>;
+    Create<TValue extends unknown>(receiver: unknown, callback: Func_1<Task>): EventCallback_1<TValue>;
+    Create<TValue extends unknown>(receiver: unknown, callback: Func_2<TValue, Task>): EventCallback_1<TValue>;
+    CreateInferred<TValue extends unknown>(receiver: unknown, callback: Action_1<TValue>, value: TValue): EventCallback_1<TValue>;
+    CreateInferred<TValue extends unknown>(receiver: unknown, callback: Func_2<TValue, Task>, value: TValue): EventCallback_1<TValue>;
 }
 
 
@@ -678,8 +678,8 @@ export interface ImportMap$instance extends IComponent$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
 
-    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, JsValue> | null;
-    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null);
+    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, unknown> | null;
+    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | null);
     get HttpContext(): HttpContext | null;
     set HttpContext(value: HttpContext | null);
     get ImportMapDefinition(): ImportMapDefinition | null;
@@ -721,8 +721,8 @@ export type ImportMapDefinition = ImportMapDefinition$instance;
 export interface InjectAttribute$instance extends Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_InjectAttribute: never;
 
-    get Key(): JsValue | null;
-    set Key(value: JsValue | null);
+    get Key(): unknown | null;
+    set Key(value: unknown | null);
 }
 
 
@@ -747,7 +747,7 @@ export const LayoutAttribute: {
 
 export type LayoutAttribute = LayoutAttribute$instance;
 
-export interface LayoutComponentBase$instance extends ComponentBase$instance, IHandleEvent$instance {
+export interface LayoutComponentBase$instance extends ComponentBase$instance, IComponent$instance, IHandleEvent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_LayoutComponentBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -884,7 +884,7 @@ export interface __OwningComponentBase$views {
 export type OwningComponentBase = OwningComponentBase$instance & __OwningComponentBase$views;
 
 
-export interface OwningComponentBase_1$instance<TService> extends OwningComponentBase$instance, IComponent$instance, IHandleEvent$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
+export interface OwningComponentBase_1$instance<TService extends unknown> extends OwningComponentBase$instance, IComponent$instance, IHandleEvent$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_OwningComponentBase_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -896,17 +896,17 @@ export interface OwningComponentBase_1$instance<TService> extends OwningComponen
 }
 
 
-export const OwningComponentBase_1: (abstract new<TService>() => OwningComponentBase_1<TService>) & {
+export const OwningComponentBase_1: (abstract new<TService extends unknown>() => OwningComponentBase_1<TService>) & {
 };
 
 
-export interface __OwningComponentBase_1$views<TService> {
+export interface __OwningComponentBase_1$views<TService extends unknown> {
     As_IComponent(): IComponent$instance;
     As_IHandleAfterRender(): IHandleAfterRender$instance;
     As_IHandleEvent(): IHandleEvent$instance;
 }
 
-export type OwningComponentBase_1<TService> = OwningComponentBase_1$instance<TService> & __OwningComponentBase_1$views<TService>;
+export type OwningComponentBase_1<TService extends unknown> = OwningComponentBase_1$instance<TService> & __OwningComponentBase_1$views<TService>;
 
 
 export interface ParameterAttribute$instance extends Attribute {
@@ -926,11 +926,11 @@ export type ParameterAttribute = ParameterAttribute$instance;
 export interface PersistentComponentState$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_PersistentComponentState: never;
 
-    PersistAsJson<TValue>(key: string, instance: TValue): void;
+    PersistAsJson<TValue extends unknown>(key: string, instance: TValue): void;
     RegisterOnPersisting(callback: Func_1<Task>): PersistingComponentStateSubscription;
     RegisterOnPersisting(callback: Func_1<Task>, renderMode: IComponentRenderMode | null): PersistingComponentStateSubscription;
     RegisterOnRestoring(callback: Action, options: RestoreOptions): RestoringComponentStateSubscription;
-    TryTakeFromJson<TValue>(key: string, instance: TValue | null): boolean;
+    TryTakeFromJson<TValue extends unknown>(key: string, instance: TValue | null): boolean;
 }
 
 
@@ -940,7 +940,7 @@ export const PersistentComponentState: {
 
 export type PersistentComponentState = PersistentComponentState$instance;
 
-export interface PersistentComponentStateSerializer_1$instance<T> {
+export interface PersistentComponentStateSerializer_1$instance<T extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_PersistentComponentStateSerializer_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IPersistentComponentStateSerializer: never;
@@ -950,11 +950,11 @@ export interface PersistentComponentStateSerializer_1$instance<T> {
 }
 
 
-export const PersistentComponentStateSerializer_1: (abstract new<T>() => PersistentComponentStateSerializer_1<T>) & {
+export const PersistentComponentStateSerializer_1: (abstract new<T extends unknown>() => PersistentComponentStateSerializer_1<T>) & {
 };
 
 
-export type PersistentComponentStateSerializer_1<T> = PersistentComponentStateSerializer_1$instance<T>;
+export type PersistentComponentStateSerializer_1<T extends unknown> = PersistentComponentStateSerializer_1$instance<T>;
 
 export interface PersistentStateAttribute$instance extends CascadingParameterAttributeBase {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_PersistentStateAttribute: never;
@@ -1102,14 +1102,14 @@ export interface RouteData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RouteData: never;
 
     readonly PageType: Type;
-    readonly RouteValues: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>;
+    readonly RouteValues: IReadOnlyDictionary_2<System_Internal.String, unknown | null>;
     get Template(): string | null;
     set Template(value: string | null);
 }
 
 
 export const RouteData: {
-    new(pageType: Type, routeValues: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>): RouteData;
+    new(pageType: Type, routeValues: IReadOnlyDictionary_2<System_Internal.String, unknown | null>): RouteData;
 };
 
 
@@ -1231,39 +1231,39 @@ export abstract class BindConverter$instance {
     static FormatValue(value: string | null, culture?: CultureInfo | null): string | null;
     static FormatValue(value: TimeOnly, culture?: CultureInfo | null): string;
     static FormatValue(value: TimeOnly, format: string, culture?: CultureInfo | null): string;
-    static FormatValue<T>(value: T, culture?: CultureInfo | null): JsValue | null;
-    static TryConvertTo<T>(obj: JsValue | null, culture: CultureInfo | null, value: T): boolean;
-    static TryConvertToBool(obj: JsValue | null, culture: CultureInfo | null, value: boolean): boolean;
-    static TryConvertToDateOnly(obj: JsValue | null, culture: CultureInfo | null, value: DateOnly): boolean;
-    static TryConvertToDateOnly(obj: JsValue | null, culture: CultureInfo | null, format: string, value: DateOnly): boolean;
-    static TryConvertToDateTime(obj: JsValue | null, culture: CultureInfo | null, value: DateTime): boolean;
-    static TryConvertToDateTime(obj: JsValue | null, culture: CultureInfo | null, format: string, value: DateTime): boolean;
-    static TryConvertToDateTimeOffset(obj: JsValue | null, culture: CultureInfo | null, value: DateTimeOffset): boolean;
-    static TryConvertToDateTimeOffset(obj: JsValue | null, culture: CultureInfo | null, format: string, value: DateTimeOffset): boolean;
-    static TryConvertToDecimal(obj: JsValue | null, culture: CultureInfo | null, value: decimal): boolean;
-    static TryConvertToDouble(obj: JsValue | null, culture: CultureInfo | null, value: double): boolean;
-    static TryConvertToFloat(obj: JsValue | null, culture: CultureInfo | null, value: float): boolean;
-    static TryConvertToInt(obj: JsValue | null, culture: CultureInfo | null, value: int): boolean;
-    static TryConvertToLong(obj: JsValue | null, culture: CultureInfo | null, value: long): boolean;
-    static TryConvertToNullableBool(obj: JsValue | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Boolean>): boolean;
-    static TryConvertToNullableDateOnly(obj: JsValue | null, culture: CultureInfo | null, value: Nullable_1<DateOnly>): boolean;
-    static TryConvertToNullableDateOnly(obj: JsValue | null, culture: CultureInfo | null, format: string, value: Nullable_1<DateOnly>): boolean;
-    static TryConvertToNullableDateTime(obj: JsValue | null, culture: CultureInfo | null, value: Nullable_1<DateTime>): boolean;
-    static TryConvertToNullableDateTime(obj: JsValue | null, culture: CultureInfo | null, format: string, value: Nullable_1<DateTime>): boolean;
-    static TryConvertToNullableDateTimeOffset(obj: JsValue | null, culture: CultureInfo | null, value: Nullable_1<DateTimeOffset>): boolean;
-    static TryConvertToNullableDateTimeOffset(obj: JsValue | null, culture: CultureInfo | null, format: string, value: Nullable_1<DateTimeOffset>): boolean;
-    static TryConvertToNullableDecimal(obj: JsValue | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Decimal>): boolean;
-    static TryConvertToNullableDouble(obj: JsValue | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Double>): boolean;
-    static TryConvertToNullableFloat(obj: JsValue | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Single>): boolean;
-    static TryConvertToNullableInt(obj: JsValue | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Int32>): boolean;
-    static TryConvertToNullableLong(obj: JsValue | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Int64>): boolean;
-    static TryConvertToNullableShort(obj: JsValue | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Int16>): boolean;
-    static TryConvertToNullableTimeOnly(obj: JsValue | null, culture: CultureInfo | null, value: Nullable_1<TimeOnly>): boolean;
-    static TryConvertToNullableTimeOnly(obj: JsValue | null, culture: CultureInfo | null, format: string, value: Nullable_1<TimeOnly>): boolean;
-    static TryConvertToShort(obj: JsValue | null, culture: CultureInfo | null, value: short): boolean;
-    static TryConvertToString(obj: JsValue | null, culture: CultureInfo | null, value: string | null): boolean;
-    static TryConvertToTimeOnly(obj: JsValue | null, culture: CultureInfo | null, format: string, value: TimeOnly): boolean;
-    static TryConvertToTimeOnly(obj: JsValue | null, culture: CultureInfo | null, value: TimeOnly): boolean;
+    static FormatValue<T extends unknown>(value: T, culture?: CultureInfo | null): unknown | null;
+    static TryConvertTo<T extends unknown>(obj: unknown | null, culture: CultureInfo | null, value: T): boolean;
+    static TryConvertToBool(obj: unknown | null, culture: CultureInfo | null, value: boolean): boolean;
+    static TryConvertToDateOnly(obj: unknown | null, culture: CultureInfo | null, value: DateOnly): boolean;
+    static TryConvertToDateOnly(obj: unknown | null, culture: CultureInfo | null, format: string, value: DateOnly): boolean;
+    static TryConvertToDateTime(obj: unknown | null, culture: CultureInfo | null, value: DateTime): boolean;
+    static TryConvertToDateTime(obj: unknown | null, culture: CultureInfo | null, format: string, value: DateTime): boolean;
+    static TryConvertToDateTimeOffset(obj: unknown | null, culture: CultureInfo | null, value: DateTimeOffset): boolean;
+    static TryConvertToDateTimeOffset(obj: unknown | null, culture: CultureInfo | null, format: string, value: DateTimeOffset): boolean;
+    static TryConvertToDecimal(obj: unknown | null, culture: CultureInfo | null, value: decimal): boolean;
+    static TryConvertToDouble(obj: unknown | null, culture: CultureInfo | null, value: double): boolean;
+    static TryConvertToFloat(obj: unknown | null, culture: CultureInfo | null, value: float): boolean;
+    static TryConvertToInt(obj: unknown | null, culture: CultureInfo | null, value: int): boolean;
+    static TryConvertToLong(obj: unknown | null, culture: CultureInfo | null, value: long): boolean;
+    static TryConvertToNullableBool(obj: unknown | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Boolean>): boolean;
+    static TryConvertToNullableDateOnly(obj: unknown | null, culture: CultureInfo | null, value: Nullable_1<DateOnly>): boolean;
+    static TryConvertToNullableDateOnly(obj: unknown | null, culture: CultureInfo | null, format: string, value: Nullable_1<DateOnly>): boolean;
+    static TryConvertToNullableDateTime(obj: unknown | null, culture: CultureInfo | null, value: Nullable_1<DateTime>): boolean;
+    static TryConvertToNullableDateTime(obj: unknown | null, culture: CultureInfo | null, format: string, value: Nullable_1<DateTime>): boolean;
+    static TryConvertToNullableDateTimeOffset(obj: unknown | null, culture: CultureInfo | null, value: Nullable_1<DateTimeOffset>): boolean;
+    static TryConvertToNullableDateTimeOffset(obj: unknown | null, culture: CultureInfo | null, format: string, value: Nullable_1<DateTimeOffset>): boolean;
+    static TryConvertToNullableDecimal(obj: unknown | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Decimal>): boolean;
+    static TryConvertToNullableDouble(obj: unknown | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Double>): boolean;
+    static TryConvertToNullableFloat(obj: unknown | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Single>): boolean;
+    static TryConvertToNullableInt(obj: unknown | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Int32>): boolean;
+    static TryConvertToNullableLong(obj: unknown | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Int64>): boolean;
+    static TryConvertToNullableShort(obj: unknown | null, culture: CultureInfo | null, value: Nullable_1<System_Internal.Int16>): boolean;
+    static TryConvertToNullableTimeOnly(obj: unknown | null, culture: CultureInfo | null, value: Nullable_1<TimeOnly>): boolean;
+    static TryConvertToNullableTimeOnly(obj: unknown | null, culture: CultureInfo | null, format: string, value: Nullable_1<TimeOnly>): boolean;
+    static TryConvertToShort(obj: unknown | null, culture: CultureInfo | null, value: short): boolean;
+    static TryConvertToString(obj: unknown | null, culture: CultureInfo | null, value: string | null): boolean;
+    static TryConvertToTimeOnly(obj: unknown | null, culture: CultureInfo | null, format: string, value: TimeOnly): boolean;
+    static TryConvertToTimeOnly(obj: unknown | null, culture: CultureInfo | null, value: TimeOnly): boolean;
 }
 
 
@@ -1278,80 +1278,80 @@ export abstract class ElementReferenceExtensions$instance {
 export type ElementReferenceExtensions = ElementReferenceExtensions$instance;
 
 export abstract class EventCallbackFactoryBinderExtensions$instance {
-    static CreateBinder<T>(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<T>, existingValue: T, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder<T>(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<T, Task>, existingValue: T, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<System_Internal.Boolean>, existingValue: boolean, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<DateOnly>, existingValue: DateOnly, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<DateOnly>, existingValue: DateOnly, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<DateTime>, existingValue: DateTime, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<DateTime>, existingValue: DateTime, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<DateTimeOffset>, existingValue: DateTimeOffset, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<DateTimeOffset>, existingValue: DateTimeOffset, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<System_Internal.Decimal>, existingValue: decimal, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<System_Internal.Double>, existingValue: double, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<System_Internal.Int16>, existingValue: short, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<System_Internal.Int32>, existingValue: int, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<System_Internal.Int64>, existingValue: long, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<System_Internal.Boolean>>, existingValue: Nullable_1<System_Internal.Boolean>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<DateOnly>>, existingValue: Nullable_1<DateOnly>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<DateOnly>>, existingValue: Nullable_1<DateOnly>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<DateTime>>, existingValue: Nullable_1<DateTime>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<DateTime>>, existingValue: Nullable_1<DateTime>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<DateTimeOffset>>, existingValue: Nullable_1<DateTimeOffset>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<DateTimeOffset>>, existingValue: Nullable_1<DateTimeOffset>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<System_Internal.Decimal>>, existingValue: Nullable_1<System_Internal.Decimal>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<System_Internal.Double>>, existingValue: Nullable_1<System_Internal.Double>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<System_Internal.Int16>>, existingValue: Nullable_1<System_Internal.Int16>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<System_Internal.Int32>>, existingValue: Nullable_1<System_Internal.Int32>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<System_Internal.Int64>>, existingValue: Nullable_1<System_Internal.Int64>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<System_Internal.Single>>, existingValue: Nullable_1<System_Internal.Single>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<TimeOnly>>, existingValue: Nullable_1<TimeOnly>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<Nullable_1<TimeOnly>>, existingValue: Nullable_1<TimeOnly>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<System_Internal.Single>, existingValue: float, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<string | null>, existingValue: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<TimeOnly>, existingValue: TimeOnly, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Action_1<TimeOnly>, existingValue: TimeOnly, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<System_Internal.Boolean, Task>, existingValue: boolean, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<DateOnly, Task>, existingValue: DateOnly, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<DateOnly, Task>, existingValue: DateOnly, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<DateTime, Task>, existingValue: DateTime, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<DateTime, Task>, existingValue: DateTime, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<DateTimeOffset, Task>, existingValue: DateTimeOffset, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<DateTimeOffset, Task>, existingValue: DateTimeOffset, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<System_Internal.Decimal, Task>, existingValue: decimal, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<System_Internal.Double, Task>, existingValue: double, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<System_Internal.Int16, Task>, existingValue: short, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<System_Internal.Int32, Task>, existingValue: int, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<System_Internal.Int64, Task>, existingValue: long, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<System_Internal.Boolean>, Task>, existingValue: Nullable_1<System_Internal.Boolean>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<DateOnly>, Task>, existingValue: Nullable_1<DateOnly>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<DateOnly>, Task>, existingValue: Nullable_1<DateOnly>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<DateTime>, Task>, existingValue: Nullable_1<DateTime>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<DateTime>, Task>, existingValue: Nullable_1<DateTime>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<DateTimeOffset>, Task>, existingValue: Nullable_1<DateTimeOffset>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<DateTimeOffset>, Task>, existingValue: Nullable_1<DateTimeOffset>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<System_Internal.Decimal>, Task>, existingValue: Nullable_1<System_Internal.Decimal>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<System_Internal.Double>, Task>, existingValue: Nullable_1<System_Internal.Double>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<System_Internal.Int16>, Task>, existingValue: Nullable_1<System_Internal.Int16>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<System_Internal.Int32>, Task>, existingValue: Nullable_1<System_Internal.Int32>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<System_Internal.Int64>, Task>, existingValue: Nullable_1<System_Internal.Int64>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<System_Internal.Single>, Task>, existingValue: Nullable_1<System_Internal.Single>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<TimeOnly>, Task>, existingValue: Nullable_1<TimeOnly>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<Nullable_1<TimeOnly>, Task>, existingValue: Nullable_1<TimeOnly>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<System_Internal.Single, Task>, existingValue: float, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<string | null, Task>, existingValue: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<TimeOnly, Task>, existingValue: TimeOnly, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
-    static CreateBinder(factory: EventCallbackFactory, receiver: JsValue, setter: Func_2<TimeOnly, Task>, existingValue: TimeOnly, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder<T extends unknown>(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<T>, existingValue: T, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder<T extends unknown>(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<T, Task>, existingValue: T, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<System_Internal.Boolean>, existingValue: boolean, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<DateOnly>, existingValue: DateOnly, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<DateOnly>, existingValue: DateOnly, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<DateTime>, existingValue: DateTime, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<DateTime>, existingValue: DateTime, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<DateTimeOffset>, existingValue: DateTimeOffset, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<DateTimeOffset>, existingValue: DateTimeOffset, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<System_Internal.Decimal>, existingValue: decimal, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<System_Internal.Double>, existingValue: double, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<System_Internal.Int16>, existingValue: short, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<System_Internal.Int32>, existingValue: int, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<System_Internal.Int64>, existingValue: long, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Boolean>>, existingValue: Nullable_1<System_Internal.Boolean>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<DateOnly>>, existingValue: Nullable_1<DateOnly>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<DateOnly>>, existingValue: Nullable_1<DateOnly>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<DateTime>>, existingValue: Nullable_1<DateTime>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<DateTime>>, existingValue: Nullable_1<DateTime>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<DateTimeOffset>>, existingValue: Nullable_1<DateTimeOffset>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<DateTimeOffset>>, existingValue: Nullable_1<DateTimeOffset>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Decimal>>, existingValue: Nullable_1<System_Internal.Decimal>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Double>>, existingValue: Nullable_1<System_Internal.Double>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Int16>>, existingValue: Nullable_1<System_Internal.Int16>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Int32>>, existingValue: Nullable_1<System_Internal.Int32>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Int64>>, existingValue: Nullable_1<System_Internal.Int64>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Single>>, existingValue: Nullable_1<System_Internal.Single>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<TimeOnly>>, existingValue: Nullable_1<TimeOnly>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<Nullable_1<TimeOnly>>, existingValue: Nullable_1<TimeOnly>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<System_Internal.Single>, existingValue: float, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<string | null>, existingValue: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<TimeOnly>, existingValue: TimeOnly, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Action_1<TimeOnly>, existingValue: TimeOnly, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<System_Internal.Boolean, Task>, existingValue: boolean, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<DateOnly, Task>, existingValue: DateOnly, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<DateOnly, Task>, existingValue: DateOnly, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<DateTime, Task>, existingValue: DateTime, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<DateTime, Task>, existingValue: DateTime, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<DateTimeOffset, Task>, existingValue: DateTimeOffset, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<DateTimeOffset, Task>, existingValue: DateTimeOffset, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<System_Internal.Decimal, Task>, existingValue: decimal, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<System_Internal.Double, Task>, existingValue: double, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<System_Internal.Int16, Task>, existingValue: short, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<System_Internal.Int32, Task>, existingValue: int, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<System_Internal.Int64, Task>, existingValue: long, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Boolean>, Task>, existingValue: Nullable_1<System_Internal.Boolean>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<DateOnly>, Task>, existingValue: Nullable_1<DateOnly>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<DateOnly>, Task>, existingValue: Nullable_1<DateOnly>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<DateTime>, Task>, existingValue: Nullable_1<DateTime>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<DateTime>, Task>, existingValue: Nullable_1<DateTime>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<DateTimeOffset>, Task>, existingValue: Nullable_1<DateTimeOffset>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<DateTimeOffset>, Task>, existingValue: Nullable_1<DateTimeOffset>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Decimal>, Task>, existingValue: Nullable_1<System_Internal.Decimal>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Double>, Task>, existingValue: Nullable_1<System_Internal.Double>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Int16>, Task>, existingValue: Nullable_1<System_Internal.Int16>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Int32>, Task>, existingValue: Nullable_1<System_Internal.Int32>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Int64>, Task>, existingValue: Nullable_1<System_Internal.Int64>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Single>, Task>, existingValue: Nullable_1<System_Internal.Single>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<TimeOnly>, Task>, existingValue: Nullable_1<TimeOnly>, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<Nullable_1<TimeOnly>, Task>, existingValue: Nullable_1<TimeOnly>, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<System_Internal.Single, Task>, existingValue: float, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<string | null, Task>, existingValue: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<TimeOnly, Task>, existingValue: TimeOnly, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
+    static CreateBinder(factory: EventCallbackFactory, receiver: unknown, setter: Func_2<TimeOnly, Task>, existingValue: TimeOnly, format: string, culture?: CultureInfo | null): EventCallback_1<ChangeEventArgs>;
 }
 
 
 export type EventCallbackFactoryBinderExtensions = EventCallbackFactoryBinderExtensions$instance;
 
 export abstract class EventCallbackFactoryEventArgsExtensions$instance {
-    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<ChangeEventArgs>): EventCallback_1<ChangeEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<EventArgs>): EventCallback_1<EventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<ChangeEventArgs, Task>): EventCallback_1<ChangeEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<EventArgs, Task>): EventCallback_1<EventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<ChangeEventArgs>): EventCallback_1<ChangeEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<EventArgs>): EventCallback_1<EventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<ChangeEventArgs, Task>): EventCallback_1<ChangeEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<EventArgs, Task>): EventCallback_1<EventArgs>;
 }
 
 
@@ -1379,8 +1379,8 @@ export abstract class NavigationManagerExtensions$instance {
     static GetUriWithQueryParameter(navigationManager: NavigationManager, name: string, value: float): string;
     static GetUriWithQueryParameter(navigationManager: NavigationManager, name: string, value: string | null): string;
     static GetUriWithQueryParameter(navigationManager: NavigationManager, name: string, value: TimeOnly): string;
-    static GetUriWithQueryParameters(navigationManager: NavigationManager, parameters: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>): string;
-    static GetUriWithQueryParameters(navigationManager: NavigationManager, uri: string, parameters: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>): string;
+    static GetUriWithQueryParameters(navigationManager: NavigationManager, parameters: IReadOnlyDictionary_2<System_Internal.String, unknown | null>): string;
+    static GetUriWithQueryParameters(navigationManager: NavigationManager, uri: string, parameters: IReadOnlyDictionary_2<System_Internal.String, unknown | null>): string;
 }
 
 

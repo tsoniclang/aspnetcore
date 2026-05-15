@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -71,19 +71,19 @@ export interface IActionInvokerFactory$instance {
 
 export type IActionInvokerFactory = IActionInvokerFactory$instance;
 
-export interface IActionResultExecutor_1$instance<TResult extends IActionResult> {
+export interface IActionResultExecutor_1$instance<TResult extends unknown & IActionResult> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
 
     ExecuteAsync(context: ActionContext, result: TResult): Task;
 }
 
 
-export type IActionResultExecutor_1<TResult extends IActionResult> = IActionResultExecutor_1$instance<TResult>;
+export type IActionResultExecutor_1<TResult extends unknown & IActionResult> = IActionResultExecutor_1$instance<TResult>;
 
 export interface IActionResultTypeMapper$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper: never;
 
-    Convert(value: JsValue | null, returnType: Type): IActionResult;
+    Convert(value: unknown | null, returnType: Type): IActionResult;
     GetResultDataType(returnType: Type): Type;
 }
 
@@ -118,6 +118,8 @@ export interface IClientErrorActionResult$instance extends IStatusCodeActionResu
 }
 
 
+export interface IClientErrorActionResult$instance extends IStatusCodeActionResult$instance {}
+
 export type IClientErrorActionResult = IClientErrorActionResult$instance;
 
 export interface IClientErrorFactory$instance {
@@ -134,7 +136,7 @@ export interface ICompatibilitySwitch$instance {
 
     readonly IsValueSet: boolean;
     readonly Name: string;
-    Value: JsValue;
+    Value: unknown;
 }
 
 
@@ -296,7 +298,7 @@ export const AmbiguousActionException: {
 
 export type AmbiguousActionException = AmbiguousActionException$instance;
 
-export interface CompatibilitySwitch_1$instance<TValue extends NonNullable<JsValue>> {
+export interface CompatibilitySwitch_1$instance<TValue extends NonNullable<unknown>> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Infrastructure_CompatibilitySwitch_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch: never;
@@ -308,33 +310,33 @@ export interface CompatibilitySwitch_1$instance<TValue extends NonNullable<JsVal
 
 
 export const CompatibilitySwitch_1: {
-    new<TValue extends NonNullable<JsValue>>(name: string): CompatibilitySwitch_1<TValue>;
-    new<TValue extends NonNullable<JsValue>>(name: string, initialValue: TValue): CompatibilitySwitch_1<TValue>;
+    new<TValue extends NonNullable<unknown>>(name: string): CompatibilitySwitch_1<TValue>;
+    new<TValue extends NonNullable<unknown>>(name: string, initialValue: TValue): CompatibilitySwitch_1<TValue>;
 };
 
 
-export interface __CompatibilitySwitch_1$views<TValue extends NonNullable<JsValue>> {
+export interface __CompatibilitySwitch_1$views<TValue extends NonNullable<unknown>> {
     As_ICompatibilitySwitch(): ICompatibilitySwitch$instance;
 }
 
-export type CompatibilitySwitch_1<TValue> = CompatibilitySwitch_1$instance<TValue> & __CompatibilitySwitch_1$views<TValue>;
+export type CompatibilitySwitch_1<TValue extends NonNullable<unknown>> = CompatibilitySwitch_1$instance<TValue> & __CompatibilitySwitch_1$views<TValue>;
 
 
-export interface ConfigureCompatibilityOptions_1$instance<TOptions extends IEnumerable_1<ICompatibilitySwitch>> {
+export interface ConfigureCompatibilityOptions_1$instance<TOptions extends (object | null) & IEnumerable_1<ICompatibilitySwitch>> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Infrastructure_ConfigureCompatibilityOptions_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
-    readonly DefaultValues: IReadOnlyDictionary_2<System_Internal.String, JsValue>;
+    readonly DefaultValues: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     PostConfigure(name: string | null, options: TOptions): void;
 }
 
 
-export const ConfigureCompatibilityOptions_1: (abstract new<TOptions extends IEnumerable_1<ICompatibilitySwitch>>(loggerFactory: ILoggerFactory, compatibilityOptions: IOptions_1<MvcCompatibilityOptions>) => ConfigureCompatibilityOptions_1<TOptions>) & {
+export const ConfigureCompatibilityOptions_1: (abstract new<TOptions extends (object | null) & IEnumerable_1<ICompatibilitySwitch>>(loggerFactory: ILoggerFactory, compatibilityOptions: IOptions_1<MvcCompatibilityOptions>) => ConfigureCompatibilityOptions_1<TOptions>) & {
 };
 
 
-export type ConfigureCompatibilityOptions_1<TOptions extends IEnumerable_1<ICompatibilitySwitch>> = ConfigureCompatibilityOptions_1$instance<TOptions>;
+export type ConfigureCompatibilityOptions_1<TOptions extends (object | null) & IEnumerable_1<ICompatibilitySwitch>> = ConfigureCompatibilityOptions_1$instance<TOptions>;
 
 export interface ContentResultExecutor$instance extends IActionResultExecutor_1$instance<ContentResult> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Infrastructure_ContentResultExecutor: never;
@@ -432,7 +434,7 @@ export interface FileResultExecutorBase$instance {
 export const FileResultExecutorBase: {
     new(logger: ILogger): FileResultExecutorBase;
     readonly BufferSize: int;
-    CreateLogger<T>(factory: ILoggerFactory): ILogger;
+    CreateLogger<T extends unknown>(factory: ILoggerFactory): ILogger;
     WriteFileAsync(context: HttpContext, fileStream: Stream, range: RangeItemHeaderValue | null, rangeLength: long): Task;
 };
 
@@ -482,7 +484,7 @@ export interface __LocalRedirectResultExecutor$views {
 export type LocalRedirectResultExecutor = LocalRedirectResultExecutor$instance & __LocalRedirectResultExecutor$views;
 
 
-export interface ModelStateInvalidFilter$instance extends IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IActionFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IOrderedFilter$instance {
+export interface ModelStateInvalidFilter$instance extends Microsoft_AspNetCore_Mvc_Filters_Internal.IActionFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IOrderedFilter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Infrastructure_ModelStateInvalidFilter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IActionFilter: never;

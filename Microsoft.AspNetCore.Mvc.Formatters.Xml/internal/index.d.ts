@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Formatters.Xml
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -24,7 +24,7 @@ import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, String as
 export interface IUnwrappable$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable: never;
 
-    Unwrap(declaredType: Type): JsValue;
+    Unwrap(declaredType: Type): unknown;
 }
 
 
@@ -34,7 +34,7 @@ export interface IWrapperProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider: never;
 
     readonly WrappingType: Type;
-    Wrap(original: JsValue | null): JsValue | null;
+    Wrap(original: unknown | null): unknown | null;
 }
 
 
@@ -49,26 +49,26 @@ export interface IWrapperProviderFactory$instance {
 
 export type IWrapperProviderFactory = IWrapperProviderFactory$instance;
 
-export interface DelegatingEnumerable_2$instance<TWrapped, TDeclared> {
+export interface DelegatingEnumerable_2$instance<TWrapped extends unknown, TDeclared extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_Xml_DelegatingEnumerable_2: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    Add(item: JsValue): void;
+    Add(item: unknown): void;
     GetEnumerator(): IEnumerator_1<TWrapped>;
 }
 
 
 export const DelegatingEnumerable_2: {
-    new<TWrapped, TDeclared>(): DelegatingEnumerable_2<TWrapped, TDeclared>;
-    new<TWrapped, TDeclared>(source: IEnumerable_1<TDeclared>, elementWrapperProvider: IWrapperProvider): DelegatingEnumerable_2<TWrapped, TDeclared>;
+    new<TWrapped extends unknown, TDeclared extends unknown>(): DelegatingEnumerable_2<TWrapped, TDeclared>;
+    new<TWrapped extends unknown, TDeclared extends unknown>(source: IEnumerable_1<TDeclared>, elementWrapperProvider: IWrapperProvider): DelegatingEnumerable_2<TWrapped, TDeclared>;
 };
 
 
-export type DelegatingEnumerable_2<TWrapped, TDeclared> = DelegatingEnumerable_2$instance<TWrapped, TDeclared>;
+export type DelegatingEnumerable_2<TWrapped extends unknown, TDeclared extends unknown> = DelegatingEnumerable_2$instance<TWrapped, TDeclared>;
 
-export interface DelegatingEnumerator_2$instance<TWrapped, TDeclared> {
+export interface DelegatingEnumerator_2$instance<TWrapped extends unknown, TDeclared extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_Xml_DelegatingEnumerator_2: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
@@ -83,11 +83,11 @@ export interface DelegatingEnumerator_2$instance<TWrapped, TDeclared> {
 
 
 export const DelegatingEnumerator_2: {
-    new<TWrapped, TDeclared>(inner: IEnumerator_1<TDeclared>, wrapperProvider: IWrapperProvider | null): DelegatingEnumerator_2<TWrapped, TDeclared>;
+    new<TWrapped extends unknown, TDeclared extends unknown>(inner: IEnumerator_1<TDeclared>, wrapperProvider: IWrapperProvider | null): DelegatingEnumerator_2<TWrapped, TDeclared>;
 };
 
 
-export type DelegatingEnumerator_2<TWrapped, TDeclared> = DelegatingEnumerator_2$instance<TWrapped, TDeclared>;
+export type DelegatingEnumerator_2<TWrapped extends unknown, TDeclared extends unknown> = DelegatingEnumerator_2$instance<TWrapped, TDeclared>;
 
 export interface EnumerableWrapperProvider$instance extends IWrapperProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_Xml_EnumerableWrapperProvider: never;
@@ -95,7 +95,7 @@ export interface EnumerableWrapperProvider$instance extends IWrapperProvider$ins
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider: never;
 
     readonly WrappingType: Type;
-    Wrap(original: JsValue | null): JsValue | null;
+    Wrap(original: unknown | null): unknown | null;
 }
 
 
@@ -184,7 +184,7 @@ export interface SerializableErrorWrapper$instance extends IUnwrappable$instance
     readonly SerializableError: SerializableError;
     GetSchema(): XmlSchema | null;
     ReadXml(reader: XmlReader): void;
-    Unwrap(declaredType: Type): JsValue;
+    Unwrap(declaredType: Type): unknown;
     WriteXml(writer: XmlWriter): void;
 }
 
@@ -208,7 +208,7 @@ export interface SerializableErrorWrapperProvider$instance extends IWrapperProvi
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider: never;
 
     readonly WrappingType: Type;
-    Wrap(original: JsValue | null): JsValue | null;
+    Wrap(original: unknown | null): unknown | null;
 }
 
 

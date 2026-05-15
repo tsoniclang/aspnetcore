@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Components.Web
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -18,7 +18,7 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action, AsyncCallback, Boolean as ClrBoolean, Exception, Func_1, IAsyncDisposable, IAsyncResult, ICloneable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, Single, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export type ItemsProviderDelegate_1<TItem> = (request: ItemsProviderRequest) => ValueTask_1<ItemsProviderResult_1<TItem>>;
+export type ItemsProviderDelegate_1<TItem extends unknown> = (request: ItemsProviderRequest) => ValueTask_1<ItemsProviderResult_1<TItem>>;
 
 
 export interface ItemsProviderRequest$instance {
@@ -37,7 +37,7 @@ export const ItemsProviderRequest: {
 
 export type ItemsProviderRequest = ItemsProviderRequest$instance;
 
-export interface ItemsProviderResult_1$instance<TItem> {
+export interface ItemsProviderResult_1$instance<TItem extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderResult_1: never;
 
     readonly Items: IEnumerable_1<TItem>;
@@ -46,11 +46,11 @@ export interface ItemsProviderResult_1$instance<TItem> {
 
 
 export const ItemsProviderResult_1: {
-    new<TItem>(items: IEnumerable_1<TItem>, totalItemCount: int): ItemsProviderResult_1<TItem>;
+    new<TItem extends unknown>(items: IEnumerable_1<TItem>, totalItemCount: int): ItemsProviderResult_1<TItem>;
 };
 
 
-export type ItemsProviderResult_1<TItem> = ItemsProviderResult_1$instance<TItem>;
+export type ItemsProviderResult_1<TItem extends unknown> = ItemsProviderResult_1$instance<TItem>;
 
 export interface PlaceholderContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_PlaceholderContext: never;
@@ -67,7 +67,7 @@ export const PlaceholderContext: {
 
 export type PlaceholderContext = PlaceholderContext$instance;
 
-export interface Virtualize_1$instance<TItem> extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IAsyncDisposable {
+export interface Virtualize_1$instance<TItem extends unknown> extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IAsyncDisposable {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -101,16 +101,16 @@ export interface Virtualize_1$instance<TItem> extends ComponentBase, Microsoft_A
 
 
 export const Virtualize_1: {
-    new<TItem>(): Virtualize_1<TItem>;
+    new<TItem extends unknown>(): Virtualize_1<TItem>;
 };
 
 
-export interface __Virtualize_1$views<TItem> {
+export interface __Virtualize_1$views<TItem extends unknown> {
     As_IComponent(): Microsoft_AspNetCore_Components_Internal.IComponent$instance;
     As_IHandleAfterRender(): Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance;
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export type Virtualize_1<TItem> = Virtualize_1$instance<TItem> & __Virtualize_1$views<TItem>;
+export type Virtualize_1<TItem extends unknown> = Virtualize_1$instance<TItem> & __Virtualize_1$views<TItem>;
 
 

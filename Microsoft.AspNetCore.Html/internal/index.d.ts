@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Html.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -46,6 +46,8 @@ export interface IHtmlContentBuilder$instance extends IHtmlContentContainer, IHt
 }
 
 
+export interface IHtmlContentBuilder$instance extends IHtmlContentContainer$instance {}
+
 export type IHtmlContentBuilder = IHtmlContentBuilder$instance;
 
 export interface IHtmlContentContainer$instance extends IHtmlContent {
@@ -81,7 +83,7 @@ export interface HtmlContentBuilder$instance {
 export const HtmlContentBuilder: {
     new(): HtmlContentBuilder;
     new(capacity: int): HtmlContentBuilder;
-    new(entries: IList_1<JsValue>): HtmlContentBuilder;
+    new(entries: IList_1<unknown>): HtmlContentBuilder;
 };
 
 
@@ -104,8 +106,8 @@ export interface HtmlFormattableString$instance extends IHtmlContent$instance {
 
 
 export const HtmlFormattableString: {
-    new(format: string, args: (JsValue | null)[]): HtmlFormattableString;
-    new(formatProvider: IFormatProvider | null, format: string, args: (JsValue | null)[]): HtmlFormattableString;
+    new(format: string, args: (unknown | null)[]): HtmlFormattableString;
+    new(formatProvider: IFormatProvider | null, format: string, args: (unknown | null)[]): HtmlFormattableString;
 };
 
 
@@ -142,8 +144,8 @@ export type HtmlString = HtmlString$instance & __HtmlString$views;
 
 
 export abstract class HtmlContentBuilderExtensions$instance {
-    static AppendFormat(builder: IHtmlContentBuilder, formatProvider: IFormatProvider, format: string, ...args: (JsValue | null)[]): IHtmlContentBuilder;
-    static AppendFormat(builder: IHtmlContentBuilder, format: string, ...args: (JsValue | null)[]): IHtmlContentBuilder;
+    static AppendFormat(builder: IHtmlContentBuilder, formatProvider: IFormatProvider, format: string, ...args: (unknown | null)[]): IHtmlContentBuilder;
+    static AppendFormat(builder: IHtmlContentBuilder, format: string, ...args: (unknown | null)[]): IHtmlContentBuilder;
     static AppendHtmlLine(builder: IHtmlContentBuilder, encoded: string): IHtmlContentBuilder;
     static AppendLine(builder: IHtmlContentBuilder, content: IHtmlContent): IHtmlContentBuilder;
     static AppendLine(builder: IHtmlContentBuilder, unencoded: string): IHtmlContentBuilder;

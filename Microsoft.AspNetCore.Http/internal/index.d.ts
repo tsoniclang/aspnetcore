@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Hosting, Microsoft.AspNetCore.Http, Microsoft.AspNetCore.Http.Abstractions, Microsoft.AspNetCore.Http.Extensions, Microsoft.AspNetCore.Http.Features, Microsoft.AspNetCore.Http.Results, Microsoft.AspNetCore.Routing
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -62,19 +62,19 @@ export enum SameSiteMode {
 }
 
 
-export type EndpointFilterDelegate = (context: EndpointFilterInvocationContext) => ValueTask_1<JsValue>;
+export type EndpointFilterDelegate = (context: EndpointFilterInvocationContext) => ValueTask_1<unknown>;
 
 
 export type RequestDelegate = (context: HttpContext) => Task;
 
 
-export interface IBindableFromHttpContext_1$instance<TSelf extends IBindableFromHttpContext_1<TSelf>> {
+export interface IBindableFromHttpContext_1$instance<TSelf extends (object | null) & IBindableFromHttpContext_1<TSelf>> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IBindableFromHttpContext_1: never;
 
 }
 
 
-export type IBindableFromHttpContext_1<TSelf extends IBindableFromHttpContext_1<TSelf>> = IBindableFromHttpContext_1$instance<TSelf>;
+export type IBindableFromHttpContext_1<TSelf extends (object | null) & IBindableFromHttpContext_1<TSelf>> = IBindableFromHttpContext_1$instance<TSelf>;
 
 export interface IContentTypeHttpResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
@@ -88,7 +88,7 @@ export type IContentTypeHttpResult = IContentTypeHttpResult$instance;
 export interface IEndpointFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IEndpointFilter: never;
 
-    InvokeAsync(context: EndpointFilterInvocationContext, next: EndpointFilterDelegate): ValueTask_1<JsValue>;
+    InvokeAsync(context: EndpointFilterInvocationContext, next: EndpointFilterDelegate): ValueTask_1<unknown>;
 }
 
 
@@ -403,20 +403,20 @@ export type IStatusCodeHttpResult = IStatusCodeHttpResult$instance;
 export interface IValueHttpResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult: never;
 
-    readonly Value: JsValue | null;
+    readonly Value: unknown | null;
 }
 
 
 export type IValueHttpResult = IValueHttpResult$instance;
 
-export interface IValueHttpResult_1$instance<TValue> {
+export interface IValueHttpResult_1$instance<TValue extends unknown> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult_1: never;
 
     readonly Value: TValue | null;
 }
 
 
-export type IValueHttpResult_1<TValue> = IValueHttpResult_1$instance<TValue>;
+export type IValueHttpResult_1<TValue extends unknown> = IValueHttpResult_1$instance<TValue>;
 
 export interface FragmentString$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_FragmentString: never;
@@ -426,7 +426,7 @@ export interface FragmentString$instance {
     readonly HasValue: boolean;
     readonly Value: string;
     Equals(other: FragmentString): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
     ToUriComponent(): string;
@@ -453,7 +453,7 @@ export interface HostString$instance {
     readonly Port: Nullable_1<System_Internal.Int32>;
     readonly Value: string | null;
     Equals(other: HostString): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
     ToUriComponent(): string;
@@ -482,7 +482,7 @@ export interface PathString$instance {
     Add(other: QueryString): string;
     Equals(other: PathString): boolean;
     Equals(other: PathString, comparisonType: StringComparison): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     StartsWithSegments(other: PathString): boolean;
     StartsWithSegments(other: PathString, comparisonType: StringComparison): boolean;
@@ -515,7 +515,7 @@ export interface QueryString$instance {
     Add(other: QueryString): QueryString;
     Add(name: string, value: string): QueryString;
     Equals(other: QueryString): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
     ToUriComponent(): string;
@@ -593,7 +593,7 @@ export interface BindingAddress$instance {
     readonly Port: int;
     readonly Scheme: string;
     readonly UnixPipePath: string;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -691,14 +691,14 @@ export type CookieOptions = CookieOptions$instance;
 export interface DefaultEndpointFilterInvocationContext$instance extends EndpointFilterInvocationContext {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_DefaultEndpointFilterInvocationContext: never;
 
-    readonly Arguments: IList_1<JsValue | null>;
+    readonly Arguments: IList_1<unknown | null>;
     readonly HttpContext: HttpContext;
-    GetArgument<T>(index: int): T;
+    GetArgument<T extends unknown>(index: int): T;
 }
 
 
 export const DefaultEndpointFilterInvocationContext: {
-    new(httpContext: HttpContext, arguments: (JsValue | null)[]): DefaultEndpointFilterInvocationContext;
+    new(httpContext: HttpContext, arguments: (unknown | null)[]): DefaultEndpointFilterInvocationContext;
 };
 
 
@@ -711,7 +711,7 @@ export interface DefaultHttpContext$instance extends HttpContext {
     readonly Features: IFeatureCollection;
     FormOptions: FormOptions;
     readonly HttpContext: HttpContext;
-    Items: IDictionary_2<JsValue, JsValue | null>;
+    Items: IDictionary_2<unknown, unknown | null>;
     readonly Request: HttpRequest;
     RequestAborted: CancellationToken;
     RequestServices: IServiceProvider;
@@ -830,21 +830,21 @@ export type EndpointFilterFactoryContext = EndpointFilterFactoryContext$instance
 export interface EndpointFilterInvocationContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_EndpointFilterInvocationContext: never;
 
-    readonly Arguments: IList_1<JsValue | null>;
+    readonly Arguments: IList_1<unknown | null>;
     readonly HttpContext: HttpContext;
-    GetArgument<T>(index: int): T;
+    GetArgument<T extends unknown>(index: int): T;
 }
 
 
 export const EndpointFilterInvocationContext: (abstract new() => EndpointFilterInvocationContext) & {
-    Create<T>(httpContext: HttpContext, arg: T): EndpointFilterInvocationContext;
-    Create<T1, T2, T3, T4, T5, T6, T7, T8>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6, arg7: T7, arg8: T8): EndpointFilterInvocationContext;
-    Create<T1, T2, T3, T4, T5, T6, T7>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6, arg7: T7): EndpointFilterInvocationContext;
-    Create<T1, T2, T3, T4, T5, T6>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6): EndpointFilterInvocationContext;
-    Create<T1, T2, T3, T4, T5>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5): EndpointFilterInvocationContext;
-    Create<T1, T2, T3, T4>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4): EndpointFilterInvocationContext;
-    Create<T1, T2, T3>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3): EndpointFilterInvocationContext;
-    Create<T1, T2>(httpContext: HttpContext, arg1: T1, arg2: T2): EndpointFilterInvocationContext;
+    Create<T extends unknown>(httpContext: HttpContext, arg: T): EndpointFilterInvocationContext;
+    Create<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6, arg7: T7, arg8: T8): EndpointFilterInvocationContext;
+    Create<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6, arg7: T7): EndpointFilterInvocationContext;
+    Create<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6): EndpointFilterInvocationContext;
+    Create<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5): EndpointFilterInvocationContext;
+    Create<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4): EndpointFilterInvocationContext;
+    Create<T1 extends unknown, T2 extends unknown, T3 extends unknown>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3): EndpointFilterInvocationContext;
+    Create<T1 extends unknown, T2 extends unknown>(httpContext: HttpContext, arg1: T1, arg2: T2): EndpointFilterInvocationContext;
     Create(httpContext: HttpContext): EndpointFilterInvocationContext;
 };
 
@@ -861,20 +861,20 @@ export interface EndpointMetadataCollection$instance {
 
     readonly Count: int;
     GetEnumerator(): EndpointMetadataCollection_Enumerator;
-    GetMetadata<T>(): T | null;
-    GetOrderedMetadata<T>(): IReadOnlyList_1<T>;
-    GetRequiredMetadata<T>(): T;
+    GetMetadata<T extends (object | null)>(): T | null;
+    GetOrderedMetadata<T extends (object | null)>(): IReadOnlyList_1<T>;
+    GetRequiredMetadata<T extends (object | null)>(): T;
 }
 
 
 export const EndpointMetadataCollection: {
-    new(items: IEnumerable_1<JsValue>): EndpointMetadataCollection;
-    new(items: JsValue[]): EndpointMetadataCollection;
+    new(items: IEnumerable_1<unknown>): EndpointMetadataCollection;
+    new(items: unknown[]): EndpointMetadataCollection;
     readonly Empty: EndpointMetadataCollection;
 };
 
 
-export type EndpointMetadataCollection = EndpointMetadataCollection$instance & { readonly [index: number]: JsValue; };
+export type EndpointMetadataCollection = EndpointMetadataCollection$instance & { readonly [index: number]: unknown; };
 
 export interface EndpointMetadataCollection_Enumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_EndpointMetadataCollection_Enumerator: never;
@@ -883,7 +883,7 @@ export interface EndpointMetadataCollection_Enumerator$instance {
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Current: JsValue;
+    readonly Current: unknown;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -958,6 +958,7 @@ export interface FormCollection_Enumerator$instance {
     readonly Current: KeyValuePair_2<System_Internal.String, StringValues>;
     Dispose(): void;
     MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -1079,6 +1080,7 @@ export interface HeaderDictionary_Enumerator$instance {
     readonly Current: KeyValuePair_2<System_Internal.String, StringValues>;
     Dispose(): void;
     MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -1094,7 +1096,7 @@ export interface HttpContext$instance {
 
     readonly Connection: ConnectionInfo;
     readonly Features: IFeatureCollection;
-    Items: IDictionary_2<JsValue, JsValue | null>;
+    Items: IDictionary_2<unknown, unknown | null>;
     readonly Request: HttpRequest;
     RequestAborted: CancellationToken;
     RequestServices: IServiceProvider;
@@ -1184,9 +1186,9 @@ export interface HttpResponse$instance {
     readonly HttpContext: HttpContext;
     StatusCode: int;
     CompleteAsync(): Task;
-    OnCompleted(callback: Func_2<JsValue, Task>, state: JsValue): void;
+    OnCompleted(callback: Func_2<unknown, Task>, state: unknown): void;
     OnCompleted(callback: Func_1<Task>): void;
-    OnStarting(callback: Func_2<JsValue, Task>, state: JsValue): void;
+    OnStarting(callback: Func_2<unknown, Task>, state: unknown): void;
     OnStarting(callback: Func_1<Task>): void;
     Redirect(location: string): void;
     Redirect(location: string, permanent: boolean): void;
@@ -1342,6 +1344,7 @@ export interface QueryCollection_Enumerator$instance {
     readonly Current: KeyValuePair_2<System_Internal.String, StringValues>;
     Dispose(): void;
     MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -1376,7 +1379,7 @@ export type RequestDelegateFactoryOptions = RequestDelegateFactoryOptions$instan
 export interface RequestDelegateMetadataResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_RequestDelegateMetadataResult: never;
 
-    EndpointMetadata: IReadOnlyList_1<JsValue>;
+    EndpointMetadata: IReadOnlyList_1<unknown>;
 }
 
 
@@ -1390,13 +1393,13 @@ export type RequestDelegateMetadataResult = RequestDelegateMetadataResult$instan
 export interface RequestDelegateResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_RequestDelegateResult: never;
 
-    readonly EndpointMetadata: IReadOnlyList_1<JsValue>;
+    readonly EndpointMetadata: IReadOnlyList_1<unknown>;
     readonly RequestDelegate: RequestDelegate;
 }
 
 
 export const RequestDelegateResult: {
-    new(requestDelegate: RequestDelegate, metadata: IReadOnlyList_1<JsValue>): RequestDelegateResult;
+    new(requestDelegate: RequestDelegate, metadata: IReadOnlyList_1<unknown>): RequestDelegateResult;
 };
 
 
@@ -1493,12 +1496,12 @@ export const WebSocketManager: (abstract new() => WebSocketManager) & {
 export type WebSocketManager = WebSocketManager$instance;
 
 export abstract class EndpointFilterExtensions$instance {
-    static AddEndpointFilter<TFilterType extends IEndpointFilter>(builder: RouteHandlerBuilder): RouteHandlerBuilder;
-    static AddEndpointFilter<TFilterType extends IEndpointFilter>(builder: RouteGroupBuilder): RouteGroupBuilder;
-    static AddEndpointFilter<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, filter: IEndpointFilter): TBuilder;
-    static AddEndpointFilter<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, routeHandlerFilter: Func_3<EndpointFilterInvocationContext, EndpointFilterDelegate, ValueTask_1<JsValue>>): TBuilder;
-    static AddEndpointFilter<TBuilder extends IEndpointConventionBuilder, TFilterType extends IEndpointFilter>(builder: TBuilder): TBuilder;
-    static AddEndpointFilterFactory<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, filterFactory: Func_3<EndpointFilterFactoryContext, EndpointFilterDelegate, EndpointFilterDelegate>): TBuilder;
+    static AddEndpointFilter<TFilterType extends unknown & IEndpointFilter>(builder: RouteHandlerBuilder): RouteHandlerBuilder;
+    static AddEndpointFilter<TFilterType extends unknown & IEndpointFilter>(builder: RouteGroupBuilder): RouteGroupBuilder;
+    static AddEndpointFilter<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, filter: IEndpointFilter): TBuilder;
+    static AddEndpointFilter<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, routeHandlerFilter: Func_3<EndpointFilterInvocationContext, EndpointFilterDelegate, ValueTask_1<unknown>>): TBuilder;
+    static AddEndpointFilter<TBuilder extends unknown & IEndpointConventionBuilder, TFilterType extends unknown & IEndpointFilter>(builder: TBuilder): TBuilder;
+    static AddEndpointFilterFactory<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, filterFactory: Func_3<EndpointFilterFactoryContext, EndpointFilterDelegate, EndpointFilterDelegate>): TBuilder;
 }
 
 
@@ -1523,7 +1526,7 @@ export abstract class HeaderDictionaryExtensions$instance {
 export type HeaderDictionaryExtensions = HeaderDictionaryExtensions$instance;
 
 export abstract class HeaderDictionaryTypeExtensions$instance {
-    static AppendList<T>(Headers: IHeaderDictionary, name: string, values: IList_1<T>): void;
+    static AppendList<T extends unknown>(Headers: IHeaderDictionary, name: string, values: IList_1<T>): void;
     static GetTypedHeaders(request: HttpRequest): RequestHeaders;
     static GetTypedHeaders(response: HttpResponse): ResponseHeaders;
 }
@@ -1585,13 +1588,13 @@ export type HttpProtocol = HttpProtocol$instance;
 
 export abstract class HttpRequestJsonExtensions$instance {
     static HasJsonContentType(request: HttpRequest): boolean;
-    static ReadFromJsonAsync<TValue>(request: HttpRequest, jsonTypeInfo: JsonTypeInfo_1<TValue>, cancellationToken?: CancellationToken): ValueTask_1<TValue>;
-    static ReadFromJsonAsync<TValue>(request: HttpRequest, options: JsonSerializerOptions | null, cancellationToken?: CancellationToken): ValueTask_1<TValue>;
-    static ReadFromJsonAsync(request: HttpRequest, jsonTypeInfo: JsonTypeInfo, cancellationToken?: CancellationToken): ValueTask_1<JsValue>;
-    static ReadFromJsonAsync<TValue>(request: HttpRequest, cancellationToken?: CancellationToken): ValueTask_1<TValue>;
-    static ReadFromJsonAsync(request: HttpRequest, type: Type, options: JsonSerializerOptions | null, cancellationToken?: CancellationToken): ValueTask_1<JsValue>;
-    static ReadFromJsonAsync(request: HttpRequest, type: Type, context: JsonSerializerContext, cancellationToken?: CancellationToken): ValueTask_1<JsValue>;
-    static ReadFromJsonAsync(request: HttpRequest, type: Type, cancellationToken?: CancellationToken): ValueTask_1<JsValue>;
+    static ReadFromJsonAsync<TValue extends unknown>(request: HttpRequest, jsonTypeInfo: JsonTypeInfo_1<TValue>, cancellationToken?: CancellationToken): ValueTask_1<TValue>;
+    static ReadFromJsonAsync<TValue extends unknown>(request: HttpRequest, options: JsonSerializerOptions | null, cancellationToken?: CancellationToken): ValueTask_1<TValue>;
+    static ReadFromJsonAsync(request: HttpRequest, jsonTypeInfo: JsonTypeInfo, cancellationToken?: CancellationToken): ValueTask_1<unknown>;
+    static ReadFromJsonAsync<TValue extends unknown>(request: HttpRequest, cancellationToken?: CancellationToken): ValueTask_1<TValue>;
+    static ReadFromJsonAsync(request: HttpRequest, type: Type, options: JsonSerializerOptions | null, cancellationToken?: CancellationToken): ValueTask_1<unknown>;
+    static ReadFromJsonAsync(request: HttpRequest, type: Type, context: JsonSerializerContext, cancellationToken?: CancellationToken): ValueTask_1<unknown>;
+    static ReadFromJsonAsync(request: HttpRequest, type: Type, cancellationToken?: CancellationToken): ValueTask_1<unknown>;
 }
 
 
@@ -1608,15 +1611,15 @@ export abstract class HttpRequestRewindExtensions$instance {
 export type HttpRequestRewindExtensions = HttpRequestRewindExtensions$instance;
 
 export abstract class HttpResponseJsonExtensions$instance {
-    static WriteAsJsonAsync(response: HttpResponse, value: JsValue | null, jsonTypeInfo: JsonTypeInfo, contentType?: string | null, cancellationToken?: CancellationToken): Task;
-    static WriteAsJsonAsync(response: HttpResponse, value: JsValue | null, type: Type, options: JsonSerializerOptions | null, contentType: string | null, cancellationToken?: CancellationToken): Task;
-    static WriteAsJsonAsync(response: HttpResponse, value: JsValue | null, type: Type, options: JsonSerializerOptions | null, cancellationToken?: CancellationToken): Task;
-    static WriteAsJsonAsync(response: HttpResponse, value: JsValue | null, type: Type, context: JsonSerializerContext, contentType?: string | null, cancellationToken?: CancellationToken): Task;
-    static WriteAsJsonAsync(response: HttpResponse, value: JsValue | null, type: Type, cancellationToken?: CancellationToken): Task;
-    static WriteAsJsonAsync<TValue>(response: HttpResponse, value: TValue, jsonTypeInfo: JsonTypeInfo_1<TValue>, contentType?: string | null, cancellationToken?: CancellationToken): Task;
-    static WriteAsJsonAsync<TValue>(response: HttpResponse, value: TValue, options: JsonSerializerOptions | null, contentType: string | null, cancellationToken?: CancellationToken): Task;
-    static WriteAsJsonAsync<TValue>(response: HttpResponse, value: TValue, options: JsonSerializerOptions | null, cancellationToken?: CancellationToken): Task;
-    static WriteAsJsonAsync<TValue>(response: HttpResponse, value: TValue, cancellationToken?: CancellationToken): Task;
+    static WriteAsJsonAsync(response: HttpResponse, value: unknown | null, jsonTypeInfo: JsonTypeInfo, contentType?: string | null, cancellationToken?: CancellationToken): Task;
+    static WriteAsJsonAsync(response: HttpResponse, value: unknown | null, type: Type, options: JsonSerializerOptions | null, contentType: string | null, cancellationToken?: CancellationToken): Task;
+    static WriteAsJsonAsync(response: HttpResponse, value: unknown | null, type: Type, options: JsonSerializerOptions | null, cancellationToken?: CancellationToken): Task;
+    static WriteAsJsonAsync(response: HttpResponse, value: unknown | null, type: Type, context: JsonSerializerContext, contentType?: string | null, cancellationToken?: CancellationToken): Task;
+    static WriteAsJsonAsync(response: HttpResponse, value: unknown | null, type: Type, cancellationToken?: CancellationToken): Task;
+    static WriteAsJsonAsync<TValue extends unknown>(response: HttpResponse, value: TValue, jsonTypeInfo: JsonTypeInfo_1<TValue>, contentType?: string | null, cancellationToken?: CancellationToken): Task;
+    static WriteAsJsonAsync<TValue extends unknown>(response: HttpResponse, value: TValue, options: JsonSerializerOptions | null, contentType: string | null, cancellationToken?: CancellationToken): Task;
+    static WriteAsJsonAsync<TValue extends unknown>(response: HttpResponse, value: TValue, options: JsonSerializerOptions | null, cancellationToken?: CancellationToken): Task;
+    static WriteAsJsonAsync<TValue extends unknown>(response: HttpResponse, value: TValue, cancellationToken?: CancellationToken): Task;
 }
 
 
@@ -1631,22 +1634,22 @@ export abstract class HttpResponseWritingExtensions$instance {
 export type HttpResponseWritingExtensions = HttpResponseWritingExtensions$instance;
 
 export abstract class OpenApiRouteHandlerBuilderExtensions$instance {
-    static Accepts<TRequest>(builder: RouteHandlerBuilder, isOptional: boolean, contentType: string, ...additionalContentTypes: string[]): RouteHandlerBuilder;
-    static Accepts<TRequest>(builder: RouteHandlerBuilder, contentType: string, ...additionalContentTypes: string[]): RouteHandlerBuilder;
+    static Accepts<TRequest extends unknown>(builder: RouteHandlerBuilder, isOptional: boolean, contentType: string, ...additionalContentTypes: string[]): RouteHandlerBuilder;
+    static Accepts<TRequest extends unknown>(builder: RouteHandlerBuilder, contentType: string, ...additionalContentTypes: string[]): RouteHandlerBuilder;
     static Accepts(builder: RouteHandlerBuilder, requestType: Type, isOptional: boolean, contentType: string, ...additionalContentTypes: string[]): RouteHandlerBuilder;
     static Accepts(builder: RouteHandlerBuilder, requestType: Type, contentType: string, ...additionalContentTypes: string[]): RouteHandlerBuilder;
     static ExcludeFromDescription(builder: RouteHandlerBuilder): RouteHandlerBuilder;
-    static ExcludeFromDescription<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
-    static Produces<TResponse>(builder: RouteHandlerBuilder, statusCode?: int, contentType?: string | null, ...additionalContentTypes: string[]): RouteHandlerBuilder;
+    static ExcludeFromDescription<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
+    static Produces<TResponse extends unknown>(builder: RouteHandlerBuilder, statusCode?: int, contentType?: string | null, ...additionalContentTypes: string[]): RouteHandlerBuilder;
     static Produces(builder: RouteHandlerBuilder, statusCode: int, responseType?: Type | null, contentType?: string | null, ...additionalContentTypes: string[]): RouteHandlerBuilder;
     static ProducesProblem(builder: RouteHandlerBuilder, statusCode: int, contentType?: string | null): RouteHandlerBuilder;
-    static ProducesProblem<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, statusCode: int, contentType?: string | null): TBuilder;
+    static ProducesProblem<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, statusCode: int, contentType?: string | null): TBuilder;
     static ProducesValidationProblem(builder: RouteHandlerBuilder, statusCode?: int, contentType?: string | null): RouteHandlerBuilder;
-    static ProducesValidationProblem<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, statusCode?: int, contentType?: string | null): TBuilder;
-    static WithDescription<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, description: string): TBuilder;
-    static WithSummary<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, summary: string): TBuilder;
+    static ProducesValidationProblem<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, statusCode?: int, contentType?: string | null): TBuilder;
+    static WithDescription<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, description: string): TBuilder;
+    static WithSummary<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, summary: string): TBuilder;
     static WithTags(builder: RouteHandlerBuilder, ...tags: string[]): RouteHandlerBuilder;
-    static WithTags<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, ...tags: string[]): TBuilder;
+    static WithTags<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, ...tags: string[]): TBuilder;
 }
 
 
@@ -1655,8 +1658,8 @@ export type OpenApiRouteHandlerBuilderExtensions = OpenApiRouteHandlerBuilderExt
 export abstract class RequestDelegateFactory$instance {
     static Create(handler: Function, options?: RequestDelegateFactoryOptions | null, metadataResult?: RequestDelegateMetadataResult | null): RequestDelegateResult;
     static Create(handler: Function, options: RequestDelegateFactoryOptions | null): RequestDelegateResult;
-    static Create(methodInfo: MethodInfo, targetFactory?: Func_2<HttpContext, JsValue> | null, options?: RequestDelegateFactoryOptions | null, metadataResult?: RequestDelegateMetadataResult | null): RequestDelegateResult;
-    static Create(methodInfo: MethodInfo, targetFactory: Func_2<HttpContext, JsValue> | null, options: RequestDelegateFactoryOptions | null): RequestDelegateResult;
+    static Create(methodInfo: MethodInfo, targetFactory?: Func_2<HttpContext, unknown> | null, options?: RequestDelegateFactoryOptions | null, metadataResult?: RequestDelegateMetadataResult | null): RequestDelegateResult;
+    static Create(methodInfo: MethodInfo, targetFactory: Func_2<HttpContext, unknown> | null, options: RequestDelegateFactoryOptions | null): RequestDelegateResult;
     static InferMetadata(methodInfo: MethodInfo, options?: RequestDelegateFactoryOptions | null): RequestDelegateMetadataResult;
 }
 
@@ -1700,57 +1703,57 @@ export type ResponseTrailerExtensions = ResponseTrailerExtensions$instance;
 export abstract class Results$instance {
     static readonly Empty: IResult;
     static readonly Extensions: IResultExtensions;
-    static Accepted(uri?: string | null, value?: JsValue | null): IResult;
-    static Accepted<TValue>(uri?: string | null, value?: TValue | null): IResult;
-    static AcceptedAtRoute(routeName: string | null, routeValues: RouteValueDictionary | null, value?: JsValue | null): IResult;
-    static AcceptedAtRoute<TValue>(routeName: string | null, routeValues: RouteValueDictionary | null, value?: TValue | null): IResult;
-    static AcceptedAtRoute(routeName?: string | null, routeValues?: JsValue | null, value?: JsValue | null): IResult;
-    static AcceptedAtRoute<TValue>(routeName?: string | null, routeValues?: JsValue | null, value?: TValue | null): IResult;
-    static BadRequest(error?: JsValue | null): IResult;
-    static BadRequest<TValue>(error: TValue | null): IResult;
+    static Accepted(uri?: string | null, value?: unknown | null): IResult;
+    static Accepted<TValue extends unknown>(uri?: string | null, value?: TValue | null): IResult;
+    static AcceptedAtRoute(routeName: string | null, routeValues: RouteValueDictionary | null, value?: unknown | null): IResult;
+    static AcceptedAtRoute<TValue extends unknown>(routeName: string | null, routeValues: RouteValueDictionary | null, value?: TValue | null): IResult;
+    static AcceptedAtRoute(routeName?: string | null, routeValues?: unknown | null, value?: unknown | null): IResult;
+    static AcceptedAtRoute<TValue extends unknown>(routeName?: string | null, routeValues?: unknown | null, value?: TValue | null): IResult;
+    static BadRequest(error?: unknown | null): IResult;
+    static BadRequest<TValue extends unknown>(error: TValue | null): IResult;
     static Bytes(contents: byte[], contentType?: string | null, fileDownloadName?: string | null, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue | null): IResult;
     static Bytes(contents: ReadOnlyMemory_1<System_Internal.Byte>, contentType?: string | null, fileDownloadName?: string | null, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue | null): IResult;
     static Challenge(properties?: AuthenticationProperties | null, authenticationSchemes?: IList_1<System_Internal.String> | null): IResult;
-    static Conflict(error?: JsValue | null): IResult;
-    static Conflict<TValue>(error: TValue | null): IResult;
+    static Conflict(error?: unknown | null): IResult;
+    static Conflict<TValue extends unknown>(error: TValue | null): IResult;
     static Content(content: string | null, contentType: MediaTypeHeaderValue): IResult;
     static Content(content: string | null, contentType?: string | null, contentEncoding?: Encoding | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
     static Content(content: string | null, contentType: string | null, contentEncoding: Encoding | null): IResult;
     static Created(): IResult;
-    static Created(uri: string | null, value: JsValue | null): IResult;
-    static Created<TValue>(uri: string | null, value: TValue | null): IResult;
-    static Created(uri: Uri | null, value: JsValue | null): IResult;
-    static Created<TValue>(uri: Uri | null, value: TValue | null): IResult;
-    static CreatedAtRoute(routeName: string | null, routeValues: RouteValueDictionary | null, value?: JsValue | null): IResult;
-    static CreatedAtRoute<TValue>(routeName: string | null, routeValues: RouteValueDictionary | null, value?: TValue | null): IResult;
-    static CreatedAtRoute(routeName?: string | null, routeValues?: JsValue | null, value?: JsValue | null): IResult;
-    static CreatedAtRoute<TValue>(routeName?: string | null, routeValues?: JsValue | null, value?: TValue | null): IResult;
+    static Created(uri: string | null, value: unknown | null): IResult;
+    static Created<TValue extends unknown>(uri: string | null, value: TValue | null): IResult;
+    static Created(uri: Uri | null, value: unknown | null): IResult;
+    static Created<TValue extends unknown>(uri: Uri | null, value: TValue | null): IResult;
+    static CreatedAtRoute(routeName: string | null, routeValues: RouteValueDictionary | null, value?: unknown | null): IResult;
+    static CreatedAtRoute<TValue extends unknown>(routeName: string | null, routeValues: RouteValueDictionary | null, value?: TValue | null): IResult;
+    static CreatedAtRoute(routeName?: string | null, routeValues?: unknown | null, value?: unknown | null): IResult;
+    static CreatedAtRoute<TValue extends unknown>(routeName?: string | null, routeValues?: unknown | null, value?: TValue | null): IResult;
     static File(fileContents: byte[], contentType?: string | null, fileDownloadName?: string | null, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue | null): IResult;
     static File(fileStream: Stream, contentType?: string | null, fileDownloadName?: string | null, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue | null, enableRangeProcessing?: boolean): IResult;
     static File(path: string, contentType?: string | null, fileDownloadName?: string | null, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue | null, enableRangeProcessing?: boolean): IResult;
     static Forbid(properties?: AuthenticationProperties | null, authenticationSchemes?: IList_1<System_Internal.String> | null): IResult;
     static InternalServerError(): IResult;
-    static InternalServerError<TValue>(error: TValue | null): IResult;
-    static Json(data: JsValue | null, options?: JsonSerializerOptions | null, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
-    static Json(data: JsValue | null, jsonTypeInfo: JsonTypeInfo, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
-    static Json(data: JsValue | null, type: Type, context: JsonSerializerContext, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
-    static Json<TValue>(data: TValue | null, jsonTypeInfo: JsonTypeInfo_1<TValue>, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
-    static Json<TValue>(data: TValue | null, options?: JsonSerializerOptions | null, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
-    static Json<TValue>(data: TValue | null, context: JsonSerializerContext, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static InternalServerError<TValue extends unknown>(error: TValue | null): IResult;
+    static Json(data: unknown | null, options?: JsonSerializerOptions | null, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static Json(data: unknown | null, jsonTypeInfo: JsonTypeInfo, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static Json(data: unknown | null, type: Type, context: JsonSerializerContext, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static Json<TValue extends unknown>(data: TValue | null, jsonTypeInfo: JsonTypeInfo_1<TValue>, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static Json<TValue extends unknown>(data: TValue | null, options?: JsonSerializerOptions | null, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static Json<TValue extends unknown>(data: TValue | null, context: JsonSerializerContext, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
     static LocalRedirect(localUrl: string, permanent?: boolean, preserveMethod?: boolean): IResult;
     static NoContent(): IResult;
-    static NotFound(value?: JsValue | null): IResult;
-    static NotFound<TValue>(value: TValue | null): IResult;
-    static Ok(value?: JsValue | null): IResult;
-    static Ok<TValue>(value: TValue | null): IResult;
+    static NotFound(value?: unknown | null): IResult;
+    static NotFound<TValue extends unknown>(value: TValue | null): IResult;
+    static Ok(value?: unknown | null): IResult;
+    static Ok<TValue extends unknown>(value: TValue | null): IResult;
     static Problem(problemDetails: ProblemDetails): IResult;
-    static Problem(detail: string | null, instance: string | null, statusCode: Nullable_1<System_Internal.Int32>, title: string | null, type: string | null, extensions: IDictionary_2<System_Internal.String, JsValue | null> | null): IResult;
-    static Problem(detail?: string | null, instance?: string | null, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, JsValue>> | null): IResult;
+    static Problem(detail: string | null, instance: string | null, statusCode: Nullable_1<System_Internal.Int32>, title: string | null, type: string | null, extensions: IDictionary_2<System_Internal.String, unknown | null> | null): IResult;
+    static Problem(detail?: string | null, instance?: string | null, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>> | null): IResult;
     static Redirect(url: string, permanent?: boolean, preserveMethod?: boolean): IResult;
     static RedirectToRoute(routeName: string | null, routeValues: RouteValueDictionary | null, permanent?: boolean, preserveMethod?: boolean, fragment?: string | null): IResult;
-    static RedirectToRoute(routeName?: string | null, routeValues?: JsValue | null, permanent?: boolean, preserveMethod?: boolean, fragment?: string | null): IResult;
-    static ServerSentEvents<T>(values: IAsyncEnumerable_1<T>, eventType?: string | null): IResult;
-    static ServerSentEvents<T>(values: IAsyncEnumerable_1<SseItem_1<T>>): IResult;
+    static RedirectToRoute(routeName?: string | null, routeValues?: unknown | null, permanent?: boolean, preserveMethod?: boolean, fragment?: string | null): IResult;
+    static ServerSentEvents<T extends unknown>(values: IAsyncEnumerable_1<T>, eventType?: string | null): IResult;
+    static ServerSentEvents<T extends unknown>(values: IAsyncEnumerable_1<SseItem_1<T>>): IResult;
     static ServerSentEvents(values: IAsyncEnumerable_1<System_Internal.String>, eventType?: string | null): IResult;
     static SignIn(principal: ClaimsPrincipal, properties?: AuthenticationProperties | null, authenticationScheme?: string | null): IResult;
     static SignOut(properties?: AuthenticationProperties | null, authenticationSchemes?: IList_1<System_Internal.String> | null): IResult;
@@ -1762,10 +1765,10 @@ export abstract class Results$instance {
     static Text(content: string | null, contentType?: string | null, contentEncoding?: Encoding | null, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
     static Text(content: string | null, contentType: string | null, contentEncoding: Encoding | null): IResult;
     static Unauthorized(): IResult;
-    static UnprocessableEntity(error?: JsValue | null): IResult;
-    static UnprocessableEntity<TValue>(error: TValue | null): IResult;
-    static ValidationProblem(errors: IDictionary_2<System_Internal.String, string[]>, detail: string | null, instance: string | null, statusCode: Nullable_1<System_Internal.Int32>, title: string | null, type: string | null, extensions: IDictionary_2<System_Internal.String, JsValue | null> | null): IResult;
-    static ValidationProblem(errors: IEnumerable_1<KeyValuePair_2<System_Internal.String, string[]>>, detail?: string | null, instance?: string | null, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, JsValue>> | null): IResult;
+    static UnprocessableEntity(error?: unknown | null): IResult;
+    static UnprocessableEntity<TValue extends unknown>(error: TValue | null): IResult;
+    static ValidationProblem(errors: IDictionary_2<System_Internal.String, string[]>, detail: string | null, instance: string | null, statusCode: Nullable_1<System_Internal.Int32>, title: string | null, type: string | null, extensions: IDictionary_2<System_Internal.String, unknown | null> | null): IResult;
+    static ValidationProblem(errors: IEnumerable_1<KeyValuePair_2<System_Internal.String, string[]>>, detail?: string | null, instance?: string | null, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>> | null): IResult;
 }
 
 
@@ -1874,56 +1877,56 @@ export type StatusCodes = StatusCodes$instance;
 export abstract class TypedResults$instance {
     static readonly Empty: EmptyHttpResult;
     static readonly Extensions: IResultExtensions;
-    static Accepted<TValue>(uri: string | null, value: TValue | null): Accepted_1<TValue>;
+    static Accepted<TValue extends unknown>(uri: string | null, value: TValue | null): Accepted_1<TValue>;
     static Accepted(uri: string | null): Accepted;
-    static Accepted<TValue>(uri: Uri, value: TValue | null): Accepted_1<TValue>;
+    static Accepted<TValue extends unknown>(uri: Uri, value: TValue | null): Accepted_1<TValue>;
     static Accepted(uri: Uri): Accepted;
     static AcceptedAtRoute(routeName: string | null, routeValues: RouteValueDictionary | null): AcceptedAtRoute;
-    static AcceptedAtRoute(routeName?: string | null, routeValues?: JsValue | null): AcceptedAtRoute;
-    static AcceptedAtRoute<TValue>(value: TValue | null, routeName: string | null, routeValues: RouteValueDictionary | null): AcceptedAtRoute_1<TValue>;
-    static AcceptedAtRoute<TValue>(value: TValue | null, routeName?: string | null, routeValues?: JsValue | null): AcceptedAtRoute_1<TValue>;
+    static AcceptedAtRoute(routeName?: string | null, routeValues?: unknown | null): AcceptedAtRoute;
+    static AcceptedAtRoute<TValue extends unknown>(value: TValue | null, routeName: string | null, routeValues: RouteValueDictionary | null): AcceptedAtRoute_1<TValue>;
+    static AcceptedAtRoute<TValue extends unknown>(value: TValue | null, routeName?: string | null, routeValues?: unknown | null): AcceptedAtRoute_1<TValue>;
     static BadRequest(): BadRequest;
-    static BadRequest<TValue>(error: TValue | null): BadRequest_1<TValue>;
+    static BadRequest<TValue extends unknown>(error: TValue | null): BadRequest_1<TValue>;
     static Bytes(contents: byte[], contentType?: string | null, fileDownloadName?: string | null, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue | null): FileContentHttpResult;
     static Bytes(contents: ReadOnlyMemory_1<System_Internal.Byte>, contentType?: string | null, fileDownloadName?: string | null, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue | null): FileContentHttpResult;
     static Challenge(properties?: AuthenticationProperties | null, authenticationSchemes?: IList_1<System_Internal.String> | null): ChallengeHttpResult;
     static Conflict(): Conflict;
-    static Conflict<TValue>(error: TValue | null): Conflict_1<TValue>;
+    static Conflict<TValue extends unknown>(error: TValue | null): Conflict_1<TValue>;
     static Content(content: string | null, contentType: MediaTypeHeaderValue): ContentHttpResult;
     static Content(content: string | null, contentType?: string | null, contentEncoding?: Encoding | null, statusCode?: Nullable_1<System_Internal.Int32>): ContentHttpResult;
     static Content(content: string | null, contentType: string | null, contentEncoding: Encoding | null): ContentHttpResult;
     static Created(): Created;
-    static Created<TValue>(uri: string | null, value: TValue | null): Created_1<TValue>;
+    static Created<TValue extends unknown>(uri: string | null, value: TValue | null): Created_1<TValue>;
     static Created(uri: string | null): Created;
-    static Created<TValue>(uri: Uri | null, value: TValue | null): Created_1<TValue>;
+    static Created<TValue extends unknown>(uri: Uri | null, value: TValue | null): Created_1<TValue>;
     static Created(uri: Uri | null): Created;
     static CreatedAtRoute(routeName: string | null, routeValues: RouteValueDictionary | null): CreatedAtRoute;
-    static CreatedAtRoute(routeName?: string | null, routeValues?: JsValue | null): CreatedAtRoute;
-    static CreatedAtRoute<TValue>(value: TValue | null, routeName: string | null, routeValues: RouteValueDictionary | null): CreatedAtRoute_1<TValue>;
-    static CreatedAtRoute<TValue>(value: TValue | null, routeName?: string | null, routeValues?: JsValue | null): CreatedAtRoute_1<TValue>;
+    static CreatedAtRoute(routeName?: string | null, routeValues?: unknown | null): CreatedAtRoute;
+    static CreatedAtRoute<TValue extends unknown>(value: TValue | null, routeName: string | null, routeValues: RouteValueDictionary | null): CreatedAtRoute_1<TValue>;
+    static CreatedAtRoute<TValue extends unknown>(value: TValue | null, routeName?: string | null, routeValues?: unknown | null): CreatedAtRoute_1<TValue>;
     static File(fileContents: byte[], contentType?: string | null, fileDownloadName?: string | null, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue | null): FileContentHttpResult;
     static File(fileStream: Stream, contentType?: string | null, fileDownloadName?: string | null, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue | null, enableRangeProcessing?: boolean): FileStreamHttpResult;
     static Forbid(properties?: AuthenticationProperties | null, authenticationSchemes?: IList_1<System_Internal.String> | null): ForbidHttpResult;
     static InternalServerError(): InternalServerError;
-    static InternalServerError<TValue>(error: TValue | null): InternalServerError_1<TValue>;
-    static Json<TValue>(data: TValue | null, jsonTypeInfo: JsonTypeInfo_1<TValue>, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): JsonHttpResult_1<TValue>;
-    static Json<TValue>(data: TValue | null, options?: JsonSerializerOptions | null, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): JsonHttpResult_1<TValue>;
-    static Json<TValue>(data: TValue | null, context: JsonSerializerContext, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): JsonHttpResult_1<TValue>;
+    static InternalServerError<TValue extends unknown>(error: TValue | null): InternalServerError_1<TValue>;
+    static Json<TValue extends unknown>(data: TValue | null, jsonTypeInfo: JsonTypeInfo_1<TValue>, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): JsonHttpResult_1<TValue>;
+    static Json<TValue extends unknown>(data: TValue | null, options?: JsonSerializerOptions | null, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): JsonHttpResult_1<TValue>;
+    static Json<TValue extends unknown>(data: TValue | null, context: JsonSerializerContext, contentType?: string | null, statusCode?: Nullable_1<System_Internal.Int32>): JsonHttpResult_1<TValue>;
     static LocalRedirect(localUrl: string, permanent?: boolean, preserveMethod?: boolean): RedirectHttpResult;
     static NoContent(): NoContent;
     static NotFound(): NotFound;
-    static NotFound<TValue>(value: TValue | null): NotFound_1<TValue>;
+    static NotFound<TValue extends unknown>(value: TValue | null): NotFound_1<TValue>;
     static Ok(): Ok;
-    static Ok<TValue>(value: TValue | null): Ok_1<TValue>;
+    static Ok<TValue extends unknown>(value: TValue | null): Ok_1<TValue>;
     static PhysicalFile(path: string, contentType?: string | null, fileDownloadName?: string | null, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue | null, enableRangeProcessing?: boolean): PhysicalFileHttpResult;
     static Problem(problemDetails: ProblemDetails): ProblemHttpResult;
-    static Problem(detail: string | null, instance: string | null, statusCode: Nullable_1<System_Internal.Int32>, title: string | null, type: string | null, extensions: IDictionary_2<System_Internal.String, JsValue | null> | null): ProblemHttpResult;
-    static Problem(detail?: string | null, instance?: string | null, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, JsValue>> | null): ProblemHttpResult;
+    static Problem(detail: string | null, instance: string | null, statusCode: Nullable_1<System_Internal.Int32>, title: string | null, type: string | null, extensions: IDictionary_2<System_Internal.String, unknown | null> | null): ProblemHttpResult;
+    static Problem(detail?: string | null, instance?: string | null, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>> | null): ProblemHttpResult;
     static Redirect(url: string, permanent?: boolean, preserveMethod?: boolean): RedirectHttpResult;
     static RedirectToRoute(routeName: string | null, routeValues: RouteValueDictionary | null, permanent?: boolean, preserveMethod?: boolean, fragment?: string | null): RedirectToRouteHttpResult;
-    static RedirectToRoute(routeName?: string | null, routeValues?: JsValue | null, permanent?: boolean, preserveMethod?: boolean, fragment?: string | null): RedirectToRouteHttpResult;
-    static ServerSentEvents<T>(values: IAsyncEnumerable_1<T>, eventType?: string | null): ServerSentEventsResult_1<T>;
-    static ServerSentEvents<T>(values: IAsyncEnumerable_1<SseItem_1<T>>): ServerSentEventsResult_1<T>;
+    static RedirectToRoute(routeName?: string | null, routeValues?: unknown | null, permanent?: boolean, preserveMethod?: boolean, fragment?: string | null): RedirectToRouteHttpResult;
+    static ServerSentEvents<T extends unknown>(values: IAsyncEnumerable_1<T>, eventType?: string | null): ServerSentEventsResult_1<T>;
+    static ServerSentEvents<T extends unknown>(values: IAsyncEnumerable_1<SseItem_1<T>>): ServerSentEventsResult_1<T>;
     static ServerSentEvents(values: IAsyncEnumerable_1<System_Internal.String>, eventType?: string | null): ServerSentEventsResult_1<System_Internal.String>;
     static SignIn(principal: ClaimsPrincipal, properties?: AuthenticationProperties | null, authenticationScheme?: string | null): SignInHttpResult;
     static SignOut(properties?: AuthenticationProperties | null, authenticationSchemes?: IList_1<System_Internal.String> | null): SignOutHttpResult;
@@ -1936,9 +1939,9 @@ export abstract class TypedResults$instance {
     static Text(content: string | null, contentType: string | null, contentEncoding: Encoding | null): ContentHttpResult;
     static Unauthorized(): UnauthorizedHttpResult;
     static UnprocessableEntity(): UnprocessableEntity;
-    static UnprocessableEntity<TValue>(error: TValue | null): UnprocessableEntity_1<TValue>;
-    static ValidationProblem(errors: IDictionary_2<System_Internal.String, string[]>, detail: string | null, instance: string | null, title: string | null, type: string | null, extensions: IDictionary_2<System_Internal.String, JsValue | null> | null): ValidationProblem;
-    static ValidationProblem(errors: IEnumerable_1<KeyValuePair_2<System_Internal.String, string[]>>, detail?: string | null, instance?: string | null, title?: string | null, type?: string | null, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, JsValue>> | null): ValidationProblem;
+    static UnprocessableEntity<TValue extends unknown>(error: TValue | null): UnprocessableEntity_1<TValue>;
+    static ValidationProblem(errors: IDictionary_2<System_Internal.String, string[]>, detail: string | null, instance: string | null, title: string | null, type: string | null, extensions: IDictionary_2<System_Internal.String, unknown | null> | null): ValidationProblem;
+    static ValidationProblem(errors: IEnumerable_1<KeyValuePair_2<System_Internal.String, string[]>>, detail?: string | null, instance?: string | null, title?: string | null, type?: string | null, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>> | null): ValidationProblem;
     static VirtualFile(path: string, contentType?: string | null, fileDownloadName?: string | null, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue | null, enableRangeProcessing?: boolean): VirtualFileHttpResult;
 }
 

@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Routing/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { EndpointBuilder, IApplicationBuilder, IEndpointConventionBuilder, RouteHandlerBuilder } from './Microsoft.AspNetCore.Builder/internal/index.js';
 import type { Endpoint, EndpointFilterDelegate, EndpointFilterFactoryContext, EndpointMetadataCollection, FragmentString, HostString, HttpContext, HttpRequest, HttpResponse, PathString, RequestDelegate, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult } from './Microsoft.AspNetCore.Http/internal/index.js';
@@ -40,7 +44,7 @@ export { HostAttribute as HostAttribute } from './Microsoft.AspNetCore.Routing/i
 export { HttpMethodMetadata as HttpMethodMetadata } from './Microsoft.AspNetCore.Routing/internal/index.js';
 export type IDataTokensMetadata = Internal.IDataTokensMetadata;
 export type IDynamicEndpointMetadata = Internal.IDynamicEndpointMetadata;
-export type IEndpointAddressScheme<TAddress> = Internal.IEndpointAddressScheme_1<TAddress>;
+export type IEndpointAddressScheme<TAddress extends unknown> = Internal.IEndpointAddressScheme_1<TAddress>;
 export type IEndpointGroupNameMetadata = Internal.IEndpointGroupNameMetadata;
 export type IEndpointNameMetadata = Internal.IEndpointNameMetadata;
 export type IEndpointRouteBuilder = Internal.IEndpointRouteBuilder;

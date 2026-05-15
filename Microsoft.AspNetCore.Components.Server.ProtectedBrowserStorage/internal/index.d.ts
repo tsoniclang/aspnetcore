@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Components.Server
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -13,7 +13,7 @@ import type { ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tas
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, ValueType } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface ProtectedBrowserStorageResult_1$instance<TValue> {
+export interface ProtectedBrowserStorageResult_1$instance<TValue extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedBrowserStorageResult_1: never;
 
     readonly Success: boolean;
@@ -22,20 +22,20 @@ export interface ProtectedBrowserStorageResult_1$instance<TValue> {
 
 
 export const ProtectedBrowserStorageResult_1: {
-    new<TValue>(): ProtectedBrowserStorageResult_1<TValue>;
+    new<TValue extends unknown>(): ProtectedBrowserStorageResult_1<TValue>;
 };
 
 
-export type ProtectedBrowserStorageResult_1<TValue> = ProtectedBrowserStorageResult_1$instance<TValue>;
+export type ProtectedBrowserStorageResult_1<TValue extends unknown> = ProtectedBrowserStorageResult_1$instance<TValue>;
 
 export interface ProtectedBrowserStorage$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedBrowserStorage: never;
 
     DeleteAsync(key: string): ValueTask;
-    GetAsync<TValue>(key: string): ValueTask_1<ProtectedBrowserStorageResult_1<TValue>>;
-    GetAsync<TValue>(purpose: string, key: string): ValueTask_1<ProtectedBrowserStorageResult_1<TValue>>;
-    SetAsync(key: string, value: JsValue): ValueTask;
-    SetAsync(purpose: string, key: string, value: JsValue): ValueTask;
+    GetAsync<TValue extends unknown>(key: string): ValueTask_1<ProtectedBrowserStorageResult_1<TValue>>;
+    GetAsync<TValue extends unknown>(purpose: string, key: string): ValueTask_1<ProtectedBrowserStorageResult_1<TValue>>;
+    SetAsync(key: string, value: unknown): ValueTask;
+    SetAsync(purpose: string, key: string, value: unknown): ValueTask;
 }
 
 

@@ -300,7 +300,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.DefaultKeyResolution::DefaultKeyMicrosoft.AspNetCore.DataProtection.KeyManagement.IKey",
           "clrName": "DefaultKey",
-          "metadataToken": 67109101,
+          "metadataToken": 67109102,
           "normalizedSignature": "DefaultKey|Microsoft.AspNetCore.DataProtection.KeyManagement.IKey|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
@@ -312,7 +312,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.DefaultKeyResolution::FallbackKeyMicrosoft.AspNetCore.DataProtection.KeyManagement.IKey",
           "clrName": "FallbackKey",
-          "metadataToken": 67109102,
+          "metadataToken": 67109103,
           "normalizedSignature": "FallbackKey|Microsoft.AspNetCore.DataProtection.KeyManagement.IKey|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
@@ -324,7 +324,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.DefaultKeyResolution::ShouldGenerateNewKeySystem.Boolean",
           "clrName": "ShouldGenerateNewKey",
-          "metadataToken": 67109103,
+          "metadataToken": 67109104,
           "normalizedSignature": "ShouldGenerateNewKey|System.Boolean|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,

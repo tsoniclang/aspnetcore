@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Hosting
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -28,7 +28,7 @@ export interface ISupportsStartup$instance {
 
     Configure(configure: Action_1<IApplicationBuilder>): IWebHostBuilder;
     Configure(configure: Action_2<WebHostBuilderContext, IApplicationBuilder>): IWebHostBuilder;
-    UseStartup<TStartup>(startupFactory: Func_2<WebHostBuilderContext, TStartup>): IWebHostBuilder;
+    UseStartup<TStartup extends unknown>(startupFactory: Func_2<WebHostBuilderContext, TStartup>): IWebHostBuilder;
     UseStartup(startupType: Type): IWebHostBuilder;
 }
 

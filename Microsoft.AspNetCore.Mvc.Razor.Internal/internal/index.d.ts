@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Razor
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -13,8 +13,8 @@ import type { Attribute, Object as ClrObject } from "@tsonic/dotnet/System/inter
 export interface RazorInjectAttribute$instance extends Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_Internal_RazorInjectAttribute: never;
 
-    get Key(): JsValue | null;
-    set Key(value: JsValue | null);
+    get Key(): unknown | null;
+    set Key(value: unknown | null);
 }
 
 

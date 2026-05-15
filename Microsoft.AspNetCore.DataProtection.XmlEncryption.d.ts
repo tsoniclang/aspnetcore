@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.DataProtection.XmlEncryption/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, IServiceProvider, ISpanFormattable, Object as ClrObject, String as ClrString, Type } from '@tsonic/dotnet/System.js';
 import type { X509Certificate2 } from '@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js';

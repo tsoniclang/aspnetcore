@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Http.Abstractions, Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core, Microsoft.AspNetCore.Mvc.DataAnnotations, Microsoft.AspNetCore.Mvc.ViewFeatures
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -123,7 +123,7 @@ export interface IUrlHelper$instance {
     Action(actionContext: UrlActionContext): string | null;
     Content(contentPath: string | null): string | null;
     IsLocalUrl(url: string | null): boolean;
-    Link(routeName: string | null, values: JsValue | null): string | null;
+    Link(routeName: string | null, values: unknown | null): string | null;
     RouteUrl(routeContext: UrlRouteContext): string | null;
 }
 
@@ -133,8 +133,8 @@ export type IUrlHelper = IUrlHelper$instance;
 export interface IViewComponentHelper$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IViewComponentHelper: never;
 
-    InvokeAsync(name: string, arguments: JsValue | null): Task_1<IHtmlContent>;
-    InvokeAsync(componentType: Type, arguments: JsValue | null): Task_1<IHtmlContent>;
+    InvokeAsync(name: string, arguments: unknown | null): Task_1<IHtmlContent>;
+    InvokeAsync(componentType: Type, arguments: unknown | null): Task_1<IHtmlContent>;
 }
 
 
@@ -169,7 +169,7 @@ export interface AcceptedAtActionResult$instance extends ObjectResult$instance {
 
 
 export const AcceptedAtActionResult: {
-    new(actionName: string | null, controllerName: string | null, routeValues: JsValue | null, value: JsValue | null): AcceptedAtActionResult;
+    new(actionName: string | null, controllerName: string | null, routeValues: unknown | null, value: unknown | null): AcceptedAtActionResult;
 };
 
 
@@ -198,8 +198,8 @@ export interface AcceptedAtRouteResult$instance extends ObjectResult$instance {
 
 
 export const AcceptedAtRouteResult: {
-    new(routeValues: JsValue | null, value: JsValue | null): AcceptedAtRouteResult;
-    new(routeName: string | null, routeValues: JsValue | null, value: JsValue | null): AcceptedAtRouteResult;
+    new(routeValues: unknown | null, value: unknown | null): AcceptedAtRouteResult;
+    new(routeName: string | null, routeValues: unknown | null, value: unknown | null): AcceptedAtRouteResult;
 };
 
 
@@ -225,8 +225,8 @@ export interface AcceptedResult$instance extends ObjectResult$instance {
 
 export const AcceptedResult: {
     new(): AcceptedResult;
-    new(location: string | null, value: JsValue | null): AcceptedResult;
-    new(locationUri: Uri, value: JsValue | null): AcceptedResult;
+    new(location: string | null, value: unknown | null): AcceptedResult;
+    new(locationUri: Uri, value: unknown | null): AcceptedResult;
 };
 
 
@@ -335,7 +335,7 @@ export interface __ActionResult$views {
 export type ActionResult = ActionResult$instance & __ActionResult$views;
 
 
-export interface ActionResult_1$instance<TValue> extends Microsoft_AspNetCore_Mvc_Infrastructure_Internal.IConvertToActionResult$instance {
+export interface ActionResult_1$instance<TValue extends unknown> extends Microsoft_AspNetCore_Mvc_Infrastructure_Internal.IConvertToActionResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionResult_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult: never;
@@ -346,19 +346,19 @@ export interface ActionResult_1$instance<TValue> extends Microsoft_AspNetCore_Mv
 
 
 export const ActionResult_1: {
-    new<TValue>(value: TValue): ActionResult_1<TValue>;
-    new<TValue>(result: ActionResult): ActionResult_1<TValue>;
+    new<TValue extends unknown>(value: TValue): ActionResult_1<TValue>;
+    new<TValue extends unknown>(result: ActionResult): ActionResult_1<TValue>;
 };
 
 
-export interface __ActionResult_1$views<TValue> {
+export interface __ActionResult_1$views<TValue extends unknown> {
     As_IConvertToActionResult(): Microsoft_AspNetCore_Mvc_Infrastructure_Internal.IConvertToActionResult$instance;
 }
 
-export type ActionResult_1<TValue> = ActionResult_1$instance<TValue> & __ActionResult_1$views<TValue>;
+export type ActionResult_1<TValue extends unknown> = ActionResult_1$instance<TValue> & __ActionResult_1$views<TValue>;
 
 
-export interface AntiforgeryValidationFailedResult$instance extends BadRequestResult$instance {
+export interface AntiforgeryValidationFailedResult$instance extends BadRequestResult$instance, Microsoft_AspNetCore_Mvc_Core_Infrastructure_Internal.IAntiforgeryValidationFailedResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_AntiforgeryValidationFailedResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidationFailedResult: never;
@@ -405,7 +405,7 @@ export const ApiBehaviorOptions: {
 
 export type ApiBehaviorOptions = ApiBehaviorOptions$instance;
 
-export interface ApiControllerAttribute$instance extends ControllerAttribute, IApiBehaviorMetadata, IFilterMetadata, IDisableCookieRedirectMetadata {
+export interface ApiControllerAttribute$instance extends ControllerAttribute, IDisableCookieRedirectMetadata, IApiBehaviorMetadata {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiControllerAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IDisableCookieRedirectMetadata: never;
@@ -510,7 +510,7 @@ export interface __AreaAttribute$views {
 export type AreaAttribute = AreaAttribute$instance & __AreaAttribute$views;
 
 
-export interface AutoValidateAntiforgeryTokenAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+export interface AutoValidateAntiforgeryTokenAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_AutoValidateAntiforgeryTokenAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
@@ -546,7 +546,7 @@ export interface BadRequestObjectResult$instance extends ObjectResult$instance {
 
 
 export const BadRequestObjectResult: {
-    new(error: JsValue | null): BadRequestObjectResult;
+    new(error: unknown | null): BadRequestObjectResult;
     new(modelState: ModelStateDictionary): BadRequestObjectResult;
 };
 
@@ -677,7 +677,7 @@ export const CacheProfile: {
 
 export type CacheProfile = CacheProfile$instance;
 
-export interface ChallengeResult$instance extends ActionResult$instance {
+export interface ChallengeResult$instance extends ActionResult$instance, IActionResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ChallengeResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
@@ -733,7 +733,7 @@ export interface ConflictObjectResult$instance extends ObjectResult$instance {
 
 
 export const ConflictObjectResult: {
-    new(error: JsValue | null): ConflictObjectResult;
+    new(error: unknown | null): ConflictObjectResult;
     new(modelState: ModelStateDictionary): ConflictObjectResult;
 };
 
@@ -769,7 +769,7 @@ export interface __ConflictResult$views {
 export type ConflictResult = ConflictResult$instance & __ConflictResult$views;
 
 
-export interface ConsumesAttribute$instance extends Attribute, IFilterMetadata, IActionConstraintMetadata, Microsoft_AspNetCore_Mvc_ActionConstraints_Internal.IActionConstraint$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiRequestMetadataProvider$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IResourceFilter$instance {
+export interface ConsumesAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_ActionConstraints_Internal.IActionConstraint$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiRequestMetadataProvider$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IResourceFilter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ConsumesAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata: never;
@@ -835,7 +835,7 @@ export interface __ContentResult$views {
 export type ContentResult = ContentResult$instance & __ContentResult$views;
 
 
-export interface Controller$instance extends ControllerBase, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IActionFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncActionFilter$instance, System_Internal.IDisposable {
+export interface Controller$instance extends ControllerBase, Microsoft_AspNetCore_Mvc_Filters_Internal.IActionFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncActionFilter$instance, System_Internal.IDisposable {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controller: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IActionFilter: never;
@@ -844,27 +844,27 @@ export interface Controller$instance extends ControllerBase, IFilterMetadata, Mi
     readonly __tsonic_iface_System_IDisposable: never;
 
     TempData: ITempDataDictionary;
-    readonly ViewBag: JsValue;
+    readonly ViewBag: unknown;
     ViewData: ViewDataDictionary;
     Dispose(): void;
     Dispose(disposing: boolean): void;
-    Json(data: JsValue | null): JsonResult;
-    Json(data: JsValue | null, serializerSettings: JsValue | null): JsonResult;
+    Json(data: unknown | null): JsonResult;
+    Json(data: unknown | null, serializerSettings: unknown | null): JsonResult;
     OnActionExecuted(context: ActionExecutedContext): void;
     OnActionExecuting(context: ActionExecutingContext): void;
     OnActionExecutionAsync(context: ActionExecutingContext, next: ActionExecutionDelegate): Task;
     PartialView(): PartialViewResult;
     PartialView(viewName: string | null): PartialViewResult;
-    PartialView(model: JsValue | null): PartialViewResult;
-    PartialView(viewName: string | null, model: JsValue | null): PartialViewResult;
+    PartialView(model: unknown | null): PartialViewResult;
+    PartialView(viewName: string | null, model: unknown | null): PartialViewResult;
     View(): ViewResult;
     View(viewName: string | null): ViewResult;
-    View(model: JsValue | null): ViewResult;
-    View(viewName: string | null, model: JsValue | null): ViewResult;
+    View(model: unknown | null): ViewResult;
+    View(viewName: string | null, model: unknown | null): ViewResult;
     ViewComponent(componentName: string): ViewComponentResult;
     ViewComponent(componentType: Type): ViewComponentResult;
-    ViewComponent(componentName: string, arguments: JsValue | null): ViewComponentResult;
-    ViewComponent(componentType: Type, arguments: JsValue | null): ViewComponentResult;
+    ViewComponent(componentName: string, arguments: unknown | null): ViewComponentResult;
+    ViewComponent(componentType: Type, arguments: unknown | null): ViewComponentResult;
 }
 
 
@@ -909,45 +909,45 @@ export interface ControllerBase$instance {
     Url: IUrlHelper;
     readonly User: ClaimsPrincipal;
     Accepted(): AcceptedResult;
-    Accepted(value: JsValue | null): AcceptedResult;
+    Accepted(value: unknown | null): AcceptedResult;
     Accepted(uri: Uri): AcceptedResult;
     Accepted(uri: string | null): AcceptedResult;
-    Accepted(uri: string | null, value: JsValue | null): AcceptedResult;
-    Accepted(uri: Uri, value: JsValue | null): AcceptedResult;
+    Accepted(uri: string | null, value: unknown | null): AcceptedResult;
+    Accepted(uri: Uri, value: unknown | null): AcceptedResult;
     AcceptedAtAction(actionName: string | null): AcceptedAtActionResult;
     AcceptedAtAction(actionName: string | null, controllerName: string | null): AcceptedAtActionResult;
-    AcceptedAtAction(actionName: string | null, value: JsValue | null): AcceptedAtActionResult;
-    AcceptedAtAction(actionName: string | null, controllerName: string | null, routeValues: JsValue | null): AcceptedAtActionResult;
-    AcceptedAtAction(actionName: string | null, routeValues: JsValue | null, value: JsValue | null): AcceptedAtActionResult;
-    AcceptedAtAction(actionName: string | null, controllerName: string | null, routeValues: JsValue | null, value: JsValue | null): AcceptedAtActionResult;
-    AcceptedAtRoute(routeValues: JsValue | null): AcceptedAtRouteResult;
+    AcceptedAtAction(actionName: string | null, value: unknown | null): AcceptedAtActionResult;
+    AcceptedAtAction(actionName: string | null, controllerName: string | null, routeValues: unknown | null): AcceptedAtActionResult;
+    AcceptedAtAction(actionName: string | null, routeValues: unknown | null, value: unknown | null): AcceptedAtActionResult;
+    AcceptedAtAction(actionName: string | null, controllerName: string | null, routeValues: unknown | null, value: unknown | null): AcceptedAtActionResult;
+    AcceptedAtRoute(routeValues: unknown | null): AcceptedAtRouteResult;
     AcceptedAtRoute(routeName: string | null): AcceptedAtRouteResult;
-    AcceptedAtRoute(routeName: string | null, routeValues: JsValue | null): AcceptedAtRouteResult;
-    AcceptedAtRoute(routeValues: JsValue | null, value: JsValue | null): AcceptedAtRouteResult;
-    AcceptedAtRoute(routeName: string | null, routeValues: JsValue | null, value: JsValue | null): AcceptedAtRouteResult;
+    AcceptedAtRoute(routeName: string | null, routeValues: unknown | null): AcceptedAtRouteResult;
+    AcceptedAtRoute(routeValues: unknown | null, value: unknown | null): AcceptedAtRouteResult;
+    AcceptedAtRoute(routeName: string | null, routeValues: unknown | null, value: unknown | null): AcceptedAtRouteResult;
     BadRequest(): BadRequestResult;
-    BadRequest(error: JsValue | null): BadRequestObjectResult;
+    BadRequest(error: unknown | null): BadRequestObjectResult;
     BadRequest(modelState: ModelStateDictionary): BadRequestObjectResult;
     Challenge(): ChallengeResult;
     Challenge(...authenticationSchemes: string[]): ChallengeResult;
     Challenge(properties: AuthenticationProperties): ChallengeResult;
     Challenge(properties: AuthenticationProperties, ...authenticationSchemes: string[]): ChallengeResult;
     Conflict(): ConflictResult;
-    Conflict(error: JsValue | null): ConflictObjectResult;
+    Conflict(error: unknown | null): ConflictObjectResult;
     Conflict(modelState: ModelStateDictionary): ConflictObjectResult;
     Content(content: string): ContentResult;
     Content(content: string, contentType: string): ContentResult;
     Content(content: string, contentType: string, contentEncoding: Encoding): ContentResult;
     Content(content: string, contentType: MediaTypeHeaderValue | null): ContentResult;
     Created(): CreatedResult;
-    Created(uri: string | null, value: JsValue | null): CreatedResult;
-    Created(uri: Uri | null, value: JsValue | null): CreatedResult;
-    CreatedAtAction(actionName: string | null, value: JsValue | null): CreatedAtActionResult;
-    CreatedAtAction(actionName: string | null, routeValues: JsValue | null, value: JsValue | null): CreatedAtActionResult;
-    CreatedAtAction(actionName: string | null, controllerName: string | null, routeValues: JsValue | null, value: JsValue | null): CreatedAtActionResult;
-    CreatedAtRoute(routeName: string | null, value: JsValue | null): CreatedAtRouteResult;
-    CreatedAtRoute(routeValues: JsValue | null, value: JsValue | null): CreatedAtRouteResult;
-    CreatedAtRoute(routeName: string | null, routeValues: JsValue | null, value: JsValue | null): CreatedAtRouteResult;
+    Created(uri: string | null, value: unknown | null): CreatedResult;
+    Created(uri: Uri | null, value: unknown | null): CreatedResult;
+    CreatedAtAction(actionName: string | null, value: unknown | null): CreatedAtActionResult;
+    CreatedAtAction(actionName: string | null, routeValues: unknown | null, value: unknown | null): CreatedAtActionResult;
+    CreatedAtAction(actionName: string | null, controllerName: string | null, routeValues: unknown | null, value: unknown | null): CreatedAtActionResult;
+    CreatedAtRoute(routeName: string | null, value: unknown | null): CreatedAtRouteResult;
+    CreatedAtRoute(routeValues: unknown | null, value: unknown | null): CreatedAtRouteResult;
+    CreatedAtRoute(routeName: string | null, routeValues: unknown | null, value: unknown | null): CreatedAtRouteResult;
     File(fileContents: byte[], contentType: string): FileContentResult;
     File(fileContents: byte[], contentType: string, enableRangeProcessing: boolean): FileContentResult;
     File(fileContents: byte[], contentType: string, fileDownloadName: string | null): FileContentResult;
@@ -982,9 +982,9 @@ export interface ControllerBase$instance {
     LocalRedirectPreserveMethod(localUrl: string): LocalRedirectResult;
     NoContent(): NoContentResult;
     NotFound(): NotFoundResult;
-    NotFound(value: JsValue | null): NotFoundObjectResult;
+    NotFound(value: unknown | null): NotFoundObjectResult;
     Ok(): OkResult;
-    Ok(value: JsValue | null): OkObjectResult;
+    Ok(value: unknown | null): OkObjectResult;
     PhysicalFile(physicalPath: string, contentType: string): PhysicalFileResult;
     PhysicalFile(physicalPath: string, contentType: string, enableRangeProcessing: boolean): PhysicalFileResult;
     PhysicalFile(physicalPath: string, contentType: string, fileDownloadName: string | null): PhysicalFileResult;
@@ -994,51 +994,51 @@ export interface ControllerBase$instance {
     PhysicalFile(physicalPath: string, contentType: string, fileDownloadName: string | null, lastModified: Nullable_1<DateTimeOffset>, entityTag: EntityTagHeaderValue): PhysicalFileResult;
     PhysicalFile(physicalPath: string, contentType: string, fileDownloadName: string | null, lastModified: Nullable_1<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): PhysicalFileResult;
     Problem(detail: string | null, instance: string | null, statusCode: Nullable_1<System_Internal.Int32>, title: string | null, type: string | null): ObjectResult;
-    Problem(detail?: string | null, instance?: string | null, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, extensions?: IDictionary_2<System_Internal.String, JsValue | null> | null): ObjectResult;
+    Problem(detail?: string | null, instance?: string | null, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, extensions?: IDictionary_2<System_Internal.String, unknown | null> | null): ObjectResult;
     Redirect(url: string): RedirectResult;
     RedirectPermanent(url: string): RedirectResult;
     RedirectPermanentPreserveMethod(url: string): RedirectResult;
     RedirectPreserveMethod(url: string): RedirectResult;
     RedirectToAction(): RedirectToActionResult;
     RedirectToAction(actionName: string | null): RedirectToActionResult;
-    RedirectToAction(actionName: string | null, routeValues: JsValue | null): RedirectToActionResult;
+    RedirectToAction(actionName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToAction(actionName: string | null, controllerName: string | null): RedirectToActionResult;
-    RedirectToAction(actionName: string | null, controllerName: string | null, routeValues: JsValue | null): RedirectToActionResult;
+    RedirectToAction(actionName: string | null, controllerName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToAction(actionName: string | null, controllerName: string | null, fragment: string | null): RedirectToActionResult;
-    RedirectToAction(actionName: string | null, controllerName: string | null, routeValues: JsValue | null, fragment: string | null): RedirectToActionResult;
+    RedirectToAction(actionName: string | null, controllerName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null): RedirectToActionResult;
-    RedirectToActionPermanent(actionName: string | null, routeValues: JsValue | null): RedirectToActionResult;
+    RedirectToActionPermanent(actionName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null, controllerName: string | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null, controllerName: string | null, fragment: string | null): RedirectToActionResult;
-    RedirectToActionPermanent(actionName: string | null, controllerName: string | null, routeValues: JsValue | null): RedirectToActionResult;
-    RedirectToActionPermanent(actionName: string | null, controllerName: string | null, routeValues: JsValue | null, fragment: string | null): RedirectToActionResult;
-    RedirectToActionPermanentPreserveMethod(actionName?: string | null, controllerName?: string | null, routeValues?: JsValue | null, fragment?: string | null): RedirectToActionResult;
-    RedirectToActionPreserveMethod(actionName?: string | null, controllerName?: string | null, routeValues?: JsValue | null, fragment?: string | null): RedirectToActionResult;
+    RedirectToActionPermanent(actionName: string | null, controllerName: string | null, routeValues: unknown | null): RedirectToActionResult;
+    RedirectToActionPermanent(actionName: string | null, controllerName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToActionResult;
+    RedirectToActionPermanentPreserveMethod(actionName?: string | null, controllerName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToActionResult;
+    RedirectToActionPreserveMethod(actionName?: string | null, controllerName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToActionResult;
     RedirectToPage(pageName: string): RedirectToPageResult;
-    RedirectToPage(pageName: string, routeValues: JsValue | null): RedirectToPageResult;
+    RedirectToPage(pageName: string, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPage(pageName: string, pageHandler: string | null): RedirectToPageResult;
-    RedirectToPage(pageName: string, pageHandler: string | null, routeValues: JsValue | null): RedirectToPageResult;
+    RedirectToPage(pageName: string, pageHandler: string | null, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPage(pageName: string, pageHandler: string | null, fragment: string | null): RedirectToPageResult;
-    RedirectToPage(pageName: string, pageHandler: string | null, routeValues: JsValue | null, fragment: string | null): RedirectToPageResult;
+    RedirectToPage(pageName: string, pageHandler: string | null, routeValues: unknown | null, fragment: string | null): RedirectToPageResult;
     RedirectToPagePermanent(pageName: string): RedirectToPageResult;
-    RedirectToPagePermanent(pageName: string, routeValues: JsValue | null): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPagePermanent(pageName: string, pageHandler: string | null): RedirectToPageResult;
     RedirectToPagePermanent(pageName: string, pageHandler: string | null, fragment: string | null): RedirectToPageResult;
-    RedirectToPagePermanent(pageName: string, pageHandler: string | null, routeValues: JsValue | null, fragment: string | null): RedirectToPageResult;
-    RedirectToPagePermanentPreserveMethod(pageName: string, pageHandler?: string | null, routeValues?: JsValue | null, fragment?: string | null): RedirectToPageResult;
-    RedirectToPagePreserveMethod(pageName: string, pageHandler?: string | null, routeValues?: JsValue | null, fragment?: string | null): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string, pageHandler: string | null, routeValues: unknown | null, fragment: string | null): RedirectToPageResult;
+    RedirectToPagePermanentPreserveMethod(pageName: string, pageHandler?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToPageResult;
+    RedirectToPagePreserveMethod(pageName: string, pageHandler?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToPageResult;
     RedirectToRoute(routeName: string | null): RedirectToRouteResult;
-    RedirectToRoute(routeValues: JsValue | null): RedirectToRouteResult;
-    RedirectToRoute(routeName: string | null, routeValues: JsValue | null): RedirectToRouteResult;
+    RedirectToRoute(routeValues: unknown | null): RedirectToRouteResult;
+    RedirectToRoute(routeName: string | null, routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoute(routeName: string | null, fragment: string | null): RedirectToRouteResult;
-    RedirectToRoute(routeName: string | null, routeValues: JsValue | null, fragment: string | null): RedirectToRouteResult;
+    RedirectToRoute(routeName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToRouteResult;
     RedirectToRoutePermanent(routeName: string | null): RedirectToRouteResult;
-    RedirectToRoutePermanent(routeValues: JsValue | null): RedirectToRouteResult;
-    RedirectToRoutePermanent(routeName: string | null, routeValues: JsValue | null): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeValues: unknown | null): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeName: string | null, routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoutePermanent(routeName: string | null, fragment: string | null): RedirectToRouteResult;
-    RedirectToRoutePermanent(routeName: string | null, routeValues: JsValue | null, fragment: string | null): RedirectToRouteResult;
-    RedirectToRoutePermanentPreserveMethod(routeName?: string | null, routeValues?: JsValue | null, fragment?: string | null): RedirectToRouteResult;
-    RedirectToRoutePreserveMethod(routeName?: string | null, routeValues?: JsValue | null, fragment?: string | null): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToRouteResult;
+    RedirectToRoutePermanentPreserveMethod(routeName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToRouteResult;
+    RedirectToRoutePreserveMethod(routeName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToRouteResult;
     SignIn(principal: ClaimsPrincipal): SignInResult;
     SignIn(principal: ClaimsPrincipal, authenticationScheme: string): SignInResult;
     SignIn(principal: ClaimsPrincipal, properties: AuthenticationProperties): SignInResult;
@@ -1048,28 +1048,28 @@ export interface ControllerBase$instance {
     SignOut(...authenticationSchemes: string[]): SignOutResult;
     SignOut(properties: AuthenticationProperties, ...authenticationSchemes: string[]): SignOutResult;
     StatusCode(statusCode: int): StatusCodeResult;
-    StatusCode(statusCode: int, value: JsValue | null): ObjectResult;
-    TryUpdateModelAsync<TModel>(model: TModel): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, ...includeExpressions: Expression_1<Func_2<TModel, JsValue | null>>[]): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider, ...includeExpressions: Expression_1<Func_2<TModel, JsValue | null>>[]): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync(model: JsValue, modelType: Type, prefix: string): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync(model: JsValue, modelType: Type, prefix: string, valueProvider: IValueProvider, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
-    TryValidateModel(model: JsValue): boolean;
-    TryValidateModel(model: JsValue, prefix: string | null): boolean;
+    StatusCode(statusCode: int, value: unknown | null): ObjectResult;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, valueProvider: IValueProvider): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, ...includeExpressions: Expression_1<Func_2<TModel, unknown | null>>[]): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, valueProvider: IValueProvider, ...includeExpressions: Expression_1<Func_2<TModel, unknown | null>>[]): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, valueProvider: IValueProvider, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync(model: unknown, modelType: Type, prefix: string): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync(model: unknown, modelType: Type, prefix: string, valueProvider: IValueProvider, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
+    TryValidateModel(model: unknown): boolean;
+    TryValidateModel(model: unknown, prefix: string | null): boolean;
     Unauthorized(): UnauthorizedResult;
-    Unauthorized(value: JsValue | null): UnauthorizedObjectResult;
+    Unauthorized(value: unknown | null): UnauthorizedObjectResult;
     UnprocessableEntity(): UnprocessableEntityResult;
-    UnprocessableEntity(error: JsValue | null): UnprocessableEntityObjectResult;
+    UnprocessableEntity(error: unknown | null): UnprocessableEntityObjectResult;
     UnprocessableEntity(modelState: ModelStateDictionary): UnprocessableEntityObjectResult;
     ValidationProblem(descriptor: ValidationProblemDetails): ActionResult;
     ValidationProblem(modelStateDictionary: ModelStateDictionary): ActionResult;
     ValidationProblem(): ActionResult;
     ValidationProblem(detail: string | null, instance: string | null, statusCode: Nullable_1<System_Internal.Int32>, title: string | null, type: string | null, modelStateDictionary: ModelStateDictionary | null): ActionResult;
-    ValidationProblem(detail?: string | null, instance?: string | null, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, modelStateDictionary?: ModelStateDictionary | null, extensions?: IDictionary_2<System_Internal.String, JsValue | null> | null): ActionResult;
+    ValidationProblem(detail?: string | null, instance?: string | null, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, modelStateDictionary?: ModelStateDictionary | null, extensions?: IDictionary_2<System_Internal.String, unknown | null> | null): ActionResult;
 }
 
 
@@ -1142,7 +1142,7 @@ export interface CreatedAtActionResult$instance extends ObjectResult$instance {
 
 
 export const CreatedAtActionResult: {
-    new(actionName: string | null, controllerName: string | null, routeValues: JsValue | null, value: JsValue | null): CreatedAtActionResult;
+    new(actionName: string | null, controllerName: string | null, routeValues: unknown | null, value: unknown | null): CreatedAtActionResult;
 };
 
 
@@ -1171,8 +1171,8 @@ export interface CreatedAtRouteResult$instance extends ObjectResult$instance {
 
 
 export const CreatedAtRouteResult: {
-    new(routeValues: JsValue | null, value: JsValue | null): CreatedAtRouteResult;
-    new(routeName: string | null, routeValues: JsValue | null, value: JsValue | null): CreatedAtRouteResult;
+    new(routeValues: unknown | null, value: unknown | null): CreatedAtRouteResult;
+    new(routeName: string | null, routeValues: unknown | null, value: unknown | null): CreatedAtRouteResult;
 };
 
 
@@ -1198,8 +1198,8 @@ export interface CreatedResult$instance extends ObjectResult$instance {
 
 export const CreatedResult: {
     new(): CreatedResult;
-    new(location: string | null, value: JsValue | null): CreatedResult;
-    new(location: Uri | null, value: JsValue | null): CreatedResult;
+    new(location: string | null, value: unknown | null): CreatedResult;
+    new(location: Uri | null, value: unknown | null): CreatedResult;
 };
 
 
@@ -1211,7 +1211,7 @@ export interface __CreatedResult$views {
 export type CreatedResult = CreatedResult$instance & __CreatedResult$views;
 
 
-export interface DisableRequestSizeLimitAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Http_Metadata_Internal.IRequestSizeLimitMetadata$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+export interface DisableRequestSizeLimitAttribute$instance extends Attribute, Microsoft_AspNetCore_Http_Metadata_Internal.IRequestSizeLimitMetadata$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_DisableRequestSizeLimitAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IRequestSizeLimitMetadata: never;
@@ -1260,7 +1260,7 @@ export interface __EmptyResult$views {
 export type EmptyResult = EmptyResult$instance & __EmptyResult$views;
 
 
-export interface FileContentResult$instance extends FileResult$instance {
+export interface FileContentResult$instance extends FileResult$instance, IActionResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FileContentResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
@@ -1309,7 +1309,7 @@ export interface __FileResult$views {
 export type FileResult = FileResult$instance & __FileResult$views;
 
 
-export interface FileStreamResult$instance extends FileResult$instance {
+export interface FileStreamResult$instance extends FileResult$instance, IActionResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FileStreamResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
@@ -1332,7 +1332,7 @@ export interface __FileStreamResult$views {
 export type FileStreamResult = FileStreamResult$instance & __FileStreamResult$views;
 
 
-export interface ForbidResult$instance extends ActionResult$instance {
+export interface ForbidResult$instance extends ActionResult$instance, IActionResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ForbidResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
@@ -1361,7 +1361,7 @@ export interface __ForbidResult$views {
 export type ForbidResult = ForbidResult$instance & __ForbidResult$views;
 
 
-export interface FormatFilterAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+export interface FormatFilterAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FormatFilterAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
@@ -1714,7 +1714,7 @@ export interface __HttpPutAttribute$views {
 export type HttpPutAttribute = HttpPutAttribute$instance & __HttpPutAttribute$views;
 
 
-export interface IgnoreAntiforgeryTokenAttribute$instance extends Attribute, IAntiforgeryPolicy, IFilterMetadata, Microsoft_AspNetCore_Mvc_ViewFeatures_Internal.IAntiforgeryPolicy$instance {
+export interface IgnoreAntiforgeryTokenAttribute$instance extends Attribute, IAntiforgeryPolicy, Microsoft_AspNetCore_Mvc_ViewFeatures_Internal.IAntiforgeryPolicy$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_IgnoreAntiforgeryTokenAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
@@ -1760,19 +1760,19 @@ export interface JsonResult$instance extends ActionResult$instance {
 
     get ContentType(): string | null;
     set ContentType(value: string | null);
-    get SerializerSettings(): JsValue | null;
-    set SerializerSettings(value: JsValue | null);
+    get SerializerSettings(): unknown | null;
+    set SerializerSettings(value: unknown | null);
     get StatusCode(): Nullable_1<System_Internal.Int32>;
     set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
-    get Value(): JsValue | null;
-    set Value(value: JsValue | null);
+    get Value(): unknown | null;
+    set Value(value: unknown | null);
     ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
 export const JsonResult: {
-    new(value: JsValue | null): JsonResult;
-    new(value: JsValue | null, serializerSettings: JsValue | null): JsonResult;
+    new(value: unknown | null): JsonResult;
+    new(value: unknown | null, serializerSettings: unknown | null): JsonResult;
 };
 
 
@@ -1784,7 +1784,7 @@ export interface __JsonResult$views {
 export type JsonResult = JsonResult$instance & __JsonResult$views;
 
 
-export interface LocalRedirectResult$instance extends ActionResult$instance {
+export interface LocalRedirectResult$instance extends ActionResult$instance, IActionResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_LocalRedirectResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
@@ -1812,7 +1812,7 @@ export interface __LocalRedirectResult$views {
 export type LocalRedirectResult = LocalRedirectResult$instance & __LocalRedirectResult$views;
 
 
-export interface MiddlewareFilterAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+export interface MiddlewareFilterAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_MiddlewareFilterAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
@@ -1839,7 +1839,7 @@ export interface __MiddlewareFilterAttribute$views {
 export type MiddlewareFilterAttribute = MiddlewareFilterAttribute$instance & __MiddlewareFilterAttribute$views;
 
 
-export interface MiddlewareFilterAttribute_1$instance<T> extends MiddlewareFilterAttribute$instance, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+export interface MiddlewareFilterAttribute_1$instance<T extends unknown> extends MiddlewareFilterAttribute$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_MiddlewareFilterAttribute_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
@@ -1850,16 +1850,16 @@ export interface MiddlewareFilterAttribute_1$instance<T> extends MiddlewareFilte
 
 
 export const MiddlewareFilterAttribute_1: {
-    new<T>(): MiddlewareFilterAttribute_1<T>;
+    new<T extends unknown>(): MiddlewareFilterAttribute_1<T>;
 };
 
 
-export interface __MiddlewareFilterAttribute_1$views<T> {
+export interface __MiddlewareFilterAttribute_1$views<T extends unknown> {
     As_IFilterFactory(): Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance;
     As_IOrderedFilter(): Microsoft_AspNetCore_Mvc_Filters_Internal.IOrderedFilter$instance;
 }
 
-export type MiddlewareFilterAttribute_1<T> = MiddlewareFilterAttribute_1$instance<T> & __MiddlewareFilterAttribute_1$views<T>;
+export type MiddlewareFilterAttribute_1<T extends unknown> = MiddlewareFilterAttribute_1$instance<T> & __MiddlewareFilterAttribute_1$views<T>;
 
 
 export interface ModelBinderAttribute$instance extends Attribute {
@@ -1892,7 +1892,7 @@ export interface __ModelBinderAttribute$views {
 export type ModelBinderAttribute = ModelBinderAttribute$instance & __ModelBinderAttribute$views;
 
 
-export interface ModelBinderAttribute_1$instance<TBinder extends IModelBinder> extends ModelBinderAttribute$instance {
+export interface ModelBinderAttribute_1$instance<TBinder extends unknown & IModelBinder> extends ModelBinderAttribute$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinderAttribute_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBinderTypeProviderMetadata: never;
@@ -1903,17 +1903,17 @@ export interface ModelBinderAttribute_1$instance<TBinder extends IModelBinder> e
 
 
 export const ModelBinderAttribute_1: {
-    new<TBinder extends IModelBinder>(): ModelBinderAttribute_1<TBinder>;
+    new<TBinder extends unknown & IModelBinder>(): ModelBinderAttribute_1<TBinder>;
 };
 
 
-export interface __ModelBinderAttribute_1$views<TBinder extends IModelBinder> {
+export interface __ModelBinderAttribute_1$views<TBinder extends unknown & IModelBinder> {
     As_IBinderTypeProviderMetadata(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IBinderTypeProviderMetadata$instance;
     As_IBindingSourceMetadata(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IBindingSourceMetadata$instance;
     As_IModelNameProvider(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelNameProvider$instance;
 }
 
-export type ModelBinderAttribute_1<TBinder extends IModelBinder> = ModelBinderAttribute_1$instance<TBinder> & __ModelBinderAttribute_1$views<TBinder>;
+export type ModelBinderAttribute_1<TBinder extends unknown & IModelBinder> = ModelBinderAttribute_1$instance<TBinder> & __ModelBinderAttribute_1$views<TBinder>;
 
 
 export interface ModelMetadataTypeAttribute$instance extends Attribute {
@@ -1930,18 +1930,18 @@ export const ModelMetadataTypeAttribute: {
 
 export type ModelMetadataTypeAttribute = ModelMetadataTypeAttribute$instance;
 
-export interface ModelMetadataTypeAttribute_1$instance<T> extends ModelMetadataTypeAttribute {
+export interface ModelMetadataTypeAttribute_1$instance<T extends unknown> extends ModelMetadataTypeAttribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelMetadataTypeAttribute_1: never;
 
 }
 
 
 export const ModelMetadataTypeAttribute_1: {
-    new<T>(): ModelMetadataTypeAttribute_1<T>;
+    new<T extends unknown>(): ModelMetadataTypeAttribute_1<T>;
 };
 
 
-export type ModelMetadataTypeAttribute_1<T> = ModelMetadataTypeAttribute_1$instance<T>;
+export type ModelMetadataTypeAttribute_1<T extends unknown> = ModelMetadataTypeAttribute_1$instance<T>;
 
 export interface MvcOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_MvcOptions: never;
@@ -2080,7 +2080,7 @@ export interface NotFoundObjectResult$instance extends ObjectResult$instance {
 
 
 export const NotFoundObjectResult: {
-    new(value: JsValue | null): NotFoundObjectResult;
+    new(value: unknown | null): NotFoundObjectResult;
 };
 
 
@@ -2127,15 +2127,15 @@ export interface ObjectResult$instance extends ActionResult$instance {
     Formatters: FormatterCollection_1<IOutputFormatter>;
     get StatusCode(): Nullable_1<System_Internal.Int32>;
     set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
-    get Value(): JsValue | null;
-    set Value(value: JsValue | null);
+    get Value(): unknown | null;
+    set Value(value: unknown | null);
     ExecuteResultAsync(context: ActionContext): Task;
     OnFormatting(context: ActionContext): void;
 }
 
 
 export const ObjectResult: {
-    new(value: JsValue | null): ObjectResult;
+    new(value: unknown | null): ObjectResult;
 };
 
 
@@ -2157,7 +2157,7 @@ export interface OkObjectResult$instance extends ObjectResult$instance {
 
 
 export const OkObjectResult: {
-    new(value: JsValue | null): OkObjectResult;
+    new(value: unknown | null): OkObjectResult;
 };
 
 
@@ -2225,7 +2225,7 @@ export interface PartialViewResult$instance extends ActionResult$instance {
 
     get ContentType(): string | null;
     set ContentType(value: string | null);
-    readonly Model: JsValue | null;
+    readonly Model: unknown | null;
     get StatusCode(): Nullable_1<System_Internal.Int32>;
     set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     TempData: ITempDataDictionary;
@@ -2251,7 +2251,7 @@ export interface __PartialViewResult$views {
 export type PartialViewResult = PartialViewResult$instance & __PartialViewResult$views;
 
 
-export interface PhysicalFileResult$instance extends FileResult$instance {
+export interface PhysicalFileResult$instance extends FileResult$instance, IActionResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_PhysicalFileResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
@@ -2279,7 +2279,7 @@ export interface ProblemDetails$instance {
 
     get Detail(): string | null;
     set Detail(value: string | null);
-    Extensions: IDictionary_2<System_Internal.String, JsValue | null>;
+    Extensions: IDictionary_2<System_Internal.String, unknown | null>;
     get Instance(): string | null;
     set Instance(value: string | null);
     get Status(): Nullable_1<System_Internal.Int32>;
@@ -2298,7 +2298,7 @@ export const ProblemDetails: {
 
 export type ProblemDetails = ProblemDetails$instance;
 
-export interface ProducesAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IResultFilter$instance {
+export interface ProducesAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_Filters_Internal.IResultFilter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProducesAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
@@ -2333,7 +2333,7 @@ export interface __ProducesAttribute$views {
 export type ProducesAttribute = ProducesAttribute$instance & __ProducesAttribute$views;
 
 
-export interface ProducesAttribute_1$instance<T> extends ProducesAttribute$instance, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IResultFilter$instance {
+export interface ProducesAttribute_1$instance<T extends unknown> extends ProducesAttribute$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IResultFilter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProducesAttribute_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
@@ -2345,20 +2345,20 @@ export interface ProducesAttribute_1$instance<T> extends ProducesAttribute$insta
 
 
 export const ProducesAttribute_1: {
-    new<T>(): ProducesAttribute_1<T>;
+    new<T extends unknown>(): ProducesAttribute_1<T>;
 };
 
 
-export interface __ProducesAttribute_1$views<T> {
+export interface __ProducesAttribute_1$views<T extends unknown> {
     As_IOrderedFilter(): Microsoft_AspNetCore_Mvc_Filters_Internal.IOrderedFilter$instance;
     As_IResultFilter(): Microsoft_AspNetCore_Mvc_Filters_Internal.IResultFilter$instance;
     As_IApiResponseMetadataProvider(): Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiResponseMetadataProvider$instance;
 }
 
-export type ProducesAttribute_1<T> = ProducesAttribute_1$instance<T> & __ProducesAttribute_1$views<T>;
+export type ProducesAttribute_1<T extends unknown> = ProducesAttribute_1$instance<T> & __ProducesAttribute_1$views<T>;
 
 
-export interface ProducesDefaultResponseTypeAttribute$instance extends Attribute, IFilterMetadata {
+export interface ProducesDefaultResponseTypeAttribute$instance extends Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProducesDefaultResponseTypeAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadataProvider: never;
@@ -2399,7 +2399,7 @@ export const ProducesErrorResponseTypeAttribute: {
 
 export type ProducesErrorResponseTypeAttribute = ProducesErrorResponseTypeAttribute$instance;
 
-export interface ProducesResponseTypeAttribute$instance extends Attribute, IFilterMetadata {
+export interface ProducesResponseTypeAttribute$instance extends Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProducesResponseTypeAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
@@ -2426,7 +2426,7 @@ export interface __ProducesResponseTypeAttribute$views {
 export type ProducesResponseTypeAttribute = ProducesResponseTypeAttribute$instance & __ProducesResponseTypeAttribute$views;
 
 
-export interface ProducesResponseTypeAttribute_1$instance<T> extends ProducesResponseTypeAttribute$instance, IFilterMetadata {
+export interface ProducesResponseTypeAttribute_1$instance<T extends unknown> extends ProducesResponseTypeAttribute$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProducesResponseTypeAttribute_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
@@ -2436,16 +2436,16 @@ export interface ProducesResponseTypeAttribute_1$instance<T> extends ProducesRes
 
 
 export const ProducesResponseTypeAttribute_1: {
-    new<T>(statusCode: int): ProducesResponseTypeAttribute_1<T>;
-    new<T>(statusCode: int, contentType: string, additionalContentTypes: string[]): ProducesResponseTypeAttribute_1<T>;
+    new<T extends unknown>(statusCode: int): ProducesResponseTypeAttribute_1<T>;
+    new<T extends unknown>(statusCode: int, contentType: string, additionalContentTypes: string[]): ProducesResponseTypeAttribute_1<T>;
 };
 
 
-export interface __ProducesResponseTypeAttribute_1$views<T> {
+export interface __ProducesResponseTypeAttribute_1$views<T extends unknown> {
     As_IApiResponseMetadataProvider(): Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiResponseMetadataProvider$instance;
 }
 
-export type ProducesResponseTypeAttribute_1<T> = ProducesResponseTypeAttribute_1$instance<T> & __ProducesResponseTypeAttribute_1$views<T>;
+export type ProducesResponseTypeAttribute_1<T extends unknown> = ProducesResponseTypeAttribute_1$instance<T> & __ProducesResponseTypeAttribute_1$views<T>;
 
 
 export interface RedirectResult$instance extends ActionResult$instance, IKeepTempDataResult, Microsoft_AspNetCore_Mvc_ViewFeatures_Internal.IKeepTempDataResult$instance {
@@ -2500,12 +2500,12 @@ export interface RedirectToActionResult$instance extends ActionResult$instance, 
 
 
 export const RedirectToActionResult: {
-    new(actionName: string | null, controllerName: string | null, routeValues: JsValue | null): RedirectToActionResult;
-    new(actionName: string | null, controllerName: string | null, routeValues: JsValue | null, fragment: string | null): RedirectToActionResult;
-    new(actionName: string | null, controllerName: string | null, routeValues: JsValue | null, permanent: boolean): RedirectToActionResult;
-    new(actionName: string | null, controllerName: string | null, routeValues: JsValue | null, permanent: boolean, preserveMethod: boolean): RedirectToActionResult;
-    new(actionName: string | null, controllerName: string | null, routeValues: JsValue | null, permanent: boolean, fragment: string | null): RedirectToActionResult;
-    new(actionName: string | null, controllerName: string | null, routeValues: JsValue | null, permanent: boolean, preserveMethod: boolean, fragment: string | null): RedirectToActionResult;
+    new(actionName: string | null, controllerName: string | null, routeValues: unknown | null): RedirectToActionResult;
+    new(actionName: string | null, controllerName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToActionResult;
+    new(actionName: string | null, controllerName: string | null, routeValues: unknown | null, permanent: boolean): RedirectToActionResult;
+    new(actionName: string | null, controllerName: string | null, routeValues: unknown | null, permanent: boolean, preserveMethod: boolean): RedirectToActionResult;
+    new(actionName: string | null, controllerName: string | null, routeValues: unknown | null, permanent: boolean, fragment: string | null): RedirectToActionResult;
+    new(actionName: string | null, controllerName: string | null, routeValues: unknown | null, permanent: boolean, preserveMethod: boolean, fragment: string | null): RedirectToActionResult;
 };
 
 
@@ -2545,13 +2545,13 @@ export interface RedirectToPageResult$instance extends ActionResult$instance, IK
 export const RedirectToPageResult: {
     new(pageName: string | null): RedirectToPageResult;
     new(pageName: string | null, pageHandler: string | null): RedirectToPageResult;
-    new(pageName: string | null, routeValues: JsValue | null): RedirectToPageResult;
-    new(pageName: string | null, pageHandler: string | null, routeValues: JsValue | null): RedirectToPageResult;
-    new(pageName: string | null, pageHandler: string | null, routeValues: JsValue | null, permanent: boolean): RedirectToPageResult;
-    new(pageName: string | null, pageHandler: string | null, routeValues: JsValue | null, permanent: boolean, preserveMethod: boolean): RedirectToPageResult;
-    new(pageName: string | null, pageHandler: string | null, routeValues: JsValue | null, fragment: string | null): RedirectToPageResult;
-    new(pageName: string | null, pageHandler: string | null, routeValues: JsValue | null, permanent: boolean, fragment: string | null): RedirectToPageResult;
-    new(pageName: string | null, pageHandler: string | null, routeValues: JsValue | null, permanent: boolean, preserveMethod: boolean, fragment: string | null): RedirectToPageResult;
+    new(pageName: string | null, routeValues: unknown | null): RedirectToPageResult;
+    new(pageName: string | null, pageHandler: string | null, routeValues: unknown | null): RedirectToPageResult;
+    new(pageName: string | null, pageHandler: string | null, routeValues: unknown | null, permanent: boolean): RedirectToPageResult;
+    new(pageName: string | null, pageHandler: string | null, routeValues: unknown | null, permanent: boolean, preserveMethod: boolean): RedirectToPageResult;
+    new(pageName: string | null, pageHandler: string | null, routeValues: unknown | null, fragment: string | null): RedirectToPageResult;
+    new(pageName: string | null, pageHandler: string | null, routeValues: unknown | null, permanent: boolean, fragment: string | null): RedirectToPageResult;
+    new(pageName: string | null, pageHandler: string | null, routeValues: unknown | null, permanent: boolean, preserveMethod: boolean, fragment: string | null): RedirectToPageResult;
 };
 
 
@@ -2583,13 +2583,13 @@ export interface RedirectToRouteResult$instance extends ActionResult$instance, I
 
 
 export const RedirectToRouteResult: {
-    new(routeValues: JsValue | null): RedirectToRouteResult;
-    new(routeName: string | null, routeValues: JsValue | null): RedirectToRouteResult;
-    new(routeName: string | null, routeValues: JsValue | null, permanent: boolean): RedirectToRouteResult;
-    new(routeName: string | null, routeValues: JsValue | null, permanent: boolean, preserveMethod: boolean): RedirectToRouteResult;
-    new(routeName: string | null, routeValues: JsValue | null, fragment: string | null): RedirectToRouteResult;
-    new(routeName: string | null, routeValues: JsValue | null, permanent: boolean, fragment: string | null): RedirectToRouteResult;
-    new(routeName: string | null, routeValues: JsValue | null, permanent: boolean, preserveMethod: boolean, fragment: string | null): RedirectToRouteResult;
+    new(routeValues: unknown | null): RedirectToRouteResult;
+    new(routeName: string | null, routeValues: unknown | null): RedirectToRouteResult;
+    new(routeName: string | null, routeValues: unknown | null, permanent: boolean): RedirectToRouteResult;
+    new(routeName: string | null, routeValues: unknown | null, permanent: boolean, preserveMethod: boolean): RedirectToRouteResult;
+    new(routeName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToRouteResult;
+    new(routeName: string | null, routeValues: unknown | null, permanent: boolean, fragment: string | null): RedirectToRouteResult;
+    new(routeName: string | null, routeValues: unknown | null, permanent: boolean, preserveMethod: boolean, fragment: string | null): RedirectToRouteResult;
 };
 
 
@@ -2635,7 +2635,7 @@ export interface RemoteAttributeBase$instance extends ValidationAttribute, Micro
     FormatAdditionalFieldsForClientValidation(property: string): string;
     FormatErrorMessage(name: string): string;
     GetUrl(context: ClientModelValidationContext): string;
-    IsValid(value: JsValue | null): boolean;
+    IsValid(value: unknown | null): boolean;
 }
 
 
@@ -2651,7 +2651,7 @@ export interface __RemoteAttributeBase$views {
 export type RemoteAttributeBase = RemoteAttributeBase$instance & __RemoteAttributeBase$views;
 
 
-export interface RequestFormLimitsAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+export interface RequestFormLimitsAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RequestFormLimitsAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFormOptionsMetadata: never;
@@ -2689,7 +2689,7 @@ export interface __RequestFormLimitsAttribute$views {
 export type RequestFormLimitsAttribute = RequestFormLimitsAttribute$instance & __RequestFormLimitsAttribute$views;
 
 
-export interface RequestSizeLimitAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Http_Metadata_Internal.IRequestSizeLimitMetadata$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+export interface RequestSizeLimitAttribute$instance extends Attribute, Microsoft_AspNetCore_Http_Metadata_Internal.IRequestSizeLimitMetadata$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RequestSizeLimitAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IRequestSizeLimitMetadata: never;
@@ -2717,7 +2717,7 @@ export interface __RequestSizeLimitAttribute$views {
 export type RequestSizeLimitAttribute = RequestSizeLimitAttribute$instance & __RequestSizeLimitAttribute$views;
 
 
-export interface RequireHttpsAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IAuthorizationFilter$instance {
+export interface RequireHttpsAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_Filters_Internal.IAuthorizationFilter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RequireHttpsAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAuthorizationFilter: never;
@@ -2744,7 +2744,7 @@ export interface __RequireHttpsAttribute$views {
 export type RequireHttpsAttribute = RequireHttpsAttribute$instance & __RequireHttpsAttribute$views;
 
 
-export interface ResponseCacheAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+export interface ResponseCacheAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ResponseCacheAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
@@ -2804,7 +2804,7 @@ export interface __RouteAttribute$views {
 export type RouteAttribute = RouteAttribute$instance & __RouteAttribute$views;
 
 
-export interface SerializableError$instance extends Dictionary_2<System_Internal.String, JsValue> {
+export interface SerializableError$instance extends Dictionary_2<System_Internal.String, unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_SerializableError: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
@@ -2829,7 +2829,7 @@ export const SerializableError: {
 
 export type SerializableError = SerializableError$instance;
 
-export interface ServiceFilterAttribute$instance extends Attribute, IFilterMetadata {
+export interface ServiceFilterAttribute$instance extends Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ServiceFilterAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
@@ -2856,7 +2856,7 @@ export interface __ServiceFilterAttribute$views {
 export type ServiceFilterAttribute = ServiceFilterAttribute$instance & __ServiceFilterAttribute$views;
 
 
-export interface ServiceFilterAttribute_1$instance<TFilter extends IFilterMetadata> extends ServiceFilterAttribute$instance, IFilterMetadata {
+export interface ServiceFilterAttribute_1$instance<TFilter extends unknown & IFilterMetadata> extends ServiceFilterAttribute$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ServiceFilterAttribute_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
@@ -2867,19 +2867,19 @@ export interface ServiceFilterAttribute_1$instance<TFilter extends IFilterMetada
 
 
 export const ServiceFilterAttribute_1: {
-    new<TFilter extends IFilterMetadata>(): ServiceFilterAttribute_1<TFilter>;
+    new<TFilter extends unknown & IFilterMetadata>(): ServiceFilterAttribute_1<TFilter>;
 };
 
 
-export interface __ServiceFilterAttribute_1$views<TFilter extends IFilterMetadata> {
+export interface __ServiceFilterAttribute_1$views<TFilter extends unknown & IFilterMetadata> {
     As_IFilterFactory(): Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance;
     As_IOrderedFilter(): Microsoft_AspNetCore_Mvc_Filters_Internal.IOrderedFilter$instance;
 }
 
-export type ServiceFilterAttribute_1<TFilter extends IFilterMetadata> = ServiceFilterAttribute_1$instance<TFilter> & __ServiceFilterAttribute_1$views<TFilter>;
+export type ServiceFilterAttribute_1<TFilter extends unknown & IFilterMetadata> = ServiceFilterAttribute_1$instance<TFilter> & __ServiceFilterAttribute_1$views<TFilter>;
 
 
-export interface SignInResult$instance extends ActionResult$instance {
+export interface SignInResult$instance extends ActionResult$instance, IActionResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_SignInResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
@@ -2908,7 +2908,7 @@ export interface __SignInResult$views {
 export type SignInResult = SignInResult$instance & __SignInResult$views;
 
 
-export interface SignOutResult$instance extends ActionResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance {
+export interface SignOutResult$instance extends ActionResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, IActionResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_SignOutResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
@@ -2939,7 +2939,7 @@ export interface __SignOutResult$views {
 export type SignOutResult = SignOutResult$instance & __SignOutResult$views;
 
 
-export interface SkipStatusCodePagesAttribute$instance extends Attribute, IFilterMetadata, ISkipStatusCodePagesMetadata, Microsoft_AspNetCore_Http_Metadata_Internal.ISkipStatusCodePagesMetadata$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IResourceFilter$instance {
+export interface SkipStatusCodePagesAttribute$instance extends Attribute, ISkipStatusCodePagesMetadata, Microsoft_AspNetCore_Http_Metadata_Internal.ISkipStatusCodePagesMetadata$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IResourceFilter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_SkipStatusCodePagesAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_ISkipStatusCodePagesMetadata: never;
@@ -3003,15 +3003,15 @@ export const TempDataAttribute: {
 
 export type TempDataAttribute = TempDataAttribute$instance;
 
-export interface TypeFilterAttribute$instance extends Attribute, IFilterMetadata {
+export interface TypeFilterAttribute$instance extends Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TypeFilterAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
 
-    get Arguments(): JsValue[] | null;
-    set Arguments(value: JsValue[] | null);
+    get Arguments(): unknown[] | null;
+    set Arguments(value: unknown[] | null);
     readonly ImplementationType: Type;
     IsReusable: boolean;
     Order: int;
@@ -3032,7 +3032,7 @@ export interface __TypeFilterAttribute$views {
 export type TypeFilterAttribute = TypeFilterAttribute$instance & __TypeFilterAttribute$views;
 
 
-export interface TypeFilterAttribute_1$instance<TFilter extends IFilterMetadata> extends TypeFilterAttribute$instance, IFilterMetadata {
+export interface TypeFilterAttribute_1$instance<TFilter extends unknown & IFilterMetadata> extends TypeFilterAttribute$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TypeFilterAttribute_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
@@ -3043,16 +3043,16 @@ export interface TypeFilterAttribute_1$instance<TFilter extends IFilterMetadata>
 
 
 export const TypeFilterAttribute_1: {
-    new<TFilter extends IFilterMetadata>(): TypeFilterAttribute_1<TFilter>;
+    new<TFilter extends unknown & IFilterMetadata>(): TypeFilterAttribute_1<TFilter>;
 };
 
 
-export interface __TypeFilterAttribute_1$views<TFilter extends IFilterMetadata> {
+export interface __TypeFilterAttribute_1$views<TFilter extends unknown & IFilterMetadata> {
     As_IFilterFactory(): Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance;
     As_IOrderedFilter(): Microsoft_AspNetCore_Mvc_Filters_Internal.IOrderedFilter$instance;
 }
 
-export type TypeFilterAttribute_1<TFilter extends IFilterMetadata> = TypeFilterAttribute_1$instance<TFilter> & __TypeFilterAttribute_1$views<TFilter>;
+export type TypeFilterAttribute_1<TFilter extends unknown & IFilterMetadata> = TypeFilterAttribute_1$instance<TFilter> & __TypeFilterAttribute_1$views<TFilter>;
 
 
 export interface UnauthorizedObjectResult$instance extends ObjectResult$instance {
@@ -3065,7 +3065,7 @@ export interface UnauthorizedObjectResult$instance extends ObjectResult$instance
 
 
 export const UnauthorizedObjectResult: {
-    new(value: JsValue | null): UnauthorizedObjectResult;
+    new(value: unknown | null): UnauthorizedObjectResult;
 };
 
 
@@ -3111,7 +3111,7 @@ export interface UnprocessableEntityObjectResult$instance extends ObjectResult$i
 
 export const UnprocessableEntityObjectResult: {
     new(modelState: ModelStateDictionary): UnprocessableEntityObjectResult;
-    new(error: JsValue | null): UnprocessableEntityObjectResult;
+    new(error: unknown | null): UnprocessableEntityObjectResult;
 };
 
 
@@ -3169,7 +3169,7 @@ export interface __UnsupportedMediaTypeResult$views {
 export type UnsupportedMediaTypeResult = UnsupportedMediaTypeResult$instance & __UnsupportedMediaTypeResult$views;
 
 
-export interface ValidateAntiForgeryTokenAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+export interface ValidateAntiForgeryTokenAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ValidateAntiForgeryTokenAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
@@ -3222,7 +3222,7 @@ export interface ViewComponent$instance {
     Url: IUrlHelper;
     readonly User: IPrincipal;
     readonly UserClaimsPrincipal: ClaimsPrincipal;
-    readonly ViewBag: JsValue;
+    readonly ViewBag: unknown;
     ViewComponentContext: ViewComponentContext;
     readonly ViewContext: ViewContext;
     readonly ViewData: ViewDataDictionary;
@@ -3230,8 +3230,8 @@ export interface ViewComponent$instance {
     Content(content: string): ContentViewComponentResult;
     View(): ViewViewComponentResult;
     View(viewName: string | null): ViewViewComponentResult;
-    View<TModel>(model: TModel | null): ViewViewComponentResult;
-    View<TModel>(viewName: string | null, model: TModel | null): ViewViewComponentResult;
+    View<TModel extends unknown>(model: TModel | null): ViewViewComponentResult;
+    View<TModel extends unknown>(viewName: string | null, model: TModel | null): ViewViewComponentResult;
 }
 
 
@@ -3261,11 +3261,11 @@ export interface ViewComponentResult$instance extends ActionResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
-    get Arguments(): JsValue | null;
-    set Arguments(value: JsValue | null);
+    get Arguments(): unknown | null;
+    set Arguments(value: unknown | null);
     get ContentType(): string | null;
     set ContentType(value: string | null);
-    readonly Model: JsValue | null;
+    readonly Model: unknown | null;
     get StatusCode(): Nullable_1<System_Internal.Int32>;
     set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     TempData: ITempDataDictionary;
@@ -3314,7 +3314,7 @@ export interface ViewResult$instance extends ActionResult$instance {
 
     get ContentType(): string | null;
     set ContentType(value: string | null);
-    readonly Model: JsValue | null;
+    readonly Model: unknown | null;
     get StatusCode(): Nullable_1<System_Internal.Int32>;
     set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     TempData: ITempDataDictionary;
@@ -3340,7 +3340,7 @@ export interface __ViewResult$views {
 export type ViewResult = ViewResult$instance & __ViewResult$views;
 
 
-export interface VirtualFileResult$instance extends FileResult$instance {
+export interface VirtualFileResult$instance extends FileResult$instance, IActionResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_VirtualFileResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
@@ -3366,42 +3366,42 @@ export type VirtualFileResult = VirtualFileResult$instance & __VirtualFileResult
 
 
 export abstract class DefaultApiConventions$instance {
-    static Create(model: JsValue): void;
-    static Delete(id: JsValue): void;
-    static Edit(id: JsValue, model: JsValue): void;
-    static Find(id: JsValue): void;
-    static Get(id: JsValue): void;
-    static Post(model: JsValue): void;
-    static Put(id: JsValue, model: JsValue): void;
-    static Update(id: JsValue, model: JsValue): void;
+    static Create(model: unknown): void;
+    static Delete(id: unknown): void;
+    static Edit(id: unknown, model: unknown): void;
+    static Find(id: unknown): void;
+    static Get(id: unknown): void;
+    static Post(model: unknown): void;
+    static Put(id: unknown, model: unknown): void;
+    static Update(id: unknown, model: unknown): void;
 }
 
 
 export type DefaultApiConventions = DefaultApiConventions$instance;
 
 export abstract class UrlHelperExtensions$instance {
-    static Action(helper: IUrlHelper, action: string | null, values: JsValue | null): string | null;
-    static Action(helper: IUrlHelper, action: string | null, controller: string | null, values: JsValue | null, protocol: string | null, host: string | null, fragment: string | null): string | null;
-    static Action(helper: IUrlHelper, action: string | null, controller: string | null, values: JsValue | null, protocol: string | null, host: string | null): string | null;
-    static Action(helper: IUrlHelper, action: string | null, controller: string | null, values: JsValue | null, protocol: string | null): string | null;
-    static Action(helper: IUrlHelper, action: string | null, controller: string | null, values: JsValue | null): string | null;
+    static Action(helper: IUrlHelper, action: string | null, values: unknown | null): string | null;
+    static Action(helper: IUrlHelper, action: string | null, controller: string | null, values: unknown | null, protocol: string | null, host: string | null, fragment: string | null): string | null;
+    static Action(helper: IUrlHelper, action: string | null, controller: string | null, values: unknown | null, protocol: string | null, host: string | null): string | null;
+    static Action(helper: IUrlHelper, action: string | null, controller: string | null, values: unknown | null, protocol: string | null): string | null;
+    static Action(helper: IUrlHelper, action: string | null, controller: string | null, values: unknown | null): string | null;
     static Action(helper: IUrlHelper, action: string | null, controller: string | null): string | null;
     static Action(helper: IUrlHelper, action: string | null): string | null;
     static Action(helper: IUrlHelper): string | null;
-    static ActionLink(helper: IUrlHelper, action?: string | null, controller?: string | null, values?: JsValue | null, protocol?: string | null, host?: string | null, fragment?: string | null): string | null;
-    static Page(urlHelper: IUrlHelper, pageName: string | null, values: JsValue | null): string | null;
-    static Page(urlHelper: IUrlHelper, pageName: string | null, pageHandler: string | null, values: JsValue | null, protocol: string | null, host: string | null, fragment: string | null): string | null;
-    static Page(urlHelper: IUrlHelper, pageName: string | null, pageHandler: string | null, values: JsValue | null, protocol: string | null, host: string | null): string | null;
-    static Page(urlHelper: IUrlHelper, pageName: string | null, pageHandler: string | null, values: JsValue | null, protocol: string | null): string | null;
-    static Page(urlHelper: IUrlHelper, pageName: string | null, pageHandler: string | null, values: JsValue | null): string | null;
+    static ActionLink(helper: IUrlHelper, action?: string | null, controller?: string | null, values?: unknown | null, protocol?: string | null, host?: string | null, fragment?: string | null): string | null;
+    static Page(urlHelper: IUrlHelper, pageName: string | null, values: unknown | null): string | null;
+    static Page(urlHelper: IUrlHelper, pageName: string | null, pageHandler: string | null, values: unknown | null, protocol: string | null, host: string | null, fragment: string | null): string | null;
+    static Page(urlHelper: IUrlHelper, pageName: string | null, pageHandler: string | null, values: unknown | null, protocol: string | null, host: string | null): string | null;
+    static Page(urlHelper: IUrlHelper, pageName: string | null, pageHandler: string | null, values: unknown | null, protocol: string | null): string | null;
+    static Page(urlHelper: IUrlHelper, pageName: string | null, pageHandler: string | null, values: unknown | null): string | null;
     static Page(urlHelper: IUrlHelper, pageName: string | null, pageHandler: string | null): string | null;
     static Page(urlHelper: IUrlHelper, pageName: string | null): string | null;
-    static PageLink(urlHelper: IUrlHelper, pageName?: string | null, pageHandler?: string | null, values?: JsValue | null, protocol?: string | null, host?: string | null, fragment?: string | null): string | null;
-    static RouteUrl(helper: IUrlHelper, values: JsValue | null): string | null;
-    static RouteUrl(helper: IUrlHelper, routeName: string | null, values: JsValue | null, protocol: string | null, host: string | null, fragment: string | null): string | null;
-    static RouteUrl(helper: IUrlHelper, routeName: string | null, values: JsValue | null, protocol: string | null, host: string | null): string | null;
-    static RouteUrl(helper: IUrlHelper, routeName: string | null, values: JsValue | null, protocol: string | null): string | null;
-    static RouteUrl(helper: IUrlHelper, routeName: string | null, values: JsValue | null): string | null;
+    static PageLink(urlHelper: IUrlHelper, pageName?: string | null, pageHandler?: string | null, values?: unknown | null, protocol?: string | null, host?: string | null, fragment?: string | null): string | null;
+    static RouteUrl(helper: IUrlHelper, values: unknown | null): string | null;
+    static RouteUrl(helper: IUrlHelper, routeName: string | null, values: unknown | null, protocol: string | null, host: string | null, fragment: string | null): string | null;
+    static RouteUrl(helper: IUrlHelper, routeName: string | null, values: unknown | null, protocol: string | null, host: string | null): string | null;
+    static RouteUrl(helper: IUrlHelper, routeName: string | null, values: unknown | null, protocol: string | null): string | null;
+    static RouteUrl(helper: IUrlHelper, routeName: string | null, values: unknown | null): string | null;
     static RouteUrl(helper: IUrlHelper, routeName: string | null): string | null;
 }
 

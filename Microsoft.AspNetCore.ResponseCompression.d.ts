@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.ResponseCompression/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { HttpContext, RequestDelegate } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { ICollection as ICollection__System_Collections_Generic, IEnumerable as IEnumerable__System_Collections_Generic, IList as IList__System_Collections_Generic, IReadOnlyCollection, IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';

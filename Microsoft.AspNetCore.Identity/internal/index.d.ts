@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Identity, Microsoft.Extensions.Identity.Core, Microsoft.Extensions.Identity.Stores
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -37,14 +37,14 @@ export enum PasswordVerificationResult {
 }
 
 
-export interface IEmailSender_1$instance<TUser> {
+export interface IEmailSender_1$instance<TUser extends (object | null)> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IEmailSender_1: never;
 
     SendConfirmationLinkAsync(user: TUser, email: string, confirmationLink: string): Task;
 }
 
 
-export type IEmailSender_1<TUser> = IEmailSender_1$instance<TUser>;
+export type IEmailSender_1<TUser extends (object | null)> = IEmailSender_1$instance<TUser>;
 
 export interface ILookupNormalizer$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ILookupNormalizer: never;
@@ -74,7 +74,7 @@ export interface ILookupProtectorKeyRing$instance {
 
 export type ILookupProtectorKeyRing = ILookupProtectorKeyRing$instance & { readonly [keyId: string]: string; };
 
-export interface IPasskeyHandler_1$instance<TUser> {
+export interface IPasskeyHandler_1$instance<TUser extends (object | null)> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasskeyHandler_1: never;
 
     MakeCreationOptionsAsync(userEntity: PasskeyUserEntity, httpContext: HttpContext): Task_1<PasskeyCreationOptionsResult>;
@@ -84,9 +84,9 @@ export interface IPasskeyHandler_1$instance<TUser> {
 }
 
 
-export type IPasskeyHandler_1<TUser> = IPasskeyHandler_1$instance<TUser>;
+export type IPasskeyHandler_1<TUser extends (object | null)> = IPasskeyHandler_1$instance<TUser>;
 
-export interface IPasswordHasher_1$instance<TUser> {
+export interface IPasswordHasher_1$instance<TUser extends (object | null)> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasswordHasher_1: never;
 
     HashPassword(user: TUser, password: string): string;
@@ -94,16 +94,16 @@ export interface IPasswordHasher_1$instance<TUser> {
 }
 
 
-export type IPasswordHasher_1<TUser> = IPasswordHasher_1$instance<TUser>;
+export type IPasswordHasher_1<TUser extends (object | null)> = IPasswordHasher_1$instance<TUser>;
 
-export interface IPasswordValidator_1$instance<TUser> {
+export interface IPasswordValidator_1$instance<TUser extends (object | null)> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasswordValidator_1: never;
 
     ValidateAsync(manager: UserManager_1<TUser>, user: TUser, password: string | null): Task_1<IdentityResult>;
 }
 
 
-export type IPasswordValidator_1<TUser> = IPasswordValidator_1$instance<TUser>;
+export type IPasswordValidator_1<TUser extends (object | null)> = IPasswordValidator_1$instance<TUser>;
 
 export interface IPersonalDataProtector$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPersonalDataProtector: never;
@@ -114,7 +114,7 @@ export interface IPersonalDataProtector$instance {
 
 export type IPersonalDataProtector = IPersonalDataProtector$instance;
 
-export interface IProtectedUserStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IProtectedUserStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IProtectedUserStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
@@ -123,11 +123,11 @@ export interface IProtectedUserStore_1$instance<TUser> extends IUserStore_1<TUse
 }
 
 
-export interface IProtectedUserStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IProtectedUserStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IProtectedUserStore_1<TUser> = IProtectedUserStore_1$instance<TUser>;
+export type IProtectedUserStore_1<TUser extends (object | null)> = IProtectedUserStore_1$instance<TUser>;
 
-export interface IQueryableRoleStore_1$instance<TRole> extends IRoleStore_1<TRole>, IDisposable {
+export interface IQueryableRoleStore_1$instance<TRole extends (object | null)> extends IRoleStore_1<TRole>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IQueryableRoleStore_1: never;
 
     readonly Roles: IQueryable_1<TRole>;
@@ -137,11 +137,11 @@ export interface IQueryableRoleStore_1$instance<TRole> extends IRoleStore_1<TRol
 }
 
 
-export interface IQueryableRoleStore_1$instance<TRole> extends IRoleStore_1$instance<TRole> {}
+export interface IQueryableRoleStore_1$instance<TRole extends (object | null)> extends IRoleStore_1$instance<TRole> {}
 
-export type IQueryableRoleStore_1<TRole> = IQueryableRoleStore_1$instance<TRole>;
+export type IQueryableRoleStore_1<TRole extends (object | null)> = IQueryableRoleStore_1$instance<TRole>;
 
-export interface IQueryableUserStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IQueryableUserStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IQueryableUserStore_1: never;
 
     readonly Users: IQueryable_1<TUser>;
@@ -151,11 +151,11 @@ export interface IQueryableUserStore_1$instance<TUser> extends IUserStore_1<TUse
 }
 
 
-export interface IQueryableUserStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IQueryableUserStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IQueryableUserStore_1<TUser> = IQueryableUserStore_1$instance<TUser>;
+export type IQueryableUserStore_1<TUser extends (object | null)> = IQueryableUserStore_1$instance<TUser>;
 
-export interface IRoleClaimStore_1$instance<TRole> extends IRoleStore_1<TRole>, IDisposable {
+export interface IRoleClaimStore_1$instance<TRole extends (object | null)> extends IRoleStore_1<TRole>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IRoleClaimStore_1: never;
 
     AddClaimAsync(role: TRole, claim: Claim, cancellationToken?: CancellationToken): Task;
@@ -166,11 +166,11 @@ export interface IRoleClaimStore_1$instance<TRole> extends IRoleStore_1<TRole>, 
 }
 
 
-export interface IRoleClaimStore_1$instance<TRole> extends IRoleStore_1$instance<TRole> {}
+export interface IRoleClaimStore_1$instance<TRole extends (object | null)> extends IRoleStore_1$instance<TRole> {}
 
-export type IRoleClaimStore_1<TRole> = IRoleClaimStore_1$instance<TRole>;
+export type IRoleClaimStore_1<TRole extends (object | null)> = IRoleClaimStore_1$instance<TRole>;
 
-export interface IRoleStore_1$instance<TRole> extends IDisposable {
+export interface IRoleStore_1$instance<TRole extends (object | null)> extends IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IRoleStore_1: never;
 
     CreateAsync(role: TRole, cancellationToken: CancellationToken): Task_1<IdentityResult>;
@@ -179,18 +179,18 @@ export interface IRoleStore_1$instance<TRole> extends IDisposable {
 }
 
 
-export interface IRoleStore_1$instance<TRole> extends System_Internal.IDisposable {}
+export interface IRoleStore_1$instance<TRole extends (object | null)> extends System_Internal.IDisposable {}
 
-export type IRoleStore_1<TRole> = IRoleStore_1$instance<TRole>;
+export type IRoleStore_1<TRole extends (object | null)> = IRoleStore_1$instance<TRole>;
 
-export interface IRoleValidator_1$instance<TRole> {
+export interface IRoleValidator_1$instance<TRole extends (object | null)> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IRoleValidator_1: never;
 
     ValidateAsync(manager: RoleManager_1<TRole>, role: TRole): Task_1<IdentityResult>;
 }
 
 
-export type IRoleValidator_1<TRole> = IRoleValidator_1$instance<TRole>;
+export type IRoleValidator_1<TRole extends (object | null)> = IRoleValidator_1$instance<TRole>;
 
 export interface ISecurityStampValidator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ISecurityStampValidator: never;
@@ -212,7 +212,7 @@ export interface ITwoFactorSecurityStampValidator$instance extends ISecurityStam
 
 export type ITwoFactorSecurityStampValidator = ITwoFactorSecurityStampValidator$instance;
 
-export interface IUserAuthenticationTokenStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserAuthenticationTokenStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserAuthenticationTokenStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
@@ -224,11 +224,11 @@ export interface IUserAuthenticationTokenStore_1$instance<TUser> extends IUserSt
 }
 
 
-export interface IUserAuthenticationTokenStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserAuthenticationTokenStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserAuthenticationTokenStore_1<TUser> = IUserAuthenticationTokenStore_1$instance<TUser>;
+export type IUserAuthenticationTokenStore_1<TUser extends (object | null)> = IUserAuthenticationTokenStore_1$instance<TUser>;
 
-export interface IUserAuthenticatorKeyStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserAuthenticatorKeyStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserAuthenticatorKeyStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
@@ -239,20 +239,20 @@ export interface IUserAuthenticatorKeyStore_1$instance<TUser> extends IUserStore
 }
 
 
-export interface IUserAuthenticatorKeyStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserAuthenticatorKeyStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserAuthenticatorKeyStore_1<TUser> = IUserAuthenticatorKeyStore_1$instance<TUser>;
+export type IUserAuthenticatorKeyStore_1<TUser extends (object | null)> = IUserAuthenticatorKeyStore_1$instance<TUser>;
 
-export interface IUserClaimsPrincipalFactory_1$instance<TUser> {
+export interface IUserClaimsPrincipalFactory_1$instance<TUser extends (object | null)> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_1: never;
 
     CreateAsync(user: TUser): Task_1<ClaimsPrincipal>;
 }
 
 
-export type IUserClaimsPrincipalFactory_1<TUser> = IUserClaimsPrincipalFactory_1$instance<TUser>;
+export type IUserClaimsPrincipalFactory_1<TUser extends (object | null)> = IUserClaimsPrincipalFactory_1$instance<TUser>;
 
-export interface IUserClaimStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserClaimStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserClaimStore_1: never;
 
     AddClaimsAsync(user: TUser, claims: IEnumerable_1<Claim>, cancellationToken: CancellationToken): Task;
@@ -265,20 +265,20 @@ export interface IUserClaimStore_1$instance<TUser> extends IUserStore_1<TUser>, 
 }
 
 
-export interface IUserClaimStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserClaimStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserClaimStore_1<TUser> = IUserClaimStore_1$instance<TUser>;
+export type IUserClaimStore_1<TUser extends (object | null)> = IUserClaimStore_1$instance<TUser>;
 
-export interface IUserConfirmation_1$instance<TUser> {
+export interface IUserConfirmation_1$instance<TUser extends (object | null)> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserConfirmation_1: never;
 
     IsConfirmedAsync(manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.Boolean>;
 }
 
 
-export type IUserConfirmation_1<TUser> = IUserConfirmation_1$instance<TUser>;
+export type IUserConfirmation_1<TUser extends (object | null)> = IUserConfirmation_1$instance<TUser>;
 
-export interface IUserEmailStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserEmailStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserEmailStore_1: never;
 
     FindByEmailAsync(normalizedEmail: string, cancellationToken: CancellationToken): Task_1<TUser | null>;
@@ -291,11 +291,11 @@ export interface IUserEmailStore_1$instance<TUser> extends IUserStore_1<TUser>, 
 }
 
 
-export interface IUserEmailStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserEmailStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserEmailStore_1<TUser> = IUserEmailStore_1$instance<TUser>;
+export type IUserEmailStore_1<TUser extends (object | null)> = IUserEmailStore_1$instance<TUser>;
 
-export interface IUserLockoutStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserLockoutStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserLockoutStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
@@ -308,11 +308,11 @@ export interface IUserLockoutStore_1$instance<TUser> extends IUserStore_1<TUser>
 }
 
 
-export interface IUserLockoutStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserLockoutStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserLockoutStore_1<TUser> = IUserLockoutStore_1$instance<TUser>;
+export type IUserLockoutStore_1<TUser extends (object | null)> = IUserLockoutStore_1$instance<TUser>;
 
-export interface IUserLoginStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserLoginStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserLoginStore_1: never;
 
     AddLoginAsync(user: TUser, login: UserLoginInfo, cancellationToken: CancellationToken): Task;
@@ -325,11 +325,11 @@ export interface IUserLoginStore_1$instance<TUser> extends IUserStore_1<TUser>, 
 }
 
 
-export interface IUserLoginStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserLoginStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserLoginStore_1<TUser> = IUserLoginStore_1$instance<TUser>;
+export type IUserLoginStore_1<TUser extends (object | null)> = IUserLoginStore_1$instance<TUser>;
 
-export interface IUserPasskeyStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserPasskeyStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserPasskeyStore_1: never;
 
     AddOrUpdatePasskeyAsync(user: TUser, passkey: UserPasskeyInfo, cancellationToken: CancellationToken): Task;
@@ -343,11 +343,11 @@ export interface IUserPasskeyStore_1$instance<TUser> extends IUserStore_1<TUser>
 }
 
 
-export interface IUserPasskeyStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserPasskeyStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserPasskeyStore_1<TUser> = IUserPasskeyStore_1$instance<TUser>;
+export type IUserPasskeyStore_1<TUser extends (object | null)> = IUserPasskeyStore_1$instance<TUser>;
 
-export interface IUserPasswordStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserPasswordStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserPasswordStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
@@ -358,11 +358,11 @@ export interface IUserPasswordStore_1$instance<TUser> extends IUserStore_1<TUser
 }
 
 
-export interface IUserPasswordStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserPasswordStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserPasswordStore_1<TUser> = IUserPasswordStore_1$instance<TUser>;
+export type IUserPasswordStore_1<TUser extends (object | null)> = IUserPasswordStore_1$instance<TUser>;
 
-export interface IUserPhoneNumberStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserPhoneNumberStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserPhoneNumberStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
@@ -374,11 +374,11 @@ export interface IUserPhoneNumberStore_1$instance<TUser> extends IUserStore_1<TU
 }
 
 
-export interface IUserPhoneNumberStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserPhoneNumberStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserPhoneNumberStore_1<TUser> = IUserPhoneNumberStore_1$instance<TUser>;
+export type IUserPhoneNumberStore_1<TUser extends (object | null)> = IUserPhoneNumberStore_1$instance<TUser>;
 
-export interface IUserRoleStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserRoleStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserRoleStore_1: never;
 
     AddToRoleAsync(user: TUser, roleName: string, cancellationToken: CancellationToken): Task;
@@ -391,11 +391,11 @@ export interface IUserRoleStore_1$instance<TUser> extends IUserStore_1<TUser>, I
 }
 
 
-export interface IUserRoleStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserRoleStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserRoleStore_1<TUser> = IUserRoleStore_1$instance<TUser>;
+export type IUserRoleStore_1<TUser extends (object | null)> = IUserRoleStore_1$instance<TUser>;
 
-export interface IUserSecurityStampStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserSecurityStampStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserSecurityStampStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
@@ -406,11 +406,11 @@ export interface IUserSecurityStampStore_1$instance<TUser> extends IUserStore_1<
 }
 
 
-export interface IUserSecurityStampStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserSecurityStampStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserSecurityStampStore_1<TUser> = IUserSecurityStampStore_1$instance<TUser>;
+export type IUserSecurityStampStore_1<TUser extends (object | null)> = IUserSecurityStampStore_1$instance<TUser>;
 
-export interface IUserStore_1$instance<TUser> extends IDisposable {
+export interface IUserStore_1$instance<TUser extends (object | null)> extends IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser | null>;
@@ -419,11 +419,11 @@ export interface IUserStore_1$instance<TUser> extends IDisposable {
 }
 
 
-export interface IUserStore_1$instance<TUser> extends System_Internal.IDisposable {}
+export interface IUserStore_1$instance<TUser extends (object | null)> extends System_Internal.IDisposable {}
 
-export type IUserStore_1<TUser> = IUserStore_1$instance<TUser>;
+export type IUserStore_1<TUser extends (object | null)> = IUserStore_1$instance<TUser>;
 
-export interface IUserTwoFactorRecoveryCodeStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserTwoFactorRecoveryCodeStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorRecoveryCodeStore_1: never;
 
     CountCodesAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
@@ -435,11 +435,11 @@ export interface IUserTwoFactorRecoveryCodeStore_1$instance<TUser> extends IUser
 }
 
 
-export interface IUserTwoFactorRecoveryCodeStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserTwoFactorRecoveryCodeStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserTwoFactorRecoveryCodeStore_1<TUser> = IUserTwoFactorRecoveryCodeStore_1$instance<TUser>;
+export type IUserTwoFactorRecoveryCodeStore_1<TUser extends (object | null)> = IUserTwoFactorRecoveryCodeStore_1$instance<TUser>;
 
-export interface IUserTwoFactorStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
+export interface IUserTwoFactorStore_1$instance<TUser extends (object | null)> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
@@ -450,11 +450,11 @@ export interface IUserTwoFactorStore_1$instance<TUser> extends IUserStore_1<TUse
 }
 
 
-export interface IUserTwoFactorStore_1$instance<TUser> extends IUserStore_1$instance<TUser> {}
+export interface IUserTwoFactorStore_1$instance<TUser extends (object | null)> extends IUserStore_1$instance<TUser> {}
 
-export type IUserTwoFactorStore_1<TUser> = IUserTwoFactorStore_1$instance<TUser>;
+export type IUserTwoFactorStore_1<TUser extends (object | null)> = IUserTwoFactorStore_1$instance<TUser>;
 
-export interface IUserTwoFactorTokenProvider_1$instance<TUser> {
+export interface IUserTwoFactorTokenProvider_1$instance<TUser extends (object | null)> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
 
     CanGenerateTwoFactorTokenAsync(manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.Boolean>;
@@ -463,18 +463,18 @@ export interface IUserTwoFactorTokenProvider_1$instance<TUser> {
 }
 
 
-export type IUserTwoFactorTokenProvider_1<TUser> = IUserTwoFactorTokenProvider_1$instance<TUser>;
+export type IUserTwoFactorTokenProvider_1<TUser extends (object | null)> = IUserTwoFactorTokenProvider_1$instance<TUser>;
 
-export interface IUserValidator_1$instance<TUser> {
+export interface IUserValidator_1$instance<TUser extends (object | null)> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserValidator_1: never;
 
     ValidateAsync(manager: UserManager_1<TUser>, user: TUser): Task_1<IdentityResult>;
 }
 
 
-export type IUserValidator_1<TUser> = IUserValidator_1$instance<TUser>;
+export type IUserValidator_1<TUser extends (object | null)> = IUserValidator_1$instance<TUser>;
 
-export interface AspNetRoleManager_1$instance<TRole> extends RoleManager_1<TRole> {
+export interface AspNetRoleManager_1$instance<TRole extends (object | null)> extends RoleManager_1<TRole> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_AspNetRoleManager_1: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
@@ -484,13 +484,13 @@ export interface AspNetRoleManager_1$instance<TRole> extends RoleManager_1<TRole
 
 
 export const AspNetRoleManager_1: {
-    new<TRole>(store: IRoleStore_1<TRole>, roleValidators: IEnumerable_1<IRoleValidator_1<TRole>>, keyNormalizer: ILookupNormalizer, errors: IdentityErrorDescriber, logger: ILogger_1<RoleManager_1<TRole>>, contextAccessor: IHttpContextAccessor): AspNetRoleManager_1<TRole>;
+    new<TRole extends (object | null)>(store: IRoleStore_1<TRole>, roleValidators: IEnumerable_1<IRoleValidator_1<TRole>>, keyNormalizer: ILookupNormalizer, errors: IdentityErrorDescriber, logger: ILogger_1<RoleManager_1<TRole>>, contextAccessor: IHttpContextAccessor): AspNetRoleManager_1<TRole>;
 };
 
 
-export type AspNetRoleManager_1<TRole> = AspNetRoleManager_1$instance<TRole>;
+export type AspNetRoleManager_1<TRole extends (object | null)> = AspNetRoleManager_1$instance<TRole>;
 
-export interface AspNetUserManager_1$instance<TUser> extends UserManager_1<TUser> {
+export interface AspNetUserManager_1$instance<TUser extends (object | null)> extends UserManager_1<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_AspNetUserManager_1: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
@@ -500,13 +500,13 @@ export interface AspNetUserManager_1$instance<TUser> extends UserManager_1<TUser
 
 
 export const AspNetUserManager_1: {
-    new<TUser>(store: IUserStore_1<TUser>, optionsAccessor: IOptions_1<IdentityOptions>, passwordHasher: IPasswordHasher_1<TUser>, userValidators: IEnumerable_1<IUserValidator_1<TUser>>, passwordValidators: IEnumerable_1<IPasswordValidator_1<TUser>>, keyNormalizer: ILookupNormalizer, errors: IdentityErrorDescriber, services: IServiceProvider, logger: ILogger_1<UserManager_1<TUser>>): AspNetUserManager_1<TUser>;
+    new<TUser extends (object | null)>(store: IUserStore_1<TUser>, optionsAccessor: IOptions_1<IdentityOptions>, passwordHasher: IPasswordHasher_1<TUser>, userValidators: IEnumerable_1<IUserValidator_1<TUser>>, passwordValidators: IEnumerable_1<IPasswordValidator_1<TUser>>, keyNormalizer: ILookupNormalizer, errors: IdentityErrorDescriber, services: IServiceProvider, logger: ILogger_1<UserManager_1<TUser>>): AspNetUserManager_1<TUser>;
 };
 
 
-export type AspNetUserManager_1<TUser> = AspNetUserManager_1$instance<TUser>;
+export type AspNetUserManager_1<TUser extends (object | null)> = AspNetUserManager_1$instance<TUser>;
 
-export interface AuthenticatorTokenProvider_1$instance<TUser> extends IUserTwoFactorTokenProvider_1$instance<TUser> {
+export interface AuthenticatorTokenProvider_1$instance<TUser extends (object | null)> extends IUserTwoFactorTokenProvider_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_AuthenticatorTokenProvider_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
@@ -518,15 +518,15 @@ export interface AuthenticatorTokenProvider_1$instance<TUser> extends IUserTwoFa
 
 
 export const AuthenticatorTokenProvider_1: {
-    new<TUser>(): AuthenticatorTokenProvider_1<TUser>;
+    new<TUser extends (object | null)>(): AuthenticatorTokenProvider_1<TUser>;
 };
 
 
-export interface __AuthenticatorTokenProvider_1$views<TUser> {
+export interface __AuthenticatorTokenProvider_1$views<TUser extends (object | null)> {
     As_IUserTwoFactorTokenProvider_1(): IUserTwoFactorTokenProvider_1$instance<TUser>;
 }
 
-export type AuthenticatorTokenProvider_1<TUser> = AuthenticatorTokenProvider_1$instance<TUser> & __AuthenticatorTokenProvider_1$views<TUser>;
+export type AuthenticatorTokenProvider_1<TUser extends (object | null)> = AuthenticatorTokenProvider_1$instance<TUser> & __AuthenticatorTokenProvider_1$views<TUser>;
 
 
 export interface ClaimsIdentityOptions$instance {
@@ -562,7 +562,7 @@ export const DataProtectionTokenProviderOptions: {
 
 export type DataProtectionTokenProviderOptions = DataProtectionTokenProviderOptions$instance;
 
-export interface DataProtectorTokenProvider_1$instance<TUser> extends IUserTwoFactorTokenProvider_1$instance<TUser> {
+export interface DataProtectorTokenProvider_1$instance<TUser extends (object | null)> extends IUserTwoFactorTokenProvider_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_DataProtectorTokenProvider_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
@@ -576,15 +576,15 @@ export interface DataProtectorTokenProvider_1$instance<TUser> extends IUserTwoFa
 
 
 export const DataProtectorTokenProvider_1: {
-    new<TUser>(dataProtectionProvider: IDataProtectionProvider, options: IOptions_1<DataProtectionTokenProviderOptions>, logger: ILogger_1<DataProtectorTokenProvider_1<TUser>>): DataProtectorTokenProvider_1<TUser>;
+    new<TUser extends (object | null)>(dataProtectionProvider: IDataProtectionProvider, options: IOptions_1<DataProtectionTokenProviderOptions>, logger: ILogger_1<DataProtectorTokenProvider_1<TUser>>): DataProtectorTokenProvider_1<TUser>;
 };
 
 
-export interface __DataProtectorTokenProvider_1$views<TUser> {
+export interface __DataProtectorTokenProvider_1$views<TUser extends (object | null)> {
     As_IUserTwoFactorTokenProvider_1(): IUserTwoFactorTokenProvider_1$instance<TUser>;
 }
 
-export type DataProtectorTokenProvider_1<TUser> = DataProtectorTokenProvider_1$instance<TUser> & __DataProtectorTokenProvider_1$views<TUser>;
+export type DataProtectorTokenProvider_1<TUser extends (object | null)> = DataProtectorTokenProvider_1$instance<TUser> & __DataProtectorTokenProvider_1$views<TUser>;
 
 
 export interface DefaultPersonalDataProtector$instance extends IPersonalDataProtector$instance {
@@ -609,7 +609,7 @@ export interface __DefaultPersonalDataProtector$views {
 export type DefaultPersonalDataProtector = DefaultPersonalDataProtector$instance & __DefaultPersonalDataProtector$views;
 
 
-export interface DefaultUserConfirmation_1$instance<TUser> extends IUserConfirmation_1$instance<TUser> {
+export interface DefaultUserConfirmation_1$instance<TUser extends (object | null)> extends IUserConfirmation_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_DefaultUserConfirmation_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserConfirmation_1: never;
@@ -619,18 +619,18 @@ export interface DefaultUserConfirmation_1$instance<TUser> extends IUserConfirma
 
 
 export const DefaultUserConfirmation_1: {
-    new<TUser>(): DefaultUserConfirmation_1<TUser>;
+    new<TUser extends (object | null)>(): DefaultUserConfirmation_1<TUser>;
 };
 
 
-export interface __DefaultUserConfirmation_1$views<TUser> {
+export interface __DefaultUserConfirmation_1$views<TUser extends (object | null)> {
     As_IUserConfirmation_1(): IUserConfirmation_1$instance<TUser>;
 }
 
-export type DefaultUserConfirmation_1<TUser> = DefaultUserConfirmation_1$instance<TUser> & __DefaultUserConfirmation_1$views<TUser>;
+export type DefaultUserConfirmation_1<TUser extends (object | null)> = DefaultUserConfirmation_1$instance<TUser> & __DefaultUserConfirmation_1$views<TUser>;
 
 
-export interface EmailTokenProvider_1$instance<TUser> extends TotpSecurityStampBasedTokenProvider_1$instance<TUser> {
+export interface EmailTokenProvider_1$instance<TUser extends (object | null)> extends TotpSecurityStampBasedTokenProvider_1$instance<TUser>, IUserTwoFactorTokenProvider_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_EmailTokenProvider_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
@@ -641,15 +641,15 @@ export interface EmailTokenProvider_1$instance<TUser> extends TotpSecurityStampB
 
 
 export const EmailTokenProvider_1: {
-    new<TUser>(): EmailTokenProvider_1<TUser>;
+    new<TUser extends (object | null)>(): EmailTokenProvider_1<TUser>;
 };
 
 
-export interface __EmailTokenProvider_1$views<TUser> {
+export interface __EmailTokenProvider_1$views<TUser extends (object | null)> {
     As_IUserTwoFactorTokenProvider_1(): IUserTwoFactorTokenProvider_1$instance<TUser>;
 }
 
-export type EmailTokenProvider_1<TUser> = EmailTokenProvider_1$instance<TUser> & __EmailTokenProvider_1$views<TUser>;
+export type EmailTokenProvider_1<TUser extends (object | null)> = EmailTokenProvider_1$instance<TUser> & __EmailTokenProvider_1$views<TUser>;
 
 
 export interface ExternalLoginInfo$instance extends UserLoginInfo {
@@ -677,20 +677,20 @@ export interface IdentityBuilder$instance {
     set RoleType(value: Type | null);
     readonly Services: IServiceCollection;
     readonly UserType: Type;
-    AddClaimsPrincipalFactory<TFactory>(): IdentityBuilder;
-    AddErrorDescriber<TDescriber extends IdentityErrorDescriber>(): IdentityBuilder;
-    AddPasswordValidator<TValidator>(): IdentityBuilder;
-    AddPersonalDataProtection<TProtector extends ILookupProtector, TKeyRing extends ILookupProtectorKeyRing>(): IdentityBuilder;
-    AddRoleManager<TRoleManager>(): IdentityBuilder;
-    AddRoles<TRole>(): IdentityBuilder;
-    AddRoleStore<TStore>(): IdentityBuilder;
-    AddRoleValidator<TRole>(): IdentityBuilder;
-    AddTokenProvider<TProvider>(providerName: string): IdentityBuilder;
+    AddClaimsPrincipalFactory<TFactory extends (object | null)>(): IdentityBuilder;
+    AddErrorDescriber<TDescriber extends unknown & IdentityErrorDescriber>(): IdentityBuilder;
+    AddPasswordValidator<TValidator extends (object | null)>(): IdentityBuilder;
+    AddPersonalDataProtection<TProtector extends (object | null) & ILookupProtector, TKeyRing extends (object | null) & ILookupProtectorKeyRing>(): IdentityBuilder;
+    AddRoleManager<TRoleManager extends (object | null)>(): IdentityBuilder;
+    AddRoles<TRole extends (object | null)>(): IdentityBuilder;
+    AddRoleStore<TStore extends (object | null)>(): IdentityBuilder;
+    AddRoleValidator<TRole extends (object | null)>(): IdentityBuilder;
+    AddTokenProvider<TProvider extends (object | null)>(providerName: string): IdentityBuilder;
     AddTokenProvider(providerName: string, provider: Type): IdentityBuilder;
-    AddUserConfirmation<TUserConfirmation>(): IdentityBuilder;
-    AddUserManager<TUserManager>(): IdentityBuilder;
-    AddUserStore<TStore>(): IdentityBuilder;
-    AddUserValidator<TValidator>(): IdentityBuilder;
+    AddUserConfirmation<TUserConfirmation extends (object | null)>(): IdentityBuilder;
+    AddUserManager<TUserManager extends (object | null)>(): IdentityBuilder;
+    AddUserStore<TStore extends (object | null)>(): IdentityBuilder;
+    AddUserValidator<TValidator extends (object | null)>(): IdentityBuilder;
 }
 
 
@@ -899,7 +899,7 @@ export const IdentityRole: {
 
 export type IdentityRole = IdentityRole$instance;
 
-export interface IdentityRole_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+export interface IdentityRole_1$instance<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityRole_1: never;
 
     get ConcurrencyStamp(): string | null;
@@ -914,14 +914,14 @@ export interface IdentityRole_1$instance<TKey extends (IEquatable_1<TKey> | numb
 
 
 export const IdentityRole_1: {
-    new<TKey extends (IEquatable_1<TKey> | number | string | boolean)>(): IdentityRole_1<TKey>;
-    new<TKey extends (IEquatable_1<TKey> | number | string | boolean)>(roleName: string): IdentityRole_1<TKey>;
+    new<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)>(): IdentityRole_1<TKey>;
+    new<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)>(roleName: string): IdentityRole_1<TKey>;
 };
 
 
-export type IdentityRole_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityRole_1$instance<TKey>;
+export type IdentityRole_1<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> = IdentityRole_1$instance<TKey>;
 
-export interface IdentityRoleClaim_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+export interface IdentityRoleClaim_1$instance<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityRoleClaim_1: never;
 
     get ClaimType(): string | null;
@@ -936,11 +936,11 @@ export interface IdentityRoleClaim_1$instance<TKey extends (IEquatable_1<TKey> |
 
 
 export const IdentityRoleClaim_1: {
-    new<TKey extends (IEquatable_1<TKey> | number | string | boolean)>(): IdentityRoleClaim_1<TKey>;
+    new<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)>(): IdentityRoleClaim_1<TKey>;
 };
 
 
-export type IdentityRoleClaim_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityRoleClaim_1$instance<TKey>;
+export type IdentityRoleClaim_1<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> = IdentityRoleClaim_1$instance<TKey>;
 
 export interface IdentityUser$instance extends IdentityUser_1<System_Internal.String> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUser: never;
@@ -956,7 +956,7 @@ export const IdentityUser: {
 
 export type IdentityUser = IdentityUser$instance;
 
-export interface IdentityUser_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+export interface IdentityUser_1$instance<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUser_1: never;
 
     AccessFailedCount: int;
@@ -988,14 +988,14 @@ export interface IdentityUser_1$instance<TKey extends (IEquatable_1<TKey> | numb
 
 
 export const IdentityUser_1: {
-    new<TKey extends (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUser_1<TKey>;
-    new<TKey extends (IEquatable_1<TKey> | number | string | boolean)>(userName: string): IdentityUser_1<TKey>;
+    new<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUser_1<TKey>;
+    new<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)>(userName: string): IdentityUser_1<TKey>;
 };
 
 
-export type IdentityUser_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUser_1$instance<TKey>;
+export type IdentityUser_1<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> = IdentityUser_1$instance<TKey>;
 
-export interface IdentityUserClaim_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+export interface IdentityUserClaim_1$instance<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserClaim_1: never;
 
     get ClaimType(): string | null;
@@ -1010,13 +1010,13 @@ export interface IdentityUserClaim_1$instance<TKey extends (IEquatable_1<TKey> |
 
 
 export const IdentityUserClaim_1: {
-    new<TKey extends (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUserClaim_1<TKey>;
+    new<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUserClaim_1<TKey>;
 };
 
 
-export type IdentityUserClaim_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserClaim_1$instance<TKey>;
+export type IdentityUserClaim_1<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserClaim_1$instance<TKey>;
 
-export interface IdentityUserLogin_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+export interface IdentityUserLogin_1$instance<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserLogin_1: never;
 
     LoginProvider: string;
@@ -1028,13 +1028,13 @@ export interface IdentityUserLogin_1$instance<TKey extends (IEquatable_1<TKey> |
 
 
 export const IdentityUserLogin_1: {
-    new<TKey extends (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUserLogin_1<TKey>;
+    new<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUserLogin_1<TKey>;
 };
 
 
-export type IdentityUserLogin_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserLogin_1$instance<TKey>;
+export type IdentityUserLogin_1<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserLogin_1$instance<TKey>;
 
-export interface IdentityUserPasskey_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+export interface IdentityUserPasskey_1$instance<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserPasskey_1: never;
 
     CredentialId: byte[];
@@ -1044,13 +1044,13 @@ export interface IdentityUserPasskey_1$instance<TKey extends (IEquatable_1<TKey>
 
 
 export const IdentityUserPasskey_1: {
-    new<TKey extends (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUserPasskey_1<TKey>;
+    new<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUserPasskey_1<TKey>;
 };
 
 
-export type IdentityUserPasskey_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserPasskey_1$instance<TKey>;
+export type IdentityUserPasskey_1<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserPasskey_1$instance<TKey>;
 
-export interface IdentityUserRole_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+export interface IdentityUserRole_1$instance<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserRole_1: never;
 
     RoleId: TKey;
@@ -1059,13 +1059,13 @@ export interface IdentityUserRole_1$instance<TKey extends (IEquatable_1<TKey> | 
 
 
 export const IdentityUserRole_1: {
-    new<TKey extends (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUserRole_1<TKey>;
+    new<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUserRole_1<TKey>;
 };
 
 
-export type IdentityUserRole_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserRole_1$instance<TKey>;
+export type IdentityUserRole_1<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserRole_1$instance<TKey>;
 
-export interface IdentityUserToken_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+export interface IdentityUserToken_1$instance<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserToken_1: never;
 
     LoginProvider: string;
@@ -1077,11 +1077,11 @@ export interface IdentityUserToken_1$instance<TKey extends (IEquatable_1<TKey> |
 
 
 export const IdentityUserToken_1: {
-    new<TKey extends (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUserToken_1<TKey>;
+    new<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)>(): IdentityUserToken_1<TKey>;
 };
 
 
-export type IdentityUserToken_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserToken_1$instance<TKey>;
+export type IdentityUserToken_1<TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserToken_1$instance<TKey>;
 
 export interface LockoutOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_LockoutOptions: never;
@@ -1116,7 +1116,7 @@ export const PasskeyAssertionContext: {
 
 export type PasskeyAssertionContext = PasskeyAssertionContext$instance;
 
-export interface PasskeyAssertionResult_1$instance<TUser> {
+export interface PasskeyAssertionResult_1$instance<TUser extends (object | null)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyAssertionResult_1: never;
 
     readonly Failure: PasskeyException | null;
@@ -1130,7 +1130,7 @@ export const PasskeyAssertionResult_1: {
 };
 
 
-export type PasskeyAssertionResult_1<TUser> = PasskeyAssertionResult_1$instance<TUser>;
+export type PasskeyAssertionResult_1<TUser extends (object | null)> = PasskeyAssertionResult_1$instance<TUser>;
 
 export interface PasskeyAttestationContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyAttestationContext: never;
@@ -1215,7 +1215,7 @@ export const PasskeyException: {
 
 export type PasskeyException = PasskeyException$instance;
 
-export interface PasskeyHandler_1$instance<TUser> {
+export interface PasskeyHandler_1$instance<TUser extends (object | null)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasskeyHandler_1: never;
@@ -1228,15 +1228,15 @@ export interface PasskeyHandler_1$instance<TUser> {
 
 
 export const PasskeyHandler_1: {
-    new<TUser>(userManager: UserManager_1<TUser>, options: IOptions_1<IdentityPasskeyOptions>): PasskeyHandler_1<TUser>;
+    new<TUser extends (object | null)>(userManager: UserManager_1<TUser>, options: IOptions_1<IdentityPasskeyOptions>): PasskeyHandler_1<TUser>;
 };
 
 
-export interface __PasskeyHandler_1$views<TUser> {
+export interface __PasskeyHandler_1$views<TUser extends (object | null)> {
     As_IPasskeyHandler_1(): IPasskeyHandler_1$instance<TUser>;
 }
 
-export type PasskeyHandler_1<TUser> = PasskeyHandler_1$instance<TUser> & __PasskeyHandler_1$views<TUser>;
+export type PasskeyHandler_1<TUser extends (object | null)> = PasskeyHandler_1$instance<TUser> & __PasskeyHandler_1$views<TUser>;
 
 
 export interface PasskeyOriginValidationContext$instance {
@@ -1289,7 +1289,7 @@ export const PasskeyUserEntity: {
 
 export type PasskeyUserEntity = PasskeyUserEntity$instance;
 
-export interface PasswordHasher_1$instance<TUser> extends IPasswordHasher_1$instance<TUser> {
+export interface PasswordHasher_1$instance<TUser extends (object | null)> extends IPasswordHasher_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasswordHasher_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasswordHasher_1: never;
@@ -1300,15 +1300,15 @@ export interface PasswordHasher_1$instance<TUser> extends IPasswordHasher_1$inst
 
 
 export const PasswordHasher_1: {
-    new<TUser>(optionsAccessor: IOptions_1<PasswordHasherOptions> | null): PasswordHasher_1<TUser>;
+    new<TUser extends (object | null)>(optionsAccessor: IOptions_1<PasswordHasherOptions> | null): PasswordHasher_1<TUser>;
 };
 
 
-export interface __PasswordHasher_1$views<TUser> {
+export interface __PasswordHasher_1$views<TUser extends (object | null)> {
     As_IPasswordHasher_1(): IPasswordHasher_1$instance<TUser>;
 }
 
-export type PasswordHasher_1<TUser> = PasswordHasher_1$instance<TUser> & __PasswordHasher_1$views<TUser>;
+export type PasswordHasher_1<TUser extends (object | null)> = PasswordHasher_1$instance<TUser> & __PasswordHasher_1$views<TUser>;
 
 
 export interface PasswordHasherOptions$instance {
@@ -1345,7 +1345,7 @@ export const PasswordOptions: {
 
 export type PasswordOptions = PasswordOptions$instance;
 
-export interface PasswordValidator_1$instance<TUser> extends IPasswordValidator_1$instance<TUser> {
+export interface PasswordValidator_1$instance<TUser extends (object | null)> extends IPasswordValidator_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasswordValidator_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasswordValidator_1: never;
@@ -1360,15 +1360,15 @@ export interface PasswordValidator_1$instance<TUser> extends IPasswordValidator_
 
 
 export const PasswordValidator_1: {
-    new<TUser>(errors: IdentityErrorDescriber | null): PasswordValidator_1<TUser>;
+    new<TUser extends (object | null)>(errors: IdentityErrorDescriber | null): PasswordValidator_1<TUser>;
 };
 
 
-export interface __PasswordValidator_1$views<TUser> {
+export interface __PasswordValidator_1$views<TUser extends (object | null)> {
     As_IPasswordValidator_1(): IPasswordValidator_1$instance<TUser>;
 }
 
-export type PasswordValidator_1<TUser> = PasswordValidator_1$instance<TUser> & __PasswordValidator_1$views<TUser>;
+export type PasswordValidator_1<TUser extends (object | null)> = PasswordValidator_1$instance<TUser> & __PasswordValidator_1$views<TUser>;
 
 
 export interface PersonalDataAttribute$instance extends Attribute {
@@ -1384,7 +1384,7 @@ export const PersonalDataAttribute: {
 
 export type PersonalDataAttribute = PersonalDataAttribute$instance;
 
-export interface PhoneNumberTokenProvider_1$instance<TUser> extends TotpSecurityStampBasedTokenProvider_1$instance<TUser> {
+export interface PhoneNumberTokenProvider_1$instance<TUser extends (object | null)> extends TotpSecurityStampBasedTokenProvider_1$instance<TUser>, IUserTwoFactorTokenProvider_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PhoneNumberTokenProvider_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
@@ -1395,15 +1395,15 @@ export interface PhoneNumberTokenProvider_1$instance<TUser> extends TotpSecurity
 
 
 export const PhoneNumberTokenProvider_1: {
-    new<TUser>(): PhoneNumberTokenProvider_1<TUser>;
+    new<TUser extends (object | null)>(): PhoneNumberTokenProvider_1<TUser>;
 };
 
 
-export interface __PhoneNumberTokenProvider_1$views<TUser> {
+export interface __PhoneNumberTokenProvider_1$views<TUser extends (object | null)> {
     As_IUserTwoFactorTokenProvider_1(): IUserTwoFactorTokenProvider_1$instance<TUser>;
 }
 
-export type PhoneNumberTokenProvider_1<TUser> = PhoneNumberTokenProvider_1$instance<TUser> & __PhoneNumberTokenProvider_1$views<TUser>;
+export type PhoneNumberTokenProvider_1<TUser extends (object | null)> = PhoneNumberTokenProvider_1$instance<TUser> & __PhoneNumberTokenProvider_1$views<TUser>;
 
 
 export interface ProtectedPersonalDataAttribute$instance extends PersonalDataAttribute {
@@ -1419,7 +1419,7 @@ export const ProtectedPersonalDataAttribute: {
 
 export type ProtectedPersonalDataAttribute = ProtectedPersonalDataAttribute$instance;
 
-export interface RoleManager_1$instance<TRole> {
+export interface RoleManager_1$instance<TRole extends (object | null)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_RoleManager_1: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
@@ -1454,13 +1454,13 @@ export interface RoleManager_1$instance<TRole> {
 
 
 export const RoleManager_1: {
-    new<TRole>(store: IRoleStore_1<TRole>, roleValidators: IEnumerable_1<IRoleValidator_1<TRole>>, keyNormalizer: ILookupNormalizer, errors: IdentityErrorDescriber, logger: ILogger_1<RoleManager_1<TRole>>): RoleManager_1<TRole>;
+    new<TRole extends (object | null)>(store: IRoleStore_1<TRole>, roleValidators: IEnumerable_1<IRoleValidator_1<TRole>>, keyNormalizer: ILookupNormalizer, errors: IdentityErrorDescriber, logger: ILogger_1<RoleManager_1<TRole>>): RoleManager_1<TRole>;
 };
 
 
-export type RoleManager_1<TRole> = RoleManager_1$instance<TRole>;
+export type RoleManager_1<TRole extends (object | null)> = RoleManager_1$instance<TRole>;
 
-export interface RoleStoreBase_4$instance<TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserRole extends IdentityUserRole_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>> {
+export interface RoleStoreBase_4$instance<TRole extends unknown & IdentityRole_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserRole extends unknown & IdentityUserRole_1<TKey>, TRoleClaim extends unknown & IdentityRoleClaim_1<TKey>> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_RoleStoreBase_4: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IQueryableRoleStore_1: never;
@@ -1490,20 +1490,20 @@ export interface RoleStoreBase_4$instance<TRole extends IdentityRole_1<TKey>, TK
 }
 
 
-export const RoleStoreBase_4: (abstract new<TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserRole extends IdentityUserRole_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>>(describer: IdentityErrorDescriber) => RoleStoreBase_4<TRole, TKey, TUserRole, TRoleClaim>) & {
+export const RoleStoreBase_4: (abstract new<TRole extends unknown & IdentityRole_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserRole extends unknown & IdentityUserRole_1<TKey>, TRoleClaim extends unknown & IdentityRoleClaim_1<TKey>>(describer: IdentityErrorDescriber) => RoleStoreBase_4<TRole, TKey, TUserRole, TRoleClaim>) & {
 };
 
 
-export interface __RoleStoreBase_4$views<TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserRole extends IdentityUserRole_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>> {
+export interface __RoleStoreBase_4$views<TRole extends unknown & IdentityRole_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserRole extends unknown & IdentityUserRole_1<TKey>, TRoleClaim extends unknown & IdentityRoleClaim_1<TKey>> {
     As_IQueryableRoleStore_1(): IQueryableRoleStore_1$instance<TRole>;
     As_IRoleClaimStore_1(): IRoleClaimStore_1$instance<TRole>;
     As_IRoleStore_1(): IRoleStore_1$instance<TRole>;
 }
 
-export type RoleStoreBase_4<TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserRole extends IdentityUserRole_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>> = RoleStoreBase_4$instance<TRole, TKey, TUserRole, TRoleClaim> & __RoleStoreBase_4$views<TRole, TKey, TUserRole, TRoleClaim>;
+export type RoleStoreBase_4<TRole extends unknown & IdentityRole_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserRole extends unknown & IdentityUserRole_1<TKey>, TRoleClaim extends unknown & IdentityRoleClaim_1<TKey>> = RoleStoreBase_4$instance<TRole, TKey, TUserRole, TRoleClaim> & __RoleStoreBase_4$views<TRole, TKey, TUserRole, TRoleClaim>;
 
 
-export interface RoleValidator_1$instance<TRole> extends IRoleValidator_1$instance<TRole> {
+export interface RoleValidator_1$instance<TRole extends (object | null)> extends IRoleValidator_1$instance<TRole> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_RoleValidator_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IRoleValidator_1: never;
@@ -1513,15 +1513,15 @@ export interface RoleValidator_1$instance<TRole> extends IRoleValidator_1$instan
 
 
 export const RoleValidator_1: {
-    new<TRole>(errors: IdentityErrorDescriber | null): RoleValidator_1<TRole>;
+    new<TRole extends (object | null)>(errors: IdentityErrorDescriber | null): RoleValidator_1<TRole>;
 };
 
 
-export interface __RoleValidator_1$views<TRole> {
+export interface __RoleValidator_1$views<TRole extends (object | null)> {
     As_IRoleValidator_1(): IRoleValidator_1$instance<TRole>;
 }
 
-export type RoleValidator_1<TRole> = RoleValidator_1$instance<TRole> & __RoleValidator_1$views<TRole>;
+export type RoleValidator_1<TRole extends (object | null)> = RoleValidator_1$instance<TRole> & __RoleValidator_1$views<TRole>;
 
 
 export interface SecurityStampRefreshingPrincipalContext$instance {
@@ -1541,7 +1541,7 @@ export const SecurityStampRefreshingPrincipalContext: {
 
 export type SecurityStampRefreshingPrincipalContext = SecurityStampRefreshingPrincipalContext$instance;
 
-export interface SecurityStampValidator_1$instance<TUser> extends ISecurityStampValidator$instance {
+export interface SecurityStampValidator_1$instance<TUser extends (object | null)> extends ISecurityStampValidator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_SecurityStampValidator_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ISecurityStampValidator: never;
@@ -1558,16 +1558,16 @@ export interface SecurityStampValidator_1$instance<TUser> extends ISecurityStamp
 
 
 export const SecurityStampValidator_1: {
-    new<TUser>(options: IOptions_1<SecurityStampValidatorOptions>, signInManager: SignInManager_1<TUser>, clock: ISystemClock, logger: ILoggerFactory): SecurityStampValidator_1<TUser>;
-    new<TUser>(options: IOptions_1<SecurityStampValidatorOptions>, signInManager: SignInManager_1<TUser>, logger: ILoggerFactory): SecurityStampValidator_1<TUser>;
+    new<TUser extends (object | null)>(options: IOptions_1<SecurityStampValidatorOptions>, signInManager: SignInManager_1<TUser>, clock: ISystemClock, logger: ILoggerFactory): SecurityStampValidator_1<TUser>;
+    new<TUser extends (object | null)>(options: IOptions_1<SecurityStampValidatorOptions>, signInManager: SignInManager_1<TUser>, logger: ILoggerFactory): SecurityStampValidator_1<TUser>;
 };
 
 
-export interface __SecurityStampValidator_1$views<TUser> {
+export interface __SecurityStampValidator_1$views<TUser extends (object | null)> {
     As_ISecurityStampValidator(): ISecurityStampValidator$instance;
 }
 
-export type SecurityStampValidator_1<TUser> = SecurityStampValidator_1$instance<TUser> & __SecurityStampValidator_1$views<TUser>;
+export type SecurityStampValidator_1<TUser extends (object | null)> = SecurityStampValidator_1$instance<TUser> & __SecurityStampValidator_1$views<TUser>;
 
 
 export interface SecurityStampValidatorOptions$instance {
@@ -1588,7 +1588,7 @@ export const SecurityStampValidatorOptions: {
 
 export type SecurityStampValidatorOptions = SecurityStampValidatorOptions$instance;
 
-export interface SignInManager_1$instance<TUser> {
+export interface SignInManager_1$instance<TUser extends (object | null)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_SignInManager_1: never;
 
     AuthenticationScheme: string;
@@ -1640,11 +1640,11 @@ export interface SignInManager_1$instance<TUser> {
 
 
 export const SignInManager_1: {
-    new<TUser>(userManager: UserManager_1<TUser>, contextAccessor: IHttpContextAccessor, claimsFactory: IUserClaimsPrincipalFactory_1<TUser>, optionsAccessor: IOptions_1<IdentityOptions>, logger: ILogger_1<SignInManager_1<TUser>>, schemes: IAuthenticationSchemeProvider, confirmation: IUserConfirmation_1<TUser>): SignInManager_1<TUser>;
+    new<TUser extends (object | null)>(userManager: UserManager_1<TUser>, contextAccessor: IHttpContextAccessor, claimsFactory: IUserClaimsPrincipalFactory_1<TUser>, optionsAccessor: IOptions_1<IdentityOptions>, logger: ILogger_1<SignInManager_1<TUser>>, schemes: IAuthenticationSchemeProvider, confirmation: IUserConfirmation_1<TUser>): SignInManager_1<TUser>;
 };
 
 
-export type SignInManager_1<TUser> = SignInManager_1$instance<TUser>;
+export type SignInManager_1<TUser extends (object | null)> = SignInManager_1$instance<TUser>;
 
 export interface SignInOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_SignInOptions: never;
@@ -1728,8 +1728,8 @@ export type TokenOptions = TokenOptions$instance;
 export interface TokenProviderDescriptor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_TokenProviderDescriptor: never;
 
-    get ProviderInstance(): JsValue | null;
-    set ProviderInstance(value: JsValue | null);
+    get ProviderInstance(): unknown | null;
+    set ProviderInstance(value: unknown | null);
     readonly ProviderType: Type;
 }
 
@@ -1741,7 +1741,7 @@ export const TokenProviderDescriptor: {
 
 export type TokenProviderDescriptor = TokenProviderDescriptor$instance;
 
-export interface TotpSecurityStampBasedTokenProvider_1$instance<TUser> extends IUserTwoFactorTokenProvider_1$instance<TUser> {
+export interface TotpSecurityStampBasedTokenProvider_1$instance<TUser extends (object | null)> extends IUserTwoFactorTokenProvider_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_TotpSecurityStampBasedTokenProvider_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
@@ -1753,18 +1753,18 @@ export interface TotpSecurityStampBasedTokenProvider_1$instance<TUser> extends I
 }
 
 
-export const TotpSecurityStampBasedTokenProvider_1: (abstract new<TUser>() => TotpSecurityStampBasedTokenProvider_1<TUser>) & {
+export const TotpSecurityStampBasedTokenProvider_1: (abstract new<TUser extends (object | null)>() => TotpSecurityStampBasedTokenProvider_1<TUser>) & {
 };
 
 
-export interface __TotpSecurityStampBasedTokenProvider_1$views<TUser> {
+export interface __TotpSecurityStampBasedTokenProvider_1$views<TUser extends (object | null)> {
     As_IUserTwoFactorTokenProvider_1(): IUserTwoFactorTokenProvider_1$instance<TUser>;
 }
 
-export type TotpSecurityStampBasedTokenProvider_1<TUser> = TotpSecurityStampBasedTokenProvider_1$instance<TUser> & __TotpSecurityStampBasedTokenProvider_1$views<TUser>;
+export type TotpSecurityStampBasedTokenProvider_1<TUser extends (object | null)> = TotpSecurityStampBasedTokenProvider_1$instance<TUser> & __TotpSecurityStampBasedTokenProvider_1$views<TUser>;
 
 
-export interface TwoFactorSecurityStampValidator_1$instance<TUser> extends SecurityStampValidator_1$instance<TUser> {
+export interface TwoFactorSecurityStampValidator_1$instance<TUser extends (object | null)> extends SecurityStampValidator_1$instance<TUser>, ITwoFactorSecurityStampValidator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_TwoFactorSecurityStampValidator_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ISecurityStampValidator: never;
@@ -1776,16 +1776,16 @@ export interface TwoFactorSecurityStampValidator_1$instance<TUser> extends Secur
 
 
 export const TwoFactorSecurityStampValidator_1: {
-    new<TUser>(options: IOptions_1<SecurityStampValidatorOptions>, signInManager: SignInManager_1<TUser>, clock: ISystemClock, logger: ILoggerFactory): TwoFactorSecurityStampValidator_1<TUser>;
-    new<TUser>(options: IOptions_1<SecurityStampValidatorOptions>, signInManager: SignInManager_1<TUser>, logger: ILoggerFactory): TwoFactorSecurityStampValidator_1<TUser>;
+    new<TUser extends (object | null)>(options: IOptions_1<SecurityStampValidatorOptions>, signInManager: SignInManager_1<TUser>, clock: ISystemClock, logger: ILoggerFactory): TwoFactorSecurityStampValidator_1<TUser>;
+    new<TUser extends (object | null)>(options: IOptions_1<SecurityStampValidatorOptions>, signInManager: SignInManager_1<TUser>, logger: ILoggerFactory): TwoFactorSecurityStampValidator_1<TUser>;
 };
 
 
-export interface __TwoFactorSecurityStampValidator_1$views<TUser> {
+export interface __TwoFactorSecurityStampValidator_1$views<TUser extends (object | null)> {
     As_ISecurityStampValidator(): ISecurityStampValidator$instance;
 }
 
-export type TwoFactorSecurityStampValidator_1<TUser> = TwoFactorSecurityStampValidator_1$instance<TUser> & __TwoFactorSecurityStampValidator_1$views<TUser>;
+export type TwoFactorSecurityStampValidator_1<TUser extends (object | null)> = TwoFactorSecurityStampValidator_1$instance<TUser> & __TwoFactorSecurityStampValidator_1$views<TUser>;
 
 
 export interface UpperInvariantLookupNormalizer$instance extends ILookupNormalizer$instance {
@@ -1810,7 +1810,7 @@ export interface __UpperInvariantLookupNormalizer$views {
 export type UpperInvariantLookupNormalizer = UpperInvariantLookupNormalizer$instance & __UpperInvariantLookupNormalizer$views;
 
 
-export interface UserClaimsPrincipalFactory_1$instance<TUser> extends IUserClaimsPrincipalFactory_1$instance<TUser> {
+export interface UserClaimsPrincipalFactory_1$instance<TUser extends (object | null)> extends IUserClaimsPrincipalFactory_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserClaimsPrincipalFactory_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_1: never;
@@ -1823,18 +1823,18 @@ export interface UserClaimsPrincipalFactory_1$instance<TUser> extends IUserClaim
 
 
 export const UserClaimsPrincipalFactory_1: {
-    new<TUser>(userManager: UserManager_1<TUser>, optionsAccessor: IOptions_1<IdentityOptions>): UserClaimsPrincipalFactory_1<TUser>;
+    new<TUser extends (object | null)>(userManager: UserManager_1<TUser>, optionsAccessor: IOptions_1<IdentityOptions>): UserClaimsPrincipalFactory_1<TUser>;
 };
 
 
-export interface __UserClaimsPrincipalFactory_1$views<TUser> {
+export interface __UserClaimsPrincipalFactory_1$views<TUser extends (object | null)> {
     As_IUserClaimsPrincipalFactory_1(): IUserClaimsPrincipalFactory_1$instance<TUser>;
 }
 
-export type UserClaimsPrincipalFactory_1<TUser> = UserClaimsPrincipalFactory_1$instance<TUser> & __UserClaimsPrincipalFactory_1$views<TUser>;
+export type UserClaimsPrincipalFactory_1<TUser extends (object | null)> = UserClaimsPrincipalFactory_1$instance<TUser> & __UserClaimsPrincipalFactory_1$views<TUser>;
 
 
-export interface UserClaimsPrincipalFactory_2$instance<TUser, TRole> extends UserClaimsPrincipalFactory_1$instance<TUser>, IUserClaimsPrincipalFactory_1$instance<TUser> {
+export interface UserClaimsPrincipalFactory_2$instance<TUser extends (object | null), TRole extends (object | null)> extends UserClaimsPrincipalFactory_1$instance<TUser>, IUserClaimsPrincipalFactory_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserClaimsPrincipalFactory_2: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_1: never;
@@ -1845,15 +1845,15 @@ export interface UserClaimsPrincipalFactory_2$instance<TUser, TRole> extends Use
 
 
 export const UserClaimsPrincipalFactory_2: {
-    new<TUser, TRole>(userManager: UserManager_1<TUser>, roleManager: RoleManager_1<TRole>, options: IOptions_1<IdentityOptions>): UserClaimsPrincipalFactory_2<TUser, TRole>;
+    new<TUser extends (object | null), TRole extends (object | null)>(userManager: UserManager_1<TUser>, roleManager: RoleManager_1<TRole>, options: IOptions_1<IdentityOptions>): UserClaimsPrincipalFactory_2<TUser, TRole>;
 };
 
 
-export interface __UserClaimsPrincipalFactory_2$views<TUser, TRole> {
+export interface __UserClaimsPrincipalFactory_2$views<TUser extends (object | null), TRole extends (object | null)> {
     As_IUserClaimsPrincipalFactory_1(): IUserClaimsPrincipalFactory_1$instance<TUser>;
 }
 
-export type UserClaimsPrincipalFactory_2<TUser, TRole> = UserClaimsPrincipalFactory_2$instance<TUser, TRole> & __UserClaimsPrincipalFactory_2$views<TUser, TRole>;
+export type UserClaimsPrincipalFactory_2<TUser extends (object | null), TRole extends (object | null)> = UserClaimsPrincipalFactory_2$instance<TUser, TRole> & __UserClaimsPrincipalFactory_2$views<TUser, TRole>;
 
 
 export interface UserLoginInfo$instance {
@@ -1873,7 +1873,7 @@ export const UserLoginInfo: {
 
 export type UserLoginInfo = UserLoginInfo$instance;
 
-export interface UserManager_1$instance<TUser> {
+export interface UserManager_1$instance<TUser extends (object | null)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserManager_1: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
@@ -2001,15 +2001,15 @@ export interface UserManager_1$instance<TUser> {
 
 
 export const UserManager_1: {
-    new<TUser>(store: IUserStore_1<TUser>, optionsAccessor: IOptions_1<IdentityOptions>, passwordHasher: IPasswordHasher_1<TUser>, userValidators: IEnumerable_1<IUserValidator_1<TUser>>, passwordValidators: IEnumerable_1<IPasswordValidator_1<TUser>>, keyNormalizer: ILookupNormalizer, errors: IdentityErrorDescriber, services: IServiceProvider, logger: ILogger_1<UserManager_1<TUser>>): UserManager_1<TUser>;
+    new<TUser extends (object | null)>(store: IUserStore_1<TUser>, optionsAccessor: IOptions_1<IdentityOptions>, passwordHasher: IPasswordHasher_1<TUser>, userValidators: IEnumerable_1<IUserValidator_1<TUser>>, passwordValidators: IEnumerable_1<IPasswordValidator_1<TUser>>, keyNormalizer: ILookupNormalizer, errors: IdentityErrorDescriber, services: IServiceProvider, logger: ILogger_1<UserManager_1<TUser>>): UserManager_1<TUser>;
     readonly ResetPasswordTokenPurpose: string;
     readonly ChangePhoneNumberTokenPurpose: string;
     readonly ConfirmEmailTokenPurpose: string;
-    GetChangeEmailTokenPurpose<TUser>(newEmail: string): string;
+    GetChangeEmailTokenPurpose<TUser extends (object | null)>(newEmail: string): string;
 };
 
 
-export type UserManager_1<TUser> = UserManager_1$instance<TUser>;
+export type UserManager_1<TUser extends (object | null)> = UserManager_1$instance<TUser>;
 
 export interface UserOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserOptions: never;
@@ -2051,7 +2051,7 @@ export const UserPasskeyInfo: {
 
 export type UserPasskeyInfo = UserPasskeyInfo$instance;
 
-export interface UserStoreBase_5$instance<TUser extends IdentityUser_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>> extends IUserPasswordStore_1<TUser>, IUserSecurityStampStore_1<TUser>, IUserAuthenticatorKeyStore_1<TUser> {
+export interface UserStoreBase_5$instance<TUser extends unknown & IdentityUser_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends unknown & IdentityUserClaim_1<TKey>, TUserLogin extends unknown & IdentityUserLogin_1<TKey>, TUserToken extends unknown & IdentityUserToken_1<TKey>> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserStoreBase_5: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IQueryableUserStore_1: never;
@@ -2138,11 +2138,11 @@ export interface UserStoreBase_5$instance<TUser extends IdentityUser_1<TKey>, TK
 }
 
 
-export const UserStoreBase_5: (abstract new<TUser extends IdentityUser_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>>(describer: IdentityErrorDescriber) => UserStoreBase_5<TUser, TKey, TUserClaim, TUserLogin, TUserToken>) & {
+export const UserStoreBase_5: (abstract new<TUser extends unknown & IdentityUser_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends unknown & IdentityUserClaim_1<TKey>, TUserLogin extends unknown & IdentityUserLogin_1<TKey>, TUserToken extends unknown & IdentityUserToken_1<TKey>>(describer: IdentityErrorDescriber) => UserStoreBase_5<TUser, TKey, TUserClaim, TUserLogin, TUserToken>) & {
 };
 
 
-export interface __UserStoreBase_5$views<TUser extends IdentityUser_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>> {
+export interface __UserStoreBase_5$views<TUser extends unknown & IdentityUser_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends unknown & IdentityUserClaim_1<TKey>, TUserLogin extends unknown & IdentityUserLogin_1<TKey>, TUserToken extends unknown & IdentityUserToken_1<TKey>> {
     As_IQueryableUserStore_1(): IQueryableUserStore_1$instance<TUser>;
     As_IUserAuthenticationTokenStore_1(): IUserAuthenticationTokenStore_1$instance<TUser>;
     As_IUserClaimStore_1(): IUserClaimStore_1$instance<TUser>;
@@ -2155,10 +2155,10 @@ export interface __UserStoreBase_5$views<TUser extends IdentityUser_1<TKey>, TKe
     As_IUserTwoFactorStore_1(): IUserTwoFactorStore_1$instance<TUser>;
 }
 
-export type UserStoreBase_5<TUser extends IdentityUser_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>> = UserStoreBase_5$instance<TUser, TKey, TUserClaim, TUserLogin, TUserToken> & __UserStoreBase_5$views<TUser, TKey, TUserClaim, TUserLogin, TUserToken>;
+export type UserStoreBase_5<TUser extends unknown & IdentityUser_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends unknown & IdentityUserClaim_1<TKey>, TUserLogin extends unknown & IdentityUserLogin_1<TKey>, TUserToken extends unknown & IdentityUserToken_1<TKey>> = UserStoreBase_5$instance<TUser, TKey, TUserClaim, TUserLogin, TUserToken> & __UserStoreBase_5$views<TUser, TKey, TUserClaim, TUserLogin, TUserToken>;
 
 
-export interface UserStoreBase_8$instance<TUser extends IdentityUser_1<TKey>, TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserRole extends IdentityUserRole_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>> extends UserStoreBase_5$instance<TUser, TKey, TUserClaim, TUserLogin, TUserToken> {
+export interface UserStoreBase_8$instance<TUser extends unknown & IdentityUser_1<TKey>, TRole extends unknown & IdentityRole_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends unknown & IdentityUserClaim_1<TKey>, TUserRole extends unknown & IdentityUserRole_1<TKey>, TUserLogin extends unknown & IdentityUserLogin_1<TKey>, TUserToken extends unknown & IdentityUserToken_1<TKey>, TRoleClaim extends unknown & IdentityRoleClaim_1<TKey>> extends UserStoreBase_5$instance<TUser, TKey, TUserClaim, TUserLogin, TUserToken> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserStoreBase_8: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IQueryableUserStore_1: never;
@@ -2188,11 +2188,11 @@ export interface UserStoreBase_8$instance<TUser extends IdentityUser_1<TKey>, TR
 }
 
 
-export const UserStoreBase_8: (abstract new<TUser extends IdentityUser_1<TKey>, TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserRole extends IdentityUserRole_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>>(describer: IdentityErrorDescriber) => UserStoreBase_8<TUser, TRole, TKey, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim>) & {
+export const UserStoreBase_8: (abstract new<TUser extends unknown & IdentityUser_1<TKey>, TRole extends unknown & IdentityRole_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends unknown & IdentityUserClaim_1<TKey>, TUserRole extends unknown & IdentityUserRole_1<TKey>, TUserLogin extends unknown & IdentityUserLogin_1<TKey>, TUserToken extends unknown & IdentityUserToken_1<TKey>, TRoleClaim extends unknown & IdentityRoleClaim_1<TKey>>(describer: IdentityErrorDescriber) => UserStoreBase_8<TUser, TRole, TKey, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim>) & {
 };
 
 
-export interface __UserStoreBase_8$views<TUser extends IdentityUser_1<TKey>, TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserRole extends IdentityUserRole_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>> {
+export interface __UserStoreBase_8$views<TUser extends unknown & IdentityUser_1<TKey>, TRole extends unknown & IdentityRole_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends unknown & IdentityUserClaim_1<TKey>, TUserRole extends unknown & IdentityUserRole_1<TKey>, TUserLogin extends unknown & IdentityUserLogin_1<TKey>, TUserToken extends unknown & IdentityUserToken_1<TKey>, TRoleClaim extends unknown & IdentityRoleClaim_1<TKey>> {
     As_IQueryableUserStore_1(): IQueryableUserStore_1$instance<TUser>;
     As_IUserAuthenticationTokenStore_1(): IUserAuthenticationTokenStore_1$instance<TUser>;
     As_IUserClaimStore_1(): IUserClaimStore_1$instance<TUser>;
@@ -2206,10 +2206,10 @@ export interface __UserStoreBase_8$views<TUser extends IdentityUser_1<TKey>, TRo
     As_IUserTwoFactorStore_1(): IUserTwoFactorStore_1$instance<TUser>;
 }
 
-export type UserStoreBase_8<TUser extends IdentityUser_1<TKey>, TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserRole extends IdentityUserRole_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>> = UserStoreBase_8$instance<TUser, TRole, TKey, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim> & __UserStoreBase_8$views<TUser, TRole, TKey, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim>;
+export type UserStoreBase_8<TUser extends unknown & IdentityUser_1<TKey>, TRole extends unknown & IdentityRole_1<TKey>, TKey extends unknown & (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends unknown & IdentityUserClaim_1<TKey>, TUserRole extends unknown & IdentityUserRole_1<TKey>, TUserLogin extends unknown & IdentityUserLogin_1<TKey>, TUserToken extends unknown & IdentityUserToken_1<TKey>, TRoleClaim extends unknown & IdentityRoleClaim_1<TKey>> = UserStoreBase_8$instance<TUser, TRole, TKey, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim> & __UserStoreBase_8$views<TUser, TRole, TKey, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim>;
 
 
-export interface UserValidator_1$instance<TUser> extends IUserValidator_1$instance<TUser> {
+export interface UserValidator_1$instance<TUser extends (object | null)> extends IUserValidator_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserValidator_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserValidator_1: never;
@@ -2220,15 +2220,15 @@ export interface UserValidator_1$instance<TUser> extends IUserValidator_1$instan
 
 
 export const UserValidator_1: {
-    new<TUser>(errors: IdentityErrorDescriber | null): UserValidator_1<TUser>;
+    new<TUser extends (object | null)>(errors: IdentityErrorDescriber | null): UserValidator_1<TUser>;
 };
 
 
-export interface __UserValidator_1$views<TUser> {
+export interface __UserValidator_1$views<TUser extends (object | null)> {
     As_IUserValidator_1(): IUserValidator_1$instance<TUser>;
 }
 
-export type UserValidator_1<TUser> = UserValidator_1$instance<TUser> & __UserValidator_1$views<TUser>;
+export type UserValidator_1<TUser extends (object | null)> = UserValidator_1$instance<TUser> & __UserValidator_1$views<TUser>;
 
 
 export abstract class IdentityBuilderExtensions$instance {
@@ -2263,15 +2263,15 @@ export abstract class IdentitySchemaVersions$instance {
 export type IdentitySchemaVersions = IdentitySchemaVersions$instance;
 
 export abstract class PasskeyAssertionResult$instance {
-    static Fail<TUser>(failure: PasskeyException): PasskeyAssertionResult_1<TUser>;
-    static Success<TUser>(passkey: UserPasskeyInfo, user: TUser): PasskeyAssertionResult_1<TUser>;
+    static Fail<TUser extends (object | null)>(failure: PasskeyException): PasskeyAssertionResult_1<TUser>;
+    static Success<TUser extends (object | null)>(passkey: UserPasskeyInfo, user: TUser): PasskeyAssertionResult_1<TUser>;
 }
 
 
 export type PasskeyAssertionResult = PasskeyAssertionResult$instance;
 
 export abstract class SecurityStampValidator$instance {
-    static ValidateAsync<TValidator extends ISecurityStampValidator>(context: CookieValidatePrincipalContext): Task;
+    static ValidateAsync<TValidator extends unknown & ISecurityStampValidator>(context: CookieValidatePrincipalContext): Task;
     static ValidatePrincipalAsync(context: CookieValidatePrincipalContext): Task;
 }
 

@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Components
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -21,8 +21,8 @@ export interface SectionContent$instance extends Microsoft_AspNetCore_Components
 
     get ChildContent(): RenderFragment | null;
     set ChildContent(value: RenderFragment | null);
-    get SectionId(): JsValue | null;
-    set SectionId(value: JsValue | null);
+    get SectionId(): unknown | null;
+    set SectionId(value: unknown | null);
     get SectionName(): string | null;
     set SectionName(value: string | null);
     Dispose(): void;
@@ -47,8 +47,8 @@ export interface SectionOutlet$instance extends Microsoft_AspNetCore_Components_
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get SectionId(): JsValue | null;
-    set SectionId(value: JsValue | null);
+    get SectionId(): unknown | null;
+    set SectionId(value: unknown | null);
     get SectionName(): string | null;
     set SectionName(value: string | null);
     Dispose(): void;

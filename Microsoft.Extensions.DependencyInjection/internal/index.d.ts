@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Antiforgery, Microsoft.AspNetCore.Authentication, Microsoft.AspNetCore.Authentication.BearerToken, Microsoft.AspNetCore.Authentication.Cookies, Microsoft.AspNetCore.Authentication.Core, Microsoft.AspNetCore.Authentication.OAuth, Microsoft.AspNetCore.Authorization, Microsoft.AspNetCore.Authorization.Policy, Microsoft.AspNetCore.Components, Microsoft.AspNetCore.Components.Authorization, Microsoft.AspNetCore.Components.Endpoints, Microsoft.AspNetCore.Components.Server, Microsoft.AspNetCore.CookiePolicy, Microsoft.AspNetCore.Cors, Microsoft.AspNetCore.DataProtection, Microsoft.AspNetCore.Diagnostics, Microsoft.AspNetCore.Http, Microsoft.AspNetCore.Http.Connections, Microsoft.AspNetCore.Http.Extensions, Microsoft.AspNetCore.HttpLogging, Microsoft.AspNetCore.HttpOverrides, Microsoft.AspNetCore.Identity, Microsoft.AspNetCore.Localization, Microsoft.AspNetCore.Mvc, Microsoft.AspNetCore.Mvc.ApiExplorer, Microsoft.AspNetCore.Mvc.Core, Microsoft.AspNetCore.Mvc.Cors, Microsoft.AspNetCore.Mvc.DataAnnotations, Microsoft.AspNetCore.Mvc.Formatters.Xml, Microsoft.AspNetCore.Mvc.Localization, Microsoft.AspNetCore.Mvc.Razor, Microsoft.AspNetCore.Mvc.RazorPages, Microsoft.AspNetCore.Mvc.TagHelpers, Microsoft.AspNetCore.Mvc.ViewFeatures, Microsoft.AspNetCore.OutputCaching, Microsoft.AspNetCore.RequestDecompression, Microsoft.AspNetCore.ResponseCaching, Microsoft.AspNetCore.Routing, Microsoft.AspNetCore.Session, Microsoft.AspNetCore.SignalR, Microsoft.AspNetCore.SignalR.Core, Microsoft.AspNetCore.SignalR.Protocols.Json, Microsoft.AspNetCore.StaticFiles, Microsoft.Extensions.Caching.Memory, Microsoft.Extensions.DependencyInjection, Microsoft.Extensions.DependencyInjection.Abstractions, Microsoft.Extensions.Diagnostics, Microsoft.Extensions.Diagnostics.HealthChecks, Microsoft.Extensions.Hosting.Abstractions, Microsoft.Extensions.Http, Microsoft.Extensions.Identity.Core, Microsoft.Extensions.Localization, Microsoft.Extensions.Logging, Microsoft.Extensions.Options, Microsoft.Extensions.Options.ConfigurationExtensions, Microsoft.Extensions.Options.DataAnnotations, Microsoft.Extensions.Validation, Microsoft.Extensions.WebEncoders
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -93,7 +93,7 @@ export interface IServerSideBlazorBuilder$instance extends IRazorComponentsBuild
 
 export type IServerSideBlazorBuilder = IServerSideBlazorBuilder$instance;
 
-export interface OAuthPostConfigureOptions_2$instance<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>> {
+export interface OAuthPostConfigureOptions_2$instance<TOptions extends unknown & OAuthOptions, THandler extends unknown & OAuthHandler_1<TOptions>> {
     readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_OAuthPostConfigureOptions_2: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
@@ -103,11 +103,11 @@ export interface OAuthPostConfigureOptions_2$instance<TOptions extends OAuthOpti
 
 
 export const OAuthPostConfigureOptions_2: {
-    new<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>>(dataProtection: IDataProtectionProvider): OAuthPostConfigureOptions_2<TOptions, THandler>;
+    new<TOptions extends unknown & OAuthOptions, THandler extends unknown & OAuthHandler_1<TOptions>>(dataProtection: IDataProtectionProvider): OAuthPostConfigureOptions_2<TOptions, THandler>;
 };
 
 
-export type OAuthPostConfigureOptions_2<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>> = OAuthPostConfigureOptions_2$instance<TOptions, THandler>;
+export type OAuthPostConfigureOptions_2<TOptions extends unknown & OAuthOptions, THandler extends unknown & OAuthHandler_1<TOptions>> = OAuthPostConfigureOptions_2$instance<TOptions, THandler>;
 
 export abstract class AntiforgeryServiceCollectionExtensions$instance {
     static AddAntiforgery(services: IServiceCollection, setupAction: Action_1<AntiforgeryOptions>): IServiceCollection;
@@ -123,7 +123,7 @@ export abstract class ApplicationModelConventionExtensions$instance {
     static Add(conventions: IList_1<IApplicationModelConvention>, parameterModelConvention: IParameterModelBaseConvention): void;
     static Add(conventions: IList_1<IApplicationModelConvention>, parameterModelConvention: IParameterModelConvention): void;
     static RemoveType(list: IList_1<IApplicationModelConvention>, type: Type): void;
-    static RemoveType<TApplicationModelConvention extends IApplicationModelConvention>(list: IList_1<IApplicationModelConvention>): void;
+    static RemoveType<TApplicationModelConvention extends unknown & IApplicationModelConvention>(list: IList_1<IApplicationModelConvention>): void;
 }
 
 
@@ -172,10 +172,10 @@ export abstract class CascadingAuthenticationStateServiceCollectionExtensions$in
 export type CascadingAuthenticationStateServiceCollectionExtensions = CascadingAuthenticationStateServiceCollectionExtensions$instance;
 
 export abstract class CascadingValueServiceCollectionExtensions$instance {
-    static AddCascadingValue<TValue>(serviceCollection: IServiceCollection, initialValueFactory: Func_2<IServiceProvider, TValue>): IServiceCollection;
-    static AddCascadingValue<TValue>(serviceCollection: IServiceCollection, name: string, initialValueFactory: Func_2<IServiceProvider, TValue>): IServiceCollection;
-    static TryAddCascadingValue<TValue>(serviceCollection: IServiceCollection, valueFactory: Func_2<IServiceProvider, TValue>): void;
-    static TryAddCascadingValue<TValue>(serviceCollection: IServiceCollection, name: string, valueFactory: Func_2<IServiceProvider, TValue>): void;
+    static AddCascadingValue<TValue extends unknown>(serviceCollection: IServiceCollection, initialValueFactory: Func_2<IServiceProvider, TValue>): IServiceCollection;
+    static AddCascadingValue<TValue extends unknown>(serviceCollection: IServiceCollection, name: string, initialValueFactory: Func_2<IServiceProvider, TValue>): IServiceCollection;
+    static TryAddCascadingValue<TValue extends unknown>(serviceCollection: IServiceCollection, valueFactory: Func_2<IServiceProvider, TValue>): void;
+    static TryAddCascadingValue<TValue extends unknown>(serviceCollection: IServiceCollection, name: string, valueFactory: Func_2<IServiceProvider, TValue>): void;
 }
 
 
@@ -215,7 +215,7 @@ export abstract class CookieExtensions$instance {
 export type CookieExtensions = CookieExtensions$instance;
 
 export abstract class CookiePolicyServiceCollectionExtensions$instance {
-    static AddCookiePolicy<TService>(services: IServiceCollection, configureOptions: Action_2<CookiePolicyOptions, TService>): IServiceCollection;
+    static AddCookiePolicy<TService extends (object | null)>(services: IServiceCollection, configureOptions: Action_2<CookiePolicyOptions, TService>): IServiceCollection;
     static AddCookiePolicy(services: IServiceCollection, configureOptions: Action_1<CookiePolicyOptions>): IServiceCollection;
 }
 
@@ -253,9 +253,9 @@ export abstract class EndpointMetadataApiExplorerServiceCollectionExtensions$ins
 export type EndpointMetadataApiExplorerServiceCollectionExtensions = EndpointMetadataApiExplorerServiceCollectionExtensions$instance;
 
 export abstract class ExceptionHandlerServiceCollectionExtensions$instance {
-    static AddExceptionHandler<TService>(services: IServiceCollection, configureOptions: Action_2<ExceptionHandlerOptions, TService>): IServiceCollection;
+    static AddExceptionHandler<TService extends (object | null)>(services: IServiceCollection, configureOptions: Action_2<ExceptionHandlerOptions, TService>): IServiceCollection;
     static AddExceptionHandler(services: IServiceCollection, configureOptions: Action_1<ExceptionHandlerOptions>): IServiceCollection;
-    static AddExceptionHandler<T extends IExceptionHandler>(services: IServiceCollection): IServiceCollection;
+    static AddExceptionHandler<T extends (object | null) & IExceptionHandler>(services: IServiceCollection): IServiceCollection;
 }
 
 
@@ -271,7 +271,7 @@ export type HttpJsonServiceExtensions = HttpJsonServiceExtensions$instance;
 export abstract class HttpLoggingServicesExtensions$instance {
     static AddHttpLogging(services: IServiceCollection, configureOptions: Action_1<HttpLoggingOptions>): IServiceCollection;
     static AddHttpLogging(services: IServiceCollection): IServiceCollection;
-    static AddHttpLoggingInterceptor<T extends IHttpLoggingInterceptor>(services: IServiceCollection): IServiceCollection;
+    static AddHttpLoggingInterceptor<T extends (object | null) & IHttpLoggingInterceptor>(services: IServiceCollection): IServiceCollection;
     static AddW3CLogging(services: IServiceCollection, configureOptions: Action_1<W3CLoggerOptions>): IServiceCollection;
 }
 
@@ -286,10 +286,10 @@ export abstract class HttpServiceCollectionExtensions$instance {
 export type HttpServiceCollectionExtensions = HttpServiceCollectionExtensions$instance;
 
 export abstract class IdentityServiceCollectionExtensions$instance {
-    static AddIdentity<TUser, TRole>(services: IServiceCollection, setupAction: Action_1<IdentityOptions>): IdentityBuilder;
-    static AddIdentity<TUser, TRole>(services: IServiceCollection): IdentityBuilder;
-    static AddIdentityApiEndpoints<TUser>(services: IServiceCollection, configure: Action_1<IdentityOptions>): IdentityBuilder;
-    static AddIdentityApiEndpoints<TUser>(services: IServiceCollection): IdentityBuilder;
+    static AddIdentity<TUser extends (object | null), TRole extends (object | null)>(services: IServiceCollection, setupAction: Action_1<IdentityOptions>): IdentityBuilder;
+    static AddIdentity<TUser extends (object | null), TRole extends (object | null)>(services: IServiceCollection): IdentityBuilder;
+    static AddIdentityApiEndpoints<TUser extends (object | null)>(services: IServiceCollection, configure: Action_1<IdentityOptions>): IdentityBuilder;
+    static AddIdentityApiEndpoints<TUser extends (object | null)>(services: IServiceCollection): IdentityBuilder;
     static ConfigureApplicationCookie(services: IServiceCollection, configure: Action_1<CookieAuthenticationOptions>): IServiceCollection;
     static ConfigureExternalCookie(services: IServiceCollection, configure: Action_1<CookieAuthenticationOptions>): IServiceCollection;
 }
@@ -298,16 +298,16 @@ export abstract class IdentityServiceCollectionExtensions$instance {
 export type IdentityServiceCollectionExtensions = IdentityServiceCollectionExtensions$instance;
 
 export abstract class IdentityServiceCollectionExtensions2$instance {
-    static AddIdentityCore<TUser>(services: IServiceCollection, setupAction: Action_1<IdentityOptions>): IdentityBuilder;
-    static AddIdentityCore<TUser>(services: IServiceCollection): IdentityBuilder;
+    static AddIdentityCore<TUser extends (object | null)>(services: IServiceCollection, setupAction: Action_1<IdentityOptions>): IdentityBuilder;
+    static AddIdentityCore<TUser extends (object | null)>(services: IServiceCollection): IdentityBuilder;
 }
 
 
 export type IdentityServiceCollectionExtensions2 = IdentityServiceCollectionExtensions2$instance;
 
 export abstract class JsonProtocolDependencyInjectionExtensions$instance {
-    static AddJsonProtocol<TBuilder extends ISignalRBuilder>(builder: TBuilder, configure: Action_1<JsonHubProtocolOptions>): TBuilder;
-    static AddJsonProtocol<TBuilder extends ISignalRBuilder>(builder: TBuilder): TBuilder;
+    static AddJsonProtocol<TBuilder extends unknown & ISignalRBuilder>(builder: TBuilder, configure: Action_1<JsonHubProtocolOptions>): TBuilder;
+    static AddJsonProtocol<TBuilder extends unknown & ISignalRBuilder>(builder: TBuilder): TBuilder;
 }
 
 
@@ -424,7 +424,7 @@ export type MvcLocalizationMvcCoreBuilderExtensions = MvcLocalizationMvcCoreBuil
 export abstract class MvcRazorMvcBuilderExtensions$instance {
     static AddRazorOptions(builder: IMvcBuilder, setupAction: Action_1<RazorViewEngineOptions>): IMvcBuilder;
     static AddTagHelpersAsServices(builder: IMvcBuilder): IMvcBuilder;
-    static InitializeTagHelper<TTagHelper extends ITagHelper>(builder: IMvcBuilder, initialize: Action_2<TTagHelper, ViewContext>): IMvcBuilder;
+    static InitializeTagHelper<TTagHelper extends unknown & ITagHelper>(builder: IMvcBuilder, initialize: Action_2<TTagHelper, ViewContext>): IMvcBuilder;
 }
 
 
@@ -434,7 +434,7 @@ export abstract class MvcRazorMvcCoreBuilderExtensions$instance {
     static AddRazorViewEngine(builder: IMvcCoreBuilder, setupAction: Action_1<RazorViewEngineOptions>): IMvcCoreBuilder;
     static AddRazorViewEngine(builder: IMvcCoreBuilder): IMvcCoreBuilder;
     static AddTagHelpersAsServices(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static InitializeTagHelper<TTagHelper extends ITagHelper>(builder: IMvcCoreBuilder, initialize: Action_2<TTagHelper, ViewContext>): IMvcCoreBuilder;
+    static InitializeTagHelper<TTagHelper extends unknown & ITagHelper>(builder: IMvcCoreBuilder, initialize: Action_2<TTagHelper, ViewContext>): IMvcCoreBuilder;
 }
 
 
@@ -517,9 +517,9 @@ export abstract class MvcXmlMvcCoreBuilderExtensions$instance {
 export type MvcXmlMvcCoreBuilderExtensions = MvcXmlMvcCoreBuilderExtensions$instance;
 
 export abstract class OAuthExtensions$instance {
-    static AddOAuth<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>>(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action_1<TOptions>): AuthenticationBuilder;
+    static AddOAuth<TOptions extends unknown & OAuthOptions, THandler extends unknown & OAuthHandler_1<TOptions>>(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action_1<TOptions>): AuthenticationBuilder;
     static AddOAuth(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action_1<OAuthOptions>): AuthenticationBuilder;
-    static AddOAuth<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>>(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action_1<TOptions>): AuthenticationBuilder;
+    static AddOAuth<TOptions extends unknown & OAuthOptions, THandler extends unknown & OAuthHandler_1<TOptions>>(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action_1<TOptions>): AuthenticationBuilder;
     static AddOAuth(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action_1<OAuthOptions>): AuthenticationBuilder;
 }
 
@@ -527,11 +527,11 @@ export abstract class OAuthExtensions$instance {
 export type OAuthExtensions = OAuthExtensions$instance;
 
 export abstract class OutputCacheConventionBuilderExtensions$instance {
-    static CacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policy: IOutputCachePolicy): TBuilder;
-    static CacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policy: Action_1<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): TBuilder;
-    static CacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policy: Action_1<OutputCachePolicyBuilder>): TBuilder;
-    static CacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policyName: string): TBuilder;
-    static CacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
+    static CacheOutput<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, policy: IOutputCachePolicy): TBuilder;
+    static CacheOutput<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, policy: Action_1<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): TBuilder;
+    static CacheOutput<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, policy: Action_1<OutputCachePolicyBuilder>): TBuilder;
+    static CacheOutput<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, policyName: string): TBuilder;
+    static CacheOutput<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
 }
 
 
@@ -587,7 +587,7 @@ export abstract class ProblemDetailsServiceCollectionExtensions$instance {
 export type ProblemDetailsServiceCollectionExtensions = ProblemDetailsServiceCollectionExtensions$instance;
 
 export abstract class RazorComponentsRazorComponentBuilderExtensions$instance {
-    static RegisterPersistentService<TPersistentService>(builder: IRazorComponentsBuilder, renderMode: IComponentRenderMode): IRazorComponentsBuilder;
+    static RegisterPersistentService<TPersistentService extends unknown>(builder: IRazorComponentsBuilder, renderMode: IComponentRenderMode): IRazorComponentsBuilder;
 }
 
 
@@ -609,7 +609,7 @@ export abstract class RequestDecompressionServiceExtensions$instance {
 export type RequestDecompressionServiceExtensions = RequestDecompressionServiceExtensions$instance;
 
 export abstract class RequestLocalizationServiceCollectionExtensions$instance {
-    static AddRequestLocalization<TService>(services: IServiceCollection, configureOptions: Action_2<RequestLocalizationOptions, TService>): IServiceCollection;
+    static AddRequestLocalization<TService extends (object | null)>(services: IServiceCollection, configureOptions: Action_2<RequestLocalizationOptions, TService>): IServiceCollection;
     static AddRequestLocalization(services: IServiceCollection, configureOptions: Action_1<RequestLocalizationOptions>): IServiceCollection;
 }
 
@@ -665,7 +665,7 @@ export abstract class SessionServiceCollectionExtensions$instance {
 export type SessionServiceCollectionExtensions = SessionServiceCollectionExtensions$instance;
 
 export abstract class SignalRDependencyInjectionExtensions$instance {
-    static AddHubOptions<THub extends Hub>(signalrBuilder: ISignalRServerBuilder, configure: Action_1<HubOptions_1<THub>>): ISignalRServerBuilder;
+    static AddHubOptions<THub extends unknown & Hub>(signalrBuilder: ISignalRServerBuilder, configure: Action_1<HubOptions_1<THub>>): ISignalRServerBuilder;
     static AddSignalR(services: IServiceCollection, configure: Action_1<HubOptions>): ISignalRServerBuilder;
     static AddSignalR(services: IServiceCollection): ISignalRServerBuilder;
 }

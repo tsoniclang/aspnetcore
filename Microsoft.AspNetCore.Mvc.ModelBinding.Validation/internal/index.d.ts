@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -38,7 +38,7 @@ export interface IMetadataBasedModelValidatorProvider$instance extends IModelVal
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider: never;
 
     CreateValidators(context: ModelValidatorProviderContext): void;
-    HasValidators(modelType: Type, validatorMetadata: IList_1<JsValue>): boolean;
+    HasValidators(modelType: Type, validatorMetadata: IList_1<unknown>): boolean;
 }
 
 
@@ -67,7 +67,7 @@ export type IModelValidatorProvider = IModelValidatorProvider$instance;
 export interface IObjectModelValidator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator: never;
 
-    Validate(actionContext: ActionContext, validationState: ValidationStateDictionary | null, prefix: string, model: JsValue | null): void;
+    Validate(actionContext: ActionContext, validationState: ValidationStateDictionary | null, prefix: string, model: unknown | null): void;
 }
 
 
@@ -85,7 +85,7 @@ export type IPropertyValidationFilter = IPropertyValidationFilter$instance;
 export interface IValidationStrategy$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IValidationStrategy: never;
 
-    GetChildren(metadata: ModelMetadata, key: string, model: JsValue): IEnumerator_1<ValidationEntry>;
+    GetChildren(metadata: ModelMetadata, key: string, model: unknown): IEnumerator_1<ValidationEntry>;
 }
 
 
@@ -96,13 +96,13 @@ export interface ValidationEntry$instance {
 
     readonly Key: string;
     readonly Metadata: ModelMetadata;
-    readonly Model: JsValue | null;
+    readonly Model: unknown | null;
 }
 
 
 export const ValidationEntry: {
-    new(metadata: ModelMetadata, key: string, model: JsValue | null): ValidationEntry;
-    new(metadata: ModelMetadata, key: string, modelAccessor: Func_1<JsValue | null>): ValidationEntry;
+    new(metadata: ModelMetadata, key: string, model: unknown | null): ValidationEntry;
+    new(metadata: ModelMetadata, key: string, modelAccessor: Func_1<unknown | null>): ValidationEntry;
 };
 
 
@@ -142,13 +142,13 @@ export interface ClientValidatorItem$instance {
     IsReusable: boolean;
     get Validator(): IClientModelValidator | null;
     set Validator(value: IClientModelValidator | null);
-    readonly ValidatorMetadata: JsValue | null;
+    readonly ValidatorMetadata: unknown | null;
 }
 
 
 export const ClientValidatorItem: {
     new(): ClientValidatorItem;
-    new(validatorMetadata: JsValue | null): ClientValidatorItem;
+    new(validatorMetadata: unknown | null): ClientValidatorItem;
 };
 
 
@@ -159,7 +159,7 @@ export interface ClientValidatorProviderContext$instance {
 
     readonly ModelMetadata: ModelMetadata;
     readonly Results: IList_1<ClientValidatorItem>;
-    readonly ValidatorMetadata: IReadOnlyList_1<JsValue>;
+    readonly ValidatorMetadata: IReadOnlyList_1<unknown>;
 }
 
 
@@ -217,13 +217,13 @@ export type CompositeModelValidatorProvider = CompositeModelValidatorProvider$in
 export interface ModelValidationContext$instance extends ModelValidationContextBase {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ModelValidationContext: never;
 
-    readonly Container: JsValue | null;
-    readonly Model: JsValue | null;
+    readonly Container: unknown | null;
+    readonly Model: unknown | null;
 }
 
 
 export const ModelValidationContext: {
-    new(actionContext: ActionContext, modelMetadata: ModelMetadata, metadataProvider: IModelMetadataProvider, container: JsValue | null, model: JsValue | null): ModelValidationContext;
+    new(actionContext: ActionContext, modelMetadata: ModelMetadata, metadataProvider: IModelMetadataProvider, container: unknown | null, model: unknown | null): ModelValidationContext;
 };
 
 
@@ -265,7 +265,7 @@ export interface ModelValidatorProviderContext$instance {
 
     ModelMetadata: ModelMetadata;
     readonly Results: IList_1<ValidatorItem>;
-    readonly ValidatorMetadata: IReadOnlyList_1<JsValue>;
+    readonly ValidatorMetadata: IReadOnlyList_1<unknown>;
 }
 
 
@@ -311,18 +311,18 @@ export interface ValidationStateDictionary$instance {
     readonly IsReadOnly: boolean;
     get Item(): ValidationStateEntry | null;
     set Item(value: ValidationStateEntry | null);
-    readonly Keys: ICollection_1<JsValue>;
+    readonly Keys: ICollection_1<unknown>;
     readonly Values: ICollection_1<ValidationStateEntry>;
-    Add(item: KeyValuePair_2<JsValue, ValidationStateEntry>): void;
-    Add(key: JsValue, value: ValidationStateEntry): void;
+    Add(item: KeyValuePair_2<unknown, ValidationStateEntry>): void;
+    Add(key: unknown, value: ValidationStateEntry): void;
     Clear(): void;
-    Contains(item: KeyValuePair_2<JsValue, ValidationStateEntry>): boolean;
-    ContainsKey(key: JsValue): boolean;
-    CopyTo(array: KeyValuePair_2<JsValue, ValidationStateEntry>[], arrayIndex: int): void;
-    GetEnumerator(): IEnumerator_1<KeyValuePair_2<JsValue, ValidationStateEntry>>;
-    Remove(item: KeyValuePair_2<JsValue, ValidationStateEntry>): boolean;
-    Remove(key: JsValue): boolean;
-    TryGetValue(key: JsValue, value: ValidationStateEntry): boolean;
+    Contains(item: KeyValuePair_2<unknown, ValidationStateEntry>): boolean;
+    ContainsKey(key: unknown): boolean;
+    CopyTo(array: KeyValuePair_2<unknown, ValidationStateEntry>[], arrayIndex: int): void;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<unknown, ValidationStateEntry>>;
+    Remove(item: KeyValuePair_2<unknown, ValidationStateEntry>): boolean;
+    Remove(key: unknown): boolean;
+    TryGetValue(key: unknown, value: ValidationStateEntry): boolean;
 }
 
 
@@ -356,13 +356,13 @@ export interface ValidationVisitor$instance {
     get MaxValidationDepth(): Nullable_1<System_Internal.Int32>;
     set MaxValidationDepth(value: Nullable_1<System_Internal.Int32> | int);
     ValidateComplexTypesIfChildValidationFails: boolean;
-    GetValidationEntry(model: JsValue | null): ValidationStateEntry | null;
+    GetValidationEntry(model: unknown | null): ValidationStateEntry | null;
     SuppressValidation(key: string): void;
-    Validate(metadata: ModelMetadata, key: string, model: JsValue): boolean;
-    Validate(metadata: ModelMetadata | null, key: string | null, model: JsValue | null, alwaysValidateAtTopLevel: boolean): boolean;
-    Validate(metadata: ModelMetadata | null, key: string | null, model: JsValue | null, alwaysValidateAtTopLevel: boolean, container: JsValue | null): boolean;
+    Validate(metadata: ModelMetadata, key: string, model: unknown): boolean;
+    Validate(metadata: ModelMetadata | null, key: string | null, model: unknown | null, alwaysValidateAtTopLevel: boolean): boolean;
+    Validate(metadata: ModelMetadata | null, key: string | null, model: unknown | null, alwaysValidateAtTopLevel: boolean, container: unknown | null): boolean;
     ValidateNode(): boolean;
-    Visit(metadata: ModelMetadata, key: string | null, model: JsValue | null): boolean;
+    Visit(metadata: ModelMetadata, key: string | null, model: unknown | null): boolean;
     VisitChildren(strategy: IValidationStrategy): boolean;
     VisitComplexType(defaultStrategy: IValidationStrategy): boolean;
     VisitSimpleType(): boolean;
@@ -386,8 +386,8 @@ export interface ValidationVisitor_StateManager$instance {
 
 
 export const ValidationVisitor_StateManager: {
-    new(visitor: ValidationVisitor, newModel: JsValue | null): ValidationVisitor_StateManager;
-    Recurse(visitor: ValidationVisitor, key: string, metadata: ModelMetadata, model: JsValue | null, strategy: IValidationStrategy): ValidationVisitor_StateManager;
+    new(visitor: ValidationVisitor, newModel: unknown | null): ValidationVisitor_StateManager;
+    Recurse(visitor: ValidationVisitor, key: string, metadata: ModelMetadata, model: unknown | null, strategy: IValidationStrategy): ValidationVisitor_StateManager;
 };
 
 
@@ -413,13 +413,13 @@ export interface ValidatorItem$instance {
     IsReusable: boolean;
     get Validator(): IModelValidator | null;
     set Validator(value: IModelValidator | null);
-    readonly ValidatorMetadata: JsValue;
+    readonly ValidatorMetadata: unknown;
 }
 
 
 export const ValidatorItem: {
     new(): ValidatorItem;
-    new(validatorMetadata: JsValue): ValidatorItem;
+    new(validatorMetadata: unknown): ValidatorItem;
 };
 
 
@@ -427,7 +427,7 @@ export type ValidatorItem = ValidatorItem$instance;
 
 export abstract class ModelValidatorProviderExtensions$instance {
     static RemoveType(list: IList_1<IModelValidatorProvider>, type: Type): void;
-    static RemoveType<TModelValidatorProvider extends IModelValidatorProvider>(list: IList_1<IModelValidatorProvider>): void;
+    static RemoveType<TModelValidatorProvider extends unknown & IModelValidatorProvider>(list: IList_1<IModelValidatorProvider>): void;
 }
 
 

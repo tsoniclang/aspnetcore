@@ -43,7 +43,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::value__System.Int32",
           "clrName": "value__",
-          "metadataToken": 67109151,
+          "metadataToken": 67109152,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
@@ -55,7 +55,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_128_CBCMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
           "clrName": "AES_128_CBC",
-          "metadataToken": 67109152,
+          "metadataToken": 67109153,
           "normalizedSignature": "AES_128_CBC|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -67,7 +67,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_192_CBCMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
           "clrName": "AES_192_CBC",
-          "metadataToken": 67109153,
+          "metadataToken": 67109154,
           "normalizedSignature": "AES_192_CBC|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -79,7 +79,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_256_CBCMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
           "clrName": "AES_256_CBC",
-          "metadataToken": 67109154,
+          "metadataToken": 67109155,
           "normalizedSignature": "AES_256_CBC|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -91,7 +91,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_128_GCMMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
           "clrName": "AES_128_GCM",
-          "metadataToken": 67109155,
+          "metadataToken": 67109156,
           "normalizedSignature": "AES_128_GCM|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -103,7 +103,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_192_GCMMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
           "clrName": "AES_192_GCM",
-          "metadataToken": 67109156,
+          "metadataToken": 67109157,
           "normalizedSignature": "AES_192_GCM|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -115,7 +115,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_256_GCMMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
           "clrName": "AES_256_GCM",
-          "metadataToken": 67109157,
+          "metadataToken": 67109158,
           "normalizedSignature": "AES_256_GCM|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -167,7 +167,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm::value__System.Int32",
           "clrName": "value__",
-          "metadataToken": 67109159,
+          "metadataToken": 67109160,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
@@ -179,7 +179,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm::HMACSHA256Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
           "clrName": "HMACSHA256",
-          "metadataToken": 67109160,
+          "metadataToken": 67109161,
           "normalizedSignature": "HMACSHA256|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -191,7 +191,7 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm::HMACSHA512Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
           "clrName": "HMACSHA512",
-          "metadataToken": 67109161,
+          "metadataToken": 67109162,
           "normalizedSignature": "HMACSHA512|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

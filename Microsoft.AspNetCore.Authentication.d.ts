@@ -5,8 +5,11 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Authentication/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
-import type { BearerTokenEvents } from './Microsoft.AspNetCore.Authentication.BearerToken/internal/index.js';
 import type { ClaimActionCollection } from './Microsoft.AspNetCore.Authentication.OAuth.Claims/internal/index.js';
 import type { OAuthEvents } from './Microsoft.AspNetCore.Authentication.OAuth/internal/index.js';
 import type { IDataProtectionProvider, IDataProtector } from './Microsoft.AspNetCore.DataProtection/internal/index.js';
@@ -43,8 +46,8 @@ export { RemoteFailureContext as RemoteFailureContext } from './Microsoft.AspNet
 export { ResultContext_1 as ResultContext } from './Microsoft.AspNetCore.Authentication/internal/index.js';
 export { TicketReceivedContext as TicketReceivedContext } from './Microsoft.AspNetCore.Authentication/internal/index.js';
 export { HandleRequestResult as HandleRequestResult } from './Microsoft.AspNetCore.Authentication/internal/index.js';
-export type IDataSerializer<TModel> = Internal.IDataSerializer_1<TModel>;
-export type ISecureDataFormat<TData> = Internal.ISecureDataFormat_1<TData>;
+export type IDataSerializer<TModel extends unknown> = Internal.IDataSerializer_1<TModel>;
+export type ISecureDataFormat<TData extends unknown> = Internal.ISecureDataFormat_1<TData>;
 export type ISystemClock = Internal.ISystemClock;
 export { JsonDocumentAuthExtensions$instance as JsonDocumentAuthExtensions } from './Microsoft.AspNetCore.Authentication/internal/index.js';
 export { PolicySchemeHandler as PolicySchemeHandler } from './Microsoft.AspNetCore.Authentication/internal/index.js';

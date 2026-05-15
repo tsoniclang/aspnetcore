@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Authentication.Cookies
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -110,14 +110,14 @@ export const CookieAuthenticationEvents: {
 
 export type CookieAuthenticationEvents = CookieAuthenticationEvents$instance;
 
-export interface CookieAuthenticationHandler$instance extends SignInAuthenticationHandler_1<CookieAuthenticationOptions> {
+export interface CookieAuthenticationHandler$instance extends SignInAuthenticationHandler_1<CookieAuthenticationOptions>, Microsoft_AspNetCore_Authentication_Internal.IAuthenticationSignInHandler$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieAuthenticationHandler: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
 
-    CreateEventsAsync(): Task_1<JsValue>;
+    CreateEventsAsync(): Task_1<unknown>;
     FinishResponseAsync(): Task;
     HandleAuthenticateAsync(): Task_1<AuthenticateResult>;
     HandleChallengeAsync(properties: AuthenticationProperties): Task;
@@ -150,7 +150,7 @@ export interface CookieAuthenticationOptions$instance extends AuthenticationSche
     CookieManager: ICookieManager;
     get DataProtectionProvider(): IDataProtectionProvider | null;
     set DataProtectionProvider(value: IDataProtectionProvider | null);
-    Events: CookieAuthenticationEvents | JsValue;
+    Events: CookieAuthenticationEvents | unknown;
     ExpireTimeSpan: TimeSpan;
     LoginPath: PathString;
     LogoutPath: PathString;

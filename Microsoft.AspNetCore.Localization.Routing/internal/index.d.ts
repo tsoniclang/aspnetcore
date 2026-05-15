@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Localization.Routing
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -15,7 +15,7 @@ import type { IRequestCultureProvider, ProviderCultureResult, RequestCultureProv
 import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import type { String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface RouteDataRequestCultureProvider$instance extends RequestCultureProvider {
+export interface RouteDataRequestCultureProvider$instance extends RequestCultureProvider, Microsoft_AspNetCore_Localization_Internal.IRequestCultureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_Routing_RouteDataRequestCultureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;

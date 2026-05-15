@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Localization
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -37,7 +37,7 @@ export interface IRequestCultureProvider$instance {
 
 export type IRequestCultureProvider = IRequestCultureProvider$instance;
 
-export interface AcceptLanguageHeaderRequestCultureProvider$instance extends RequestCultureProvider$instance {
+export interface AcceptLanguageHeaderRequestCultureProvider$instance extends RequestCultureProvider$instance, IRequestCultureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_AcceptLanguageHeaderRequestCultureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
@@ -59,7 +59,7 @@ export interface __AcceptLanguageHeaderRequestCultureProvider$views {
 export type AcceptLanguageHeaderRequestCultureProvider = AcceptLanguageHeaderRequestCultureProvider$instance & __AcceptLanguageHeaderRequestCultureProvider$views;
 
 
-export interface CookieRequestCultureProvider$instance extends RequestCultureProvider$instance {
+export interface CookieRequestCultureProvider$instance extends RequestCultureProvider$instance, IRequestCultureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_CookieRequestCultureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
@@ -84,7 +84,7 @@ export interface __CookieRequestCultureProvider$views {
 export type CookieRequestCultureProvider = CookieRequestCultureProvider$instance & __CookieRequestCultureProvider$views;
 
 
-export interface CustomRequestCultureProvider$instance extends RequestCultureProvider$instance {
+export interface CustomRequestCultureProvider$instance extends RequestCultureProvider$instance, IRequestCultureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_CustomRequestCultureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
@@ -123,7 +123,7 @@ export const ProviderCultureResult: {
 
 export type ProviderCultureResult = ProviderCultureResult$instance;
 
-export interface QueryStringRequestCultureProvider$instance extends RequestCultureProvider$instance {
+export interface QueryStringRequestCultureProvider$instance extends RequestCultureProvider$instance, IRequestCultureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_QueryStringRequestCultureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;

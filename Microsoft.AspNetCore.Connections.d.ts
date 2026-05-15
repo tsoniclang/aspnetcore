@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Connections/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { IConnectionEndPointFeature, IConnectionIdFeature, IConnectionItemsFeature, IConnectionLifetimeFeature, IConnectionTransportFeature, IConnectionUserFeature } from './Microsoft.AspNetCore.Connections.Features/internal/index.js';
 import type { IFeatureCollection } from './Microsoft.AspNetCore.Http.Features/internal/index.js';
@@ -40,7 +44,7 @@ export type IConnectionFactory = Internal.IConnectionFactory;
 export type IConnectionListener = Internal.IConnectionListener;
 export type IConnectionListenerFactory = Internal.IConnectionListenerFactory;
 export type IConnectionListenerFactorySelector = Internal.IConnectionListenerFactorySelector;
-export type IMemoryPoolFactory<T> = Internal.IMemoryPoolFactory_1<T>;
+export type IMemoryPoolFactory<T extends unknown> = Internal.IMemoryPoolFactory_1<T>;
 export type IMultiplexedConnectionListener = Internal.IMultiplexedConnectionListener;
 export type IMultiplexedConnectionBuilder = Internal.IMultiplexedConnectionBuilder;
 export type IMultiplexedConnectionFactory = Internal.IMultiplexedConnectionFactory;

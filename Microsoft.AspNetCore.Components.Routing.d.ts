@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Components.Routing/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { RenderTreeBuilder } from './Microsoft.AspNetCore.Components.Rendering/internal/index.js';
 import type { ComponentBase, EventCallback_1, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection, RouteData } from './Microsoft.AspNetCore.Components/internal/index.js';

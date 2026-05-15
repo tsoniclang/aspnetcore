@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Hosting.Server/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { IFeatureCollection } from './Microsoft.AspNetCore.Http.Features/internal/index.js';
 import type { Boolean as ClrBoolean, Exception, IDisposable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
@@ -12,7 +16,7 @@ import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
-export type IHttpApplication<TContext> = Internal.IHttpApplication_1<TContext>;
+export type IHttpApplication<TContext extends unknown> = Internal.IHttpApplication_1<TContext>;
 export type IServer = Internal.IServer;
 export type IServerIntegratedAuth = Internal.IServerIntegratedAuth;
 export { ServerIntegratedAuth as ServerIntegratedAuth } from './Microsoft.AspNetCore.Hosting.Server/internal/index.js';

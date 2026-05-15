@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Components, Microsoft.AspNetCore.Components.Endpoints, Microsoft.AspNetCore.Components.Web
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -177,8 +177,8 @@ export interface NavLink$instance extends ComponentBase, Microsoft_AspNetCore_Co
 
     get ActiveClass(): string | null;
     set ActiveClass(value: string | null);
-    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, JsValue> | null;
-    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null);
+    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, unknown> | null;
+    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | null);
     get ChildContent(): RenderFragment | null;
     set ChildContent(value: RenderFragment | null);
     Match: NavLinkMatch;

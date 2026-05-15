@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Routing
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -79,12 +79,12 @@ export interface PolicyJumpTableEdge$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge: never;
 
     readonly Destination: int;
-    readonly State: JsValue;
+    readonly State: unknown;
 }
 
 
 export const PolicyJumpTableEdge: {
-    new(state: JsValue, destination: int): PolicyJumpTableEdge;
+    new(state: unknown, destination: int): PolicyJumpTableEdge;
 };
 
 
@@ -94,12 +94,12 @@ export interface PolicyNodeEdge$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge: never;
 
     readonly Endpoints: IReadOnlyList_1<Endpoint>;
-    readonly State: JsValue;
+    readonly State: unknown;
 }
 
 
 export const PolicyNodeEdge: {
-    new(state: JsValue, endpoints: IReadOnlyList_1<Endpoint>): PolicyNodeEdge;
+    new(state: unknown, endpoints: IReadOnlyList_1<Endpoint>): PolicyNodeEdge;
 };
 
 
@@ -137,7 +137,7 @@ export const EndpointMetadataComparer: {
 
 export type EndpointMetadataComparer = EndpointMetadataComparer$instance;
 
-export interface EndpointMetadataComparer_1$instance<TMetadata> {
+export interface EndpointMetadataComparer_1$instance<TMetadata extends (object | null)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
@@ -148,12 +148,12 @@ export interface EndpointMetadataComparer_1$instance<TMetadata> {
 }
 
 
-export const EndpointMetadataComparer_1: (abstract new<TMetadata>() => EndpointMetadataComparer_1<TMetadata>) & {
-    readonly Default: <TMetadata>() => EndpointMetadataComparer_1<TMetadata>;
+export const EndpointMetadataComparer_1: (abstract new<TMetadata extends (object | null)>() => EndpointMetadataComparer_1<TMetadata>) & {
+    readonly Default: <TMetadata extends (object | null)>() => EndpointMetadataComparer_1<TMetadata>;
 };
 
 
-export type EndpointMetadataComparer_1<TMetadata> = EndpointMetadataComparer_1$instance<TMetadata>;
+export type EndpointMetadataComparer_1<TMetadata extends (object | null)> = EndpointMetadataComparer_1$instance<TMetadata>;
 
 export interface EndpointSelector$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_EndpointSelector: never;

@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Cors
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -12,7 +12,7 @@ import type { CorsPolicy, ICorsMetadata, ICorsPolicyMetadata, IDisableCorsAttrib
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Attribute, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface CorsPolicyMetadata$instance extends ICorsMetadata, Microsoft_AspNetCore_Cors_Infrastructure_Internal.ICorsPolicyMetadata$instance {
+export interface CorsPolicyMetadata$instance extends Microsoft_AspNetCore_Cors_Infrastructure_Internal.ICorsPolicyMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Cors_CorsPolicyMetadata: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;
@@ -34,7 +34,7 @@ export interface __CorsPolicyMetadata$views {
 export type CorsPolicyMetadata = CorsPolicyMetadata$instance & __CorsPolicyMetadata$views;
 
 
-export interface DisableCorsAttribute$instance extends Attribute, IDisableCorsAttribute, ICorsMetadata {
+export interface DisableCorsAttribute$instance extends Attribute, IDisableCorsAttribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Cors_DisableCorsAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;
@@ -51,7 +51,7 @@ export const DisableCorsAttribute: {
 
 export type DisableCorsAttribute = DisableCorsAttribute$instance;
 
-export interface EnableCorsAttribute$instance extends Attribute, ICorsMetadata, Microsoft_AspNetCore_Cors_Infrastructure_Internal.IEnableCorsAttribute$instance {
+export interface EnableCorsAttribute$instance extends Attribute, Microsoft_AspNetCore_Cors_Infrastructure_Internal.IEnableCorsAttribute$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Cors_EnableCorsAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;

@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.ViewFeatures
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -26,7 +26,7 @@ export type IViewBufferScope = IViewBufferScope$instance;
 export interface ViewBufferValue$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_Buffers_ViewBufferValue: never;
 
-    readonly Value: JsValue;
+    readonly Value: unknown;
 }
 
 

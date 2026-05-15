@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Authentication.Cookies/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { AuthenticateResult, AuthenticationProperties, AuthenticationScheme, AuthenticationSchemeOptions, AuthenticationTicket, IAuthenticationHandler, IAuthenticationSignInHandler, IAuthenticationSignOutHandler, ISecureDataFormat_1, ISystemClock, PrincipalContext_1, PropertiesContext_1, RedirectContext_1, SignInAuthenticationHandler_1 } from './Microsoft.AspNetCore.Authentication/internal/index.js';
 import type { IDataProtectionProvider } from './Microsoft.AspNetCore.DataProtection/internal/index.js';

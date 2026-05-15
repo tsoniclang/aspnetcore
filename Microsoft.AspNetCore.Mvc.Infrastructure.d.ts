@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { IWebHostEnvironment } from './Microsoft.AspNetCore.Hosting/internal/index.js';
 import type { HttpContext, ProblemDetailsOptions } from './Microsoft.AspNetCore.Http/internal/index.js';
@@ -48,7 +52,7 @@ export type IActionContextAccessor = Internal.IActionContextAccessor;
 export type IActionDescriptorChangeProvider = Internal.IActionDescriptorChangeProvider;
 export type IActionDescriptorCollectionProvider = Internal.IActionDescriptorCollectionProvider;
 export type IActionInvokerFactory = Internal.IActionInvokerFactory;
-export type IActionResultExecutor<TResult extends Internal.IActionResult> = Internal.IActionResultExecutor_1<TResult>;
+export type IActionResultExecutor<TResult extends unknown & Internal.IActionResult> = Internal.IActionResultExecutor_1<TResult>;
 export type IActionResultTypeMapper = Internal.IActionResultTypeMapper;
 export type IActionSelector = Internal.IActionSelector;
 export type IApiBehaviorMetadata = Internal.IApiBehaviorMetadata;

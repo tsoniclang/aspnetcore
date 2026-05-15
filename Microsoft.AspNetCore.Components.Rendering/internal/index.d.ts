@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Components
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -24,7 +24,7 @@ export interface ComponentState$instance {
     readonly LogicalParentComponentState: ComponentState | null;
     readonly ParentComponentState: ComponentState | null;
     DisposeAsync(): ValueTask;
-    GetComponentKey(): JsValue | null;
+    GetComponentKey(): unknown | null;
 }
 
 
@@ -45,21 +45,21 @@ export interface RenderTreeBuilder$instance {
     AddAttribute(sequence: int, name: string, value: string | null): void;
     AddAttribute(sequence: int, name: string, value: Function | null): void;
     AddAttribute(sequence: int, name: string, value: EventCallback): void;
-    AddAttribute<TArgument>(sequence: int, name: string, value: EventCallback_1<TArgument>): void;
-    AddAttribute(sequence: int, name: string, value: JsValue | null): void;
+    AddAttribute<TArgument extends unknown>(sequence: int, name: string, value: EventCallback_1<TArgument>): void;
+    AddAttribute(sequence: int, name: string, value: unknown | null): void;
     AddAttribute(sequence: int, frame: RenderTreeFrame): void;
-    AddComponentParameter(sequence: int, name: string, value: JsValue | null): void;
-    AddComponentReferenceCapture(sequence: int, componentReferenceCaptureAction: Action_1<JsValue>): void;
+    AddComponentParameter(sequence: int, name: string, value: unknown | null): void;
+    AddComponentReferenceCapture(sequence: int, componentReferenceCaptureAction: Action_1<unknown>): void;
     AddComponentRenderMode(renderMode: IComponentRenderMode | null): void;
     AddContent(sequence: int, textContent: string | null): void;
     AddContent(sequence: int, fragment: RenderFragment | null): void;
-    AddContent<TValue>(sequence: int, fragment: RenderFragment_1<TValue> | null, value: TValue): void;
+    AddContent<TValue extends unknown>(sequence: int, fragment: RenderFragment_1<TValue> | null, value: TValue): void;
     AddContent(sequence: int, markupContent: Nullable_1<MarkupString>): void;
     AddContent(sequence: int, markupContent: MarkupString): void;
-    AddContent(sequence: int, textContent: JsValue | null): void;
+    AddContent(sequence: int, textContent: unknown | null): void;
     AddElementReferenceCapture(sequence: int, elementReferenceCaptureAction: Action_1<ElementReference>): void;
     AddMarkupContent(sequence: int, markupContent: string | null): void;
-    AddMultipleAttributes(sequence: int, attributes: IEnumerable_1<KeyValuePair_2<System_Internal.String, JsValue>> | null): void;
+    AddMultipleAttributes(sequence: int, attributes: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>> | null): void;
     AddNamedEvent(eventType: string, assignedName: string): void;
     Clear(): void;
     CloseComponent(): void;
@@ -67,11 +67,11 @@ export interface RenderTreeBuilder$instance {
     CloseRegion(): void;
     Dispose(): void;
     GetFrames(): ArrayRange_1<RenderTreeFrame>;
-    OpenComponent<TComponent extends IComponent>(sequence: int): void;
+    OpenComponent<TComponent extends unknown & IComponent>(sequence: int): void;
     OpenComponent(sequence: int, componentType: Type): void;
     OpenElement(sequence: int, elementName: string): void;
     OpenRegion(sequence: int): void;
-    SetKey(value: JsValue | null): void;
+    SetKey(value: unknown | null): void;
     SetUpdatesAttributeName(updatesAttributeName: string): void;
 }
 

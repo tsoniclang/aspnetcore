@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Components.Web
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -26,7 +26,7 @@ export interface FormMappingError$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_Mapping_FormMappingError: never;
 
     readonly AttemptedValue: string | null;
-    Container: JsValue;
+    Container: unknown;
     readonly ErrorMessages: IReadOnlyList_1<FormattableString>;
     readonly Name: string;
     readonly Path: string;
@@ -44,15 +44,15 @@ export interface FormValueMappingContext$instance {
 
     readonly AcceptFormName: string | null;
     readonly AcceptMappingScopeName: string;
-    get MapErrorToContainer(): Action_2<System_Internal.String, JsValue> | null;
-    set MapErrorToContainer(value: Action_2<System_Internal.String, JsValue> | null);
+    get MapErrorToContainer(): Action_2<System_Internal.String, unknown> | null;
+    set MapErrorToContainer(value: Action_2<System_Internal.String, unknown> | null);
     get OnError(): Action_3<System_Internal.String, FormattableString, string | null> | null;
     set OnError(value: Action_3<System_Internal.String, FormattableString, string | null> | null);
     readonly ParameterName: string;
-    get Result(): JsValue | null;
-    set Result(value: JsValue | null);
+    get Result(): unknown | null;
+    set Result(value: unknown | null);
     readonly ValueType: Type;
-    SetResult(result: JsValue | null): void;
+    SetResult(result: unknown | null): void;
 }
 
 

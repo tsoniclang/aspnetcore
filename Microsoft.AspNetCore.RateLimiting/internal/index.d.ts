@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.RateLimiting
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -14,7 +14,7 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Attribute, Func_2, Func_3, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IRateLimiterPolicy_1$instance<TPartitionKey> {
+export interface IRateLimiterPolicy_1$instance<TPartitionKey extends unknown> {
     readonly __tsonic_iface_Microsoft_AspNetCore_RateLimiting_IRateLimiterPolicy_1: never;
 
     readonly OnRejected: Func_3<OnRejectedContext, CancellationToken, ValueTask> | null;
@@ -22,7 +22,7 @@ export interface IRateLimiterPolicy_1$instance<TPartitionKey> {
 }
 
 
-export type IRateLimiterPolicy_1<TPartitionKey> = IRateLimiterPolicy_1$instance<TPartitionKey>;
+export type IRateLimiterPolicy_1<TPartitionKey extends unknown> = IRateLimiterPolicy_1$instance<TPartitionKey>;
 
 export interface DisableRateLimitingAttribute$instance extends Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_RateLimiting_DisableRateLimitingAttribute: never;
@@ -74,9 +74,9 @@ export interface RateLimiterOptions$instance {
     get OnRejected(): Func_3<OnRejectedContext, CancellationToken, ValueTask> | null;
     set OnRejected(value: Func_3<OnRejectedContext, CancellationToken, ValueTask> | null);
     RejectionStatusCode: int;
-    AddPolicy<TPartitionKey>(policyName: string, partitioner: Func_2<HttpContext, RateLimitPartition_1<TPartitionKey>>): RateLimiterOptions;
-    AddPolicy<TPartitionKey, TPolicy extends IRateLimiterPolicy_1<TPartitionKey>>(policyName: string): RateLimiterOptions;
-    AddPolicy<TPartitionKey>(policyName: string, policy: IRateLimiterPolicy_1<TPartitionKey>): RateLimiterOptions;
+    AddPolicy<TPartitionKey extends unknown>(policyName: string, partitioner: Func_2<HttpContext, RateLimitPartition_1<TPartitionKey>>): RateLimiterOptions;
+    AddPolicy<TPartitionKey extends unknown, TPolicy extends unknown & IRateLimiterPolicy_1<TPartitionKey>>(policyName: string): RateLimiterOptions;
+    AddPolicy<TPartitionKey extends unknown>(policyName: string, policy: IRateLimiterPolicy_1<TPartitionKey>): RateLimiterOptions;
 }
 
 

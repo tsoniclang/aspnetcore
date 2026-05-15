@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Http.HttpResults/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { AuthenticationProperties } from './Microsoft.AspNetCore.Authentication/internal/index.js';
 import type { EndpointBuilder } from './Microsoft.AspNetCore.Builder/internal/index.js';
@@ -63,82 +67,82 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type Accepted<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Accepted :
-  Internal.Accepted_1<T1>;
+  [T1] extends [unknown] ? Internal.Accepted_1<T1> : never;
 
 export type AcceptedAtRoute<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.AcceptedAtRoute :
-  Internal.AcceptedAtRoute_1<T1>;
+  [T1] extends [unknown] ? Internal.AcceptedAtRoute_1<T1> : never;
 
 export type BadRequest<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.BadRequest :
-  Internal.BadRequest_1<T1>;
+  [T1] extends [unknown] ? Internal.BadRequest_1<T1> : never;
 
 export type Conflict<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Conflict :
-  Internal.Conflict_1<T1>;
+  [T1] extends [unknown] ? Internal.Conflict_1<T1> : never;
 
 export type Created<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Created :
-  Internal.Created_1<T1>;
+  [T1] extends [unknown] ? Internal.Created_1<T1> : never;
 
 export type CreatedAtRoute<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.CreatedAtRoute :
-  Internal.CreatedAtRoute_1<T1>;
+  [T1] extends [unknown] ? Internal.CreatedAtRoute_1<T1> : never;
 
 export type InternalServerError<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.InternalServerError :
-  Internal.InternalServerError_1<T1>;
+  [T1] extends [unknown] ? Internal.InternalServerError_1<T1> : never;
 
 export type NotFound<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.NotFound :
-  Internal.NotFound_1<T1>;
+  [T1] extends [unknown] ? Internal.NotFound_1<T1> : never;
 
 export type Ok<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Ok :
-  Internal.Ok_1<T1>;
+  [T1] extends [unknown] ? Internal.Ok_1<T1> : never;
 
 export type RazorComponentResult<
-  T1 = __,
+  T1 extends unknown & IComponent | __ = __,
 > =
   [T1] extends [__] ? Internal.RazorComponentResult :
-  [T1] extends [IComponent] ? Internal.RazorComponentResult_1<T1> : never;
+  [T1] extends [unknown & IComponent] ? Internal.RazorComponentResult_1<T1> : never;
 
 export type Results<
-  T1 = __,
-  T2 = __,
-  T3 = __,
-  T4 = __,
-  T5 = __,
-  T6 = __,
+  T1 extends unknown & IResult | __ = __,
+  T2 extends unknown & IResult | __ = __,
+  T3 extends unknown & IResult | __ = __,
+  T4 extends unknown & IResult | __ = __,
+  T5 extends unknown & IResult | __ = __,
+  T6 extends unknown & IResult | __ = __,
 > =
-  [T3] extends [__] ? [T1] extends [IResult] ? [T2] extends [IResult] ? Internal.Results_2<T1, T2> : never : never :
-  [T4] extends [__] ? [T1] extends [IResult] ? [T2] extends [IResult] ? [T3] extends [IResult] ? Internal.Results_3<T1, T2, T3> : never : never : never :
-  [T5] extends [__] ? [T1] extends [IResult] ? [T2] extends [IResult] ? [T3] extends [IResult] ? [T4] extends [IResult] ? Internal.Results_4<T1, T2, T3, T4> : never : never : never : never :
-  [T6] extends [__] ? [T1] extends [IResult] ? [T2] extends [IResult] ? [T3] extends [IResult] ? [T4] extends [IResult] ? [T5] extends [IResult] ? Internal.Results_5<T1, T2, T3, T4, T5> : never : never : never : never : never :
-  [T1] extends [IResult] ? [T2] extends [IResult] ? [T3] extends [IResult] ? [T4] extends [IResult] ? [T5] extends [IResult] ? [T6] extends [IResult] ? Internal.Results_6<T1, T2, T3, T4, T5, T6> : never : never : never : never : never : never;
+  [T3] extends [__] ? [T1] extends [unknown & IResult] ? [T2] extends [unknown & IResult] ? Internal.Results_2<T1, T2> : never : never :
+  [T4] extends [__] ? [T1] extends [unknown & IResult] ? [T2] extends [unknown & IResult] ? [T3] extends [unknown & IResult] ? Internal.Results_3<T1, T2, T3> : never : never : never :
+  [T5] extends [__] ? [T1] extends [unknown & IResult] ? [T2] extends [unknown & IResult] ? [T3] extends [unknown & IResult] ? [T4] extends [unknown & IResult] ? Internal.Results_4<T1, T2, T3, T4> : never : never : never : never :
+  [T6] extends [__] ? [T1] extends [unknown & IResult] ? [T2] extends [unknown & IResult] ? [T3] extends [unknown & IResult] ? [T4] extends [unknown & IResult] ? [T5] extends [unknown & IResult] ? Internal.Results_5<T1, T2, T3, T4, T5> : never : never : never : never : never :
+  [T1] extends [unknown & IResult] ? [T2] extends [unknown & IResult] ? [T3] extends [unknown & IResult] ? [T4] extends [unknown & IResult] ? [T5] extends [unknown & IResult] ? [T6] extends [unknown & IResult] ? Internal.Results_6<T1, T2, T3, T4, T5, T6> : never : never : never : never : never : never;
 
 export type UnprocessableEntity<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.UnprocessableEntity :
-  Internal.UnprocessableEntity_1<T1>;
+  [T1] extends [unknown] ? Internal.UnprocessableEntity_1<T1> : never;
 

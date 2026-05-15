@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -25,7 +25,7 @@ export interface IAllowAnonymousFilter$instance extends Microsoft_AspNetCore_Mvc
 
 export type IAllowAnonymousFilter = IAllowAnonymousFilter$instance;
 
-export interface AllowAnonymousFilter$instance extends IAllowAnonymousFilter, IFilterMetadata {
+export interface AllowAnonymousFilter$instance extends IAllowAnonymousFilter {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Authorization_AllowAnonymousFilter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Authorization_IAllowAnonymousFilter: never;
@@ -41,7 +41,7 @@ export const AllowAnonymousFilter: {
 
 export type AllowAnonymousFilter = AllowAnonymousFilter$instance;
 
-export interface AuthorizeFilter$instance extends IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncAuthorizationFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+export interface AuthorizeFilter$instance extends Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncAuthorizationFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Authorization_AuthorizeFilter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncAuthorizationFilter: never;

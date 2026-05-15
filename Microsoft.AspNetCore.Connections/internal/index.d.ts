@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Connections.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -99,14 +99,14 @@ export interface IConnectionListenerFactorySelector$instance {
 
 export type IConnectionListenerFactorySelector = IConnectionListenerFactorySelector$instance;
 
-export interface IMemoryPoolFactory_1$instance<T> {
+export interface IMemoryPoolFactory_1$instance<T extends unknown> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMemoryPoolFactory_1: never;
 
     Create(options?: MemoryPoolOptions | null): MemoryPool_1<T>;
 }
 
 
-export type IMemoryPoolFactory_1<T> = IMemoryPoolFactory_1$instance<T>;
+export type IMemoryPoolFactory_1<T extends unknown> = IMemoryPoolFactory_1$instance<T>;
 
 export interface IMultiplexedConnectionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder: never;
@@ -174,7 +174,7 @@ export interface BaseConnectionContext$instance {
     ConnectionClosed: CancellationToken;
     ConnectionId: string;
     readonly Features: IFeatureCollection;
-    Items: IDictionary_2<JsValue, JsValue | null>;
+    Items: IDictionary_2<unknown, unknown | null>;
     get LocalEndPoint(): EndPoint | null;
     set LocalEndPoint(value: EndPoint | null);
     get RemoteEndPoint(): EndPoint | null;
@@ -269,13 +269,13 @@ export interface ConnectionItems$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly Items: IDictionary_2<JsValue, JsValue | null>;
+    readonly Items: IDictionary_2<unknown, unknown | null>;
 }
 
 
 export const ConnectionItems: {
     new(): ConnectionItems;
-    new(items: IDictionary_2<JsValue, JsValue | null>): ConnectionItems;
+    new(items: IDictionary_2<unknown, unknown | null>): ConnectionItems;
 };
 
 
@@ -313,7 +313,7 @@ export interface DefaultConnectionContext$instance extends ConnectionContext, Mi
     ConnectionClosed: CancellationToken;
     ConnectionId: string;
     readonly Features: IFeatureCollection;
-    Items: IDictionary_2<JsValue, JsValue | null>;
+    Items: IDictionary_2<unknown, unknown | null>;
     get LocalEndPoint(): EndPoint | null;
     set LocalEndPoint(value: EndPoint | null);
     get RemoteEndPoint(): EndPoint | null;
@@ -420,7 +420,7 @@ export interface NamedPipeEndPoint$instance extends EndPoint {
 
     readonly PipeName: string;
     readonly ServerName: string;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -439,8 +439,8 @@ export interface TlsConnectionCallbackContext$instance {
 
     ClientHelloInfo: SslClientHelloInfo;
     Connection: BaseConnectionContext;
-    get State(): JsValue | null;
-    set State(value: JsValue | null);
+    get State(): unknown | null;
+    set State(value: unknown | null);
 }
 
 
@@ -456,8 +456,8 @@ export interface TlsConnectionCallbackOptions$instance {
 
     ApplicationProtocols: List_1<SslApplicationProtocol>;
     OnConnection: Func_3<TlsConnectionCallbackContext, CancellationToken, ValueTask_1<SslServerAuthenticationOptions>>;
-    get OnConnectionState(): JsValue | null;
-    set OnConnectionState(value: JsValue | null);
+    get OnConnectionState(): unknown | null;
+    set OnConnectionState(value: unknown | null);
 }
 
 
@@ -487,7 +487,7 @@ export abstract class ConnectionBuilderExtensions$instance {
     static Run(connectionBuilder: IConnectionBuilder, middleware: Func_2<ConnectionContext, Task>): IConnectionBuilder;
     static Use(connectionBuilder: IConnectionBuilder, middleware: Func_3<ConnectionContext, ConnectionDelegate, Task>): IConnectionBuilder;
     static Use(connectionBuilder: IConnectionBuilder, middleware: Func_3<ConnectionContext, Func_1<Task>, Task>): IConnectionBuilder;
-    static UseConnectionHandler<TConnectionHandler extends ConnectionHandler>(connectionBuilder: IConnectionBuilder): IConnectionBuilder;
+    static UseConnectionHandler<TConnectionHandler extends unknown & ConnectionHandler>(connectionBuilder: IConnectionBuilder): IConnectionBuilder;
 }
 
 

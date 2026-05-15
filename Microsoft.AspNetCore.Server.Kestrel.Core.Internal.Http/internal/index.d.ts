@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Server.Kestrel.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -95,7 +95,7 @@ export const TargetOffsetPathLength: {
 
 export type TargetOffsetPathLength = TargetOffsetPathLength$instance;
 
-export interface HttpParser_1$instance<TRequestHandler extends IHttpHeadersHandler & IHttpRequestLineHandler> {
+export interface HttpParser_1$instance<TRequestHandler extends unknown & IHttpHeadersHandler & IHttpRequestLineHandler> {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpParser_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpParser_1: never;
@@ -106,10 +106,10 @@ export interface HttpParser_1$instance<TRequestHandler extends IHttpHeadersHandl
 
 
 export const HttpParser_1: {
-    new<TRequestHandler extends IHttpHeadersHandler & IHttpRequestLineHandler>(): HttpParser_1<TRequestHandler>;
-    new<TRequestHandler extends IHttpHeadersHandler & IHttpRequestLineHandler>(showErrorDetails: boolean): HttpParser_1<TRequestHandler>;
+    new<TRequestHandler extends unknown & IHttpHeadersHandler & IHttpRequestLineHandler>(): HttpParser_1<TRequestHandler>;
+    new<TRequestHandler extends unknown & IHttpHeadersHandler & IHttpRequestLineHandler>(showErrorDetails: boolean): HttpParser_1<TRequestHandler>;
 };
 
 
-export type HttpParser_1<TRequestHandler extends IHttpHeadersHandler & IHttpRequestLineHandler> = HttpParser_1$instance<TRequestHandler>;
+export type HttpParser_1<TRequestHandler extends unknown & IHttpHeadersHandler & IHttpRequestLineHandler> = HttpParser_1$instance<TRequestHandler>;
 
