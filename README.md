@@ -71,6 +71,13 @@ files:
 preserves CLR identity, overload families, receiver style, extension methods,
 generic constraints, and nullable semantics for Tsonic.
 
+## Broad CLR values
+
+Generated CLR object slots are represented with TypeScript `unknown`, not a
+package-specific catch-all value. This keeps ASP.NET Core APIs faithful to CLR
+metadata while forcing user code to narrow broad values explicitly before it
+uses them. Value-type constraints are represented with `NonNullable<unknown>`.
+
 ## Versioning
 
 This repo is versioned by .NET major:
@@ -96,7 +103,7 @@ The generation script requires:
 For a system .NET install, set `DOTNET_HOME` and `DOTNET_VERSION`:
 
 ```bash
-DOTNET_HOME=/usr/lib/dotnet DOTNET_VERSION=10.0.5 ./__build/scripts/generate.sh
+DOTNET_HOME=/usr/lib/dotnet DOTNET_VERSION=<installed-10-runtime-version> ./__build/scripts/generate.sh
 ```
 
 ## License
