@@ -7,8 +7,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
-      "clrName": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -20,7 +20,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature::Addresses:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Addresses",
+          "targetName": "Addresses",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Addresses|:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -34,12 +34,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature::PreferHostingUrls:System.Boolean",
-          "clrName": "PreferHostingUrls",
+          "targetName": "PreferHostingUrls",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "PreferHostingUrls|:System.Boolean|static=false|accessor=getset",
@@ -53,8 +53,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         }
       ],
       "fields": [],
@@ -63,8 +63,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
-      "clrName": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
-      "assemblyName": "Microsoft.AspNetCore.Hosting",
+      "targetName": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -74,19 +74,19 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
-          "clrName": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature"
+          "targetName": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature"
         }
       ],
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature::Addresses:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Addresses",
+          "targetName": "Addresses",
           "metadataToken": 385876089,
           "canonicalSignature": ":System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Addresses|:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -100,12 +100,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature::PreferHostingUrls:System.Boolean",
-          "clrName": "PreferHostingUrls",
+          "targetName": "PreferHostingUrls",
           "metadataToken": 385876090,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "PreferHostingUrls|:System.Boolean|static=false|accessor=getset",
@@ -119,12 +119,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature::Addresses:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Addresses",
+          "targetName": "Addresses",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Addresses|:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -139,12 +139,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature::PreferHostingUrls:System.Boolean",
-          "clrName": "PreferHostingUrls",
+          "targetName": "PreferHostingUrls",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "PreferHostingUrls|:System.Boolean|static=false|accessor=getset",
@@ -159,8 +159,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         }
       ],
       "fields": [],
@@ -174,8 +174,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting"
         }
       ]
     }

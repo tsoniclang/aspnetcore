@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Core.Infrastructure.IAntiforgeryValidationFailedResult",
-      "clrName": "Microsoft.AspNetCore.Mvc.Core.Infrastructure.IAntiforgeryValidationFailedResult",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.Core.Infrastructure.IAntiforgeryValidationFailedResult",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,13 +18,13 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IActionResult",
-          "clrName": "Microsoft.AspNetCore.Mvc.IActionResult"
+          "targetName": "Microsoft.AspNetCore.Mvc.IActionResult"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IActionResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
+          "targetName": "ExecuteResultAsync",
           "metadataToken": 100663352,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
           "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
@@ -38,8 +38,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.IActionResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.IActionResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
         }
       ],

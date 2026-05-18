@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSCallType",
-      "clrName": "Microsoft.JSInterop.Infrastructure.JSCallType",
-      "assemblyName": "Microsoft.JSInterop",
+      "targetName": "Microsoft.JSInterop.Infrastructure.JSCallType",
+      "ownerIdentity": "Microsoft.JSInterop",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,63 +42,63 @@
       "fields": [
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSCallType::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108912,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.JSCallType",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.JSCallType",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSCallType::FunctionCallMicrosoft.JSInterop.Infrastructure.JSCallType",
-          "clrName": "FunctionCall",
+          "targetName": "FunctionCall",
           "metadataToken": 67108913,
           "normalizedSignature": "FunctionCall|Microsoft.JSInterop.Infrastructure.JSCallType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.JSCallType",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.JSCallType",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSCallType::ConstructorCallMicrosoft.JSInterop.Infrastructure.JSCallType",
-          "clrName": "ConstructorCall",
+          "targetName": "ConstructorCall",
           "metadataToken": 67108914,
           "normalizedSignature": "ConstructorCall|Microsoft.JSInterop.Infrastructure.JSCallType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.JSCallType",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.JSCallType",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSCallType::GetValueMicrosoft.JSInterop.Infrastructure.JSCallType",
-          "clrName": "GetValue",
+          "targetName": "GetValue",
           "metadataToken": 67108915,
           "normalizedSignature": "GetValue|Microsoft.JSInterop.Infrastructure.JSCallType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.JSCallType",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.JSCallType",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSCallType::SetValueMicrosoft.JSInterop.Infrastructure.JSCallType",
-          "clrName": "SetValue",
+          "targetName": "SetValue",
           "metadataToken": 67108916,
           "normalizedSignature": "SetValue|Microsoft.JSInterop.Infrastructure.JSCallType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.JSCallType",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.JSCallType",
+          "ownerIdentity": "Microsoft.JSInterop"
         }
       ],
       "events": [],
@@ -106,8 +106,8 @@
     },
     {
       "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.IJSVoidResult",
-      "clrName": "Microsoft.JSInterop.Infrastructure.IJSVoidResult",
-      "assemblyName": "Microsoft.JSInterop",
+      "targetName": "Microsoft.JSInterop.Infrastructure.IJSVoidResult",
+      "ownerIdentity": "Microsoft.JSInterop",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -123,8 +123,8 @@
     },
     {
       "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
-      "clrName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
-      "assemblyName": "Microsoft.JSInterop",
+      "targetName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
+      "ownerIdentity": "Microsoft.JSInterop",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -134,13 +134,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo::AssemblyName:System.String",
-          "clrName": "AssemblyName",
+          "targetName": "AssemblyName",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AssemblyName|:System.String|static=false|accessor=get",
@@ -154,12 +154,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo::MethodIdentifier:System.String",
-          "clrName": "MethodIdentifier",
+          "targetName": "MethodIdentifier",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MethodIdentifier|:System.String|static=false|accessor=get",
@@ -173,12 +173,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo::DotNetObjectId:System.Int64",
-          "clrName": "DotNetObjectId",
+          "targetName": "DotNetObjectId",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "DotNetObjectId|:System.Int64|static=false|accessor=get",
@@ -192,12 +192,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo::CallId:System.String",
-          "clrName": "CallId",
+          "targetName": "CallId",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CallId|:System.String|static=false|accessor=get",
@@ -211,8 +211,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
+          "ownerIdentity": "Microsoft.JSInterop"
         }
       ],
       "fields": [],
@@ -226,15 +226,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo",
+          "ownerIdentity": "Microsoft.JSInterop"
         }
       ]
     },
     {
       "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetInvocationResult",
-      "clrName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationResult",
-      "assemblyName": "Microsoft.JSInterop",
+      "targetName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationResult",
+      "ownerIdentity": "Microsoft.JSInterop",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -244,13 +244,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetInvocationResult::Exception:System.Exception",
-          "clrName": "Exception",
+          "targetName": "Exception",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.Exception",
           "normalizedSignature": "Exception|:System.Exception|static=false|accessor=get",
@@ -264,12 +264,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetInvocationResult",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationResult",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetInvocationResult::ErrorKind:System.String",
-          "clrName": "ErrorKind",
+          "targetName": "ErrorKind",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ErrorKind|:System.String|static=false|accessor=get",
@@ -283,12 +283,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetInvocationResult",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationResult",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetInvocationResult::ResultJson:System.String",
-          "clrName": "ResultJson",
+          "targetName": "ResultJson",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ResultJson|:System.String|static=false|accessor=get",
@@ -302,12 +302,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetInvocationResult",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationResult",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetInvocationResult::Success:System.Boolean",
-          "clrName": "Success",
+          "targetName": "Success",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Success|:System.Boolean|static=false|accessor=get",
@@ -321,8 +321,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetInvocationResult",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetInvocationResult",
+          "ownerIdentity": "Microsoft.JSInterop"
         }
       ],
       "fields": [],
@@ -331,8 +331,8 @@
     },
     {
       "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
-      "clrName": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
-      "assemblyName": "Microsoft.JSInterop",
+      "targetName": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
+      "ownerIdentity": "Microsoft.JSInterop",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -342,13 +342,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSInvocationInfo::AsyncHandle:System.Int64",
-          "clrName": "AsyncHandle",
+          "targetName": "AsyncHandle",
           "metadataToken": 385875994,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "AsyncHandle|:System.Int64|static=false|accessor=getset",
@@ -362,12 +362,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSInvocationInfo::TargetInstanceId:System.Int64",
-          "clrName": "TargetInstanceId",
+          "targetName": "TargetInstanceId",
           "metadataToken": 385875995,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "TargetInstanceId|:System.Int64|static=false|accessor=getset",
@@ -381,12 +381,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSInvocationInfo::Identifier:System.String",
-          "clrName": "Identifier",
+          "targetName": "Identifier",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Identifier|:System.String|static=false|accessor=getset",
@@ -400,12 +400,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSInvocationInfo::CallType:Microsoft.JSInterop.Infrastructure.JSCallType",
-          "clrName": "CallType",
+          "targetName": "CallType",
           "metadataToken": 385875997,
           "canonicalSignature": ":Microsoft.JSInterop.Infrastructure.JSCallType",
           "normalizedSignature": "CallType|:Microsoft.JSInterop.Infrastructure.JSCallType|static=false|accessor=getset",
@@ -419,12 +419,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSInvocationInfo::ResultType:Microsoft.JSInterop.JSCallResultType",
-          "clrName": "ResultType",
+          "targetName": "ResultType",
           "metadataToken": 385875998,
           "canonicalSignature": ":Microsoft.JSInterop.JSCallResultType",
           "normalizedSignature": "ResultType|:Microsoft.JSInterop.JSCallResultType|static=false|accessor=getset",
@@ -438,12 +438,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
+          "ownerIdentity": "Microsoft.JSInterop"
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.JSInvocationInfo::ArgsJson:System.String",
-          "clrName": "ArgsJson",
+          "targetName": "ArgsJson",
           "metadataToken": 385875999,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ArgsJson|:System.String|static=false|accessor=getset",
@@ -457,8 +457,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
-          "declaringAssemblyName": "Microsoft.JSInterop"
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.JSInvocationInfo",
+          "ownerIdentity": "Microsoft.JSInterop"
         }
       ],
       "fields": [],
@@ -467,8 +467,8 @@
     },
     {
       "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetDispatcher",
-      "clrName": "Microsoft.JSInterop.Infrastructure.DotNetDispatcher",
-      "assemblyName": "Microsoft.JSInterop",
+      "targetName": "Microsoft.JSInterop.Infrastructure.DotNetDispatcher",
+      "ownerIdentity": "Microsoft.JSInterop",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -478,15 +478,15 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
-          "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetDispatcher::Invoke(Microsoft.JSInterop.JSRuntime,Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo\u0026,System.String):System.String",
-          "clrName": "Invoke",
+          "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetDispatcher::Invoke(Microsoft.JSInterop.JSRuntime,Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo&,System.String):System.String",
+          "targetName": "Invoke",
           "metadataToken": 100663414,
-          "canonicalSignature": "(Microsoft.JSInterop.JSRuntime,Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo\u0026,System.String):System.String",
-          "normalizedSignature": "Invoke|(Microsoft.JSInterop.JSRuntime,Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo\u0026,System.String):System.String|static=true",
+          "canonicalSignature": "(Microsoft.JSInterop.JSRuntime,Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo&,System.String):System.String",
+          "normalizedSignature": "Invoke|(Microsoft.JSInterop.JSRuntime,Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo&,System.String):System.String|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -497,8 +497,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetDispatcher",
-          "declaringAssemblyName": "Microsoft.JSInterop",
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetDispatcher",
+          "ownerIdentity": "Microsoft.JSInterop",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -509,7 +509,7 @@
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetDispatcher::BeginInvokeDotNet(Microsoft.JSInterop.JSRuntime,Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo,System.String):System.Void",
-          "clrName": "BeginInvokeDotNet",
+          "targetName": "BeginInvokeDotNet",
           "metadataToken": 100663415,
           "canonicalSignature": "(Microsoft.JSInterop.JSRuntime,Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo,System.String):System.Void",
           "normalizedSignature": "BeginInvokeDotNet|(Microsoft.JSInterop.JSRuntime,Microsoft.JSInterop.Infrastructure.DotNetInvocationInfo,System.String):System.Void|static=true",
@@ -523,13 +523,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetDispatcher",
-          "declaringAssemblyName": "Microsoft.JSInterop",
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetDispatcher",
+          "ownerIdentity": "Microsoft.JSInterop",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetDispatcher::EndInvokeJS(Microsoft.JSInterop.JSRuntime,System.String):System.Void",
-          "clrName": "EndInvokeJS",
+          "targetName": "EndInvokeJS",
           "metadataToken": 100663419,
           "canonicalSignature": "(Microsoft.JSInterop.JSRuntime,System.String):System.Void",
           "normalizedSignature": "EndInvokeJS|(Microsoft.JSInterop.JSRuntime,System.String):System.Void|static=true",
@@ -543,13 +543,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetDispatcher",
-          "declaringAssemblyName": "Microsoft.JSInterop",
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetDispatcher",
+          "ownerIdentity": "Microsoft.JSInterop",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Infrastructure.DotNetDispatcher::ReceiveByteArray(Microsoft.JSInterop.JSRuntime,System.Int32,System.Byte[]):System.Void",
-          "clrName": "ReceiveByteArray",
+          "targetName": "ReceiveByteArray",
           "metadataToken": 100663420,
           "canonicalSignature": "(Microsoft.JSInterop.JSRuntime,System.Int32,System.Byte[]):System.Void",
           "normalizedSignature": "ReceiveByteArray|(Microsoft.JSInterop.JSRuntime,System.Int32,System.Byte[]):System.Void|static=true",
@@ -563,8 +563,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.JSInterop.Infrastructure.DotNetDispatcher",
-          "declaringAssemblyName": "Microsoft.JSInterop",
+          "ownerQualifiedName": "Microsoft.JSInterop.Infrastructure.DotNetDispatcher",
+          "ownerIdentity": "Microsoft.JSInterop",
           "isExtensionMethod": false
         }
       ],

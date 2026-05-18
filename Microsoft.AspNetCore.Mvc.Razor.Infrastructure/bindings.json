@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
+      "targetName": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider::Cache:Microsoft.Extensions.Caching.Memory.IMemoryCache",
-          "clrName": "Cache",
+          "targetName": "Cache",
           "metadataToken": 385876086,
           "canonicalSignature": ":Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "normalizedSignature": "Cache|:Microsoft.Extensions.Caching.Memory.IMemoryCache|static=false|accessor=getset",
@@ -37,8 +37,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
         }
       ],
       "fields": [],
@@ -52,8 +52,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
         }
       ]
     }

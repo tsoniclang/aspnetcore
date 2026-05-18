@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
-      "clrName": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter::Write(Microsoft.AspNetCore.Routing.EndpointDataSource,System.IO.TextWriter):System.Void",
-          "clrName": "Write",
+          "targetName": "Write",
           "metadataToken": 100664533,
           "canonicalSignature": "(Microsoft.AspNetCore.Routing.EndpointDataSource,System.IO.TextWriter):System.Void",
           "normalizedSignature": "Write|(Microsoft.AspNetCore.Routing.EndpointDataSource,System.IO.TextWriter):System.Void|static=false",
@@ -36,8 +36,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         }
       ],
@@ -53,8 +53,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     }

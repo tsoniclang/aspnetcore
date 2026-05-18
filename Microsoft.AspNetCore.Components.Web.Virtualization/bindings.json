@@ -5,9 +5,9 @@
   ],
   "types": [
     {
-      "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601",
-      "clrName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate`1",
+      "targetName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate`1",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Delegate",
       "accessibility": "Public",
@@ -17,16 +17,16 @@
       "arity": 1,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.MulticastDelegate",
-        "clrName": "System.MulticastDelegate"
+        "targetName": "System.MulticastDelegate"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.ICloneable",
-          "clrName": "System.ICloneable"
+          "targetName": "System.ICloneable"
         },
         {
           "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
-          "clrName": "System.Runtime.Serialization.ISerializable"
+          "targetName": "System.Runtime.Serialization.ISerializable"
         }
       ],
       "typeParameters": [
@@ -34,8 +34,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601::Invoke(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest):ValueTask_1",
-          "clrName": "Invoke",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate`1::Invoke(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest):ValueTask_1",
+          "targetName": "Invoke",
           "metadataToken": 100663728,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest):ValueTask_1",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest):ValueTask_1|static=false",
@@ -49,13 +49,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601::BeginInvoke(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest,System.AsyncCallback,System.Object):System.IAsyncResult",
-          "clrName": "BeginInvoke",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate`1::BeginInvoke(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest,System.AsyncCallback,System.Object):System.IAsyncResult",
+          "targetName": "BeginInvoke",
           "metadataToken": 100663729,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest,System.AsyncCallback,System.Object):System.IAsyncResult",
           "normalizedSignature": "BeginInvoke|(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest,System.AsyncCallback,System.Object):System.IAsyncResult|static=false",
@@ -69,13 +69,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601::EndInvoke(System.IAsyncResult):ValueTask_1",
-          "clrName": "EndInvoke",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate`1::EndInvoke(System.IAsyncResult):ValueTask_1",
+          "targetName": "EndInvoke",
           "metadataToken": 100663730,
           "canonicalSignature": "(System.IAsyncResult):ValueTask_1",
           "normalizedSignature": "EndInvoke|(System.IAsyncResult):ValueTask_1|static=false",
@@ -89,8 +89,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         }
       ],
@@ -99,22 +99,22 @@
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601::.ctor(System.Object,System.IntPtr):void",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate`1::.ctor(System.Object,System.IntPtr):void",
           "metadataToken": 100663727,
           "canonicalSignature": "(System.Object,System.IntPtr):void",
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
-      "clrName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -124,13 +124,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest::StartIndex:System.Int32",
-          "clrName": "StartIndex",
+          "targetName": "StartIndex",
           "metadataToken": 385876103,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "StartIndex|:System.Int32|static=false|accessor=get",
@@ -144,12 +144,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest::Count:System.Int32",
-          "clrName": "Count",
+          "targetName": "Count",
           "metadataToken": 385876104,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
@@ -163,12 +163,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest::CancellationToken:System.Threading.CancellationToken",
-          "clrName": "CancellationToken",
+          "targetName": "CancellationToken",
           "metadataToken": 385876105,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -182,8 +182,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ],
       "fields": [],
@@ -197,15 +197,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ]
     },
     {
-      "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult\u00601",
-      "clrName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult\u00601",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult`1",
+      "targetName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult`1",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -215,7 +215,7 @@
       "arity": 1,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "typeParameters": [
         "TItem"
@@ -223,8 +223,8 @@
       "methods": [],
       "properties": [
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult\u00601::Items:IEnumerable_1",
-          "clrName": "Items",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult`1::Items:IEnumerable_1",
+          "targetName": "Items",
           "metadataToken": 385876106,
           "canonicalSignature": ":IEnumerable_1",
           "normalizedSignature": "Items|:IEnumerable_1|static=false|accessor=get",
@@ -238,12 +238,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult\u00601::TotalItemCount:System.Int32",
-          "clrName": "TotalItemCount",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult`1::TotalItemCount:System.Int32",
+          "targetName": "TotalItemCount",
           "metadataToken": 385876107,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "TotalItemCount|:System.Int32|static=false|accessor=get",
@@ -257,30 +257,30 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ],
       "fields": [],
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult\u00601::.ctor(IEnumerable_1,System.Int32):void",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult`1::.ctor(IEnumerable_1,System.Int32):void",
           "metadataToken": 100663737,
           "canonicalSignature": "(IEnumerable_1,System.Int32):void",
           "normalizedSignature": "constructor|(IEnumerable_1,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
-      "clrName": "Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -290,13 +290,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext::Index:System.Int32",
-          "clrName": "Index",
+          "targetName": "Index",
           "metadataToken": 385876108,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Index|:System.Int32|static=false|accessor=get",
@@ -310,12 +310,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext::Size:System.Single",
-          "clrName": "Size",
+          "targetName": "Size",
           "metadataToken": 385876109,
           "canonicalSignature": ":System.Single",
           "normalizedSignature": "Size|:System.Single|static=false|accessor=get",
@@ -329,8 +329,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ],
       "fields": [],
@@ -344,15 +344,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ]
     },
     {
-      "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-      "clrName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+      "targetName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -362,28 +362,28 @@
       "arity": 1,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase",
-        "clrName": "Microsoft.AspNetCore.Components.ComponentBase"
+        "targetName": "Microsoft.AspNetCore.Components.ComponentBase"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
-          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+          "targetName": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent",
-          "clrName": "Microsoft.AspNetCore.Components.IHandleEvent"
+          "targetName": "Microsoft.AspNetCore.Components.IHandleEvent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
-          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+          "targetName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.IVirtualizeJsCallbacks",
-          "clrName": "Microsoft.AspNetCore.Components.Web.Virtualization.IVirtualizeJsCallbacks"
+          "targetName": "Microsoft.AspNetCore.Components.Web.Virtualization.IVirtualizeJsCallbacks"
         },
         {
           "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
-          "clrName": "System.IAsyncDisposable"
+          "targetName": "System.IAsyncDisposable"
         }
       ],
       "typeParameters": [
@@ -391,8 +391,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::RefreshDataAsync():System.Threading.Tasks.Task",
-          "clrName": "RefreshDataAsync",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::RefreshDataAsync():System.Threading.Tasks.Task",
+          "targetName": "RefreshDataAsync",
           "metadataToken": 100663765,
           "canonicalSignature": "():System.Threading.Tasks.Task",
           "normalizedSignature": "RefreshDataAsync|():System.Threading.Tasks.Task|static=false",
@@ -406,13 +406,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::OnParametersSet():System.Void",
-          "clrName": "OnParametersSet",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::OnParametersSet():System.Void",
+          "targetName": "OnParametersSet",
           "metadataToken": 100663766,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "OnParametersSet|():System.Void|static=false",
@@ -426,13 +426,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::OnAfterRenderAsync(System.Boolean):System.Threading.Tasks.Task",
-          "clrName": "OnAfterRenderAsync",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::OnAfterRenderAsync(System.Boolean):System.Threading.Tasks.Task",
+          "targetName": "OnAfterRenderAsync",
           "metadataToken": 100663767,
           "canonicalSignature": "(System.Boolean):System.Threading.Tasks.Task",
           "normalizedSignature": "OnAfterRenderAsync|(System.Boolean):System.Threading.Tasks.Task|static=false",
@@ -446,13 +446,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
-          "clrName": "BuildRenderTree",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "targetName": "BuildRenderTree",
           "metadataToken": 100663768,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
           "normalizedSignature": "BuildRenderTree|(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void|static=false",
@@ -466,13 +466,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::DisposeAsync():System.Threading.Tasks.ValueTask",
-          "clrName": "DisposeAsync",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::DisposeAsync():System.Threading.Tasks.ValueTask",
+          "targetName": "DisposeAsync",
           "metadataToken": 100663778,
           "canonicalSignature": "():System.Threading.Tasks.ValueTask",
           "normalizedSignature": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
@@ -486,13 +486,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
-          "clrName": "Attach",
+          "targetName": "Attach",
           "metadataToken": 100664024,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "normalizedSignature": "Attach|(Microsoft.AspNetCore.Components.RenderHandle):System.Void|static=false",
@@ -506,14 +506,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
-          "clrName": "SetParametersAsync",
+          "targetName": "SetParametersAsync",
           "metadataToken": 100664025,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
           "normalizedSignature": "SetParametersAsync|(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task|static=false",
@@ -527,14 +527,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent::HandleEventAsync(Microsoft.AspNetCore.Components.EventCallbackWorkItem,System.Object):System.Threading.Tasks.Task",
-          "clrName": "HandleEventAsync",
+          "targetName": "HandleEventAsync",
           "metadataToken": 100664031,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.EventCallbackWorkItem,System.Object):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleEventAsync|(Microsoft.AspNetCore.Components.EventCallbackWorkItem,System.Object):System.Threading.Tasks.Task|static=false",
@@ -548,14 +548,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IHandleEvent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IHandleEvent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IHandleEvent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender::OnAfterRenderAsync():System.Threading.Tasks.Task",
-          "clrName": "OnAfterRenderAsync",
+          "targetName": "OnAfterRenderAsync",
           "metadataToken": 100664030,
           "canonicalSignature": "():System.Threading.Tasks.Task",
           "normalizedSignature": "OnAfterRenderAsync|():System.Threading.Tasks.Task|static=false",
@@ -569,16 +569,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IHandleAfterRender"
         }
       ],
       "properties": [
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::ChildContent:RenderFragment_1",
-          "clrName": "ChildContent",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::ChildContent:RenderFragment_1",
+          "targetName": "ChildContent",
           "metadataToken": 385876111,
           "canonicalSignature": ":RenderFragment_1",
           "normalizedSignature": "ChildContent|:RenderFragment_1|static=false|accessor=getset",
@@ -592,12 +592,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::ItemContent:RenderFragment_1",
-          "clrName": "ItemContent",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::ItemContent:RenderFragment_1",
+          "targetName": "ItemContent",
           "metadataToken": 385876112,
           "canonicalSignature": ":RenderFragment_1",
           "normalizedSignature": "ItemContent|:RenderFragment_1|static=false|accessor=getset",
@@ -611,12 +611,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::Placeholder:Microsoft.AspNetCore.Components.RenderFragment_1[[Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext,Microsoft.AspNetCore.Components.Web,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Placeholder",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::Placeholder:Microsoft.AspNetCore.Components.RenderFragment_1[[Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext,Microsoft.AspNetCore.Components.Web,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "targetName": "Placeholder",
           "metadataToken": 385876113,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.RenderFragment_1[[Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext,Microsoft.AspNetCore.Components.Web,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Placeholder|:Microsoft.AspNetCore.Components.RenderFragment_1[[Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext,Microsoft.AspNetCore.Components.Web,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -630,12 +630,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::EmptyContent:Microsoft.AspNetCore.Components.RenderFragment",
-          "clrName": "EmptyContent",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::EmptyContent:Microsoft.AspNetCore.Components.RenderFragment",
+          "targetName": "EmptyContent",
           "metadataToken": 385876114,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.RenderFragment",
           "normalizedSignature": "EmptyContent|:Microsoft.AspNetCore.Components.RenderFragment|static=false|accessor=getset",
@@ -649,12 +649,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::ItemSize:System.Single",
-          "clrName": "ItemSize",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::ItemSize:System.Single",
+          "targetName": "ItemSize",
           "metadataToken": 385876115,
           "canonicalSignature": ":System.Single",
           "normalizedSignature": "ItemSize|:System.Single|static=false|accessor=getset",
@@ -668,12 +668,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::ItemsProvider:ItemsProviderDelegate_1",
-          "clrName": "ItemsProvider",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::ItemsProvider:ItemsProviderDelegate_1",
+          "targetName": "ItemsProvider",
           "metadataToken": 385876116,
           "canonicalSignature": ":ItemsProviderDelegate_1",
           "normalizedSignature": "ItemsProvider|:ItemsProviderDelegate_1|static=false|accessor=getset",
@@ -687,12 +687,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::Items:ICollection_1",
-          "clrName": "Items",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::Items:ICollection_1",
+          "targetName": "Items",
           "metadataToken": 385876117,
           "canonicalSignature": ":ICollection_1",
           "normalizedSignature": "Items|:ICollection_1|static=false|accessor=getset",
@@ -706,12 +706,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::OverscanCount:System.Int32",
-          "clrName": "OverscanCount",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::OverscanCount:System.Int32",
+          "targetName": "OverscanCount",
           "metadataToken": 385876118,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "OverscanCount|:System.Int32|static=false|accessor=getset",
@@ -725,12 +725,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::SpacerElement:System.String",
-          "clrName": "SpacerElement",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::SpacerElement:System.String",
+          "targetName": "SpacerElement",
           "metadataToken": 385876119,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "SpacerElement|:System.String|static=false|accessor=getset",
@@ -744,12 +744,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::MaxItemCount:System.Int32",
-          "clrName": "MaxItemCount",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::MaxItemCount:System.Int32",
+          "targetName": "MaxItemCount",
           "metadataToken": 385876120,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxItemCount|:System.Int32|static=false|accessor=getset",
@@ -763,23 +763,23 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ],
       "fields": [],
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::.ctor():void",
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1::.ctor():void",
           "metadataToken": 100663779,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ]
     }

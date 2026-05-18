@@ -5,9 +5,9 @@
   ],
   "types": [
     {
-      "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer\u00601",
-      "clrName": "Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer\u00601",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+      "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer`1",
+      "targetName": "Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer`1",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -21,8 +21,8 @@
       "methods": [],
       "properties": [
         {
-          "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer\u00601::HostContext:TContext",
-          "clrName": "HostContext",
+          "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer`1::HostContext:TContext",
+          "targetName": "HostContext",
           "metadataToken": 385875974,
           "canonicalSignature": ":TContext",
           "normalizedSignature": "HostContext|:TContext|static=false|accessor=getset",
@@ -36,8 +36,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         }
       ],
       "fields": [],

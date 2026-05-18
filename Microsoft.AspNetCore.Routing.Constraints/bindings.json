@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,30 +17,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
-        "clrName": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint"
+        "targetName": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -54,14 +54,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -75,8 +75,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         }
@@ -93,15 +93,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -111,30 +111,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664564,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -148,13 +148,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -168,14 +168,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -189,8 +189,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -207,15 +207,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -225,26 +225,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664571,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -258,13 +258,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -278,14 +278,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -299,8 +299,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -308,7 +308,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint::Constraints:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Constraints",
+          "targetName": "Constraints",
           "metadataToken": 385876267,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Constraints|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -322,8 +322,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -337,15 +337,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -355,30 +355,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664573,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -392,13 +392,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -412,14 +412,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -433,8 +433,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -451,15 +451,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -469,30 +469,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664577,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -506,13 +506,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -526,14 +526,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -547,8 +547,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -565,15 +565,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -583,30 +583,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664581,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -620,13 +620,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -640,14 +640,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -661,8 +661,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -679,15 +679,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -697,30 +697,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664585,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -734,13 +734,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -754,14 +754,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -775,8 +775,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -793,15 +793,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -811,30 +811,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664589,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -848,13 +848,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -868,14 +868,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -889,8 +889,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -907,15 +907,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -925,30 +925,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664593,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -962,13 +962,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -982,14 +982,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1003,8 +1003,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -1021,15 +1021,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1039,22 +1039,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664599,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1068,13 +1068,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1088,8 +1088,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -1097,7 +1097,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint::AllowedMethods:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AllowedMethods",
+          "targetName": "AllowedMethods",
           "metadataToken": 385876268,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AllowedMethods|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -1111,8 +1111,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -1126,15 +1126,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1144,30 +1144,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664600,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1181,13 +1181,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -1201,14 +1201,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1222,8 +1222,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -1240,15 +1240,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1258,30 +1258,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664608,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1295,13 +1295,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -1315,14 +1315,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1336,8 +1336,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -1345,7 +1345,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint::MinLength:System.Int32",
-          "clrName": "MinLength",
+          "targetName": "MinLength",
           "metadataToken": 385876269,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MinLength|:System.Int32|static=false|accessor=get",
@@ -1359,12 +1359,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint::MaxLength:System.Int32",
-          "clrName": "MaxLength",
+          "targetName": "MaxLength",
           "metadataToken": 385876270,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxLength|:System.Int32|static=false|accessor=get",
@@ -1378,8 +1378,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -1393,8 +1393,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint::.ctor(System.Int32,System.Int32):void",
@@ -1404,15 +1404,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1422,30 +1422,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664611,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1459,13 +1459,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -1479,14 +1479,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1500,8 +1500,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -1518,15 +1518,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1536,30 +1536,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664617,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1573,13 +1573,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -1593,14 +1593,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1614,8 +1614,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -1623,7 +1623,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint::MaxLength:System.Int32",
-          "clrName": "MaxLength",
+          "targetName": "MaxLength",
           "metadataToken": 385876271,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxLength|:System.Int32|static=false|accessor=get",
@@ -1637,8 +1637,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -1652,15 +1652,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1670,30 +1670,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664623,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1707,13 +1707,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -1727,14 +1727,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1748,8 +1748,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -1757,7 +1757,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint::Max:System.Int64",
-          "clrName": "Max",
+          "targetName": "Max",
           "metadataToken": 385876272,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "Max|:System.Int64|static=false|accessor=getset",
@@ -1771,8 +1771,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -1786,15 +1786,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1804,30 +1804,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664629,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1841,13 +1841,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -1861,14 +1861,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1882,8 +1882,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -1891,7 +1891,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint::MinLength:System.Int32",
-          "clrName": "MinLength",
+          "targetName": "MinLength",
           "metadataToken": 385876273,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MinLength|:System.Int32|static=false|accessor=getset",
@@ -1905,8 +1905,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -1920,15 +1920,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1938,30 +1938,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664634,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -1975,13 +1975,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -1995,14 +1995,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2016,8 +2016,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -2025,7 +2025,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint::Min:System.Int64",
-          "clrName": "Min",
+          "targetName": "Min",
           "metadataToken": 385876274,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "Min|:System.Int64|static=false|accessor=get",
@@ -2039,8 +2039,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -2054,15 +2054,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2072,30 +2072,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664637,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2109,13 +2109,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -2129,14 +2129,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2150,8 +2150,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -2168,15 +2168,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2186,22 +2186,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664645,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2215,13 +2215,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2235,8 +2235,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -2244,7 +2244,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint::InnerConstraint:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "InnerConstraint",
+          "targetName": "InnerConstraint",
           "metadataToken": 385876275,
           "canonicalSignature": ":Microsoft.AspNetCore.Routing.IRouteConstraint",
           "normalizedSignature": "InnerConstraint|:Microsoft.AspNetCore.Routing.IRouteConstraint|static=false|accessor=get",
@@ -2258,8 +2258,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -2273,15 +2273,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2291,30 +2291,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664651,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2328,13 +2328,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -2348,14 +2348,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2369,8 +2369,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -2378,7 +2378,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint::Min:System.Int64",
-          "clrName": "Min",
+          "targetName": "Min",
           "metadataToken": 385876276,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "Min|:System.Int64|static=false|accessor=getset",
@@ -2392,12 +2392,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint::Max:System.Int64",
-          "clrName": "Max",
+          "targetName": "Max",
           "metadataToken": 385876277,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "Max|:System.Int64|static=false|accessor=getset",
@@ -2411,8 +2411,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -2426,15 +2426,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2444,30 +2444,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
-        "clrName": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint"
+        "targetName": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2481,14 +2481,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -2502,8 +2502,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         }
@@ -2520,15 +2520,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2538,26 +2538,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664660,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2571,13 +2571,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -2591,14 +2591,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2612,8 +2612,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -2621,7 +2621,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint::Constraint:System.Text.RegularExpressions.Regex",
-          "clrName": "Constraint",
+          "targetName": "Constraint",
           "metadataToken": 385876278,
           "canonicalSignature": ":System.Text.RegularExpressions.Regex",
           "normalizedSignature": "Constraint|:System.Text.RegularExpressions.Regex|static=false|accessor=get",
@@ -2635,8 +2635,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -2650,8 +2650,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint::.ctor(System.String):void",
@@ -2661,15 +2661,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2679,22 +2679,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664663,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2708,13 +2708,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2728,8 +2728,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -2746,15 +2746,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2764,30 +2764,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "clrName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
+          "targetName": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy",
-          "clrName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
+          "targetName": "Microsoft.AspNetCore.Routing.Matching.ICachableParameterPolicy"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100664666,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2801,13 +2801,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
-          "clrName": "MatchesLiteral",
+          "targetName": "MatchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
@@ -2821,14 +2821,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
           "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
@@ -2842,8 +2842,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Routing.IRouteConstraint"
         }
@@ -2860,8 +2860,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     }

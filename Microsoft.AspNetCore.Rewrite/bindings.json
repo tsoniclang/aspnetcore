@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RuleResult",
-      "clrName": "Microsoft.AspNetCore.Rewrite.RuleResult",
-      "assemblyName": "Microsoft.AspNetCore.Rewrite",
+      "targetName": "Microsoft.AspNetCore.Rewrite.RuleResult",
+      "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,51 +42,51 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RuleResult::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108906,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RuleResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RuleResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RuleResult::ContinueRulesMicrosoft.AspNetCore.Rewrite.RuleResult",
-          "clrName": "ContinueRules",
+          "targetName": "ContinueRules",
           "metadataToken": 67108907,
           "normalizedSignature": "ContinueRules|Microsoft.AspNetCore.Rewrite.RuleResult|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RuleResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RuleResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RuleResult::EndResponseMicrosoft.AspNetCore.Rewrite.RuleResult",
-          "clrName": "EndResponse",
+          "targetName": "EndResponse",
           "metadataToken": 67108908,
           "normalizedSignature": "EndResponse|Microsoft.AspNetCore.Rewrite.RuleResult|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RuleResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RuleResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RuleResult::SkipRemainingRulesMicrosoft.AspNetCore.Rewrite.RuleResult",
-          "clrName": "SkipRemainingRules",
+          "targetName": "SkipRemainingRules",
           "metadataToken": 67108909,
           "normalizedSignature": "SkipRemainingRules|Microsoft.AspNetCore.Rewrite.RuleResult|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RuleResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RuleResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         }
       ],
       "events": [],
@@ -94,8 +94,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.IRule",
-      "clrName": "Microsoft.AspNetCore.Rewrite.IRule",
-      "assemblyName": "Microsoft.AspNetCore.Rewrite",
+      "targetName": "Microsoft.AspNetCore.Rewrite.IRule",
+      "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -106,7 +106,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.IRule::ApplyRule(Microsoft.AspNetCore.Rewrite.RewriteContext):System.Void",
-          "clrName": "ApplyRule",
+          "targetName": "ApplyRule",
           "metadataToken": 100663311,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteContext):System.Void",
           "normalizedSignature": "ApplyRule|(Microsoft.AspNetCore.Rewrite.RewriteContext):System.Void|static=false",
@@ -120,8 +120,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.IRule",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.IRule",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": false
         }
       ],
@@ -132,8 +132,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteContext",
-      "clrName": "Microsoft.AspNetCore.Rewrite.RewriteContext",
-      "assemblyName": "Microsoft.AspNetCore.Rewrite",
+      "targetName": "Microsoft.AspNetCore.Rewrite.RewriteContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -143,13 +143,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteContext::HttpContext:Microsoft.AspNetCore.Http.HttpContext",
-          "clrName": "HttpContext",
+          "targetName": "HttpContext",
           "metadataToken": 385875980,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.HttpContext",
           "normalizedSignature": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
@@ -163,12 +163,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteContext::StaticFileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
-          "clrName": "StaticFileProvider",
+          "targetName": "StaticFileProvider",
           "metadataToken": 385875981,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
           "normalizedSignature": "StaticFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
@@ -182,12 +182,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteContext::Logger:Microsoft.Extensions.Logging.ILogger",
-          "clrName": "Logger",
+          "targetName": "Logger",
           "metadataToken": 385875982,
           "canonicalSignature": ":Microsoft.Extensions.Logging.ILogger",
           "normalizedSignature": "Logger|:Microsoft.Extensions.Logging.ILogger|static=false|accessor=getset",
@@ -201,12 +201,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteContext::Result:Microsoft.AspNetCore.Rewrite.RuleResult",
-          "clrName": "Result",
+          "targetName": "Result",
           "metadataToken": 385875983,
           "canonicalSignature": ":Microsoft.AspNetCore.Rewrite.RuleResult",
           "normalizedSignature": "Result|:Microsoft.AspNetCore.Rewrite.RuleResult|static=false|accessor=getset",
@@ -220,8 +220,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         }
       ],
       "fields": [],
@@ -235,15 +235,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteMiddleware",
-      "clrName": "Microsoft.AspNetCore.Rewrite.RewriteMiddleware",
-      "assemblyName": "Microsoft.AspNetCore.Rewrite",
+      "targetName": "Microsoft.AspNetCore.Rewrite.RewriteMiddleware",
+      "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -253,12 +253,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "clrName": "Invoke",
+          "targetName": "Invoke",
           "metadataToken": 100663362,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
@@ -272,8 +272,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": false
         }
       ],
@@ -289,15 +289,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptions",
-      "clrName": "Microsoft.AspNetCore.Rewrite.RewriteOptions",
-      "assemblyName": "Microsoft.AspNetCore.Rewrite",
+      "targetName": "Microsoft.AspNetCore.Rewrite.RewriteOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -307,13 +307,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptions::Rules:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Rewrite.IRule,Microsoft.AspNetCore.Rewrite,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Rules",
+          "targetName": "Rules",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Rewrite.IRule,Microsoft.AspNetCore.Rewrite,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Rules|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Rewrite.IRule,Microsoft.AspNetCore.Rewrite,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -327,12 +327,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptions::StaticFileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
-          "clrName": "StaticFileProvider",
+          "targetName": "StaticFileProvider",
           "metadataToken": 385875986,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
           "normalizedSignature": "StaticFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
@@ -346,8 +346,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         }
       ],
       "fields": [],
@@ -361,15 +361,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions",
-      "clrName": "Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Rewrite",
+      "targetName": "Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -379,12 +379,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions::AddApacheModRewrite(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.Extensions.FileProviders.IFileProvider,System.String):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddApacheModRewrite",
+          "targetName": "AddApacheModRewrite",
           "metadataToken": 100663301,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.Extensions.FileProviders.IFileProvider,System.String):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddApacheModRewrite|(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.Extensions.FileProviders.IFileProvider,System.String):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -398,13 +398,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions::AddApacheModRewrite(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.IO.TextReader):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddApacheModRewrite",
+          "targetName": "AddApacheModRewrite",
           "metadataToken": 100663302,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.IO.TextReader):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddApacheModRewrite|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.IO.TextReader):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -418,8 +418,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         }
       ],
@@ -430,8 +430,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions",
-      "clrName": "Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Rewrite",
+      "targetName": "Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -441,12 +441,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions::AddIISUrlRewrite(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.Extensions.FileProviders.IFileProvider,System.String,System.Boolean):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddIISUrlRewrite",
+          "targetName": "AddIISUrlRewrite",
           "metadataToken": 100663309,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.Extensions.FileProviders.IFileProvider,System.String,System.Boolean):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddIISUrlRewrite|(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.Extensions.FileProviders.IFileProvider,System.String,System.Boolean):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -460,13 +460,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions::AddIISUrlRewrite(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.IO.TextReader,System.Boolean):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddIISUrlRewrite",
+          "targetName": "AddIISUrlRewrite",
           "metadataToken": 100663310,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.IO.TextReader,System.Boolean):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddIISUrlRewrite|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.IO.TextReader,System.Boolean):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -480,8 +480,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         }
       ],
@@ -492,8 +492,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-      "clrName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Rewrite",
+      "targetName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -503,12 +503,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::Add(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.AspNetCore.Rewrite.IRule):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663370,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.AspNetCore.Rewrite.IRule):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "Add|(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.AspNetCore.Rewrite.IRule):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -522,13 +522,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::Add(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Action_1[[Microsoft.AspNetCore.Rewrite.RewriteContext,Microsoft.AspNetCore.Rewrite,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663371,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Action_1[[Microsoft.AspNetCore.Rewrite.RewriteContext,Microsoft.AspNetCore.Rewrite,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "Add|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Action_1[[Microsoft.AspNetCore.Rewrite.RewriteContext,Microsoft.AspNetCore.Rewrite,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -542,13 +542,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRewrite(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String,System.String,System.Boolean):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRewrite",
+          "targetName": "AddRewrite",
           "metadataToken": 100663372,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String,System.String,System.Boolean):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRewrite|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String,System.String,System.Boolean):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -562,13 +562,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirect(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String,System.String):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirect",
+          "targetName": "AddRedirect",
           "metadataToken": 100663373,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String,System.String):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirect|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String,System.String):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -582,13 +582,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirect(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String,System.String,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirect",
+          "targetName": "AddRedirect",
           "metadataToken": 100663374,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String,System.String,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirect|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String,System.String,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -602,13 +602,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToHttpsPermanent(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToHttpsPermanent",
+          "targetName": "AddRedirectToHttpsPermanent",
           "metadataToken": 100663375,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToHttpsPermanent|(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -622,13 +622,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToHttps(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToHttps",
+          "targetName": "AddRedirectToHttps",
           "metadataToken": 100663376,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToHttps|(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -642,13 +642,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToHttps(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToHttps",
+          "targetName": "AddRedirectToHttps",
           "metadataToken": 100663377,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToHttps|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -662,13 +662,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToHttps(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToHttps",
+          "targetName": "AddRedirectToHttps",
           "metadataToken": 100663378,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToHttps|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -682,13 +682,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToWwwPermanent(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToWwwPermanent",
+          "targetName": "AddRedirectToWwwPermanent",
           "metadataToken": 100663379,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToWwwPermanent|(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -702,13 +702,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToWwwPermanent(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToWwwPermanent",
+          "targetName": "AddRedirectToWwwPermanent",
           "metadataToken": 100663380,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToWwwPermanent|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -722,13 +722,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToWww(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToWww",
+          "targetName": "AddRedirectToWww",
           "metadataToken": 100663381,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToWww|(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -742,13 +742,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToWww(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToWww",
+          "targetName": "AddRedirectToWww",
           "metadataToken": 100663382,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToWww|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -762,13 +762,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToWww(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToWww",
+          "targetName": "AddRedirectToWww",
           "metadataToken": 100663383,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToWww|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -782,13 +782,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToWww(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToWww",
+          "targetName": "AddRedirectToWww",
           "metadataToken": 100663384,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToWww|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -802,13 +802,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToNonWwwPermanent(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToNonWwwPermanent",
+          "targetName": "AddRedirectToNonWwwPermanent",
           "metadataToken": 100663385,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToNonWwwPermanent|(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -822,13 +822,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToNonWwwPermanent(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToNonWwwPermanent",
+          "targetName": "AddRedirectToNonWwwPermanent",
           "metadataToken": 100663386,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToNonWwwPermanent|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -842,13 +842,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToNonWww(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToNonWww",
+          "targetName": "AddRedirectToNonWww",
           "metadataToken": 100663387,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToNonWww|(Microsoft.AspNetCore.Rewrite.RewriteOptions):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -862,13 +862,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToNonWww(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToNonWww",
+          "targetName": "AddRedirectToNonWww",
           "metadataToken": 100663388,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToNonWww|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -882,13 +882,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToNonWww(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToNonWww",
+          "targetName": "AddRedirectToNonWww",
           "metadataToken": 100663389,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToNonWww|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -902,13 +902,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::AddRedirectToNonWww(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
-          "clrName": "AddRedirectToNonWww",
+          "targetName": "AddRedirectToNonWww",
           "metadataToken": 100663390,
           "canonicalSignature": "(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "normalizedSignature": "AddRedirectToNonWww|(Microsoft.AspNetCore.Rewrite.RewriteOptions,System.Int32,System.String[]):Microsoft.AspNetCore.Rewrite.RewriteOptions|static=true",
@@ -922,8 +922,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
         }
       ],

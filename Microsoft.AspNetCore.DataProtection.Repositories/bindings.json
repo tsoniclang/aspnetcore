@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement",
-      "clrName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -19,7 +19,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement::Element:System.Xml.Linq.XElement",
-          "clrName": "Element",
+          "targetName": "Element",
           "metadataToken": 385876012,
           "canonicalSignature": ":System.Xml.Linq.XElement",
           "normalizedSignature": "Element|:System.Xml.Linq.XElement|static=false|accessor=get",
@@ -33,12 +33,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement::DeletionOrder:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "DeletionOrder",
+          "targetName": "DeletionOrder",
           "metadataToken": 385876013,
           "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "DeletionOrder|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -52,8 +52,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ],
       "fields": [],
@@ -62,8 +62,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository",
-      "clrName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -74,13 +74,13 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-          "clrName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository"
+          "targetName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository::DeleteElements(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
-          "clrName": "DeleteElements",
+          "targetName": "DeleteElements",
           "metadataToken": 100663631,
           "canonicalSignature": "(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
           "normalizedSignature": "DeleteElements|(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
@@ -94,13 +94,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository::GetAllElements():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "GetAllElements",
+          "targetName": "GetAllElements",
           "metadataToken": 100663632,
           "canonicalSignature": "():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "GetAllElements|():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
@@ -114,13 +114,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository::StoreElement(System.Xml.Linq.XElement,System.String):System.Void",
-          "clrName": "StoreElement",
+          "targetName": "StoreElement",
           "metadataToken": 100663633,
           "canonicalSignature": "(System.Xml.Linq.XElement,System.String):System.Void",
           "normalizedSignature": "StoreElement|(System.Xml.Linq.XElement,System.String):System.Void|static=false",
@@ -134,8 +134,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         }
       ],
@@ -146,8 +146,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-      "clrName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -158,7 +158,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository::GetAllElements():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "GetAllElements",
+          "targetName": "GetAllElements",
           "metadataToken": 100663632,
           "canonicalSignature": "():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "GetAllElements|():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
@@ -172,13 +172,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository::StoreElement(System.Xml.Linq.XElement,System.String):System.Void",
-          "clrName": "StoreElement",
+          "targetName": "StoreElement",
           "metadataToken": 100663633,
           "canonicalSignature": "(System.Xml.Linq.XElement,System.String):System.Void",
           "normalizedSignature": "StoreElement|(System.Xml.Linq.XElement,System.String):System.Void|static=false",
@@ -192,8 +192,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         }
       ],
@@ -204,8 +204,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
-      "clrName": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -215,22 +215,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository",
-          "clrName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository"
+          "targetName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-          "clrName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository"
+          "targetName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository::GetAllElements():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "GetAllElements",
+          "targetName": "GetAllElements",
           "metadataToken": 100663618,
           "canonicalSignature": "():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "GetAllElements|():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
@@ -244,13 +244,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository::StoreElement(System.Xml.Linq.XElement,System.String):System.Void",
-          "clrName": "StoreElement",
+          "targetName": "StoreElement",
           "metadataToken": 100663623,
           "canonicalSignature": "(System.Xml.Linq.XElement,System.String):System.Void",
           "normalizedSignature": "StoreElement|(System.Xml.Linq.XElement,System.String):System.Void|static=false",
@@ -264,13 +264,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository::DeleteElements(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
-          "clrName": "DeleteElements",
+          "targetName": "DeleteElements",
           "metadataToken": 100663625,
           "canonicalSignature": "(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
           "normalizedSignature": "DeleteElements|(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
@@ -284,13 +284,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository::DeleteElements(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
-          "clrName": "DeleteElements",
+          "targetName": "DeleteElements",
           "metadataToken": 100663631,
           "canonicalSignature": "(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
           "normalizedSignature": "DeleteElements|(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
@@ -304,14 +304,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository::GetAllElements():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "GetAllElements",
+          "targetName": "GetAllElements",
           "metadataToken": 100663632,
           "canonicalSignature": "():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "GetAllElements|():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
@@ -325,14 +325,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository::StoreElement(System.Xml.Linq.XElement,System.String):System.Void",
-          "clrName": "StoreElement",
+          "targetName": "StoreElement",
           "metadataToken": 100663633,
           "canonicalSignature": "(System.Xml.Linq.XElement,System.String):System.Void",
           "normalizedSignature": "StoreElement|(System.Xml.Linq.XElement,System.String):System.Void|static=false",
@@ -346,8 +346,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository"
         }
@@ -355,7 +355,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository::DefaultKeyStorageDirectory:System.IO.DirectoryInfo",
-          "clrName": "DefaultKeyStorageDirectory",
+          "targetName": "DefaultKeyStorageDirectory",
           "metadataToken": 385876010,
           "canonicalSignature": ":System.IO.DirectoryInfo",
           "normalizedSignature": "DefaultKeyStorageDirectory|:System.IO.DirectoryInfo|static=true|accessor=get",
@@ -369,12 +369,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository::Directory:System.IO.DirectoryInfo",
-          "clrName": "Directory",
+          "targetName": "Directory",
           "metadataToken": 385876011,
           "canonicalSignature": ":System.IO.DirectoryInfo",
           "normalizedSignature": "Directory|:System.IO.DirectoryInfo|static=false|accessor=get",
@@ -388,8 +388,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ],
       "fields": [],
@@ -403,15 +403,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
-      "clrName": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -421,22 +421,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository",
-          "clrName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository"
+          "targetName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-          "clrName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository"
+          "targetName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository::GetAllElements():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "GetAllElements",
+          "targetName": "GetAllElements",
           "metadataToken": 100663637,
           "canonicalSignature": "():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "GetAllElements|():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
@@ -450,13 +450,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository::StoreElement(System.Xml.Linq.XElement,System.String):System.Void",
-          "clrName": "StoreElement",
+          "targetName": "StoreElement",
           "metadataToken": 100663642,
           "canonicalSignature": "(System.Xml.Linq.XElement,System.String):System.Void",
           "normalizedSignature": "StoreElement|(System.Xml.Linq.XElement,System.String):System.Void|static=false",
@@ -470,13 +470,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository::DeleteElements(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
-          "clrName": "DeleteElements",
+          "targetName": "DeleteElements",
           "metadataToken": 100663644,
           "canonicalSignature": "(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
           "normalizedSignature": "DeleteElements|(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
@@ -490,13 +490,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository::DeleteElements(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
-          "clrName": "DeleteElements",
+          "targetName": "DeleteElements",
           "metadataToken": 100663631,
           "canonicalSignature": "(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
           "normalizedSignature": "DeleteElements|(System.Action_1[[System.Collections.Generic.IReadOnlyCollection_1[[Microsoft.AspNetCore.DataProtection.Repositories.IDeletableElement,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
@@ -510,14 +510,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.Repositories.IDeletableXmlRepository"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository::GetAllElements():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "GetAllElements",
+          "targetName": "GetAllElements",
           "metadataToken": 100663632,
           "canonicalSignature": "():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "GetAllElements|():System.Collections.Generic.IReadOnlyCollection_1[[System.Xml.Linq.XElement,System.Private.Xml.Linq,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
@@ -531,14 +531,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository::StoreElement(System.Xml.Linq.XElement,System.String):System.Void",
-          "clrName": "StoreElement",
+          "targetName": "StoreElement",
           "metadataToken": 100663633,
           "canonicalSignature": "(System.Xml.Linq.XElement,System.String):System.Void",
           "normalizedSignature": "StoreElement|(System.Xml.Linq.XElement,System.String):System.Void|static=false",
@@ -552,8 +552,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.Repositories.IXmlRepository"
         }
@@ -561,7 +561,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository::DefaultRegistryKey:Microsoft.Win32.RegistryKey",
-          "clrName": "DefaultRegistryKey",
+          "targetName": "DefaultRegistryKey",
           "metadataToken": 385876014,
           "canonicalSignature": ":Microsoft.Win32.RegistryKey",
           "normalizedSignature": "DefaultRegistryKey|:Microsoft.Win32.RegistryKey|static=true|accessor=get",
@@ -575,12 +575,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository::RegistryKey:Microsoft.Win32.RegistryKey",
-          "clrName": "RegistryKey",
+          "targetName": "RegistryKey",
           "metadataToken": 385876015,
           "canonicalSignature": ":Microsoft.Win32.RegistryKey",
           "normalizedSignature": "RegistryKey|:Microsoft.Win32.RegistryKey|static=false|accessor=get",
@@ -594,8 +594,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ],
       "fields": [],
@@ -609,8 +609,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Repositories.RegistryXmlRepository",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     }

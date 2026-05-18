@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
-      "clrName": "Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent::ToHtmlString():System.String",
-          "clrName": "ToHtmlString",
+          "targetName": "ToHtmlString",
           "metadataToken": 100663806,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToHtmlString|():System.String|static=false",
@@ -36,13 +36,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent::WriteHtmlTo(System.IO.TextWriter):System.Void",
-          "clrName": "WriteHtmlTo",
+          "targetName": "WriteHtmlTo",
           "metadataToken": 100663807,
           "canonicalSignature": "(System.IO.TextWriter):System.Void",
           "normalizedSignature": "WriteHtmlTo|(System.IO.TextWriter):System.Void|static=false",
@@ -56,15 +56,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent::QuiescenceTask:System.Threading.Tasks.Task",
-          "clrName": "QuiescenceTask",
+          "targetName": "QuiescenceTask",
           "metadataToken": 385876123,
           "canonicalSignature": ":System.Threading.Tasks.Task",
           "normalizedSignature": "QuiescenceTask|:System.Threading.Tasks.Task|static=false|accessor=get",
@@ -78,8 +78,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ],
       "fields": [],

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::MaxBidirectionalStreamCount:System.Int32",
-          "clrName": "MaxBidirectionalStreamCount",
+          "targetName": "MaxBidirectionalStreamCount",
           "metadataToken": 385876022,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxBidirectionalStreamCount|:System.Int32|static=false|accessor=getset",
@@ -37,12 +37,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::MaxUnidirectionalStreamCount:System.Int32",
-          "clrName": "MaxUnidirectionalStreamCount",
+          "targetName": "MaxUnidirectionalStreamCount",
           "metadataToken": 385876023,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxUnidirectionalStreamCount|:System.Int32|static=false|accessor=getset",
@@ -56,12 +56,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::MaxReadBufferSize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "MaxReadBufferSize",
+          "targetName": "MaxReadBufferSize",
           "metadataToken": 385876024,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MaxReadBufferSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -75,12 +75,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::MaxWriteBufferSize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "MaxWriteBufferSize",
+          "targetName": "MaxWriteBufferSize",
           "metadataToken": 385876025,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MaxWriteBufferSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -94,12 +94,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::Backlog:System.Int32",
-          "clrName": "Backlog",
+          "targetName": "Backlog",
           "metadataToken": 385876026,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Backlog|:System.Int32|static=false|accessor=getset",
@@ -113,12 +113,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::DefaultStreamErrorCode:System.Int64",
-          "clrName": "DefaultStreamErrorCode",
+          "targetName": "DefaultStreamErrorCode",
           "metadataToken": 385876027,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "DefaultStreamErrorCode|:System.Int64|static=false|accessor=getset",
@@ -132,12 +132,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::DefaultCloseErrorCode:System.Int64",
-          "clrName": "DefaultCloseErrorCode",
+          "targetName": "DefaultCloseErrorCode",
           "metadataToken": 385876028,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "DefaultCloseErrorCode|:System.Int64|static=false|accessor=getset",
@@ -151,8 +151,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         }
       ],
       "fields": [],
@@ -166,8 +166,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         }
       ]
     }

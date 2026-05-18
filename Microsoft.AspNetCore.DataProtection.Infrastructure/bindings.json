@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
-      "clrName": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
+      "targetName": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -19,7 +19,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator::Discriminator:System.String",
-          "clrName": "Discriminator",
+          "targetName": "Discriminator",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Discriminator|:System.String|static=false|accessor=get",
@@ -33,8 +33,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection.Abstractions"
         }
       ],
       "fields": [],

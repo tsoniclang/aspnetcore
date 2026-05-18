@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-      "clrName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-      "assemblyName": "Microsoft.AspNetCore.Http.Extensions",
+      "targetName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,25 +17,25 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
+          "targetName": "System.Collections.Generic.IEnumerable`1",
           "typeArguments": [
             "KeyValuePair_2[[String,String]]"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.QueryBuilder::Add(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100664165,
           "canonicalSignature": "(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "Add|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -49,13 +49,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.QueryBuilder::Add(System.String,System.String):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100664166,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Add|(System.String,System.String):System.Void|static=false",
@@ -69,13 +69,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.QueryBuilder::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100664167,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -89,13 +89,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.QueryBuilder::ToQueryString():Microsoft.AspNetCore.Http.QueryString",
-          "clrName": "ToQueryString",
+          "targetName": "ToQueryString",
           "metadataToken": 100664168,
           "canonicalSignature": "():Microsoft.AspNetCore.Http.QueryString",
           "normalizedSignature": "ToQueryString|():Microsoft.AspNetCore.Http.QueryString|static=false",
@@ -109,13 +109,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.QueryBuilder::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100664169,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -129,13 +129,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.QueryBuilder::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100664170,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -149,13 +149,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.QueryBuilder::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetEnumerator",
+          "targetName": "GetEnumerator",
           "metadataToken": 100664171,
           "canonicalSignature": "():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -169,8 +169,8 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         }
       ],
@@ -186,8 +186,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.QueryBuilder::.ctor(System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
@@ -197,8 +197,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.QueryBuilder::.ctor(System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
@@ -208,15 +208,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.HttpRequestMultipartExtensions",
-      "clrName": "Microsoft.AspNetCore.Http.Extensions.HttpRequestMultipartExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Http.Extensions",
+      "targetName": "Microsoft.AspNetCore.Http.Extensions.HttpRequestMultipartExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -226,12 +226,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.HttpRequestMultipartExtensions::GetMultipartBoundary(Microsoft.AspNetCore.Http.HttpRequest):System.String",
-          "clrName": "GetMultipartBoundary",
+          "targetName": "GetMultipartBoundary",
           "metadataToken": 100664161,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpRequest):System.String",
           "normalizedSignature": "GetMultipartBoundary|(Microsoft.AspNetCore.Http.HttpRequest):System.String|static=true",
@@ -245,8 +245,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.HttpRequestMultipartExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.HttpRequestMultipartExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": true
         }
       ],
@@ -257,8 +257,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation",
-      "clrName": "Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation",
-      "assemblyName": "Microsoft.AspNetCore.Http.Extensions",
+      "targetName": "Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -268,12 +268,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation::CopyToAsync(System.IO.Stream,System.IO.Stream,System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "CopyToAsync",
+          "targetName": "CopyToAsync",
           "metadataToken": 100664173,
           "canonicalSignature": "(System.IO.Stream,System.IO.Stream,System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "CopyToAsync|(System.IO.Stream,System.IO.Stream,System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=true",
@@ -287,13 +287,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation::CopyToAsync(System.IO.Stream,System.IO.Stream,System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "CopyToAsync",
+          "targetName": "CopyToAsync",
           "metadataToken": 100664174,
           "canonicalSignature": "(System.IO.Stream,System.IO.Stream,System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "CopyToAsync|(System.IO.Stream,System.IO.Stream,System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=true",
@@ -307,8 +307,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         }
       ],
@@ -319,8 +319,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.UriHelper",
-      "clrName": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
-      "assemblyName": "Microsoft.AspNetCore.Http.Extensions",
+      "targetName": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -330,12 +330,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.UriHelper::BuildRelative(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.QueryString,Microsoft.AspNetCore.Http.FragmentString):System.String",
-          "clrName": "BuildRelative",
+          "targetName": "BuildRelative",
           "metadataToken": 100664175,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.QueryString,Microsoft.AspNetCore.Http.FragmentString):System.String",
           "normalizedSignature": "BuildRelative|(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.QueryString,Microsoft.AspNetCore.Http.FragmentString):System.String|static=true",
@@ -349,13 +349,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.UriHelper::BuildAbsolute(System.String,Microsoft.AspNetCore.Http.HostString,Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.QueryString,Microsoft.AspNetCore.Http.FragmentString):System.String",
-          "clrName": "BuildAbsolute",
+          "targetName": "BuildAbsolute",
           "metadataToken": 100664176,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Http.HostString,Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.QueryString,Microsoft.AspNetCore.Http.FragmentString):System.String",
           "normalizedSignature": "BuildAbsolute|(System.String,Microsoft.AspNetCore.Http.HostString,Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.QueryString,Microsoft.AspNetCore.Http.FragmentString):System.String|static=true",
@@ -369,16 +369,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.UriHelper::FromAbsolute(System.String,System.String\u0026,Microsoft.AspNetCore.Http.HostString\u0026,Microsoft.AspNetCore.Http.PathString\u0026,Microsoft.AspNetCore.Http.QueryString\u0026,Microsoft.AspNetCore.Http.FragmentString\u0026):System.Void",
-          "clrName": "FromAbsolute",
+          "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.UriHelper::FromAbsolute(System.String,System.String&,Microsoft.AspNetCore.Http.HostString&,Microsoft.AspNetCore.Http.PathString&,Microsoft.AspNetCore.Http.QueryString&,Microsoft.AspNetCore.Http.FragmentString&):System.Void",
+          "targetName": "FromAbsolute",
           "metadataToken": 100664177,
-          "canonicalSignature": "(System.String,System.String\u0026,Microsoft.AspNetCore.Http.HostString\u0026,Microsoft.AspNetCore.Http.PathString\u0026,Microsoft.AspNetCore.Http.QueryString\u0026,Microsoft.AspNetCore.Http.FragmentString\u0026):System.Void",
-          "normalizedSignature": "FromAbsolute|(System.String,System.String\u0026,Microsoft.AspNetCore.Http.HostString\u0026,Microsoft.AspNetCore.Http.PathString\u0026,Microsoft.AspNetCore.Http.QueryString\u0026,Microsoft.AspNetCore.Http.FragmentString\u0026):System.Void|static=true",
+          "canonicalSignature": "(System.String,System.String&,Microsoft.AspNetCore.Http.HostString&,Microsoft.AspNetCore.Http.PathString&,Microsoft.AspNetCore.Http.QueryString&,Microsoft.AspNetCore.Http.FragmentString&):System.Void",
+          "normalizedSignature": "FromAbsolute|(System.String,System.String&,Microsoft.AspNetCore.Http.HostString&,Microsoft.AspNetCore.Http.PathString&,Microsoft.AspNetCore.Http.QueryString&,Microsoft.AspNetCore.Http.FragmentString&):System.Void|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -389,8 +389,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -417,7 +417,7 @@
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.UriHelper::Encode(System.Uri):System.String",
-          "clrName": "Encode",
+          "targetName": "Encode",
           "metadataToken": 100664178,
           "canonicalSignature": "(System.Uri):System.String",
           "normalizedSignature": "Encode|(System.Uri):System.String|static=true",
@@ -431,13 +431,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.UriHelper::GetEncodedUrl(Microsoft.AspNetCore.Http.HttpRequest):System.String",
-          "clrName": "GetEncodedUrl",
+          "targetName": "GetEncodedUrl",
           "metadataToken": 100664179,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpRequest):System.String",
           "normalizedSignature": "GetEncodedUrl|(Microsoft.AspNetCore.Http.HttpRequest):System.String|static=true",
@@ -451,13 +451,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.UriHelper::GetEncodedPathAndQuery(Microsoft.AspNetCore.Http.HttpRequest):System.String",
-          "clrName": "GetEncodedPathAndQuery",
+          "targetName": "GetEncodedPathAndQuery",
           "metadataToken": 100664180,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpRequest):System.String",
           "normalizedSignature": "GetEncodedPathAndQuery|(Microsoft.AspNetCore.Http.HttpRequest):System.String|static=true",
@@ -471,13 +471,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.UriHelper::GetDisplayUrl(Microsoft.AspNetCore.Http.HttpRequest):System.String",
-          "clrName": "GetDisplayUrl",
+          "targetName": "GetDisplayUrl",
           "metadataToken": 100664181,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpRequest):System.String",
           "normalizedSignature": "GetDisplayUrl|(Microsoft.AspNetCore.Http.HttpRequest):System.String|static=true",
@@ -491,8 +491,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": true
         }
       ],

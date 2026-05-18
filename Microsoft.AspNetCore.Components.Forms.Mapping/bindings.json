@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.IFormValueMapper",
-      "clrName": "Microsoft.AspNetCore.Components.Forms.Mapping.IFormValueMapper",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Forms.Mapping.IFormValueMapper",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.IFormValueMapper::CanMap(System.Type,System.String,System.String):System.Boolean",
-          "clrName": "CanMap",
+          "targetName": "CanMap",
           "metadataToken": 100664197,
           "canonicalSignature": "(System.Type,System.String,System.String):System.Boolean",
           "normalizedSignature": "CanMap|(System.Type,System.String,System.String):System.Boolean|static=false",
@@ -32,13 +32,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.IFormValueMapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.IFormValueMapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.IFormValueMapper::Map(Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext):System.Void",
-          "clrName": "Map",
+          "targetName": "Map",
           "metadataToken": 100664198,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext):System.Void",
           "normalizedSignature": "Map|(Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext):System.Void|static=false",
@@ -52,8 +52,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.IFormValueMapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.IFormValueMapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         }
       ],
@@ -64,8 +64,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
-      "clrName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -75,13 +75,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError::Container:System.Object",
-          "clrName": "Container",
+          "targetName": "Container",
           "metadataToken": 385876221,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Container|:System.Object|static=false|accessor=getset",
@@ -95,12 +95,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385876222,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -114,12 +114,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError::Path:System.String",
-          "clrName": "Path",
+          "targetName": "Path",
           "metadataToken": 385876223,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Path|:System.String|static=false|accessor=get",
@@ -133,12 +133,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError::ErrorMessages:System.Collections.Generic.IReadOnlyList_1[[System.FormattableString,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ErrorMessages",
+          "targetName": "ErrorMessages",
           "metadataToken": 385876224,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.FormattableString,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ErrorMessages|:System.Collections.Generic.IReadOnlyList_1[[System.FormattableString,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -152,12 +152,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError::AttemptedValue:System.String",
-          "clrName": "AttemptedValue",
+          "targetName": "AttemptedValue",
           "metadataToken": 385876225,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AttemptedValue|:System.String|static=false|accessor=get",
@@ -171,8 +171,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ],
       "fields": [],
@@ -181,8 +181,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
-      "clrName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -192,12 +192,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext::SetResult(System.Object):System.Void",
-          "clrName": "SetResult",
+          "targetName": "SetResult",
           "metadataToken": 100664196,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "SetResult|(System.Object):System.Void|static=false",
@@ -211,15 +211,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext::AcceptMappingScopeName:System.String",
-          "clrName": "AcceptMappingScopeName",
+          "targetName": "AcceptMappingScopeName",
           "metadataToken": 385876228,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AcceptMappingScopeName|:System.String|static=false|accessor=get",
@@ -233,12 +233,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext::AcceptFormName:System.String",
-          "clrName": "AcceptFormName",
+          "targetName": "AcceptFormName",
           "metadataToken": 385876229,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AcceptFormName|:System.String|static=false|accessor=get",
@@ -252,12 +252,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext::ParameterName:System.String",
-          "clrName": "ParameterName",
+          "targetName": "ParameterName",
           "metadataToken": 385876230,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ParameterName|:System.String|static=false|accessor=get",
@@ -271,12 +271,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext::ValueType:System.Type",
-          "clrName": "ValueType",
+          "targetName": "ValueType",
           "metadataToken": 385876231,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "ValueType|:System.Type|static=false|accessor=get",
@@ -290,12 +290,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext::OnError:System.Action_3[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.FormattableString,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnError",
+          "targetName": "OnError",
           "metadataToken": 385876232,
           "canonicalSignature": ":System.Action_3[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.FormattableString,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnError|:System.Action_3[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.FormattableString,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -309,12 +309,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext::MapErrorToContainer:System.Action_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "MapErrorToContainer",
+          "targetName": "MapErrorToContainer",
           "metadataToken": 385876233,
           "canonicalSignature": ":System.Action_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MapErrorToContainer|:System.Action_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -328,12 +328,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext::Result:System.Object",
-          "clrName": "Result",
+          "targetName": "Result",
           "metadataToken": 385876234,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Result|:System.Object|static=false|accessor=getset",
@@ -347,8 +347,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ],
       "fields": [],
@@ -357,8 +357,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.SupplyParameterFromFormServiceCollectionExtensions",
-      "clrName": "Microsoft.AspNetCore.Components.Forms.Mapping.SupplyParameterFromFormServiceCollectionExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Forms.Mapping.SupplyParameterFromFormServiceCollectionExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -368,12 +368,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.SupplyParameterFromFormServiceCollectionExtensions::AddSupplyValueFromFormProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
-          "clrName": "AddSupplyValueFromFormProvider",
+          "targetName": "AddSupplyValueFromFormProvider",
           "metadataToken": 100664199,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "AddSupplyValueFromFormProvider|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
@@ -387,8 +387,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.SupplyParameterFromFormServiceCollectionExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Forms.Mapping.SupplyParameterFromFormServiceCollectionExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
         }
       ],

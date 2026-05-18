@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
-      "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+      "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,13 +18,13 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
-          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
+          "targetName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String",
-          "clrName": "GetErrorMessage",
+          "targetName": "GetErrorMessage",
           "metadataToken": 100663344,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String",
           "normalizedSignature": "GetErrorMessage|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String|static=false",
@@ -38,13 +38,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator::AddValidation(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "clrName": "AddValidation",
+          "targetName": "AddValidation",
           "metadataToken": 100663706,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
           "normalizedSignature": "AddValidation|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void|static=false",
@@ -58,8 +58,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -70,8 +70,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+      "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -82,7 +82,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider::GetAttributeAdapter(System.ComponentModel.DataAnnotations.ValidationAttribute,Microsoft.Extensions.Localization.IStringLocalizer):Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
-          "clrName": "GetAttributeAdapter",
+          "targetName": "GetAttributeAdapter",
           "metadataToken": 100663345,
           "canonicalSignature": "(System.ComponentModel.DataAnnotations.ValidationAttribute,Microsoft.Extensions.Localization.IStringLocalizer):Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
           "normalizedSignature": "GetAttributeAdapter|(System.ComponentModel.DataAnnotations.ValidationAttribute,Microsoft.Extensions.Localization.IStringLocalizer):Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter|static=false",
@@ -96,8 +96,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         }
       ],
@@ -107,9 +107,9 @@
       "constructors": []
     },
     {
-      "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601",
-      "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+      "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase`1",
+      "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase`1",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -118,8 +118,8 @@
       "isStatic": false,
       "arity": 1,
       "baseType": {
-        "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601",
-        "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601",
+        "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1",
+        "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1",
         "typeArguments": [
           "TAttribute"
         ]
@@ -127,11 +127,11 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
-          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
+          "targetName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
-          "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter"
+          "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter"
         }
       ],
       "typeParameters": [
@@ -139,8 +139,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String",
-          "clrName": "GetErrorMessage",
+          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase`1::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String",
+          "targetName": "GetErrorMessage",
           "metadataToken": 100663313,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String",
           "normalizedSignature": "GetErrorMessage|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String|static=false",
@@ -154,13 +154,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator::AddValidation(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "clrName": "AddValidation",
+          "targetName": "AddValidation",
           "metadataToken": 100663706,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
           "normalizedSignature": "AddValidation|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void|static=false",
@@ -174,14 +174,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String",
-          "clrName": "GetErrorMessage",
+          "targetName": "GetErrorMessage",
           "metadataToken": 100663344,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String",
           "normalizedSignature": "GetErrorMessage|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String|static=false",
@@ -195,14 +195,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String",
-          "clrName": "GetErrorMessage",
+          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase`1::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String",
+          "targetName": "GetErrorMessage",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String",
           "normalizedSignature": "GetErrorMessage|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String|static=false",
@@ -216,8 +216,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         }
       ],
@@ -226,22 +226,22 @@
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601::.ctor(TAttribute,Microsoft.Extensions.Localization.IStringLocalizer):void",
+          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase`1::.ctor(TAttribute,Microsoft.Extensions.Localization.IStringLocalizer):void",
           "metadataToken": 100663312,
           "canonicalSignature": "(TAttribute,Microsoft.Extensions.Localization.IStringLocalizer):void",
           "normalizedSignature": "constructor|(TAttribute,Microsoft.Extensions.Localization.IStringLocalizer):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions",
-      "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+      "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -251,35 +251,35 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
+          "targetName": "System.Collections.Generic.IEnumerable`1",
           "typeArguments": [
             "ICompatibilitySwitch"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         }
       ],
       "methods": [],
       "properties": [],
       "fields": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions::DataAnnotationLocalizerProviderSystem.Func\u00603[[System.Type, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Localization.IStringLocalizerFactory, Microsoft.Extensions.Localization.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Localization.IStringLocalizer, Microsoft.Extensions.Localization.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "DataAnnotationLocalizerProvider",
+          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions::DataAnnotationLocalizerProviderSystem.Func`3[[System.Type, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Localization.IStringLocalizerFactory, Microsoft.Extensions.Localization.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Localization.IStringLocalizer, Microsoft.Extensions.Localization.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+          "targetName": "DataAnnotationLocalizerProvider",
           "metadataToken": 67108889,
-          "normalizedSignature": "DataAnnotationLocalizerProvider|System.Func\u00603[[System.Type, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Localization.IStringLocalizerFactory, Microsoft.Extensions.Localization.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Localization.IStringLocalizer, Microsoft.Extensions.Localization.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]|static=false|const=false",
+          "normalizedSignature": "DataAnnotationLocalizerProvider|System.Func`3[[System.Type, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Localization.IStringLocalizerFactory, Microsoft.Extensions.Localization.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Localization.IStringLocalizer, Microsoft.Extensions.Localization.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations"
         }
       ],
       "events": [],
@@ -292,15 +292,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter",
-      "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+      "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -309,8 +309,8 @@
       "isStatic": false,
       "arity": 0,
       "baseType": {
-        "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601",
-        "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601",
+        "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase`1",
+        "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase`1",
         "typeArguments": [
           "RequiredAttribute"
         ]
@@ -318,17 +318,17 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
-          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
+          "targetName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
-          "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter"
+          "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter::AddValidation(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "clrName": "AddValidation",
+          "targetName": "AddValidation",
           "metadataToken": 100663368,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
           "normalizedSignature": "AddValidation|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void|static=false",
@@ -342,13 +342,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String",
-          "clrName": "GetErrorMessage",
+          "targetName": "GetErrorMessage",
           "metadataToken": 100663369,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String",
           "normalizedSignature": "GetErrorMessage|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String|static=false",
@@ -362,13 +362,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator::AddValidation(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "clrName": "AddValidation",
+          "targetName": "AddValidation",
           "metadataToken": 100663706,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
           "normalizedSignature": "AddValidation|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void|static=false",
@@ -382,14 +382,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String",
-          "clrName": "GetErrorMessage",
+          "targetName": "GetErrorMessage",
           "metadataToken": 100663344,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String",
           "normalizedSignature": "GetErrorMessage|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase):System.String|static=false",
@@ -403,14 +403,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String",
-          "clrName": "GetErrorMessage",
+          "targetName": "GetErrorMessage",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String",
           "normalizedSignature": "GetErrorMessage|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String|static=false",
@@ -424,8 +424,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         }
       ],
@@ -441,15 +441,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations"
         }
       ]
     },
     {
-      "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601",
-      "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+      "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1",
+      "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -459,12 +459,12 @@
       "arity": 1,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
-          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
+          "targetName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
         }
       ],
       "typeParameters": [
@@ -472,8 +472,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601::AddValidation(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "clrName": "AddValidation",
+          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1::AddValidation(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
+          "targetName": "AddValidation",
           "metadataToken": 100663378,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
           "normalizedSignature": "AddValidation|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void|static=false",
@@ -487,13 +487,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601::MergeAttribute(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String):System.Boolean",
-          "clrName": "MergeAttribute",
+          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1::MergeAttribute(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String):System.Boolean",
+          "targetName": "MergeAttribute",
           "metadataToken": 100663379,
           "canonicalSignature": "(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String):System.Boolean",
           "normalizedSignature": "MergeAttribute|(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String):System.Boolean|static=true",
@@ -507,13 +507,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String",
-          "clrName": "GetErrorMessage",
+          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String",
+          "targetName": "GetErrorMessage",
           "metadataToken": 100663380,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String",
           "normalizedSignature": "GetErrorMessage|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String|static=false",
@@ -527,13 +527,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator::AddValidation(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "clrName": "AddValidation",
+          "targetName": "AddValidation",
           "metadataToken": 100663706,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
           "normalizedSignature": "AddValidation|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void|static=false",
@@ -547,16 +547,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
         }
       ],
       "properties": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601::Attribute:TAttribute",
-          "clrName": "Attribute",
+          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1::Attribute:TAttribute",
+          "targetName": "Attribute",
           "metadataToken": 385875972,
           "canonicalSignature": ":TAttribute",
           "normalizedSignature": "Attribute|:TAttribute|static=false|accessor=get",
@@ -570,30 +570,30 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations"
         }
       ],
       "fields": [],
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601::.ctor(TAttribute,Microsoft.Extensions.Localization.IStringLocalizer):void",
+          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1::.ctor(TAttribute,Microsoft.Extensions.Localization.IStringLocalizer):void",
           "metadataToken": 100663376,
           "canonicalSignature": "(TAttribute,Microsoft.Extensions.Localization.IStringLocalizer):void",
           "normalizedSignature": "constructor|(TAttribute,Microsoft.Extensions.Localization.IStringLocalizer):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapterProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapterProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+      "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapterProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -603,18 +603,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider",
-          "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider"
+          "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapterProvider::GetAttributeAdapter(System.ComponentModel.DataAnnotations.ValidationAttribute,Microsoft.Extensions.Localization.IStringLocalizer):Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
-          "clrName": "GetAttributeAdapter",
+          "targetName": "GetAttributeAdapter",
           "metadataToken": 100663381,
           "canonicalSignature": "(System.ComponentModel.DataAnnotations.ValidationAttribute,Microsoft.Extensions.Localization.IStringLocalizer):Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
           "normalizedSignature": "GetAttributeAdapter|(System.ComponentModel.DataAnnotations.ValidationAttribute,Microsoft.Extensions.Localization.IStringLocalizer):Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter|static=false",
@@ -628,13 +628,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapterProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapterProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider::GetAttributeAdapter(System.ComponentModel.DataAnnotations.ValidationAttribute,Microsoft.Extensions.Localization.IStringLocalizer):Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
-          "clrName": "GetAttributeAdapter",
+          "targetName": "GetAttributeAdapter",
           "metadataToken": 100663345,
           "canonicalSignature": "(System.ComponentModel.DataAnnotations.ValidationAttribute,Microsoft.Extensions.Localization.IStringLocalizer):Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter",
           "normalizedSignature": "GetAttributeAdapter|(System.ComponentModel.DataAnnotations.ValidationAttribute,Microsoft.Extensions.Localization.IStringLocalizer):Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter|static=false",
@@ -648,8 +648,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider"
         }
@@ -666,15 +666,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapterProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapterProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationProviderAttribute",
-      "clrName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationProviderAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+      "targetName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationProviderAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -684,12 +684,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationProviderAttribute::GetValidationAttributes():System.Collections.Generic.IEnumerable_1[[System.ComponentModel.DataAnnotations.ValidationAttribute,System.ComponentModel.Annotations,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
-          "clrName": "GetValidationAttributes",
+          "targetName": "GetValidationAttributes",
           "metadataToken": 100663383,
           "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[System.ComponentModel.DataAnnotations.ValidationAttribute,System.ComponentModel.Annotations,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
           "normalizedSignature": "GetValidationAttributes|():System.Collections.Generic.IEnumerable_1[[System.ComponentModel.DataAnnotations.ValidationAttribute,System.ComponentModel.Annotations,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false",
@@ -703,8 +703,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationProviderAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationProviderAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": false
         }
       ],
@@ -720,8 +720,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationProviderAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationProviderAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations"
         }
       ]
     }

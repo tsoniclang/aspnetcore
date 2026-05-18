@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
-      "clrName": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
-      "assemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+      "targetName": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+      "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "clrName": "Invoke",
+          "targetName": "Invoke",
           "metadataToken": 100663303,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
@@ -36,8 +36,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy",
           "isExtensionMethod": false
         }
       ],
@@ -53,8 +53,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HstsOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
@@ -64,15 +64,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
-      "clrName": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
-      "assemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+      "targetName": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -82,13 +82,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsOptions::MaxAge:System.TimeSpan",
-          "clrName": "MaxAge",
+          "targetName": "MaxAge",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "MaxAge|:System.TimeSpan|static=false|accessor=getset",
@@ -102,12 +102,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsOptions::IncludeSubDomains:System.Boolean",
-          "clrName": "IncludeSubDomains",
+          "targetName": "IncludeSubDomains",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IncludeSubDomains|:System.Boolean|static=false|accessor=getset",
@@ -121,12 +121,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsOptions::Preload:System.Boolean",
-          "clrName": "Preload",
+          "targetName": "Preload",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Preload|:System.Boolean|static=false|accessor=getset",
@@ -140,12 +140,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsOptions::ExcludedHosts:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ExcludedHosts",
+          "targetName": "ExcludedHosts",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ExcludedHosts|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -159,8 +159,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         }
       ],
       "fields": [],
@@ -174,15 +174,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
-      "clrName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
-      "assemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+      "targetName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+      "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -192,12 +192,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "clrName": "Invoke",
+          "targetName": "Invoke",
           "metadataToken": 100663320,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
@@ -211,8 +211,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy",
           "isExtensionMethod": false
         }
       ],
@@ -228,8 +228,8 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature):void",
@@ -239,15 +239,15 @@
           "isStatic": false,
           "parameterCount": 5,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
-      "clrName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
-      "assemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+      "targetName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -257,13 +257,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions::RedirectStatusCode:System.Int32",
-          "clrName": "RedirectStatusCode",
+          "targetName": "RedirectStatusCode",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "RedirectStatusCode|:System.Int32|static=false|accessor=getset",
@@ -277,12 +277,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions::HttpsPort:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "HttpsPort",
+          "targetName": "HttpsPort",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "HttpsPort|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -296,8 +296,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         }
       ],
       "fields": [],
@@ -311,8 +311,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.HttpsPolicy"
         }
       ]
     }

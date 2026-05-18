@@ -7,8 +7,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -23,9 +23,9 @@
       "constructors": []
     },
     {
-      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider`1",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider`1",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -36,7 +36,7 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider",
-          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider"
+          "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider"
         }
       ],
       "typeParameters": [
@@ -44,8 +44,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601::PopulateFeature(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],TFeature):System.Void",
-          "clrName": "PopulateFeature",
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider`1::PopulateFeature(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],TFeature):System.Void",
+          "targetName": "PopulateFeature",
           "metadataToken": 100666587,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],TFeature):System.Void",
           "normalizedSignature": "PopulateFeature|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],TFeature):System.Void|static=false",
@@ -59,8 +59,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
@@ -71,8 +71,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -84,7 +84,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider::Types:System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Types",
+          "targetName": "Types",
           "metadataToken": 385876941,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Types|:System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -98,8 +98,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -108,8 +108,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ICompilationReferencesProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ICompilationReferencesProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ICompilationReferencesProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -120,7 +120,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ICompilationReferencesProvider::GetReferencePaths():System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetReferencePaths",
+          "targetName": "GetReferencePaths",
           "metadataToken": 100666589,
           "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetReferencePaths|():System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -134,8 +134,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ICompilationReferencesProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ICompilationReferencesProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
@@ -146,8 +146,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -159,7 +159,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider::CompiledItems:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "CompiledItems",
+          "targetName": "CompiledItems",
           "metadataToken": 385876101,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "CompiledItems|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -173,8 +173,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
         }
       ],
       "fields": [],
@@ -183,8 +183,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -194,13 +194,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385876933,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -214,8 +214,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -229,15 +229,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -247,13 +247,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute::AssemblyName:System.String",
-          "clrName": "AssemblyName",
+          "targetName": "AssemblyName",
           "metadataToken": 385876934,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AssemblyName|:System.String|static=false|accessor=get",
@@ -267,8 +267,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -282,15 +282,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -300,12 +300,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory::GetApplicationParts(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetApplicationParts",
+          "targetName": "GetApplicationParts",
           "metadataToken": 100666568,
           "canonicalSignature": "(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetApplicationParts|(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -319,13 +319,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory::GetApplicationPartFactory(System.Reflection.Assembly):Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
-          "clrName": "GetApplicationPartFactory",
+          "targetName": "GetApplicationPartFactory",
           "metadataToken": 100666569,
           "canonicalSignature": "(System.Reflection.Assembly):Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
           "normalizedSignature": "GetApplicationPartFactory|(System.Reflection.Assembly):Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory|static=true",
@@ -339,8 +339,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
@@ -356,15 +356,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -374,12 +374,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager::PopulateFeature(TFeature):System.Void",
-          "clrName": "PopulateFeature",
+          "targetName": "PopulateFeature",
           "metadataToken": 100666573,
           "canonicalSignature": "(TFeature):System.Void",
           "normalizedSignature": "PopulateFeature|(TFeature):System.Void|static=false",
@@ -393,15 +393,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager::FeatureProviders:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "FeatureProviders",
+          "targetName": "FeatureProviders",
           "metadataToken": 385876935,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "FeatureProviders|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -415,12 +415,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager::ApplicationParts:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "ApplicationParts",
+          "targetName": "ApplicationParts",
           "metadataToken": 385876936,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ApplicationParts|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -434,8 +434,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -449,15 +449,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -467,19 +467,19 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart",
-        "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart"
+        "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider",
-          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider"
+          "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider"
         }
       ],
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart::Assembly:System.Reflection.Assembly",
-          "clrName": "Assembly",
+          "targetName": "Assembly",
           "metadataToken": 385876937,
           "canonicalSignature": ":System.Reflection.Assembly",
           "normalizedSignature": "Assembly|:System.Reflection.Assembly|static=false|accessor=get",
@@ -493,12 +493,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385876938,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -512,12 +512,12 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart::Types:System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Types",
+          "targetName": "Types",
           "metadataToken": 385876939,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Types|:System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -531,12 +531,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider::Types:System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Types",
+          "targetName": "Types",
           "metadataToken": 385876941,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Types|:System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -551,8 +551,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationPartTypeProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -566,15 +566,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.AssemblyPart",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -584,12 +584,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
-        "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory"
+        "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory::GetDefaultApplicationParts(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetDefaultApplicationParts",
+          "targetName": "GetDefaultApplicationParts",
           "metadataToken": 100663680,
           "canonicalSignature": "(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetDefaultApplicationParts|(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
@@ -603,13 +603,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory::GetApplicationParts(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetApplicationParts",
+          "targetName": "GetApplicationParts",
           "metadataToken": 100663681,
           "canonicalSignature": "(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetApplicationParts|(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -623,8 +623,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
         }
       ],
@@ -640,15 +640,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -658,19 +658,19 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart",
-        "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart"
+        "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider",
-          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider"
+          "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider"
         }
       ],
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart::Assembly:System.Reflection.Assembly",
-          "clrName": "Assembly",
+          "targetName": "Assembly",
           "metadataToken": 385876098,
           "canonicalSignature": ":System.Reflection.Assembly",
           "normalizedSignature": "Assembly|:System.Reflection.Assembly|static=false|accessor=get",
@@ -684,12 +684,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385876099,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -703,12 +703,12 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider::CompiledItems:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "CompiledItems",
+          "targetName": "CompiledItems",
           "metadataToken": 385876101,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "CompiledItems|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -723,8 +723,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
         }
       ],
       "fields": [],
@@ -738,15 +738,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.ConsolidatedAssemblyApplicationPartFactory",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ConsolidatedAssemblyApplicationPartFactory",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ConsolidatedAssemblyApplicationPartFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -756,12 +756,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
-        "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory"
+        "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.ApplicationParts.ConsolidatedAssemblyApplicationPartFactory::GetApplicationParts(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetApplicationParts",
+          "targetName": "GetApplicationParts",
           "metadataToken": 100663687,
           "canonicalSignature": "(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetApplicationParts|(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -775,8 +775,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ConsolidatedAssemblyApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ConsolidatedAssemblyApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
         }
       ],
@@ -792,15 +792,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ConsolidatedAssemblyApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ConsolidatedAssemblyApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -810,12 +810,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
-        "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory"
+        "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory::GetDefaultApplicationParts(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetDefaultApplicationParts",
+          "targetName": "GetDefaultApplicationParts",
           "metadataToken": 100666583,
           "canonicalSignature": "(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetDefaultApplicationParts|(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
@@ -829,13 +829,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory::GetApplicationParts(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetApplicationParts",
+          "targetName": "GetApplicationParts",
           "metadataToken": 100666584,
           "canonicalSignature": "(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetApplicationParts|(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -849,15 +849,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory::Instance:Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
-          "clrName": "Instance",
+          "targetName": "Instance",
           "metadataToken": 385876940,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
           "normalizedSignature": "Instance|:Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory|static=true|accessor=get",
@@ -871,8 +871,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -886,15 +886,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.DefaultApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.NullApplicationPartFactory",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.NullApplicationPartFactory",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.NullApplicationPartFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -904,12 +904,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory",
-        "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory"
+        "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartFactory"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.NullApplicationPartFactory::GetApplicationParts(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetApplicationParts",
+          "targetName": "GetApplicationParts",
           "metadataToken": 100666590,
           "canonicalSignature": "(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetApplicationParts|(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -923,8 +923,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.NullApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.NullApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
@@ -940,15 +940,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.NullApplicationPartFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.NullApplicationPartFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -958,12 +958,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute::GetFactoryType():System.Type",
-          "clrName": "GetFactoryType",
+          "targetName": "GetFactoryType",
           "metadataToken": 100666594,
           "canonicalSignature": "():System.Type",
           "normalizedSignature": "GetFactoryType|():System.Type|static=false",
@@ -977,8 +977,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
@@ -994,8 +994,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute::.ctor(System.String):void",
@@ -1005,15 +1005,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1023,12 +1023,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute::GetRelatedAssemblies(System.Reflection.Assembly,System.Boolean):System.Collections.Generic.IReadOnlyList_1[[System.Reflection.Assembly,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetRelatedAssemblies",
+          "targetName": "GetRelatedAssemblies",
           "metadataToken": 100666597,
           "canonicalSignature": "(System.Reflection.Assembly,System.Boolean):System.Collections.Generic.IReadOnlyList_1[[System.Reflection.Assembly,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetRelatedAssemblies|(System.Reflection.Assembly,System.Boolean):System.Collections.Generic.IReadOnlyList_1[[System.Reflection.Assembly,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -1042,15 +1042,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute::AssemblyFileName:System.String",
-          "clrName": "AssemblyFileName",
+          "targetName": "AssemblyFileName",
           "metadataToken": 385876942,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AssemblyFileName|:System.String|static=false|accessor=get",
@@ -1064,8 +1064,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -1079,8 +1079,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     }

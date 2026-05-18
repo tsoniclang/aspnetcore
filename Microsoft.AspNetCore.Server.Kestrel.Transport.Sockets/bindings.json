@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,18 +17,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory::Create(System.Net.Sockets.Socket):Microsoft.AspNetCore.Connections.ConnectionContext",
-          "clrName": "Create",
+          "targetName": "Create",
           "metadataToken": 100663356,
           "canonicalSignature": "(System.Net.Sockets.Socket):Microsoft.AspNetCore.Connections.ConnectionContext",
           "normalizedSignature": "Create|(System.Net.Sockets.Socket):Microsoft.AspNetCore.Connections.ConnectionContext|static=false",
@@ -42,13 +42,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100663357,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -62,8 +62,8 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
           "isExtensionMethod": false
         }
       ],
@@ -79,15 +79,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -97,13 +97,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions::IOQueueCount:System.Int32",
-          "clrName": "IOQueueCount",
+          "targetName": "IOQueueCount",
           "metadataToken": 385875990,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "IOQueueCount|:System.Int32|static=false|accessor=getset",
@@ -117,12 +117,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions::WaitForDataBeforeAllocatingBuffer:System.Boolean",
-          "clrName": "WaitForDataBeforeAllocatingBuffer",
+          "targetName": "WaitForDataBeforeAllocatingBuffer",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "WaitForDataBeforeAllocatingBuffer|:System.Boolean|static=false|accessor=getset",
@@ -136,12 +136,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions::MaxReadBufferSize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "MaxReadBufferSize",
+          "targetName": "MaxReadBufferSize",
           "metadataToken": 385875992,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MaxReadBufferSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -155,12 +155,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions::MaxWriteBufferSize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "MaxWriteBufferSize",
+          "targetName": "MaxWriteBufferSize",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MaxWriteBufferSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -174,12 +174,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions::UnsafePreferInlineScheduling:System.Boolean",
-          "clrName": "UnsafePreferInlineScheduling",
+          "targetName": "UnsafePreferInlineScheduling",
           "metadataToken": 385875994,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "UnsafePreferInlineScheduling|:System.Boolean|static=false|accessor=getset",
@@ -193,8 +193,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         }
       ],
       "fields": [],
@@ -208,15 +208,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -226,22 +226,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.IConnectionListenerFactory",
-          "clrName": "Microsoft.AspNetCore.Connections.IConnectionListenerFactory"
+          "targetName": "Microsoft.AspNetCore.Connections.IConnectionListenerFactory"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.IConnectionListenerFactorySelector",
-          "clrName": "Microsoft.AspNetCore.Connections.IConnectionListenerFactorySelector"
+          "targetName": "Microsoft.AspNetCore.Connections.IConnectionListenerFactorySelector"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory::BindAsync(System.Net.EndPoint,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Connections.IConnectionListener,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "BindAsync",
+          "targetName": "BindAsync",
           "metadataToken": 100663383,
           "canonicalSignature": "(System.Net.EndPoint,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Connections.IConnectionListener,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "BindAsync|(System.Net.EndPoint,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Connections.IConnectionListener,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -255,13 +255,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory::CanBind(System.Net.EndPoint):System.Boolean",
-          "clrName": "CanBind",
+          "targetName": "CanBind",
           "metadataToken": 100663384,
           "canonicalSignature": "(System.Net.EndPoint):System.Boolean",
           "normalizedSignature": "CanBind|(System.Net.EndPoint):System.Boolean|static=false",
@@ -275,13 +275,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.IConnectionListenerFactory::BindAsync(System.Net.EndPoint,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Connections.IConnectionListener,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "BindAsync",
+          "targetName": "BindAsync",
           "metadataToken": 100663404,
           "canonicalSignature": "(System.Net.EndPoint,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Connections.IConnectionListener,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "BindAsync|(System.Net.EndPoint,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Connections.IConnectionListener,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -295,14 +295,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionListenerFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.IConnectionListenerFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Connections.IConnectionListenerFactory"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.IConnectionListenerFactorySelector::CanBind(System.Net.EndPoint):System.Boolean",
-          "clrName": "CanBind",
+          "targetName": "CanBind",
           "metadataToken": 100663405,
           "canonicalSignature": "(System.Net.EndPoint):System.Boolean",
           "normalizedSignature": "CanBind|(System.Net.EndPoint):System.Boolean|static=false",
@@ -316,8 +316,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionListenerFactorySelector",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.IConnectionListenerFactorySelector",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Connections.IConnectionListenerFactorySelector"
         }
@@ -334,15 +334,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -352,12 +352,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions::CreateDefaultBoundListenSocket(System.Net.EndPoint):System.Net.Sockets.Socket",
-          "clrName": "CreateDefaultBoundListenSocket",
+          "targetName": "CreateDefaultBoundListenSocket",
           "metadataToken": 100663404,
           "canonicalSignature": "(System.Net.EndPoint):System.Net.Sockets.Socket",
           "normalizedSignature": "CreateDefaultBoundListenSocket|(System.Net.EndPoint):System.Net.Sockets.Socket|static=true",
@@ -371,15 +371,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions::IOQueueCount:System.Int32",
-          "clrName": "IOQueueCount",
+          "targetName": "IOQueueCount",
           "metadataToken": 385875998,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "IOQueueCount|:System.Int32|static=false|accessor=getset",
@@ -393,12 +393,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions::WaitForDataBeforeAllocatingBuffer:System.Boolean",
-          "clrName": "WaitForDataBeforeAllocatingBuffer",
+          "targetName": "WaitForDataBeforeAllocatingBuffer",
           "metadataToken": 385875999,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "WaitForDataBeforeAllocatingBuffer|:System.Boolean|static=false|accessor=getset",
@@ -412,12 +412,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions::NoDelay:System.Boolean",
-          "clrName": "NoDelay",
+          "targetName": "NoDelay",
           "metadataToken": 385876000,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "NoDelay|:System.Boolean|static=false|accessor=getset",
@@ -431,12 +431,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions::Backlog:System.Int32",
-          "clrName": "Backlog",
+          "targetName": "Backlog",
           "metadataToken": 385876001,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Backlog|:System.Int32|static=false|accessor=getset",
@@ -450,12 +450,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions::MaxReadBufferSize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "MaxReadBufferSize",
+          "targetName": "MaxReadBufferSize",
           "metadataToken": 385876002,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MaxReadBufferSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -469,12 +469,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions::MaxWriteBufferSize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "MaxWriteBufferSize",
+          "targetName": "MaxWriteBufferSize",
           "metadataToken": 385876003,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MaxWriteBufferSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -488,12 +488,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions::UnsafePreferInlineScheduling:System.Boolean",
-          "clrName": "UnsafePreferInlineScheduling",
+          "targetName": "UnsafePreferInlineScheduling",
           "metadataToken": 385876004,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "UnsafePreferInlineScheduling|:System.Boolean|static=false|accessor=getset",
@@ -507,12 +507,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions::CreateBoundListenSocket:System.Func_2[[System.Net.EndPoint,System.Net.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Net.Sockets.Socket,System.Net.Sockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
-          "clrName": "CreateBoundListenSocket",
+          "targetName": "CreateBoundListenSocket",
           "metadataToken": 385876005,
           "canonicalSignature": ":System.Func_2[[System.Net.EndPoint,System.Net.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Net.Sockets.Socket,System.Net.Sockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
           "normalizedSignature": "CreateBoundListenSocket|:System.Func_2[[System.Net.EndPoint,System.Net.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Net.Sockets.Socket,System.Net.Sockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=getset",
@@ -526,8 +526,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         }
       ],
       "fields": [],
@@ -541,8 +541,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets"
         }
       ]
     }

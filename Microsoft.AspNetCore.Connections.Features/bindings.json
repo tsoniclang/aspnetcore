@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionCompleteFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionCompleteFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionCompleteFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionCompleteFeature::OnCompleted(System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.Void",
-          "clrName": "OnCompleted",
+          "targetName": "OnCompleted",
           "metadataToken": 100663455,
           "canonicalSignature": "(System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.Void",
           "normalizedSignature": "OnCompleted|(System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.Void|static=false",
@@ -32,8 +32,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionCompleteFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionCompleteFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -44,8 +44,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -57,7 +57,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature::LocalEndPoint:System.Net.EndPoint",
-          "clrName": "LocalEndPoint",
+          "targetName": "LocalEndPoint",
           "metadataToken": 385876012,
           "canonicalSignature": ":System.Net.EndPoint",
           "normalizedSignature": "LocalEndPoint|:System.Net.EndPoint|static=false|accessor=getset",
@@ -71,12 +71,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature::RemoteEndPoint:System.Net.EndPoint",
-          "clrName": "RemoteEndPoint",
+          "targetName": "RemoteEndPoint",
           "metadataToken": 385876013,
           "canonicalSignature": ":System.Net.EndPoint",
           "normalizedSignature": "RemoteEndPoint|:System.Net.EndPoint|static=false|accessor=getset",
@@ -90,8 +90,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -100,8 +100,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionHeartbeatFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionHeartbeatFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionHeartbeatFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -112,7 +112,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionHeartbeatFeature::OnHeartbeat(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.Void",
-          "clrName": "OnHeartbeat",
+          "targetName": "OnHeartbeat",
           "metadataToken": 100663460,
           "canonicalSignature": "(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.Void",
           "normalizedSignature": "OnHeartbeat|(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.Void|static=false",
@@ -126,8 +126,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionHeartbeatFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionHeartbeatFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -138,8 +138,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -151,7 +151,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature::ConnectionId:System.String",
-          "clrName": "ConnectionId",
+          "targetName": "ConnectionId",
           "metadataToken": 385876014,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ConnectionId|:System.String|static=false|accessor=getset",
@@ -165,8 +165,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -175,8 +175,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionInherentKeepAliveFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionInherentKeepAliveFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionInherentKeepAliveFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -188,7 +188,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionInherentKeepAliveFeature::HasInherentKeepAlive:System.Boolean",
-          "clrName": "HasInherentKeepAlive",
+          "targetName": "HasInherentKeepAlive",
           "metadataToken": 385876015,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasInherentKeepAlive|:System.Boolean|static=false|accessor=get",
@@ -202,8 +202,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionInherentKeepAliveFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionInherentKeepAliveFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -212,8 +212,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -225,7 +225,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature::Items:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Items",
+          "targetName": "Items",
           "metadataToken": 385876016,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Items|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -239,8 +239,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -249,8 +249,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -261,7 +261,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature::Abort():System.Void",
-          "clrName": "Abort",
+          "targetName": "Abort",
           "metadataToken": 100663468,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Abort|():System.Void|static=false",
@@ -275,15 +275,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature::ConnectionClosed:System.Threading.CancellationToken",
-          "clrName": "ConnectionClosed",
+          "targetName": "ConnectionClosed",
           "metadataToken": 385876017,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "ConnectionClosed|:System.Threading.CancellationToken|static=false|accessor=getset",
@@ -297,8 +297,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -307,8 +307,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeNotificationFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeNotificationFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeNotificationFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -319,7 +319,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeNotificationFeature::RequestClose():System.Void",
-          "clrName": "RequestClose",
+          "targetName": "RequestClose",
           "metadataToken": 100663471,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "RequestClose|():System.Void|static=false",
@@ -333,15 +333,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeNotificationFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeNotificationFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeNotificationFeature::ConnectionClosedRequested:System.Threading.CancellationToken",
-          "clrName": "ConnectionClosedRequested",
+          "targetName": "ConnectionClosedRequested",
           "metadataToken": 385876018,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "ConnectionClosedRequested|:System.Threading.CancellationToken|static=false|accessor=getset",
@@ -355,8 +355,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeNotificationFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeNotificationFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -365,8 +365,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionMetricsTagsFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionMetricsTagsFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionMetricsTagsFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -378,7 +378,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionMetricsTagsFeature::Tags:System.Collections.Generic.ICollection_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Tags",
+          "targetName": "Tags",
           "metadataToken": 385876019,
           "canonicalSignature": ":System.Collections.Generic.ICollection_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Tags|:System.Collections.Generic.ICollection_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -392,8 +392,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionMetricsTagsFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionMetricsTagsFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -402,8 +402,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionNamedPipeFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionNamedPipeFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionNamedPipeFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -415,7 +415,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionNamedPipeFeature::NamedPipe:System.IO.Pipes.NamedPipeServerStream",
-          "clrName": "NamedPipe",
+          "targetName": "NamedPipe",
           "metadataToken": 385876020,
           "canonicalSignature": ":System.IO.Pipes.NamedPipeServerStream",
           "normalizedSignature": "NamedPipe|:System.IO.Pipes.NamedPipeServerStream|static=false|accessor=get",
@@ -429,8 +429,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionNamedPipeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionNamedPipeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -439,8 +439,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionSocketFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionSocketFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionSocketFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -452,7 +452,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionSocketFeature::Socket:System.Net.Sockets.Socket",
-          "clrName": "Socket",
+          "targetName": "Socket",
           "metadataToken": 385876021,
           "canonicalSignature": ":System.Net.Sockets.Socket",
           "normalizedSignature": "Socket|:System.Net.Sockets.Socket|static=false|accessor=get",
@@ -466,8 +466,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionSocketFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionSocketFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -476,8 +476,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -489,7 +489,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature::Transport:System.IO.Pipelines.IDuplexPipe",
-          "clrName": "Transport",
+          "targetName": "Transport",
           "metadataToken": 385876022,
           "canonicalSignature": ":System.IO.Pipelines.IDuplexPipe",
           "normalizedSignature": "Transport|:System.IO.Pipelines.IDuplexPipe|static=false|accessor=getset",
@@ -503,8 +503,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -513,8 +513,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -526,7 +526,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature::User:System.Security.Claims.ClaimsPrincipal",
-          "clrName": "User",
+          "targetName": "User",
           "metadataToken": 385876023,
           "canonicalSignature": ":System.Security.Claims.ClaimsPrincipal",
           "normalizedSignature": "User|:System.Security.Claims.ClaimsPrincipal|static=false|accessor=getset",
@@ -540,8 +540,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -550,8 +550,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IMemoryPoolFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IMemoryPoolFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IMemoryPoolFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -563,7 +563,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IMemoryPoolFeature::MemoryPool:System.Buffers.MemoryPool_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "MemoryPool",
+          "targetName": "MemoryPool",
           "metadataToken": 385876024,
           "canonicalSignature": ":System.Buffers.MemoryPool_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MemoryPool|:System.Buffers.MemoryPool_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -577,8 +577,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IMemoryPoolFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IMemoryPoolFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -587,8 +587,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IPersistentStateFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IPersistentStateFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IPersistentStateFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -600,7 +600,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IPersistentStateFeature::State:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "State",
+          "targetName": "State",
           "metadataToken": 385876025,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "State|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -614,8 +614,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IPersistentStateFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IPersistentStateFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -624,8 +624,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IProtocolErrorCodeFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IProtocolErrorCodeFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IProtocolErrorCodeFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -637,7 +637,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IProtocolErrorCodeFeature::Error:System.Int64",
-          "clrName": "Error",
+          "targetName": "Error",
           "metadataToken": 385876026,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "Error|:System.Int64|static=false|accessor=getset",
@@ -651,8 +651,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IProtocolErrorCodeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IProtocolErrorCodeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -661,8 +661,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IStreamAbortFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IStreamAbortFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IStreamAbortFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -673,7 +673,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IStreamAbortFeature::AbortRead(System.Int64,Microsoft.AspNetCore.Connections.ConnectionAbortedException):System.Void",
-          "clrName": "AbortRead",
+          "targetName": "AbortRead",
           "metadataToken": 100663483,
           "canonicalSignature": "(System.Int64,Microsoft.AspNetCore.Connections.ConnectionAbortedException):System.Void",
           "normalizedSignature": "AbortRead|(System.Int64,Microsoft.AspNetCore.Connections.ConnectionAbortedException):System.Void|static=false",
@@ -687,8 +687,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IStreamAbortFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IStreamAbortFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -699,8 +699,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IStreamClosedFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IStreamClosedFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IStreamClosedFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -711,7 +711,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IStreamClosedFeature::OnClosed(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.Void",
-          "clrName": "OnClosed",
+          "targetName": "OnClosed",
           "metadataToken": 100663485,
           "canonicalSignature": "(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.Void",
           "normalizedSignature": "OnClosed|(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.Void|static=false",
@@ -725,8 +725,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IStreamClosedFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IStreamClosedFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -737,8 +737,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IStreamDirectionFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IStreamDirectionFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IStreamDirectionFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -750,7 +750,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IStreamDirectionFeature::CanRead:System.Boolean",
-          "clrName": "CanRead",
+          "targetName": "CanRead",
           "metadataToken": 385876027,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanRead|:System.Boolean|static=false|accessor=get",
@@ -764,12 +764,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IStreamDirectionFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IStreamDirectionFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IStreamDirectionFeature::CanWrite:System.Boolean",
-          "clrName": "CanWrite",
+          "targetName": "CanWrite",
           "metadataToken": 385876028,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanWrite|:System.Boolean|static=false|accessor=get",
@@ -783,8 +783,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IStreamDirectionFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IStreamDirectionFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -793,8 +793,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IStreamIdFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.IStreamIdFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.IStreamIdFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -806,7 +806,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IStreamIdFeature::StreamId:System.Int64",
-          "clrName": "StreamId",
+          "targetName": "StreamId",
           "metadataToken": 385876029,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "StreamId|:System.Int64|static=false|accessor=get",
@@ -820,8 +820,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IStreamIdFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.IStreamIdFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -830,8 +830,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -843,7 +843,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature::Protocol:System.Security.Authentication.SslProtocols",
-          "clrName": "Protocol",
+          "targetName": "Protocol",
           "metadataToken": 385876030,
           "canonicalSignature": ":System.Security.Authentication.SslProtocols",
           "normalizedSignature": "Protocol|:System.Security.Authentication.SslProtocols|static=false|accessor=get",
@@ -857,12 +857,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature::NegotiatedCipherSuite:System.Nullable_1[[System.Net.Security.TlsCipherSuite,System.Net.Security,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
-          "clrName": "NegotiatedCipherSuite",
+          "targetName": "NegotiatedCipherSuite",
           "metadataToken": 385876031,
           "canonicalSignature": ":System.Nullable_1[[System.Net.Security.TlsCipherSuite,System.Net.Security,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
           "normalizedSignature": "NegotiatedCipherSuite|:System.Nullable_1[[System.Net.Security.TlsCipherSuite,System.Net.Security,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
@@ -876,12 +876,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature::HostName:System.String",
-          "clrName": "HostName",
+          "targetName": "HostName",
           "metadataToken": 385876032,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "HostName|:System.String|static=false|accessor=get",
@@ -895,12 +895,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature::CipherAlgorithm:System.Security.Authentication.CipherAlgorithmType",
-          "clrName": "CipherAlgorithm",
+          "targetName": "CipherAlgorithm",
           "metadataToken": 385876033,
           "canonicalSignature": ":System.Security.Authentication.CipherAlgorithmType",
           "normalizedSignature": "CipherAlgorithm|:System.Security.Authentication.CipherAlgorithmType|static=false|accessor=get",
@@ -914,12 +914,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature::CipherStrength:System.Int32",
-          "clrName": "CipherStrength",
+          "targetName": "CipherStrength",
           "metadataToken": 385876034,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "CipherStrength|:System.Int32|static=false|accessor=get",
@@ -933,12 +933,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature::HashAlgorithm:System.Security.Authentication.HashAlgorithmType",
-          "clrName": "HashAlgorithm",
+          "targetName": "HashAlgorithm",
           "metadataToken": 385876035,
           "canonicalSignature": ":System.Security.Authentication.HashAlgorithmType",
           "normalizedSignature": "HashAlgorithm|:System.Security.Authentication.HashAlgorithmType|static=false|accessor=get",
@@ -952,12 +952,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature::HashStrength:System.Int32",
-          "clrName": "HashStrength",
+          "targetName": "HashStrength",
           "metadataToken": 385876036,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "HashStrength|:System.Int32|static=false|accessor=get",
@@ -971,12 +971,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature::KeyExchangeAlgorithm:System.Security.Authentication.ExchangeAlgorithmType",
-          "clrName": "KeyExchangeAlgorithm",
+          "targetName": "KeyExchangeAlgorithm",
           "metadataToken": 385876037,
           "canonicalSignature": ":System.Security.Authentication.ExchangeAlgorithmType",
           "normalizedSignature": "KeyExchangeAlgorithm|:System.Security.Authentication.ExchangeAlgorithmType|static=false|accessor=get",
@@ -990,12 +990,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature::KeyExchangeStrength:System.Int32",
-          "clrName": "KeyExchangeStrength",
+          "targetName": "KeyExchangeStrength",
           "metadataToken": 385876038,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "KeyExchangeStrength|:System.Int32|static=false|accessor=get",
@@ -1009,8 +1009,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
@@ -1019,8 +1019,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITransferFormatFeature",
-      "clrName": "Microsoft.AspNetCore.Connections.Features.ITransferFormatFeature",
-      "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Connections.Features.ITransferFormatFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -1032,7 +1032,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITransferFormatFeature::SupportedFormats:Microsoft.AspNetCore.Connections.TransferFormat",
-          "clrName": "SupportedFormats",
+          "targetName": "SupportedFormats",
           "metadataToken": 385876039,
           "canonicalSignature": ":Microsoft.AspNetCore.Connections.TransferFormat",
           "normalizedSignature": "SupportedFormats|:Microsoft.AspNetCore.Connections.TransferFormat|static=false|accessor=get",
@@ -1046,12 +1046,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.ITransferFormatFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.ITransferFormatFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.ITransferFormatFeature::ActiveFormat:Microsoft.AspNetCore.Connections.TransferFormat",
-          "clrName": "ActiveFormat",
+          "targetName": "ActiveFormat",
           "metadataToken": 385876040,
           "canonicalSignature": ":Microsoft.AspNetCore.Connections.TransferFormat",
           "normalizedSignature": "ActiveFormat|:Microsoft.AspNetCore.Connections.TransferFormat|static=false|accessor=getset",
@@ -1065,8 +1065,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Connections.Features.ITransferFormatFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Connections.Features.ITransferFormatFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],

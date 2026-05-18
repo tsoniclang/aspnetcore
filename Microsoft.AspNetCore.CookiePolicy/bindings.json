@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
-      "clrName": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
-      "assemblyName": "Microsoft.AspNetCore.CookiePolicy",
+      "targetName": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
+      "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,39 +42,39 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108898,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy::NoneMicrosoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
-          "clrName": "None",
+          "targetName": "None",
           "metadataToken": 67108899,
           "normalizedSignature": "None|Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy::AlwaysMicrosoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
-          "clrName": "Always",
+          "targetName": "Always",
           "metadataToken": 67108900,
           "normalizedSignature": "Always|Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         }
       ],
       "events": [],
@@ -82,8 +82,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
-      "clrName": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
-      "assemblyName": "Microsoft.AspNetCore.CookiePolicy",
+      "targetName": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
+      "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -93,13 +93,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::Context:Microsoft.AspNetCore.Http.HttpContext",
-          "clrName": "Context",
+          "targetName": "Context",
           "metadataToken": 385875977,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.HttpContext",
           "normalizedSignature": "Context|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=get",
@@ -113,12 +113,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::CookieOptions:Microsoft.AspNetCore.Http.CookieOptions",
-          "clrName": "CookieOptions",
+          "targetName": "CookieOptions",
           "metadataToken": 385875978,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.CookieOptions",
           "normalizedSignature": "CookieOptions|:Microsoft.AspNetCore.Http.CookieOptions|static=false|accessor=get",
@@ -132,12 +132,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::CookieName:System.String",
-          "clrName": "CookieName",
+          "targetName": "CookieName",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CookieName|:System.String|static=false|accessor=getset",
@@ -151,12 +151,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::CookieValue:System.String",
-          "clrName": "CookieValue",
+          "targetName": "CookieValue",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CookieValue|:System.String|static=false|accessor=getset",
@@ -170,12 +170,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::IsConsentNeeded:System.Boolean",
-          "clrName": "IsConsentNeeded",
+          "targetName": "IsConsentNeeded",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsConsentNeeded|:System.Boolean|static=false|accessor=getset",
@@ -189,12 +189,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::HasConsent:System.Boolean",
-          "clrName": "HasConsent",
+          "targetName": "HasConsent",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasConsent|:System.Boolean|static=false|accessor=getset",
@@ -208,12 +208,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::IssueCookie:System.Boolean",
-          "clrName": "IssueCookie",
+          "targetName": "IssueCookie",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IssueCookie|:System.Boolean|static=false|accessor=getset",
@@ -227,8 +227,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         }
       ],
       "fields": [],
@@ -242,15 +242,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
-      "clrName": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
-      "assemblyName": "Microsoft.AspNetCore.CookiePolicy",
+      "targetName": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
+      "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -260,12 +260,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "clrName": "Invoke",
+          "targetName": "Invoke",
           "metadataToken": 100663345,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
@@ -279,15 +279,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy",
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware::Options:Microsoft.AspNetCore.Builder.CookiePolicyOptions",
-          "clrName": "Options",
+          "targetName": "Options",
           "metadataToken": 385875984,
           "canonicalSignature": ":Microsoft.AspNetCore.Builder.CookiePolicyOptions",
           "normalizedSignature": "Options|:Microsoft.AspNetCore.Builder.CookiePolicyOptions|static=false|accessor=getset",
@@ -301,8 +301,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         }
       ],
       "fields": [],
@@ -316,8 +316,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.CookiePolicyOptions,Microsoft.AspNetCore.CookiePolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
@@ -327,15 +327,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
-      "clrName": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
-      "assemblyName": "Microsoft.AspNetCore.CookiePolicy",
+      "targetName": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
+      "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -345,13 +345,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::Context:Microsoft.AspNetCore.Http.HttpContext",
-          "clrName": "Context",
+          "targetName": "Context",
           "metadataToken": 385875985,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.HttpContext",
           "normalizedSignature": "Context|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=get",
@@ -365,12 +365,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::CookieOptions:Microsoft.AspNetCore.Http.CookieOptions",
-          "clrName": "CookieOptions",
+          "targetName": "CookieOptions",
           "metadataToken": 385875986,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.CookieOptions",
           "normalizedSignature": "CookieOptions|:Microsoft.AspNetCore.Http.CookieOptions|static=false|accessor=get",
@@ -384,12 +384,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::CookieName:System.String",
-          "clrName": "CookieName",
+          "targetName": "CookieName",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CookieName|:System.String|static=false|accessor=getset",
@@ -403,12 +403,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::IsConsentNeeded:System.Boolean",
-          "clrName": "IsConsentNeeded",
+          "targetName": "IsConsentNeeded",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsConsentNeeded|:System.Boolean|static=false|accessor=getset",
@@ -422,12 +422,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::HasConsent:System.Boolean",
-          "clrName": "HasConsent",
+          "targetName": "HasConsent",
           "metadataToken": 385875989,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasConsent|:System.Boolean|static=false|accessor=getset",
@@ -441,12 +441,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::IssueCookie:System.Boolean",
-          "clrName": "IssueCookie",
+          "targetName": "IssueCookie",
           "metadataToken": 385875990,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IssueCookie|:System.Boolean|static=false|accessor=getset",
@@ -460,8 +460,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         }
       ],
       "fields": [],
@@ -475,8 +475,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
+          "ownerIdentity": "Microsoft.AspNetCore.CookiePolicy"
         }
       ]
     }

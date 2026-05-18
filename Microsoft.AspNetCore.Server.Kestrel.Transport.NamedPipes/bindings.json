@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext::NamedPipeEndPoint:Microsoft.AspNetCore.Connections.NamedPipeEndPoint",
-          "clrName": "NamedPipeEndPoint",
+          "targetName": "NamedPipeEndPoint",
           "metadataToken": 385875999,
           "canonicalSignature": ":Microsoft.AspNetCore.Connections.NamedPipeEndPoint",
           "normalizedSignature": "NamedPipeEndPoint|:Microsoft.AspNetCore.Connections.NamedPipeEndPoint|static=false|accessor=getset",
@@ -37,12 +37,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext::PipeOptions:System.IO.Pipes.PipeOptions",
-          "clrName": "PipeOptions",
+          "targetName": "PipeOptions",
           "metadataToken": 385876000,
           "canonicalSignature": ":System.IO.Pipes.PipeOptions",
           "normalizedSignature": "PipeOptions|:System.IO.Pipes.PipeOptions|static=false|accessor=getset",
@@ -56,12 +56,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext::PipeSecurity:System.IO.Pipes.PipeSecurity",
-          "clrName": "PipeSecurity",
+          "targetName": "PipeSecurity",
           "metadataToken": 385876001,
           "canonicalSignature": ":System.IO.Pipes.PipeSecurity",
           "normalizedSignature": "PipeSecurity|:System.IO.Pipes.PipeSecurity|static=false|accessor=getset",
@@ -75,8 +75,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         }
       ],
       "fields": [],
@@ -90,15 +90,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -108,12 +108,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions::CreateDefaultNamedPipeServerStream(Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext):System.IO.Pipes.NamedPipeServerStream",
-          "clrName": "CreateDefaultNamedPipeServerStream",
+          "targetName": "CreateDefaultNamedPipeServerStream",
           "metadataToken": 100663453,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext):System.IO.Pipes.NamedPipeServerStream",
           "normalizedSignature": "CreateDefaultNamedPipeServerStream|(Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext):System.IO.Pipes.NamedPipeServerStream|static=true",
@@ -127,15 +127,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions::ListenerQueueCount:System.Int32",
-          "clrName": "ListenerQueueCount",
+          "targetName": "ListenerQueueCount",
           "metadataToken": 385876002,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "ListenerQueueCount|:System.Int32|static=false|accessor=getset",
@@ -149,12 +149,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions::MaxReadBufferSize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "MaxReadBufferSize",
+          "targetName": "MaxReadBufferSize",
           "metadataToken": 385876003,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MaxReadBufferSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -168,12 +168,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions::MaxWriteBufferSize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "MaxWriteBufferSize",
+          "targetName": "MaxWriteBufferSize",
           "metadataToken": 385876004,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MaxWriteBufferSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -187,12 +187,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions::CurrentUserOnly:System.Boolean",
-          "clrName": "CurrentUserOnly",
+          "targetName": "CurrentUserOnly",
           "metadataToken": 385876005,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CurrentUserOnly|:System.Boolean|static=false|accessor=getset",
@@ -206,12 +206,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions::PipeSecurity:System.IO.Pipes.PipeSecurity",
-          "clrName": "PipeSecurity",
+          "targetName": "PipeSecurity",
           "metadataToken": 385876006,
           "canonicalSignature": ":System.IO.Pipes.PipeSecurity",
           "normalizedSignature": "PipeSecurity|:System.IO.Pipes.PipeSecurity|static=false|accessor=getset",
@@ -225,12 +225,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions::CreateNamedPipeServerStream:System.Func_2[[Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext,Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.IO.Pipes.NamedPipeServerStream,System.IO.Pipes,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
-          "clrName": "CreateNamedPipeServerStream",
+          "targetName": "CreateNamedPipeServerStream",
           "metadataToken": 385876007,
           "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext,Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.IO.Pipes.NamedPipeServerStream,System.IO.Pipes,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
           "normalizedSignature": "CreateNamedPipeServerStream|:System.Func_2[[Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext,Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.IO.Pipes.NamedPipeServerStream,System.IO.Pipes,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=getset",
@@ -244,8 +244,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         }
       ],
       "fields": [],
@@ -259,8 +259,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         }
       ]
     }

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionContent",
-      "clrName": "Microsoft.AspNetCore.Components.Sections.SectionContent",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Sections.SectionContent",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,22 +17,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
-          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+          "targetName": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionContent::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100664358,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -46,13 +46,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Sections.SectionContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Sections.SectionContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
-          "clrName": "Attach",
+          "targetName": "Attach",
           "metadataToken": 100664024,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "normalizedSignature": "Attach|(Microsoft.AspNetCore.Components.RenderHandle):System.Void|static=false",
@@ -66,14 +66,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
-          "clrName": "SetParametersAsync",
+          "targetName": "SetParametersAsync",
           "metadataToken": 100664025,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
           "normalizedSignature": "SetParametersAsync|(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task|static=false",
@@ -87,8 +87,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         }
@@ -96,7 +96,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionContent::SectionName:System.String",
-          "clrName": "SectionName",
+          "targetName": "SectionName",
           "metadataToken": 385876161,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "SectionName|:System.String|static=false|accessor=getset",
@@ -110,12 +110,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Sections.SectionContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Sections.SectionContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionContent::SectionId:System.Object",
-          "clrName": "SectionId",
+          "targetName": "SectionId",
           "metadataToken": 385876162,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "SectionId|:System.Object|static=false|accessor=getset",
@@ -129,12 +129,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Sections.SectionContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Sections.SectionContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionContent::ChildContent:Microsoft.AspNetCore.Components.RenderFragment",
-          "clrName": "ChildContent",
+          "targetName": "ChildContent",
           "metadataToken": 385876164,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.RenderFragment",
           "normalizedSignature": "ChildContent|:Microsoft.AspNetCore.Components.RenderFragment|static=false|accessor=getset",
@@ -148,8 +148,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Sections.SectionContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Sections.SectionContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ],
       "fields": [],
@@ -163,15 +163,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Sections.SectionContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Sections.SectionContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionOutlet",
-      "clrName": "Microsoft.AspNetCore.Components.Sections.SectionOutlet",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Sections.SectionOutlet",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -181,22 +181,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
-          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+          "targetName": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionOutlet::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100664370,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -210,13 +210,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Sections.SectionOutlet",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Sections.SectionOutlet",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
-          "clrName": "Attach",
+          "targetName": "Attach",
           "metadataToken": 100664024,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "normalizedSignature": "Attach|(Microsoft.AspNetCore.Components.RenderHandle):System.Void|static=false",
@@ -230,14 +230,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
-          "clrName": "SetParametersAsync",
+          "targetName": "SetParametersAsync",
           "metadataToken": 100664025,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
           "normalizedSignature": "SetParametersAsync|(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task|static=false",
@@ -251,8 +251,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         }
@@ -260,7 +260,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionOutlet::SectionName:System.String",
-          "clrName": "SectionName",
+          "targetName": "SectionName",
           "metadataToken": 385876165,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "SectionName|:System.String|static=false|accessor=getset",
@@ -274,12 +274,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Sections.SectionOutlet",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Sections.SectionOutlet",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionOutlet::SectionId:System.Object",
-          "clrName": "SectionId",
+          "targetName": "SectionId",
           "metadataToken": 385876166,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "SectionId|:System.Object|static=false|accessor=getset",
@@ -293,8 +293,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Sections.SectionOutlet",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Sections.SectionOutlet",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ],
       "fields": [],
@@ -308,8 +308,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Sections.SectionOutlet",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Sections.SectionOutlet",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ]
     }

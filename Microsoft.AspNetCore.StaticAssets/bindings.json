@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
-      "clrName": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
-      "assemblyName": "Microsoft.AspNetCore.StaticAssets",
+      "targetName": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
+      "ownerIdentity": "Microsoft.AspNetCore.StaticAssets",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor::Route:System.String",
-          "clrName": "Route",
+          "targetName": "Route",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Route|:System.String|static=false|accessor=getset",
@@ -37,12 +37,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor::AssetPath:System.String",
-          "clrName": "AssetPath",
+          "targetName": "AssetPath",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AssetPath|:System.String|static=false|accessor=getset",
@@ -56,12 +56,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor::Selectors:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetSelector,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Selectors",
+          "targetName": "Selectors",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetSelector,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Selectors|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetSelector,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -75,12 +75,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor::Properties:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetProperty,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Properties",
+          "targetName": "Properties",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetProperty,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Properties|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetProperty,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -94,12 +94,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor::ResponseHeaders:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "ResponseHeaders",
+          "targetName": "ResponseHeaders",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ResponseHeaders|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -113,8 +113,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         }
       ],
       "fields": [],
@@ -128,15 +128,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
-      "clrName": "Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
-      "assemblyName": "Microsoft.AspNetCore.StaticAssets",
+      "targetName": "Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
+      "ownerIdentity": "Microsoft.AspNetCore.StaticAssets",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -146,13 +146,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetProperty::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -166,12 +166,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetProperty::Value:System.String",
-          "clrName": "Value",
+          "targetName": "Value",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Value|:System.String|static=false|accessor=get",
@@ -185,8 +185,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         }
       ],
       "fields": [],
@@ -200,15 +200,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
-      "clrName": "Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
-      "assemblyName": "Microsoft.AspNetCore.StaticAssets",
+      "targetName": "Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
+      "ownerIdentity": "Microsoft.AspNetCore.StaticAssets",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -218,13 +218,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -238,12 +238,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader::Value:System.String",
-          "clrName": "Value",
+          "targetName": "Value",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Value|:System.String|static=false|accessor=get",
@@ -257,8 +257,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         }
       ],
       "fields": [],
@@ -272,15 +272,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
-      "clrName": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
-      "assemblyName": "Microsoft.AspNetCore.StaticAssets",
+      "targetName": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
+      "ownerIdentity": "Microsoft.AspNetCore.StaticAssets",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -290,13 +290,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetSelector::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -310,12 +310,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetSelector::Value:System.String",
-          "clrName": "Value",
+          "targetName": "Value",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Value|:System.String|static=false|accessor=get",
@@ -329,12 +329,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetSelector::Quality:System.String",
-          "clrName": "Quality",
+          "targetName": "Quality",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Quality|:System.String|static=false|accessor=get",
@@ -348,8 +348,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         }
       ],
       "fields": [],
@@ -363,15 +363,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder",
-      "clrName": "Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder",
-      "assemblyName": "Microsoft.AspNetCore.StaticAssets",
+      "targetName": "Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder",
+      "ownerIdentity": "Microsoft.AspNetCore.StaticAssets",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -381,18 +381,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.IEndpointConventionBuilder",
-          "clrName": "Microsoft.AspNetCore.Builder.IEndpointConventionBuilder"
+          "targetName": "Microsoft.AspNetCore.Builder.IEndpointConventionBuilder"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder::Add(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663381,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "Add|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -406,13 +406,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets",
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder::Finally(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "clrName": "Finally",
+          "targetName": "Finally",
           "metadataToken": 100663382,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -426,13 +426,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets",
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.IEndpointConventionBuilder::Add(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663432,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "Add|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -446,8 +446,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.IEndpointConventionBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.IEndpointConventionBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Builder.IEndpointConventionBuilder"
         }

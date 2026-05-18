@@ -8,8 +8,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Metadata:Microsoft.AspNetCore.Authorization.IAllowAnonymous",
-      "clrName": "Microsoft.AspNetCore.Authorization.IAllowAnonymous",
-      "assemblyName": "Microsoft.AspNetCore.Metadata",
+      "targetName": "Microsoft.AspNetCore.Authorization.IAllowAnonymous",
+      "ownerIdentity": "Microsoft.AspNetCore.Metadata",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -25,8 +25,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator",
-      "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -37,7 +37,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator::Evaluate(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):Microsoft.AspNetCore.Authorization.AuthorizationResult",
-          "clrName": "Evaluate",
+          "targetName": "Evaluate",
           "metadataToken": 100663441,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):Microsoft.AspNetCore.Authorization.AuthorizationResult",
           "normalizedSignature": "Evaluate|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):Microsoft.AspNetCore.Authorization.AuthorizationResult|static=false",
@@ -51,8 +51,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
@@ -63,8 +63,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
-      "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -75,7 +75,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandler::HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
-          "clrName": "HandleAsync",
+          "targetName": "HandleAsync",
           "metadataToken": 100663442,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleAsync|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task|static=false",
@@ -89,8 +89,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
@@ -101,8 +101,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory",
-      "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -113,7 +113,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory::CreateContext(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Claims.ClaimsPrincipal,System.Object):Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "clrName": "CreateContext",
+          "targetName": "CreateContext",
           "metadataToken": 100663443,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Claims.ClaimsPrincipal,System.Object):Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
           "normalizedSignature": "CreateContext|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Claims.ClaimsPrincipal,System.Object):Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext|static=false",
@@ -127,8 +127,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
@@ -139,8 +139,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider",
-      "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -151,7 +151,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider::GetHandlersAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task_1[[System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationHandler,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetHandlersAsync",
+          "targetName": "GetHandlersAsync",
           "metadataToken": 100663444,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task_1[[System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationHandler,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetHandlersAsync|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task_1[[System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationHandler,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -165,8 +165,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
@@ -177,8 +177,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization.Policy:Microsoft.AspNetCore.Authorization.IAuthorizationMiddlewareResultHandler",
-      "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationMiddlewareResultHandler",
-      "assemblyName": "Microsoft.AspNetCore.Authorization.Policy",
+      "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationMiddlewareResultHandler",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization.Policy",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -189,7 +189,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization.Policy:Microsoft.AspNetCore.Authorization.IAuthorizationMiddlewareResultHandler::HandleAsync(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult):System.Threading.Tasks.Task",
-          "clrName": "HandleAsync",
+          "targetName": "HandleAsync",
           "metadataToken": 100663325,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleAsync|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult):System.Threading.Tasks.Task|static=false",
@@ -203,8 +203,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationMiddlewareResultHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization.Policy",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationMiddlewareResultHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization.Policy",
           "isExtensionMethod": false
         }
       ],
@@ -215,8 +215,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-      "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -227,7 +227,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider::GetPolicyAsync(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetPolicyAsync",
+          "targetName": "GetPolicyAsync",
           "metadataToken": 100663445,
           "canonicalSignature": "(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetPolicyAsync|(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -241,13 +241,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider::GetDefaultPolicyAsync():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetDefaultPolicyAsync",
+          "targetName": "GetDefaultPolicyAsync",
           "metadataToken": 100663446,
           "canonicalSignature": "():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetDefaultPolicyAsync|():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -261,15 +261,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider::AllowsCachingPolicies:System.Boolean",
-          "clrName": "AllowsCachingPolicies",
+          "targetName": "AllowsCachingPolicies",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "AllowsCachingPolicies|:System.Boolean|static=false|accessor=get",
@@ -283,8 +283,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ],
       "fields": [],
@@ -293,8 +293,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationRequirement",
-      "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationRequirement",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationRequirement",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -310,8 +310,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationRequirementData",
-      "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationRequirementData",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationRequirementData",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -322,7 +322,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationRequirementData::GetRequirements():System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetRequirements",
+          "targetName": "GetRequirements",
           "metadataToken": 100663449,
           "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetRequirements|():System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -336,8 +336,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationRequirementData",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationRequirementData",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
@@ -348,8 +348,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationService",
-      "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationService",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationService",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -360,7 +360,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationService::AuthorizeAsync(System.Security.Claims.ClaimsPrincipal,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthorizeAsync",
+          "targetName": "AuthorizeAsync",
           "metadataToken": 100663450,
           "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthorizeAsync|(System.Security.Claims.ClaimsPrincipal,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -374,13 +374,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationService",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationService",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationService::AuthorizeAsync(System.Security.Claims.ClaimsPrincipal,System.Object,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthorizeAsync",
+          "targetName": "AuthorizeAsync",
           "metadataToken": 100663451,
           "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,System.Object,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthorizeAsync|(System.Security.Claims.ClaimsPrincipal,System.Object,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -394,8 +394,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationService",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationService",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
@@ -406,8 +406,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Metadata:Microsoft.AspNetCore.Authorization.IAuthorizeData",
-      "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
-      "assemblyName": "Microsoft.AspNetCore.Metadata",
+      "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
+      "ownerIdentity": "Microsoft.AspNetCore.Metadata",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -419,7 +419,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Metadata:Microsoft.AspNetCore.Authorization.IAuthorizeData::Policy:System.String",
-          "clrName": "Policy",
+          "targetName": "Policy",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Policy|:System.String|static=false|accessor=getset",
@@ -433,12 +433,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Metadata"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
+          "ownerIdentity": "Microsoft.AspNetCore.Metadata"
         },
         {
           "stableId": "Microsoft.AspNetCore.Metadata:Microsoft.AspNetCore.Authorization.IAuthorizeData::Roles:System.String",
-          "clrName": "Roles",
+          "targetName": "Roles",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Roles|:System.String|static=false|accessor=getset",
@@ -452,12 +452,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Metadata"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
+          "ownerIdentity": "Microsoft.AspNetCore.Metadata"
         },
         {
           "stableId": "Microsoft.AspNetCore.Metadata:Microsoft.AspNetCore.Authorization.IAuthorizeData::AuthenticationSchemes:System.String",
-          "clrName": "AuthenticationSchemes",
+          "targetName": "AuthenticationSchemes",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AuthenticationSchemes|:System.String|static=false|accessor=getset",
@@ -471,8 +471,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Metadata"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
+          "ownerIdentity": "Microsoft.AspNetCore.Metadata"
         }
       ],
       "fields": [],
@@ -481,8 +481,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute",
-      "clrName": "Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -492,18 +492,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Metadata:Microsoft.AspNetCore.Authorization.IAllowAnonymous",
-          "clrName": "Microsoft.AspNetCore.Authorization.IAllowAnonymous"
+          "targetName": "Microsoft.AspNetCore.Authorization.IAllowAnonymous"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663311,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -517,8 +517,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
@@ -534,15 +534,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -552,12 +552,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationBuilder::SetInvokeHandlersAfterFailure(System.Boolean):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "clrName": "SetInvokeHandlersAfterFailure",
+          "targetName": "SetInvokeHandlersAfterFailure",
           "metadataToken": 100663315,
           "canonicalSignature": "(System.Boolean):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
           "normalizedSignature": "SetInvokeHandlersAfterFailure|(System.Boolean):Microsoft.AspNetCore.Authorization.AuthorizationBuilder|static=false",
@@ -571,13 +571,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationBuilder::SetDefaultPolicy(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "clrName": "SetDefaultPolicy",
+          "targetName": "SetDefaultPolicy",
           "metadataToken": 100663316,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
           "normalizedSignature": "SetDefaultPolicy|(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder|static=false",
@@ -591,13 +591,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationBuilder::SetFallbackPolicy(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "clrName": "SetFallbackPolicy",
+          "targetName": "SetFallbackPolicy",
           "metadataToken": 100663317,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
           "normalizedSignature": "SetFallbackPolicy|(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder|static=false",
@@ -611,13 +611,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationBuilder::AddPolicy(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "clrName": "AddPolicy",
+          "targetName": "AddPolicy",
           "metadataToken": 100663318,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
           "normalizedSignature": "AddPolicy|(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder|static=false",
@@ -631,13 +631,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationBuilder::AddPolicy(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "clrName": "AddPolicy",
+          "targetName": "AddPolicy",
           "metadataToken": 100663319,
           "canonicalSignature": "(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
           "normalizedSignature": "AddPolicy|(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationBuilder|static=false",
@@ -651,13 +651,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationBuilder::AddDefaultPolicy(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "clrName": "AddDefaultPolicy",
+          "targetName": "AddDefaultPolicy",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
           "normalizedSignature": "AddDefaultPolicy|(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder|static=false",
@@ -671,13 +671,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationBuilder::AddDefaultPolicy(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "clrName": "AddDefaultPolicy",
+          "targetName": "AddDefaultPolicy",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
           "normalizedSignature": "AddDefaultPolicy|(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationBuilder|static=false",
@@ -691,13 +691,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationBuilder::AddFallbackPolicy(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "clrName": "AddFallbackPolicy",
+          "targetName": "AddFallbackPolicy",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
           "normalizedSignature": "AddFallbackPolicy|(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationBuilder|static=false",
@@ -711,13 +711,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationBuilder::AddFallbackPolicy(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "clrName": "AddFallbackPolicy",
+          "targetName": "AddFallbackPolicy",
           "metadataToken": 100663323,
           "canonicalSignature": "(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
           "normalizedSignature": "AddFallbackPolicy|(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationBuilder|static=false",
@@ -731,15 +731,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationBuilder::Services:Microsoft.Extensions.DependencyInjection.IServiceCollection",
-          "clrName": "Services",
+          "targetName": "Services",
           "metadataToken": 385875969,
           "canonicalSignature": ":Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "Services|:Microsoft.Extensions.DependencyInjection.IServiceCollection|static=false|accessor=get",
@@ -753,8 +753,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ],
       "fields": [],
@@ -768,15 +768,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -786,12 +786,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationFailure::ExplicitFail():Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-          "clrName": "ExplicitFail",
+          "targetName": "ExplicitFail",
           "metadataToken": 100663331,
           "canonicalSignature": "():Microsoft.AspNetCore.Authorization.AuthorizationFailure",
           "normalizedSignature": "ExplicitFail|():Microsoft.AspNetCore.Authorization.AuthorizationFailure|static=true",
@@ -805,13 +805,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationFailure::Failed(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationFailureReason,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-          "clrName": "Failed",
+          "targetName": "Failed",
           "metadataToken": 100663332,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationFailureReason,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationFailure",
           "normalizedSignature": "Failed|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationFailureReason,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationFailure|static=true",
@@ -825,13 +825,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationFailure::Failed(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-          "clrName": "Failed",
+          "targetName": "Failed",
           "metadataToken": 100663333,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationFailure",
           "normalizedSignature": "Failed|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationFailure|static=true",
@@ -845,15 +845,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationFailure::FailCalled:System.Boolean",
-          "clrName": "FailCalled",
+          "targetName": "FailCalled",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "FailCalled|:System.Boolean|static=false|accessor=getset",
@@ -867,12 +867,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationFailure::FailedRequirements:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "FailedRequirements",
+          "targetName": "FailedRequirements",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "FailedRequirements|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -886,12 +886,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationFailure::FailureReasons:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationFailureReason,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "FailureReasons",
+          "targetName": "FailureReasons",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationFailureReason,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "FailureReasons|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationFailureReason,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -905,8 +905,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationFailure",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ],
       "fields": [],
@@ -915,8 +915,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationFailureReason",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationFailureReason",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationFailureReason",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -926,13 +926,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationFailureReason::Message:System.String",
-          "clrName": "Message",
+          "targetName": "Message",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Message|:System.String|static=false|accessor=get",
@@ -946,12 +946,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationFailureReason",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationFailureReason",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationFailureReason::Handler:Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
-          "clrName": "Handler",
+          "targetName": "Handler",
           "metadataToken": 385875974,
           "canonicalSignature": ":Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
           "normalizedSignature": "Handler|:Microsoft.AspNetCore.Authorization.IAuthorizationHandler|static=false|accessor=get",
@@ -965,8 +965,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationFailureReason",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationFailureReason",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ],
       "fields": [],
@@ -980,15 +980,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationFailureReason",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationFailureReason",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
-      "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00601",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00601",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler`1",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationHandler`1",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -998,12 +998,12 @@
       "arity": 1,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
-          "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler"
+          "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler"
         }
       ],
       "typeParameters": [
@@ -1011,8 +1011,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00601::HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
-          "clrName": "HandleAsync",
+          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler`1::HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
+          "targetName": "HandleAsync",
           "metadataToken": 100663338,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleAsync|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task|static=false",
@@ -1026,13 +1026,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandler`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00601::HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,TRequirement):System.Threading.Tasks.Task",
-          "clrName": "HandleRequirementAsync",
+          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler`1::HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,TRequirement):System.Threading.Tasks.Task",
+          "targetName": "HandleRequirementAsync",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,TRequirement):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleRequirementAsync|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,TRequirement):System.Threading.Tasks.Task|static=false",
@@ -1046,13 +1046,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandler`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandler::HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
-          "clrName": "HandleAsync",
+          "targetName": "HandleAsync",
           "metadataToken": 100663442,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleAsync|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task|static=false",
@@ -1066,8 +1066,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler"
         }
@@ -1077,22 +1077,22 @@
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00601::.ctor():void",
+          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler`1::.ctor():void",
           "metadataToken": 100663340,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandler`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
-      "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00602",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00602",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler`2",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationHandler`2",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1102,12 +1102,12 @@
       "arity": 2,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
-          "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler"
+          "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler"
         }
       ],
       "typeParameters": [
@@ -1116,8 +1116,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00602::HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
-          "clrName": "HandleAsync",
+          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler`2::HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
+          "targetName": "HandleAsync",
           "metadataToken": 100663341,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleAsync|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task|static=false",
@@ -1131,13 +1131,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandler`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00602::HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,TRequirement,TResource):System.Threading.Tasks.Task",
-          "clrName": "HandleRequirementAsync",
+          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler`2::HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,TRequirement,TResource):System.Threading.Tasks.Task",
+          "targetName": "HandleRequirementAsync",
           "metadataToken": 100663342,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,TRequirement,TResource):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleRequirementAsync|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,TRequirement,TResource):System.Threading.Tasks.Task|static=false",
@@ -1151,13 +1151,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandler`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandler::HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
-          "clrName": "HandleAsync",
+          "targetName": "HandleAsync",
           "metadataToken": 100663442,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleAsync|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task|static=false",
@@ -1171,8 +1171,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizationHandler"
         }
@@ -1182,22 +1182,22 @@
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00602::.ctor():void",
+          "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandler`2::.ctor():void",
           "metadataToken": 100663343,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandler\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandler`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1207,12 +1207,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext::Fail():System.Void",
-          "clrName": "Fail",
+          "targetName": "Fail",
           "metadataToken": 100663352,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Fail|():System.Void|static=false",
@@ -1226,13 +1226,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext::Fail(Microsoft.AspNetCore.Authorization.AuthorizationFailureReason):System.Void",
-          "clrName": "Fail",
+          "targetName": "Fail",
           "metadataToken": 100663353,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationFailureReason):System.Void",
           "normalizedSignature": "Fail|(Microsoft.AspNetCore.Authorization.AuthorizationFailureReason):System.Void|static=false",
@@ -1246,13 +1246,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext::Succeed(Microsoft.AspNetCore.Authorization.IAuthorizationRequirement):System.Void",
-          "clrName": "Succeed",
+          "targetName": "Succeed",
           "metadataToken": 100663354,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.IAuthorizationRequirement):System.Void",
           "normalizedSignature": "Succeed|(Microsoft.AspNetCore.Authorization.IAuthorizationRequirement):System.Void|static=false",
@@ -1266,15 +1266,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext::Requirements:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Requirements",
+          "targetName": "Requirements",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Requirements|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -1288,12 +1288,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext::User:System.Security.Claims.ClaimsPrincipal",
-          "clrName": "User",
+          "targetName": "User",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.Security.Claims.ClaimsPrincipal",
           "normalizedSignature": "User|:System.Security.Claims.ClaimsPrincipal|static=false|accessor=get",
@@ -1307,12 +1307,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext::Resource:System.Object",
-          "clrName": "Resource",
+          "targetName": "Resource",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Resource|:System.Object|static=false|accessor=get",
@@ -1326,12 +1326,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext::PendingRequirements:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "PendingRequirements",
+          "targetName": "PendingRequirements",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "PendingRequirements|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -1345,12 +1345,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext::FailureReasons:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationFailureReason,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "FailureReasons",
+          "targetName": "FailureReasons",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationFailureReason,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "FailureReasons|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationFailureReason,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -1364,12 +1364,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext::HasFailed:System.Boolean",
-          "clrName": "HasFailed",
+          "targetName": "HasFailed",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasFailed|:System.Boolean|static=false|accessor=get",
@@ -1383,12 +1383,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext::HasSucceeded:System.Boolean",
-          "clrName": "HasSucceeded",
+          "targetName": "HasSucceeded",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasSucceeded|:System.Boolean|static=false|accessor=get",
@@ -1402,8 +1402,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ],
       "fields": [],
@@ -1417,15 +1417,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization.Policy:Microsoft.AspNetCore.Authorization.AuthorizationMiddleware",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware",
-      "assemblyName": "Microsoft.AspNetCore.Authorization.Policy",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization.Policy",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1435,12 +1435,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization.Policy:Microsoft.AspNetCore.Authorization.AuthorizationMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "clrName": "Invoke",
+          "targetName": "Invoke",
           "metadataToken": 100663323,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
@@ -1454,8 +1454,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization.Policy",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization.Policy",
           "isExtensionMethod": false
         }
       ],
@@ -1471,8 +1471,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization.Policy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization.Policy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization.Policy:Microsoft.AspNetCore.Authorization.AuthorizationMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.IServiceProvider,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.Authorization.AuthorizationMiddleware,Microsoft.AspNetCore.Authorization.Policy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
@@ -1482,8 +1482,8 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization.Policy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization.Policy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization.Policy:Microsoft.AspNetCore.Authorization.AuthorizationMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.IServiceProvider):void",
@@ -1493,15 +1493,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization.Policy"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization.Policy"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationOptions",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1511,12 +1511,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationOptions::AddPolicy(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):System.Void",
-          "clrName": "AddPolicy",
+          "targetName": "AddPolicy",
           "metadataToken": 100663365,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):System.Void",
           "normalizedSignature": "AddPolicy|(System.String,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):System.Void|static=false",
@@ -1530,13 +1530,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationOptions::AddPolicy(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "clrName": "AddPolicy",
+          "targetName": "AddPolicy",
           "metadataToken": 100663366,
           "canonicalSignature": "(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "AddPolicy|(System.String,System.Action_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -1550,13 +1550,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationOptions::GetPolicy(System.String):Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "clrName": "GetPolicy",
+          "targetName": "GetPolicy",
           "metadataToken": 100663367,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
           "normalizedSignature": "GetPolicy|(System.String):Microsoft.AspNetCore.Authorization.AuthorizationPolicy|static=false",
@@ -1570,15 +1570,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationOptions::InvokeHandlersAfterFailure:System.Boolean",
-          "clrName": "InvokeHandlersAfterFailure",
+          "targetName": "InvokeHandlersAfterFailure",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "InvokeHandlersAfterFailure|:System.Boolean|static=false|accessor=getset",
@@ -1592,12 +1592,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationOptions::DefaultPolicy:Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "clrName": "DefaultPolicy",
+          "targetName": "DefaultPolicy",
           "metadataToken": 385875984,
           "canonicalSignature": ":Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
           "normalizedSignature": "DefaultPolicy|:Microsoft.AspNetCore.Authorization.AuthorizationPolicy|static=false|accessor=getset",
@@ -1611,12 +1611,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationOptions::FallbackPolicy:Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "clrName": "FallbackPolicy",
+          "targetName": "FallbackPolicy",
           "metadataToken": 385875985,
           "canonicalSignature": ":Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
           "normalizedSignature": "FallbackPolicy|:Microsoft.AspNetCore.Authorization.AuthorizationPolicy|static=false|accessor=getset",
@@ -1630,8 +1630,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ],
       "fields": [],
@@ -1645,15 +1645,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1663,12 +1663,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicy::Combine(Microsoft.AspNetCore.Authorization.AuthorizationPolicy[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "clrName": "Combine",
+          "targetName": "Combine",
           "metadataToken": 100663374,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationPolicy[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
           "normalizedSignature": "Combine|(Microsoft.AspNetCore.Authorization.AuthorizationPolicy[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicy|static=true",
@@ -1682,13 +1682,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicy::Combine(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "clrName": "Combine",
+          "targetName": "Combine",
           "metadataToken": 100663375,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
           "normalizedSignature": "Combine|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicy|static=true",
@@ -1702,13 +1702,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicy::CombineAsync(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "CombineAsync",
+          "targetName": "CombineAsync",
           "metadataToken": 100663376,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "CombineAsync|(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
@@ -1722,13 +1722,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicy::CombineAsync(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "CombineAsync",
+          "targetName": "CombineAsync",
           "metadataToken": 100663377,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "CombineAsync|(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
@@ -1742,15 +1742,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicy::Requirements:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Requirements",
+          "targetName": "Requirements",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Requirements|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -1764,12 +1764,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicy::AuthenticationSchemes:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AuthenticationSchemes",
+          "targetName": "AuthenticationSchemes",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AuthenticationSchemes|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -1783,8 +1783,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ],
       "fields": [],
@@ -1798,15 +1798,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1816,12 +1816,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::AddAuthenticationSchemes(System.String[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "AddAuthenticationSchemes",
+          "targetName": "AddAuthenticationSchemes",
           "metadataToken": 100663384,
           "canonicalSignature": "(System.String[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "AddAuthenticationSchemes|(System.String[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -1835,13 +1835,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::AddRequirements(Microsoft.AspNetCore.Authorization.IAuthorizationRequirement[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "AddRequirements",
+          "targetName": "AddRequirements",
           "metadataToken": 100663386,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.IAuthorizationRequirement[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "AddRequirements|(Microsoft.AspNetCore.Authorization.IAuthorizationRequirement[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -1855,13 +1855,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::Combine(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "Combine",
+          "targetName": "Combine",
           "metadataToken": 100663388,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "Combine|(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -1875,13 +1875,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::RequireClaim(System.String,System.String[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "RequireClaim",
+          "targetName": "RequireClaim",
           "metadataToken": 100663389,
           "canonicalSignature": "(System.String,System.String[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "RequireClaim|(System.String,System.String[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -1895,13 +1895,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::RequireClaim(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "RequireClaim",
+          "targetName": "RequireClaim",
           "metadataToken": 100663390,
           "canonicalSignature": "(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "RequireClaim|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -1915,13 +1915,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::RequireClaim(System.String):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "RequireClaim",
+          "targetName": "RequireClaim",
           "metadataToken": 100663391,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "RequireClaim|(System.String):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -1935,13 +1935,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::RequireRole(System.String[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "RequireRole",
+          "targetName": "RequireRole",
           "metadataToken": 100663392,
           "canonicalSignature": "(System.String[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "RequireRole|(System.String[]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -1955,13 +1955,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::RequireRole(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "RequireRole",
+          "targetName": "RequireRole",
           "metadataToken": 100663393,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "RequireRole|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -1975,13 +1975,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::RequireUserName(System.String):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "RequireUserName",
+          "targetName": "RequireUserName",
           "metadataToken": 100663394,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "RequireUserName|(System.String):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -1995,13 +1995,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::RequireAuthenticatedUser():Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "RequireAuthenticatedUser",
+          "targetName": "RequireAuthenticatedUser",
           "metadataToken": 100663395,
           "canonicalSignature": "():Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "RequireAuthenticatedUser|():Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -2015,13 +2015,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::RequireAssertion(System.Func_2[[Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "RequireAssertion",
+          "targetName": "RequireAssertion",
           "metadataToken": 100663396,
           "canonicalSignature": "(System.Func_2[[Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "RequireAssertion|(System.Func_2[[Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -2035,13 +2035,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::RequireAssertion(System.Func_2[[Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "clrName": "RequireAssertion",
+          "targetName": "RequireAssertion",
           "metadataToken": 100663397,
           "canonicalSignature": "(System.Func_2[[Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
           "normalizedSignature": "RequireAssertion|(System.Func_2[[Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder|static=false",
@@ -2055,13 +2055,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::Build():Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663398,
           "canonicalSignature": "():Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
           "normalizedSignature": "Build|():Microsoft.AspNetCore.Authorization.AuthorizationPolicy|static=false",
@@ -2075,15 +2075,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::Requirements:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Requirements",
+          "targetName": "Requirements",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Requirements|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -2097,12 +2097,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::AuthenticationSchemes:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AuthenticationSchemes",
+          "targetName": "AuthenticationSchemes",
           "metadataToken": 385875989,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AuthenticationSchemes|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -2116,8 +2116,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ],
       "fields": [],
@@ -2131,8 +2131,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder::.ctor(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):void",
@@ -2142,15 +2142,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationResult",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2160,12 +2160,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationResult::Success():Microsoft.AspNetCore.Authorization.AuthorizationResult",
-          "clrName": "Success",
+          "targetName": "Success",
           "metadataToken": 100663405,
           "canonicalSignature": "():Microsoft.AspNetCore.Authorization.AuthorizationResult",
           "normalizedSignature": "Success|():Microsoft.AspNetCore.Authorization.AuthorizationResult|static=true",
@@ -2179,13 +2179,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationResult::Failed(Microsoft.AspNetCore.Authorization.AuthorizationFailure):Microsoft.AspNetCore.Authorization.AuthorizationResult",
-          "clrName": "Failed",
+          "targetName": "Failed",
           "metadataToken": 100663406,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationFailure):Microsoft.AspNetCore.Authorization.AuthorizationResult",
           "normalizedSignature": "Failed|(Microsoft.AspNetCore.Authorization.AuthorizationFailure):Microsoft.AspNetCore.Authorization.AuthorizationResult|static=true",
@@ -2199,13 +2199,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationResult::Failed():Microsoft.AspNetCore.Authorization.AuthorizationResult",
-          "clrName": "Failed",
+          "targetName": "Failed",
           "metadataToken": 100663407,
           "canonicalSignature": "():Microsoft.AspNetCore.Authorization.AuthorizationResult",
           "normalizedSignature": "Failed|():Microsoft.AspNetCore.Authorization.AuthorizationResult|static=true",
@@ -2219,15 +2219,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationResult::Succeeded:System.Boolean",
-          "clrName": "Succeeded",
+          "targetName": "Succeeded",
           "metadataToken": 385875990,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Succeeded|:System.Boolean|static=false|accessor=getset",
@@ -2241,12 +2241,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationResult::Failure:Microsoft.AspNetCore.Authorization.AuthorizationFailure",
-          "clrName": "Failure",
+          "targetName": "Failure",
           "metadataToken": 385875991,
           "canonicalSignature": ":Microsoft.AspNetCore.Authorization.AuthorizationFailure",
           "normalizedSignature": "Failure|:Microsoft.AspNetCore.Authorization.AuthorizationFailure|static=false|accessor=getset",
@@ -2260,8 +2260,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ],
       "fields": [],
@@ -2270,8 +2270,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2281,18 +2281,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Metadata:Microsoft.AspNetCore.Authorization.IAuthorizeData",
-          "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizeData"
+          "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizeData"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizeAttribute::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663421,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -2306,15 +2306,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizeAttribute::Policy:System.String",
-          "clrName": "Policy",
+          "targetName": "Policy",
           "metadataToken": 385875992,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Policy|:System.String|static=false|accessor=getset",
@@ -2328,12 +2328,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizeAttribute::Roles:System.String",
-          "clrName": "Roles",
+          "targetName": "Roles",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Roles|:System.String|static=false|accessor=getset",
@@ -2347,12 +2347,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizeAttribute::AuthenticationSchemes:System.String",
-          "clrName": "AuthenticationSchemes",
+          "targetName": "AuthenticationSchemes",
           "metadataToken": 385875994,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AuthenticationSchemes|:System.String|static=false|accessor=getset",
@@ -2366,12 +2366,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Metadata:Microsoft.AspNetCore.Authorization.IAuthorizeData::Policy:System.String",
-          "clrName": "Policy",
+          "targetName": "Policy",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Policy|:System.String|static=false|accessor=getset",
@@ -2386,12 +2386,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Metadata"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
+          "ownerIdentity": "Microsoft.AspNetCore.Metadata"
         },
         {
           "stableId": "Microsoft.AspNetCore.Metadata:Microsoft.AspNetCore.Authorization.IAuthorizeData::Roles:System.String",
-          "clrName": "Roles",
+          "targetName": "Roles",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Roles|:System.String|static=false|accessor=getset",
@@ -2406,12 +2406,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Metadata"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
+          "ownerIdentity": "Microsoft.AspNetCore.Metadata"
         },
         {
           "stableId": "Microsoft.AspNetCore.Metadata:Microsoft.AspNetCore.Authorization.IAuthorizeData::AuthenticationSchemes:System.String",
-          "clrName": "AuthenticationSchemes",
+          "targetName": "AuthenticationSchemes",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AuthenticationSchemes|:System.String|static=false|accessor=getset",
@@ -2426,8 +2426,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Metadata"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizeData",
+          "ownerIdentity": "Microsoft.AspNetCore.Metadata"
         }
       ],
       "fields": [],
@@ -2441,8 +2441,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizeAttribute::.ctor(System.String):void",
@@ -2452,15 +2452,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizeAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationEvaluator",
-      "clrName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationEvaluator",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationEvaluator",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2470,18 +2470,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator",
-          "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator"
+          "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationEvaluator::Evaluate(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):Microsoft.AspNetCore.Authorization.AuthorizationResult",
-          "clrName": "Evaluate",
+          "targetName": "Evaluate",
           "metadataToken": 100663422,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):Microsoft.AspNetCore.Authorization.AuthorizationResult",
           "normalizedSignature": "Evaluate|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):Microsoft.AspNetCore.Authorization.AuthorizationResult|static=false",
@@ -2495,13 +2495,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationEvaluator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationEvaluator",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator::Evaluate(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):Microsoft.AspNetCore.Authorization.AuthorizationResult",
-          "clrName": "Evaluate",
+          "targetName": "Evaluate",
           "metadataToken": 100663441,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):Microsoft.AspNetCore.Authorization.AuthorizationResult",
           "normalizedSignature": "Evaluate|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):Microsoft.AspNetCore.Authorization.AuthorizationResult|static=false",
@@ -2515,8 +2515,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator"
         }
@@ -2533,15 +2533,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationEvaluator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationEvaluator",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerContextFactory",
-      "clrName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerContextFactory",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerContextFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2551,18 +2551,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory",
-          "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory"
+          "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerContextFactory::CreateContext(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Claims.ClaimsPrincipal,System.Object):Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "clrName": "CreateContext",
+          "targetName": "CreateContext",
           "metadataToken": 100663424,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Claims.ClaimsPrincipal,System.Object):Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
           "normalizedSignature": "CreateContext|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Claims.ClaimsPrincipal,System.Object):Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext|static=false",
@@ -2576,13 +2576,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerContextFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerContextFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory::CreateContext(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Claims.ClaimsPrincipal,System.Object):Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
-          "clrName": "CreateContext",
+          "targetName": "CreateContext",
           "metadataToken": 100663443,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Claims.ClaimsPrincipal,System.Object):Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext",
           "normalizedSignature": "CreateContext|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Claims.ClaimsPrincipal,System.Object):Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext|static=false",
@@ -2596,8 +2596,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory"
         }
@@ -2614,15 +2614,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerContextFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerContextFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider",
-      "clrName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2632,18 +2632,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider",
-          "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider"
+          "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider::GetHandlersAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task_1[[System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationHandler,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetHandlersAsync",
+          "targetName": "GetHandlersAsync",
           "metadataToken": 100663427,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task_1[[System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationHandler,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetHandlersAsync|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task_1[[System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationHandler,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -2657,13 +2657,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider::GetHandlersAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task_1[[System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationHandler,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetHandlersAsync",
+          "targetName": "GetHandlersAsync",
           "metadataToken": 100663444,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task_1[[System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationHandler,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetHandlersAsync|(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):System.Threading.Tasks.Task_1[[System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationHandler,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -2677,8 +2677,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider"
         }
@@ -2695,15 +2695,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
-      "clrName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2713,18 +2713,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-          "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider"
+          "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider::GetDefaultPolicyAsync():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetDefaultPolicyAsync",
+          "targetName": "GetDefaultPolicyAsync",
           "metadataToken": 100663429,
           "canonicalSignature": "():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetDefaultPolicyAsync|():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -2738,13 +2738,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider::GetFallbackPolicyAsync():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetFallbackPolicyAsync",
+          "targetName": "GetFallbackPolicyAsync",
           "metadataToken": 100663430,
           "canonicalSignature": "():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetFallbackPolicyAsync|():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -2758,13 +2758,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider::GetPolicyAsync(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetPolicyAsync",
+          "targetName": "GetPolicyAsync",
           "metadataToken": 100663431,
           "canonicalSignature": "(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetPolicyAsync|(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -2778,13 +2778,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider::GetPolicyAsync(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetPolicyAsync",
+          "targetName": "GetPolicyAsync",
           "metadataToken": 100663445,
           "canonicalSignature": "(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetPolicyAsync|(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -2798,14 +2798,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider::GetDefaultPolicyAsync():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetDefaultPolicyAsync",
+          "targetName": "GetDefaultPolicyAsync",
           "metadataToken": 100663446,
           "canonicalSignature": "():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetDefaultPolicyAsync|():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -2819,8 +2819,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider"
         }
@@ -2828,7 +2828,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider::AllowsCachingPolicies:System.Boolean",
-          "clrName": "AllowsCachingPolicies",
+          "targetName": "AllowsCachingPolicies",
           "metadataToken": 385875995,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "AllowsCachingPolicies|:System.Boolean|static=false|accessor=get",
@@ -2842,12 +2842,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider::AllowsCachingPolicies:System.Boolean",
-          "clrName": "AllowsCachingPolicies",
+          "targetName": "AllowsCachingPolicies",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "AllowsCachingPolicies|:System.Boolean|static=false|accessor=get",
@@ -2862,8 +2862,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ],
       "fields": [],
@@ -2877,15 +2877,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService",
-      "clrName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationService",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationService",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2895,18 +2895,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationService",
-          "clrName": "Microsoft.AspNetCore.Authorization.IAuthorizationService"
+          "targetName": "Microsoft.AspNetCore.Authorization.IAuthorizationService"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService::AuthorizeAsync(System.Security.Claims.ClaimsPrincipal,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthorizeAsync",
+          "targetName": "AuthorizeAsync",
           "metadataToken": 100663434,
           "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthorizeAsync|(System.Security.Claims.ClaimsPrincipal,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -2920,13 +2920,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationService",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationService",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService::AuthorizeAsync(System.Security.Claims.ClaimsPrincipal,System.Object,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthorizeAsync",
+          "targetName": "AuthorizeAsync",
           "metadataToken": 100663435,
           "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,System.Object,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthorizeAsync|(System.Security.Claims.ClaimsPrincipal,System.Object,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -2940,13 +2940,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationService",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationService",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationService::AuthorizeAsync(System.Security.Claims.ClaimsPrincipal,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthorizeAsync",
+          "targetName": "AuthorizeAsync",
           "metadataToken": 100663450,
           "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthorizeAsync|(System.Security.Claims.ClaimsPrincipal,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizationRequirement,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -2960,14 +2960,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationService",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationService",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizationService"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.IAuthorizationService::AuthorizeAsync(System.Security.Claims.ClaimsPrincipal,System.Object,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthorizeAsync",
+          "targetName": "AuthorizeAsync",
           "metadataToken": 100663451,
           "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,System.Object,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthorizeAsync|(System.Security.Claims.ClaimsPrincipal,System.Object,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -2981,8 +2981,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.IAuthorizationService",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.IAuthorizationService",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authorization.IAuthorizationService"
         }
@@ -2999,15 +2999,15 @@
           "isStatic": false,
           "parameterCount": 6,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationService",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.DefaultAuthorizationService",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions",
-      "clrName": "Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Authorization",
+      "targetName": "Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Authorization",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -3017,12 +3017,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions::AuthorizeAsync(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,System.Object,Microsoft.AspNetCore.Authorization.IAuthorizationRequirement):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthorizeAsync",
+          "targetName": "AuthorizeAsync",
           "metadataToken": 100663409,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,System.Object,Microsoft.AspNetCore.Authorization.IAuthorizationRequirement):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthorizeAsync|(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,System.Object,Microsoft.AspNetCore.Authorization.IAuthorizationRequirement):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
@@ -3036,13 +3036,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions::AuthorizeAsync(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,System.Object,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthorizeAsync",
+          "targetName": "AuthorizeAsync",
           "metadataToken": 100663410,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,System.Object,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthorizeAsync|(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,System.Object,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
@@ -3056,13 +3056,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions::AuthorizeAsync(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthorizeAsync",
+          "targetName": "AuthorizeAsync",
           "metadataToken": 100663411,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthorizeAsync|(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Authorization.AuthorizationPolicy):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
@@ -3076,13 +3076,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions::AuthorizeAsync(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthorizeAsync",
+          "targetName": "AuthorizeAsync",
           "metadataToken": 100663412,
           "canonicalSignature": "(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthorizeAsync|(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Security.Claims.ClaimsPrincipal,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authorization.AuthorizationResult,Microsoft.AspNetCore.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
@@ -3096,8 +3096,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": true
         }
       ],

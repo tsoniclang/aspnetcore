@@ -14,8 +14,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IApplicationLifetime",
-      "clrName": "Microsoft.AspNetCore.Hosting.IApplicationLifetime",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -26,7 +26,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IApplicationLifetime::StopApplication():System.Void",
-          "clrName": "StopApplication",
+          "targetName": "StopApplication",
           "metadataToken": 100663320,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "StopApplication|():System.Void|static=false",
@@ -40,15 +40,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IApplicationLifetime::ApplicationStarted:System.Threading.CancellationToken",
-          "clrName": "ApplicationStarted",
+          "targetName": "ApplicationStarted",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "ApplicationStarted|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -62,12 +62,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IApplicationLifetime::ApplicationStopping:System.Threading.CancellationToken",
-          "clrName": "ApplicationStopping",
+          "targetName": "ApplicationStopping",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "ApplicationStopping|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -81,12 +81,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IApplicationLifetime::ApplicationStopped:System.Threading.CancellationToken",
-          "clrName": "ApplicationStopped",
+          "targetName": "ApplicationStopped",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "ApplicationStopped|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -100,8 +100,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -110,8 +110,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
-      "clrName": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -123,7 +123,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IHostingEnvironment::EnvironmentName:System.String",
-          "clrName": "EnvironmentName",
+          "targetName": "EnvironmentName",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "EnvironmentName|:System.String|static=false|accessor=getset",
@@ -137,12 +137,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IHostingEnvironment::ApplicationName:System.String",
-          "clrName": "ApplicationName",
+          "targetName": "ApplicationName",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ApplicationName|:System.String|static=false|accessor=getset",
@@ -156,12 +156,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IHostingEnvironment::WebRootPath:System.String",
-          "clrName": "WebRootPath",
+          "targetName": "WebRootPath",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "WebRootPath|:System.String|static=false|accessor=getset",
@@ -175,12 +175,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IHostingEnvironment::WebRootFileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
-          "clrName": "WebRootFileProvider",
+          "targetName": "WebRootFileProvider",
           "metadataToken": 385875976,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
           "normalizedSignature": "WebRootFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
@@ -194,12 +194,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IHostingEnvironment::ContentRootPath:System.String",
-          "clrName": "ContentRootPath",
+          "targetName": "ContentRootPath",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ContentRootPath|:System.String|static=false|accessor=getset",
@@ -213,12 +213,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IHostingEnvironment::ContentRootFileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
-          "clrName": "ContentRootFileProvider",
+          "targetName": "ContentRootFileProvider",
           "metadataToken": 385875978,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
           "normalizedSignature": "ContentRootFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
@@ -232,8 +232,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -242,8 +242,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IHostingStartup",
-      "clrName": "Microsoft.AspNetCore.Hosting.IHostingStartup",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.IHostingStartup",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -254,7 +254,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IHostingStartup::Configure(Microsoft.AspNetCore.Hosting.IWebHostBuilder):System.Void",
-          "clrName": "Configure",
+          "targetName": "Configure",
           "metadataToken": 100663333,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder):System.Void",
           "normalizedSignature": "Configure|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):System.Void|static=false",
@@ -268,8 +268,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IHostingStartup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IHostingStartup",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -280,8 +280,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup",
-      "clrName": "Microsoft.AspNetCore.Hosting.IStartup",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.IStartup",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -292,7 +292,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
           "normalizedSignature": "ConfigureServices|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider|static=false",
@@ -306,13 +306,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IStartup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IStartup",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
-          "clrName": "Configure",
+          "targetName": "Configure",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
           "normalizedSignature": "Configure|(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void|static=false",
@@ -326,8 +326,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IStartup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IStartup",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -337,9 +337,9 @@
       "constructors": []
     },
     {
-      "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartupConfigureContainerFilter\u00601",
-      "clrName": "Microsoft.AspNetCore.Hosting.IStartupConfigureContainerFilter\u00601",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartupConfigureContainerFilter`1",
+      "targetName": "Microsoft.AspNetCore.Hosting.IStartupConfigureContainerFilter`1",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -352,8 +352,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartupConfigureContainerFilter\u00601::ConfigureContainer(Action_1):Action_1",
-          "clrName": "ConfigureContainer",
+          "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartupConfigureContainerFilter`1::ConfigureContainer(Action_1):Action_1",
+          "targetName": "ConfigureContainer",
           "metadataToken": 100663336,
           "canonicalSignature": "(Action_1):Action_1",
           "normalizedSignature": "ConfigureContainer|(Action_1):Action_1|static=false",
@@ -367,8 +367,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IStartupConfigureContainerFilter\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IStartupConfigureContainerFilter`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -379,8 +379,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartupConfigureServicesFilter",
-      "clrName": "Microsoft.AspNetCore.Hosting.IStartupConfigureServicesFilter",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.IStartupConfigureServicesFilter",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -391,7 +391,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartupConfigureServicesFilter::ConfigureServices(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663337,
           "canonicalSignature": "(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ConfigureServices|(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -405,8 +405,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IStartupConfigureServicesFilter",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IStartupConfigureServicesFilter",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -417,8 +417,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartupFilter",
-      "clrName": "Microsoft.AspNetCore.Hosting.IStartupFilter",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.IStartupFilter",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -429,7 +429,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartupFilter::Configure(System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Configure",
+          "targetName": "Configure",
           "metadataToken": 100663338,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Configure|(System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -443,8 +443,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IStartupFilter",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IStartupFilter",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -455,8 +455,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHost",
-      "clrName": "Microsoft.AspNetCore.Hosting.IWebHost",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.IWebHost",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -467,13 +467,13 @@
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHost::Start():System.Void",
-          "clrName": "Start",
+          "targetName": "Start",
           "metadataToken": 100663341,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Start|():System.Void|static=false",
@@ -487,13 +487,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHost",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHost",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHost::StartAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "StartAsync",
+          "targetName": "StartAsync",
           "metadataToken": 100663342,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "StartAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -507,15 +507,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHost",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHost",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHost::ServerFeatures:Microsoft.AspNetCore.Http.Features.IFeatureCollection",
-          "clrName": "ServerFeatures",
+          "targetName": "ServerFeatures",
           "metadataToken": 385875979,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "normalizedSignature": "ServerFeatures|:Microsoft.AspNetCore.Http.Features.IFeatureCollection|static=false|accessor=get",
@@ -529,12 +529,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHost",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHost",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHost::Services:System.IServiceProvider",
-          "clrName": "Services",
+          "targetName": "Services",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.IServiceProvider",
           "normalizedSignature": "Services|:System.IServiceProvider|static=false|accessor=get",
@@ -548,8 +548,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHost",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHost",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -558,8 +558,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-      "clrName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -570,7 +570,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder::Build():Microsoft.AspNetCore.Hosting.IWebHost",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663344,
           "canonicalSignature": "():Microsoft.AspNetCore.Hosting.IWebHost",
           "normalizedSignature": "Build|():Microsoft.AspNetCore.Hosting.IWebHost|static=false",
@@ -584,13 +584,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder::ConfigureAppConfiguration(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureAppConfiguration",
+          "targetName": "ConfigureAppConfiguration",
           "metadataToken": 100663345,
           "canonicalSignature": "(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureAppConfiguration|(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
@@ -604,13 +604,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder::ConfigureServices(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663346,
           "canonicalSignature": "(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureServices|(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
@@ -624,13 +624,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder::GetSetting(System.String):System.String",
-          "clrName": "GetSetting",
+          "targetName": "GetSetting",
           "metadataToken": 100663348,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "GetSetting|(System.String):System.String|static=false",
@@ -644,13 +644,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder::UseSetting(System.String,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseSetting",
+          "targetName": "UseSetting",
           "metadataToken": 100663349,
           "canonicalSignature": "(System.String,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseSetting|(System.String,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
@@ -664,8 +664,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -676,8 +676,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostEnvironment",
-      "clrName": "Microsoft.AspNetCore.Hosting.IWebHostEnvironment",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.IWebHostEnvironment",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -688,14 +688,14 @@
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostEnvironment",
-          "clrName": "Microsoft.Extensions.Hosting.IHostEnvironment"
+          "targetName": "Microsoft.Extensions.Hosting.IHostEnvironment"
         }
       ],
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostEnvironment::WebRootPath:System.String",
-          "clrName": "WebRootPath",
+          "targetName": "WebRootPath",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "WebRootPath|:System.String|static=false|accessor=getset",
@@ -709,12 +709,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostEnvironment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostEnvironment",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostEnvironment::WebRootFileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
-          "clrName": "WebRootFileProvider",
+          "targetName": "WebRootFileProvider",
           "metadataToken": 385875982,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
           "normalizedSignature": "WebRootFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
@@ -728,8 +728,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostEnvironment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostEnvironment",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -738,8 +738,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.DelegateStartup",
-      "clrName": "Microsoft.AspNetCore.Hosting.DelegateStartup",
-      "assemblyName": "Microsoft.AspNetCore.Hosting",
+      "targetName": "Microsoft.AspNetCore.Hosting.DelegateStartup",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -748,8 +748,8 @@
       "isStatic": false,
       "arity": 0,
       "baseType": {
-        "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase\u00601",
-        "clrName": "Microsoft.AspNetCore.Hosting.StartupBase\u00601",
+        "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase`1",
+        "targetName": "Microsoft.AspNetCore.Hosting.StartupBase`1",
         "typeArguments": [
           "IServiceCollection"
         ]
@@ -757,13 +757,13 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup",
-          "clrName": "Microsoft.AspNetCore.Hosting.IStartup"
+          "targetName": "Microsoft.AspNetCore.Hosting.IStartup"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.DelegateStartup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
-          "clrName": "Configure",
+          "targetName": "Configure",
           "metadataToken": 100663720,
           "canonicalSignature": "(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
           "normalizedSignature": "Configure|(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void|static=false",
@@ -777,13 +777,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.DelegateStartup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.DelegateStartup",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
           "normalizedSignature": "ConfigureServices|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider|static=false",
@@ -797,14 +797,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IStartup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IStartup",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Hosting.IStartup"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
-          "clrName": "Configure",
+          "targetName": "Configure",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
           "normalizedSignature": "Configure|(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void|static=false",
@@ -818,8 +818,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IStartup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IStartup",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Hosting.IStartup"
         }
@@ -836,15 +836,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.DelegateStartup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.DelegateStartup",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingStartupAttribute",
-      "clrName": "Microsoft.AspNetCore.Hosting.HostingStartupAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.HostingStartupAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -854,13 +854,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingStartupAttribute::HostingStartupType:System.Type",
-          "clrName": "HostingStartupType",
+          "targetName": "HostingStartupType",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "HostingStartupType|:System.Type|static=false|accessor=get",
@@ -874,8 +874,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingStartupAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingStartupAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -889,15 +889,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingStartupAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingStartupAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase",
-      "clrName": "Microsoft.AspNetCore.Hosting.StartupBase",
-      "assemblyName": "Microsoft.AspNetCore.Hosting",
+      "targetName": "Microsoft.AspNetCore.Hosting.StartupBase",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -907,18 +907,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup",
-          "clrName": "Microsoft.AspNetCore.Hosting.IStartup"
+          "targetName": "Microsoft.AspNetCore.Hosting.IStartup"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
-          "clrName": "Configure",
+          "targetName": "Configure",
           "metadataToken": 100663721,
           "canonicalSignature": "(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
           "normalizedSignature": "Configure|(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void|static=false",
@@ -932,13 +932,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.StartupBase",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.StartupBase",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663723,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
           "normalizedSignature": "ConfigureServices|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=false",
@@ -952,13 +952,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.StartupBase",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.StartupBase",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase::CreateServiceProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
-          "clrName": "CreateServiceProvider",
+          "targetName": "CreateServiceProvider",
           "metadataToken": 100663724,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
           "normalizedSignature": "CreateServiceProvider|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider|static=false",
@@ -972,13 +972,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.StartupBase",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.StartupBase",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
           "normalizedSignature": "ConfigureServices|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider|static=false",
@@ -992,14 +992,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IStartup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IStartup",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Hosting.IStartup"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
-          "clrName": "Configure",
+          "targetName": "Configure",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
           "normalizedSignature": "Configure|(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void|static=false",
@@ -1013,8 +1013,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IStartup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IStartup",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Hosting.IStartup"
         }
@@ -1031,15 +1031,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.StartupBase",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.StartupBase",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting"
         }
       ]
     },
     {
-      "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase\u00601",
-      "clrName": "Microsoft.AspNetCore.Hosting.StartupBase\u00601",
-      "assemblyName": "Microsoft.AspNetCore.Hosting",
+      "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase`1",
+      "targetName": "Microsoft.AspNetCore.Hosting.StartupBase`1",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1049,12 +1049,12 @@
       "arity": 1,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase",
-        "clrName": "Microsoft.AspNetCore.Hosting.StartupBase"
+        "targetName": "Microsoft.AspNetCore.Hosting.StartupBase"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup",
-          "clrName": "Microsoft.AspNetCore.Hosting.IStartup"
+          "targetName": "Microsoft.AspNetCore.Hosting.IStartup"
         }
       ],
       "typeParameters": [
@@ -1062,8 +1062,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase\u00601::CreateServiceProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
-          "clrName": "CreateServiceProvider",
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase`1::CreateServiceProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
+          "targetName": "CreateServiceProvider",
           "metadataToken": 100663727,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
           "normalizedSignature": "CreateServiceProvider|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider|static=false",
@@ -1077,13 +1077,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.StartupBase\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.StartupBase`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase\u00601::ConfigureContainer(TBuilder):System.Void",
-          "clrName": "ConfigureContainer",
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase`1::ConfigureContainer(TBuilder):System.Void",
+          "targetName": "ConfigureContainer",
           "metadataToken": 100663728,
           "canonicalSignature": "(TBuilder):System.Void",
           "normalizedSignature": "ConfigureContainer|(TBuilder):System.Void|static=false",
@@ -1097,13 +1097,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.StartupBase\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.StartupBase`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider",
           "normalizedSignature": "ConfigureServices|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.IServiceProvider|static=false",
@@ -1117,14 +1117,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IStartup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IStartup",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Hosting.IStartup"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IStartup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
-          "clrName": "Configure",
+          "targetName": "Configure",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void",
           "normalizedSignature": "Configure|(Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Void|static=false",
@@ -1138,8 +1138,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IStartup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IStartup",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Hosting.IStartup"
         }
@@ -1149,22 +1149,22 @@
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase\u00601::.ctor(IServiceProviderFactory_1):void",
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase`1::.ctor(IServiceProviderFactory_1):void",
           "metadataToken": 100663726,
           "canonicalSignature": "(IServiceProviderFactory_1):void",
           "normalizedSignature": "constructor|(IServiceProviderFactory_1):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.StartupBase\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.StartupBase`1",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilder",
-      "clrName": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
-      "assemblyName": "Microsoft.AspNetCore.Hosting",
+      "targetName": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1174,18 +1174,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder"
+          "targetName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilder::GetSetting(System.String):System.String",
-          "clrName": "GetSetting",
+          "targetName": "GetSetting",
           "metadataToken": 100663730,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "GetSetting|(System.String):System.String|static=false",
@@ -1199,13 +1199,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilder::UseSetting(System.String,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseSetting",
+          "targetName": "UseSetting",
           "metadataToken": 100663731,
           "canonicalSignature": "(System.String,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseSetting|(System.String,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
@@ -1219,13 +1219,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilder::ConfigureServices(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663732,
           "canonicalSignature": "(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureServices|(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
@@ -1239,13 +1239,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilder::ConfigureServices(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663733,
           "canonicalSignature": "(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureServices|(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
@@ -1259,13 +1259,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilder::ConfigureAppConfiguration(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureAppConfiguration",
+          "targetName": "ConfigureAppConfiguration",
           "metadataToken": 100663734,
           "canonicalSignature": "(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureAppConfiguration|(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
@@ -1279,13 +1279,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilder::Build():Microsoft.AspNetCore.Hosting.IWebHost",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663735,
           "canonicalSignature": "():Microsoft.AspNetCore.Hosting.IWebHost",
           "normalizedSignature": "Build|():Microsoft.AspNetCore.Hosting.IWebHost|static=false",
@@ -1299,13 +1299,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder::Build():Microsoft.AspNetCore.Hosting.IWebHost",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663344,
           "canonicalSignature": "():Microsoft.AspNetCore.Hosting.IWebHost",
           "normalizedSignature": "Build|():Microsoft.AspNetCore.Hosting.IWebHost|static=false",
@@ -1319,14 +1319,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Hosting.IWebHostBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder::ConfigureAppConfiguration(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureAppConfiguration",
+          "targetName": "ConfigureAppConfiguration",
           "metadataToken": 100663345,
           "canonicalSignature": "(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureAppConfiguration|(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
@@ -1340,14 +1340,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Hosting.IWebHostBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder::ConfigureServices(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663346,
           "canonicalSignature": "(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureServices|(System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
@@ -1361,14 +1361,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Hosting.IWebHostBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder::GetSetting(System.String):System.String",
-          "clrName": "GetSetting",
+          "targetName": "GetSetting",
           "metadataToken": 100663348,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "GetSetting|(System.String):System.String|static=false",
@@ -1382,14 +1382,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Hosting.IWebHostBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IWebHostBuilder::UseSetting(System.String,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseSetting",
+          "targetName": "UseSetting",
           "metadataToken": 100663349,
           "canonicalSignature": "(System.String,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseSetting|(System.String,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
@@ -1403,8 +1403,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Hosting.IWebHostBuilder"
         }
@@ -1421,15 +1421,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostBuilderContext",
-      "clrName": "Microsoft.AspNetCore.Hosting.WebHostBuilderContext",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.WebHostBuilderContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1439,13 +1439,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostBuilderContext::HostingEnvironment:Microsoft.AspNetCore.Hosting.IWebHostEnvironment",
-          "clrName": "HostingEnvironment",
+          "targetName": "HostingEnvironment",
           "metadataToken": 385875983,
           "canonicalSignature": ":Microsoft.AspNetCore.Hosting.IWebHostEnvironment",
           "normalizedSignature": "HostingEnvironment|:Microsoft.AspNetCore.Hosting.IWebHostEnvironment|static=false|accessor=getset",
@@ -1459,12 +1459,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostBuilderContext::Configuration:Microsoft.Extensions.Configuration.IConfiguration",
-          "clrName": "Configuration",
+          "targetName": "Configuration",
           "metadataToken": 385875984,
           "canonicalSignature": ":Microsoft.Extensions.Configuration.IConfiguration",
           "normalizedSignature": "Configuration|:Microsoft.Extensions.Configuration.IConfiguration|static=false|accessor=getset",
@@ -1478,8 +1478,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -1493,15 +1493,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.EnvironmentName",
-      "clrName": "Microsoft.AspNetCore.Hosting.EnvironmentName",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.EnvironmentName",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -1511,46 +1511,46 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.EnvironmentName::DevelopmentSystem.String",
-          "clrName": "Development",
+          "targetName": "Development",
           "metadataToken": 67108875,
           "normalizedSignature": "Development|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.EnvironmentName",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.EnvironmentName",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.EnvironmentName::StagingSystem.String",
-          "clrName": "Staging",
+          "targetName": "Staging",
           "metadataToken": 67108876,
           "normalizedSignature": "Staging|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.EnvironmentName",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.EnvironmentName",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.EnvironmentName::ProductionSystem.String",
-          "clrName": "Production",
+          "targetName": "Production",
           "metadataToken": 67108877,
           "normalizedSignature": "Production|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.EnvironmentName",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.EnvironmentName",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         }
       ],
       "events": [],
@@ -1558,8 +1558,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -1569,12 +1569,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::UseConfiguration(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.Extensions.Configuration.IConfiguration):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseConfiguration",
+          "targetName": "UseConfiguration",
           "metadataToken": 100663299,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.Extensions.Configuration.IConfiguration):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseConfiguration|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.Extensions.Configuration.IConfiguration):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -1588,13 +1588,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::CaptureStartupErrors(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Boolean):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "CaptureStartupErrors",
+          "targetName": "CaptureStartupErrors",
           "metadataToken": 100663300,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Boolean):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "CaptureStartupErrors|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Boolean):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -1608,13 +1608,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::UseStartup(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseStartup",
+          "targetName": "UseStartup",
           "metadataToken": 100663301,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseStartup|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -1628,13 +1628,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::UseServer(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.AspNetCore.Hosting.Server.IServer):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseServer",
+          "targetName": "UseServer",
           "metadataToken": 100663302,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.AspNetCore.Hosting.Server.IServer):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseServer|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.AspNetCore.Hosting.Server.IServer):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -1648,13 +1648,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::UseEnvironment(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseEnvironment",
+          "targetName": "UseEnvironment",
           "metadataToken": 100663303,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseEnvironment|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -1668,13 +1668,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::UseContentRoot(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseContentRoot",
+          "targetName": "UseContentRoot",
           "metadataToken": 100663304,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseContentRoot|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -1688,13 +1688,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::UseWebRoot(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseWebRoot",
+          "targetName": "UseWebRoot",
           "metadataToken": 100663305,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseWebRoot|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -1708,13 +1708,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::UseUrls(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String[]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseUrls",
+          "targetName": "UseUrls",
           "metadataToken": 100663306,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String[]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseUrls|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String[]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -1728,13 +1728,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::PreferHostingUrls(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Boolean):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "PreferHostingUrls",
+          "targetName": "PreferHostingUrls",
           "metadataToken": 100663307,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Boolean):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "PreferHostingUrls|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Boolean):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -1748,13 +1748,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::SuppressStatusMessages(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Boolean):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "SuppressStatusMessages",
+          "targetName": "SuppressStatusMessages",
           "metadataToken": 100663308,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Boolean):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "SuppressStatusMessages|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Boolean):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -1768,13 +1768,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::UseShutdownTimeout(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.TimeSpan):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseShutdownTimeout",
+          "targetName": "UseShutdownTimeout",
           "metadataToken": 100663309,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.TimeSpan):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseShutdownTimeout|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.TimeSpan):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -1788,13 +1788,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions::Start(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String[]):Microsoft.AspNetCore.Hosting.IWebHost",
-          "clrName": "Start",
+          "targetName": "Start",
           "metadataToken": 100663310,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String[]):Microsoft.AspNetCore.Hosting.IWebHost",
           "normalizedSignature": "Start|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String[]):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
@@ -1808,8 +1808,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         }
       ],
@@ -1820,8 +1820,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -1831,12 +1831,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions::IsDevelopment(Microsoft.AspNetCore.Hosting.IHostingEnvironment):System.Boolean",
-          "clrName": "IsDevelopment",
+          "targetName": "IsDevelopment",
           "metadataToken": 100663311,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IHostingEnvironment):System.Boolean",
           "normalizedSignature": "IsDevelopment|(Microsoft.AspNetCore.Hosting.IHostingEnvironment):System.Boolean|static=true",
@@ -1850,13 +1850,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions::IsStaging(Microsoft.AspNetCore.Hosting.IHostingEnvironment):System.Boolean",
-          "clrName": "IsStaging",
+          "targetName": "IsStaging",
           "metadataToken": 100663312,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IHostingEnvironment):System.Boolean",
           "normalizedSignature": "IsStaging|(Microsoft.AspNetCore.Hosting.IHostingEnvironment):System.Boolean|static=true",
@@ -1870,13 +1870,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions::IsProduction(Microsoft.AspNetCore.Hosting.IHostingEnvironment):System.Boolean",
-          "clrName": "IsProduction",
+          "targetName": "IsProduction",
           "metadataToken": 100663313,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IHostingEnvironment):System.Boolean",
           "normalizedSignature": "IsProduction|(Microsoft.AspNetCore.Hosting.IHostingEnvironment):System.Boolean|static=true",
@@ -1890,13 +1890,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions::IsEnvironment(Microsoft.AspNetCore.Hosting.IHostingEnvironment,System.String):System.Boolean",
-          "clrName": "IsEnvironment",
+          "targetName": "IsEnvironment",
           "metadataToken": 100663314,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IHostingEnvironment,System.String):System.Boolean",
           "normalizedSignature": "IsEnvironment|(Microsoft.AspNetCore.Hosting.IHostingEnvironment,System.String):System.Boolean|static=true",
@@ -1910,8 +1910,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
           "isExtensionMethod": true
         }
       ],
@@ -1922,8 +1922,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.KestrelServerOptionsSystemdExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.KestrelServerOptionsSystemdExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Hosting.KestrelServerOptionsSystemdExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -1933,12 +1933,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.KestrelServerOptionsSystemdExtensions::UseSystemd(Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions):Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
-          "clrName": "UseSystemd",
+          "targetName": "UseSystemd",
           "metadataToken": 100663859,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions):Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "normalizedSignature": "UseSystemd|(Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions):Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions|static=true",
@@ -1952,13 +1952,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.KestrelServerOptionsSystemdExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.KestrelServerOptionsSystemdExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.KestrelServerOptionsSystemdExtensions::UseSystemd(Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
-          "clrName": "UseSystemd",
+          "targetName": "UseSystemd",
           "metadataToken": 100663860,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "normalizedSignature": "UseSystemd|(Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions|static=true",
@@ -1972,8 +1972,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.KestrelServerOptionsSystemdExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.KestrelServerOptionsSystemdExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         }
       ],
@@ -1984,8 +1984,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsConnectionLoggingExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.ListenOptionsConnectionLoggingExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Hosting.ListenOptionsConnectionLoggingExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -1995,12 +1995,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsConnectionLoggingExtensions::UseConnectionLogging(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseConnectionLogging",
+          "targetName": "UseConnectionLogging",
           "metadataToken": 100663857,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseConnectionLogging|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2014,13 +2014,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsConnectionLoggingExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsConnectionLoggingExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsConnectionLoggingExtensions::UseConnectionLogging(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseConnectionLogging",
+          "targetName": "UseConnectionLogging",
           "metadataToken": 100663858,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseConnectionLogging|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2034,8 +2034,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsConnectionLoggingExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsConnectionLoggingExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         }
       ],
@@ -2046,8 +2046,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2057,12 +2057,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663842,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2076,13 +2076,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663843,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2096,13 +2096,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663844,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2116,13 +2116,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String,System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663845,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String,System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.String,System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2136,13 +2136,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663846,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2156,13 +2156,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String,System.Boolean):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663847,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String,System.Boolean):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String,System.Boolean):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2176,13 +2176,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String,System.Boolean,System.Security.Cryptography.X509Certificates.StoreLocation):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663848,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String,System.Boolean,System.Security.Cryptography.X509Certificates.StoreLocation):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String,System.Boolean,System.Security.Cryptography.X509Certificates.StoreLocation):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2196,13 +2196,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String,System.Boolean,System.Security.Cryptography.X509Certificates.StoreLocation,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663849,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String,System.Boolean,System.Security.Cryptography.X509Certificates.StoreLocation,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.StoreName,System.String,System.Boolean,System.Security.Cryptography.X509Certificates.StoreLocation,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2216,13 +2216,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663850,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2236,13 +2236,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663851,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2256,13 +2256,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663852,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2276,13 +2276,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663853,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2296,13 +2296,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Net.Security.ServerOptionsSelectionCallback,System.Object):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663854,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Net.Security.ServerOptionsSelectionCallback,System.Object):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Net.Security.ServerOptionsSelectionCallback,System.Object):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2316,13 +2316,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Net.Security.ServerOptionsSelectionCallback,System.Object,System.TimeSpan):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663855,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Net.Security.ServerOptionsSelectionCallback,System.Object,System.TimeSpan):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Net.Security.ServerOptionsSelectionCallback,System.Object,System.TimeSpan):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2336,13 +2336,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions::UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "UseHttps",
+          "targetName": "UseHttps",
           "metadataToken": 100663856,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "UseHttps|(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=true",
@@ -2356,8 +2356,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": true
         }
       ],
@@ -2368,8 +2368,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Hosting",
+      "targetName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2379,12 +2379,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions::Configure(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "Configure",
+          "targetName": "Configure",
           "metadataToken": 100663741,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "Configure|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2398,13 +2398,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions::Configure(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "Configure",
+          "targetName": "Configure",
           "metadataToken": 100663742,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "Configure|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2418,13 +2418,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions::UseStartup(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Func_2):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseStartup",
+          "targetName": "UseStartup",
           "metadataToken": 100663743,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Func_2):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseStartup|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Func_2):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2438,13 +2438,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions::UseStartup(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Type):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseStartup",
+          "targetName": "UseStartup",
           "metadataToken": 100663744,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Type):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseStartup|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Type):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2458,13 +2458,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions::UseStartup(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseStartup",
+          "targetName": "UseStartup",
           "metadataToken": 100663745,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseStartup|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2478,13 +2478,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions::UseDefaultServiceProvider(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseDefaultServiceProvider",
+          "targetName": "UseDefaultServiceProvider",
           "metadataToken": 100663746,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseDefaultServiceProvider|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2498,13 +2498,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions::UseDefaultServiceProvider(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseDefaultServiceProvider",
+          "targetName": "UseDefaultServiceProvider",
           "metadataToken": 100663747,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseDefaultServiceProvider|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2518,13 +2518,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions::ConfigureAppConfiguration(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureAppConfiguration",
+          "targetName": "ConfigureAppConfiguration",
           "metadataToken": 100663748,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureAppConfiguration|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2538,13 +2538,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions::ConfigureLogging(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureLogging",
+          "targetName": "ConfigureLogging",
           "metadataToken": 100663749,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureLogging|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2558,13 +2558,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions::ConfigureLogging(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureLogging",
+          "targetName": "ConfigureLogging",
           "metadataToken": 100663750,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureLogging|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2578,13 +2578,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions::UseStaticWebAssets(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseStaticWebAssets",
+          "targetName": "UseStaticWebAssets",
           "metadataToken": 100663751,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseStaticWebAssets|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2598,8 +2598,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         }
       ],
@@ -2610,8 +2610,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Server.IIS",
+      "targetName": "Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.IIS",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2621,12 +2621,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions::UseIIS(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseIIS",
+          "targetName": "UseIIS",
           "metadataToken": 100663320,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseIIS|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2640,8 +2640,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.IIS",
           "isExtensionMethod": true
         }
       ],
@@ -2652,8 +2652,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.IISIntegration:Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Server.IISIntegration",
+      "targetName": "Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.IISIntegration",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2663,12 +2663,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.IISIntegration:Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions::UseIISIntegration(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseIISIntegration",
+          "targetName": "UseIISIntegration",
           "metadataToken": 100663297,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseIISIntegration|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2682,8 +2682,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.IISIntegration",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderIISExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.IISIntegration",
           "isExtensionMethod": true
         }
       ],
@@ -2694,8 +2694,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel:Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel",
+      "targetName": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2705,12 +2705,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel:Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions::UseKestrelHttpsConfiguration(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseKestrelHttpsConfiguration",
+          "targetName": "UseKestrelHttpsConfiguration",
           "metadataToken": 100663297,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseKestrelHttpsConfiguration|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2724,13 +2724,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel:Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions::UseKestrel(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseKestrel",
+          "targetName": "UseKestrel",
           "metadataToken": 100663298,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseKestrel|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2744,13 +2744,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel:Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions::UseKestrelCore(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseKestrelCore",
+          "targetName": "UseKestrelCore",
           "metadataToken": 100663299,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseKestrelCore|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2764,13 +2764,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel:Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions::UseKestrel(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseKestrel",
+          "targetName": "UseKestrel",
           "metadataToken": 100663300,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseKestrel|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2784,13 +2784,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel:Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions::ConfigureKestrel(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureKestrel",
+          "targetName": "ConfigureKestrel",
           "metadataToken": 100663301,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureKestrel|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2804,13 +2804,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel:Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions::UseKestrel(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseKestrel",
+          "targetName": "UseKestrel",
           "metadataToken": 100663302,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseKestrel|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2824,13 +2824,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel:Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions::ConfigureKestrel(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "ConfigureKestrel",
+          "targetName": "ConfigureKestrel",
           "metadataToken": 100663303,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "ConfigureKestrel|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2844,8 +2844,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel",
           "isExtensionMethod": true
         }
       ],
@@ -2856,8 +2856,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Hosting.WebHostBuilderNamedPipeExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.WebHostBuilderNamedPipeExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
+      "targetName": "Microsoft.AspNetCore.Hosting.WebHostBuilderNamedPipeExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2867,12 +2867,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Hosting.WebHostBuilderNamedPipeExtensions::UseNamedPipes(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseNamedPipes",
+          "targetName": "UseNamedPipes",
           "metadataToken": 100663428,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseNamedPipes|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2886,13 +2886,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderNamedPipeExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderNamedPipeExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Hosting.WebHostBuilderNamedPipeExtensions::UseNamedPipes(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions,Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseNamedPipes",
+          "targetName": "UseNamedPipes",
           "metadataToken": 100663429,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions,Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseNamedPipes|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions,Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2906,8 +2906,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderNamedPipeExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderNamedPipeExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
           "isExtensionMethod": true
         }
       ],
@@ -2918,8 +2918,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Hosting.WebHostBuilderQuicExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.WebHostBuilderQuicExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic",
+      "targetName": "Microsoft.AspNetCore.Hosting.WebHostBuilderQuicExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2929,12 +2929,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Hosting.WebHostBuilderQuicExtensions::UseQuic(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseQuic",
+          "targetName": "UseQuic",
           "metadataToken": 100663500,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseQuic|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2948,13 +2948,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderQuicExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderQuicExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Hosting.WebHostBuilderQuicExtensions::UseQuic(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions,Microsoft.AspNetCore.Server.Kestrel.Transport.Quic,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseQuic",
+          "targetName": "UseQuic",
           "metadataToken": 100663501,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions,Microsoft.AspNetCore.Server.Kestrel.Transport.Quic,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseQuic|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions,Microsoft.AspNetCore.Server.Kestrel.Transport.Quic,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -2968,8 +2968,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderQuicExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderQuicExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic",
           "isExtensionMethod": true
         }
       ],
@@ -2980,8 +2980,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Hosting.WebHostBuilderSocketExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.WebHostBuilderSocketExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+      "targetName": "Microsoft.AspNetCore.Hosting.WebHostBuilderSocketExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2991,12 +2991,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Hosting.WebHostBuilderSocketExtensions::UseSockets(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseSockets",
+          "targetName": "UseSockets",
           "metadataToken": 100663346,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseSockets|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -3010,13 +3010,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderSocketExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderSocketExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets:Microsoft.AspNetCore.Hosting.WebHostBuilderSocketExtensions::UseSockets(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions,Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
-          "clrName": "UseSockets",
+          "targetName": "UseSockets",
           "metadataToken": 100663347,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions,Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "UseSockets|(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions,Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
@@ -3030,8 +3030,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostBuilderSocketExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostBuilderSocketExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
           "isExtensionMethod": true
         }
       ],
@@ -3042,8 +3042,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults",
-      "clrName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-      "assemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -3053,214 +3053,214 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::ApplicationKeySystem.String",
-          "clrName": "ApplicationKey",
+          "targetName": "ApplicationKey",
           "metadataToken": 67108881,
           "normalizedSignature": "ApplicationKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::StartupAssemblyKeySystem.String",
-          "clrName": "StartupAssemblyKey",
+          "targetName": "StartupAssemblyKey",
           "metadataToken": 67108882,
           "normalizedSignature": "StartupAssemblyKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::HostingStartupAssembliesKeySystem.String",
-          "clrName": "HostingStartupAssembliesKey",
+          "targetName": "HostingStartupAssembliesKey",
           "metadataToken": 67108883,
           "normalizedSignature": "HostingStartupAssembliesKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::HostingStartupExcludeAssembliesKeySystem.String",
-          "clrName": "HostingStartupExcludeAssembliesKey",
+          "targetName": "HostingStartupExcludeAssembliesKey",
           "metadataToken": 67108884,
           "normalizedSignature": "HostingStartupExcludeAssembliesKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::DetailedErrorsKeySystem.String",
-          "clrName": "DetailedErrorsKey",
+          "targetName": "DetailedErrorsKey",
           "metadataToken": 67108885,
           "normalizedSignature": "DetailedErrorsKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::EnvironmentKeySystem.String",
-          "clrName": "EnvironmentKey",
+          "targetName": "EnvironmentKey",
           "metadataToken": 67108886,
           "normalizedSignature": "EnvironmentKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::WebRootKeySystem.String",
-          "clrName": "WebRootKey",
+          "targetName": "WebRootKey",
           "metadataToken": 67108887,
           "normalizedSignature": "WebRootKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::CaptureStartupErrorsKeySystem.String",
-          "clrName": "CaptureStartupErrorsKey",
+          "targetName": "CaptureStartupErrorsKey",
           "metadataToken": 67108888,
           "normalizedSignature": "CaptureStartupErrorsKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::ServerUrlsKeySystem.String",
-          "clrName": "ServerUrlsKey",
+          "targetName": "ServerUrlsKey",
           "metadataToken": 67108889,
           "normalizedSignature": "ServerUrlsKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::HttpPortsKeySystem.String",
-          "clrName": "HttpPortsKey",
+          "targetName": "HttpPortsKey",
           "metadataToken": 67108890,
           "normalizedSignature": "HttpPortsKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::HttpsPortsKeySystem.String",
-          "clrName": "HttpsPortsKey",
+          "targetName": "HttpsPortsKey",
           "metadataToken": 67108891,
           "normalizedSignature": "HttpsPortsKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::ContentRootKeySystem.String",
-          "clrName": "ContentRootKey",
+          "targetName": "ContentRootKey",
           "metadataToken": 67108892,
           "normalizedSignature": "ContentRootKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::PreferHostingUrlsKeySystem.String",
-          "clrName": "PreferHostingUrlsKey",
+          "targetName": "PreferHostingUrlsKey",
           "metadataToken": 67108893,
           "normalizedSignature": "PreferHostingUrlsKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::PreventHostingStartupKeySystem.String",
-          "clrName": "PreventHostingStartupKey",
+          "targetName": "PreventHostingStartupKey",
           "metadataToken": 67108894,
           "normalizedSignature": "PreventHostingStartupKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::SuppressStatusMessagesKeySystem.String",
-          "clrName": "SuppressStatusMessagesKey",
+          "targetName": "SuppressStatusMessagesKey",
           "metadataToken": 67108895,
           "normalizedSignature": "SuppressStatusMessagesKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::ShutdownTimeoutKeySystem.String",
-          "clrName": "ShutdownTimeoutKey",
+          "targetName": "ShutdownTimeoutKey",
           "metadataToken": 67108896,
           "normalizedSignature": "ShutdownTimeoutKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.WebHostDefaults::StaticWebAssetsKeySystem.String",
-          "clrName": "StaticWebAssetsKey",
+          "targetName": "StaticWebAssetsKey",
           "metadataToken": 67108897,
           "normalizedSignature": "StaticWebAssetsKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting.Abstractions"
         }
       ],
       "events": [],
@@ -3268,8 +3268,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostExtensions",
-      "clrName": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Hosting",
+      "targetName": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -3279,12 +3279,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostExtensions::StopAsync(Microsoft.AspNetCore.Hosting.IWebHost,System.TimeSpan):System.Threading.Tasks.Task",
-          "clrName": "StopAsync",
+          "targetName": "StopAsync",
           "metadataToken": 100663752,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHost,System.TimeSpan):System.Threading.Tasks.Task",
           "normalizedSignature": "StopAsync|(Microsoft.AspNetCore.Hosting.IWebHost,System.TimeSpan):System.Threading.Tasks.Task|static=true",
@@ -3298,13 +3298,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostExtensions::WaitForShutdown(Microsoft.AspNetCore.Hosting.IWebHost):System.Void",
-          "clrName": "WaitForShutdown",
+          "targetName": "WaitForShutdown",
           "metadataToken": 100663753,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHost):System.Void",
           "normalizedSignature": "WaitForShutdown|(Microsoft.AspNetCore.Hosting.IWebHost):System.Void|static=true",
@@ -3318,13 +3318,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostExtensions::WaitForShutdownAsync(Microsoft.AspNetCore.Hosting.IWebHost,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "WaitForShutdownAsync",
+          "targetName": "WaitForShutdownAsync",
           "metadataToken": 100663754,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHost,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "WaitForShutdownAsync|(Microsoft.AspNetCore.Hosting.IWebHost,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=true",
@@ -3338,13 +3338,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostExtensions::Run(Microsoft.AspNetCore.Hosting.IWebHost):System.Void",
-          "clrName": "Run",
+          "targetName": "Run",
           "metadataToken": 100663755,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHost):System.Void",
           "normalizedSignature": "Run|(Microsoft.AspNetCore.Hosting.IWebHost):System.Void|static=true",
@@ -3358,13 +3358,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.WebHostExtensions::RunAsync(Microsoft.AspNetCore.Hosting.IWebHost,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RunAsync",
+          "targetName": "RunAsync",
           "metadataToken": 100663756,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHost,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RunAsync|(Microsoft.AspNetCore.Hosting.IWebHost,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=true",
@@ -3378,8 +3378,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.WebHostExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
         }
       ],

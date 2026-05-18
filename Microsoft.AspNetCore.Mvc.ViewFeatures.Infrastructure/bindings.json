@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
-      "clrName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+      "targetName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer::Deserialize(System.Byte[]):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Deserialize",
+          "targetName": "Deserialize",
           "metadataToken": 100664708,
           "canonicalSignature": "(System.Byte[]):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Deserialize|(System.Byte[]):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -36,13 +36,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer::Serialize(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Byte[]",
-          "clrName": "Serialize",
+          "targetName": "Serialize",
           "metadataToken": 100664709,
           "canonicalSignature": "(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Byte[]",
           "normalizedSignature": "Serialize|(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Byte[]|static=false",
@@ -56,13 +56,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer::CanSerializeType(System.Type):System.Boolean",
-          "clrName": "CanSerializeType",
+          "targetName": "CanSerializeType",
           "metadataToken": 100664710,
           "canonicalSignature": "(System.Type):System.Boolean",
           "normalizedSignature": "CanSerializeType|(System.Type):System.Boolean|static=false",
@@ -76,8 +76,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
         }
       ],
@@ -93,8 +93,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
       ]
     }

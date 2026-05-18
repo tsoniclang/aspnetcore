@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Localization.Routing:Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
-      "clrName": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
-      "assemblyName": "Microsoft.AspNetCore.Localization.Routing",
+      "targetName": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Localization.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,18 +17,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider",
-        "clrName": "Microsoft.AspNetCore.Localization.RequestCultureProvider"
+        "targetName": "Microsoft.AspNetCore.Localization.RequestCultureProvider"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider",
-          "clrName": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
+          "targetName": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization.Routing:Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "DetermineProviderCultureResult",
+          "targetName": "DetermineProviderCultureResult",
           "metadataToken": 100663301,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -42,13 +42,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Localization.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Localization.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "DetermineProviderCultureResult",
+          "targetName": "DetermineProviderCultureResult",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -62,8 +62,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
         }
@@ -71,7 +71,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Localization.Routing:Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider::RouteDataStringKey:System.String",
-          "clrName": "RouteDataStringKey",
+          "targetName": "RouteDataStringKey",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "RouteDataStringKey|:System.String|static=false|accessor=getset",
@@ -85,12 +85,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Localization.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Localization.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization.Routing:Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider::UIRouteDataStringKey:System.String",
-          "clrName": "UIRouteDataStringKey",
+          "targetName": "UIRouteDataStringKey",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "UIRouteDataStringKey|:System.String|static=false|accessor=getset",
@@ -104,8 +104,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Localization.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Localization.Routing"
         }
       ],
       "fields": [],
@@ -119,8 +119,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Localization.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Localization.Routing"
         }
       ]
     }

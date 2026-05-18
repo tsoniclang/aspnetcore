@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-      "clrName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::AddRootComponent(System.String,System.String):System.Int32",
-          "clrName": "AddRootComponent",
+          "targetName": "AddRootComponent",
           "metadataToken": 100663793,
           "canonicalSignature": "(System.String,System.String):System.Int32",
           "normalizedSignature": "AddRootComponent|(System.String,System.String):System.Int32|static=false",
@@ -36,13 +36,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::SetRootComponentParameters(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void",
-          "clrName": "SetRootComponentParameters",
+          "targetName": "SetRootComponentParameters",
           "metadataToken": 100663794,
           "canonicalSignature": "(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void",
           "normalizedSignature": "SetRootComponentParameters|(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void|static=false",
@@ -56,13 +56,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::RemoveRootComponent(System.Int32):System.Void",
-          "clrName": "RemoveRootComponent",
+          "targetName": "RemoveRootComponent",
           "metadataToken": 100663795,
           "canonicalSignature": "(System.Int32):System.Void",
           "normalizedSignature": "RemoveRootComponent|(System.Int32):System.Void|static=false",
@@ -76,8 +76,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         }
       ],
@@ -93,8 +93,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ]
     }
