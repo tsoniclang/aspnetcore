@@ -8,8 +8,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -19,24 +19,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -44,39 +44,39 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLinkMatch::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108929,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLinkMatch::PrefixMicrosoft.AspNetCore.Components.Routing.NavLinkMatch",
-          "clrName": "Prefix",
+          "targetName": "Prefix",
           "metadataToken": 67108930,
           "normalizedSignature": "Prefix|Microsoft.AspNetCore.Components.Routing.NavLinkMatch|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLinkMatch::AllMicrosoft.AspNetCore.Components.Routing.NavLinkMatch",
-          "clrName": "All",
+          "targetName": "All",
           "metadataToken": 67108931,
           "normalizedSignature": "All|Microsoft.AspNetCore.Components.Routing.NavLinkMatch|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ],
       "events": [],
@@ -84,8 +84,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.IHostEnvironmentNavigationManager",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.IHostEnvironmentNavigationManager",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.IHostEnvironmentNavigationManager",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -96,7 +96,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.IHostEnvironmentNavigationManager::Initialize(System.String,System.String):System.Void",
-          "clrName": "Initialize",
+          "targetName": "Initialize",
           "metadataToken": 100664382,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Initialize|(System.String,System.String):System.Void|static=false",
@@ -110,13 +110,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.IHostEnvironmentNavigationManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.IHostEnvironmentNavigationManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.IHostEnvironmentNavigationManager::Initialize(System.String,System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "Initialize",
+          "targetName": "Initialize",
           "metadataToken": 100664383,
           "canonicalSignature": "(System.String,System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "Initialize|(System.String,System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -130,8 +130,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.IHostEnvironmentNavigationManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.IHostEnvironmentNavigationManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         }
       ],
@@ -142,8 +142,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.INavigationInterception",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.INavigationInterception",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.INavigationInterception",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -154,7 +154,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.INavigationInterception::EnableNavigationInterceptionAsync():System.Threading.Tasks.Task",
-          "clrName": "EnableNavigationInterceptionAsync",
+          "targetName": "EnableNavigationInterceptionAsync",
           "metadataToken": 100664384,
           "canonicalSignature": "():System.Threading.Tasks.Task",
           "normalizedSignature": "EnableNavigationInterceptionAsync|():System.Threading.Tasks.Task|static=false",
@@ -168,8 +168,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.INavigationInterception",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.INavigationInterception",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         }
       ],
@@ -180,8 +180,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.IRoutingStateProvider",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.IRoutingStateProvider",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.IRoutingStateProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -193,7 +193,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.IRoutingStateProvider::RouteData:Microsoft.AspNetCore.Components.RouteData",
-          "clrName": "RouteData",
+          "targetName": "RouteData",
           "metadataToken": 385876168,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.RouteData",
           "normalizedSignature": "RouteData|:Microsoft.AspNetCore.Components.RouteData|static=false|accessor=get",
@@ -207,8 +207,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.IRoutingStateProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.IRoutingStateProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ],
       "fields": [],
@@ -217,8 +217,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.IScrollToLocationHash",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.IScrollToLocationHash",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.IScrollToLocationHash",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -229,7 +229,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.IScrollToLocationHash::RefreshScrollPositionForHash(System.String):System.Threading.Tasks.Task",
-          "clrName": "RefreshScrollPositionForHash",
+          "targetName": "RefreshScrollPositionForHash",
           "metadataToken": 100664386,
           "canonicalSignature": "(System.String):System.Threading.Tasks.Task",
           "normalizedSignature": "RefreshScrollPositionForHash|(System.String):System.Threading.Tasks.Task|static=false",
@@ -243,8 +243,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.IScrollToLocationHash",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.IScrollToLocationHash",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         }
       ],
@@ -255,8 +255,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -266,26 +266,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase",
-        "clrName": "Microsoft.AspNetCore.Components.ComponentBase"
+        "targetName": "Microsoft.AspNetCore.Components.ComponentBase"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
-          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+          "targetName": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent",
-          "clrName": "Microsoft.AspNetCore.Components.IHandleEvent"
+          "targetName": "Microsoft.AspNetCore.Components.IHandleEvent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
-          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+          "targetName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.FocusOnNavigate::OnParametersSet():System.Void",
-          "clrName": "OnParametersSet",
+          "targetName": "OnParametersSet",
           "metadataToken": 100663374,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "OnParametersSet|():System.Void|static=false",
@@ -299,13 +299,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.FocusOnNavigate::BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
-          "clrName": "BuildRenderTree",
+          "targetName": "BuildRenderTree",
           "metadataToken": 100663375,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
           "normalizedSignature": "BuildRenderTree|(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void|static=false",
@@ -319,13 +319,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.FocusOnNavigate::OnAfterRenderAsync(System.Boolean):System.Threading.Tasks.Task",
-          "clrName": "OnAfterRenderAsync",
+          "targetName": "OnAfterRenderAsync",
           "metadataToken": 100663376,
           "canonicalSignature": "(System.Boolean):System.Threading.Tasks.Task",
           "normalizedSignature": "OnAfterRenderAsync|(System.Boolean):System.Threading.Tasks.Task|static=false",
@@ -339,13 +339,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
-          "clrName": "Attach",
+          "targetName": "Attach",
           "metadataToken": 100664024,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "normalizedSignature": "Attach|(Microsoft.AspNetCore.Components.RenderHandle):System.Void|static=false",
@@ -359,14 +359,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
-          "clrName": "SetParametersAsync",
+          "targetName": "SetParametersAsync",
           "metadataToken": 100664025,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
           "normalizedSignature": "SetParametersAsync|(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task|static=false",
@@ -380,14 +380,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent::HandleEventAsync(Microsoft.AspNetCore.Components.EventCallbackWorkItem,System.Object):System.Threading.Tasks.Task",
-          "clrName": "HandleEventAsync",
+          "targetName": "HandleEventAsync",
           "metadataToken": 100664031,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.EventCallbackWorkItem,System.Object):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleEventAsync|(Microsoft.AspNetCore.Components.EventCallbackWorkItem,System.Object):System.Threading.Tasks.Task|static=false",
@@ -401,14 +401,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IHandleEvent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IHandleEvent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IHandleEvent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender::OnAfterRenderAsync():System.Threading.Tasks.Task",
-          "clrName": "OnAfterRenderAsync",
+          "targetName": "OnAfterRenderAsync",
           "metadataToken": 100664030,
           "canonicalSignature": "():System.Threading.Tasks.Task",
           "normalizedSignature": "OnAfterRenderAsync|():System.Threading.Tasks.Task|static=false",
@@ -422,8 +422,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IHandleAfterRender"
         }
@@ -431,7 +431,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.FocusOnNavigate::RouteData:Microsoft.AspNetCore.Components.RouteData",
-          "clrName": "RouteData",
+          "targetName": "RouteData",
           "metadataToken": 385875996,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.RouteData",
           "normalizedSignature": "RouteData|:Microsoft.AspNetCore.Components.RouteData|static=false|accessor=getset",
@@ -445,12 +445,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.FocusOnNavigate::Selector:System.String",
-          "clrName": "Selector",
+          "targetName": "Selector",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Selector|:System.String|static=false|accessor=getset",
@@ -464,8 +464,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ],
       "fields": [],
@@ -479,15 +479,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -497,13 +497,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.EventArgs",
-        "clrName": "System.EventArgs"
+        "targetName": "System.EventArgs"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs::Location:System.String",
-          "clrName": "Location",
+          "targetName": "Location",
           "metadataToken": 385876169,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Location|:System.String|static=false|accessor=get",
@@ -517,12 +517,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs::IsNavigationIntercepted:System.Boolean",
-          "clrName": "IsNavigationIntercepted",
+          "targetName": "IsNavigationIntercepted",
           "metadataToken": 385876170,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsNavigationIntercepted|:System.Boolean|static=false|accessor=get",
@@ -536,12 +536,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs::HistoryEntryState:System.String",
-          "clrName": "HistoryEntryState",
+          "targetName": "HistoryEntryState",
           "metadataToken": 385876171,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "HistoryEntryState|:System.String|static=false|accessor=getset",
@@ -555,8 +555,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ],
       "fields": [],
@@ -570,15 +570,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -588,12 +588,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.LocationChangingContext::PreventNavigation():System.Void",
-          "clrName": "PreventNavigation",
+          "targetName": "PreventNavigation",
           "metadataToken": 100664402,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "PreventNavigation|():System.Void|static=false",
@@ -607,15 +607,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.LocationChangingContext::TargetLocation:System.String",
-          "clrName": "TargetLocation",
+          "targetName": "TargetLocation",
           "metadataToken": 385876173,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "TargetLocation|:System.String|static=false|accessor=getset",
@@ -629,12 +629,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.LocationChangingContext::HistoryEntryState:System.String",
-          "clrName": "HistoryEntryState",
+          "targetName": "HistoryEntryState",
           "metadataToken": 385876174,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "HistoryEntryState|:System.String|static=false|accessor=getset",
@@ -648,12 +648,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.LocationChangingContext::IsNavigationIntercepted:System.Boolean",
-          "clrName": "IsNavigationIntercepted",
+          "targetName": "IsNavigationIntercepted",
           "metadataToken": 385876175,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsNavigationIntercepted|:System.Boolean|static=false|accessor=getset",
@@ -667,12 +667,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.LocationChangingContext::CancellationToken:System.Threading.CancellationToken",
-          "clrName": "CancellationToken",
+          "targetName": "CancellationToken",
           "metadataToken": 385876176,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=getset",
@@ -686,8 +686,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ],
       "fields": [],
@@ -701,15 +701,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.NavigationContext",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.NavigationContext",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.NavigationContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -719,13 +719,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.NavigationContext::Path:System.String",
-          "clrName": "Path",
+          "targetName": "Path",
           "metadataToken": 385876177,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Path|:System.String|static=false|accessor=get",
@@ -739,12 +739,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavigationContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavigationContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.NavigationContext::CancellationToken:System.Threading.CancellationToken",
-          "clrName": "CancellationToken",
+          "targetName": "CancellationToken",
           "metadataToken": 385876178,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -758,8 +758,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavigationContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavigationContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ],
       "fields": [],
@@ -768,8 +768,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavigationLock",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -779,26 +779,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
-          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+          "targetName": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
-          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+          "targetName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
         },
         {
           "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
-          "clrName": "System.IAsyncDisposable"
+          "targetName": "System.IAsyncDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
-          "clrName": "Attach",
+          "targetName": "Attach",
           "metadataToken": 100664024,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "normalizedSignature": "Attach|(Microsoft.AspNetCore.Components.RenderHandle):System.Void|static=false",
@@ -812,14 +812,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
-          "clrName": "SetParametersAsync",
+          "targetName": "SetParametersAsync",
           "metadataToken": 100664025,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
           "normalizedSignature": "SetParametersAsync|(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task|static=false",
@@ -833,14 +833,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender::OnAfterRenderAsync():System.Threading.Tasks.Task",
-          "clrName": "OnAfterRenderAsync",
+          "targetName": "OnAfterRenderAsync",
           "metadataToken": 100664030,
           "canonicalSignature": "():System.Threading.Tasks.Task",
           "normalizedSignature": "OnAfterRenderAsync|():System.Threading.Tasks.Task|static=false",
@@ -854,8 +854,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IHandleAfterRender"
         }
@@ -863,7 +863,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavigationLock::OnBeforeInternalNavigation:Microsoft.AspNetCore.Components.EventCallback_1[[Microsoft.AspNetCore.Components.Routing.LocationChangingContext,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "OnBeforeInternalNavigation",
+          "targetName": "OnBeforeInternalNavigation",
           "metadataToken": 385876001,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.EventCallback_1[[Microsoft.AspNetCore.Components.Routing.LocationChangingContext,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "OnBeforeInternalNavigation|:Microsoft.AspNetCore.Components.EventCallback_1[[Microsoft.AspNetCore.Components.Routing.LocationChangingContext,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -877,12 +877,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavigationLock::ConfirmExternalNavigation:System.Boolean",
-          "clrName": "ConfirmExternalNavigation",
+          "targetName": "ConfirmExternalNavigation",
           "metadataToken": 385876002,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ConfirmExternalNavigation|:System.Boolean|static=false|accessor=getset",
@@ -896,8 +896,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ],
       "fields": [],
@@ -911,15 +911,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.NavLink",
-      "assemblyName": "Microsoft.AspNetCore.Components.Web",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -929,30 +929,30 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase",
-        "clrName": "Microsoft.AspNetCore.Components.ComponentBase"
+        "targetName": "Microsoft.AspNetCore.Components.ComponentBase"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
-          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+          "targetName": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent",
-          "clrName": "Microsoft.AspNetCore.Components.IHandleEvent"
+          "targetName": "Microsoft.AspNetCore.Components.IHandleEvent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
-          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+          "targetName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::OnInitialized():System.Void",
-          "clrName": "OnInitialized",
+          "targetName": "OnInitialized",
           "metadataToken": 100663406,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "OnInitialized|():System.Void|static=false",
@@ -966,13 +966,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::OnParametersSet():System.Void",
-          "clrName": "OnParametersSet",
+          "targetName": "OnParametersSet",
           "metadataToken": 100663407,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "OnParametersSet|():System.Void|static=false",
@@ -986,13 +986,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100663408,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -1006,13 +1006,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::ShouldMatch(System.String):System.Boolean",
-          "clrName": "ShouldMatch",
+          "targetName": "ShouldMatch",
           "metadataToken": 100663411,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "ShouldMatch|(System.String):System.Boolean|static=false",
@@ -1026,13 +1026,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
-          "clrName": "BuildRenderTree",
+          "targetName": "BuildRenderTree",
           "metadataToken": 100663414,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
           "normalizedSignature": "BuildRenderTree|(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void|static=false",
@@ -1046,13 +1046,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
-          "clrName": "Attach",
+          "targetName": "Attach",
           "metadataToken": 100664024,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "normalizedSignature": "Attach|(Microsoft.AspNetCore.Components.RenderHandle):System.Void|static=false",
@@ -1066,14 +1066,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
-          "clrName": "SetParametersAsync",
+          "targetName": "SetParametersAsync",
           "metadataToken": 100664025,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
           "normalizedSignature": "SetParametersAsync|(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task|static=false",
@@ -1087,14 +1087,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent::HandleEventAsync(Microsoft.AspNetCore.Components.EventCallbackWorkItem,System.Object):System.Threading.Tasks.Task",
-          "clrName": "HandleEventAsync",
+          "targetName": "HandleEventAsync",
           "metadataToken": 100664031,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.EventCallbackWorkItem,System.Object):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleEventAsync|(Microsoft.AspNetCore.Components.EventCallbackWorkItem,System.Object):System.Threading.Tasks.Task|static=false",
@@ -1108,14 +1108,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IHandleEvent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IHandleEvent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IHandleEvent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender::OnAfterRenderAsync():System.Threading.Tasks.Task",
-          "clrName": "OnAfterRenderAsync",
+          "targetName": "OnAfterRenderAsync",
           "metadataToken": 100664030,
           "canonicalSignature": "():System.Threading.Tasks.Task",
           "normalizedSignature": "OnAfterRenderAsync|():System.Threading.Tasks.Task|static=false",
@@ -1129,8 +1129,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IHandleAfterRender"
         }
@@ -1138,7 +1138,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::ActiveClass:System.String",
-          "clrName": "ActiveClass",
+          "targetName": "ActiveClass",
           "metadataToken": 385876003,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ActiveClass|:System.String|static=false|accessor=getset",
@@ -1152,12 +1152,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::AdditionalAttributes:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AdditionalAttributes",
+          "targetName": "AdditionalAttributes",
           "metadataToken": 385876004,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AdditionalAttributes|:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -1171,12 +1171,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::CssClass:System.String",
-          "clrName": "CssClass",
+          "targetName": "CssClass",
           "metadataToken": 385876005,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CssClass|:System.String|static=false|accessor=getset",
@@ -1190,12 +1190,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::ChildContent:Microsoft.AspNetCore.Components.RenderFragment",
-          "clrName": "ChildContent",
+          "targetName": "ChildContent",
           "metadataToken": 385876006,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.RenderFragment",
           "normalizedSignature": "ChildContent|:Microsoft.AspNetCore.Components.RenderFragment|static=false|accessor=getset",
@@ -1209,12 +1209,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::Match:Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 385876007,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
           "normalizedSignature": "Match|:Microsoft.AspNetCore.Components.Routing.NavLinkMatch|static=false|accessor=getset",
@@ -1228,8 +1228,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ],
       "fields": [],
@@ -1243,15 +1243,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.NotFoundEventArgs",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.NotFoundEventArgs",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.NotFoundEventArgs",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1261,13 +1261,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.EventArgs",
-        "clrName": "System.EventArgs"
+        "targetName": "System.EventArgs"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.NotFoundEventArgs::Path:System.String",
-          "clrName": "Path",
+          "targetName": "Path",
           "metadataToken": 385876179,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Path|:System.String|static=false|accessor=getset",
@@ -1281,8 +1281,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NotFoundEventArgs",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NotFoundEventArgs",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ],
       "fields": [],
@@ -1296,15 +1296,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NotFoundEventArgs",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.NotFoundEventArgs",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.Router",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.Router",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1314,26 +1314,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
-          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+          "targetName": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
-          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+          "targetName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
-          "clrName": "Attach",
+          "targetName": "Attach",
           "metadataToken": 100664465,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "normalizedSignature": "Attach|(Microsoft.AspNetCore.Components.RenderHandle):System.Void|static=false",
@@ -1347,13 +1347,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
-          "clrName": "SetParametersAsync",
+          "targetName": "SetParametersAsync",
           "metadataToken": 100664466,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
           "normalizedSignature": "SetParametersAsync|(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task|static=false",
@@ -1367,13 +1367,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100664467,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -1387,13 +1387,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender::OnAfterRenderAsync():System.Threading.Tasks.Task",
-          "clrName": "OnAfterRenderAsync",
+          "targetName": "OnAfterRenderAsync",
           "metadataToken": 100664030,
           "canonicalSignature": "():System.Threading.Tasks.Task",
           "normalizedSignature": "OnAfterRenderAsync|():System.Threading.Tasks.Task|static=false",
@@ -1407,14 +1407,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IHandleAfterRender"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
-          "clrName": "Attach",
+          "targetName": "Attach",
           "metadataToken": 100664024,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "normalizedSignature": "Attach|(Microsoft.AspNetCore.Components.RenderHandle):System.Void|static=false",
@@ -1428,14 +1428,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
-          "clrName": "SetParametersAsync",
+          "targetName": "SetParametersAsync",
           "metadataToken": 100664025,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
           "normalizedSignature": "SetParametersAsync|(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task|static=false",
@@ -1449,8 +1449,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.IComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
         }
@@ -1458,7 +1458,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::AppAssembly:System.Reflection.Assembly",
-          "clrName": "AppAssembly",
+          "targetName": "AppAssembly",
           "metadataToken": 385876193,
           "canonicalSignature": ":System.Reflection.Assembly",
           "normalizedSignature": "AppAssembly|:System.Reflection.Assembly|static=false|accessor=getset",
@@ -1472,12 +1472,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::AdditionalAssemblies:System.Collections.Generic.IEnumerable_1[[System.Reflection.Assembly,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AdditionalAssemblies",
+          "targetName": "AdditionalAssemblies",
           "metadataToken": 385876194,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.Reflection.Assembly,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AdditionalAssemblies|:System.Collections.Generic.IEnumerable_1[[System.Reflection.Assembly,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -1491,12 +1491,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::NotFound:Microsoft.AspNetCore.Components.RenderFragment",
-          "clrName": "NotFound",
+          "targetName": "NotFound",
           "metadataToken": 385876195,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.RenderFragment",
           "normalizedSignature": "NotFound|:Microsoft.AspNetCore.Components.RenderFragment|static=false|accessor=getset",
@@ -1510,12 +1510,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::NotFoundPage:System.Type",
-          "clrName": "NotFoundPage",
+          "targetName": "NotFoundPage",
           "metadataToken": 385876196,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "NotFoundPage|:System.Type|static=false|accessor=getset",
@@ -1529,12 +1529,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::Found:Microsoft.AspNetCore.Components.RenderFragment_1[[Microsoft.AspNetCore.Components.RouteData,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Found",
+          "targetName": "Found",
           "metadataToken": 385876197,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.RenderFragment_1[[Microsoft.AspNetCore.Components.RouteData,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Found|:Microsoft.AspNetCore.Components.RenderFragment_1[[Microsoft.AspNetCore.Components.RouteData,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -1548,12 +1548,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::Navigating:Microsoft.AspNetCore.Components.RenderFragment",
-          "clrName": "Navigating",
+          "targetName": "Navigating",
           "metadataToken": 385876198,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.RenderFragment",
           "normalizedSignature": "Navigating|:Microsoft.AspNetCore.Components.RenderFragment|static=false|accessor=getset",
@@ -1567,12 +1567,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::OnNavigateAsync:Microsoft.AspNetCore.Components.EventCallback_1[[Microsoft.AspNetCore.Components.Routing.NavigationContext,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "OnNavigateAsync",
+          "targetName": "OnNavigateAsync",
           "metadataToken": 385876199,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.EventCallback_1[[Microsoft.AspNetCore.Components.Routing.NavigationContext,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "OnNavigateAsync|:Microsoft.AspNetCore.Components.EventCallback_1[[Microsoft.AspNetCore.Components.Routing.NavigationContext,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -1586,12 +1586,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::PreferExactMatches:System.Boolean",
-          "clrName": "PreferExactMatches",
+          "targetName": "PreferExactMatches",
           "metadataToken": 385876200,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "PreferExactMatches|:System.Boolean|static=false|accessor=getset",
@@ -1605,8 +1605,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ],
       "fields": [],
@@ -1620,15 +1620,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.Router",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Routing.RazorComponentsEndpointHttpContextExtensions",
-      "clrName": "Microsoft.AspNetCore.Components.Routing.RazorComponentsEndpointHttpContextExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "targetName": "Microsoft.AspNetCore.Components.Routing.RazorComponentsEndpointHttpContextExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -1638,12 +1638,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Routing.RazorComponentsEndpointHttpContextExtensions::AcceptsInteractiveRouting(Microsoft.AspNetCore.Http.HttpContext):System.Boolean",
-          "clrName": "AcceptsInteractiveRouting",
+          "targetName": "AcceptsInteractiveRouting",
           "metadataToken": 100663623,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Boolean",
           "normalizedSignature": "AcceptsInteractiveRouting|(Microsoft.AspNetCore.Http.HttpContext):System.Boolean|static=true",
@@ -1657,8 +1657,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.RazorComponentsEndpointHttpContextExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Routing.RazorComponentsEndpointHttpContextExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": true
         }
       ],

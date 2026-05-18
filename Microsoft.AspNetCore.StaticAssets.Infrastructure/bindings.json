@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
-      "clrName": "Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
-      "assemblyName": "Microsoft.AspNetCore.StaticAssets",
+      "targetName": "Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
+      "ownerIdentity": "Microsoft.AspNetCore.StaticAssets",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper::HasStaticAssetsDataSource(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Boolean",
-          "clrName": "HasStaticAssetsDataSource",
+          "targetName": "HasStaticAssetsDataSource",
           "metadataToken": 100663453,
           "canonicalSignature": "(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Boolean",
           "normalizedSignature": "HasStaticAssetsDataSource|(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Boolean|static=true",
@@ -36,13 +36,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets",
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper::ResolveStaticAssetDescriptors(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "ResolveStaticAssetDescriptors",
+          "targetName": "ResolveStaticAssetDescriptors",
           "metadataToken": 100663454,
           "canonicalSignature": "(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ResolveStaticAssetDescriptors|(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
@@ -56,8 +56,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets",
+          "ownerQualifiedName": "Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.StaticAssets",
           "isExtensionMethod": false
         }
       ],

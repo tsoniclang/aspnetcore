@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration::IsHttps:System.Boolean",
-          "clrName": "IsHttps",
+          "targetName": "IsHttps",
           "metadataToken": 385876046,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsHttps|:System.Boolean|static=false|accessor=get",
@@ -37,12 +37,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration::ListenOptions:Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
-          "clrName": "ListenOptions",
+          "targetName": "ListenOptions",
           "metadataToken": 385876047,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "normalizedSignature": "ListenOptions|:Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=false|accessor=get",
@@ -56,12 +56,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration::HttpsOptions:Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
-          "clrName": "HttpsOptions",
+          "targetName": "HttpsOptions",
           "metadataToken": 385876048,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "normalizedSignature": "HttpsOptions|:Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions|static=false|accessor=get",
@@ -75,12 +75,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration::ConfigSection:Microsoft.Extensions.Configuration.IConfigurationSection",
-          "clrName": "ConfigSection",
+          "targetName": "ConfigSection",
           "metadataToken": 385876049,
           "canonicalSignature": ":Microsoft.Extensions.Configuration.IConfigurationSection",
           "normalizedSignature": "ConfigSection|:Microsoft.Extensions.Configuration.IConfigurationSection|static=false|accessor=get",
@@ -94,8 +94,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],
@@ -104,8 +104,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -115,12 +115,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::Endpoint(System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "Endpoint",
+          "targetName": "Endpoint",
           "metadataToken": 100663891,
           "canonicalSignature": "(System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "Endpoint|(System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -134,13 +134,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::Endpoint(System.Net.IPAddress,System.Int32):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "Endpoint",
+          "targetName": "Endpoint",
           "metadataToken": 100663892,
           "canonicalSignature": "(System.Net.IPAddress,System.Int32):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "Endpoint|(System.Net.IPAddress,System.Int32):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -154,13 +154,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::Endpoint(System.Net.IPAddress,System.Int32,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "Endpoint",
+          "targetName": "Endpoint",
           "metadataToken": 100663893,
           "canonicalSignature": "(System.Net.IPAddress,System.Int32,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "Endpoint|(System.Net.IPAddress,System.Int32,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -174,13 +174,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::Endpoint(System.Net.IPEndPoint):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "Endpoint",
+          "targetName": "Endpoint",
           "metadataToken": 100663894,
           "canonicalSignature": "(System.Net.IPEndPoint):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "Endpoint|(System.Net.IPEndPoint):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -194,13 +194,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::Endpoint(System.Net.IPEndPoint,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "Endpoint",
+          "targetName": "Endpoint",
           "metadataToken": 100663895,
           "canonicalSignature": "(System.Net.IPEndPoint,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "Endpoint|(System.Net.IPEndPoint,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -214,13 +214,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::LocalhostEndpoint(System.Int32):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "LocalhostEndpoint",
+          "targetName": "LocalhostEndpoint",
           "metadataToken": 100663896,
           "canonicalSignature": "(System.Int32):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "LocalhostEndpoint|(System.Int32):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -234,13 +234,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::LocalhostEndpoint(System.Int32,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "LocalhostEndpoint",
+          "targetName": "LocalhostEndpoint",
           "metadataToken": 100663897,
           "canonicalSignature": "(System.Int32,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "LocalhostEndpoint|(System.Int32,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -254,13 +254,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::AnyIPEndpoint(System.Int32):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "AnyIPEndpoint",
+          "targetName": "AnyIPEndpoint",
           "metadataToken": 100663898,
           "canonicalSignature": "(System.Int32):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "AnyIPEndpoint|(System.Int32):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -274,13 +274,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::AnyIPEndpoint(System.Int32,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "AnyIPEndpoint",
+          "targetName": "AnyIPEndpoint",
           "metadataToken": 100663899,
           "canonicalSignature": "(System.Int32,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "AnyIPEndpoint|(System.Int32,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -294,13 +294,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::UnixSocketEndpoint(System.String):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "UnixSocketEndpoint",
+          "targetName": "UnixSocketEndpoint",
           "metadataToken": 100663900,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "UnixSocketEndpoint|(System.String):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -314,13 +314,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::UnixSocketEndpoint(System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "UnixSocketEndpoint",
+          "targetName": "UnixSocketEndpoint",
           "metadataToken": 100663901,
           "canonicalSignature": "(System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "UnixSocketEndpoint|(System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -334,13 +334,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::NamedPipeEndpoint(System.String):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "NamedPipeEndpoint",
+          "targetName": "NamedPipeEndpoint",
           "metadataToken": 100663902,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "NamedPipeEndpoint|(System.String):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -354,13 +354,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::NamedPipeEndpoint(System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "NamedPipeEndpoint",
+          "targetName": "NamedPipeEndpoint",
           "metadataToken": 100663903,
           "canonicalSignature": "(System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "NamedPipeEndpoint|(System.String,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -374,13 +374,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::HandleEndpoint(System.UInt64):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "HandleEndpoint",
+          "targetName": "HandleEndpoint",
           "metadataToken": 100663904,
           "canonicalSignature": "(System.UInt64):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "HandleEndpoint|(System.UInt64):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -394,13 +394,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::HandleEndpoint(System.UInt64,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "clrName": "HandleEndpoint",
+          "targetName": "HandleEndpoint",
           "metadataToken": 100663905,
           "canonicalSignature": "(System.UInt64,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
           "normalizedSignature": "HandleEndpoint|(System.UInt64,System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader|static=false",
@@ -414,13 +414,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::Load():System.Void",
-          "clrName": "Load",
+          "targetName": "Load",
           "metadataToken": 100663908,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Load|():System.Void|static=false",
@@ -434,15 +434,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::Options:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
-          "clrName": "Options",
+          "targetName": "Options",
           "metadataToken": 385876050,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "normalizedSignature": "Options|:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions|static=false|accessor=get",
@@ -456,12 +456,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader::Configuration:Microsoft.Extensions.Configuration.IConfiguration",
-          "clrName": "Configuration",
+          "targetName": "Configuration",
           "metadataToken": 385876051,
           "canonicalSignature": ":Microsoft.Extensions.Configuration.IConfiguration",
           "normalizedSignature": "Configuration|:Microsoft.Extensions.Configuration.IConfiguration|static=false|accessor=getset",
@@ -475,8 +475,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],

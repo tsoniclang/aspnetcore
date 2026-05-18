@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -19,7 +19,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature::HttpContext:Microsoft.AspNetCore.Http.HttpContext",
-          "clrName": "HttpContext",
+          "targetName": "HttpContext",
           "metadataToken": 385876035,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.HttpContext",
           "normalizedSignature": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
@@ -33,8 +33,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ],
       "fields": [],
@@ -43,8 +43,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -56,7 +56,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature::TransportType:Microsoft.AspNetCore.Http.Connections.HttpTransportType",
-          "clrName": "TransportType",
+          "targetName": "TransportType",
           "metadataToken": 385876036,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.Connections.HttpTransportType",
           "normalizedSignature": "TransportType|:Microsoft.AspNetCore.Http.Connections.HttpTransportType|static=false|accessor=get",
@@ -70,8 +70,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ],
       "fields": [],

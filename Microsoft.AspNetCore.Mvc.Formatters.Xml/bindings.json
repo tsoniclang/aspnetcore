@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable::Unwrap(System.Type):System.Object",
-          "clrName": "Unwrap",
+          "targetName": "Unwrap",
           "metadataToken": 100663392,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "Unwrap|(System.Type):System.Object|static=false",
@@ -32,8 +32,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         }
       ],
@@ -44,8 +44,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -56,7 +56,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider::Wrap(System.Object):System.Object",
-          "clrName": "Wrap",
+          "targetName": "Wrap",
           "metadataToken": 100663394,
           "canonicalSignature": "(System.Object):System.Object",
           "normalizedSignature": "Wrap|(System.Object):System.Object|static=false",
@@ -70,15 +70,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider::WrappingType:System.Type",
-          "clrName": "WrappingType",
+          "targetName": "WrappingType",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "WrappingType|:System.Type|static=false|accessor=get",
@@ -92,8 +92,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ],
       "fields": [],
@@ -102,8 +102,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -114,7 +114,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory::GetProvider(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "clrName": "GetProvider",
+          "targetName": "GetProvider",
           "metadataToken": 100663395,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
           "normalizedSignature": "GetProvider|(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider|static=false",
@@ -128,8 +128,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         }
       ],
@@ -139,9 +139,9 @@
       "constructors": []
     },
     {
-      "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable\u00602",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable\u00602",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -151,19 +151,19 @@
       "arity": 2,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
+          "targetName": "System.Collections.Generic.IEnumerable`1",
           "typeArguments": [
             "TWrapped"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         }
       ],
       "typeParameters": [
@@ -172,8 +172,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable\u00602::GetEnumerator():IEnumerator_1",
-          "clrName": "GetEnumerator",
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2::GetEnumerator():IEnumerator_1",
+          "targetName": "GetEnumerator",
           "metadataToken": 100663375,
           "canonicalSignature": "():IEnumerator_1",
           "normalizedSignature": "GetEnumerator|():IEnumerator_1|static=false",
@@ -187,13 +187,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable\u00602::Add(System.Object):System.Void",
-          "clrName": "Add",
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2::Add(System.Object):System.Void",
+          "targetName": "Add",
           "metadataToken": 100663376,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "Add|(System.Object):System.Void|static=false",
@@ -207,8 +207,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         }
       ],
@@ -217,33 +217,33 @@
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable\u00602::.ctor():void",
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2::.ctor():void",
           "metadataToken": 100663373,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable\u00602::.ctor(IEnumerable_1,Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider):void",
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2::.ctor(IEnumerable_1,Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider):void",
           "metadataToken": 100663374,
           "canonicalSignature": "(IEnumerable_1,Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider):void",
           "normalizedSignature": "constructor|(IEnumerable_1,Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ]
     },
     {
-      "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -253,23 +253,23 @@
       "arity": 2,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator`1",
+          "targetName": "System.Collections.Generic.IEnumerator`1",
           "typeArguments": [
             "TWrapped"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
+          "targetName": "System.Collections.IEnumerator"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "typeParameters": [
@@ -278,8 +278,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602::Dispose():System.Void",
-          "clrName": "Dispose",
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2::Dispose():System.Void",
+          "targetName": "Dispose",
           "metadataToken": 100663381,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -293,13 +293,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2::MoveNext():System.Boolean",
+          "targetName": "MoveNext",
           "metadataToken": 100663382,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "MoveNext|():System.Boolean|static=false",
@@ -313,13 +313,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602::Reset():System.Void",
-          "clrName": "Reset",
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2::Reset():System.Void",
+          "targetName": "Reset",
           "metadataToken": 100663383,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Reset|():System.Void|static=false",
@@ -333,15 +333,15 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602::Current:TWrapped",
-          "clrName": "Current",
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2::Current:TWrapped",
+          "targetName": "Current",
           "metadataToken": 385875983,
           "canonicalSignature": ":TWrapped",
           "normalizedSignature": "Current|:TWrapped|static=false|accessor=get",
@@ -355,30 +355,30 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ],
       "fields": [],
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602::.ctor(IEnumerator_1,Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider):void",
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2::.ctor(IEnumerator_1,Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider):void",
           "metadataToken": 100663378,
           "canonicalSignature": "(IEnumerator_1,Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider):void",
           "normalizedSignature": "constructor|(IEnumerator_1,Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator\u00602",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -388,18 +388,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider"
+          "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider::Wrap(System.Object):System.Object",
-          "clrName": "Wrap",
+          "targetName": "Wrap",
           "metadataToken": 100663386,
           "canonicalSignature": "(System.Object):System.Object",
           "normalizedSignature": "Wrap|(System.Object):System.Object|static=false",
@@ -413,13 +413,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider::Wrap(System.Object):System.Object",
-          "clrName": "Wrap",
+          "targetName": "Wrap",
           "metadataToken": 100663394,
           "canonicalSignature": "(System.Object):System.Object",
           "normalizedSignature": "Wrap|(System.Object):System.Object|static=false",
@@ -433,8 +433,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider"
         }
@@ -442,7 +442,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider::WrappingType:System.Type",
-          "clrName": "WrappingType",
+          "targetName": "WrappingType",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "WrappingType|:System.Type|static=false|accessor=get",
@@ -456,12 +456,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider::WrappingType:System.Type",
-          "clrName": "WrappingType",
+          "targetName": "WrappingType",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "WrappingType|:System.Type|static=false|accessor=get",
@@ -476,8 +476,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ],
       "fields": [],
@@ -491,15 +491,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProviderFactory",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProviderFactory",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProviderFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -509,18 +509,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory",
-          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory"
+          "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProviderFactory::GetProvider(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "clrName": "GetProvider",
+          "targetName": "GetProvider",
           "metadataToken": 100663388,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
           "normalizedSignature": "GetProvider|(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider|static=false",
@@ -534,13 +534,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProviderFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProviderFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory::GetProvider(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "clrName": "GetProvider",
+          "targetName": "GetProvider",
           "metadataToken": 100663395,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
           "normalizedSignature": "GetProvider|(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider|static=false",
@@ -554,8 +554,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory"
         }
@@ -572,15 +572,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProviderFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProviderFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -590,19 +590,19 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
+          "targetName": "System.Collections.Generic.IEnumerable`1",
           "typeArguments": [
             "ICompatibilitySwitch"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         }
       ],
       "methods": [],
@@ -618,15 +618,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -636,22 +636,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.Xml:System.Xml.Serialization.IXmlSerializable",
-          "clrName": "System.Xml.Serialization.IXmlSerializable"
+          "targetName": "System.Xml.Serialization.IXmlSerializable"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
-          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable"
+          "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper::GetSchema():System.Xml.Schema.XmlSchema",
-          "clrName": "GetSchema",
+          "targetName": "GetSchema",
           "metadataToken": 100663402,
           "canonicalSignature": "():System.Xml.Schema.XmlSchema",
           "normalizedSignature": "GetSchema|():System.Xml.Schema.XmlSchema|static=false",
@@ -665,13 +665,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper::ReadXml(System.Xml.XmlReader):System.Void",
-          "clrName": "ReadXml",
+          "targetName": "ReadXml",
           "metadataToken": 100663403,
           "canonicalSignature": "(System.Xml.XmlReader):System.Void",
           "normalizedSignature": "ReadXml|(System.Xml.XmlReader):System.Void|static=false",
@@ -685,13 +685,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper::ReadValue(System.Xml.XmlReader,System.String):System.Void",
-          "clrName": "ReadValue",
+          "targetName": "ReadValue",
           "metadataToken": 100663404,
           "canonicalSignature": "(System.Xml.XmlReader,System.String):System.Void",
           "normalizedSignature": "ReadValue|(System.Xml.XmlReader,System.String):System.Void|static=false",
@@ -705,13 +705,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper::WriteXml(System.Xml.XmlWriter):System.Void",
-          "clrName": "WriteXml",
+          "targetName": "WriteXml",
           "metadataToken": 100663405,
           "canonicalSignature": "(System.Xml.XmlWriter):System.Void",
           "normalizedSignature": "WriteXml|(System.Xml.XmlWriter):System.Void|static=false",
@@ -725,13 +725,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable::Unwrap(System.Type):System.Object",
-          "clrName": "Unwrap",
+          "targetName": "Unwrap",
           "metadataToken": 100663392,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "Unwrap|(System.Type):System.Object|static=false",
@@ -745,8 +745,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable"
         }
@@ -755,15 +755,15 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper::EmptyKeySystem.String",
-          "clrName": "EmptyKey",
+          "targetName": "EmptyKey",
           "metadataToken": 67108903,
           "normalizedSignature": "EmptyKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ],
       "events": [],
@@ -776,8 +776,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper::.ctor(Microsoft.AspNetCore.Mvc.ProblemDetails):void",
@@ -787,15 +787,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -805,22 +805,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.Xml:System.Xml.Serialization.IXmlSerializable",
-          "clrName": "System.Xml.Serialization.IXmlSerializable"
+          "targetName": "System.Xml.Serialization.IXmlSerializable"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
-          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable"
+          "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper::GetSchema():System.Xml.Schema.XmlSchema",
-          "clrName": "GetSchema",
+          "targetName": "GetSchema",
           "metadataToken": 100663413,
           "canonicalSignature": "():System.Xml.Schema.XmlSchema",
           "normalizedSignature": "GetSchema|():System.Xml.Schema.XmlSchema|static=false",
@@ -834,13 +834,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper::ReadXml(System.Xml.XmlReader):System.Void",
-          "clrName": "ReadXml",
+          "targetName": "ReadXml",
           "metadataToken": 100663414,
           "canonicalSignature": "(System.Xml.XmlReader):System.Void",
           "normalizedSignature": "ReadXml|(System.Xml.XmlReader):System.Void|static=false",
@@ -854,13 +854,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper::WriteXml(System.Xml.XmlWriter):System.Void",
-          "clrName": "WriteXml",
+          "targetName": "WriteXml",
           "metadataToken": 100663415,
           "canonicalSignature": "(System.Xml.XmlWriter):System.Void",
           "normalizedSignature": "WriteXml|(System.Xml.XmlWriter):System.Void|static=false",
@@ -874,13 +874,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper::Unwrap(System.Type):System.Object",
-          "clrName": "Unwrap",
+          "targetName": "Unwrap",
           "metadataToken": 100663416,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "Unwrap|(System.Type):System.Object|static=false",
@@ -894,13 +894,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable::Unwrap(System.Type):System.Object",
-          "clrName": "Unwrap",
+          "targetName": "Unwrap",
           "metadataToken": 100663392,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "Unwrap|(System.Type):System.Object|static=false",
@@ -914,8 +914,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable"
         }
@@ -923,7 +923,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper::SerializableError:Microsoft.AspNetCore.Mvc.SerializableError",
-          "clrName": "SerializableError",
+          "targetName": "SerializableError",
           "metadataToken": 385875988,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.SerializableError",
           "normalizedSignature": "SerializableError|:Microsoft.AspNetCore.Mvc.SerializableError|static=false|accessor=get",
@@ -937,8 +937,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ],
       "fields": [],
@@ -952,8 +952,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper::.ctor(Microsoft.AspNetCore.Mvc.SerializableError):void",
@@ -963,15 +963,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -981,18 +981,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider"
+          "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider::Wrap(System.Object):System.Object",
-          "clrName": "Wrap",
+          "targetName": "Wrap",
           "metadataToken": 100663418,
           "canonicalSignature": "(System.Object):System.Object",
           "normalizedSignature": "Wrap|(System.Object):System.Object|static=false",
@@ -1006,13 +1006,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider::Wrap(System.Object):System.Object",
-          "clrName": "Wrap",
+          "targetName": "Wrap",
           "metadataToken": 100663394,
           "canonicalSignature": "(System.Object):System.Object",
           "normalizedSignature": "Wrap|(System.Object):System.Object|static=false",
@@ -1026,8 +1026,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider"
         }
@@ -1035,7 +1035,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider::WrappingType:System.Type",
-          "clrName": "WrappingType",
+          "targetName": "WrappingType",
           "metadataToken": 385875989,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "WrappingType|:System.Type|static=false|accessor=get",
@@ -1049,12 +1049,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider::WrappingType:System.Type",
-          "clrName": "WrappingType",
+          "targetName": "WrappingType",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "WrappingType|:System.Type|static=false|accessor=get",
@@ -1069,8 +1069,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ],
       "fields": [],
@@ -1084,15 +1084,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProviderFactory",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProviderFactory",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProviderFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1102,18 +1102,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory",
-          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory"
+          "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProviderFactory::GetProvider(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "clrName": "GetProvider",
+          "targetName": "GetProvider",
           "metadataToken": 100663420,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
           "normalizedSignature": "GetProvider|(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider|static=false",
@@ -1127,13 +1127,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProviderFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProviderFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory::GetProvider(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "clrName": "GetProvider",
+          "targetName": "GetProvider",
           "metadataToken": 100663395,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
           "normalizedSignature": "GetProvider|(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider|static=false",
@@ -1147,8 +1147,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory"
         }
@@ -1165,15 +1165,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProviderFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProviderFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1183,22 +1183,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
-        "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper"
+        "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper"
       },
       "interfaces": [
         {
           "stableId": "System.Private.Xml:System.Xml.Serialization.IXmlSerializable",
-          "clrName": "System.Xml.Serialization.IXmlSerializable"
+          "targetName": "System.Xml.Serialization.IXmlSerializable"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
-          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable"
+          "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper::ReadValue(System.Xml.XmlReader,System.String):System.Void",
-          "clrName": "ReadValue",
+          "targetName": "ReadValue",
           "metadataToken": 100663425,
           "canonicalSignature": "(System.Xml.XmlReader,System.String):System.Void",
           "normalizedSignature": "ReadValue|(System.Xml.XmlReader,System.String):System.Void|static=false",
@@ -1212,13 +1212,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper::WriteXml(System.Xml.XmlWriter):System.Void",
-          "clrName": "WriteXml",
+          "targetName": "WriteXml",
           "metadataToken": 100663427,
           "canonicalSignature": "(System.Xml.XmlWriter):System.Void",
           "normalizedSignature": "WriteXml|(System.Xml.XmlWriter):System.Void|static=false",
@@ -1232,13 +1232,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable::Unwrap(System.Type):System.Object",
-          "clrName": "Unwrap",
+          "targetName": "Unwrap",
           "metadataToken": 100663392,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "Unwrap|(System.Type):System.Object|static=false",
@@ -1252,8 +1252,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable"
         }
@@ -1270,8 +1270,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper::.ctor(Microsoft.AspNetCore.Mvc.ValidationProblemDetails):void",
@@ -1281,15 +1281,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1299,13 +1299,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext::DeclaredType:System.Type",
-          "clrName": "DeclaredType",
+          "targetName": "DeclaredType",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "DeclaredType|:System.Type|static=false|accessor=get",
@@ -1319,12 +1319,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext::IsSerialization:System.Boolean",
-          "clrName": "IsSerialization",
+          "targetName": "IsSerialization",
           "metadataToken": 385875992,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsSerialization|:System.Boolean|static=false|accessor=get",
@@ -1338,8 +1338,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ],
       "fields": [],
@@ -1353,15 +1353,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderFactoriesExtensions",
-      "clrName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderFactoriesExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+      "targetName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderFactoriesExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -1371,12 +1371,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderFactoriesExtensions::GetWrapperProvider(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory,Microsoft.AspNetCore.Mvc.Formatters.Xml,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
-          "clrName": "GetWrapperProvider",
+          "targetName": "GetWrapperProvider",
           "metadataToken": 100663432,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory,Microsoft.AspNetCore.Mvc.Formatters.Xml,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider",
           "normalizedSignature": "GetWrapperProvider|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory,Microsoft.AspNetCore.Mvc.Formatters.Xml,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext):Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider|static=true",
@@ -1390,8 +1390,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderFactoriesExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderFactoriesExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": true
         }
       ],

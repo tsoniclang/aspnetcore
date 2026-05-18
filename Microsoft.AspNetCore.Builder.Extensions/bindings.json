@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapMiddleware",
-      "clrName": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware",
-      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "clrName": "Invoke",
+          "targetName": "Invoke",
           "metadataToken": 100663460,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
@@ -36,8 +36,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -53,15 +53,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapOptions",
-      "clrName": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
-      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -71,13 +71,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapOptions::PathMatch:Microsoft.AspNetCore.Http.PathString",
-          "clrName": "PathMatch",
+          "targetName": "PathMatch",
           "metadataToken": 385876000,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.PathString",
           "normalizedSignature": "PathMatch|:Microsoft.AspNetCore.Http.PathString|static=false|accessor=getset",
@@ -91,12 +91,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapOptions::Branch:Microsoft.AspNetCore.Http.RequestDelegate",
-          "clrName": "Branch",
+          "targetName": "Branch",
           "metadataToken": 385876001,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.RequestDelegate",
           "normalizedSignature": "Branch|:Microsoft.AspNetCore.Http.RequestDelegate|static=false|accessor=getset",
@@ -110,12 +110,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapOptions::PreserveMatchedPathSegment:System.Boolean",
-          "clrName": "PreserveMatchedPathSegment",
+          "targetName": "PreserveMatchedPathSegment",
           "metadataToken": 385876002,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "PreserveMatchedPathSegment|:System.Boolean|static=false|accessor=getset",
@@ -129,8 +129,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
         }
       ],
       "fields": [],
@@ -144,15 +144,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware",
-      "clrName": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware",
-      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -162,12 +162,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "clrName": "Invoke",
+          "targetName": "Invoke",
           "metadataToken": 100663470,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
@@ -181,8 +181,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -198,15 +198,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
-      "clrName": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
-      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -216,13 +216,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions::Predicate:System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Predicate",
+          "targetName": "Predicate",
           "metadataToken": 385876003,
           "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Predicate|:System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -236,12 +236,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions::Branch:Microsoft.AspNetCore.Http.RequestDelegate",
-          "clrName": "Branch",
+          "targetName": "Branch",
           "metadataToken": 385876004,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.RequestDelegate",
           "normalizedSignature": "Branch|:Microsoft.AspNetCore.Http.RequestDelegate|static=false|accessor=getset",
@@ -255,8 +255,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
         }
       ],
       "fields": [],
@@ -270,15 +270,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware",
-      "clrName": "Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware",
-      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -288,12 +288,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "clrName": "Invoke",
+          "targetName": "Invoke",
           "metadataToken": 100663477,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
@@ -307,8 +307,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -324,8 +324,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
         }
       ]
     }

@@ -8,8 +8,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -19,24 +19,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -44,63 +44,63 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67110037,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior::AnyMicrosoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-          "clrName": "Any",
+          "targetName": "Any",
           "metadataToken": 67110038,
           "normalizedSignature": "Any|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior::ExactMicrosoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-          "clrName": "Exact",
+          "targetName": "Exact",
           "metadataToken": 67110039,
           "normalizedSignature": "Exact|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior::PrefixMicrosoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-          "clrName": "Prefix",
+          "targetName": "Prefix",
           "metadataToken": 67110040,
           "normalizedSignature": "Prefix|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior::SuffixMicrosoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-          "clrName": "Suffix",
+          "targetName": "Suffix",
           "metadataToken": 67110041,
           "normalizedSignature": "Suffix|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "events": [],
@@ -108,8 +108,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -119,24 +119,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -144,39 +144,39 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67110044,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior::AnyMicrosoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
-          "clrName": "Any",
+          "targetName": "Any",
           "metadataToken": 67110045,
           "normalizedSignature": "Any|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior::AssignableFromMicrosoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
-          "clrName": "AssignableFrom",
+          "targetName": "AssignableFrom",
           "metadataToken": 67110046,
           "normalizedSignature": "AssignableFrom|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "events": [],
@@ -184,8 +184,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDefaultResponseMetadataProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDefaultResponseMetadataProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDefaultResponseMetadataProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -196,17 +196,17 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
-          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider"
+          "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+          "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::SetContentTypes(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void",
-          "clrName": "SetContentTypes",
+          "targetName": "SetContentTypes",
           "metadataToken": 100666859,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void",
           "normalizedSignature": "SetContentTypes|(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void|static=false",
@@ -220,15 +220,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::Type:System.Type",
-          "clrName": "Type",
+          "targetName": "Type",
           "metadataToken": 385877027,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -242,12 +242,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::Description:System.String",
-          "clrName": "Description",
+          "targetName": "Description",
           "metadataToken": 385877028,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Description|:System.String|static=false|accessor=get",
@@ -261,12 +261,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::StatusCode:System.Int32",
-          "clrName": "StatusCode",
+          "targetName": "StatusCode",
           "metadataToken": 385877029,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "StatusCode|:System.Int32|static=false|accessor=get",
@@ -280,8 +280,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -290,8 +290,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -303,7 +303,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider::ApiDescriptionGroups:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
-          "clrName": "ApiDescriptionGroups",
+          "targetName": "ApiDescriptionGroups",
           "metadataToken": 385876023,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
           "normalizedSignature": "ApiDescriptionGroups|:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection|static=false|accessor=get",
@@ -317,8 +317,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         }
       ],
       "fields": [],
@@ -327,8 +327,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupNameProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupNameProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupNameProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -340,7 +340,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupNameProvider::GroupName:System.String",
-          "clrName": "GroupName",
+          "targetName": "GroupName",
           "metadataToken": 385877025,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "GroupName|:System.String|static=false|accessor=get",
@@ -354,8 +354,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupNameProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupNameProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -364,8 +364,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -376,7 +376,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider::OnProvidersExecuting(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void",
-          "clrName": "OnProvidersExecuting",
+          "targetName": "OnProvidersExecuting",
           "metadataToken": 100664029,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void",
           "normalizedSignature": "OnProvidersExecuting|(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void|static=false",
@@ -390,15 +390,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider::Order:System.Int32",
-          "clrName": "Order",
+          "targetName": "Order",
           "metadataToken": 385876278,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
@@ -412,8 +412,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ],
       "fields": [],
@@ -422,8 +422,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionVisibilityProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionVisibilityProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionVisibilityProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -435,7 +435,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionVisibilityProvider::IgnoreApi:System.Boolean",
-          "clrName": "IgnoreApi",
+          "targetName": "IgnoreApi",
           "metadataToken": 385877026,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IgnoreApi|:System.Boolean|static=false|accessor=get",
@@ -449,8 +449,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionVisibilityProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionVisibilityProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -459,8 +459,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -471,7 +471,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider::GetSupportedContentTypes(System.String,System.Type):System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetSupportedContentTypes",
+          "targetName": "GetSupportedContentTypes",
           "metadataToken": 100666854,
           "canonicalSignature": "(System.String,System.Type):System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetSupportedContentTypes|(System.String,System.Type):System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -485,8 +485,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
@@ -497,8 +497,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestMetadataProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestMetadataProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestMetadataProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -509,13 +509,13 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+          "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestMetadataProvider::SetContentTypes(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void",
-          "clrName": "SetContentTypes",
+          "targetName": "SetContentTypes",
           "metadataToken": 100666855,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void",
           "normalizedSignature": "SetContentTypes|(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void|static=false",
@@ -529,8 +529,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestMetadataProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
@@ -541,8 +541,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -553,13 +553,13 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+          "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::SetContentTypes(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void",
-          "clrName": "SetContentTypes",
+          "targetName": "SetContentTypes",
           "metadataToken": 100666859,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void",
           "normalizedSignature": "SetContentTypes|(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void|static=false",
@@ -573,15 +573,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::Type:System.Type",
-          "clrName": "Type",
+          "targetName": "Type",
           "metadataToken": 385877027,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -595,12 +595,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::Description:System.String",
-          "clrName": "Description",
+          "targetName": "Description",
           "metadataToken": 385877028,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Description|:System.String|static=false|accessor=get",
@@ -614,12 +614,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::StatusCode:System.Int32",
-          "clrName": "StatusCode",
+          "targetName": "StatusCode",
           "metadataToken": 385877029,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "StatusCode|:System.Int32|static=false|accessor=get",
@@ -633,8 +633,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -643,8 +643,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -655,7 +655,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider::GetSupportedContentTypes(System.String,System.Type):System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetSupportedContentTypes",
+          "targetName": "GetSupportedContentTypes",
           "metadataToken": 100666860,
           "canonicalSignature": "(System.String,System.Type):System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetSupportedContentTypes|(System.String,System.Type):System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -669,8 +669,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
@@ -681,8 +681,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchAttribute",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -692,13 +692,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchAttribute::MatchBehavior:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
-          "clrName": "MatchBehavior",
+          "targetName": "MatchBehavior",
           "metadataToken": 385877022,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
           "normalizedSignature": "MatchBehavior|:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior|static=false|accessor=get",
@@ -712,8 +712,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -727,15 +727,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionResult",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionResult",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionResult",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -745,13 +745,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionResult::ResponseMetadataProviders:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "ResponseMetadataProviders",
+          "targetName": "ResponseMetadataProviders",
           "metadataToken": 385877023,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ResponseMetadataProviders|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -765,8 +765,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -780,15 +780,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchAttribute",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -798,13 +798,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchAttribute::MatchBehavior:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
-          "clrName": "MatchBehavior",
+          "targetName": "MatchBehavior",
           "metadataToken": 385877024,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
           "normalizedSignature": "MatchBehavior|:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior|static=false|accessor=get",
@@ -818,8 +818,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
@@ -833,15 +833,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -851,13 +851,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription::ActionDescriptor:Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor",
-          "clrName": "ActionDescriptor",
+          "targetName": "ActionDescriptor",
           "metadataToken": 385876246,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor",
           "normalizedSignature": "ActionDescriptor|:Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor|static=false|accessor=getset",
@@ -871,12 +871,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription::GroupName:System.String",
-          "clrName": "GroupName",
+          "targetName": "GroupName",
           "metadataToken": 385876247,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "GroupName|:System.String|static=false|accessor=getset",
@@ -890,12 +890,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription::HttpMethod:System.String",
-          "clrName": "HttpMethod",
+          "targetName": "HttpMethod",
           "metadataToken": 385876248,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "HttpMethod|:System.String|static=false|accessor=getset",
@@ -909,12 +909,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription::ParameterDescriptions:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "ParameterDescriptions",
+          "targetName": "ParameterDescriptions",
           "metadataToken": 385876249,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ParameterDescriptions|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -928,12 +928,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription::Properties:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Properties",
+          "targetName": "Properties",
           "metadataToken": 385876250,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Properties|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -947,12 +947,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription::RelativePath:System.String",
-          "clrName": "RelativePath",
+          "targetName": "RelativePath",
           "metadataToken": 385876251,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "RelativePath|:System.String|static=false|accessor=getset",
@@ -966,12 +966,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription::SupportedRequestFormats:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "SupportedRequestFormats",
+          "targetName": "SupportedRequestFormats",
           "metadataToken": 385876252,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "SupportedRequestFormats|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -985,12 +985,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription::SupportedResponseTypes:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "SupportedResponseTypes",
+          "targetName": "SupportedResponseTypes",
           "metadataToken": 385876253,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "SupportedResponseTypes|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -1004,8 +1004,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ],
       "fields": [],
@@ -1019,15 +1019,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1037,13 +1037,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup::GroupName:System.String",
-          "clrName": "GroupName",
+          "targetName": "GroupName",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "GroupName|:System.String|static=false|accessor=get",
@@ -1057,12 +1057,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup::Items:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Items",
+          "targetName": "Items",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Items|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -1076,8 +1076,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         }
       ],
       "fields": [],
@@ -1091,15 +1091,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1109,13 +1109,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection::Items:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup,Microsoft.AspNetCore.Mvc.ApiExplorer,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Items",
+          "targetName": "Items",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup,Microsoft.AspNetCore.Mvc.ApiExplorer,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Items|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroup,Microsoft.AspNetCore.Mvc.ApiExplorer,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -1129,12 +1129,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection::Version:System.Int32",
-          "clrName": "Version",
+          "targetName": "Version",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Version|:System.Int32|static=false|accessor=get",
@@ -1148,8 +1148,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         }
       ],
       "fields": [],
@@ -1163,15 +1163,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1181,19 +1181,19 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider",
-          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider"
+          "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider"
         }
       ],
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider::ApiDescriptionGroups:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
-          "clrName": "ApiDescriptionGroups",
+          "targetName": "ApiDescriptionGroups",
           "metadataToken": 385875979,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
           "normalizedSignature": "ApiDescriptionGroups|:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection|static=false|accessor=get",
@@ -1207,12 +1207,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider::ApiDescriptionGroups:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
-          "clrName": "ApiDescriptionGroups",
+          "targetName": "ApiDescriptionGroups",
           "metadataToken": 385876023,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection",
           "normalizedSignature": "ApiDescriptionGroups|:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollection|static=false|accessor=get",
@@ -1227,8 +1227,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         }
       ],
       "fields": [],
@@ -1242,15 +1242,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1260,13 +1260,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext::Actions:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Actions",
+          "targetName": "Actions",
           "metadataToken": 385876254,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Actions|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -1280,12 +1280,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext::Results:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Results",
+          "targetName": "Results",
           "metadataToken": 385876255,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Results|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -1299,8 +1299,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ],
       "fields": [],
@@ -1314,15 +1314,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1332,13 +1332,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription::ModelMetadata:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
-          "clrName": "ModelMetadata",
+          "targetName": "ModelMetadata",
           "metadataToken": 385876256,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
           "normalizedSignature": "ModelMetadata|:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata|static=false|accessor=getset",
@@ -1352,12 +1352,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385876257,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
@@ -1371,12 +1371,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription::RouteInfo:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
-          "clrName": "RouteInfo",
+          "targetName": "RouteInfo",
           "metadataToken": 385876258,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
           "normalizedSignature": "RouteInfo|:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo|static=false|accessor=getset",
@@ -1390,12 +1390,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription::Source:Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource",
-          "clrName": "Source",
+          "targetName": "Source",
           "metadataToken": 385876259,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource",
           "normalizedSignature": "Source|:Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource|static=false|accessor=getset",
@@ -1409,12 +1409,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription::BindingInfo:Microsoft.AspNetCore.Mvc.ModelBinding.BindingInfo",
-          "clrName": "BindingInfo",
+          "targetName": "BindingInfo",
           "metadataToken": 385876260,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.BindingInfo",
           "normalizedSignature": "BindingInfo|:Microsoft.AspNetCore.Mvc.ModelBinding.BindingInfo|static=false|accessor=getset",
@@ -1428,12 +1428,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription::Type:System.Type",
-          "clrName": "Type",
+          "targetName": "Type",
           "metadataToken": 385876261,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
@@ -1447,12 +1447,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription::ParameterDescriptor:Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
-          "clrName": "ParameterDescriptor",
+          "targetName": "ParameterDescriptor",
           "metadataToken": 385876262,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
           "normalizedSignature": "ParameterDescriptor|:Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor|static=false|accessor=getset",
@@ -1466,12 +1466,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription::IsRequired:System.Boolean",
-          "clrName": "IsRequired",
+          "targetName": "IsRequired",
           "metadataToken": 385876263,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsRequired|:System.Boolean|static=false|accessor=getset",
@@ -1485,12 +1485,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription::DefaultValue:System.Object",
-          "clrName": "DefaultValue",
+          "targetName": "DefaultValue",
           "metadataToken": 385876264,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "DefaultValue|:System.Object|static=false|accessor=getset",
@@ -1504,8 +1504,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ],
       "fields": [],
@@ -1519,15 +1519,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1537,13 +1537,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo::Constraints:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Constraints",
+          "targetName": "Constraints",
           "metadataToken": 385876265,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Constraints|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -1557,12 +1557,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo::DefaultValue:System.Object",
-          "clrName": "DefaultValue",
+          "targetName": "DefaultValue",
           "metadataToken": 385876266,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "DefaultValue|:System.Object|static=false|accessor=getset",
@@ -1576,12 +1576,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo::IsOptional:System.Boolean",
-          "clrName": "IsOptional",
+          "targetName": "IsOptional",
           "metadataToken": 385876267,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsOptional|:System.Boolean|static=false|accessor=getset",
@@ -1595,8 +1595,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ],
       "fields": [],
@@ -1610,15 +1610,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterRouteInfo",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1628,13 +1628,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat::Formatter:Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
-          "clrName": "Formatter",
+          "targetName": "Formatter",
           "metadataToken": 385876268,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "normalizedSignature": "Formatter|:Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter|static=false|accessor=getset",
@@ -1648,12 +1648,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat::MediaType:System.String",
-          "clrName": "MediaType",
+          "targetName": "MediaType",
           "metadataToken": 385876269,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MediaType|:System.String|static=false|accessor=getset",
@@ -1667,8 +1667,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ],
       "fields": [],
@@ -1682,15 +1682,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiRequestFormat",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1700,13 +1700,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat::Formatter:Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
-          "clrName": "Formatter",
+          "targetName": "Formatter",
           "metadataToken": 385876270,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "normalizedSignature": "Formatter|:Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter|static=false|accessor=getset",
@@ -1720,12 +1720,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat::MediaType:System.String",
-          "clrName": "MediaType",
+          "targetName": "MediaType",
           "metadataToken": 385876271,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MediaType|:System.String|static=false|accessor=getset",
@@ -1739,8 +1739,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ],
       "fields": [],
@@ -1754,15 +1754,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1772,13 +1772,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType::ApiResponseFormats:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "ApiResponseFormats",
+          "targetName": "ApiResponseFormats",
           "metadataToken": 385876272,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ApiResponseFormats|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseFormat,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -1792,12 +1792,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType::ModelMetadata:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
-          "clrName": "ModelMetadata",
+          "targetName": "ModelMetadata",
           "metadataToken": 385876273,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
           "normalizedSignature": "ModelMetadata|:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata|static=false|accessor=getset",
@@ -1811,12 +1811,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType::Type:System.Type",
-          "clrName": "Type",
+          "targetName": "Type",
           "metadataToken": 385876274,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
@@ -1830,12 +1830,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType::Description:System.String",
-          "clrName": "Description",
+          "targetName": "Description",
           "metadataToken": 385876275,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Description|:System.String|static=false|accessor=getset",
@@ -1849,12 +1849,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType::StatusCode:System.Int32",
-          "clrName": "StatusCode",
+          "targetName": "StatusCode",
           "metadataToken": 385876276,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "StatusCode|:System.Int32|static=false|accessor=getset",
@@ -1868,12 +1868,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType::IsDefaultResponse:System.Boolean",
-          "clrName": "IsDefaultResponse",
+          "targetName": "IsDefaultResponse",
           "metadataToken": 385876277,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsDefaultResponse|:System.Boolean|static=false|accessor=getset",
@@ -1887,8 +1887,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ],
       "fields": [],
@@ -1902,15 +1902,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1920,18 +1920,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
-          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider"
+          "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider::OnProvidersExecuting(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void",
-          "clrName": "OnProvidersExecuting",
+          "targetName": "OnProvidersExecuting",
           "metadataToken": 100663350,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void",
           "normalizedSignature": "OnProvidersExecuting|(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void|static=false",
@@ -1945,13 +1945,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider::OnProvidersExecuted(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void",
-          "clrName": "OnProvidersExecuted",
+          "targetName": "OnProvidersExecuted",
           "metadataToken": 100663351,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void",
           "normalizedSignature": "OnProvidersExecuted|(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void|static=false",
@@ -1965,13 +1965,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider::OnProvidersExecuting(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void",
-          "clrName": "OnProvidersExecuting",
+          "targetName": "OnProvidersExecuting",
           "metadataToken": 100664029,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void",
           "normalizedSignature": "OnProvidersExecuting|(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionProviderContext):System.Void|static=false",
@@ -1985,8 +1985,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider"
         }
@@ -1994,7 +1994,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider::Order:System.Int32",
-          "clrName": "Order",
+          "targetName": "Order",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
@@ -2008,12 +2008,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider::Order:System.Int32",
-          "clrName": "Order",
+          "targetName": "Order",
           "metadataToken": 385876278,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
@@ -2028,8 +2028,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ],
       "fields": [],
@@ -2043,15 +2043,15 @@
           "isStatic": false,
           "parameterCount": 5,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.DefaultApiDescriptionProvider",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionExtensions",
-      "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
+      "targetName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2061,12 +2061,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionExtensions::GetProperty(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription):T",
-          "clrName": "GetProperty",
+          "targetName": "GetProperty",
           "metadataToken": 100663320,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription):T",
           "normalizedSignature": "GetProperty|(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription):T|static=true",
@@ -2080,13 +2080,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionExtensions::SetProperty(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription,T):System.Void",
-          "clrName": "SetProperty",
+          "targetName": "SetProperty",
           "metadataToken": 100663321,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription,T):System.Void",
           "normalizedSignature": "SetProperty|(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription,T):System.Void|static=true",
@@ -2100,8 +2100,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ApiExplorer",
           "isExtensionMethod": true
         }
       ],

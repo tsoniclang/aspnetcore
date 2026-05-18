@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-      "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,87 +42,87 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67109152,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_128_CBCMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "clrName": "AES_128_CBC",
+          "targetName": "AES_128_CBC",
           "metadataToken": 67109153,
           "normalizedSignature": "AES_128_CBC|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_192_CBCMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "clrName": "AES_192_CBC",
+          "targetName": "AES_192_CBC",
           "metadataToken": 67109154,
           "normalizedSignature": "AES_192_CBC|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_256_CBCMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "clrName": "AES_256_CBC",
+          "targetName": "AES_256_CBC",
           "metadataToken": 67109155,
           "normalizedSignature": "AES_256_CBC|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_128_GCMMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "clrName": "AES_128_GCM",
+          "targetName": "AES_128_GCM",
           "metadataToken": 67109156,
           "normalizedSignature": "AES_128_GCM|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_192_GCMMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "clrName": "AES_192_GCM",
+          "targetName": "AES_192_GCM",
           "metadataToken": 67109157,
           "normalizedSignature": "AES_192_GCM|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm::AES_256_GCMMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "clrName": "AES_256_GCM",
+          "targetName": "AES_256_GCM",
           "metadataToken": 67109158,
           "normalizedSignature": "AES_256_GCM|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.EncryptionAlgorithm",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ],
       "events": [],
@@ -130,8 +130,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
-      "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -141,24 +141,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -166,39 +166,39 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67109160,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm::HMACSHA256Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
-          "clrName": "HMACSHA256",
+          "targetName": "HMACSHA256",
           "metadataToken": 67109161,
           "normalizedSignature": "HMACSHA256|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm::HMACSHA512Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
-          "clrName": "HMACSHA512",
+          "targetName": "HMACSHA512",
           "metadataToken": 67109162,
           "normalizedSignature": "HMACSHA512|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ValidationAlgorithm",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ],
       "events": [],
@@ -206,8 +206,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-      "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -218,7 +218,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor::Decrypt(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Byte[]",
-          "clrName": "Decrypt",
+          "targetName": "Decrypt",
           "metadataToken": 100663905,
           "canonicalSignature": "(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Byte[]",
           "normalizedSignature": "Decrypt|(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Byte[]|static=false",
@@ -232,8 +232,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         }
       ],
@@ -244,8 +244,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
-      "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -256,7 +256,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory::CreateEncryptorInstance(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-          "clrName": "CreateEncryptorInstance",
+          "targetName": "CreateEncryptorInstance",
           "metadataToken": 100663907,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
           "normalizedSignature": "CreateEncryptorInstance|(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor|static=false",
@@ -270,8 +270,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         }
       ],
@@ -282,8 +282,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.AuthenticatedEncryptorFactory",
-      "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.AuthenticatedEncryptorFactory",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.AuthenticatedEncryptorFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -293,18 +293,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
-          "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
+          "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.AuthenticatedEncryptorFactory::CreateEncryptorInstance(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-          "clrName": "CreateEncryptorInstance",
+          "targetName": "CreateEncryptorInstance",
           "metadataToken": 100663888,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
           "normalizedSignature": "CreateEncryptorInstance|(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor|static=false",
@@ -318,13 +318,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.AuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.AuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory::CreateEncryptorInstance(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-          "clrName": "CreateEncryptorInstance",
+          "targetName": "CreateEncryptorInstance",
           "metadataToken": 100663907,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
           "normalizedSignature": "CreateEncryptorInstance|(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor|static=false",
@@ -338,8 +338,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
         }
@@ -356,15 +356,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.AuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.AuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory",
-      "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -374,18 +374,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
-          "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
+          "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory::CreateEncryptorInstance(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-          "clrName": "CreateEncryptorInstance",
+          "targetName": "CreateEncryptorInstance",
           "metadataToken": 100663897,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
           "normalizedSignature": "CreateEncryptorInstance|(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor|static=false",
@@ -399,13 +399,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory::CreateEncryptorInstance(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-          "clrName": "CreateEncryptorInstance",
+          "targetName": "CreateEncryptorInstance",
           "metadataToken": 100663907,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
           "normalizedSignature": "CreateEncryptorInstance|(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor|static=false",
@@ -419,8 +419,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
         }
@@ -437,15 +437,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory",
-      "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -455,18 +455,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
-          "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
+          "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory::CreateEncryptorInstance(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-          "clrName": "CreateEncryptorInstance",
+          "targetName": "CreateEncryptorInstance",
           "metadataToken": 100663902,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
           "normalizedSignature": "CreateEncryptorInstance|(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor|static=false",
@@ -480,13 +480,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory::CreateEncryptorInstance(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-          "clrName": "CreateEncryptorInstance",
+          "targetName": "CreateEncryptorInstance",
           "metadataToken": 100663907,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
           "normalizedSignature": "CreateEncryptorInstance|(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor|static=false",
@@ -500,8 +500,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
         }
@@ -518,15 +518,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory",
-      "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -536,18 +536,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
-          "clrName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
+          "targetName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory::CreateEncryptorInstance(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-          "clrName": "CreateEncryptorInstance",
+          "targetName": "CreateEncryptorInstance",
           "metadataToken": 100663910,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
           "normalizedSignature": "CreateEncryptorInstance|(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor|static=false",
@@ -561,13 +561,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory::CreateEncryptorInstance(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
-          "clrName": "CreateEncryptorInstance",
+          "targetName": "CreateEncryptorInstance",
           "metadataToken": 100663907,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
           "normalizedSignature": "CreateEncryptorInstance|(Microsoft.AspNetCore.DataProtection.KeyManagement.IKey):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor|static=false",
@@ -581,8 +581,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptorFactory"
         }
@@ -599,8 +599,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     }

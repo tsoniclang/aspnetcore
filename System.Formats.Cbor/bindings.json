@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborConformanceMode",
-      "clrName": "System.Formats.Cbor.CborConformanceMode",
-      "assemblyName": "System.Formats.Cbor",
+      "targetName": "System.Formats.Cbor.CborConformanceMode",
+      "ownerIdentity": "System.Formats.Cbor",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,63 +42,63 @@
       "fields": [
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborConformanceMode::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67109055,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborConformanceMode",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborConformanceMode",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborConformanceMode::LaxSystem.Formats.Cbor.CborConformanceMode",
-          "clrName": "Lax",
+          "targetName": "Lax",
           "metadataToken": 67109056,
           "normalizedSignature": "Lax|System.Formats.Cbor.CborConformanceMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborConformanceMode",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborConformanceMode",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborConformanceMode::StrictSystem.Formats.Cbor.CborConformanceMode",
-          "clrName": "Strict",
+          "targetName": "Strict",
           "metadataToken": 67109057,
           "normalizedSignature": "Strict|System.Formats.Cbor.CborConformanceMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborConformanceMode",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborConformanceMode",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborConformanceMode::CanonicalSystem.Formats.Cbor.CborConformanceMode",
-          "clrName": "Canonical",
+          "targetName": "Canonical",
           "metadataToken": 67109058,
           "normalizedSignature": "Canonical|System.Formats.Cbor.CborConformanceMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborConformanceMode",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborConformanceMode",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborConformanceMode::Ctap2CanonicalSystem.Formats.Cbor.CborConformanceMode",
-          "clrName": "Ctap2Canonical",
+          "targetName": "Ctap2Canonical",
           "metadataToken": 67109059,
           "normalizedSignature": "Ctap2Canonical|System.Formats.Cbor.CborConformanceMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborConformanceMode",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborConformanceMode",
+          "ownerIdentity": "System.Formats.Cbor"
         }
       ],
       "events": [],
@@ -106,8 +106,8 @@
     },
     {
       "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState",
-      "clrName": "System.Formats.Cbor.CborReaderState",
-      "assemblyName": "System.Formats.Cbor",
+      "targetName": "System.Formats.Cbor.CborReaderState",
+      "ownerIdentity": "System.Formats.Cbor",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -117,24 +117,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -142,267 +142,267 @@
       "fields": [
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108991,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::UndefinedSystem.Formats.Cbor.CborReaderState",
-          "clrName": "Undefined",
+          "targetName": "Undefined",
           "metadataToken": 67108992,
           "normalizedSignature": "Undefined|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::UnsignedIntegerSystem.Formats.Cbor.CborReaderState",
-          "clrName": "UnsignedInteger",
+          "targetName": "UnsignedInteger",
           "metadataToken": 67108993,
           "normalizedSignature": "UnsignedInteger|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::NegativeIntegerSystem.Formats.Cbor.CborReaderState",
-          "clrName": "NegativeInteger",
+          "targetName": "NegativeInteger",
           "metadataToken": 67108994,
           "normalizedSignature": "NegativeInteger|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::ByteStringSystem.Formats.Cbor.CborReaderState",
-          "clrName": "ByteString",
+          "targetName": "ByteString",
           "metadataToken": 67108995,
           "normalizedSignature": "ByteString|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::StartIndefiniteLengthByteStringSystem.Formats.Cbor.CborReaderState",
-          "clrName": "StartIndefiniteLengthByteString",
+          "targetName": "StartIndefiniteLengthByteString",
           "metadataToken": 67108996,
           "normalizedSignature": "StartIndefiniteLengthByteString|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::EndIndefiniteLengthByteStringSystem.Formats.Cbor.CborReaderState",
-          "clrName": "EndIndefiniteLengthByteString",
+          "targetName": "EndIndefiniteLengthByteString",
           "metadataToken": 67108997,
           "normalizedSignature": "EndIndefiniteLengthByteString|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::TextStringSystem.Formats.Cbor.CborReaderState",
-          "clrName": "TextString",
+          "targetName": "TextString",
           "metadataToken": 67108998,
           "normalizedSignature": "TextString|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::StartIndefiniteLengthTextStringSystem.Formats.Cbor.CborReaderState",
-          "clrName": "StartIndefiniteLengthTextString",
+          "targetName": "StartIndefiniteLengthTextString",
           "metadataToken": 67108999,
           "normalizedSignature": "StartIndefiniteLengthTextString|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::EndIndefiniteLengthTextStringSystem.Formats.Cbor.CborReaderState",
-          "clrName": "EndIndefiniteLengthTextString",
+          "targetName": "EndIndefiniteLengthTextString",
           "metadataToken": 67109000,
           "normalizedSignature": "EndIndefiniteLengthTextString|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::StartArraySystem.Formats.Cbor.CborReaderState",
-          "clrName": "StartArray",
+          "targetName": "StartArray",
           "metadataToken": 67109001,
           "normalizedSignature": "StartArray|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::EndArraySystem.Formats.Cbor.CborReaderState",
-          "clrName": "EndArray",
+          "targetName": "EndArray",
           "metadataToken": 67109002,
           "normalizedSignature": "EndArray|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::StartMapSystem.Formats.Cbor.CborReaderState",
-          "clrName": "StartMap",
+          "targetName": "StartMap",
           "metadataToken": 67109003,
           "normalizedSignature": "StartMap|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::EndMapSystem.Formats.Cbor.CborReaderState",
-          "clrName": "EndMap",
+          "targetName": "EndMap",
           "metadataToken": 67109004,
           "normalizedSignature": "EndMap|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::TagSystem.Formats.Cbor.CborReaderState",
-          "clrName": "Tag",
+          "targetName": "Tag",
           "metadataToken": 67109005,
           "normalizedSignature": "Tag|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::SimpleValueSystem.Formats.Cbor.CborReaderState",
-          "clrName": "SimpleValue",
+          "targetName": "SimpleValue",
           "metadataToken": 67109006,
           "normalizedSignature": "SimpleValue|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::HalfPrecisionFloatSystem.Formats.Cbor.CborReaderState",
-          "clrName": "HalfPrecisionFloat",
+          "targetName": "HalfPrecisionFloat",
           "metadataToken": 67109007,
           "normalizedSignature": "HalfPrecisionFloat|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::SinglePrecisionFloatSystem.Formats.Cbor.CborReaderState",
-          "clrName": "SinglePrecisionFloat",
+          "targetName": "SinglePrecisionFloat",
           "metadataToken": 67109008,
           "normalizedSignature": "SinglePrecisionFloat|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::DoublePrecisionFloatSystem.Formats.Cbor.CborReaderState",
-          "clrName": "DoublePrecisionFloat",
+          "targetName": "DoublePrecisionFloat",
           "metadataToken": 67109009,
           "normalizedSignature": "DoublePrecisionFloat|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::NullSystem.Formats.Cbor.CborReaderState",
-          "clrName": "Null",
+          "targetName": "Null",
           "metadataToken": 67109010,
           "normalizedSignature": "Null|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::BooleanSystem.Formats.Cbor.CborReaderState",
-          "clrName": "Boolean",
+          "targetName": "Boolean",
           "metadataToken": 67109011,
           "normalizedSignature": "Boolean|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::FinishedSystem.Formats.Cbor.CborReaderState",
-          "clrName": "Finished",
+          "targetName": "Finished",
           "metadataToken": 67109012,
           "normalizedSignature": "Finished|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReaderState",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReaderState",
+          "ownerIdentity": "System.Formats.Cbor"
         }
       ],
       "events": [],
@@ -410,8 +410,8 @@
     },
     {
       "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue",
-      "clrName": "System.Formats.Cbor.CborSimpleValue",
-      "assemblyName": "System.Formats.Cbor",
+      "targetName": "System.Formats.Cbor.CborSimpleValue",
+      "ownerIdentity": "System.Formats.Cbor",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -421,24 +421,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -446,63 +446,63 @@
       "fields": [
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue::value__System.Byte",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67109097,
           "normalizedSignature": "value__|System.Byte|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborSimpleValue",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborSimpleValue",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue::FalseSystem.Formats.Cbor.CborSimpleValue",
-          "clrName": "False",
+          "targetName": "False",
           "metadataToken": 67109098,
           "normalizedSignature": "False|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborSimpleValue",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborSimpleValue",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue::TrueSystem.Formats.Cbor.CborSimpleValue",
-          "clrName": "True",
+          "targetName": "True",
           "metadataToken": 67109099,
           "normalizedSignature": "True|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborSimpleValue",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborSimpleValue",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue::NullSystem.Formats.Cbor.CborSimpleValue",
-          "clrName": "Null",
+          "targetName": "Null",
           "metadataToken": 67109100,
           "normalizedSignature": "Null|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborSimpleValue",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborSimpleValue",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue::UndefinedSystem.Formats.Cbor.CborSimpleValue",
-          "clrName": "Undefined",
+          "targetName": "Undefined",
           "metadataToken": 67109101,
           "normalizedSignature": "Undefined|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborSimpleValue",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborSimpleValue",
+          "ownerIdentity": "System.Formats.Cbor"
         }
       ],
       "events": [],
@@ -510,8 +510,8 @@
     },
     {
       "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag",
-      "clrName": "System.Formats.Cbor.CborTag",
-      "assemblyName": "System.Formats.Cbor",
+      "targetName": "System.Formats.Cbor.CborTag",
+      "ownerIdentity": "System.Formats.Cbor",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -521,24 +521,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -546,207 +546,207 @@
       "fields": [
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::value__System.UInt64",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67109080,
           "normalizedSignature": "value__|System.UInt64|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::DateTimeStringSystem.Formats.Cbor.CborTag",
-          "clrName": "DateTimeString",
+          "targetName": "DateTimeString",
           "metadataToken": 67109081,
           "normalizedSignature": "DateTimeString|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::UnixTimeSecondsSystem.Formats.Cbor.CborTag",
-          "clrName": "UnixTimeSeconds",
+          "targetName": "UnixTimeSeconds",
           "metadataToken": 67109082,
           "normalizedSignature": "UnixTimeSeconds|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::UnsignedBigNumSystem.Formats.Cbor.CborTag",
-          "clrName": "UnsignedBigNum",
+          "targetName": "UnsignedBigNum",
           "metadataToken": 67109083,
           "normalizedSignature": "UnsignedBigNum|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::NegativeBigNumSystem.Formats.Cbor.CborTag",
-          "clrName": "NegativeBigNum",
+          "targetName": "NegativeBigNum",
           "metadataToken": 67109084,
           "normalizedSignature": "NegativeBigNum|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::DecimalFractionSystem.Formats.Cbor.CborTag",
-          "clrName": "DecimalFraction",
+          "targetName": "DecimalFraction",
           "metadataToken": 67109085,
           "normalizedSignature": "DecimalFraction|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::BigFloatSystem.Formats.Cbor.CborTag",
-          "clrName": "BigFloat",
+          "targetName": "BigFloat",
           "metadataToken": 67109086,
           "normalizedSignature": "BigFloat|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::Base64UrlLaterEncodingSystem.Formats.Cbor.CborTag",
-          "clrName": "Base64UrlLaterEncoding",
+          "targetName": "Base64UrlLaterEncoding",
           "metadataToken": 67109087,
           "normalizedSignature": "Base64UrlLaterEncoding|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::Base64StringLaterEncodingSystem.Formats.Cbor.CborTag",
-          "clrName": "Base64StringLaterEncoding",
+          "targetName": "Base64StringLaterEncoding",
           "metadataToken": 67109088,
           "normalizedSignature": "Base64StringLaterEncoding|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::Base16StringLaterEncodingSystem.Formats.Cbor.CborTag",
-          "clrName": "Base16StringLaterEncoding",
+          "targetName": "Base16StringLaterEncoding",
           "metadataToken": 67109089,
           "normalizedSignature": "Base16StringLaterEncoding|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::EncodedCborDataItemSystem.Formats.Cbor.CborTag",
-          "clrName": "EncodedCborDataItem",
+          "targetName": "EncodedCborDataItem",
           "metadataToken": 67109090,
           "normalizedSignature": "EncodedCborDataItem|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::UriSystem.Formats.Cbor.CborTag",
-          "clrName": "Uri",
+          "targetName": "Uri",
           "metadataToken": 67109091,
           "normalizedSignature": "Uri|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::Base64UrlSystem.Formats.Cbor.CborTag",
-          "clrName": "Base64Url",
+          "targetName": "Base64Url",
           "metadataToken": 67109092,
           "normalizedSignature": "Base64Url|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::Base64System.Formats.Cbor.CborTag",
-          "clrName": "Base64",
+          "targetName": "Base64",
           "metadataToken": 67109093,
           "normalizedSignature": "Base64|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::RegexSystem.Formats.Cbor.CborTag",
-          "clrName": "Regex",
+          "targetName": "Regex",
           "metadataToken": 67109094,
           "normalizedSignature": "Regex|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::MimeMessageSystem.Formats.Cbor.CborTag",
-          "clrName": "MimeMessage",
+          "targetName": "MimeMessage",
           "metadataToken": 67109095,
           "normalizedSignature": "MimeMessage|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborTag::SelfDescribeCborSystem.Formats.Cbor.CborTag",
-          "clrName": "SelfDescribeCbor",
+          "targetName": "SelfDescribeCbor",
           "metadataToken": 67109096,
           "normalizedSignature": "SelfDescribeCbor|System.Formats.Cbor.CborTag|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborTag",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborTag",
+          "ownerIdentity": "System.Formats.Cbor"
         }
       ],
       "events": [],
@@ -754,8 +754,8 @@
     },
     {
       "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborContentException",
-      "clrName": "System.Formats.Cbor.CborContentException",
-      "assemblyName": "System.Formats.Cbor",
+      "targetName": "System.Formats.Cbor.CborContentException",
+      "ownerIdentity": "System.Formats.Cbor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -765,12 +765,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Exception",
-        "clrName": "System.Exception"
+        "targetName": "System.Exception"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
-          "clrName": "System.Runtime.Serialization.ISerializable"
+          "targetName": "System.Runtime.Serialization.ISerializable"
         }
       ],
       "methods": [],
@@ -786,8 +786,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborContentException",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborContentException",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborContentException::.ctor(System.String,System.Exception):void",
@@ -797,8 +797,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborContentException",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborContentException",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborContentException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
@@ -808,15 +808,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Protected",
-          "declaringClrType": "System.Formats.Cbor.CborContentException",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborContentException",
+          "ownerIdentity": "System.Formats.Cbor"
         }
       ]
     },
     {
       "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader",
-      "clrName": "System.Formats.Cbor.CborReader",
-      "assemblyName": "System.Formats.Cbor",
+      "targetName": "System.Formats.Cbor.CborReader",
+      "ownerIdentity": "System.Formats.Cbor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -826,12 +826,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::PeekState():System.Formats.Cbor.CborReaderState",
-          "clrName": "PeekState",
+          "targetName": "PeekState",
           "metadataToken": 100663354,
           "canonicalSignature": "():System.Formats.Cbor.CborReaderState",
           "normalizedSignature": "PeekState|():System.Formats.Cbor.CborReaderState|static=false",
@@ -845,13 +845,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::SkipValue(System.Boolean):System.Void",
-          "clrName": "SkipValue",
+          "targetName": "SkipValue",
           "metadataToken": 100663356,
           "canonicalSignature": "(System.Boolean):System.Void",
           "normalizedSignature": "SkipValue|(System.Boolean):System.Void|static=false",
@@ -865,13 +865,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::SkipToParent(System.Boolean):System.Void",
-          "clrName": "SkipToParent",
+          "targetName": "SkipToParent",
           "metadataToken": 100663357,
           "canonicalSignature": "(System.Boolean):System.Void",
           "normalizedSignature": "SkipToParent|(System.Boolean):System.Void|static=false",
@@ -885,13 +885,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadSingle():System.Single",
-          "clrName": "ReadSingle",
+          "targetName": "ReadSingle",
           "metadataToken": 100663360,
           "canonicalSignature": "():System.Single",
           "normalizedSignature": "ReadSingle|():System.Single|static=false",
@@ -905,13 +905,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadDouble():System.Double",
-          "clrName": "ReadDouble",
+          "targetName": "ReadDouble",
           "metadataToken": 100663361,
           "canonicalSignature": "():System.Double",
           "normalizedSignature": "ReadDouble|():System.Double|static=false",
@@ -925,13 +925,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadBoolean():System.Boolean",
-          "clrName": "ReadBoolean",
+          "targetName": "ReadBoolean",
           "metadataToken": 100663362,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "ReadBoolean|():System.Boolean|static=false",
@@ -945,13 +945,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadNull():System.Void",
-          "clrName": "ReadNull",
+          "targetName": "ReadNull",
           "metadataToken": 100663363,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "ReadNull|():System.Void|static=false",
@@ -965,13 +965,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadSimpleValue():System.Formats.Cbor.CborSimpleValue",
-          "clrName": "ReadSimpleValue",
+          "targetName": "ReadSimpleValue",
           "metadataToken": 100663364,
           "canonicalSignature": "():System.Formats.Cbor.CborSimpleValue",
           "normalizedSignature": "ReadSimpleValue|():System.Formats.Cbor.CborSimpleValue|static=false",
@@ -985,13 +985,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadTag():System.Formats.Cbor.CborTag",
-          "clrName": "ReadTag",
+          "targetName": "ReadTag",
           "metadataToken": 100663365,
           "canonicalSignature": "():System.Formats.Cbor.CborTag",
           "normalizedSignature": "ReadTag|():System.Formats.Cbor.CborTag|static=false",
@@ -1005,13 +1005,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::PeekTag():System.Formats.Cbor.CborTag",
-          "clrName": "PeekTag",
+          "targetName": "PeekTag",
           "metadataToken": 100663366,
           "canonicalSignature": "():System.Formats.Cbor.CborTag",
           "normalizedSignature": "PeekTag|():System.Formats.Cbor.CborTag|static=false",
@@ -1025,13 +1025,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadDateTimeOffset():System.DateTimeOffset",
-          "clrName": "ReadDateTimeOffset",
+          "targetName": "ReadDateTimeOffset",
           "metadataToken": 100663367,
           "canonicalSignature": "():System.DateTimeOffset",
           "normalizedSignature": "ReadDateTimeOffset|():System.DateTimeOffset|static=false",
@@ -1045,13 +1045,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadUnixTimeSeconds():System.DateTimeOffset",
-          "clrName": "ReadUnixTimeSeconds",
+          "targetName": "ReadUnixTimeSeconds",
           "metadataToken": 100663368,
           "canonicalSignature": "():System.DateTimeOffset",
           "normalizedSignature": "ReadUnixTimeSeconds|():System.DateTimeOffset|static=false",
@@ -1065,13 +1065,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadBigInteger():System.Numerics.BigInteger",
-          "clrName": "ReadBigInteger",
+          "targetName": "ReadBigInteger",
           "metadataToken": 100663369,
           "canonicalSignature": "():System.Numerics.BigInteger",
           "normalizedSignature": "ReadBigInteger|():System.Numerics.BigInteger|static=false",
@@ -1085,13 +1085,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadDecimal():System.Decimal",
-          "clrName": "ReadDecimal",
+          "targetName": "ReadDecimal",
           "metadataToken": 100663370,
           "canonicalSignature": "():System.Decimal",
           "normalizedSignature": "ReadDecimal|():System.Decimal|static=false",
@@ -1105,13 +1105,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadStartArray():System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ReadStartArray",
+          "targetName": "ReadStartArray",
           "metadataToken": 100663373,
           "canonicalSignature": "():System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ReadStartArray|():System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -1125,13 +1125,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadEndArray():System.Void",
-          "clrName": "ReadEndArray",
+          "targetName": "ReadEndArray",
           "metadataToken": 100663374,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "ReadEndArray|():System.Void|static=false",
@@ -1145,13 +1145,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadEncodedValue(System.Boolean):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ReadEncodedValue",
+          "targetName": "ReadEncodedValue",
           "metadataToken": 100663380,
           "canonicalSignature": "(System.Boolean):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ReadEncodedValue|(System.Boolean):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -1165,13 +1165,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::Reset(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "Reset",
+          "targetName": "Reset",
           "metadataToken": 100663381,
           "canonicalSignature": "(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "Reset|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -1185,13 +1185,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadInt32():System.Int32",
-          "clrName": "ReadInt32",
+          "targetName": "ReadInt32",
           "metadataToken": 100663396,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "ReadInt32|():System.Int32|static=false",
@@ -1205,13 +1205,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadUInt32():System.UInt32",
-          "clrName": "ReadUInt32",
+          "targetName": "ReadUInt32",
           "metadataToken": 100663397,
           "canonicalSignature": "():System.UInt32",
           "normalizedSignature": "ReadUInt32|():System.UInt32|static=false",
@@ -1225,13 +1225,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadInt64():System.Int64",
-          "clrName": "ReadInt64",
+          "targetName": "ReadInt64",
           "metadataToken": 100663398,
           "canonicalSignature": "():System.Int64",
           "normalizedSignature": "ReadInt64|():System.Int64|static=false",
@@ -1245,13 +1245,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadUInt64():System.UInt64",
-          "clrName": "ReadUInt64",
+          "targetName": "ReadUInt64",
           "metadataToken": 100663399,
           "canonicalSignature": "():System.UInt64",
           "normalizedSignature": "ReadUInt64|():System.UInt64|static=false",
@@ -1265,13 +1265,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadCborNegativeIntegerRepresentation():System.UInt64",
-          "clrName": "ReadCborNegativeIntegerRepresentation",
+          "targetName": "ReadCborNegativeIntegerRepresentation",
           "metadataToken": 100663400,
           "canonicalSignature": "():System.UInt64",
           "normalizedSignature": "ReadCborNegativeIntegerRepresentation|():System.UInt64|static=false",
@@ -1285,13 +1285,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadStartMap():System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ReadStartMap",
+          "targetName": "ReadStartMap",
           "metadataToken": 100663405,
           "canonicalSignature": "():System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ReadStartMap|():System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -1305,13 +1305,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadEndMap():System.Void",
-          "clrName": "ReadEndMap",
+          "targetName": "ReadEndMap",
           "metadataToken": 100663406,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "ReadEndMap|():System.Void|static=false",
@@ -1325,13 +1325,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadByteString():System.Byte[]",
-          "clrName": "ReadByteString",
+          "targetName": "ReadByteString",
           "metadataToken": 100663413,
           "canonicalSignature": "():System.Byte[]",
           "normalizedSignature": "ReadByteString|():System.Byte[]|static=false",
@@ -1345,16 +1345,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
-          "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::TryReadByteString(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean",
-          "clrName": "TryReadByteString",
+          "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::TryReadByteString(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32&):System.Boolean",
+          "targetName": "TryReadByteString",
           "metadataToken": 100663414,
-          "canonicalSignature": "(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean",
-          "normalizedSignature": "TryReadByteString|(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32&):System.Boolean",
+          "normalizedSignature": "TryReadByteString|(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1365,8 +1365,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -1377,7 +1377,7 @@
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadDefiniteLengthByteString():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ReadDefiniteLengthByteString",
+          "targetName": "ReadDefiniteLengthByteString",
           "metadataToken": 100663415,
           "canonicalSignature": "():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ReadDefiniteLengthByteString|():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -1391,13 +1391,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadStartIndefiniteLengthByteString():System.Void",
-          "clrName": "ReadStartIndefiniteLengthByteString",
+          "targetName": "ReadStartIndefiniteLengthByteString",
           "metadataToken": 100663416,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "ReadStartIndefiniteLengthByteString|():System.Void|static=false",
@@ -1411,13 +1411,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadEndIndefiniteLengthByteString():System.Void",
-          "clrName": "ReadEndIndefiniteLengthByteString",
+          "targetName": "ReadEndIndefiniteLengthByteString",
           "metadataToken": 100663417,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "ReadEndIndefiniteLengthByteString|():System.Void|static=false",
@@ -1431,13 +1431,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadTextString():System.String",
-          "clrName": "ReadTextString",
+          "targetName": "ReadTextString",
           "metadataToken": 100663418,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ReadTextString|():System.String|static=false",
@@ -1451,16 +1451,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
-          "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::TryReadTextString(System.Span_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean",
-          "clrName": "TryReadTextString",
+          "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::TryReadTextString(System.Span_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32&):System.Boolean",
+          "targetName": "TryReadTextString",
           "metadataToken": 100663419,
-          "canonicalSignature": "(System.Span_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean",
-          "normalizedSignature": "TryReadTextString|(System.Span_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.Span_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32&):System.Boolean",
+          "normalizedSignature": "TryReadTextString|(System.Span_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1471,8 +1471,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -1483,7 +1483,7 @@
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadDefiniteLengthTextStringBytes():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ReadDefiniteLengthTextStringBytes",
+          "targetName": "ReadDefiniteLengthTextStringBytes",
           "metadataToken": 100663420,
           "canonicalSignature": "():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ReadDefiniteLengthTextStringBytes|():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -1497,13 +1497,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadStartIndefiniteLengthTextString():System.Void",
-          "clrName": "ReadStartIndefiniteLengthTextString",
+          "targetName": "ReadStartIndefiniteLengthTextString",
           "metadataToken": 100663421,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "ReadStartIndefiniteLengthTextString|():System.Void|static=false",
@@ -1517,13 +1517,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadEndIndefiniteLengthTextString():System.Void",
-          "clrName": "ReadEndIndefiniteLengthTextString",
+          "targetName": "ReadEndIndefiniteLengthTextString",
           "metadataToken": 100663422,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "ReadEndIndefiniteLengthTextString|():System.Void|static=false",
@@ -1537,13 +1537,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ReadHalf():System.Half",
-          "clrName": "ReadHalf",
+          "targetName": "ReadHalf",
           "metadataToken": 100663432,
           "canonicalSignature": "():System.Half",
           "normalizedSignature": "ReadHalf|():System.Half|static=false",
@@ -1557,15 +1557,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::ConformanceMode:System.Formats.Cbor.CborConformanceMode",
-          "clrName": "ConformanceMode",
+          "targetName": "ConformanceMode",
           "metadataToken": 385876013,
           "canonicalSignature": ":System.Formats.Cbor.CborConformanceMode",
           "normalizedSignature": "ConformanceMode|:System.Formats.Cbor.CborConformanceMode|static=false|accessor=get",
@@ -1579,12 +1579,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::AllowMultipleRootLevelValues:System.Boolean",
-          "clrName": "AllowMultipleRootLevelValues",
+          "targetName": "AllowMultipleRootLevelValues",
           "metadataToken": 385876014,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "AllowMultipleRootLevelValues|:System.Boolean|static=false|accessor=get",
@@ -1598,12 +1598,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::CurrentDepth:System.Int32",
-          "clrName": "CurrentDepth",
+          "targetName": "CurrentDepth",
           "metadataToken": 385876015,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "CurrentDepth|:System.Int32|static=false|accessor=get",
@@ -1617,12 +1617,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReader::BytesRemaining:System.Int32",
-          "clrName": "BytesRemaining",
+          "targetName": "BytesRemaining",
           "metadataToken": 385876016,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "BytesRemaining|:System.Int32|static=false|accessor=get",
@@ -1636,8 +1636,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor"
         }
       ],
       "fields": [],
@@ -1651,15 +1651,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborReader",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborReader",
+          "ownerIdentity": "System.Formats.Cbor"
         }
       ]
     },
     {
       "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter",
-      "clrName": "System.Formats.Cbor.CborWriter",
-      "assemblyName": "System.Formats.Cbor",
+      "targetName": "System.Formats.Cbor.CborWriter",
+      "ownerIdentity": "System.Formats.Cbor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1669,12 +1669,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteStartArray(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "WriteStartArray",
+          "targetName": "WriteStartArray",
           "metadataToken": 100663438,
           "canonicalSignature": "(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteStartArray|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -1688,13 +1688,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteEndArray():System.Void",
-          "clrName": "WriteEndArray",
+          "targetName": "WriteEndArray",
           "metadataToken": 100663439,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "WriteEndArray|():System.Void|static=false",
@@ -1708,13 +1708,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteStartMap(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "WriteStartMap",
+          "targetName": "WriteStartMap",
           "metadataToken": 100663443,
           "canonicalSignature": "(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteStartMap|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -1728,13 +1728,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteEndMap():System.Void",
-          "clrName": "WriteEndMap",
+          "targetName": "WriteEndMap",
           "metadataToken": 100663444,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "WriteEndMap|():System.Void|static=false",
@@ -1748,13 +1748,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteSingle(System.Single):System.Void",
-          "clrName": "WriteSingle",
+          "targetName": "WriteSingle",
           "metadataToken": 100663455,
           "canonicalSignature": "(System.Single):System.Void",
           "normalizedSignature": "WriteSingle|(System.Single):System.Void|static=false",
@@ -1768,13 +1768,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteDouble(System.Double):System.Void",
-          "clrName": "WriteDouble",
+          "targetName": "WriteDouble",
           "metadataToken": 100663456,
           "canonicalSignature": "(System.Double):System.Void",
           "normalizedSignature": "WriteDouble|(System.Double):System.Void|static=false",
@@ -1788,13 +1788,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteBoolean(System.Boolean):System.Void",
-          "clrName": "WriteBoolean",
+          "targetName": "WriteBoolean",
           "metadataToken": 100663459,
           "canonicalSignature": "(System.Boolean):System.Void",
           "normalizedSignature": "WriteBoolean|(System.Boolean):System.Void|static=false",
@@ -1808,13 +1808,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteNull():System.Void",
-          "clrName": "WriteNull",
+          "targetName": "WriteNull",
           "metadataToken": 100663460,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "WriteNull|():System.Void|static=false",
@@ -1828,13 +1828,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteSimpleValue(System.Formats.Cbor.CborSimpleValue):System.Void",
-          "clrName": "WriteSimpleValue",
+          "targetName": "WriteSimpleValue",
           "metadataToken": 100663461,
           "canonicalSignature": "(System.Formats.Cbor.CborSimpleValue):System.Void",
           "normalizedSignature": "WriteSimpleValue|(System.Formats.Cbor.CborSimpleValue):System.Void|static=false",
@@ -1848,13 +1848,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteByteString(System.Byte[]):System.Void",
-          "clrName": "WriteByteString",
+          "targetName": "WriteByteString",
           "metadataToken": 100663463,
           "canonicalSignature": "(System.Byte[]):System.Void",
           "normalizedSignature": "WriteByteString|(System.Byte[]):System.Void|static=false",
@@ -1868,13 +1868,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteByteString(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "WriteByteString",
+          "targetName": "WriteByteString",
           "metadataToken": 100663464,
           "canonicalSignature": "(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteByteString|(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -1888,13 +1888,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteStartIndefiniteLengthByteString():System.Void",
-          "clrName": "WriteStartIndefiniteLengthByteString",
+          "targetName": "WriteStartIndefiniteLengthByteString",
           "metadataToken": 100663465,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "WriteStartIndefiniteLengthByteString|():System.Void|static=false",
@@ -1908,13 +1908,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteEndIndefiniteLengthByteString():System.Void",
-          "clrName": "WriteEndIndefiniteLengthByteString",
+          "targetName": "WriteEndIndefiniteLengthByteString",
           "metadataToken": 100663466,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "WriteEndIndefiniteLengthByteString|():System.Void|static=false",
@@ -1928,13 +1928,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteTextString(System.String):System.Void",
-          "clrName": "WriteTextString",
+          "targetName": "WriteTextString",
           "metadataToken": 100663467,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "WriteTextString|(System.String):System.Void|static=false",
@@ -1948,13 +1948,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteTextString(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "WriteTextString",
+          "targetName": "WriteTextString",
           "metadataToken": 100663468,
           "canonicalSignature": "(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteTextString|(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -1968,13 +1968,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteStartIndefiniteLengthTextString():System.Void",
-          "clrName": "WriteStartIndefiniteLengthTextString",
+          "targetName": "WriteStartIndefiniteLengthTextString",
           "metadataToken": 100663469,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "WriteStartIndefiniteLengthTextString|():System.Void|static=false",
@@ -1988,13 +1988,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteEndIndefiniteLengthTextString():System.Void",
-          "clrName": "WriteEndIndefiniteLengthTextString",
+          "targetName": "WriteEndIndefiniteLengthTextString",
           "metadataToken": 100663470,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "WriteEndIndefiniteLengthTextString|():System.Void|static=false",
@@ -2008,13 +2008,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::Reset():System.Void",
-          "clrName": "Reset",
+          "targetName": "Reset",
           "metadataToken": 100663480,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Reset|():System.Void|static=false",
@@ -2028,13 +2028,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteEncodedValue(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "WriteEncodedValue",
+          "targetName": "WriteEncodedValue",
           "metadataToken": 100663481,
           "canonicalSignature": "(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteEncodedValue|(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -2048,13 +2048,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::Encode():System.Byte[]",
-          "clrName": "Encode",
+          "targetName": "Encode",
           "metadataToken": 100663482,
           "canonicalSignature": "():System.Byte[]",
           "normalizedSignature": "Encode|():System.Byte[]|static=false",
@@ -2068,13 +2068,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::Encode(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Int32",
-          "clrName": "Encode",
+          "targetName": "Encode",
           "metadataToken": 100663483,
           "canonicalSignature": "(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Int32",
           "normalizedSignature": "Encode|(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Int32|static=false",
@@ -2088,16 +2088,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
-          "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::TryEncode(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean",
-          "clrName": "TryEncode",
+          "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::TryEncode(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32&):System.Boolean",
+          "targetName": "TryEncode",
           "metadataToken": 100663484,
-          "canonicalSignature": "(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean",
-          "normalizedSignature": "TryEncode|(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32&):System.Boolean",
+          "normalizedSignature": "TryEncode|(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2108,8 +2108,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -2120,7 +2120,7 @@
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteInt32(System.Int32):System.Void",
-          "clrName": "WriteInt32",
+          "targetName": "WriteInt32",
           "metadataToken": 100663492,
           "canonicalSignature": "(System.Int32):System.Void",
           "normalizedSignature": "WriteInt32|(System.Int32):System.Void|static=false",
@@ -2134,13 +2134,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteInt64(System.Int64):System.Void",
-          "clrName": "WriteInt64",
+          "targetName": "WriteInt64",
           "metadataToken": 100663493,
           "canonicalSignature": "(System.Int64):System.Void",
           "normalizedSignature": "WriteInt64|(System.Int64):System.Void|static=false",
@@ -2154,13 +2154,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteUInt32(System.UInt32):System.Void",
-          "clrName": "WriteUInt32",
+          "targetName": "WriteUInt32",
           "metadataToken": 100663494,
           "canonicalSignature": "(System.UInt32):System.Void",
           "normalizedSignature": "WriteUInt32|(System.UInt32):System.Void|static=false",
@@ -2174,13 +2174,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteUInt64(System.UInt64):System.Void",
-          "clrName": "WriteUInt64",
+          "targetName": "WriteUInt64",
           "metadataToken": 100663495,
           "canonicalSignature": "(System.UInt64):System.Void",
           "normalizedSignature": "WriteUInt64|(System.UInt64):System.Void|static=false",
@@ -2194,13 +2194,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteCborNegativeIntegerRepresentation(System.UInt64):System.Void",
-          "clrName": "WriteCborNegativeIntegerRepresentation",
+          "targetName": "WriteCborNegativeIntegerRepresentation",
           "metadataToken": 100663496,
           "canonicalSignature": "(System.UInt64):System.Void",
           "normalizedSignature": "WriteCborNegativeIntegerRepresentation|(System.UInt64):System.Void|static=false",
@@ -2214,13 +2214,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteTag(System.Formats.Cbor.CborTag):System.Void",
-          "clrName": "WriteTag",
+          "targetName": "WriteTag",
           "metadataToken": 100663499,
           "canonicalSignature": "(System.Formats.Cbor.CborTag):System.Void",
           "normalizedSignature": "WriteTag|(System.Formats.Cbor.CborTag):System.Void|static=false",
@@ -2234,13 +2234,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteDateTimeOffset(System.DateTimeOffset):System.Void",
-          "clrName": "WriteDateTimeOffset",
+          "targetName": "WriteDateTimeOffset",
           "metadataToken": 100663500,
           "canonicalSignature": "(System.DateTimeOffset):System.Void",
           "normalizedSignature": "WriteDateTimeOffset|(System.DateTimeOffset):System.Void|static=false",
@@ -2254,13 +2254,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteUnixTimeSeconds(System.Int64):System.Void",
-          "clrName": "WriteUnixTimeSeconds",
+          "targetName": "WriteUnixTimeSeconds",
           "metadataToken": 100663501,
           "canonicalSignature": "(System.Int64):System.Void",
           "normalizedSignature": "WriteUnixTimeSeconds|(System.Int64):System.Void|static=false",
@@ -2274,13 +2274,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteUnixTimeSeconds(System.Double):System.Void",
-          "clrName": "WriteUnixTimeSeconds",
+          "targetName": "WriteUnixTimeSeconds",
           "metadataToken": 100663502,
           "canonicalSignature": "(System.Double):System.Void",
           "normalizedSignature": "WriteUnixTimeSeconds|(System.Double):System.Void|static=false",
@@ -2294,13 +2294,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteBigInteger(System.Numerics.BigInteger):System.Void",
-          "clrName": "WriteBigInteger",
+          "targetName": "WriteBigInteger",
           "metadataToken": 100663503,
           "canonicalSignature": "(System.Numerics.BigInteger):System.Void",
           "normalizedSignature": "WriteBigInteger|(System.Numerics.BigInteger):System.Void|static=false",
@@ -2314,13 +2314,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteDecimal(System.Decimal):System.Void",
-          "clrName": "WriteDecimal",
+          "targetName": "WriteDecimal",
           "metadataToken": 100663504,
           "canonicalSignature": "(System.Decimal):System.Void",
           "normalizedSignature": "WriteDecimal|(System.Decimal):System.Void|static=false",
@@ -2334,13 +2334,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::WriteHalf(System.Half):System.Void",
-          "clrName": "WriteHalf",
+          "targetName": "WriteHalf",
           "metadataToken": 100663505,
           "canonicalSignature": "(System.Half):System.Void",
           "normalizedSignature": "WriteHalf|(System.Half):System.Void|static=false",
@@ -2354,15 +2354,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor",
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::ConformanceMode:System.Formats.Cbor.CborConformanceMode",
-          "clrName": "ConformanceMode",
+          "targetName": "ConformanceMode",
           "metadataToken": 385876017,
           "canonicalSignature": ":System.Formats.Cbor.CborConformanceMode",
           "normalizedSignature": "ConformanceMode|:System.Formats.Cbor.CborConformanceMode|static=false|accessor=get",
@@ -2376,12 +2376,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::ConvertIndefiniteLengthEncodings:System.Boolean",
-          "clrName": "ConvertIndefiniteLengthEncodings",
+          "targetName": "ConvertIndefiniteLengthEncodings",
           "metadataToken": 385876018,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ConvertIndefiniteLengthEncodings|:System.Boolean|static=false|accessor=get",
@@ -2395,12 +2395,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::AllowMultipleRootLevelValues:System.Boolean",
-          "clrName": "AllowMultipleRootLevelValues",
+          "targetName": "AllowMultipleRootLevelValues",
           "metadataToken": 385876019,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "AllowMultipleRootLevelValues|:System.Boolean|static=false|accessor=get",
@@ -2414,12 +2414,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::CurrentDepth:System.Int32",
-          "clrName": "CurrentDepth",
+          "targetName": "CurrentDepth",
           "metadataToken": 385876020,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "CurrentDepth|:System.Int32|static=false|accessor=get",
@@ -2433,12 +2433,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::BytesWritten:System.Int32",
-          "clrName": "BytesWritten",
+          "targetName": "BytesWritten",
           "metadataToken": 385876021,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "BytesWritten|:System.Int32|static=false|accessor=get",
@@ -2452,12 +2452,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::IsWriteCompleted:System.Boolean",
-          "clrName": "IsWriteCompleted",
+          "targetName": "IsWriteCompleted",
           "metadataToken": 385876022,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsWriteCompleted|:System.Boolean|static=false|accessor=get",
@@ -2471,8 +2471,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor"
         }
       ],
       "fields": [],
@@ -2486,8 +2486,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor"
         },
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborWriter::.ctor(System.Formats.Cbor.CborConformanceMode,System.Boolean,System.Boolean,System.Int32):void",
@@ -2497,8 +2497,8 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "System.Formats.Cbor.CborWriter",
-          "declaringAssemblyName": "System.Formats.Cbor"
+          "ownerQualifiedName": "System.Formats.Cbor.CborWriter",
+          "ownerIdentity": "System.Formats.Cbor"
         }
       ]
     }

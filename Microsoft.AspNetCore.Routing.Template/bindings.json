@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.InlineConstraint",
-      "clrName": "Microsoft.AspNetCore.Routing.Template.InlineConstraint",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Template.InlineConstraint",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.InlineConstraint::Constraint:System.String",
-          "clrName": "Constraint",
+          "targetName": "Constraint",
           "metadataToken": 385876178,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Constraint|:System.String|static=false|accessor=get",
@@ -37,8 +37,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.InlineConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.InlineConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -52,8 +52,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.InlineConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.InlineConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.InlineConstraint::.ctor(Microsoft.AspNetCore.Routing.Patterns.RoutePatternParameterPolicyReference):void",
@@ -63,15 +63,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.InlineConstraint",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.InlineConstraint",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-      "clrName": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -81,12 +81,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::GetSegment(System.Int32):Microsoft.AspNetCore.Routing.Template.TemplateSegment",
-          "clrName": "GetSegment",
+          "targetName": "GetSegment",
           "metadataToken": 100664107,
           "canonicalSignature": "(System.Int32):Microsoft.AspNetCore.Routing.Template.TemplateSegment",
           "normalizedSignature": "GetSegment|(System.Int32):Microsoft.AspNetCore.Routing.Template.TemplateSegment|static=false",
@@ -100,13 +100,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::GetParameter(System.String):Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "clrName": "GetParameter",
+          "targetName": "GetParameter",
           "metadataToken": 100664109,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Routing.Template.TemplatePart",
           "normalizedSignature": "GetParameter|(System.String):Microsoft.AspNetCore.Routing.Template.TemplatePart|static=false",
@@ -120,13 +120,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::ToRoutePattern():Microsoft.AspNetCore.Routing.Patterns.RoutePattern",
-          "clrName": "ToRoutePattern",
+          "targetName": "ToRoutePattern",
           "metadataToken": 100664110,
           "canonicalSignature": "():Microsoft.AspNetCore.Routing.Patterns.RoutePattern",
           "normalizedSignature": "ToRoutePattern|():Microsoft.AspNetCore.Routing.Patterns.RoutePattern|static=false",
@@ -140,15 +140,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::TemplateText:System.String",
-          "clrName": "TemplateText",
+          "targetName": "TemplateText",
           "metadataToken": 385876179,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "TemplateText|:System.String|static=false|accessor=get",
@@ -162,12 +162,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::Parameters:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Template.TemplatePart,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Parameters",
+          "targetName": "Parameters",
           "metadataToken": 385876180,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Template.TemplatePart,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Parameters|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Template.TemplatePart,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -181,12 +181,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::Segments:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Template.TemplateSegment,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Segments",
+          "targetName": "Segments",
           "metadataToken": 385876181,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Template.TemplateSegment,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Segments|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Template.TemplateSegment,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -200,8 +200,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -215,8 +215,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::.ctor(System.String,System.Collections.Generic.List_1[[Microsoft.AspNetCore.Routing.Template.TemplateSegment,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
@@ -226,15 +226,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinder",
-      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateBinder",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Template.TemplateBinder",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -244,12 +244,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinder::GetValues(Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteValueDictionary):Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
-          "clrName": "GetValues",
+          "targetName": "GetValues",
           "metadataToken": 100664115,
           "canonicalSignature": "(Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteValueDictionary):Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
           "normalizedSignature": "GetValues|(Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteValueDictionary):Microsoft.AspNetCore.Routing.Template.TemplateValuesResult|static=false",
@@ -263,16 +263,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateBinder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateBinder",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinder::TryProcessConstraints(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String\u0026,Microsoft.AspNetCore.Routing.IRouteConstraint\u0026):System.Boolean",
-          "clrName": "TryProcessConstraints",
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinder::TryProcessConstraints(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String&,Microsoft.AspNetCore.Routing.IRouteConstraint&):System.Boolean",
+          "targetName": "TryProcessConstraints",
           "metadataToken": 100664116,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String\u0026,Microsoft.AspNetCore.Routing.IRouteConstraint\u0026):System.Boolean",
-          "normalizedSignature": "TryProcessConstraints|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String\u0026,Microsoft.AspNetCore.Routing.IRouteConstraint\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String&,Microsoft.AspNetCore.Routing.IRouteConstraint&):System.Boolean",
+          "normalizedSignature": "TryProcessConstraints|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String&,Microsoft.AspNetCore.Routing.IRouteConstraint&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -283,8 +283,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateBinder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateBinder",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -299,7 +299,7 @@
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinder::BindValues(Microsoft.AspNetCore.Routing.RouteValueDictionary):System.String",
-          "clrName": "BindValues",
+          "targetName": "BindValues",
           "metadataToken": 100664117,
           "canonicalSignature": "(Microsoft.AspNetCore.Routing.RouteValueDictionary):System.String",
           "normalizedSignature": "BindValues|(Microsoft.AspNetCore.Routing.RouteValueDictionary):System.String|static=false",
@@ -313,13 +313,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateBinder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateBinder",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinder::RoutePartsEqual(System.Object,System.Object):System.Boolean",
-          "clrName": "RoutePartsEqual",
+          "targetName": "RoutePartsEqual",
           "metadataToken": 100664121,
           "canonicalSignature": "(System.Object,System.Object):System.Boolean",
           "normalizedSignature": "RoutePartsEqual|(System.Object,System.Object):System.Boolean|static=true",
@@ -333,8 +333,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateBinder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateBinder",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         }
       ],
@@ -345,8 +345,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory",
-      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -356,12 +356,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory::Create(Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary):Microsoft.AspNetCore.Routing.Template.TemplateBinder",
-          "clrName": "Create",
+          "targetName": "Create",
           "metadataToken": 100664125,
           "canonicalSignature": "(Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary):Microsoft.AspNetCore.Routing.Template.TemplateBinder",
           "normalizedSignature": "Create|(Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary):Microsoft.AspNetCore.Routing.Template.TemplateBinder|static=false",
@@ -375,13 +375,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory::Create(Microsoft.AspNetCore.Routing.Patterns.RoutePattern):Microsoft.AspNetCore.Routing.Template.TemplateBinder",
-          "clrName": "Create",
+          "targetName": "Create",
           "metadataToken": 100664126,
           "canonicalSignature": "(Microsoft.AspNetCore.Routing.Patterns.RoutePattern):Microsoft.AspNetCore.Routing.Template.TemplateBinder",
           "normalizedSignature": "Create|(Microsoft.AspNetCore.Routing.Patterns.RoutePattern):Microsoft.AspNetCore.Routing.Template.TemplateBinder|static=false",
@@ -395,8 +395,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         }
       ],
@@ -412,15 +412,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
-      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -430,12 +430,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateMatcher::TryMatch(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Boolean",
-          "clrName": "TryMatch",
+          "targetName": "TryMatch",
           "metadataToken": 100664131,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Boolean",
           "normalizedSignature": "TryMatch|(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Boolean|static=false",
@@ -449,15 +449,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateMatcher::Defaults:Microsoft.AspNetCore.Routing.RouteValueDictionary",
-          "clrName": "Defaults",
+          "targetName": "Defaults",
           "metadataToken": 385876182,
           "canonicalSignature": ":Microsoft.AspNetCore.Routing.RouteValueDictionary",
           "normalizedSignature": "Defaults|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=get",
@@ -471,12 +471,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateMatcher::Template:Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-          "clrName": "Template",
+          "targetName": "Template",
           "metadataToken": 385876183,
           "canonicalSignature": ":Microsoft.AspNetCore.Routing.Template.RouteTemplate",
           "normalizedSignature": "Template|:Microsoft.AspNetCore.Routing.Template.RouteTemplate|static=false|accessor=get",
@@ -490,8 +490,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -505,15 +505,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart",
-      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -523,12 +523,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::CreateLiteral(System.String):Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "clrName": "CreateLiteral",
+          "targetName": "CreateLiteral",
           "metadataToken": 100664135,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Routing.Template.TemplatePart",
           "normalizedSignature": "CreateLiteral|(System.String):Microsoft.AspNetCore.Routing.Template.TemplatePart|static=true",
@@ -542,13 +542,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::CreateParameter(System.String,System.Boolean,System.Boolean,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.Template.InlineConstraint,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "clrName": "CreateParameter",
+          "targetName": "CreateParameter",
           "metadataToken": 100664136,
           "canonicalSignature": "(System.String,System.Boolean,System.Boolean,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.Template.InlineConstraint,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Template.TemplatePart",
           "normalizedSignature": "CreateParameter|(System.String,System.Boolean,System.Boolean,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.Template.InlineConstraint,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Template.TemplatePart|static=true",
@@ -562,13 +562,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::ToRoutePatternPart():Microsoft.AspNetCore.Routing.Patterns.RoutePatternPart",
-          "clrName": "ToRoutePatternPart",
+          "targetName": "ToRoutePatternPart",
           "metadataToken": 100664156,
           "canonicalSignature": "():Microsoft.AspNetCore.Routing.Patterns.RoutePatternPart",
           "normalizedSignature": "ToRoutePatternPart|():Microsoft.AspNetCore.Routing.Patterns.RoutePatternPart|static=false",
@@ -582,15 +582,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::IsCatchAll:System.Boolean",
-          "clrName": "IsCatchAll",
+          "targetName": "IsCatchAll",
           "metadataToken": 385876184,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsCatchAll|:System.Boolean|static=false|accessor=getset",
@@ -604,12 +604,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::IsLiteral:System.Boolean",
-          "clrName": "IsLiteral",
+          "targetName": "IsLiteral",
           "metadataToken": 385876185,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsLiteral|:System.Boolean|static=false|accessor=getset",
@@ -623,12 +623,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::IsParameter:System.Boolean",
-          "clrName": "IsParameter",
+          "targetName": "IsParameter",
           "metadataToken": 385876186,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsParameter|:System.Boolean|static=false|accessor=getset",
@@ -642,12 +642,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::IsOptional:System.Boolean",
-          "clrName": "IsOptional",
+          "targetName": "IsOptional",
           "metadataToken": 385876187,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsOptional|:System.Boolean|static=false|accessor=getset",
@@ -661,12 +661,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::IsOptionalSeperator:System.Boolean",
-          "clrName": "IsOptionalSeperator",
+          "targetName": "IsOptionalSeperator",
           "metadataToken": 385876188,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsOptionalSeperator|:System.Boolean|static=false|accessor=getset",
@@ -680,12 +680,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385876189,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
@@ -699,12 +699,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::Text:System.String",
-          "clrName": "Text",
+          "targetName": "Text",
           "metadataToken": 385876190,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Text|:System.String|static=false|accessor=getset",
@@ -718,12 +718,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::DefaultValue:System.Object",
-          "clrName": "DefaultValue",
+          "targetName": "DefaultValue",
           "metadataToken": 385876191,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "DefaultValue|:System.Object|static=false|accessor=getset",
@@ -737,12 +737,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::InlineConstraints:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.Template.InlineConstraint,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "InlineConstraints",
+          "targetName": "InlineConstraints",
           "metadataToken": 385876192,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.Template.InlineConstraint,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "InlineConstraints|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.Template.InlineConstraint,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -756,8 +756,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -771,8 +771,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::.ctor(Microsoft.AspNetCore.Routing.Patterns.RoutePatternPart):void",
@@ -782,15 +782,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateSegment",
-      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -800,12 +800,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateSegment::ToRoutePatternPathSegment():Microsoft.AspNetCore.Routing.Patterns.RoutePatternPathSegment",
-          "clrName": "ToRoutePatternPathSegment",
+          "targetName": "ToRoutePatternPathSegment",
           "metadataToken": 100664162,
           "canonicalSignature": "():Microsoft.AspNetCore.Routing.Patterns.RoutePatternPathSegment",
           "normalizedSignature": "ToRoutePatternPathSegment|():Microsoft.AspNetCore.Routing.Patterns.RoutePatternPathSegment|static=false",
@@ -819,15 +819,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateSegment::IsSimple:System.Boolean",
-          "clrName": "IsSimple",
+          "targetName": "IsSimple",
           "metadataToken": 385876193,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsSimple|:System.Boolean|static=false|accessor=get",
@@ -841,12 +841,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateSegment::Parts:System.Collections.Generic.List_1[[Microsoft.AspNetCore.Routing.Template.TemplatePart,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Parts",
+          "targetName": "Parts",
           "metadataToken": 385876194,
           "canonicalSignature": ":System.Collections.Generic.List_1[[Microsoft.AspNetCore.Routing.Template.TemplatePart,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Parts|:System.Collections.Generic.List_1[[Microsoft.AspNetCore.Routing.Template.TemplatePart,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -860,8 +860,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -875,8 +875,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateSegment::.ctor(Microsoft.AspNetCore.Routing.Patterns.RoutePatternPathSegment):void",
@@ -886,15 +886,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
-      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -904,13 +904,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateValuesResult::AcceptedValues:Microsoft.AspNetCore.Routing.RouteValueDictionary",
-          "clrName": "AcceptedValues",
+          "targetName": "AcceptedValues",
           "metadataToken": 385876195,
           "canonicalSignature": ":Microsoft.AspNetCore.Routing.RouteValueDictionary",
           "normalizedSignature": "AcceptedValues|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=getset",
@@ -924,12 +924,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateValuesResult::CombinedValues:Microsoft.AspNetCore.Routing.RouteValueDictionary",
-          "clrName": "CombinedValues",
+          "targetName": "CombinedValues",
           "metadataToken": 385876196,
           "canonicalSignature": ":Microsoft.AspNetCore.Routing.RouteValueDictionary",
           "normalizedSignature": "CombinedValues|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=getset",
@@ -943,8 +943,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
@@ -958,15 +958,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RoutePrecedence",
-      "clrName": "Microsoft.AspNetCore.Routing.Template.RoutePrecedence",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Template.RoutePrecedence",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -976,12 +976,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RoutePrecedence::ComputeInbound(Microsoft.AspNetCore.Routing.Template.RouteTemplate):System.Decimal",
-          "clrName": "ComputeInbound",
+          "targetName": "ComputeInbound",
           "metadataToken": 100664093,
           "canonicalSignature": "(Microsoft.AspNetCore.Routing.Template.RouteTemplate):System.Decimal",
           "normalizedSignature": "ComputeInbound|(Microsoft.AspNetCore.Routing.Template.RouteTemplate):System.Decimal|static=true",
@@ -995,13 +995,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.RoutePrecedence",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.RoutePrecedence",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RoutePrecedence::ComputeOutbound(Microsoft.AspNetCore.Routing.Template.RouteTemplate):System.Decimal",
-          "clrName": "ComputeOutbound",
+          "targetName": "ComputeOutbound",
           "metadataToken": 100664095,
           "canonicalSignature": "(Microsoft.AspNetCore.Routing.Template.RouteTemplate):System.Decimal",
           "normalizedSignature": "ComputeOutbound|(Microsoft.AspNetCore.Routing.Template.RouteTemplate):System.Decimal|static=true",
@@ -1015,8 +1015,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.RoutePrecedence",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.RoutePrecedence",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         }
       ],
@@ -1027,8 +1027,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateParser",
-      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateParser",
-      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "targetName": "Microsoft.AspNetCore.Routing.Template.TemplateParser",
+      "ownerIdentity": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -1038,12 +1038,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateParser::Parse(System.String):Microsoft.AspNetCore.Routing.Template.RouteTemplate",
-          "clrName": "Parse",
+          "targetName": "Parse",
           "metadataToken": 100664132,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Routing.Template.RouteTemplate",
           "normalizedSignature": "Parse|(System.String):Microsoft.AspNetCore.Routing.Template.RouteTemplate|static=true",
@@ -1057,8 +1057,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Routing.Template.TemplateParser",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Template.TemplateParser",
+          "ownerIdentity": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
         }
       ],

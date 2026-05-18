@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
-      "clrName": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
+      "targetName": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute::Key:System.Object",
-          "clrName": "Key",
+          "targetName": "Key",
           "metadataToken": 385876083,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Key|:System.Object|static=false|accessor=getset",
@@ -37,8 +37,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
         }
       ],
       "fields": [],
@@ -52,8 +52,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
         }
       ]
     }

@@ -7,8 +7,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
-      "clrName": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
-      "assemblyName": "Microsoft.AspNetCore.Http.Features",
+      "targetName": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Features",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -20,7 +20,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature::User:System.Security.Claims.ClaimsPrincipal",
-          "clrName": "User",
+          "targetName": "User",
           "metadataToken": 385876151,
           "canonicalSignature": ":System.Security.Claims.ClaimsPrincipal",
           "normalizedSignature": "User|:System.Security.Claims.ClaimsPrincipal|static=false|accessor=getset",
@@ -34,8 +34,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Features"
         }
       ],
       "fields": [],
@@ -44,8 +44,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Features.Authentication.HttpAuthenticationFeature",
-      "clrName": "Microsoft.AspNetCore.Http.Features.Authentication.HttpAuthenticationFeature",
-      "assemblyName": "Microsoft.AspNetCore.Http",
+      "targetName": "Microsoft.AspNetCore.Http.Features.Authentication.HttpAuthenticationFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Http",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -55,19 +55,19 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
-          "clrName": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature"
+          "targetName": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature"
         }
       ],
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Features.Authentication.HttpAuthenticationFeature::User:System.Security.Claims.ClaimsPrincipal",
-          "clrName": "User",
+          "targetName": "User",
           "metadataToken": 385876201,
           "canonicalSignature": ":System.Security.Claims.ClaimsPrincipal",
           "normalizedSignature": "User|:System.Security.Claims.ClaimsPrincipal|static=false|accessor=getset",
@@ -81,12 +81,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Features.Authentication.HttpAuthenticationFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Features.Authentication.HttpAuthenticationFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Http"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature::User:System.Security.Claims.ClaimsPrincipal",
-          "clrName": "User",
+          "targetName": "User",
           "metadataToken": 385876151,
           "canonicalSignature": ":System.Security.Claims.ClaimsPrincipal",
           "normalizedSignature": "User|:System.Security.Claims.ClaimsPrincipal|static=false|accessor=getset",
@@ -101,8 +101,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Features"
         }
       ],
       "fields": [],
@@ -116,8 +116,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Features.Authentication.HttpAuthenticationFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Features.Authentication.HttpAuthenticationFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Http"
         }
       ]
     }

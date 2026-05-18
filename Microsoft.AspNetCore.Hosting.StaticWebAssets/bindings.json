@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
-      "clrName": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
-      "assemblyName": "Microsoft.AspNetCore.Hosting",
+      "targetName": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
+      "ownerIdentity": "Microsoft.AspNetCore.Hosting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader::UseStaticWebAssets(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration):System.Void",
-          "clrName": "UseStaticWebAssets",
+          "targetName": "UseStaticWebAssets",
           "metadataToken": 100663778,
           "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration):System.Void",
           "normalizedSignature": "UseStaticWebAssets|(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration):System.Void|static=true",
@@ -36,8 +36,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
         }
       ],
@@ -53,8 +53,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
+          "ownerIdentity": "Microsoft.AspNetCore.Hosting"
         }
       ]
     }

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ICookieManager::GetRequestCookie(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String",
-          "clrName": "GetRequestCookie",
+          "targetName": "GetRequestCookie",
           "metadataToken": 100663401,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String",
           "normalizedSignature": "GetRequestCookie|(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String|static=false",
@@ -32,13 +32,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ICookieManager::AppendResponseCookie(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
-          "clrName": "AppendResponseCookie",
+          "targetName": "AppendResponseCookie",
           "metadataToken": 100663402,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
           "normalizedSignature": "AppendResponseCookie|(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void|static=false",
@@ -52,13 +52,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ICookieManager::DeleteCookie(Microsoft.AspNetCore.Http.HttpContext,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
-          "clrName": "DeleteCookie",
+          "targetName": "DeleteCookie",
           "metadataToken": 100663403,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
           "normalizedSignature": "DeleteCookie|(Microsoft.AspNetCore.Http.HttpContext,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void|static=false",
@@ -72,8 +72,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         }
       ],
@@ -84,8 +84,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -96,7 +96,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::StoreAsync(Microsoft.AspNetCore.Authentication.AuthenticationTicket):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "StoreAsync",
+          "targetName": "StoreAsync",
           "metadataToken": 100663404,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.AuthenticationTicket):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "StoreAsync|(Microsoft.AspNetCore.Authentication.AuthenticationTicket):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -110,13 +110,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::StoreAsync(Microsoft.AspNetCore.Authentication.AuthenticationTicket,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "StoreAsync",
+          "targetName": "StoreAsync",
           "metadataToken": 100663405,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.AuthenticationTicket,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "StoreAsync|(Microsoft.AspNetCore.Authentication.AuthenticationTicket,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -130,13 +130,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::StoreAsync(Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "StoreAsync",
+          "targetName": "StoreAsync",
           "metadataToken": 100663406,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "StoreAsync|(Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -150,13 +150,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::RenewAsync(System.String,Microsoft.AspNetCore.Authentication.AuthenticationTicket):System.Threading.Tasks.Task",
-          "clrName": "RenewAsync",
+          "targetName": "RenewAsync",
           "metadataToken": 100663407,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Authentication.AuthenticationTicket):System.Threading.Tasks.Task",
           "normalizedSignature": "RenewAsync|(System.String,Microsoft.AspNetCore.Authentication.AuthenticationTicket):System.Threading.Tasks.Task|static=false",
@@ -170,13 +170,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::RenewAsync(System.String,Microsoft.AspNetCore.Authentication.AuthenticationTicket,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RenewAsync",
+          "targetName": "RenewAsync",
           "metadataToken": 100663408,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Authentication.AuthenticationTicket,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RenewAsync|(System.String,Microsoft.AspNetCore.Authentication.AuthenticationTicket,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -190,13 +190,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::RenewAsync(System.String,Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RenewAsync",
+          "targetName": "RenewAsync",
           "metadataToken": 100663409,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RenewAsync|(System.String,Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -210,13 +210,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::RetrieveAsync(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "RetrieveAsync",
+          "targetName": "RetrieveAsync",
           "metadataToken": 100663410,
           "canonicalSignature": "(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "RetrieveAsync|(System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -230,13 +230,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::RetrieveAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "RetrieveAsync",
+          "targetName": "RetrieveAsync",
           "metadataToken": 100663411,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "RetrieveAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -250,13 +250,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::RetrieveAsync(System.String,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "RetrieveAsync",
+          "targetName": "RetrieveAsync",
           "metadataToken": 100663412,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "RetrieveAsync|(System.String,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -270,13 +270,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::RemoveAsync(System.String):System.Threading.Tasks.Task",
-          "clrName": "RemoveAsync",
+          "targetName": "RemoveAsync",
           "metadataToken": 100663413,
           "canonicalSignature": "(System.String):System.Threading.Tasks.Task",
           "normalizedSignature": "RemoveAsync|(System.String):System.Threading.Tasks.Task|static=false",
@@ -290,13 +290,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::RemoveAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RemoveAsync",
+          "targetName": "RemoveAsync",
           "metadataToken": 100663414,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RemoveAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -310,13 +310,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore::RemoveAsync(System.String,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RemoveAsync",
+          "targetName": "RemoveAsync",
           "metadataToken": 100663415,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RemoveAsync|(System.String,Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -330,8 +330,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         }
       ],
@@ -342,8 +342,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -353,18 +353,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
-          "clrName": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager"
+          "targetName": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager::GetRequestCookie(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String",
-          "clrName": "GetRequestCookie",
+          "targetName": "GetRequestCookie",
           "metadataToken": 100663424,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String",
           "normalizedSignature": "GetRequestCookie|(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String|static=false",
@@ -378,13 +378,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager::AppendResponseCookie(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
-          "clrName": "AppendResponseCookie",
+          "targetName": "AppendResponseCookie",
           "metadataToken": 100663425,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
           "normalizedSignature": "AppendResponseCookie|(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void|static=false",
@@ -398,13 +398,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager::DeleteCookie(Microsoft.AspNetCore.Http.HttpContext,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
-          "clrName": "DeleteCookie",
+          "targetName": "DeleteCookie",
           "metadataToken": 100663426,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
           "normalizedSignature": "DeleteCookie|(Microsoft.AspNetCore.Http.HttpContext,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void|static=false",
@@ -418,13 +418,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ICookieManager::GetRequestCookie(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String",
-          "clrName": "GetRequestCookie",
+          "targetName": "GetRequestCookie",
           "metadataToken": 100663401,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String",
           "normalizedSignature": "GetRequestCookie|(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String|static=false",
@@ -438,14 +438,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ICookieManager::AppendResponseCookie(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
-          "clrName": "AppendResponseCookie",
+          "targetName": "AppendResponseCookie",
           "metadataToken": 100663402,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
           "normalizedSignature": "AppendResponseCookie|(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void|static=false",
@@ -459,14 +459,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ICookieManager::DeleteCookie(Microsoft.AspNetCore.Http.HttpContext,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
-          "clrName": "DeleteCookie",
+          "targetName": "DeleteCookie",
           "metadataToken": 100663403,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
           "normalizedSignature": "DeleteCookie|(Microsoft.AspNetCore.Http.HttpContext,System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void|static=false",
@@ -480,8 +480,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authentication.Cookies.ICookieManager"
         }
@@ -489,7 +489,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager::ChunkSize:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ChunkSize",
+          "targetName": "ChunkSize",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ChunkSize|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -503,12 +503,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager::ThrowForPartialCookies:System.Boolean",
-          "clrName": "ThrowForPartialCookies",
+          "targetName": "ThrowForPartialCookies",
           "metadataToken": 385875998,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ThrowForPartialCookies|:System.Boolean|static=false|accessor=getset",
@@ -522,22 +522,22 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager::DefaultChunkSizeSystem.Int32",
-          "clrName": "DefaultChunkSize",
+          "targetName": "DefaultChunkSize",
           "metadataToken": 67108918,
           "normalizedSignature": "DefaultChunkSize|System.Int32|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ],
       "events": [],
@@ -550,15 +550,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.ChunkingCookieManager",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -568,12 +568,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::ValidatePrincipal(Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext):System.Threading.Tasks.Task",
-          "clrName": "ValidatePrincipal",
+          "targetName": "ValidatePrincipal",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext):System.Threading.Tasks.Task",
           "normalizedSignature": "ValidatePrincipal|(Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext):System.Threading.Tasks.Task|static=false",
@@ -587,13 +587,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::CheckSlidingExpiration(Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext):System.Threading.Tasks.Task",
-          "clrName": "CheckSlidingExpiration",
+          "targetName": "CheckSlidingExpiration",
           "metadataToken": 100663328,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext):System.Threading.Tasks.Task",
           "normalizedSignature": "CheckSlidingExpiration|(Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext):System.Threading.Tasks.Task|static=false",
@@ -607,13 +607,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::SigningIn(Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext):System.Threading.Tasks.Task",
-          "clrName": "SigningIn",
+          "targetName": "SigningIn",
           "metadataToken": 100663329,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext):System.Threading.Tasks.Task",
           "normalizedSignature": "SigningIn|(Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext):System.Threading.Tasks.Task|static=false",
@@ -627,13 +627,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::SignedIn(Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext):System.Threading.Tasks.Task",
-          "clrName": "SignedIn",
+          "targetName": "SignedIn",
           "metadataToken": 100663330,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext):System.Threading.Tasks.Task",
           "normalizedSignature": "SignedIn|(Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext):System.Threading.Tasks.Task|static=false",
@@ -647,13 +647,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::SigningOut(Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext):System.Threading.Tasks.Task",
-          "clrName": "SigningOut",
+          "targetName": "SigningOut",
           "metadataToken": 100663331,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext):System.Threading.Tasks.Task",
           "normalizedSignature": "SigningOut|(Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext):System.Threading.Tasks.Task|static=false",
@@ -667,13 +667,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::RedirectToLogout(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
-          "clrName": "RedirectToLogout",
+          "targetName": "RedirectToLogout",
           "metadataToken": 100663332,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
           "normalizedSignature": "RedirectToLogout|(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task|static=false",
@@ -687,13 +687,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::RedirectToLogin(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
-          "clrName": "RedirectToLogin",
+          "targetName": "RedirectToLogin",
           "metadataToken": 100663333,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
           "normalizedSignature": "RedirectToLogin|(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task|static=false",
@@ -707,13 +707,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::RedirectToReturnUrl(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
-          "clrName": "RedirectToReturnUrl",
+          "targetName": "RedirectToReturnUrl",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
           "normalizedSignature": "RedirectToReturnUrl|(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task|static=false",
@@ -727,13 +727,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::RedirectToAccessDenied(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
-          "clrName": "RedirectToAccessDenied",
+          "targetName": "RedirectToAccessDenied",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
           "normalizedSignature": "RedirectToAccessDenied|(Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task|static=false",
@@ -747,15 +747,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::OnValidatePrincipal:System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnValidatePrincipal",
+          "targetName": "OnValidatePrincipal",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnValidatePrincipal|:System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -769,12 +769,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::OnCheckSlidingExpiration:System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnCheckSlidingExpiration",
+          "targetName": "OnCheckSlidingExpiration",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnCheckSlidingExpiration|:System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -788,12 +788,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::OnSigningIn:System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnSigningIn",
+          "targetName": "OnSigningIn",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnSigningIn|:System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -807,12 +807,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::OnSignedIn:System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnSignedIn",
+          "targetName": "OnSignedIn",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnSignedIn|:System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -826,12 +826,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::OnSigningOut:System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnSigningOut",
+          "targetName": "OnSigningOut",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnSigningOut|:System.Func_2[[Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -845,12 +845,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::OnRedirectToLogin:System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnRedirectToLogin",
+          "targetName": "OnRedirectToLogin",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnRedirectToLogin|:System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -864,12 +864,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::OnRedirectToAccessDenied:System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnRedirectToAccessDenied",
+          "targetName": "OnRedirectToAccessDenied",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnRedirectToAccessDenied|:System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -883,12 +883,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::OnRedirectToLogout:System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnRedirectToLogout",
+          "targetName": "OnRedirectToLogout",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnRedirectToLogout|:System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -902,12 +902,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents::OnRedirectToReturnUrl:System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnRedirectToReturnUrl",
+          "targetName": "OnRedirectToReturnUrl",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnRedirectToReturnUrl|:System.Func_2[[Microsoft.AspNetCore.Authentication.RedirectContext_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Authentication,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -921,8 +921,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ],
       "fields": [],
@@ -936,15 +936,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -953,8 +953,8 @@
       "isStatic": false,
       "arity": 0,
       "baseType": {
-        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.SignInAuthenticationHandler\u00601",
-        "clrName": "Microsoft.AspNetCore.Authentication.SignInAuthenticationHandler\u00601",
+        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.SignInAuthenticationHandler`1",
+        "targetName": "Microsoft.AspNetCore.Authentication.SignInAuthenticationHandler`1",
         "typeArguments": [
           "CookieAuthenticationOptions"
         ]
@@ -962,21 +962,21 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Abstractions:Microsoft.AspNetCore.Authentication.IAuthenticationHandler",
-          "clrName": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler"
+          "targetName": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Abstractions:Microsoft.AspNetCore.Authentication.IAuthenticationSignOutHandler",
-          "clrName": "Microsoft.AspNetCore.Authentication.IAuthenticationSignOutHandler"
+          "targetName": "Microsoft.AspNetCore.Authentication.IAuthenticationSignOutHandler"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Abstractions:Microsoft.AspNetCore.Authentication.IAuthenticationSignInHandler",
-          "clrName": "Microsoft.AspNetCore.Authentication.IAuthenticationSignInHandler"
+          "targetName": "Microsoft.AspNetCore.Authentication.IAuthenticationSignInHandler"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::InitializeHandlerAsync():System.Threading.Tasks.Task",
-          "clrName": "InitializeHandlerAsync",
+          "targetName": "InitializeHandlerAsync",
           "metadataToken": 100663342,
           "canonicalSignature": "():System.Threading.Tasks.Task",
           "normalizedSignature": "InitializeHandlerAsync|():System.Threading.Tasks.Task|static=false",
@@ -990,13 +990,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::CreateEventsAsync():System.Threading.Tasks.Task_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "CreateEventsAsync",
+          "targetName": "CreateEventsAsync",
           "metadataToken": 100663343,
           "canonicalSignature": "():System.Threading.Tasks.Task_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "CreateEventsAsync|():System.Threading.Tasks.Task_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -1010,13 +1010,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::HandleAuthenticateAsync():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticateResult,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "HandleAuthenticateAsync",
+          "targetName": "HandleAuthenticateAsync",
           "metadataToken": 100663349,
           "canonicalSignature": "():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticateResult,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "HandleAuthenticateAsync|():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticateResult,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -1030,13 +1030,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::FinishResponseAsync():System.Threading.Tasks.Task",
-          "clrName": "FinishResponseAsync",
+          "targetName": "FinishResponseAsync",
           "metadataToken": 100663351,
           "canonicalSignature": "():System.Threading.Tasks.Task",
           "normalizedSignature": "FinishResponseAsync|():System.Threading.Tasks.Task|static=false",
@@ -1050,13 +1050,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::HandleSignInAsync(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
-          "clrName": "HandleSignInAsync",
+          "targetName": "HandleSignInAsync",
           "metadataToken": 100663352,
           "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleSignInAsync|(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task|static=false",
@@ -1070,13 +1070,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::HandleSignOutAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
-          "clrName": "HandleSignOutAsync",
+          "targetName": "HandleSignOutAsync",
           "metadataToken": 100663353,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleSignOutAsync|(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task|static=false",
@@ -1090,13 +1090,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::HandleForbiddenAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
-          "clrName": "HandleForbiddenAsync",
+          "targetName": "HandleForbiddenAsync",
           "metadataToken": 100663356,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleForbiddenAsync|(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task|static=false",
@@ -1110,13 +1110,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::HandleChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
-          "clrName": "HandleChallengeAsync",
+          "targetName": "HandleChallengeAsync",
           "metadataToken": 100663357,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
           "normalizedSignature": "HandleChallengeAsync|(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task|static=false",
@@ -1130,13 +1130,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Abstractions:Microsoft.AspNetCore.Authentication.IAuthenticationHandler::InitializeAsync(Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "clrName": "InitializeAsync",
+          "targetName": "InitializeAsync",
           "metadataToken": 100663413,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "InitializeAsync|(Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
@@ -1150,14 +1150,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Abstractions:Microsoft.AspNetCore.Authentication.IAuthenticationHandler::AuthenticateAsync():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticateResult,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthenticateAsync",
+          "targetName": "AuthenticateAsync",
           "metadataToken": 100663414,
           "canonicalSignature": "():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticateResult,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthenticateAsync|():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Authentication.AuthenticateResult,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -1171,14 +1171,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Abstractions:Microsoft.AspNetCore.Authentication.IAuthenticationHandler::ChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
-          "clrName": "ChallengeAsync",
+          "targetName": "ChallengeAsync",
           "metadataToken": 100663415,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
           "normalizedSignature": "ChallengeAsync|(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task|static=false",
@@ -1192,14 +1192,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Abstractions:Microsoft.AspNetCore.Authentication.IAuthenticationSignInHandler::SignInAsync(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
-          "clrName": "SignInAsync",
+          "targetName": "SignInAsync",
           "metadataToken": 100663435,
           "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
           "normalizedSignature": "SignInAsync|(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task|static=false",
@@ -1213,14 +1213,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.IAuthenticationSignInHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.IAuthenticationSignInHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authentication.IAuthenticationSignInHandler"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Abstractions:Microsoft.AspNetCore.Authentication.IAuthenticationSignOutHandler::SignOutAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
-          "clrName": "SignOutAsync",
+          "targetName": "SignOutAsync",
           "metadataToken": 100663436,
           "canonicalSignature": "(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task",
           "normalizedSignature": "SignOutAsync|(Microsoft.AspNetCore.Authentication.AuthenticationProperties):System.Threading.Tasks.Task|static=false",
@@ -1234,8 +1234,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.IAuthenticationSignOutHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.IAuthenticationSignOutHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler"
         }
@@ -1243,7 +1243,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::Events:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "clrName": "Events",
+          "targetName": "Events",
           "metadataToken": 385875978,
           "canonicalSignature": ":Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
           "normalizedSignature": "Events|:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents|static=false|accessor=getset",
@@ -1257,8 +1257,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ],
       "fields": [],
@@ -1272,8 +1272,8 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::.ctor(Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.Cookies,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder):void",
@@ -1283,15 +1283,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1301,13 +1301,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions",
-        "clrName": "Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions"
+        "targetName": "Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::Cookie:Microsoft.AspNetCore.Http.CookieBuilder",
-          "clrName": "Cookie",
+          "targetName": "Cookie",
           "metadataToken": 385875979,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.CookieBuilder",
           "normalizedSignature": "Cookie|:Microsoft.AspNetCore.Http.CookieBuilder|static=false|accessor=getset",
@@ -1321,12 +1321,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::DataProtectionProvider:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
-          "clrName": "DataProtectionProvider",
+          "targetName": "DataProtectionProvider",
           "metadataToken": 385875980,
           "canonicalSignature": ":Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "normalizedSignature": "DataProtectionProvider|:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=false|accessor=getset",
@@ -1340,12 +1340,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::SlidingExpiration:System.Boolean",
-          "clrName": "SlidingExpiration",
+          "targetName": "SlidingExpiration",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "SlidingExpiration|:System.Boolean|static=false|accessor=getset",
@@ -1359,12 +1359,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::LoginPath:Microsoft.AspNetCore.Http.PathString",
-          "clrName": "LoginPath",
+          "targetName": "LoginPath",
           "metadataToken": 385875982,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.PathString",
           "normalizedSignature": "LoginPath|:Microsoft.AspNetCore.Http.PathString|static=false|accessor=getset",
@@ -1378,12 +1378,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::LogoutPath:Microsoft.AspNetCore.Http.PathString",
-          "clrName": "LogoutPath",
+          "targetName": "LogoutPath",
           "metadataToken": 385875983,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.PathString",
           "normalizedSignature": "LogoutPath|:Microsoft.AspNetCore.Http.PathString|static=false|accessor=getset",
@@ -1397,12 +1397,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::AccessDeniedPath:Microsoft.AspNetCore.Http.PathString",
-          "clrName": "AccessDeniedPath",
+          "targetName": "AccessDeniedPath",
           "metadataToken": 385875984,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.PathString",
           "normalizedSignature": "AccessDeniedPath|:Microsoft.AspNetCore.Http.PathString|static=false|accessor=getset",
@@ -1416,12 +1416,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::ReturnUrlParameter:System.String",
-          "clrName": "ReturnUrlParameter",
+          "targetName": "ReturnUrlParameter",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ReturnUrlParameter|:System.String|static=false|accessor=getset",
@@ -1435,12 +1435,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::Events:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-          "clrName": "Events",
+          "targetName": "Events",
           "metadataToken": 385875986,
           "canonicalSignature": ":Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
           "normalizedSignature": "Events|:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents|static=false|accessor=getset",
@@ -1454,12 +1454,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::TicketDataFormat:Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "TicketDataFormat",
+          "targetName": "TicketDataFormat",
           "metadataToken": 385875987,
           "canonicalSignature": ":Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "TicketDataFormat|:Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -1473,12 +1473,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::CookieManager:Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
-          "clrName": "CookieManager",
+          "targetName": "CookieManager",
           "metadataToken": 385875988,
           "canonicalSignature": ":Microsoft.AspNetCore.Authentication.Cookies.ICookieManager",
           "normalizedSignature": "CookieManager|:Microsoft.AspNetCore.Authentication.Cookies.ICookieManager|static=false|accessor=getset",
@@ -1492,12 +1492,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::SessionStore:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
-          "clrName": "SessionStore",
+          "targetName": "SessionStore",
           "metadataToken": 385875989,
           "canonicalSignature": ":Microsoft.AspNetCore.Authentication.Cookies.ITicketStore",
           "normalizedSignature": "SessionStore|:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore|static=false|accessor=getset",
@@ -1511,12 +1511,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions::ExpireTimeSpan:System.TimeSpan",
-          "clrName": "ExpireTimeSpan",
+          "targetName": "ExpireTimeSpan",
           "metadataToken": 385875990,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "ExpireTimeSpan|:System.TimeSpan|static=false|accessor=getset",
@@ -1530,8 +1530,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ],
       "fields": [],
@@ -1545,15 +1545,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1562,8 +1562,8 @@
       "isStatic": false,
       "arity": 0,
       "baseType": {
-        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PrincipalContext\u00601",
-        "clrName": "Microsoft.AspNetCore.Authentication.PrincipalContext\u00601",
+        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PrincipalContext`1",
+        "targetName": "Microsoft.AspNetCore.Authentication.PrincipalContext`1",
         "typeArguments": [
           "CookieAuthenticationOptions"
         ]
@@ -1581,15 +1581,15 @@
           "isStatic": false,
           "parameterCount": 5,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1598,8 +1598,8 @@
       "isStatic": false,
       "arity": 0,
       "baseType": {
-        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PrincipalContext\u00601",
-        "clrName": "Microsoft.AspNetCore.Authentication.PrincipalContext\u00601",
+        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PrincipalContext`1",
+        "targetName": "Microsoft.AspNetCore.Authentication.PrincipalContext`1",
         "typeArguments": [
           "CookieAuthenticationOptions"
         ]
@@ -1608,7 +1608,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext::CookieOptions:Microsoft.AspNetCore.Http.CookieOptions",
-          "clrName": "CookieOptions",
+          "targetName": "CookieOptions",
           "metadataToken": 385875991,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.CookieOptions",
           "normalizedSignature": "CookieOptions|:Microsoft.AspNetCore.Http.CookieOptions|static=false|accessor=getset",
@@ -1622,8 +1622,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ],
       "fields": [],
@@ -1637,15 +1637,15 @@
           "isStatic": false,
           "parameterCount": 6,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1654,8 +1654,8 @@
       "isStatic": false,
       "arity": 0,
       "baseType": {
-        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PropertiesContext\u00601",
-        "clrName": "Microsoft.AspNetCore.Authentication.PropertiesContext\u00601",
+        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PropertiesContext`1",
+        "targetName": "Microsoft.AspNetCore.Authentication.PropertiesContext`1",
         "typeArguments": [
           "CookieAuthenticationOptions"
         ]
@@ -1664,7 +1664,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext::CookieOptions:Microsoft.AspNetCore.Http.CookieOptions",
-          "clrName": "CookieOptions",
+          "targetName": "CookieOptions",
           "metadataToken": 385875992,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.CookieOptions",
           "normalizedSignature": "CookieOptions|:Microsoft.AspNetCore.Http.CookieOptions|static=false|accessor=getset",
@@ -1678,8 +1678,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ],
       "fields": [],
@@ -1693,15 +1693,15 @@
           "isStatic": false,
           "parameterCount": 5,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1710,8 +1710,8 @@
       "isStatic": false,
       "arity": 0,
       "baseType": {
-        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PrincipalContext\u00601",
-        "clrName": "Microsoft.AspNetCore.Authentication.PrincipalContext\u00601",
+        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PrincipalContext`1",
+        "targetName": "Microsoft.AspNetCore.Authentication.PrincipalContext`1",
         "typeArguments": [
           "CookieAuthenticationOptions"
         ]
@@ -1720,7 +1720,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext::ElapsedTime:System.TimeSpan",
-          "clrName": "ElapsedTime",
+          "targetName": "ElapsedTime",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "ElapsedTime|:System.TimeSpan|static=false|accessor=get",
@@ -1734,12 +1734,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext::RemainingTime:System.TimeSpan",
-          "clrName": "RemainingTime",
+          "targetName": "RemainingTime",
           "metadataToken": 385875994,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "RemainingTime|:System.TimeSpan|static=false|accessor=get",
@@ -1753,12 +1753,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext::ShouldRenew:System.Boolean",
-          "clrName": "ShouldRenew",
+          "targetName": "ShouldRenew",
           "metadataToken": 385875995,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ShouldRenew|:System.Boolean|static=false|accessor=getset",
@@ -1772,8 +1772,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ],
       "fields": [],
@@ -1787,15 +1787,15 @@
           "isStatic": false,
           "parameterCount": 6,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1804,8 +1804,8 @@
       "isStatic": false,
       "arity": 0,
       "baseType": {
-        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PrincipalContext\u00601",
-        "clrName": "Microsoft.AspNetCore.Authentication.PrincipalContext\u00601",
+        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PrincipalContext`1",
+        "targetName": "Microsoft.AspNetCore.Authentication.PrincipalContext`1",
         "typeArguments": [
           "CookieAuthenticationOptions"
         ]
@@ -1813,7 +1813,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext::ReplacePrincipal(System.Security.Claims.ClaimsPrincipal):System.Void",
-          "clrName": "ReplacePrincipal",
+          "targetName": "ReplacePrincipal",
           "metadataToken": 100663399,
           "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal):System.Void",
           "normalizedSignature": "ReplacePrincipal|(System.Security.Claims.ClaimsPrincipal):System.Void|static=false",
@@ -1827,13 +1827,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext::RejectPrincipal():System.Void",
-          "clrName": "RejectPrincipal",
+          "targetName": "RejectPrincipal",
           "metadataToken": 100663400,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "RejectPrincipal|():System.Void|static=false",
@@ -1847,15 +1847,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext::ShouldRenew:System.Boolean",
-          "clrName": "ShouldRenew",
+          "targetName": "ShouldRenew",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ShouldRenew|:System.Boolean|static=false|accessor=getset",
@@ -1869,8 +1869,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ],
       "fields": [],
@@ -1884,15 +1884,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.PostConfigureCookieAuthenticationOptions",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.PostConfigureCookieAuthenticationOptions",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.PostConfigureCookieAuthenticationOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1902,12 +1902,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
-          "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IPostConfigureOptions\u00601",
-          "clrName": "Microsoft.Extensions.Options.IPostConfigureOptions\u00601",
+          "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IPostConfigureOptions`1",
+          "targetName": "Microsoft.Extensions.Options.IPostConfigureOptions`1",
           "typeArguments": [
             "CookieAuthenticationOptions"
           ]
@@ -1916,7 +1916,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.PostConfigureCookieAuthenticationOptions::PostConfigure(System.String,Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions):System.Void",
-          "clrName": "PostConfigure",
+          "targetName": "PostConfigure",
           "metadataToken": 100663417,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions):System.Void",
           "normalizedSignature": "PostConfigure|(System.String,Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions):System.Void|static=false",
@@ -1930,8 +1930,8 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.PostConfigureCookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.PostConfigureCookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": false
         }
       ],
@@ -1947,15 +1947,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.PostConfigureCookieAuthenticationOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.PostConfigureCookieAuthenticationOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
-      "clrName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
-      "assemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
+      "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -1965,82 +1965,82 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults::AuthenticationSchemeSystem.String",
-          "clrName": "AuthenticationScheme",
+          "targetName": "AuthenticationScheme",
           "metadataToken": 67108872,
           "normalizedSignature": "AuthenticationScheme|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults::CookiePrefixSystem.String",
-          "clrName": "CookiePrefix",
+          "targetName": "CookiePrefix",
           "metadataToken": 67108873,
           "normalizedSignature": "CookiePrefix|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults::LoginPathMicrosoft.AspNetCore.Http.PathString",
-          "clrName": "LoginPath",
+          "targetName": "LoginPath",
           "metadataToken": 67108874,
           "normalizedSignature": "LoginPath|Microsoft.AspNetCore.Http.PathString|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults::LogoutPathMicrosoft.AspNetCore.Http.PathString",
-          "clrName": "LogoutPath",
+          "targetName": "LogoutPath",
           "metadataToken": 67108875,
           "normalizedSignature": "LogoutPath|Microsoft.AspNetCore.Http.PathString|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults::AccessDeniedPathMicrosoft.AspNetCore.Http.PathString",
-          "clrName": "AccessDeniedPath",
+          "targetName": "AccessDeniedPath",
           "metadataToken": 67108876,
           "normalizedSignature": "AccessDeniedPath|Microsoft.AspNetCore.Http.PathString|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         },
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults::ReturnUrlParameterSystem.String",
-          "clrName": "ReturnUrlParameter",
+          "targetName": "ReturnUrlParameter",
           "metadataToken": 67108877,
           "normalizedSignature": "ReturnUrlParameter|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults",
+          "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
         }
       ],
       "events": [],

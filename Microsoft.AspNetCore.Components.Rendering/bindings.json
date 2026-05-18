@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState",
-      "clrName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,18 +17,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
-          "clrName": "System.IAsyncDisposable"
+          "targetName": "System.IAsyncDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState::DisposeAsync():System.Threading.Tasks.ValueTask",
-          "clrName": "DisposeAsync",
+          "targetName": "DisposeAsync",
           "metadataToken": 100664875,
           "canonicalSignature": "():System.Threading.Tasks.ValueTask",
           "normalizedSignature": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
@@ -42,13 +42,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState::GetComponentKey():System.Object",
-          "clrName": "GetComponentKey",
+          "targetName": "GetComponentKey",
           "metadataToken": 100664878,
           "canonicalSignature": "():System.Object",
           "normalizedSignature": "GetComponentKey|():System.Object|static=false",
@@ -62,15 +62,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState::ComponentId:System.Int32",
-          "clrName": "ComponentId",
+          "targetName": "ComponentId",
           "metadataToken": 385876300,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "ComponentId|:System.Int32|static=false|accessor=get",
@@ -84,12 +84,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState::Component:Microsoft.AspNetCore.Components.IComponent",
-          "clrName": "Component",
+          "targetName": "Component",
           "metadataToken": 385876301,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.IComponent",
           "normalizedSignature": "Component|:Microsoft.AspNetCore.Components.IComponent|static=false|accessor=get",
@@ -103,12 +103,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState::ParentComponentState:Microsoft.AspNetCore.Components.Rendering.ComponentState",
-          "clrName": "ParentComponentState",
+          "targetName": "ParentComponentState",
           "metadataToken": 385876302,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.Rendering.ComponentState",
           "normalizedSignature": "ParentComponentState|:Microsoft.AspNetCore.Components.Rendering.ComponentState|static=false|accessor=get",
@@ -122,12 +122,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState::LogicalParentComponentState:Microsoft.AspNetCore.Components.Rendering.ComponentState",
-          "clrName": "LogicalParentComponentState",
+          "targetName": "LogicalParentComponentState",
           "metadataToken": 385876303,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.Rendering.ComponentState",
           "normalizedSignature": "LogicalParentComponentState|:Microsoft.AspNetCore.Components.Rendering.ComponentState|static=false|accessor=get",
@@ -141,12 +141,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState::Renderer:Microsoft.AspNetCore.Components.RenderTree.Renderer",
-          "clrName": "Renderer",
+          "targetName": "Renderer",
           "metadataToken": 385876305,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.RenderTree.Renderer",
           "normalizedSignature": "Renderer|:Microsoft.AspNetCore.Components.RenderTree.Renderer|static=false|accessor=get",
@@ -160,8 +160,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ],
       "fields": [],
@@ -175,15 +175,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-      "clrName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-      "assemblyName": "Microsoft.AspNetCore.Components",
+      "targetName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+      "ownerIdentity": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -193,18 +193,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::OpenElement(System.Int32,System.String):System.Void",
-          "clrName": "OpenElement",
+          "targetName": "OpenElement",
           "metadataToken": 100664929,
           "canonicalSignature": "(System.Int32,System.String):System.Void",
           "normalizedSignature": "OpenElement|(System.Int32,System.String):System.Void|static=false",
@@ -218,13 +218,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::CloseElement():System.Void",
-          "clrName": "CloseElement",
+          "targetName": "CloseElement",
           "metadataToken": 100664930,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "CloseElement|():System.Void|static=false",
@@ -238,13 +238,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddMarkupContent(System.Int32,System.String):System.Void",
-          "clrName": "AddMarkupContent",
+          "targetName": "AddMarkupContent",
           "metadataToken": 100664931,
           "canonicalSignature": "(System.Int32,System.String):System.Void",
           "normalizedSignature": "AddMarkupContent|(System.Int32,System.String):System.Void|static=false",
@@ -258,13 +258,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddContent(System.Int32,System.String):System.Void",
-          "clrName": "AddContent",
+          "targetName": "AddContent",
           "metadataToken": 100664932,
           "canonicalSignature": "(System.Int32,System.String):System.Void",
           "normalizedSignature": "AddContent|(System.Int32,System.String):System.Void|static=false",
@@ -278,13 +278,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddContent(System.Int32,Microsoft.AspNetCore.Components.RenderFragment):System.Void",
-          "clrName": "AddContent",
+          "targetName": "AddContent",
           "metadataToken": 100664933,
           "canonicalSignature": "(System.Int32,Microsoft.AspNetCore.Components.RenderFragment):System.Void",
           "normalizedSignature": "AddContent|(System.Int32,Microsoft.AspNetCore.Components.RenderFragment):System.Void|static=false",
@@ -298,13 +298,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddContent(System.Int32,RenderFragment_1,TValue):System.Void",
-          "clrName": "AddContent",
+          "targetName": "AddContent",
           "metadataToken": 100664934,
           "canonicalSignature": "(System.Int32,RenderFragment_1,TValue):System.Void",
           "normalizedSignature": "AddContent|(System.Int32,RenderFragment_1,TValue):System.Void|static=false",
@@ -318,13 +318,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddContent(System.Int32,System.Nullable_1[[Microsoft.AspNetCore.Components.MarkupString,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "clrName": "AddContent",
+          "targetName": "AddContent",
           "metadataToken": 100664935,
           "canonicalSignature": "(System.Int32,System.Nullable_1[[Microsoft.AspNetCore.Components.MarkupString,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "AddContent|(System.Int32,System.Nullable_1[[Microsoft.AspNetCore.Components.MarkupString,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -338,13 +338,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddContent(System.Int32,Microsoft.AspNetCore.Components.MarkupString):System.Void",
-          "clrName": "AddContent",
+          "targetName": "AddContent",
           "metadataToken": 100664936,
           "canonicalSignature": "(System.Int32,Microsoft.AspNetCore.Components.MarkupString):System.Void",
           "normalizedSignature": "AddContent|(System.Int32,Microsoft.AspNetCore.Components.MarkupString):System.Void|static=false",
@@ -358,13 +358,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddContent(System.Int32,System.Object):System.Void",
-          "clrName": "AddContent",
+          "targetName": "AddContent",
           "metadataToken": 100664937,
           "canonicalSignature": "(System.Int32,System.Object):System.Void",
           "normalizedSignature": "AddContent|(System.Int32,System.Object):System.Void|static=false",
@@ -378,13 +378,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddAttribute(System.Int32,System.String):System.Void",
-          "clrName": "AddAttribute",
+          "targetName": "AddAttribute",
           "metadataToken": 100664938,
           "canonicalSignature": "(System.Int32,System.String):System.Void",
           "normalizedSignature": "AddAttribute|(System.Int32,System.String):System.Void|static=false",
@@ -398,13 +398,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddAttribute(System.Int32,System.String,System.Boolean):System.Void",
-          "clrName": "AddAttribute",
+          "targetName": "AddAttribute",
           "metadataToken": 100664939,
           "canonicalSignature": "(System.Int32,System.String,System.Boolean):System.Void",
           "normalizedSignature": "AddAttribute|(System.Int32,System.String,System.Boolean):System.Void|static=false",
@@ -418,13 +418,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddAttribute(System.Int32,System.String,System.String):System.Void",
-          "clrName": "AddAttribute",
+          "targetName": "AddAttribute",
           "metadataToken": 100664940,
           "canonicalSignature": "(System.Int32,System.String,System.String):System.Void",
           "normalizedSignature": "AddAttribute|(System.Int32,System.String,System.String):System.Void|static=false",
@@ -438,13 +438,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddAttribute(System.Int32,System.String,System.MulticastDelegate):System.Void",
-          "clrName": "AddAttribute",
+          "targetName": "AddAttribute",
           "metadataToken": 100664941,
           "canonicalSignature": "(System.Int32,System.String,System.MulticastDelegate):System.Void",
           "normalizedSignature": "AddAttribute|(System.Int32,System.String,System.MulticastDelegate):System.Void|static=false",
@@ -458,13 +458,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddAttribute(System.Int32,System.String,Microsoft.AspNetCore.Components.EventCallback):System.Void",
-          "clrName": "AddAttribute",
+          "targetName": "AddAttribute",
           "metadataToken": 100664942,
           "canonicalSignature": "(System.Int32,System.String,Microsoft.AspNetCore.Components.EventCallback):System.Void",
           "normalizedSignature": "AddAttribute|(System.Int32,System.String,Microsoft.AspNetCore.Components.EventCallback):System.Void|static=false",
@@ -478,13 +478,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddAttribute(System.Int32,System.String,EventCallback_1):System.Void",
-          "clrName": "AddAttribute",
+          "targetName": "AddAttribute",
           "metadataToken": 100664943,
           "canonicalSignature": "(System.Int32,System.String,EventCallback_1):System.Void",
           "normalizedSignature": "AddAttribute|(System.Int32,System.String,EventCallback_1):System.Void|static=false",
@@ -498,13 +498,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddAttribute(System.Int32,System.String,System.Object):System.Void",
-          "clrName": "AddAttribute",
+          "targetName": "AddAttribute",
           "metadataToken": 100664944,
           "canonicalSignature": "(System.Int32,System.String,System.Object):System.Void",
           "normalizedSignature": "AddAttribute|(System.Int32,System.String,System.Object):System.Void|static=false",
@@ -518,13 +518,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddAttribute(System.Int32,Microsoft.AspNetCore.Components.RenderTree.RenderTreeFrame):System.Void",
-          "clrName": "AddAttribute",
+          "targetName": "AddAttribute",
           "metadataToken": 100664945,
           "canonicalSignature": "(System.Int32,Microsoft.AspNetCore.Components.RenderTree.RenderTreeFrame):System.Void",
           "normalizedSignature": "AddAttribute|(System.Int32,Microsoft.AspNetCore.Components.RenderTree.RenderTreeFrame):System.Void|static=false",
@@ -538,13 +538,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddMultipleAttributes(System.Int32,System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "AddMultipleAttributes",
+          "targetName": "AddMultipleAttributes",
           "metadataToken": 100664946,
           "canonicalSignature": "(System.Int32,System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "AddMultipleAttributes|(System.Int32,System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -558,13 +558,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::SetUpdatesAttributeName(System.String):System.Void",
-          "clrName": "SetUpdatesAttributeName",
+          "targetName": "SetUpdatesAttributeName",
           "metadataToken": 100664947,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "SetUpdatesAttributeName|(System.String):System.Void|static=false",
@@ -578,13 +578,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::OpenComponent(System.Int32):System.Void",
-          "clrName": "OpenComponent",
+          "targetName": "OpenComponent",
           "metadataToken": 100664948,
           "canonicalSignature": "(System.Int32):System.Void",
           "normalizedSignature": "OpenComponent|(System.Int32):System.Void|static=false",
@@ -598,13 +598,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::OpenComponent(System.Int32,System.Type):System.Void",
-          "clrName": "OpenComponent",
+          "targetName": "OpenComponent",
           "metadataToken": 100664949,
           "canonicalSignature": "(System.Int32,System.Type):System.Void",
           "normalizedSignature": "OpenComponent|(System.Int32,System.Type):System.Void|static=false",
@@ -618,13 +618,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddComponentParameter(System.Int32,System.String,System.Object):System.Void",
-          "clrName": "AddComponentParameter",
+          "targetName": "AddComponentParameter",
           "metadataToken": 100664950,
           "canonicalSignature": "(System.Int32,System.String,System.Object):System.Void",
           "normalizedSignature": "AddComponentParameter|(System.Int32,System.String,System.Object):System.Void|static=false",
@@ -638,13 +638,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::SetKey(System.Object):System.Void",
-          "clrName": "SetKey",
+          "targetName": "SetKey",
           "metadataToken": 100664951,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "SetKey|(System.Object):System.Void|static=false",
@@ -658,13 +658,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::CloseComponent():System.Void",
-          "clrName": "CloseComponent",
+          "targetName": "CloseComponent",
           "metadataToken": 100664953,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "CloseComponent|():System.Void|static=false",
@@ -678,13 +678,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddElementReferenceCapture(System.Int32,System.Action_1[[Microsoft.AspNetCore.Components.ElementReference,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "clrName": "AddElementReferenceCapture",
+          "targetName": "AddElementReferenceCapture",
           "metadataToken": 100664954,
           "canonicalSignature": "(System.Int32,System.Action_1[[Microsoft.AspNetCore.Components.ElementReference,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "AddElementReferenceCapture|(System.Int32,System.Action_1[[Microsoft.AspNetCore.Components.ElementReference,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -698,13 +698,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddComponentReferenceCapture(System.Int32,System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "AddComponentReferenceCapture",
+          "targetName": "AddComponentReferenceCapture",
           "metadataToken": 100664955,
           "canonicalSignature": "(System.Int32,System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "AddComponentReferenceCapture|(System.Int32,System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -718,13 +718,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddComponentRenderMode(Microsoft.AspNetCore.Components.IComponentRenderMode):System.Void",
-          "clrName": "AddComponentRenderMode",
+          "targetName": "AddComponentRenderMode",
           "metadataToken": 100664956,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.IComponentRenderMode):System.Void",
           "normalizedSignature": "AddComponentRenderMode|(Microsoft.AspNetCore.Components.IComponentRenderMode):System.Void|static=false",
@@ -738,13 +738,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::AddNamedEvent(System.String,System.String):System.Void",
-          "clrName": "AddNamedEvent",
+          "targetName": "AddNamedEvent",
           "metadataToken": 100664957,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "AddNamedEvent|(System.String,System.String):System.Void|static=false",
@@ -758,13 +758,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::OpenRegion(System.Int32):System.Void",
-          "clrName": "OpenRegion",
+          "targetName": "OpenRegion",
           "metadataToken": 100664958,
           "canonicalSignature": "(System.Int32):System.Void",
           "normalizedSignature": "OpenRegion|(System.Int32):System.Void|static=false",
@@ -778,13 +778,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::CloseRegion():System.Void",
-          "clrName": "CloseRegion",
+          "targetName": "CloseRegion",
           "metadataToken": 100664959,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "CloseRegion|():System.Void|static=false",
@@ -798,13 +798,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::Clear():System.Void",
-          "clrName": "Clear",
+          "targetName": "Clear",
           "metadataToken": 100664964,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Clear|():System.Void|static=false",
@@ -818,13 +818,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::GetFrames():Microsoft.AspNetCore.Components.RenderTree.ArrayRange_1[[Microsoft.AspNetCore.Components.RenderTree.RenderTreeFrame,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetFrames",
+          "targetName": "GetFrames",
           "metadataToken": 100664966,
           "canonicalSignature": "():Microsoft.AspNetCore.Components.RenderTree.ArrayRange_1[[Microsoft.AspNetCore.Components.RenderTree.RenderTreeFrame,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetFrames|():Microsoft.AspNetCore.Components.RenderTree.ArrayRange_1[[Microsoft.AspNetCore.Components.RenderTree.RenderTreeFrame,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -838,13 +838,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100664970,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -858,8 +858,8 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
         }
       ],
@@ -875,8 +875,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Components"
         }
       ]
     }

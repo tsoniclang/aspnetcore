@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.Circuit",
-      "clrName": "Microsoft.AspNetCore.Components.Server.Circuits.Circuit",
-      "assemblyName": "Microsoft.AspNetCore.Components.Server",
+      "targetName": "Microsoft.AspNetCore.Components.Server.Circuits.Circuit",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Server",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.Circuit::Id:System.String",
-          "clrName": "Id",
+          "targetName": "Id",
           "metadataToken": 385876085,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=get",
@@ -37,8 +37,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Server.Circuits.Circuit",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Server.Circuits.Circuit",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Server"
         }
       ],
       "fields": [],
@@ -47,8 +47,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
-      "clrName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
-      "assemblyName": "Microsoft.AspNetCore.Components.Server",
+      "targetName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Server",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -58,12 +58,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::OnCircuitOpenedAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "OnCircuitOpenedAsync",
+          "targetName": "OnCircuitOpenedAsync",
           "metadataToken": 100663950,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "OnCircuitOpenedAsync|(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -77,13 +77,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::OnConnectionUpAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "OnConnectionUpAsync",
+          "targetName": "OnConnectionUpAsync",
           "metadataToken": 100663951,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "OnConnectionUpAsync|(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -97,13 +97,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::OnConnectionDownAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "OnConnectionDownAsync",
+          "targetName": "OnConnectionDownAsync",
           "metadataToken": 100663952,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "OnConnectionDownAsync|(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -117,13 +117,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::OnCircuitClosedAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "OnCircuitClosedAsync",
+          "targetName": "OnCircuitClosedAsync",
           "metadataToken": 100663953,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "OnCircuitClosedAsync|(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -137,13 +137,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::CreateInboundActivityHandler(System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "CreateInboundActivityHandler",
+          "targetName": "CreateInboundActivityHandler",
           "metadataToken": 100663954,
           "canonicalSignature": "(System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "CreateInboundActivityHandler|(System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -157,15 +157,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::Order:System.Int32",
-          "clrName": "Order",
+          "targetName": "Order",
           "metadataToken": 385876091,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
@@ -179,8 +179,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Server"
         }
       ],
       "fields": [],
@@ -194,15 +194,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Server"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext",
-      "clrName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext",
-      "assemblyName": "Microsoft.AspNetCore.Components.Server",
+      "targetName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Server",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -212,13 +212,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext::Circuit:Microsoft.AspNetCore.Components.Server.Circuits.Circuit",
-          "clrName": "Circuit",
+          "targetName": "Circuit",
           "metadataToken": 385876104,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.Server.Circuits.Circuit",
           "normalizedSignature": "Circuit|:Microsoft.AspNetCore.Components.Server.Circuits.Circuit|static=false|accessor=get",
@@ -232,8 +232,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Server"
         }
       ],
       "fields": [],

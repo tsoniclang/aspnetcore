@@ -5,9 +5,9 @@
   ],
   "types": [
     {
-      "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy\u00601",
-      "clrName": "Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy\u00601",
-      "assemblyName": "Microsoft.AspNetCore.RateLimiting",
+      "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy`1",
+      "targetName": "Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy`1",
+      "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -20,8 +20,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy\u00601::GetPartition(Microsoft.AspNetCore.Http.HttpContext):RateLimitPartition_1",
-          "clrName": "GetPartition",
+          "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy`1::GetPartition(Microsoft.AspNetCore.Http.HttpContext):RateLimitPartition_1",
+          "targetName": "GetPartition",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):RateLimitPartition_1",
           "normalizedSignature": "GetPartition|(Microsoft.AspNetCore.Http.HttpContext):RateLimitPartition_1|static=false",
@@ -35,15 +35,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy`1",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
-          "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy\u00601::OnRejected:System.Func_3[[Microsoft.AspNetCore.RateLimiting.OnRejectedContext,Microsoft.AspNetCore.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnRejected",
+          "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy`1::OnRejected:System.Func_3[[Microsoft.AspNetCore.RateLimiting.OnRejectedContext,Microsoft.AspNetCore.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "targetName": "OnRejected",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Func_3[[Microsoft.AspNetCore.RateLimiting.OnRejectedContext,Microsoft.AspNetCore.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnRejected|:System.Func_3[[Microsoft.AspNetCore.RateLimiting.OnRejectedContext,Microsoft.AspNetCore.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -57,8 +57,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy`1",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting"
         }
       ],
       "fields": [],
@@ -67,8 +67,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.DisableRateLimitingAttribute",
-      "clrName": "Microsoft.AspNetCore.RateLimiting.DisableRateLimitingAttribute",
-      "assemblyName": "Microsoft.AspNetCore.RateLimiting",
+      "targetName": "Microsoft.AspNetCore.RateLimiting.DisableRateLimitingAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -78,7 +78,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [],
@@ -93,15 +93,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.DisableRateLimitingAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.DisableRateLimitingAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.EnableRateLimitingAttribute",
-      "clrName": "Microsoft.AspNetCore.RateLimiting.EnableRateLimitingAttribute",
-      "assemblyName": "Microsoft.AspNetCore.RateLimiting",
+      "targetName": "Microsoft.AspNetCore.RateLimiting.EnableRateLimitingAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -111,13 +111,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.EnableRateLimitingAttribute::PolicyName:System.String",
-          "clrName": "PolicyName",
+          "targetName": "PolicyName",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "PolicyName|:System.String|static=false|accessor=get",
@@ -131,8 +131,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.EnableRateLimitingAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.EnableRateLimitingAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting"
         }
       ],
       "fields": [],
@@ -146,15 +146,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.EnableRateLimitingAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.EnableRateLimitingAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
-      "clrName": "Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
-      "assemblyName": "Microsoft.AspNetCore.RateLimiting",
+      "targetName": "Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
+      "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -164,13 +164,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.OnRejectedContext::HttpContext:Microsoft.AspNetCore.Http.HttpContext",
-          "clrName": "HttpContext",
+          "targetName": "HttpContext",
           "metadataToken": 385875982,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.HttpContext",
           "normalizedSignature": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
@@ -184,12 +184,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting"
         },
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.OnRejectedContext::Lease:System.Threading.RateLimiting.RateLimitLease",
-          "clrName": "Lease",
+          "targetName": "Lease",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Threading.RateLimiting.RateLimitLease",
           "normalizedSignature": "Lease|:System.Threading.RateLimiting.RateLimitLease|static=false|accessor=getset",
@@ -203,8 +203,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting"
         }
       ],
       "fields": [],
@@ -218,15 +218,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-      "clrName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-      "assemblyName": "Microsoft.AspNetCore.RateLimiting",
+      "targetName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -236,12 +236,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptions::AddPolicy(System.String,Func_2):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "clrName": "AddPolicy",
+          "targetName": "AddPolicy",
           "metadataToken": 100663359,
           "canonicalSignature": "(System.String,Func_2):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "normalizedSignature": "AddPolicy|(System.String,Func_2):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions|static=false",
@@ -255,13 +255,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptions::AddPolicy(System.String):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "clrName": "AddPolicy",
+          "targetName": "AddPolicy",
           "metadataToken": 100663360,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "normalizedSignature": "AddPolicy|(System.String):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions|static=false",
@@ -275,13 +275,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptions::AddPolicy(System.String,IRateLimiterPolicy_1):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "clrName": "AddPolicy",
+          "targetName": "AddPolicy",
           "metadataToken": 100663361,
           "canonicalSignature": "(System.String,IRateLimiterPolicy_1):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "normalizedSignature": "AddPolicy|(System.String,IRateLimiterPolicy_1):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions|static=false",
@@ -295,15 +295,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptions::GlobalLimiter:System.Threading.RateLimiting.PartitionedRateLimiter_1[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GlobalLimiter",
+          "targetName": "GlobalLimiter",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Threading.RateLimiting.PartitionedRateLimiter_1[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GlobalLimiter|:System.Threading.RateLimiting.PartitionedRateLimiter_1[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -317,12 +317,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting"
         },
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptions::OnRejected:System.Func_3[[Microsoft.AspNetCore.RateLimiting.OnRejectedContext,Microsoft.AspNetCore.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnRejected",
+          "targetName": "OnRejected",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Func_3[[Microsoft.AspNetCore.RateLimiting.OnRejectedContext,Microsoft.AspNetCore.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnRejected|:System.Func_3[[Microsoft.AspNetCore.RateLimiting.OnRejectedContext,Microsoft.AspNetCore.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -336,12 +336,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting"
         },
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptions::RejectionStatusCode:System.Int32",
-          "clrName": "RejectionStatusCode",
+          "targetName": "RejectionStatusCode",
           "metadataToken": 385875989,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "RejectionStatusCode|:System.Int32|static=false|accessor=getset",
@@ -355,8 +355,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting"
         }
       ],
       "fields": [],
@@ -370,15 +370,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
-      "clrName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
-      "assemblyName": "Microsoft.AspNetCore.RateLimiting",
+      "targetName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -388,12 +388,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions::AddTokenBucketLimiter(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.TokenBucketRateLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "clrName": "AddTokenBucketLimiter",
+          "targetName": "AddTokenBucketLimiter",
           "metadataToken": 100663364,
           "canonicalSignature": "(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.TokenBucketRateLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "normalizedSignature": "AddTokenBucketLimiter|(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.TokenBucketRateLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions|static=true",
@@ -407,13 +407,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions::AddFixedWindowLimiter(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.FixedWindowRateLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "clrName": "AddFixedWindowLimiter",
+          "targetName": "AddFixedWindowLimiter",
           "metadataToken": 100663365,
           "canonicalSignature": "(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.FixedWindowRateLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "normalizedSignature": "AddFixedWindowLimiter|(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.FixedWindowRateLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions|static=true",
@@ -427,13 +427,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions::AddSlidingWindowLimiter(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.SlidingWindowRateLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "clrName": "AddSlidingWindowLimiter",
+          "targetName": "AddSlidingWindowLimiter",
           "metadataToken": 100663366,
           "canonicalSignature": "(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.SlidingWindowRateLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "normalizedSignature": "AddSlidingWindowLimiter|(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.SlidingWindowRateLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions|static=true",
@@ -447,13 +447,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions::AddConcurrencyLimiter(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.ConcurrencyLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
-          "clrName": "AddConcurrencyLimiter",
+          "targetName": "AddConcurrencyLimiter",
           "metadataToken": 100663367,
           "canonicalSignature": "(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.ConcurrencyLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "normalizedSignature": "AddConcurrencyLimiter|(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.ConcurrencyLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions|static=true",
@@ -467,8 +467,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
+          "ownerQualifiedName": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": true
         }
       ],

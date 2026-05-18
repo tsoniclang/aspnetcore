@@ -7,8 +7,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.HttpTransportType",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections.Common",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -18,24 +18,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -43,63 +43,63 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.HttpTransportType::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108877,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.HttpTransportType::NoneMicrosoft.AspNetCore.Http.Connections.HttpTransportType",
-          "clrName": "None",
+          "targetName": "None",
           "metadataToken": 67108878,
           "normalizedSignature": "None|Microsoft.AspNetCore.Http.Connections.HttpTransportType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.HttpTransportType::WebSocketsMicrosoft.AspNetCore.Http.Connections.HttpTransportType",
-          "clrName": "WebSockets",
+          "targetName": "WebSockets",
           "metadataToken": 67108879,
           "normalizedSignature": "WebSockets|Microsoft.AspNetCore.Http.Connections.HttpTransportType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.HttpTransportType::ServerSentEventsMicrosoft.AspNetCore.Http.Connections.HttpTransportType",
-          "clrName": "ServerSentEvents",
+          "targetName": "ServerSentEvents",
           "metadataToken": 67108880,
           "normalizedSignature": "ServerSentEvents|Microsoft.AspNetCore.Http.Connections.HttpTransportType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.HttpTransportType::LongPollingMicrosoft.AspNetCore.Http.Connections.HttpTransportType",
-          "clrName": "LongPolling",
+          "targetName": "LongPolling",
           "metadataToken": 67108881,
           "normalizedSignature": "LongPolling|Microsoft.AspNetCore.Http.Connections.HttpTransportType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         }
       ],
       "events": [],
@@ -107,8 +107,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.AvailableTransport",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.AvailableTransport",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections.Common",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.AvailableTransport",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -118,13 +118,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.AvailableTransport::Transport:System.String",
-          "clrName": "Transport",
+          "targetName": "Transport",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Transport|:System.String|static=false|accessor=getset",
@@ -138,12 +138,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.AvailableTransport",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.AvailableTransport",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.AvailableTransport::TransferFormats:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "TransferFormats",
+          "targetName": "TransferFormats",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "TransferFormats|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -157,8 +157,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.AvailableTransport",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.AvailableTransport",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         }
       ],
       "fields": [],
@@ -172,15 +172,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.AvailableTransport",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.AvailableTransport",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.ConnectionOptions",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.ConnectionOptions",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.ConnectionOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -190,13 +190,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.ConnectionOptions::DisconnectTimeout:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "DisconnectTimeout",
+          "targetName": "DisconnectTimeout",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "DisconnectTimeout|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -210,8 +210,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.ConnectionOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.ConnectionOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ],
       "fields": [],
@@ -225,15 +225,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.ConnectionOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.ConnectionOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -243,12 +243,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
-          "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IConfigureOptions\u00601",
-          "clrName": "Microsoft.Extensions.Options.IConfigureOptions\u00601",
+          "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IConfigureOptions`1",
+          "targetName": "Microsoft.Extensions.Options.IConfigureOptions`1",
           "typeArguments": [
             "ConnectionOptions"
           ]
@@ -257,7 +257,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup::Configure(Microsoft.AspNetCore.Http.Connections.ConnectionOptions):System.Void",
-          "clrName": "Configure",
+          "targetName": "Configure",
           "metadataToken": 100663389,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.Connections.ConnectionOptions):System.Void",
           "normalizedSignature": "Configure|(Microsoft.AspNetCore.Http.Connections.ConnectionOptions):System.Void|static=false",
@@ -271,8 +271,8 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections",
           "isExtensionMethod": false
         }
       ],
@@ -280,15 +280,15 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup::DefaultDisconectTimeoutSystem.TimeSpan",
-          "clrName": "DefaultDisconectTimeout",
+          "targetName": "DefaultDisconectTimeout",
           "metadataToken": 67108886,
           "normalizedSignature": "DefaultDisconectTimeout|System.TimeSpan|static=true|const=false",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ],
       "events": [],
@@ -301,15 +301,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -319,13 +319,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions::AuthorizationData:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AuthorizationData",
+          "targetName": "AuthorizationData",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AuthorizationData|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -339,12 +339,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions::Transports:Microsoft.AspNetCore.Http.Connections.HttpTransportType",
-          "clrName": "Transports",
+          "targetName": "Transports",
           "metadataToken": 385875983,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.Connections.HttpTransportType",
           "normalizedSignature": "Transports|:Microsoft.AspNetCore.Http.Connections.HttpTransportType|static=false|accessor=getset",
@@ -358,12 +358,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions::WebSockets:Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
-          "clrName": "WebSockets",
+          "targetName": "WebSockets",
           "metadataToken": 385875984,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
           "normalizedSignature": "WebSockets|:Microsoft.AspNetCore.Http.Connections.WebSocketOptions|static=false|accessor=get",
@@ -377,12 +377,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions::LongPolling:Microsoft.AspNetCore.Http.Connections.LongPollingOptions",
-          "clrName": "LongPolling",
+          "targetName": "LongPolling",
           "metadataToken": 385875985,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.Connections.LongPollingOptions",
           "normalizedSignature": "LongPolling|:Microsoft.AspNetCore.Http.Connections.LongPollingOptions|static=false|accessor=get",
@@ -396,12 +396,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions::TransportMaxBufferSize:System.Int64",
-          "clrName": "TransportMaxBufferSize",
+          "targetName": "TransportMaxBufferSize",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "TransportMaxBufferSize|:System.Int64|static=false|accessor=getset",
@@ -415,12 +415,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions::ApplicationMaxBufferSize:System.Int64",
-          "clrName": "ApplicationMaxBufferSize",
+          "targetName": "ApplicationMaxBufferSize",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "ApplicationMaxBufferSize|:System.Int64|static=false|accessor=getset",
@@ -434,12 +434,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions::MinimumProtocolVersion:System.Int32",
-          "clrName": "MinimumProtocolVersion",
+          "targetName": "MinimumProtocolVersion",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MinimumProtocolVersion|:System.Int32|static=false|accessor=getset",
@@ -453,12 +453,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions::TransportSendTimeout:System.TimeSpan",
-          "clrName": "TransportSendTimeout",
+          "targetName": "TransportSendTimeout",
           "metadataToken": 385875989,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "TransportSendTimeout|:System.TimeSpan|static=false|accessor=getset",
@@ -472,12 +472,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions::CloseOnAuthenticationExpiration:System.Boolean",
-          "clrName": "CloseOnAuthenticationExpiration",
+          "targetName": "CloseOnAuthenticationExpiration",
           "metadataToken": 385875990,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CloseOnAuthenticationExpiration|:System.Boolean|static=false|accessor=getset",
@@ -491,12 +491,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions::AllowStatefulReconnects:System.Boolean",
-          "clrName": "AllowStatefulReconnects",
+          "targetName": "AllowStatefulReconnects",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "AllowStatefulReconnects|:System.Boolean|static=false|accessor=getset",
@@ -510,8 +510,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ],
       "fields": [],
@@ -525,15 +525,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.LongPollingOptions",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.LongPollingOptions",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.LongPollingOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -543,13 +543,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.LongPollingOptions::PollTimeout:System.TimeSpan",
-          "clrName": "PollTimeout",
+          "targetName": "PollTimeout",
           "metadataToken": 385875995,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "PollTimeout|:System.TimeSpan|static=false|accessor=getset",
@@ -563,8 +563,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.LongPollingOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.LongPollingOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ],
       "fields": [],
@@ -578,15 +578,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.LongPollingOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.LongPollingOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.NegotiateMetadata",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.NegotiateMetadata",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.NegotiateMetadata",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -596,7 +596,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
@@ -611,15 +611,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiateMetadata",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiateMetadata",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections.Common",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -629,13 +629,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiationResponse::Url:System.String",
-          "clrName": "Url",
+          "targetName": "Url",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Url|:System.String|static=false|accessor=getset",
@@ -649,12 +649,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiationResponse::AccessToken:System.String",
-          "clrName": "AccessToken",
+          "targetName": "AccessToken",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AccessToken|:System.String|static=false|accessor=getset",
@@ -668,12 +668,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiationResponse::ConnectionId:System.String",
-          "clrName": "ConnectionId",
+          "targetName": "ConnectionId",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ConnectionId|:System.String|static=false|accessor=getset",
@@ -687,12 +687,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiationResponse::ConnectionToken:System.String",
-          "clrName": "ConnectionToken",
+          "targetName": "ConnectionToken",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ConnectionToken|:System.String|static=false|accessor=getset",
@@ -706,12 +706,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiationResponse::Version:System.Int32",
-          "clrName": "Version",
+          "targetName": "Version",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Version|:System.Int32|static=false|accessor=getset",
@@ -725,12 +725,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiationResponse::AvailableTransports:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Http.Connections.AvailableTransport,Microsoft.AspNetCore.Http.Connections.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AvailableTransports",
+          "targetName": "AvailableTransports",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Http.Connections.AvailableTransport,Microsoft.AspNetCore.Http.Connections.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AvailableTransports|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Http.Connections.AvailableTransport,Microsoft.AspNetCore.Http.Connections.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -744,12 +744,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiationResponse::Error:System.String",
-          "clrName": "Error",
+          "targetName": "Error",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Error|:System.String|static=false|accessor=getset",
@@ -763,12 +763,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiationResponse::UseStatefulReconnect:System.Boolean",
-          "clrName": "UseStatefulReconnect",
+          "targetName": "UseStatefulReconnect",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "UseStatefulReconnect|:System.Boolean|static=false|accessor=getset",
@@ -782,8 +782,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         }
       ],
       "fields": [],
@@ -797,15 +797,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -815,13 +815,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.WebSocketOptions::CloseTimeout:System.TimeSpan",
-          "clrName": "CloseTimeout",
+          "targetName": "CloseTimeout",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "CloseTimeout|:System.TimeSpan|static=false|accessor=getset",
@@ -835,12 +835,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.WebSocketOptions::SubProtocolSelector:System.Func_2[[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "SubProtocolSelector",
+          "targetName": "SubProtocolSelector",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.Func_2[[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "SubProtocolSelector|:System.Func_2[[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -854,8 +854,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ],
       "fields": [],
@@ -869,15 +869,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionContextExtensions",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionContextExtensions",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionContextExtensions",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -887,12 +887,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionContextExtensions::GetHttpContext(Microsoft.AspNetCore.Connections.ConnectionContext):Microsoft.AspNetCore.Http.HttpContext",
-          "clrName": "GetHttpContext",
+          "targetName": "GetHttpContext",
           "metadataToken": 100663392,
           "canonicalSignature": "(Microsoft.AspNetCore.Connections.ConnectionContext):Microsoft.AspNetCore.Http.HttpContext",
           "normalizedSignature": "GetHttpContext|(Microsoft.AspNetCore.Connections.ConnectionContext):Microsoft.AspNetCore.Http.HttpContext|static=true",
@@ -906,8 +906,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionContextExtensions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpConnectionContextExtensions",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections",
           "isExtensionMethod": true
         }
       ],
@@ -918,8 +918,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.HttpTransports",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.HttpTransports",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections.Common",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.HttpTransports",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -929,22 +929,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.HttpTransports::AllMicrosoft.AspNetCore.Http.Connections.HttpTransportType",
-          "clrName": "All",
+          "targetName": "All",
           "metadataToken": 67108876,
           "normalizedSignature": "All|Microsoft.AspNetCore.Http.Connections.HttpTransportType|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransports",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.HttpTransports",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common"
         }
       ],
       "events": [],
@@ -952,8 +952,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiateProtocol",
-      "clrName": "Microsoft.AspNetCore.Http.Connections.NegotiateProtocol",
-      "assemblyName": "Microsoft.AspNetCore.Http.Connections.Common",
+      "targetName": "Microsoft.AspNetCore.Http.Connections.NegotiateProtocol",
+      "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -963,12 +963,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiateProtocol::WriteResponse(Microsoft.AspNetCore.Http.Connections.NegotiationResponse,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "WriteResponse",
+          "targetName": "WriteResponse",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.Connections.NegotiationResponse,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteResponse|(Microsoft.AspNetCore.Http.Connections.NegotiationResponse,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
@@ -982,13 +982,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiateProtocol",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiateProtocol",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiateProtocol::ParseResponse(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
-          "clrName": "ParseResponse",
+          "targetName": "ParseResponse",
           "metadataToken": 100663335,
           "canonicalSignature": "(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
           "normalizedSignature": "ParseResponse|(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Http.Connections.NegotiationResponse|static=true",
@@ -1002,8 +1002,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiateProtocol",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Connections.NegotiateProtocol",
+          "ownerIdentity": "Microsoft.AspNetCore.Http.Connections.Common",
           "isExtensionMethod": false
         }
       ],

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,51 +42,51 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108972,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags::NoneMicrosoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
-          "clrName": "None",
+          "targetName": "None",
           "metadataToken": 67108973,
           "normalizedSignature": "None|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags::NamedDescriptorMicrosoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
-          "clrName": "NamedDescriptor",
+          "targetName": "NamedDescriptor",
           "metadataToken": 67108974,
           "normalizedSignature": "NamedDescriptor|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags::MachineKeyMicrosoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
-          "clrName": "MachineKey",
+          "targetName": "MachineKey",
           "metadataToken": 67108975,
           "normalizedSignature": "MachineKey|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ],
       "events": [],
@@ -94,8 +94,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -106,7 +106,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver::ResolveCertificate(System.String):System.Security.Cryptography.X509Certificates.X509Certificate2",
-          "clrName": "ResolveCertificate",
+          "targetName": "ResolveCertificate",
           "metadataToken": 100663566,
           "canonicalSignature": "(System.String):System.Security.Cryptography.X509Certificates.X509Certificate2",
           "normalizedSignature": "ResolveCertificate|(System.String):System.Security.Cryptography.X509Certificates.X509Certificate2|static=false",
@@ -120,8 +120,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         }
       ],
@@ -132,8 +132,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -144,7 +144,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor::Decrypt(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
-          "clrName": "Decrypt",
+          "targetName": "Decrypt",
           "metadataToken": 100663569,
           "canonicalSignature": "(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
           "normalizedSignature": "Decrypt|(System.Xml.Linq.XElement):System.Xml.Linq.XElement|static=false",
@@ -158,8 +158,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         }
       ],
@@ -170,8 +170,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -182,7 +182,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor::Encrypt(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "clrName": "Encrypt",
+          "targetName": "Encrypt",
           "metadataToken": 100663570,
           "canonicalSignature": "(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
           "normalizedSignature": "Encrypt|(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo|static=false",
@@ -196,8 +196,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         }
       ],
@@ -208,8 +208,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateResolver",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateResolver",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateResolver",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -219,18 +219,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver",
-          "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver"
+          "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateResolver::ResolveCertificate(System.String):System.Security.Cryptography.X509Certificates.X509Certificate2",
-          "clrName": "ResolveCertificate",
+          "targetName": "ResolveCertificate",
           "metadataToken": 100663538,
           "canonicalSignature": "(System.String):System.Security.Cryptography.X509Certificates.X509Certificate2",
           "normalizedSignature": "ResolveCertificate|(System.String):System.Security.Cryptography.X509Certificates.X509Certificate2|static=false",
@@ -244,13 +244,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateResolver",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateResolver",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver::ResolveCertificate(System.String):System.Security.Cryptography.X509Certificates.X509Certificate2",
-          "clrName": "ResolveCertificate",
+          "targetName": "ResolveCertificate",
           "metadataToken": 100663566,
           "canonicalSignature": "(System.String):System.Security.Cryptography.X509Certificates.X509Certificate2",
           "normalizedSignature": "ResolveCertificate|(System.String):System.Security.Cryptography.X509Certificates.X509Certificate2|static=false",
@@ -264,8 +264,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.XmlEncryption.ICertificateResolver"
         }
@@ -282,15 +282,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateResolver",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateResolver",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateXmlEncryptor",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateXmlEncryptor",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateXmlEncryptor",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -300,18 +300,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
-          "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
+          "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateXmlEncryptor::Encrypt(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "clrName": "Encrypt",
+          "targetName": "Encrypt",
           "metadataToken": 100663544,
           "canonicalSignature": "(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
           "normalizedSignature": "Encrypt|(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo|static=false",
@@ -325,13 +325,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor::Encrypt(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "clrName": "Encrypt",
+          "targetName": "Encrypt",
           "metadataToken": 100663570,
           "canonicalSignature": "(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
           "normalizedSignature": "Encrypt|(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo|static=false",
@@ -345,8 +345,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
         }
@@ -363,8 +363,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateXmlEncryptor::.ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,Microsoft.Extensions.Logging.ILoggerFactory):void",
@@ -374,15 +374,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.CertificateXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlDecryptor",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlDecryptor",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlDecryptor",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -392,18 +392,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
-          "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
+          "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlDecryptor::Decrypt(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
-          "clrName": "Decrypt",
+          "targetName": "Decrypt",
           "metadataToken": 100663550,
           "canonicalSignature": "(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
           "normalizedSignature": "Decrypt|(System.Xml.Linq.XElement):System.Xml.Linq.XElement|static=false",
@@ -417,13 +417,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor::Decrypt(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
-          "clrName": "Decrypt",
+          "targetName": "Decrypt",
           "metadataToken": 100663569,
           "canonicalSignature": "(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
           "normalizedSignature": "Decrypt|(System.Xml.Linq.XElement):System.Xml.Linq.XElement|static=false",
@@ -437,8 +437,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
         }
@@ -455,8 +455,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlDecryptor::.ctor(System.IServiceProvider):void",
@@ -466,15 +466,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlEncryptor",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlEncryptor",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlEncryptor",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -484,18 +484,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
-          "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
+          "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlEncryptor::Encrypt(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "clrName": "Encrypt",
+          "targetName": "Encrypt",
           "metadataToken": 100663552,
           "canonicalSignature": "(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
           "normalizedSignature": "Encrypt|(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo|static=false",
@@ -509,13 +509,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor::Encrypt(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "clrName": "Encrypt",
+          "targetName": "Encrypt",
           "metadataToken": 100663570,
           "canonicalSignature": "(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
           "normalizedSignature": "Encrypt|(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo|static=false",
@@ -529,8 +529,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
         }
@@ -547,15 +547,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -565,18 +565,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
-          "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
+          "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor::Decrypt(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
-          "clrName": "Decrypt",
+          "targetName": "Decrypt",
           "metadataToken": 100663556,
           "canonicalSignature": "(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
           "normalizedSignature": "Decrypt|(System.Xml.Linq.XElement):System.Xml.Linq.XElement|static=false",
@@ -590,13 +590,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor::Decrypt(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
-          "clrName": "Decrypt",
+          "targetName": "Decrypt",
           "metadataToken": 100663569,
           "canonicalSignature": "(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
           "normalizedSignature": "Decrypt|(System.Xml.Linq.XElement):System.Xml.Linq.XElement|static=false",
@@ -610,8 +610,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
         }
@@ -628,8 +628,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor::.ctor(System.IServiceProvider):void",
@@ -639,15 +639,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -657,18 +657,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
-          "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
+          "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor::Encrypt(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "clrName": "Encrypt",
+          "targetName": "Encrypt",
           "metadataToken": 100663558,
           "canonicalSignature": "(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
           "normalizedSignature": "Encrypt|(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo|static=false",
@@ -682,13 +682,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor::Encrypt(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "clrName": "Encrypt",
+          "targetName": "Encrypt",
           "metadataToken": 100663570,
           "canonicalSignature": "(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
           "normalizedSignature": "Encrypt|(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo|static=false",
@@ -702,8 +702,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
         }
@@ -720,15 +720,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlDecryptor",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlDecryptor",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlDecryptor",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -738,18 +738,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
-          "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
+          "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlDecryptor::Decrypt(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
-          "clrName": "Decrypt",
+          "targetName": "Decrypt",
           "metadataToken": 100663561,
           "canonicalSignature": "(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
           "normalizedSignature": "Decrypt|(System.Xml.Linq.XElement):System.Xml.Linq.XElement|static=false",
@@ -763,13 +763,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor::Decrypt(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
-          "clrName": "Decrypt",
+          "targetName": "Decrypt",
           "metadataToken": 100663569,
           "canonicalSignature": "(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
           "normalizedSignature": "Decrypt|(System.Xml.Linq.XElement):System.Xml.Linq.XElement|static=false",
@@ -783,8 +783,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
         }
@@ -801,8 +801,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlDecryptor::.ctor(System.IServiceProvider):void",
@@ -812,15 +812,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -830,13 +830,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo::DecryptorType:System.Type",
-          "clrName": "DecryptorType",
+          "targetName": "DecryptorType",
           "metadataToken": 385876006,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "DecryptorType|:System.Type|static=false|accessor=get",
@@ -850,12 +850,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo::EncryptedElement:System.Xml.Linq.XElement",
-          "clrName": "EncryptedElement",
+          "targetName": "EncryptedElement",
           "metadataToken": 385876007,
           "canonicalSignature": ":System.Xml.Linq.XElement",
           "normalizedSignature": "EncryptedElement|:System.Xml.Linq.XElement|static=false|accessor=get",
@@ -869,8 +869,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ],
       "fields": [],
@@ -884,15 +884,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlDecryptor",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlDecryptor",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlDecryptor",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -902,18 +902,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
-          "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
+          "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlDecryptor::Decrypt(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
-          "clrName": "Decrypt",
+          "targetName": "Decrypt",
           "metadataToken": 100663571,
           "canonicalSignature": "(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
           "normalizedSignature": "Decrypt|(System.Xml.Linq.XElement):System.Xml.Linq.XElement|static=false",
@@ -927,13 +927,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor::Decrypt(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
-          "clrName": "Decrypt",
+          "targetName": "Decrypt",
           "metadataToken": 100663569,
           "canonicalSignature": "(System.Xml.Linq.XElement):System.Xml.Linq.XElement",
           "normalizedSignature": "Decrypt|(System.Xml.Linq.XElement):System.Xml.Linq.XElement|static=false",
@@ -947,8 +947,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlDecryptor"
         }
@@ -965,15 +965,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlDecryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlDecryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlEncryptor",
-      "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlEncryptor",
-      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlEncryptor",
+      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -983,18 +983,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
-          "clrName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
+          "targetName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlEncryptor::Encrypt(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "clrName": "Encrypt",
+          "targetName": "Encrypt",
           "metadataToken": 100663575,
           "canonicalSignature": "(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
           "normalizedSignature": "Encrypt|(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo|static=false",
@@ -1008,13 +1008,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor::Encrypt(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
-          "clrName": "Encrypt",
+          "targetName": "Encrypt",
           "metadataToken": 100663570,
           "canonicalSignature": "(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo",
           "normalizedSignature": "Encrypt|(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.XmlEncryption.EncryptedXmlInfo|static=false",
@@ -1028,8 +1028,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.XmlEncryption.IXmlEncryptor"
         }
@@ -1046,8 +1046,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlEncryptor::.ctor(System.IServiceProvider):void",
@@ -1057,8 +1057,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlEncryptor",
-          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
+          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.XmlEncryption.NullXmlEncryptor",
+          "ownerIdentity": "Microsoft.AspNetCore.DataProtection"
         }
       ]
     }

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
-      "clrName": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
-      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "targetName": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer::PrerenderComponentAsync(Microsoft.AspNetCore.Http.HttpContext,System.Type,Microsoft.AspNetCore.Components.IComponentRenderMode,Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlAsyncContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "PrerenderComponentAsync",
+          "targetName": "PrerenderComponentAsync",
           "metadataToken": 100663713,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.Type,Microsoft.AspNetCore.Components.IComponentRenderMode,Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlAsyncContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "PrerenderComponentAsync|(Microsoft.AspNetCore.Http.HttpContext,System.Type,Microsoft.AspNetCore.Components.IComponentRenderMode,Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlAsyncContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -32,13 +32,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer::PrerenderPersistedStateAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Components.PersistedStateSerializationMode):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "PrerenderPersistedStateAsync",
+          "targetName": "PrerenderPersistedStateAsync",
           "metadataToken": 100663714,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Components.PersistedStateSerializationMode):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "PrerenderPersistedStateAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Components.PersistedStateSerializationMode):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -52,15 +52,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer::Dispatcher:Microsoft.AspNetCore.Components.Dispatcher",
-          "clrName": "Dispatcher",
+          "targetName": "Dispatcher",
           "metadataToken": 385876076,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.Dispatcher",
           "normalizedSignature": "Dispatcher|:Microsoft.AspNetCore.Components.Dispatcher|static=false|accessor=get",
@@ -74,8 +74,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         }
       ],
       "fields": [],
@@ -84,8 +84,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IRazorComponentEndpointInvoker",
-      "clrName": "Microsoft.AspNetCore.Components.Endpoints.IRazorComponentEndpointInvoker",
-      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "targetName": "Microsoft.AspNetCore.Components.Endpoints.IRazorComponentEndpointInvoker",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -96,7 +96,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IRazorComponentEndpointInvoker::Render(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "clrName": "Render",
+          "targetName": "Render",
           "metadataToken": 100663785,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Render|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
@@ -110,8 +110,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IRazorComponentEndpointInvoker",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.IRazorComponentEndpointInvoker",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": false
         }
       ],
@@ -122,8 +122,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
-      "clrName": "Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
-      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "targetName": "Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -133,13 +133,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata::Type:System.Type",
-          "clrName": "Type",
+          "targetName": "Type",
           "metadataToken": 385876053,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -153,8 +153,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         }
       ],
       "fields": [],
@@ -168,15 +168,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
-      "clrName": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
-      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "targetName": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -186,13 +186,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::DetailedErrors:System.Boolean",
-          "clrName": "DetailedErrors",
+          "targetName": "DetailedErrors",
           "metadataToken": 385876078,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "DetailedErrors|:System.Boolean|static=false|accessor=getset",
@@ -206,12 +206,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::MaxFormMappingCollectionSize:System.Int32",
-          "clrName": "MaxFormMappingCollectionSize",
+          "targetName": "MaxFormMappingCollectionSize",
           "metadataToken": 385876079,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxFormMappingCollectionSize|:System.Int32|static=false|accessor=getset",
@@ -225,12 +225,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::MaxFormMappingRecursionDepth:System.Int32",
-          "clrName": "MaxFormMappingRecursionDepth",
+          "targetName": "MaxFormMappingRecursionDepth",
           "metadataToken": 385876080,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxFormMappingRecursionDepth|:System.Int32|static=false|accessor=getset",
@@ -244,12 +244,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::MaxFormMappingErrorCount:System.Int32",
-          "clrName": "MaxFormMappingErrorCount",
+          "targetName": "MaxFormMappingErrorCount",
           "metadataToken": 385876081,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxFormMappingErrorCount|:System.Int32|static=false|accessor=getset",
@@ -263,12 +263,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::MaxFormMappingKeySize:System.Int32",
-          "clrName": "MaxFormMappingKeySize",
+          "targetName": "MaxFormMappingKeySize",
           "metadataToken": 385876082,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxFormMappingKeySize|:System.Int32|static=false|accessor=getset",
@@ -282,12 +282,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::TemporaryRedirectionUrlValidityDuration:System.TimeSpan",
-          "clrName": "TemporaryRedirectionUrlValidityDuration",
+          "targetName": "TemporaryRedirectionUrlValidityDuration",
           "metadataToken": 385876083,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "TemporaryRedirectionUrlValidityDuration|:System.TimeSpan|static=false|accessor=getset",
@@ -301,8 +301,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         }
       ],
       "fields": [],
@@ -316,15 +316,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
-      "clrName": "Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
-      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "targetName": "Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
+      "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -334,13 +334,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata::Type:System.Type",
-          "clrName": "Type",
+          "targetName": "Type",
           "metadataToken": 385876073,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -354,8 +354,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         }
       ],
       "fields": [],
@@ -369,8 +369,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
+          "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
         }
       ]
     }

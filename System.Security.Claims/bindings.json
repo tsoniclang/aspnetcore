@@ -7,8 +7,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Identity.Core:System.Security.Claims.PrincipalExtensions",
-      "clrName": "System.Security.Claims.PrincipalExtensions",
-      "assemblyName": "Microsoft.Extensions.Identity.Core",
+      "targetName": "System.Security.Claims.PrincipalExtensions",
+      "ownerIdentity": "Microsoft.Extensions.Identity.Core",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -18,12 +18,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Identity.Core:System.Security.Claims.PrincipalExtensions::FindFirstValue(System.Security.Claims.ClaimsPrincipal,System.String):System.String",
-          "clrName": "FindFirstValue",
+          "targetName": "FindFirstValue",
           "metadataToken": 100663297,
           "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,System.String):System.String",
           "normalizedSignature": "FindFirstValue|(System.Security.Claims.ClaimsPrincipal,System.String):System.String|static=true",
@@ -37,8 +37,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Claims.PrincipalExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Identity.Core",
+          "ownerQualifiedName": "System.Security.Claims.PrincipalExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Identity.Core",
           "isExtensionMethod": true
         }
       ],

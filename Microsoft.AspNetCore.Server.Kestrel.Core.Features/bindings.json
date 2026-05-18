@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature::SetTimeout(System.TimeSpan):System.Void",
-          "clrName": "SetTimeout",
+          "targetName": "SetTimeout",
           "metadataToken": 100667497,
           "canonicalSignature": "(System.TimeSpan):System.Void",
           "normalizedSignature": "SetTimeout|(System.TimeSpan):System.Void|static=false",
@@ -32,13 +32,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature::CancelTimeout():System.Void",
-          "clrName": "CancelTimeout",
+          "targetName": "CancelTimeout",
           "metadataToken": 100667499,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "CancelTimeout|():System.Void|static=false",
@@ -52,8 +52,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         }
       ],
@@ -64,8 +64,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -76,7 +76,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature::ReleaseConnection():System.Void",
-          "clrName": "ReleaseConnection",
+          "targetName": "ReleaseConnection",
           "metadataToken": 100667500,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "ReleaseConnection|():System.Void|static=false",
@@ -90,8 +90,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
         }
       ],
@@ -102,8 +102,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -115,7 +115,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature::StreamId:System.Int32",
-          "clrName": "StreamId",
+          "targetName": "StreamId",
           "metadataToken": 385877200,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "StreamId|:System.Int32|static=false|accessor=get",
@@ -129,8 +129,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],
@@ -139,8 +139,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -152,7 +152,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature::MinDataRate:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
-          "clrName": "MinDataRate",
+          "targetName": "MinDataRate",
           "metadataToken": 385877201,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
           "normalizedSignature": "MinDataRate|:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate|static=false|accessor=getset",
@@ -166,8 +166,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],
@@ -176,8 +176,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -189,7 +189,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature::MinDataRate:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
-          "clrName": "MinDataRate",
+          "targetName": "MinDataRate",
           "metadataToken": 385877202,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
           "normalizedSignature": "MinDataRate|:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate|static=false|accessor=getset",
@@ -203,8 +203,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],
@@ -213,8 +213,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.ISslStreamFeature",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ISslStreamFeature",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ISslStreamFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -226,7 +226,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.ISslStreamFeature::SslStream:System.Net.Security.SslStream",
-          "clrName": "SslStream",
+          "targetName": "SslStream",
           "metadataToken": 385877203,
           "canonicalSignature": ":System.Net.Security.SslStream",
           "normalizedSignature": "SslStream|:System.Net.Security.SslStream|static=false|accessor=get",
@@ -240,8 +240,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ISslStreamFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ISslStreamFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],
@@ -250,8 +250,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature",
-      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature",
-      "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+      "targetName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature",
+      "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -263,7 +263,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature::ApplicationProtocol:System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ApplicationProtocol",
+          "targetName": "ApplicationProtocol",
           "metadataToken": 385877204,
           "canonicalSignature": ":System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ApplicationProtocol|:System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -277,8 +277,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature",
+          "ownerIdentity": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],

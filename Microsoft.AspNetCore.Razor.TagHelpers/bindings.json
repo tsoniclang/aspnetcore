@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,63 +42,63 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108873,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle::DoubleQuotesMicrosoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-          "clrName": "DoubleQuotes",
+          "targetName": "DoubleQuotes",
           "metadataToken": 67108874,
           "normalizedSignature": "DoubleQuotes|Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle::SingleQuotesMicrosoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-          "clrName": "SingleQuotes",
+          "targetName": "SingleQuotes",
           "metadataToken": 67108875,
           "normalizedSignature": "SingleQuotes|Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle::NoQuotesMicrosoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-          "clrName": "NoQuotes",
+          "targetName": "NoQuotes",
           "metadataToken": 67108876,
           "normalizedSignature": "NoQuotes|Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle::MinimizedMicrosoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-          "clrName": "Minimized",
+          "targetName": "Minimized",
           "metadataToken": 67108877,
           "normalizedSignature": "Minimized|Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "events": [],
@@ -106,8 +106,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -117,24 +117,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -142,51 +142,51 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagMode::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108904,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagMode::StartTagAndEndTagMicrosoft.AspNetCore.Razor.TagHelpers.TagMode",
-          "clrName": "StartTagAndEndTag",
+          "targetName": "StartTagAndEndTag",
           "metadataToken": 67108905,
           "normalizedSignature": "StartTagAndEndTag|Microsoft.AspNetCore.Razor.TagHelpers.TagMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagMode::SelfClosingMicrosoft.AspNetCore.Razor.TagHelpers.TagMode",
-          "clrName": "SelfClosing",
+          "targetName": "SelfClosing",
           "metadataToken": 67108906,
           "normalizedSignature": "SelfClosing|Microsoft.AspNetCore.Razor.TagHelpers.TagMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagMode::StartTagOnlyMicrosoft.AspNetCore.Razor.TagHelpers.TagMode",
-          "clrName": "StartTagOnly",
+          "targetName": "StartTagOnly",
           "metadataToken": 67108907,
           "normalizedSignature": "StartTagOnly|Microsoft.AspNetCore.Razor.TagHelpers.TagMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "events": [],
@@ -194,8 +194,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -205,24 +205,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -230,51 +230,51 @@
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagStructure::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108908,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagStructure::UnspecifiedMicrosoft.AspNetCore.Razor.TagHelpers.TagStructure",
-          "clrName": "Unspecified",
+          "targetName": "Unspecified",
           "metadataToken": 67108909,
           "normalizedSignature": "Unspecified|Microsoft.AspNetCore.Razor.TagHelpers.TagStructure|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagStructure::NormalOrSelfClosingMicrosoft.AspNetCore.Razor.TagHelpers.TagStructure",
-          "clrName": "NormalOrSelfClosing",
+          "targetName": "NormalOrSelfClosing",
           "metadataToken": 67108910,
           "normalizedSignature": "NormalOrSelfClosing|Microsoft.AspNetCore.Razor.TagHelpers.TagStructure|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagStructure::WithoutEndTagMicrosoft.AspNetCore.Razor.TagHelpers.TagStructure",
-          "clrName": "WithoutEndTag",
+          "targetName": "WithoutEndTag",
           "metadataToken": 67108911,
           "normalizedSignature": "WithoutEndTag|Microsoft.AspNetCore.Razor.TagHelpers.TagStructure|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "events": [],
@@ -282,8 +282,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -294,13 +294,13 @@
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
+          "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
-          "clrName": "Init",
+          "targetName": "Init",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
@@ -314,13 +314,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
-          "clrName": "ProcessAsync",
+          "targetName": "ProcessAsync",
           "metadataToken": 100663336,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
@@ -334,15 +334,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Order:System.Int32",
-          "clrName": "Order",
+          "targetName": "Order",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
@@ -356,8 +356,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -366,8 +366,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -378,7 +378,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
-          "clrName": "Init",
+          "targetName": "Init",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
@@ -392,13 +392,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
-          "clrName": "ProcessAsync",
+          "targetName": "ProcessAsync",
           "metadataToken": 100663336,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
@@ -412,15 +412,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Order:System.Int32",
-          "clrName": "Order",
+          "targetName": "Order",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
@@ -434,8 +434,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -444,8 +444,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -455,26 +455,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-        "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent"
+        "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "clrName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
+          "targetName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer",
-          "clrName": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
+          "targetName": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
-          "clrName": "Microsoft.AspNetCore.Html.IHtmlContent"
+          "targetName": "Microsoft.AspNetCore.Html.IHtmlContent"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::Append(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "Append",
+          "targetName": "Append",
           "metadataToken": 100663300,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "Append|(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -488,13 +488,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::AppendHtml(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "AppendHtml",
+          "targetName": "AppendHtml",
           "metadataToken": 100663301,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "AppendHtml|(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -508,13 +508,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::AppendHtml(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "AppendHtml",
+          "targetName": "AppendHtml",
           "metadataToken": 100663302,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "AppendHtml|(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -528,13 +528,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
-          "clrName": "CopyTo",
+          "targetName": "CopyTo",
           "metadataToken": 100663303,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
@@ -548,13 +548,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::MoveTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
-          "clrName": "MoveTo",
+          "targetName": "MoveTo",
           "metadataToken": 100663304,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "MoveTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
@@ -568,13 +568,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::Clear():Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "Clear",
+          "targetName": "Clear",
           "metadataToken": 100663305,
           "canonicalSignature": "():Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "Clear|():Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -588,13 +588,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::Reinitialize():System.Void",
-          "clrName": "Reinitialize",
+          "targetName": "Reinitialize",
           "metadataToken": 100663306,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Reinitialize|():System.Void|static=false",
@@ -608,13 +608,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::GetContent():System.String",
-          "clrName": "GetContent",
+          "targetName": "GetContent",
           "metadataToken": 100663307,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "GetContent|():System.String|static=false",
@@ -628,13 +628,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::GetContent(System.Text.Encodings.Web.HtmlEncoder):System.String",
-          "clrName": "GetContent",
+          "targetName": "GetContent",
           "metadataToken": 100663308,
           "canonicalSignature": "(System.Text.Encodings.Web.HtmlEncoder):System.String",
           "normalizedSignature": "GetContent|(System.Text.Encodings.Web.HtmlEncoder):System.String|static=false",
@@ -648,13 +648,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
-          "clrName": "WriteTo",
+          "targetName": "WriteTo",
           "metadataToken": 100663309,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
@@ -668,13 +668,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::AppendHtml(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "clrName": "AppendHtml",
+          "targetName": "AppendHtml",
           "metadataToken": 100663330,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendHtml|(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
@@ -688,14 +688,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::Append(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "clrName": "Append",
+          "targetName": "Append",
           "metadataToken": 100663331,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "Append|(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
@@ -709,14 +709,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::Clear():Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "clrName": "Clear",
+          "targetName": "Clear",
           "metadataToken": 100663333,
           "canonicalSignature": "():Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "Clear|():Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
@@ -730,14 +730,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
-          "clrName": "CopyTo",
+          "targetName": "CopyTo",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
@@ -751,14 +751,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
-          "clrName": "WriteTo",
+          "targetName": "WriteTo",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
@@ -772,8 +772,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContent"
         }
@@ -781,7 +781,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::IsModified:System.Boolean",
-          "clrName": "IsModified",
+          "targetName": "IsModified",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsModified|:System.Boolean|static=false|accessor=get",
@@ -795,12 +795,12 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent::IsEmptyOrWhiteSpace:System.Boolean",
-          "clrName": "IsEmptyOrWhiteSpace",
+          "targetName": "IsEmptyOrWhiteSpace",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsEmptyOrWhiteSpace|:System.Boolean|static=false|accessor=get",
@@ -814,8 +814,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -829,15 +829,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -847,13 +847,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -867,12 +867,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute::DictionaryAttributePrefix:System.String",
-          "clrName": "DictionaryAttributePrefix",
+          "targetName": "DictionaryAttributePrefix",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "DictionaryAttributePrefix|:System.String|static=false|accessor=getset",
@@ -886,12 +886,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute::DictionaryAttributePrefixSet:System.Boolean",
-          "clrName": "DictionaryAttributePrefixSet",
+          "targetName": "DictionaryAttributePrefixSet",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "DictionaryAttributePrefixSet|:System.Boolean|static=false|accessor=getset",
@@ -905,8 +905,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -920,8 +920,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute::.ctor(System.String):void",
@@ -931,15 +931,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -949,7 +949,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [],
@@ -964,15 +964,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -982,13 +982,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute::Tag:System.String",
-          "clrName": "Tag",
+          "targetName": "Tag",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Tag|:System.String|static=false|accessor=get",
@@ -1002,12 +1002,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute::Attributes:System.String",
-          "clrName": "Attributes",
+          "targetName": "Attributes",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Attributes|:System.String|static=false|accessor=getset",
@@ -1021,12 +1021,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute::TagStructure:Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
-          "clrName": "TagStructure",
+          "targetName": "TagStructure",
           "metadataToken": 385875977,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.TagStructure",
           "normalizedSignature": "TagStructure|:Microsoft.AspNetCore.Razor.TagHelpers.TagStructure|static=false|accessor=getset",
@@ -1040,12 +1040,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute::ParentTag:System.String",
-          "clrName": "ParentTag",
+          "targetName": "ParentTag",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ParentTag|:System.String|static=false|accessor=getset",
@@ -1059,22 +1059,22 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute::ElementCatchAllTargetSystem.String",
-          "clrName": "ElementCatchAllTarget",
+          "targetName": "ElementCatchAllTarget",
           "metadataToken": 67108878,
           "normalizedSignature": "ElementCatchAllTarget|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "events": [],
@@ -1087,8 +1087,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute::.ctor(System.String):void",
@@ -1098,15 +1098,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1116,12 +1116,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Text.Encodings.Web:System.Text.Encodings.Web.HtmlEncoder",
-        "clrName": "System.Text.Encodings.Web.HtmlEncoder"
+        "targetName": "System.Text.Encodings.Web.HtmlEncoder"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder::Encode(System.String):System.String",
-          "clrName": "Encode",
+          "targetName": "Encode",
           "metadataToken": 100663340,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "Encode|(System.String):System.String|static=false",
@@ -1135,13 +1135,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder::Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void",
-          "clrName": "Encode",
+          "targetName": "Encode",
           "metadataToken": 100663341,
           "canonicalSignature": "(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void",
           "normalizedSignature": "Encode|(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void|static=false",
@@ -1155,13 +1155,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder::Encode(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void",
-          "clrName": "Encode",
+          "targetName": "Encode",
           "metadataToken": 100663342,
           "canonicalSignature": "(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void",
           "normalizedSignature": "Encode|(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void|static=false",
@@ -1175,13 +1175,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder::FindFirstCharacterToEncode(System.Char*,System.Int32):System.Int32",
-          "clrName": "FindFirstCharacterToEncode",
+          "targetName": "FindFirstCharacterToEncode",
           "metadataToken": 100663343,
           "canonicalSignature": "(System.Char*,System.Int32):System.Int32",
           "normalizedSignature": "FindFirstCharacterToEncode|(System.Char*,System.Int32):System.Int32|static=false",
@@ -1195,16 +1195,16 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder::TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean",
-          "clrName": "TryEncodeUnicodeScalar",
+          "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder::TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32&):System.Boolean",
+          "targetName": "TryEncodeUnicodeScalar",
           "metadataToken": 100663344,
-          "canonicalSignature": "(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean",
-          "normalizedSignature": "TryEncodeUnicodeScalar|(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.Int32,System.Char*,System.Int32,System.Int32&):System.Boolean",
+          "normalizedSignature": "TryEncodeUnicodeScalar|(System.Int32,System.Char*,System.Int32,System.Int32&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1215,8 +1215,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -1227,7 +1227,7 @@
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder::WillEncode(System.Int32):System.Boolean",
-          "clrName": "WillEncode",
+          "targetName": "WillEncode",
           "metadataToken": 100663345,
           "canonicalSignature": "(System.Int32):System.Boolean",
           "normalizedSignature": "WillEncode|(System.Int32):System.Boolean|static=false",
@@ -1241,15 +1241,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder::Default:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
-          "clrName": "Default",
+          "targetName": "Default",
           "metadataToken": 385875980,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
           "normalizedSignature": "Default|:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder|static=true|accessor=get",
@@ -1263,12 +1263,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder::MaxOutputCharactersPerInputCharacter:System.Int32",
-          "clrName": "MaxOutputCharactersPerInputCharacter",
+          "targetName": "MaxOutputCharactersPerInputCharacter",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxOutputCharactersPerInputCharacter|:System.Int32|static=false|accessor=get",
@@ -1282,8 +1282,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -1292,8 +1292,8 @@
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.OutputElementHintAttribute",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.OutputElementHintAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.OutputElementHintAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1303,13 +1303,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.OutputElementHintAttribute::OutputElement:System.String",
-          "clrName": "OutputElement",
+          "targetName": "OutputElement",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "OutputElement|:System.String|static=false|accessor=get",
@@ -1323,8 +1323,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.OutputElementHintAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.OutputElementHintAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -1338,15 +1338,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.OutputElementHintAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.OutputElementHintAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1355,56 +1355,56 @@
       "isStatic": false,
       "arity": 0,
       "baseType": {
-        "stableId": "System.Private.CoreLib:System.Collections.ObjectModel.ReadOnlyCollection\u00601",
-        "clrName": "System.Collections.ObjectModel.ReadOnlyCollection\u00601",
+        "stableId": "System.Private.CoreLib:System.Collections.ObjectModel.ReadOnlyCollection`1",
+        "targetName": "System.Collections.ObjectModel.ReadOnlyCollection`1",
         "typeArguments": [
           "TagHelperAttribute"
         ]
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IList\u00601",
-          "clrName": "System.Collections.Generic.IList\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IList`1",
+          "targetName": "System.Collections.Generic.IList`1",
           "typeArguments": [
             "TagHelperAttribute"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection\u00601",
-          "clrName": "System.Collections.Generic.ICollection\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection`1",
+          "targetName": "System.Collections.Generic.ICollection`1",
           "typeArguments": [
             "TagHelperAttribute"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
+          "targetName": "System.Collections.Generic.IEnumerable`1",
           "typeArguments": [
             "TagHelperAttribute"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IList",
-          "clrName": "System.Collections.IList"
+          "targetName": "System.Collections.IList"
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.ICollection",
-          "clrName": "System.Collections.ICollection"
+          "targetName": "System.Collections.ICollection"
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
-          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList`1",
+          "targetName": "System.Collections.Generic.IReadOnlyList`1",
           "typeArguments": [
             "TagHelperAttribute"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
-          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection`1",
+          "targetName": "System.Collections.Generic.IReadOnlyCollection`1",
           "typeArguments": [
             "TagHelperAttribute"
           ]
@@ -1413,7 +1413,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::ContainsName(System.String):System.Boolean",
-          "clrName": "ContainsName",
+          "targetName": "ContainsName",
           "metadataToken": 100663352,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "ContainsName|(System.String):System.Boolean|static=false",
@@ -1427,16 +1427,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::TryGetAttribute(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute\u0026):System.Boolean",
-          "clrName": "TryGetAttribute",
+          "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::TryGetAttribute(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute&):System.Boolean",
+          "targetName": "TryGetAttribute",
           "metadataToken": 100663353,
-          "canonicalSignature": "(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute\u0026):System.Boolean",
-          "normalizedSignature": "TryGetAttribute|(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute&):System.Boolean",
+          "normalizedSignature": "TryGetAttribute|(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1447,8 +1447,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -1458,11 +1458,11 @@
           ]
         },
         {
-          "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::TryGetAttributes(System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]\u0026):System.Boolean",
-          "clrName": "TryGetAttributes",
+          "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::TryGetAttributes(System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]&):System.Boolean",
+          "targetName": "TryGetAttributes",
           "metadataToken": 100663354,
-          "canonicalSignature": "(System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]\u0026):System.Boolean",
-          "normalizedSignature": "TryGetAttributes|(System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]&):System.Boolean",
+          "normalizedSignature": "TryGetAttributes|(System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1473,8 +1473,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -1485,7 +1485,7 @@
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::IndexOfName(System.String):System.Int32",
-          "clrName": "IndexOfName",
+          "targetName": "IndexOfName",
           "metadataToken": 100663355,
           "canonicalSignature": "(System.String):System.Int32",
           "normalizedSignature": "IndexOfName|(System.String):System.Int32|static=false",
@@ -1499,13 +1499,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::NameEquals(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean",
-          "clrName": "NameEquals",
+          "targetName": "NameEquals",
           "metadataToken": 100663356,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean",
           "normalizedSignature": "NameEquals|(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean|static=true",
@@ -1519,15 +1519,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::Item[System.String]:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "clrName": "Item",
+          "targetName": "Item",
           "metadataToken": 385875983,
           "canonicalSignature": "[System.String]:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
           "normalizedSignature": "Item|[System.String]:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute|static=false|accessor=get",
@@ -1541,8 +1541,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -1556,8 +1556,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::.ctor(System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
@@ -1567,15 +1567,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.RestrictChildrenAttribute",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.RestrictChildrenAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.RestrictChildrenAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1585,13 +1585,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.RestrictChildrenAttribute::ChildTags:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ChildTags",
+          "targetName": "ChildTags",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ChildTags|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -1605,8 +1605,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.RestrictChildrenAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.RestrictChildrenAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -1620,15 +1620,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.RestrictChildrenAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.RestrictChildrenAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1638,22 +1638,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper",
-          "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper"
+          "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
+          "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
-          "clrName": "Init",
+          "targetName": "Init",
           "metadataToken": 100663360,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
@@ -1667,13 +1667,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper::Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void",
-          "clrName": "Process",
+          "targetName": "Process",
           "metadataToken": 100663361,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void",
           "normalizedSignature": "Process|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void|static=false",
@@ -1687,13 +1687,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
-          "clrName": "ProcessAsync",
+          "targetName": "ProcessAsync",
           "metadataToken": 100663362,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
@@ -1707,13 +1707,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
-          "clrName": "Init",
+          "targetName": "Init",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
@@ -1727,14 +1727,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
-          "clrName": "ProcessAsync",
+          "targetName": "ProcessAsync",
           "metadataToken": 100663336,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
@@ -1748,8 +1748,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         }
@@ -1757,7 +1757,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper::Order:System.Int32",
-          "clrName": "Order",
+          "targetName": "Order",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
@@ -1771,12 +1771,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Order:System.Int32",
-          "clrName": "Order",
+          "targetName": "Order",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
@@ -1791,8 +1791,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -1806,15 +1806,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1824,22 +1824,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer",
-          "clrName": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
+          "targetName": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
-          "clrName": "Microsoft.AspNetCore.Html.IHtmlContent"
+          "targetName": "Microsoft.AspNetCore.Html.IHtmlContent"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute::Equals(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663370,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean",
           "normalizedSignature": "Equals|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean|static=false",
@@ -1853,13 +1853,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
-          "clrName": "WriteTo",
+          "targetName": "WriteTo",
           "metadataToken": 100663371,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
@@ -1873,13 +1873,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
-          "clrName": "CopyTo",
+          "targetName": "CopyTo",
           "metadataToken": 100663372,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
@@ -1893,13 +1893,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute::MoveTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
-          "clrName": "MoveTo",
+          "targetName": "MoveTo",
           "metadataToken": 100663373,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "MoveTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
@@ -1913,13 +1913,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663374,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -1933,13 +1933,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663375,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -1953,13 +1953,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
-          "clrName": "CopyTo",
+          "targetName": "CopyTo",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
@@ -1973,14 +1973,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
-          "clrName": "WriteTo",
+          "targetName": "WriteTo",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
@@ -1994,8 +1994,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContent"
         }
@@ -2003,7 +2003,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -2017,12 +2017,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute::Value:System.Object",
-          "clrName": "Value",
+          "targetName": "Value",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Value|:System.Object|static=false|accessor=get",
@@ -2036,12 +2036,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute::ValueStyle:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
-          "clrName": "ValueStyle",
+          "targetName": "ValueStyle",
           "metadataToken": 385875988,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle",
           "normalizedSignature": "ValueStyle|:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle|static=false|accessor=get",
@@ -2055,8 +2055,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -2070,8 +2070,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute::.ctor(System.String,System.Object):void",
@@ -2081,8 +2081,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute::.ctor(System.String,System.Object,Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle):void",
@@ -2092,15 +2092,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2110,52 +2110,52 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-        "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList"
+        "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IList\u00601",
-          "clrName": "System.Collections.Generic.IList\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IList`1",
+          "targetName": "System.Collections.Generic.IList`1",
           "typeArguments": [
             "TagHelperAttribute"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection\u00601",
-          "clrName": "System.Collections.Generic.ICollection\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection`1",
+          "targetName": "System.Collections.Generic.ICollection`1",
           "typeArguments": [
             "TagHelperAttribute"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
+          "targetName": "System.Collections.Generic.IEnumerable`1",
           "typeArguments": [
             "TagHelperAttribute"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IList",
-          "clrName": "System.Collections.IList"
+          "targetName": "System.Collections.IList"
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.ICollection",
-          "clrName": "System.Collections.ICollection"
+          "targetName": "System.Collections.ICollection"
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
-          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList`1",
+          "targetName": "System.Collections.Generic.IReadOnlyList`1",
           "typeArguments": [
             "TagHelperAttribute"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
-          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection`1",
+          "targetName": "System.Collections.Generic.IReadOnlyCollection`1",
           "typeArguments": [
             "TagHelperAttribute"
           ]
@@ -2164,7 +2164,7 @@
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::SetAttribute(System.String,System.Object):System.Void",
-          "clrName": "SetAttribute",
+          "targetName": "SetAttribute",
           "metadataToken": 100663383,
           "canonicalSignature": "(System.String,System.Object):System.Void",
           "normalizedSignature": "SetAttribute|(System.String,System.Object):System.Void|static=false",
@@ -2178,13 +2178,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::SetAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Void",
-          "clrName": "SetAttribute",
+          "targetName": "SetAttribute",
           "metadataToken": 100663384,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Void",
           "normalizedSignature": "SetAttribute|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Void|static=false",
@@ -2198,13 +2198,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::Add(System.String,System.Object):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663386,
           "canonicalSignature": "(System.String,System.Object):System.Void",
           "normalizedSignature": "Add|(System.String,System.Object):System.Void|static=false",
@@ -2218,13 +2218,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::Add(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663387,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Void",
           "normalizedSignature": "Add|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Void|static=false",
@@ -2238,13 +2238,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::Insert(System.Int32,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Void",
-          "clrName": "Insert",
+          "targetName": "Insert",
           "metadataToken": 100663388,
           "canonicalSignature": "(System.Int32,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Void",
           "normalizedSignature": "Insert|(System.Int32,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Void|static=false",
@@ -2258,13 +2258,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::Remove(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean",
-          "clrName": "Remove",
+          "targetName": "Remove",
           "metadataToken": 100663389,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean",
           "normalizedSignature": "Remove|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean|static=false",
@@ -2278,13 +2278,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::RemoveAt(System.Int32):System.Void",
-          "clrName": "RemoveAt",
+          "targetName": "RemoveAt",
           "metadataToken": 100663390,
           "canonicalSignature": "(System.Int32):System.Void",
           "normalizedSignature": "RemoveAt|(System.Int32):System.Void|static=false",
@@ -2298,13 +2298,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::RemoveAll(System.String):System.Boolean",
-          "clrName": "RemoveAll",
+          "targetName": "RemoveAll",
           "metadataToken": 100663391,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "RemoveAll|(System.String):System.Boolean|static=false",
@@ -2318,13 +2318,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::Clear():System.Void",
-          "clrName": "Clear",
+          "targetName": "Clear",
           "metadataToken": 100663392,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Clear|():System.Void|static=false",
@@ -2338,15 +2338,15 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::Item[System.Int32]:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
-          "clrName": "Item",
+          "targetName": "Item",
           "metadataToken": 385875989,
           "canonicalSignature": "[System.Int32]:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
           "normalizedSignature": "Item|[System.Int32]:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute|static=false|accessor=getset",
@@ -2360,8 +2360,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -2375,8 +2375,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::.ctor(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
@@ -2386,8 +2386,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList::.ctor(System.Collections.Generic.List_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
@@ -2397,15 +2397,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2415,18 +2415,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
+          "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
-          "clrName": "Init",
+          "targetName": "Init",
           "metadataToken": 100663394,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
@@ -2440,13 +2440,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent::Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void",
-          "clrName": "Process",
+          "targetName": "Process",
           "metadataToken": 100663395,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void",
           "normalizedSignature": "Process|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void|static=false",
@@ -2460,13 +2460,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
-          "clrName": "ProcessAsync",
+          "targetName": "ProcessAsync",
           "metadataToken": 100663396,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
@@ -2480,13 +2480,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
-          "clrName": "Init",
+          "targetName": "Init",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
@@ -2500,14 +2500,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
-          "clrName": "ProcessAsync",
+          "targetName": "ProcessAsync",
           "metadataToken": 100663336,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
@@ -2521,8 +2521,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         }
@@ -2530,7 +2530,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent::Order:System.Int32",
-          "clrName": "Order",
+          "targetName": "Order",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
@@ -2544,12 +2544,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Order:System.Int32",
-          "clrName": "Order",
+          "targetName": "Order",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
@@ -2564,8 +2564,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -2579,15 +2579,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2597,26 +2597,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "clrName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
+          "targetName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer",
-          "clrName": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
+          "targetName": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
-          "clrName": "Microsoft.AspNetCore.Html.IHtmlContent"
+          "targetName": "Microsoft.AspNetCore.Html.IHtmlContent"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::SetHtmlContent(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "SetHtmlContent",
+          "targetName": "SetHtmlContent",
           "metadataToken": 100663400,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "SetHtmlContent|(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -2630,13 +2630,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::SetContent(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "SetContent",
+          "targetName": "SetContent",
           "metadataToken": 100663401,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "SetContent|(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -2650,13 +2650,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::SetHtmlContent(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "SetHtmlContent",
+          "targetName": "SetHtmlContent",
           "metadataToken": 100663402,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "SetHtmlContent|(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -2670,13 +2670,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::Append(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "Append",
+          "targetName": "Append",
           "metadataToken": 100663403,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "Append|(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -2690,13 +2690,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::AppendHtml(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "AppendHtml",
+          "targetName": "AppendHtml",
           "metadataToken": 100663404,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "AppendHtml|(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -2710,13 +2710,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::AppendHtml(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "AppendHtml",
+          "targetName": "AppendHtml",
           "metadataToken": 100663405,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "AppendHtml|(System.String):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -2730,13 +2730,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::AppendFormat(System.String,System.Object[]):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "AppendFormat",
+          "targetName": "AppendFormat",
           "metadataToken": 100663406,
           "canonicalSignature": "(System.String,System.Object[]):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "AppendFormat|(System.String,System.Object[]):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -2750,13 +2750,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::AppendFormat(System.IFormatProvider,System.String,System.Object[]):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "AppendFormat",
+          "targetName": "AppendFormat",
           "metadataToken": 100663407,
           "canonicalSignature": "(System.IFormatProvider,System.String,System.Object[]):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "AppendFormat|(System.IFormatProvider,System.String,System.Object[]):Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -2770,13 +2770,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::Clear():Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "Clear",
+          "targetName": "Clear",
           "metadataToken": 100663408,
           "canonicalSignature": "():Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "Clear|():Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false",
@@ -2790,13 +2790,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::Reinitialize():System.Void",
-          "clrName": "Reinitialize",
+          "targetName": "Reinitialize",
           "metadataToken": 100663409,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Reinitialize|():System.Void|static=false",
@@ -2810,13 +2810,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
-          "clrName": "CopyTo",
+          "targetName": "CopyTo",
           "metadataToken": 100663410,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
@@ -2830,13 +2830,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::MoveTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
-          "clrName": "MoveTo",
+          "targetName": "MoveTo",
           "metadataToken": 100663411,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "MoveTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
@@ -2850,13 +2850,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::GetContent():System.String",
-          "clrName": "GetContent",
+          "targetName": "GetContent",
           "metadataToken": 100663412,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "GetContent|():System.String|static=false",
@@ -2870,13 +2870,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::GetContent(System.Text.Encodings.Web.HtmlEncoder):System.String",
-          "clrName": "GetContent",
+          "targetName": "GetContent",
           "metadataToken": 100663413,
           "canonicalSignature": "(System.Text.Encodings.Web.HtmlEncoder):System.String",
           "normalizedSignature": "GetContent|(System.Text.Encodings.Web.HtmlEncoder):System.String|static=false",
@@ -2890,13 +2890,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
-          "clrName": "WriteTo",
+          "targetName": "WriteTo",
           "metadataToken": 100663414,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
@@ -2910,13 +2910,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::AppendHtml(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "clrName": "AppendHtml",
+          "targetName": "AppendHtml",
           "metadataToken": 100663330,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendHtml|(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
@@ -2930,14 +2930,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::Append(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "clrName": "Append",
+          "targetName": "Append",
           "metadataToken": 100663331,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "Append|(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
@@ -2951,14 +2951,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::Clear():Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "clrName": "Clear",
+          "targetName": "Clear",
           "metadataToken": 100663333,
           "canonicalSignature": "():Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "Clear|():Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
@@ -2972,14 +2972,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
-          "clrName": "CopyTo",
+          "targetName": "CopyTo",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
@@ -2993,14 +2993,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
-          "clrName": "WriteTo",
+          "targetName": "WriteTo",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
@@ -3014,8 +3014,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContent"
         }
@@ -3023,7 +3023,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::IsModified:System.Boolean",
-          "clrName": "IsModified",
+          "targetName": "IsModified",
           "metadataToken": 385875992,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsModified|:System.Boolean|static=false|accessor=get",
@@ -3037,12 +3037,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::IsEmptyOrWhiteSpace:System.Boolean",
-          "clrName": "IsEmptyOrWhiteSpace",
+          "targetName": "IsEmptyOrWhiteSpace",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsEmptyOrWhiteSpace|:System.Boolean|static=false|accessor=get",
@@ -3056,8 +3056,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -3071,15 +3071,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -3089,12 +3089,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext::Reinitialize(System.String,System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Void",
-          "clrName": "Reinitialize",
+          "targetName": "Reinitialize",
           "metadataToken": 100663429,
           "canonicalSignature": "(System.String,System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Void",
           "normalizedSignature": "Reinitialize|(System.String,System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Void|static=false",
@@ -3108,13 +3108,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext::Reinitialize(System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Void",
-          "clrName": "Reinitialize",
+          "targetName": "Reinitialize",
           "metadataToken": 100663430,
           "canonicalSignature": "(System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Void",
           "normalizedSignature": "Reinitialize|(System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Void|static=false",
@@ -3128,15 +3128,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext::TagName:System.String",
-          "clrName": "TagName",
+          "targetName": "TagName",
           "metadataToken": 385875994,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "TagName|:System.String|static=false|accessor=getset",
@@ -3150,12 +3150,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext::AllAttributes:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-          "clrName": "AllAttributes",
+          "targetName": "AllAttributes",
           "metadataToken": 385875995,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
           "normalizedSignature": "AllAttributes|:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList|static=false|accessor=get",
@@ -3169,12 +3169,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext::Items:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Items",
+          "targetName": "Items",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Items|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -3188,12 +3188,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext::UniqueId:System.String",
-          "clrName": "UniqueId",
+          "targetName": "UniqueId",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "UniqueId|:System.String|static=false|accessor=getset",
@@ -3207,8 +3207,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -3222,8 +3222,8 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext::.ctor(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):void",
@@ -3233,15 +3233,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-      "clrName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-      "assemblyName": "Microsoft.AspNetCore.Razor",
+      "targetName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+      "ownerIdentity": "Microsoft.AspNetCore.Razor",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -3251,22 +3251,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer",
-          "clrName": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
+          "targetName": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
-          "clrName": "Microsoft.AspNetCore.Html.IHtmlContent"
+          "targetName": "Microsoft.AspNetCore.Html.IHtmlContent"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::Reinitialize(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagMode):System.Void",
-          "clrName": "Reinitialize",
+          "targetName": "Reinitialize",
           "metadataToken": 100663445,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagMode):System.Void",
           "normalizedSignature": "Reinitialize|(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagMode):System.Void|static=false",
@@ -3280,13 +3280,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::SuppressOutput():System.Void",
-          "clrName": "SuppressOutput",
+          "targetName": "SuppressOutput",
           "metadataToken": 100663446,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "SuppressOutput|():System.Void|static=false",
@@ -3300,13 +3300,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::GetChildContentAsync():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetChildContentAsync",
+          "targetName": "GetChildContentAsync",
           "metadataToken": 100663447,
           "canonicalSignature": "():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetChildContentAsync|():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -3320,13 +3320,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::GetChildContentAsync(System.Boolean):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetChildContentAsync",
+          "targetName": "GetChildContentAsync",
           "metadataToken": 100663448,
           "canonicalSignature": "(System.Boolean):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetChildContentAsync|(System.Boolean):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -3340,13 +3340,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::GetChildContentAsync(System.Text.Encodings.Web.HtmlEncoder):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetChildContentAsync",
+          "targetName": "GetChildContentAsync",
           "metadataToken": 100663449,
           "canonicalSignature": "(System.Text.Encodings.Web.HtmlEncoder):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetChildContentAsync|(System.Text.Encodings.Web.HtmlEncoder):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -3360,13 +3360,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::GetChildContentAsync(System.Boolean,System.Text.Encodings.Web.HtmlEncoder):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetChildContentAsync",
+          "targetName": "GetChildContentAsync",
           "metadataToken": 100663450,
           "canonicalSignature": "(System.Boolean,System.Text.Encodings.Web.HtmlEncoder):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetChildContentAsync|(System.Boolean,System.Text.Encodings.Web.HtmlEncoder):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -3380,13 +3380,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
-          "clrName": "WriteTo",
+          "targetName": "WriteTo",
           "metadataToken": 100663453,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
@@ -3400,13 +3400,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
-          "clrName": "CopyTo",
+          "targetName": "CopyTo",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
@@ -3420,14 +3420,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
-          "clrName": "WriteTo",
+          "targetName": "WriteTo",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
@@ -3441,8 +3441,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
+          "ownerQualifiedName": "Microsoft.AspNetCore.Html.IHtmlContent",
+          "ownerIdentity": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContent"
         }
@@ -3450,7 +3450,7 @@
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::TagName:System.String",
-          "clrName": "TagName",
+          "targetName": "TagName",
           "metadataToken": 385875998,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "TagName|:System.String|static=false|accessor=getset",
@@ -3464,12 +3464,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::PreElement:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "PreElement",
+          "targetName": "PreElement",
           "metadataToken": 385875999,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "PreElement|:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false|accessor=get",
@@ -3483,12 +3483,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::PreContent:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "PreContent",
+          "targetName": "PreContent",
           "metadataToken": 385876000,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "PreContent|:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false|accessor=get",
@@ -3502,12 +3502,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::Content:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "Content",
+          "targetName": "Content",
           "metadataToken": 385876001,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "Content|:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false|accessor=getset",
@@ -3521,12 +3521,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::PostContent:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "PostContent",
+          "targetName": "PostContent",
           "metadataToken": 385876002,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "PostContent|:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false|accessor=get",
@@ -3540,12 +3540,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::PostElement:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-          "clrName": "PostElement",
+          "targetName": "PostElement",
           "metadataToken": 385876003,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
           "normalizedSignature": "PostElement|:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent|static=false|accessor=get",
@@ -3559,12 +3559,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::IsContentModified:System.Boolean",
-          "clrName": "IsContentModified",
+          "targetName": "IsContentModified",
           "metadataToken": 385876004,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsContentModified|:System.Boolean|static=false|accessor=get",
@@ -3578,12 +3578,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::TagMode:Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
-          "clrName": "TagMode",
+          "targetName": "TagMode",
           "metadataToken": 385876005,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.TagMode",
           "normalizedSignature": "TagMode|:Microsoft.AspNetCore.Razor.TagHelpers.TagMode|static=false|accessor=getset",
@@ -3597,12 +3597,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput::Attributes:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
-          "clrName": "Attributes",
+          "targetName": "Attributes",
           "metadataToken": 385876006,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList",
           "normalizedSignature": "Attributes|:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList|static=false|accessor=get",
@@ -3616,8 +3616,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ],
       "fields": [],
@@ -3631,8 +3631,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
+          "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput",
+          "ownerIdentity": "Microsoft.AspNetCore.Razor"
         }
       ]
     }
