@@ -1,138 +1,143 @@
 {
-  "namespace": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.Cryptography.KeyDerivation"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-      "targetName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-      "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "targetName": "System.Enum"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
+        "targetName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
+        "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
+        "metadataToken": 0,
+        "kind": "Enum",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": true,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Enum",
+          "targetName": "System.Enum"
+        },
+        "interfaces": [
+          {
+            "stableId": "System.Private.CoreLib:System.IComparable",
+            "targetName": "System.IComparable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+            "targetName": "System.ISpanFormattable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.IFormattable",
+            "targetName": "System.IFormattable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.IConvertible",
+            "targetName": "System.IConvertible"
+          }
+        ],
+        "methods": [],
+        "properties": [],
+        "fields": [
+          {
+            "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::value__System.Int32",
+            "targetName": "value__",
+            "metadataToken": 67108865,
+            "normalizedSignature": "value__|System.Int32|static=false|const=false",
+            "isStatic": false,
+            "isReadOnly": false,
+            "isLiteral": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
+            "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::HMACSHA1Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
+            "targetName": "HMACSHA1",
+            "metadataToken": 67108866,
+            "normalizedSignature": "HMACSHA1|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
+            "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::HMACSHA256Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
+            "targetName": "HMACSHA256",
+            "metadataToken": 67108867,
+            "normalizedSignature": "HMACSHA256|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
+            "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::HMACSHA512Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
+            "targetName": "HMACSHA512",
+            "metadataToken": 67108868,
+            "normalizedSignature": "HMACSHA512|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
+            "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
+          }
+        ],
+        "events": [],
+        "constructors": []
       },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "targetName": "System.IComparable"
+      {
+        "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation",
+        "targetName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation",
+        "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "targetName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "targetName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "targetName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::value__System.Int32",
-          "targetName": "value__",
-          "metadataToken": 67108865,
-          "normalizedSignature": "value__|System.Int32|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-          "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::HMACSHA1Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-          "targetName": "HMACSHA1",
-          "metadataToken": 67108866,
-          "normalizedSignature": "HMACSHA1|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-          "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::HMACSHA256Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-          "targetName": "HMACSHA256",
-          "metadataToken": 67108867,
-          "normalizedSignature": "HMACSHA256|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-          "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::HMACSHA512Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-          "targetName": "HMACSHA512",
-          "metadataToken": 67108868,
-          "normalizedSignature": "HMACSHA512|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-          "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation",
-      "targetName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation",
-      "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation::Pbkdf2(System.String,System.Byte[],Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf,System.Int32,System.Int32):System.Byte[]",
-          "targetName": "Pbkdf2",
-          "metadataToken": 100663307,
-          "canonicalSignature": "(System.String,System.Byte[],Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf,System.Int32,System.Int32):System.Byte[]",
-          "normalizedSignature": "Pbkdf2|(System.String,System.Byte[],Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf,System.Int32,System.Int32):System.Byte[]|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 5,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation",
-          "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation::Pbkdf2(System.String,System.Byte[],Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf,System.Int32,System.Int32):System.Byte[]",
+            "targetName": "Pbkdf2",
+            "metadataToken": 100663307,
+            "canonicalSignature": "(System.String,System.Byte[],Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf,System.Int32,System.Int32):System.Byte[]",
+            "normalizedSignature": "Pbkdf2|(System.String,System.Byte[],Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf,System.Int32,System.Int32):System.Byte[]|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 5,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation",
+            "ownerIdentity": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

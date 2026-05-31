@@ -1,51 +1,56 @@
 {
-  "namespace": "System.Security.Claims",
-  "contributingAssemblies": [
-    "Microsoft.Extensions.Identity.Core",
-    "System.Security.Claims"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Extensions.Identity.Core:System.Security.Claims.PrincipalExtensions",
-      "targetName": "System.Security.Claims.PrincipalExtensions",
-      "ownerIdentity": "Microsoft.Extensions.Identity.Core",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Identity.Core:System.Security.Claims.PrincipalExtensions::FindFirstValue(System.Security.Claims.ClaimsPrincipal,System.String):System.String",
-          "targetName": "FindFirstValue",
-          "metadataToken": 100663297,
-          "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,System.String):System.String",
-          "normalizedSignature": "FindFirstValue|(System.Security.Claims.ClaimsPrincipal,System.String):System.String|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Security.Claims.PrincipalExtensions",
-          "ownerIdentity": "Microsoft.Extensions.Identity.Core",
-          "isExtensionMethod": true
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "System.Security.Claims",
+    "ownerIdentities": [
+      "Microsoft.Extensions.Identity.Core",
+      "System.Security.Claims"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Extensions.Identity.Core:System.Security.Claims.PrincipalExtensions",
+        "targetName": "System.Security.Claims.PrincipalExtensions",
+        "ownerIdentity": "Microsoft.Extensions.Identity.Core",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Identity.Core:System.Security.Claims.PrincipalExtensions::FindFirstValue(System.Security.Claims.ClaimsPrincipal,System.String):System.String",
+            "targetName": "FindFirstValue",
+            "metadataToken": 100663297,
+            "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,System.String):System.String",
+            "normalizedSignature": "FindFirstValue|(System.Security.Claims.ClaimsPrincipal,System.String):System.String|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Security.Claims.PrincipalExtensions",
+            "ownerIdentity": "Microsoft.Extensions.Identity.Core",
+            "isExtensionMethod": true
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

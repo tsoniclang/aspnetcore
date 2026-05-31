@@ -1,61 +1,66 @@
 {
-  "namespace": "Microsoft.AspNetCore.Http.Json",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.Http.Extensions"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions",
-      "targetName": "Microsoft.AspNetCore.Http.Json.JsonOptions",
-      "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions::SerializerOptions:System.Text.Json.JsonSerializerOptions",
-          "targetName": "SerializerOptions",
-          "metadataToken": 385876139,
-          "canonicalSignature": ":System.Text.Json.JsonSerializerOptions",
-          "normalizedSignature": "SerializerOptions|:System.Text.Json.JsonSerializerOptions|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Json.JsonOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions::.ctor():void",
-          "metadataToken": 100664159,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Http.Json.JsonOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions"
-        }
-      ]
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.Http.Json",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.Http.Extensions"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions",
+        "targetName": "Microsoft.AspNetCore.Http.Json.JsonOptions",
+        "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions::SerializerOptions:System.Text.Json.JsonSerializerOptions",
+            "targetName": "SerializerOptions",
+            "metadataToken": 385876139,
+            "canonicalSignature": ":System.Text.Json.JsonSerializerOptions",
+            "normalizedSignature": "SerializerOptions|:System.Text.Json.JsonSerializerOptions|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Http.Json.JsonOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions::.ctor():void",
+            "metadataToken": 100664159,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Http.Json.JsonOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.Http.Extensions"
+          }
+        ]
+      }
+    ]
+  }
 }

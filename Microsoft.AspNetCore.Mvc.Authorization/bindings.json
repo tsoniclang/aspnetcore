@@ -1,307 +1,312 @@
 {
-  "namespace": "Microsoft.AspNetCore.Mvc.Authorization",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.Mvc.Abstractions",
-    "Microsoft.AspNetCore.Mvc.Core"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Authorization.IAllowAnonymousFilter",
-      "targetName": "Microsoft.AspNetCore.Mvc.Authorization.IAllowAnonymousFilter",
-      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "interfaces": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AllowAnonymousFilter",
-      "targetName": "Microsoft.AspNetCore.Mvc.Authorization.AllowAnonymousFilter",
-      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.Mvc.Authorization",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.Mvc.Abstractions",
+      "Microsoft.AspNetCore.Mvc.Core"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Authorization.IAllowAnonymousFilter",
+        "targetName": "Microsoft.AspNetCore.Mvc.Authorization.IAllowAnonymousFilter",
+        "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "interfaces": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+            "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+          }
+        ],
+        "methods": [],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Authorization.IAllowAnonymousFilter",
-          "targetName": "Microsoft.AspNetCore.Mvc.Authorization.IAllowAnonymousFilter"
+      {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AllowAnonymousFilter",
+        "targetName": "Microsoft.AspNetCore.Mvc.Authorization.AllowAnonymousFilter",
+        "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AllowAnonymousFilter::.ctor():void",
-          "metadataToken": 100666549,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AllowAnonymousFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
-      "targetName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
-      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+        "interfaces": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Authorization.IAllowAnonymousFilter",
+            "targetName": "Microsoft.AspNetCore.Mvc.Authorization.IAllowAnonymousFilter"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+            "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+          }
+        ],
+        "methods": [],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AllowAnonymousFilter::.ctor():void",
+            "metadataToken": 100666549,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AllowAnonymousFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
-          "targetName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter"
+      {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
+        "targetName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
+        "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
-          "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
-          "targetName": "OnAuthorizationAsync",
-          "metadataToken": 100666561,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "OnAuthorizationAsync|(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterFactory::CreateInstance(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "targetName": "CreateInstance",
-          "metadataToken": 100663914,
-          "canonicalSignature": "(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "normalizedSignature": "CreateInstance|(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter::OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
-          "targetName": "OnAuthorizationAsync",
-          "metadataToken": 100663905,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "OnAuthorizationAsync|(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter"
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::PolicyProvider:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-          "targetName": "PolicyProvider",
-          "metadataToken": 385876929,
-          "canonicalSignature": ":Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
-          "normalizedSignature": "PolicyProvider|:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::AuthorizeData:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "targetName": "AuthorizeData",
-          "metadataToken": 385876930,
-          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "AuthorizeData|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::Policy:Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "targetName": "Policy",
-          "metadataToken": 385876931,
-          "canonicalSignature": ":Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
-          "normalizedSignature": "Policy|:Microsoft.AspNetCore.Authorization.AuthorizationPolicy|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterFactory::IsReusable:System.Boolean",
-          "targetName": "IsReusable",
-          "metadataToken": 385876227,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "IsReusable|:System.Boolean|static=false|accessor=get",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::.ctor():void",
-          "metadataToken": 100666550,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::.ctor(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):void",
-          "metadataToken": 100666551,
-          "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::.ctor(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "metadataToken": 100666552,
-          "canonicalSignature": "(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::.ctor(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "metadataToken": 100666553,
-          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::.ctor(System.String):void",
-          "metadataToken": 100666554,
-          "canonicalSignature": "(System.String):void",
-          "normalizedSignature": "constructor|(System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-        }
-      ]
-    }
-  ]
+        "interfaces": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
+            "targetName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+            "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
+            "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
+            "targetName": "OnAuthorizationAsync",
+            "metadataToken": 100666561,
+            "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
+            "normalizedSignature": "OnAuthorizationAsync|(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterFactory::CreateInstance(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+            "targetName": "CreateInstance",
+            "metadataToken": 100663914,
+            "canonicalSignature": "(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+            "normalizedSignature": "CreateInstance|(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter::OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
+            "targetName": "OnAuthorizationAsync",
+            "metadataToken": 100663905,
+            "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
+            "normalizedSignature": "OnAuthorizationAsync|(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter"
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::PolicyProvider:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
+            "targetName": "PolicyProvider",
+            "metadataToken": 385876929,
+            "canonicalSignature": ":Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider",
+            "normalizedSignature": "PolicyProvider|:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::AuthorizeData:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "targetName": "AuthorizeData",
+            "metadataToken": 385876930,
+            "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "normalizedSignature": "AuthorizeData|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::Policy:Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
+            "targetName": "Policy",
+            "metadataToken": 385876931,
+            "canonicalSignature": ":Microsoft.AspNetCore.Authorization.AuthorizationPolicy",
+            "normalizedSignature": "Policy|:Microsoft.AspNetCore.Authorization.AuthorizationPolicy|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterFactory::IsReusable:System.Boolean",
+            "targetName": "IsReusable",
+            "metadataToken": 385876227,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "IsReusable|:System.Boolean|static=false|accessor=get",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::.ctor():void",
+            "metadataToken": 100666550,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::.ctor(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):void",
+            "metadataToken": 100666551,
+            "canonicalSignature": "(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::.ctor(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "metadataToken": 100666552,
+            "canonicalSignature": "(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::.ctor(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "metadataToken": 100666553,
+            "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::.ctor(System.String):void",
+            "metadataToken": 100666554,
+            "canonicalSignature": "(System.String):void",
+            "normalizedSignature": "constructor|(System.String):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
+          }
+        ]
+      }
+    ]
+  }
 }

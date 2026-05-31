@@ -1,693 +1,698 @@
 {
-  "namespace": "Microsoft.AspNetCore.HttpOverrides",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.HttpOverrides"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-      "targetName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-      "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "targetName": "System.Enum"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.HttpOverrides",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.HttpOverrides"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+        "targetName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+        "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+        "metadataToken": 0,
+        "kind": "Enum",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": true,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Enum",
+          "targetName": "System.Enum"
+        },
+        "interfaces": [
+          {
+            "stableId": "System.Private.CoreLib:System.IComparable",
+            "targetName": "System.IComparable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+            "targetName": "System.ISpanFormattable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.IFormattable",
+            "targetName": "System.IFormattable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.IConvertible",
+            "targetName": "System.IConvertible"
+          }
+        ],
+        "methods": [],
+        "properties": [],
+        "fields": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::value__System.Int32",
+            "targetName": "value__",
+            "metadataToken": 67108885,
+            "normalizedSignature": "value__|System.Int32|static=false|const=false",
+            "isStatic": false,
+            "isReadOnly": false,
+            "isLiteral": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::NoneMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "targetName": "None",
+            "metadataToken": 67108886,
+            "normalizedSignature": "None|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::XForwardedForMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "targetName": "XForwardedFor",
+            "metadataToken": 67108887,
+            "normalizedSignature": "XForwardedFor|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::XForwardedHostMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "targetName": "XForwardedHost",
+            "metadataToken": 67108888,
+            "normalizedSignature": "XForwardedHost|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::XForwardedProtoMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "targetName": "XForwardedProto",
+            "metadataToken": 67108889,
+            "normalizedSignature": "XForwardedProto|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::XForwardedPrefixMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "targetName": "XForwardedPrefix",
+            "metadataToken": 67108890,
+            "normalizedSignature": "XForwardedPrefix|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::AllMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "targetName": "All",
+            "metadataToken": 67108891,
+            "normalizedSignature": "All|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          }
+        ],
+        "events": [],
+        "constructors": []
       },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "targetName": "System.IComparable"
+      {
+        "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware",
+        "targetName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware",
+        "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "targetName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "targetName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "targetName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::value__System.Int32",
-          "targetName": "value__",
-          "metadataToken": 67108885,
-          "normalizedSignature": "value__|System.Int32|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::NoneMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "targetName": "None",
-          "metadataToken": 67108886,
-          "normalizedSignature": "None|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::XForwardedForMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "targetName": "XForwardedFor",
-          "metadataToken": 67108887,
-          "normalizedSignature": "XForwardedFor|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::XForwardedHostMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "targetName": "XForwardedHost",
-          "metadataToken": 67108888,
-          "normalizedSignature": "XForwardedHost|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::XForwardedProtoMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "targetName": "XForwardedProto",
-          "metadataToken": 67108889,
-          "normalizedSignature": "XForwardedProto|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::XForwardedPrefixMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "targetName": "XForwardedPrefix",
-          "metadataToken": 67108890,
-          "normalizedSignature": "XForwardedPrefix|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders::AllMicrosoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "targetName": "All",
-          "metadataToken": 67108891,
-          "normalizedSignature": "All|Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware",
-      "targetName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware",
-      "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "targetName": "Invoke",
+            "metadataToken": 100663306,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "metadataToken": 100663305,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+            "isStatic": false,
+            "parameterCount": 3,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "targetName": "Invoke",
-          "metadataToken": 100663306,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "metadataToken": 100663305,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "isStatic": false,
-          "parameterCount": 3,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions",
-      "targetName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions",
-      "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+      {
+        "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions",
+        "targetName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions",
+        "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions::CertificateHeader:System.String",
+            "targetName": "CertificateHeader",
+            "metadataToken": 385875970,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "CertificateHeader|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          }
+        ],
+        "fields": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions::HeaderConverterSystem.Func`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Security.Cryptography.X509Certificates.X509Certificate2, System.Security.Cryptography, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]",
+            "targetName": "HeaderConverter",
+            "metadataToken": 67108884,
+            "normalizedSignature": "HeaderConverter|System.Func`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Security.Cryptography.X509Certificates.X509Certificate2, System.Security.Cryptography, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]|static=false|const=false",
+            "isStatic": false,
+            "isReadOnly": false,
+            "isLiteral": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          }
+        ],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions::.ctor():void",
+            "metadataToken": 100663309,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          }
+        ]
       },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions::CertificateHeader:System.String",
-          "targetName": "CertificateHeader",
-          "metadataToken": 385875970,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "CertificateHeader|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        }
-      ],
-      "fields": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions::HeaderConverterSystem.Func`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Security.Cryptography.X509Certificates.X509Certificate2, System.Security.Cryptography, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]",
-          "targetName": "HeaderConverter",
-          "metadataToken": 67108884,
-          "normalizedSignature": "HeaderConverter|System.Func`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Security.Cryptography.X509Certificates.X509Certificate2, System.Security.Cryptography, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        }
-      ],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions::.ctor():void",
-          "metadataToken": 100663309,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware",
-      "targetName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware",
-      "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+      {
+        "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware",
+        "targetName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware",
+        "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "targetName": "Invoke",
+            "metadataToken": 100663322,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware::ApplyForwarders(Microsoft.AspNetCore.Http.HttpContext):System.Void",
+            "targetName": "ApplyForwarders",
+            "metadataToken": 100663323,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Void",
+            "normalizedSignature": "ApplyForwarders|(Microsoft.AspNetCore.Http.HttpContext):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.ForwardedHeadersOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "metadataToken": 100663319,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.ForwardedHeadersOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.ForwardedHeadersOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+            "isStatic": false,
+            "parameterCount": 3,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "targetName": "Invoke",
-          "metadataToken": 100663322,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-          "isExtensionMethod": false
+      {
+        "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware",
+        "targetName": "Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware",
+        "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware::ApplyForwarders(Microsoft.AspNetCore.Http.HttpContext):System.Void",
-          "targetName": "ApplyForwarders",
-          "metadataToken": 100663323,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Void",
-          "normalizedSignature": "ApplyForwarders|(Microsoft.AspNetCore.Http.HttpContext):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.ForwardedHeadersOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "metadataToken": 100663319,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.ForwardedHeadersOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.ForwardedHeadersOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "isStatic": false,
-          "parameterCount": 3,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware",
-      "targetName": "Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware",
-      "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "targetName": "Invoke",
+            "metadataToken": 100663331,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.HttpMethodOverrideOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "metadataToken": 100663330,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.HttpMethodOverrideOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.HttpMethodOverrideOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "targetName": "Invoke",
-          "metadataToken": 100663331,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.HttpMethodOverrideOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "metadataToken": 100663330,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.HttpMethodOverrideOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.HttpMethodOverrideOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.HttpMethodOverrideMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork",
-      "targetName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
-      "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+      {
+        "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork",
+        "targetName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
+        "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::Contains(System.Net.IPAddress):System.Boolean",
+            "targetName": "Contains",
+            "metadataToken": 100663339,
+            "canonicalSignature": "(System.Net.IPAddress):System.Boolean",
+            "normalizedSignature": "Contains|(System.Net.IPAddress):System.Boolean|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::Parse(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.HttpOverrides.IPNetwork",
+            "targetName": "Parse",
+            "metadataToken": 100663342,
+            "canonicalSignature": "(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.HttpOverrides.IPNetwork",
+            "normalizedSignature": "Parse|(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.HttpOverrides.IPNetwork|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::TryParse(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.AspNetCore.HttpOverrides.IPNetwork&):System.Boolean",
+            "targetName": "TryParse",
+            "metadataToken": 100663343,
+            "canonicalSignature": "(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.AspNetCore.HttpOverrides.IPNetwork&):System.Boolean",
+            "normalizedSignature": "TryParse|(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.AspNetCore.HttpOverrides.IPNetwork&):System.Boolean|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+            "isExtensionMethod": false,
+            "parameterModifiers": [
+              {
+                "index": 1,
+                "modifier": "out"
+              }
+            ]
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::Prefix:System.Net.IPAddress",
+            "targetName": "Prefix",
+            "metadataToken": 385875979,
+            "canonicalSignature": ":System.Net.IPAddress",
+            "normalizedSignature": "Prefix|:System.Net.IPAddress|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::PrefixLength:System.Int32",
+            "targetName": "PrefixLength",
+            "metadataToken": 385875981,
+            "canonicalSignature": ":System.Int32",
+            "normalizedSignature": "PrefixLength|:System.Int32|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::.ctor(System.Net.IPAddress,System.Int32):void",
+            "metadataToken": 100663333,
+            "canonicalSignature": "(System.Net.IPAddress,System.Int32):void",
+            "normalizedSignature": "constructor|(System.Net.IPAddress,System.Int32):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::Contains(System.Net.IPAddress):System.Boolean",
-          "targetName": "Contains",
-          "metadataToken": 100663339,
-          "canonicalSignature": "(System.Net.IPAddress):System.Boolean",
-          "normalizedSignature": "Contains|(System.Net.IPAddress):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-          "isExtensionMethod": false
+      {
+        "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
+        "targetName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
+        "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::Parse(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.HttpOverrides.IPNetwork",
-          "targetName": "Parse",
-          "metadataToken": 100663342,
-          "canonicalSignature": "(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.HttpOverrides.IPNetwork",
-          "normalizedSignature": "Parse|(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.HttpOverrides.IPNetwork|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::TryParse(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.AspNetCore.HttpOverrides.IPNetwork&):System.Boolean",
-          "targetName": "TryParse",
-          "metadataToken": 100663343,
-          "canonicalSignature": "(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.AspNetCore.HttpOverrides.IPNetwork&):System.Boolean",
-          "normalizedSignature": "TryParse|(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.AspNetCore.HttpOverrides.IPNetwork&):System.Boolean|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-          "isExtensionMethod": false,
-          "parameterModifiers": [
-            {
-              "index": 1,
-              "modifier": "out"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::Prefix:System.Net.IPAddress",
-          "targetName": "Prefix",
-          "metadataToken": 385875979,
-          "canonicalSignature": ":System.Net.IPAddress",
-          "normalizedSignature": "Prefix|:System.Net.IPAddress|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::PrefixLength:System.Int32",
-          "targetName": "PrefixLength",
-          "metadataToken": 385875981,
-          "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "PrefixLength|:System.Int32|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.IPNetwork::.ctor(System.Net.IPAddress,System.Int32):void",
-          "metadataToken": 100663333,
-          "canonicalSignature": "(System.Net.IPAddress,System.Int32):void",
-          "normalizedSignature": "constructor|(System.Net.IPAddress,System.Int32):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.IPNetwork",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
-      "targetName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
-      "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XForwardedForHeaderName:System.String",
-          "targetName": "XForwardedForHeaderName",
-          "metadataToken": 385875971,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "XForwardedForHeaderName|:System.String|static=true|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XForwardedHostHeaderName:System.String",
-          "targetName": "XForwardedHostHeaderName",
-          "metadataToken": 385875972,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "XForwardedHostHeaderName|:System.String|static=true|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XForwardedProtoHeaderName:System.String",
-          "targetName": "XForwardedProtoHeaderName",
-          "metadataToken": 385875973,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "XForwardedProtoHeaderName|:System.String|static=true|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XForwardedPrefixHeaderName:System.String",
-          "targetName": "XForwardedPrefixHeaderName",
-          "metadataToken": 385875974,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "XForwardedPrefixHeaderName|:System.String|static=true|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XOriginalForHeaderName:System.String",
-          "targetName": "XOriginalForHeaderName",
-          "metadataToken": 385875975,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "XOriginalForHeaderName|:System.String|static=true|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XOriginalHostHeaderName:System.String",
-          "targetName": "XOriginalHostHeaderName",
-          "metadataToken": 385875976,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "XOriginalHostHeaderName|:System.String|static=true|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XOriginalProtoHeaderName:System.String",
-          "targetName": "XOriginalProtoHeaderName",
-          "metadataToken": 385875977,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "XOriginalProtoHeaderName|:System.String|static=true|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XOriginalPrefixHeaderName:System.String",
-          "targetName": "XOriginalPrefixHeaderName",
-          "metadataToken": 385875978,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "XOriginalPrefixHeaderName|:System.String|static=true|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
-          "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XForwardedForHeaderName:System.String",
+            "targetName": "XForwardedForHeaderName",
+            "metadataToken": 385875971,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "XForwardedForHeaderName|:System.String|static=true|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XForwardedHostHeaderName:System.String",
+            "targetName": "XForwardedHostHeaderName",
+            "metadataToken": 385875972,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "XForwardedHostHeaderName|:System.String|static=true|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XForwardedProtoHeaderName:System.String",
+            "targetName": "XForwardedProtoHeaderName",
+            "metadataToken": 385875973,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "XForwardedProtoHeaderName|:System.String|static=true|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XForwardedPrefixHeaderName:System.String",
+            "targetName": "XForwardedPrefixHeaderName",
+            "metadataToken": 385875974,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "XForwardedPrefixHeaderName|:System.String|static=true|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XOriginalForHeaderName:System.String",
+            "targetName": "XOriginalForHeaderName",
+            "metadataToken": 385875975,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "XOriginalForHeaderName|:System.String|static=true|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XOriginalHostHeaderName:System.String",
+            "targetName": "XOriginalHostHeaderName",
+            "metadataToken": 385875976,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "XOriginalHostHeaderName|:System.String|static=true|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XOriginalProtoHeaderName:System.String",
+            "targetName": "XOriginalProtoHeaderName",
+            "metadataToken": 385875977,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "XOriginalProtoHeaderName|:System.String|static=true|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults::XOriginalPrefixHeaderName:System.String",
+            "targetName": "XOriginalPrefixHeaderName",
+            "metadataToken": 385875978,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "XOriginalPrefixHeaderName|:System.String|static=true|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersDefaults",
+            "ownerIdentity": "Microsoft.AspNetCore.HttpOverrides"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

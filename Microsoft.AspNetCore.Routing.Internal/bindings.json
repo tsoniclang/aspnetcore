@@ -1,62 +1,67 @@
 {
-  "namespace": "Microsoft.AspNetCore.Routing.Internal",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.Routing"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
-      "targetName": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
-      "ownerIdentity": "Microsoft.AspNetCore.Routing",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter::Write(Microsoft.AspNetCore.Routing.EndpointDataSource,System.IO.TextWriter):System.Void",
-          "targetName": "Write",
-          "metadataToken": 100664533,
-          "canonicalSignature": "(Microsoft.AspNetCore.Routing.EndpointDataSource,System.IO.TextWriter):System.Void",
-          "normalizedSignature": "Write|(Microsoft.AspNetCore.Routing.EndpointDataSource,System.IO.TextWriter):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
-          "ownerIdentity": "Microsoft.AspNetCore.Routing",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter::.ctor(System.IServiceProvider):void",
-          "metadataToken": 100664532,
-          "canonicalSignature": "(System.IServiceProvider):void",
-          "normalizedSignature": "constructor|(System.IServiceProvider):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
-          "ownerIdentity": "Microsoft.AspNetCore.Routing"
-        }
-      ]
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.Routing.Internal",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.Routing"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
+        "targetName": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
+        "ownerIdentity": "Microsoft.AspNetCore.Routing",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter::Write(Microsoft.AspNetCore.Routing.EndpointDataSource,System.IO.TextWriter):System.Void",
+            "targetName": "Write",
+            "metadataToken": 100664533,
+            "canonicalSignature": "(Microsoft.AspNetCore.Routing.EndpointDataSource,System.IO.TextWriter):System.Void",
+            "normalizedSignature": "Write|(Microsoft.AspNetCore.Routing.EndpointDataSource,System.IO.TextWriter):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
+            "ownerIdentity": "Microsoft.AspNetCore.Routing",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter::.ctor(System.IServiceProvider):void",
+            "metadataToken": 100664532,
+            "canonicalSignature": "(System.IServiceProvider):void",
+            "normalizedSignature": "constructor|(System.IServiceProvider):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
+            "ownerIdentity": "Microsoft.AspNetCore.Routing"
+          }
+        ]
+      }
+    ]
+  }
 }

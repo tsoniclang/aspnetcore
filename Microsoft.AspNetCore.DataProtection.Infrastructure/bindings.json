@@ -1,45 +1,50 @@
 {
-  "namespace": "Microsoft.AspNetCore.DataProtection.Infrastructure",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.DataProtection.Abstractions"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
-      "targetName": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
-      "ownerIdentity": "Microsoft.AspNetCore.DataProtection.Abstractions",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator::Discriminator:System.String",
-          "targetName": "Discriminator",
-          "metadataToken": 385875975,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Discriminator|:System.String|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
-          "ownerIdentity": "Microsoft.AspNetCore.DataProtection.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.DataProtection.Infrastructure",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.DataProtection.Abstractions"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
+        "targetName": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
+        "ownerIdentity": "Microsoft.AspNetCore.DataProtection.Abstractions",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator::Discriminator:System.String",
+            "targetName": "Discriminator",
+            "metadataToken": 385875975,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Discriminator|:System.String|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
+            "ownerIdentity": "Microsoft.AspNetCore.DataProtection.Abstractions"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

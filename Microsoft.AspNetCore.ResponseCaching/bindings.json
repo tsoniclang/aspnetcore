@@ -1,270 +1,275 @@
 {
-  "namespace": "Microsoft.AspNetCore.ResponseCaching",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.ResponseCaching",
-    "Microsoft.AspNetCore.ResponseCaching.Abstractions"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.ResponseCaching.Abstractions:Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
-      "targetName": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
-      "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching.Abstractions",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.ResponseCaching.Abstractions:Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature::VaryByQueryKeys:System.String[]",
-          "targetName": "VaryByQueryKeys",
-          "metadataToken": 385875969,
-          "canonicalSignature": ":System.String[]",
-          "normalizedSignature": "VaryByQueryKeys|:System.String[]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
-          "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature",
-      "targetName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature",
-      "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.ResponseCaching",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.ResponseCaching",
+      "Microsoft.AspNetCore.ResponseCaching.Abstractions"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.ResponseCaching.Abstractions:Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
+        "targetName": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
+        "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching.Abstractions",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.ResponseCaching.Abstractions:Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature::VaryByQueryKeys:System.String[]",
+            "targetName": "VaryByQueryKeys",
+            "metadataToken": 385875969,
+            "canonicalSignature": ":System.String[]",
+            "normalizedSignature": "VaryByQueryKeys|:System.String[]|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
+            "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching.Abstractions"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.AspNetCore.ResponseCaching.Abstractions:Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
-          "targetName": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature"
-        }
-      ],
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature::VaryByQueryKeys:System.String[]",
-          "targetName": "VaryByQueryKeys",
-          "metadataToken": 385876007,
-          "canonicalSignature": ":System.String[]",
-          "normalizedSignature": "VaryByQueryKeys|:System.String[]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature",
-          "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
+      {
+        "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature",
+        "targetName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature",
+        "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.ResponseCaching.Abstractions:Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature::VaryByQueryKeys:System.String[]",
-          "targetName": "VaryByQueryKeys",
-          "metadataToken": 385875969,
-          "canonicalSignature": ":System.String[]",
-          "normalizedSignature": "VaryByQueryKeys|:System.String[]|static=false|accessor=getset",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "sourceInterface": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
-          "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
-          "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature::.ctor():void",
-          "metadataToken": 100663443,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature",
-          "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware",
-      "targetName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware",
-      "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+        "interfaces": [
+          {
+            "stableId": "Microsoft.AspNetCore.ResponseCaching.Abstractions:Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
+            "targetName": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature"
+          }
+        ],
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature::VaryByQueryKeys:System.String[]",
+            "targetName": "VaryByQueryKeys",
+            "metadataToken": 385876007,
+            "canonicalSignature": ":System.String[]",
+            "normalizedSignature": "VaryByQueryKeys|:System.String[]|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature",
+            "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.ResponseCaching.Abstractions:Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature::VaryByQueryKeys:System.String[]",
+            "targetName": "VaryByQueryKeys",
+            "metadataToken": 385875969,
+            "canonicalSignature": ":System.String[]",
+            "normalizedSignature": "VaryByQueryKeys|:System.String[]|static=false|accessor=getset",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "sourceInterface": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
+            "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
+            "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching.Abstractions"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature::.ctor():void",
+            "metadataToken": 100663443,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature",
+            "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "targetName": "Invoke",
-          "metadataToken": 100663450,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions,Microsoft.AspNetCore.ResponseCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.ObjectPool.ObjectPoolProvider):void",
-          "metadataToken": 100663448,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions,Microsoft.AspNetCore.ResponseCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.ObjectPool.ObjectPoolProvider):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions,Microsoft.AspNetCore.ResponseCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.ObjectPool.ObjectPoolProvider):void|static=false",
-          "isStatic": false,
-          "parameterCount": 4,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
-      "targetName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
-      "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+      {
+        "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware",
+        "targetName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware",
+        "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "targetName": "Invoke",
+            "metadataToken": 100663450,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions,Microsoft.AspNetCore.ResponseCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.ObjectPool.ObjectPoolProvider):void",
+            "metadataToken": 100663448,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions,Microsoft.AspNetCore.ResponseCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.ObjectPool.ObjectPoolProvider):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions,Microsoft.AspNetCore.ResponseCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.ObjectPool.ObjectPoolProvider):void|static=false",
+            "isStatic": false,
+            "parameterCount": 4,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
+          }
+        ]
       },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions::SizeLimit:System.Int64",
-          "targetName": "SizeLimit",
-          "metadataToken": 385876008,
-          "canonicalSignature": ":System.Int64",
-          "normalizedSignature": "SizeLimit|:System.Int64|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
+      {
+        "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
+        "targetName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
+        "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions::MaximumBodySize:System.Int64",
-          "targetName": "MaximumBodySize",
-          "metadataToken": 385876009,
-          "canonicalSignature": ":System.Int64",
-          "normalizedSignature": "MaximumBodySize|:System.Int64|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions::UseCaseSensitivePaths:System.Boolean",
-          "targetName": "UseCaseSensitivePaths",
-          "metadataToken": 385876010,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "UseCaseSensitivePaths|:System.Boolean|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions::.ctor():void",
-          "metadataToken": 100663473,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
-        }
-      ]
-    }
-  ]
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions::SizeLimit:System.Int64",
+            "targetName": "SizeLimit",
+            "metadataToken": 385876008,
+            "canonicalSignature": ":System.Int64",
+            "normalizedSignature": "SizeLimit|:System.Int64|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions::MaximumBodySize:System.Int64",
+            "targetName": "MaximumBodySize",
+            "metadataToken": 385876009,
+            "canonicalSignature": ":System.Int64",
+            "normalizedSignature": "MaximumBodySize|:System.Int64|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions::UseCaseSensitivePaths:System.Boolean",
+            "targetName": "UseCaseSensitivePaths",
+            "metadataToken": 385876010,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "UseCaseSensitivePaths|:System.Boolean|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions::.ctor():void",
+            "metadataToken": 100663473,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.ResponseCaching"
+          }
+        ]
+      }
+    ]
+  }
 }

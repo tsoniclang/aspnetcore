@@ -1,61 +1,66 @@
 {
-  "namespace": "Microsoft.AspNetCore.Mvc.Razor.Internal",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.Mvc.Razor"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
-      "targetName": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
-      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Attribute",
-        "targetName": "System.Attribute"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute::Key:System.Object",
-          "targetName": "Key",
-          "metadataToken": 385876083,
-          "canonicalSignature": ":System.Object",
-          "normalizedSignature": "Key|:System.Object|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute::.ctor():void",
-          "metadataToken": 100663638,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
-        }
-      ]
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.Mvc.Razor.Internal",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.Mvc.Razor"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
+        "targetName": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
+        "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Attribute",
+          "targetName": "System.Attribute"
+        },
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute::Key:System.Object",
+            "targetName": "Key",
+            "metadataToken": 385876083,
+            "canonicalSignature": ":System.Object",
+            "normalizedSignature": "Key|:System.Object|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute::.ctor():void",
+            "metadataToken": 100663638,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
+          }
+        ]
+      }
+    ]
+  }
 }

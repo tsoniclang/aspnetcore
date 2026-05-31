@@ -1,46 +1,51 @@
 {
-  "namespace": "Microsoft.AspNetCore.DataProtection.Internal",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.DataProtection"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Internal.IActivator",
-      "targetName": "Microsoft.AspNetCore.DataProtection.Internal.IActivator",
-      "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Internal.IActivator::CreateInstance(System.Type,System.String):System.Object",
-          "targetName": "CreateInstance",
-          "metadataToken": 100663833,
-          "canonicalSignature": "(System.Type,System.String):System.Object",
-          "normalizedSignature": "CreateInstance|(System.Type,System.String):System.Object|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Internal.IActivator",
-          "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.DataProtection.Internal",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.DataProtection"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Internal.IActivator",
+        "targetName": "Microsoft.AspNetCore.DataProtection.Internal.IActivator",
+        "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Internal.IActivator::CreateInstance(System.Type,System.String):System.Object",
+            "targetName": "CreateInstance",
+            "metadataToken": 100663833,
+            "canonicalSignature": "(System.Type,System.String):System.Object",
+            "normalizedSignature": "CreateInstance|(System.Type,System.String):System.Object|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.DataProtection.Internal.IActivator",
+            "ownerIdentity": "Microsoft.AspNetCore.DataProtection",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

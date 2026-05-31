@@ -1,153 +1,158 @@
 {
-  "namespace": "Microsoft.AspNetCore.HostFiltering",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.HostFiltering"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
-      "targetName": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
-      "ownerIdentity": "Microsoft.AspNetCore.HostFiltering",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "targetName": "Invoke",
-          "metadataToken": 100663298,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.HostFiltering",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringOptions,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "metadataToken": 100663297,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringOptions,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringOptions,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "isStatic": false,
-          "parameterCount": 3,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.HostFiltering"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
-      "targetName": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
-      "ownerIdentity": "Microsoft.AspNetCore.HostFiltering",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::AllowedHosts:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "targetName": "AllowedHosts",
-          "metadataToken": 385875969,
-          "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AllowedHosts|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.HostFiltering"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.HostFiltering",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.HostFiltering"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
+        "targetName": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
+        "ownerIdentity": "Microsoft.AspNetCore.HostFiltering",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::AllowEmptyHosts:System.Boolean",
-          "targetName": "AllowEmptyHosts",
-          "metadataToken": 385875970,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "AllowEmptyHosts|:System.Boolean|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.HostFiltering"
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "targetName": "Invoke",
+            "metadataToken": 100663298,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.HostFiltering",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringOptions,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "metadataToken": 100663297,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringOptions,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringOptions,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+            "isStatic": false,
+            "parameterCount": 3,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.HostFiltering"
+          }
+        ]
+      },
+      {
+        "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+        "targetName": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+        "ownerIdentity": "Microsoft.AspNetCore.HostFiltering",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::IncludeFailureMessage:System.Boolean",
-          "targetName": "IncludeFailureMessage",
-          "metadataToken": 385875971,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "IncludeFailureMessage|:System.Boolean|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.HostFiltering"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::.ctor():void",
-          "metadataToken": 100663310,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.HostFiltering"
-        }
-      ]
-    }
-  ]
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::AllowedHosts:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "targetName": "AllowedHosts",
+            "metadataToken": 385875969,
+            "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "normalizedSignature": "AllowedHosts|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.HostFiltering"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::AllowEmptyHosts:System.Boolean",
+            "targetName": "AllowEmptyHosts",
+            "metadataToken": 385875970,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "AllowEmptyHosts|:System.Boolean|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.HostFiltering"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::IncludeFailureMessage:System.Boolean",
+            "targetName": "IncludeFailureMessage",
+            "metadataToken": 385875971,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "IncludeFailureMessage|:System.Boolean|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.HostFiltering"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::.ctor():void",
+            "metadataToken": 100663310,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.HostFiltering"
+          }
+        ]
+      }
+    ]
+  }
 }

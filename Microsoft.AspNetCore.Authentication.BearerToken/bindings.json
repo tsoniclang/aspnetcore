@@ -1,411 +1,416 @@
 {
-  "namespace": "Microsoft.AspNetCore.Authentication.BearerToken",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.Authentication.BearerToken"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
-      "targetName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse::TokenType:System.String",
-          "targetName": "TokenType",
-          "metadataToken": 385875969,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "TokenType|:System.String|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.Authentication.BearerToken",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.Authentication.BearerToken"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
+        "targetName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": true,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse::AccessToken:System.String",
-          "targetName": "AccessToken",
-          "metadataToken": 385875970,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "AccessToken|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse::ExpiresIn:System.Int64",
-          "targetName": "ExpiresIn",
-          "metadataToken": 385875971,
-          "canonicalSignature": ":System.Int64",
-          "normalizedSignature": "ExpiresIn|:System.Int64|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse::RefreshToken:System.String",
-          "targetName": "RefreshToken",
-          "metadataToken": 385875972,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "RefreshToken|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse::.ctor():void",
-          "metadataToken": 100663310,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
-      "targetName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents::MessageReceivedAsync(Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext):System.Threading.Tasks.Task",
-          "targetName": "MessageReceivedAsync",
-          "metadataToken": 100663318,
-          "canonicalSignature": "(Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "MessageReceivedAsync|(Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents::OnMessageReceived:System.Func_2[[Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext,Microsoft.AspNetCore.Authentication.BearerToken,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "targetName": "OnMessageReceived",
-          "metadataToken": 385875973,
-          "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext,Microsoft.AspNetCore.Authentication.BearerToken,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "OnMessageReceived|:System.Func_2[[Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext,Microsoft.AspNetCore.Authentication.BearerToken,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents::.ctor():void",
-          "metadataToken": 100663319,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
-      "targetName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions",
-        "targetName": "Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::BearerTokenExpiration:System.TimeSpan",
-          "targetName": "BearerTokenExpiration",
-          "metadataToken": 385875980,
-          "canonicalSignature": ":System.TimeSpan",
-          "normalizedSignature": "BearerTokenExpiration|:System.TimeSpan|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::RefreshTokenExpiration:System.TimeSpan",
-          "targetName": "RefreshTokenExpiration",
-          "metadataToken": 385875981,
-          "canonicalSignature": ":System.TimeSpan",
-          "normalizedSignature": "RefreshTokenExpiration|:System.TimeSpan|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::BearerTokenProtector:Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "targetName": "BearerTokenProtector",
-          "metadataToken": 385875982,
-          "canonicalSignature": ":Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "BearerTokenProtector|:Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::RefreshTokenProtector:Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "targetName": "RefreshTokenProtector",
-          "metadataToken": 385875983,
-          "canonicalSignature": ":Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "RefreshTokenProtector|:Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::Events:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
-          "targetName": "Events",
-          "metadataToken": 385875984,
-          "canonicalSignature": ":Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
-          "normalizedSignature": "Events|:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::.ctor():void",
-          "metadataToken": 100663350,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext",
-      "targetName": "Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.ResultContext`1",
-        "targetName": "Microsoft.AspNetCore.Authentication.ResultContext`1",
-        "typeArguments": [
-          "BearerTokenOptions"
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse::TokenType:System.String",
+            "targetName": "TokenType",
+            "metadataToken": 385875969,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "TokenType|:System.String|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse::AccessToken:System.String",
+            "targetName": "AccessToken",
+            "metadataToken": 385875970,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "AccessToken|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse::ExpiresIn:System.Int64",
+            "targetName": "ExpiresIn",
+            "metadataToken": 385875971,
+            "canonicalSignature": ":System.Int64",
+            "normalizedSignature": "ExpiresIn|:System.Int64|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse::RefreshToken:System.String",
+            "targetName": "RefreshToken",
+            "metadataToken": 385875972,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "RefreshToken|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse::.ctor():void",
+            "metadataToken": 100663310,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          }
         ]
       },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext::Token:System.String",
-          "targetName": "Token",
-          "metadataToken": 385875985,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Token|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext::.ctor(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions):void",
-          "metadataToken": 100663361,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions):void|static=false",
-          "isStatic": false,
-          "parameterCount": 3,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenDefaults",
-      "targetName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenDefaults",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+      {
+        "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
+        "targetName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents::MessageReceivedAsync(Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext):System.Threading.Tasks.Task",
+            "targetName": "MessageReceivedAsync",
+            "metadataToken": 100663318,
+            "canonicalSignature": "(Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext):System.Threading.Tasks.Task",
+            "normalizedSignature": "MessageReceivedAsync|(Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext):System.Threading.Tasks.Task|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents::OnMessageReceived:System.Func_2[[Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext,Microsoft.AspNetCore.Authentication.BearerToken,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "targetName": "OnMessageReceived",
+            "metadataToken": 385875973,
+            "canonicalSignature": ":System.Func_2[[Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext,Microsoft.AspNetCore.Authentication.BearerToken,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "normalizedSignature": "OnMessageReceived|:System.Func_2[[Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext,Microsoft.AspNetCore.Authentication.BearerToken,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents::.ctor():void",
+            "metadataToken": 100663319,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          }
+        ]
       },
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenDefaults::AuthenticationSchemeSystem.String",
-          "targetName": "AuthenticationScheme",
-          "metadataToken": 67108872,
-          "normalizedSignature": "AuthenticationScheme|System.String|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenDefaults",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    }
-  ]
+      {
+        "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
+        "targetName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": true,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions",
+          "targetName": "Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions"
+        },
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::BearerTokenExpiration:System.TimeSpan",
+            "targetName": "BearerTokenExpiration",
+            "metadataToken": 385875980,
+            "canonicalSignature": ":System.TimeSpan",
+            "normalizedSignature": "BearerTokenExpiration|:System.TimeSpan|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::RefreshTokenExpiration:System.TimeSpan",
+            "targetName": "RefreshTokenExpiration",
+            "metadataToken": 385875981,
+            "canonicalSignature": ":System.TimeSpan",
+            "normalizedSignature": "RefreshTokenExpiration|:System.TimeSpan|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::BearerTokenProtector:Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "targetName": "BearerTokenProtector",
+            "metadataToken": 385875982,
+            "canonicalSignature": ":Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "normalizedSignature": "BearerTokenProtector|:Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::RefreshTokenProtector:Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "targetName": "RefreshTokenProtector",
+            "metadataToken": 385875983,
+            "canonicalSignature": ":Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "normalizedSignature": "RefreshTokenProtector|:Microsoft.AspNetCore.Authentication.ISecureDataFormat_1[[Microsoft.AspNetCore.Authentication.AuthenticationTicket,Microsoft.AspNetCore.Authentication.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::Events:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
+            "targetName": "Events",
+            "metadataToken": 385875984,
+            "canonicalSignature": ":Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
+            "normalizedSignature": "Events|:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions::.ctor():void",
+            "metadataToken": 100663350,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          }
+        ]
+      },
+      {
+        "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext",
+        "targetName": "Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.ResultContext`1",
+          "targetName": "Microsoft.AspNetCore.Authentication.ResultContext`1",
+          "typeArguments": [
+            "BearerTokenOptions"
+          ]
+        },
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext::Token:System.String",
+            "targetName": "Token",
+            "metadataToken": 385875985,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Token|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext::.ctor(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions):void",
+            "metadataToken": 100663361,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions):void|static=false",
+            "isStatic": false,
+            "parameterCount": 3,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          }
+        ]
+      },
+      {
+        "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenDefaults",
+        "targetName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenDefaults",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [],
+        "properties": [],
+        "fields": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenDefaults::AuthenticationSchemeSystem.String",
+            "targetName": "AuthenticationScheme",
+            "metadataToken": 67108872,
+            "normalizedSignature": "AuthenticationScheme|System.String|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenDefaults",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.BearerToken"
+          }
+        ],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

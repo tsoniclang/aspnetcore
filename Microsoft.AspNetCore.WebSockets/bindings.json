@@ -1,195 +1,200 @@
 {
-  "namespace": "Microsoft.AspNetCore.WebSockets",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.WebSockets"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
-      "targetName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
-      "ownerIdentity": "Microsoft.AspNetCore.WebSockets",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.WebSocketAcceptContext",
-        "targetName": "Microsoft.AspNetCore.Http.WebSocketAcceptContext"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::SubProtocol:System.String",
-          "targetName": "SubProtocol",
-          "metadataToken": 385875984,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "SubProtocol|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
-          "ownerIdentity": "Microsoft.AspNetCore.WebSockets"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.WebSockets",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.WebSockets"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+        "targetName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+        "ownerIdentity": "Microsoft.AspNetCore.WebSockets",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.WebSocketAcceptContext",
+          "targetName": "Microsoft.AspNetCore.Http.WebSocketAcceptContext"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::ReceiveBufferSize:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "targetName": "ReceiveBufferSize",
-          "metadataToken": 385875985,
-          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "ReceiveBufferSize|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
-          "ownerIdentity": "Microsoft.AspNetCore.WebSockets"
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::SubProtocol:System.String",
+            "targetName": "SubProtocol",
+            "metadataToken": 385875984,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "SubProtocol|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+            "ownerIdentity": "Microsoft.AspNetCore.WebSockets"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::ReceiveBufferSize:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "targetName": "ReceiveBufferSize",
+            "metadataToken": 385875985,
+            "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "normalizedSignature": "ReceiveBufferSize|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+            "ownerIdentity": "Microsoft.AspNetCore.WebSockets"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::KeepAliveInterval:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "targetName": "KeepAliveInterval",
+            "metadataToken": 385875986,
+            "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "normalizedSignature": "KeepAliveInterval|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+            "ownerIdentity": "Microsoft.AspNetCore.WebSockets"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::.ctor():void",
+            "metadataToken": 100663373,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+            "ownerIdentity": "Microsoft.AspNetCore.WebSockets"
+          }
+        ]
+      },
+      {
+        "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+        "targetName": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+        "ownerIdentity": "Microsoft.AspNetCore.WebSockets",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::KeepAliveInterval:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "targetName": "KeepAliveInterval",
-          "metadataToken": 385875986,
-          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "KeepAliveInterval|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
-          "ownerIdentity": "Microsoft.AspNetCore.WebSockets"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::.ctor():void",
-          "metadataToken": 100663373,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
-          "ownerIdentity": "Microsoft.AspNetCore.WebSockets"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
-      "targetName": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
-      "ownerIdentity": "Microsoft.AspNetCore.WebSockets",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "targetName": "Invoke",
+            "metadataToken": 100663381,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+            "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.WebSockets",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
+            "metadataToken": 100663380,
+            "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+            "isStatic": false,
+            "parameterCount": 3,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+            "ownerIdentity": "Microsoft.AspNetCore.WebSockets"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "targetName": "Invoke",
-          "metadataToken": 100663381,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.WebSockets",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
-          "metadataToken": 100663380,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "isStatic": false,
-          "parameterCount": 3,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
-          "ownerIdentity": "Microsoft.AspNetCore.WebSockets"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
-      "targetName": "Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
-      "ownerIdentity": "Microsoft.AspNetCore.WebSockets",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions::AddWebSockets(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
-          "targetName": "AddWebSockets",
-          "metadataToken": 100663382,
-          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
-          "normalizedSignature": "AddWebSockets|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
-          "ownerIdentity": "Microsoft.AspNetCore.WebSockets",
-          "isExtensionMethod": true
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+      {
+        "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
+        "targetName": "Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
+        "ownerIdentity": "Microsoft.AspNetCore.WebSockets",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions::AddWebSockets(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "targetName": "AddWebSockets",
+            "metadataToken": 100663382,
+            "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "normalizedSignature": "AddWebSockets|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
+            "ownerIdentity": "Microsoft.AspNetCore.WebSockets",
+            "isExtensionMethod": true
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }
