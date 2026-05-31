@@ -1,102 +1,107 @@
 {
-  "namespace": "Microsoft.AspNetCore.Components.Web.Infrastructure",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.Components.Web"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-      "targetName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-      "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::AddRootComponent(System.String,System.String):System.Int32",
-          "targetName": "AddRootComponent",
-          "metadataToken": 100663793,
-          "canonicalSignature": "(System.String,System.String):System.Int32",
-          "normalizedSignature": "AddRootComponent|(System.String,System.String):System.Int32|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "ProtectedInternal",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
-          "isExtensionMethod": false
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.Components.Web.Infrastructure",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.Components.Web"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
+        "targetName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
+        "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::SetRootComponentParameters(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void",
-          "targetName": "SetRootComponentParameters",
-          "metadataToken": 100663794,
-          "canonicalSignature": "(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void",
-          "normalizedSignature": "SetRootComponentParameters|(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 4,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "ProtectedInternal",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::RemoveRootComponent(System.Int32):System.Void",
-          "targetName": "RemoveRootComponent",
-          "metadataToken": 100663795,
-          "canonicalSignature": "(System.Int32):System.Void",
-          "normalizedSignature": "RemoveRootComponent|(System.Int32):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "ProtectedInternal",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-          "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::.ctor(Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore):void",
-          "metadataToken": 100663791,
-          "canonicalSignature": "(Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-          "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
-        }
-      ]
-    }
-  ]
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::AddRootComponent(System.String,System.String):System.Int32",
+            "targetName": "AddRootComponent",
+            "metadataToken": 100663793,
+            "canonicalSignature": "(System.String,System.String):System.Int32",
+            "normalizedSignature": "AddRootComponent|(System.String,System.String):System.Int32|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "ProtectedInternal",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
+            "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::SetRootComponentParameters(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void",
+            "targetName": "SetRootComponentParameters",
+            "metadataToken": 100663794,
+            "canonicalSignature": "(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void",
+            "normalizedSignature": "SetRootComponentParameters|(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 4,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "ProtectedInternal",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
+            "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::RemoveRootComponent(System.Int32):System.Void",
+            "targetName": "RemoveRootComponent",
+            "metadataToken": 100663795,
+            "canonicalSignature": "(System.Int32):System.Void",
+            "normalizedSignature": "RemoveRootComponent|(System.Int32):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "ProtectedInternal",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
+            "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::.ctor(Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore):void",
+            "metadataToken": 100663791,
+            "canonicalSignature": "(Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
+            "ownerIdentity": "Microsoft.AspNetCore.Components.Web"
+          }
+        ]
+      }
+    ]
+  }
 }

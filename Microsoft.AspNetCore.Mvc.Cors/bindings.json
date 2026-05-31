@@ -1,171 +1,176 @@
 {
-  "namespace": "Microsoft.AspNetCore.Mvc.Cors",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.Mvc.Cors"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
-      "targetName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
-      "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.ICorsAuthorizationFilter",
-          "targetName": "Microsoft.AspNetCore.Mvc.Cors.ICorsAuthorizationFilter"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.Mvc.Cors",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.Mvc.Cors"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
+        "targetName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
+        "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
-          "targetName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
-          "targetName": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter::OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
-          "targetName": "OnAuthorizationAsync",
-          "metadataToken": 100663312,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "OnAuthorizationAsync|(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter::OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
-          "targetName": "OnAuthorizationAsync",
-          "metadataToken": 100663905,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "OnAuthorizationAsync|(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter"
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter::PolicyName:System.String",
-          "targetName": "PolicyName",
-          "metadataToken": 385875970,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "PolicyName|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter::Order:System.Int32",
-          "targetName": "Order",
-          "metadataToken": 385875971,
-          "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter::Order:System.Int32",
-          "targetName": "Order",
-          "metadataToken": 385876229,
-          "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter::.ctor(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider):void",
-          "metadataToken": 100663307,
-          "canonicalSignature": "(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter::.ctor(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider,Microsoft.Extensions.Logging.ILoggerFactory):void",
-          "metadataToken": 100663308,
-          "canonicalSignature": "(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider,Microsoft.Extensions.Logging.ILoggerFactory):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "isStatic": false,
-          "parameterCount": 3,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors"
-        }
-      ]
-    }
-  ]
+        "interfaces": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.ICorsAuthorizationFilter",
+            "targetName": "Microsoft.AspNetCore.Mvc.Cors.ICorsAuthorizationFilter"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
+            "targetName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+            "targetName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
+            "targetName": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter::OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
+            "targetName": "OnAuthorizationAsync",
+            "metadataToken": 100663312,
+            "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
+            "normalizedSignature": "OnAuthorizationAsync|(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter::OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
+            "targetName": "OnAuthorizationAsync",
+            "metadataToken": 100663905,
+            "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
+            "normalizedSignature": "OnAuthorizationAsync|(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter"
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter::PolicyName:System.String",
+            "targetName": "PolicyName",
+            "metadataToken": 385875970,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "PolicyName|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter::Order:System.Int32",
+            "targetName": "Order",
+            "metadataToken": 385875971,
+            "canonicalSignature": ":System.Int32",
+            "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter::Order:System.Int32",
+            "targetName": "Order",
+            "metadataToken": 385876229,
+            "canonicalSignature": ":System.Int32",
+            "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter::.ctor(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider):void",
+            "metadataToken": 100663307,
+            "canonicalSignature": "(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter::.ctor(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider,Microsoft.Extensions.Logging.ILoggerFactory):void",
+            "metadataToken": 100663308,
+            "canonicalSignature": "(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider,Microsoft.Extensions.Logging.ILoggerFactory):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+            "isStatic": false,
+            "parameterCount": 3,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Cors"
+          }
+        ]
+      }
+    ]
+  }
 }

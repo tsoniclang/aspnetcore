@@ -1,558 +1,563 @@
 {
-  "namespace": "Microsoft.AspNetCore.Authentication.OAuth.Claims",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.Authentication.OAuth"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
-      "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "targetName": "Run",
-          "metadataToken": 100663411,
-          "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction::ClaimType:System.String",
-          "targetName": "ClaimType",
-          "metadataToken": 385876006,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "ClaimType|:System.String|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction::ValueType:System.String",
-          "targetName": "ValueType",
-          "metadataToken": 385876007,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "ValueType|:System.String|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction::.ctor(System.String,System.String):void",
-          "metadataToken": 100663408,
-          "canonicalSignature": "(System.String,System.String):void",
-          "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
-      "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
-          "targetName": "System.Collections.Generic.IEnumerable`1",
-          "typeArguments": [
-            "ClaimAction"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "targetName": "System.Collections.IEnumerable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection::Clear():System.Void",
-          "targetName": "Clear",
-          "metadataToken": 100663413,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Clear|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection::Remove(System.String):System.Void",
-          "targetName": "Remove",
-          "metadataToken": 100663414,
-          "canonicalSignature": "(System.String):System.Void",
-          "normalizedSignature": "Remove|(System.String):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection::Add(Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction):System.Void",
-          "targetName": "Add",
-          "metadataToken": 100663415,
-          "canonicalSignature": "(Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction):System.Void",
-          "normalizedSignature": "Add|(Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction,Microsoft.AspNetCore.Authentication.OAuth,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "targetName": "GetEnumerator",
-          "metadataToken": 100663416,
-          "canonicalSignature": "():System.Collections.Generic.IEnumerator_1[[Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction,Microsoft.AspNetCore.Authentication.OAuth,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction,Microsoft.AspNetCore.Authentication.OAuth,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection::.ctor():void",
-          "metadataToken": 100663418,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction",
-      "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.Authentication.OAuth.Claims",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.Authentication.OAuth"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
         "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
-        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction"
+        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "targetName": "Run",
+            "metadataToken": 100663411,
+            "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction::ClaimType:System.String",
+            "targetName": "ClaimType",
+            "metadataToken": 385876006,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "ClaimType|:System.String|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction::ValueType:System.String",
+            "targetName": "ValueType",
+            "metadataToken": 385876007,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "ValueType|:System.String|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction::.ctor(System.String,System.String):void",
+            "metadataToken": 100663408,
+            "canonicalSignature": "(System.String,System.String):void",
+            "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "targetName": "Run",
-          "metadataToken": 100663421,
-          "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction::Resolver:System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "targetName": "Resolver",
-          "metadataToken": 385876009,
-          "canonicalSignature": ":System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "Resolver|:System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction::.ctor(System.String,System.String,System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
-          "metadataToken": 100663419,
-          "canonicalSignature": "(System.String,System.String,System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
-          "normalizedSignature": "constructor|(System.String,System.String,System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
-          "isStatic": false,
-          "parameterCount": 3,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction",
-      "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
-        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction"
+      {
+        "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
+        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "interfaces": [
+          {
+            "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
+            "targetName": "System.Collections.Generic.IEnumerable`1",
+            "typeArguments": [
+              "ClaimAction"
+            ]
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+            "targetName": "System.Collections.IEnumerable"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection::Clear():System.Void",
+            "targetName": "Clear",
+            "metadataToken": 100663413,
+            "canonicalSignature": "():System.Void",
+            "normalizedSignature": "Clear|():System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection::Remove(System.String):System.Void",
+            "targetName": "Remove",
+            "metadataToken": 100663414,
+            "canonicalSignature": "(System.String):System.Void",
+            "normalizedSignature": "Remove|(System.String):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection::Add(Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction):System.Void",
+            "targetName": "Add",
+            "metadataToken": 100663415,
+            "canonicalSignature": "(Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction):System.Void",
+            "normalizedSignature": "Add|(Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction,Microsoft.AspNetCore.Authentication.OAuth,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "targetName": "GetEnumerator",
+            "metadataToken": 100663416,
+            "canonicalSignature": "():System.Collections.Generic.IEnumerator_1[[Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction,Microsoft.AspNetCore.Authentication.OAuth,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction,Microsoft.AspNetCore.Authentication.OAuth,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection::.ctor():void",
+            "metadataToken": 100663418,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "targetName": "Run",
-          "metadataToken": 100663423,
-          "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction::.ctor(System.String):void",
-          "metadataToken": 100663422,
-          "canonicalSignature": "(System.String):void",
-          "normalizedSignature": "constructor|(System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction",
-      "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
-        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction"
+      {
+        "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction",
+        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
+          "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "targetName": "Run",
+            "metadataToken": 100663421,
+            "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction::Resolver:System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "targetName": "Resolver",
+            "metadataToken": 385876009,
+            "canonicalSignature": ":System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "normalizedSignature": "Resolver|:System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction::.ctor(System.String,System.String,System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+            "metadataToken": 100663419,
+            "canonicalSignature": "(System.String,System.String,System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+            "normalizedSignature": "constructor|(System.String,System.String,System.Func_2[[System.Text.Json.JsonElement,System.Text.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+            "isStatic": false,
+            "parameterCount": 3,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.CustomJsonClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "targetName": "Run",
-          "metadataToken": 100663426,
-          "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction::JsonKey:System.String",
-          "targetName": "JsonKey",
-          "metadataToken": 385876010,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "JsonKey|:System.String|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction::.ctor(System.String,System.String,System.String):void",
-          "metadataToken": 100663424,
-          "canonicalSignature": "(System.String,System.String,System.String):void",
-          "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 3,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction",
-      "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
+      {
+        "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction",
+        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
+          "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "targetName": "Run",
+            "metadataToken": 100663423,
+            "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction::.ctor(System.String):void",
+            "metadataToken": 100663422,
+            "canonicalSignature": "(System.String):void",
+            "normalizedSignature": "constructor|(System.String):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.DeleteClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          }
+        ]
+      },
+      {
         "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction",
-        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction"
+        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
+          "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "targetName": "Run",
+            "metadataToken": 100663426,
+            "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction::JsonKey:System.String",
+            "targetName": "JsonKey",
+            "metadataToken": 385876010,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "JsonKey|:System.String|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction::.ctor(System.String,System.String,System.String):void",
+            "metadataToken": 100663424,
+            "canonicalSignature": "(System.String,System.String,System.String):void",
+            "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
+            "isStatic": false,
+            "parameterCount": 3,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "targetName": "Run",
-          "metadataToken": 100663430,
-          "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction::SubKey:System.String",
-          "targetName": "SubKey",
-          "metadataToken": 385876011,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "SubKey|:System.String|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction::.ctor(System.String,System.String,System.String,System.String):void",
-          "metadataToken": 100663428,
-          "canonicalSignature": "(System.String,System.String,System.String,System.String):void",
-          "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 4,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction",
-      "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction",
-      "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
-        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction"
+      {
+        "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction",
+        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction",
+          "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonKeyClaimAction"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "targetName": "Run",
+            "metadataToken": 100663430,
+            "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction::SubKey:System.String",
+            "targetName": "SubKey",
+            "metadataToken": 385876011,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "SubKey|:System.String|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction::.ctor(System.String,System.String,System.String,System.String):void",
+            "metadataToken": 100663428,
+            "canonicalSignature": "(System.String,System.String,System.String,System.String):void",
+            "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String):void|static=false",
+            "isStatic": false,
+            "parameterCount": 4,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.JsonSubKeyClaimAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "targetName": "Run",
-          "metadataToken": 100663433,
-          "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
-          "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction::.ctor():void",
-          "metadataToken": 100663432,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction",
-          "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-        }
-      ]
-    }
-  ]
+      {
+        "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction",
+        "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction",
+        "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction",
+          "targetName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimAction"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction::Run(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "targetName": "Run",
+            "metadataToken": 100663433,
+            "canonicalSignature": "(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void",
+            "normalizedSignature": "Run|(System.Text.Json.JsonElement,System.Security.Claims.ClaimsIdentity,System.String):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction::.ctor():void",
+            "metadataToken": 100663432,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.Claims.MapAllClaimsAction",
+            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
+          }
+        ]
+      }
+    ]
+  }
 }

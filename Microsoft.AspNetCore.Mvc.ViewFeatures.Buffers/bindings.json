@@ -1,150 +1,155 @@
 {
-  "namespace": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers",
-  "contributingAssemblies": [
-    "Microsoft.AspNetCore.Mvc.ViewFeatures"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
-      "targetName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
-      "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope::GetPage(System.Int32):Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]",
-          "targetName": "GetPage",
-          "metadataToken": 100664779,
-          "canonicalSignature": "(System.Int32):Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]",
-          "normalizedSignature": "GetPage|(System.Int32):Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope::ReturnSegment(Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]):System.Void",
-          "targetName": "ReturnSegment",
-          "metadataToken": 100664780,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]):System.Void",
-          "normalizedSignature": "ReturnSegment|(Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope::CreateWriter(System.IO.TextWriter):System.IO.TextWriter",
-          "targetName": "CreateWriter",
-          "metadataToken": 100664781,
-          "canonicalSignature": "(System.IO.TextWriter):System.IO.TextWriter",
-          "normalizedSignature": "CreateWriter|(System.IO.TextWriter):System.IO.TextWriter|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
-      "targetName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
-      "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "targetName": "System.ValueType"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers",
+    "ownerIdentities": [
+      "Microsoft.AspNetCore.Mvc.ViewFeatures"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
+        "targetName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
+        "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope::GetPage(System.Int32):Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]",
+            "targetName": "GetPage",
+            "metadataToken": 100664779,
+            "canonicalSignature": "(System.Int32):Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]",
+            "normalizedSignature": "GetPage|(System.Int32):Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope::ReturnSegment(Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]):System.Void",
+            "targetName": "ReturnSegment",
+            "metadataToken": 100664780,
+            "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]):System.Void",
+            "normalizedSignature": "ReturnSegment|(Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope::CreateWriter(System.IO.TextWriter):System.IO.TextWriter",
+            "targetName": "CreateWriter",
+            "metadataToken": 100664781,
+            "canonicalSignature": "(System.IO.TextWriter):System.IO.TextWriter",
+            "normalizedSignature": "CreateWriter|(System.IO.TextWriter):System.IO.TextWriter|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue::Value:System.Object",
-          "targetName": "Value",
-          "metadataToken": 385876318,
-          "canonicalSignature": ":System.Object",
-          "normalizedSignature": "Value|:System.Object|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue::.ctor(System.String):void",
-          "metadataToken": 100664865,
-          "canonicalSignature": "(System.String):void",
-          "normalizedSignature": "constructor|(System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+      {
+        "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
+        "targetName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
+        "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+        "metadataToken": 0,
+        "kind": "Struct",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": true,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.ValueType",
+          "targetName": "System.ValueType"
         },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue::.ctor(Microsoft.AspNetCore.Html.IHtmlContent):void",
-          "metadataToken": 100664866,
-          "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContent):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Html.IHtmlContent):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
-          "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
-        }
-      ]
-    }
-  ]
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue::Value:System.Object",
+            "targetName": "Value",
+            "metadataToken": 385876318,
+            "canonicalSignature": ":System.Object",
+            "normalizedSignature": "Value|:System.Object|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue::.ctor(System.String):void",
+            "metadataToken": 100664865,
+            "canonicalSignature": "(System.String):void",
+            "normalizedSignature": "constructor|(System.String):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue::.ctor(Microsoft.AspNetCore.Html.IHtmlContent):void",
+            "metadataToken": 100664866,
+            "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContent):void",
+            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Html.IHtmlContent):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
+            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+          }
+        ]
+      }
+    ]
+  }
 }
