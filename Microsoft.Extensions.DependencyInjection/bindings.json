@@ -1041,7 +1041,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.Extensions.DependencyInjection.ComponentServiceCollectionExtensions::AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
             "targetName": "AddServerSideBlazor",
-            "metadataToken": 100663561,
+            "metadataToken": 100663562,
             "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
             "normalizedSignature": "AddServerSideBlazor|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder|static=true",
             "emitScope": "ClassSurface",
@@ -5593,7 +5593,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.Extensions.DependencyInjection.ServerRazorComponentsBuilderExtensions::AddInteractiveServerComponents(Microsoft.Extensions.DependencyInjection.IRazorComponentsBuilder,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
             "targetName": "AddInteractiveServerComponents",
-            "metadataToken": 100663564,
+            "metadataToken": 100663565,
             "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IRazorComponentsBuilder,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
             "normalizedSignature": "AddInteractiveServerComponents|(Microsoft.Extensions.DependencyInjection.IRazorComponentsBuilder,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder|static=true",
             "emitScope": "ClassSurface",
@@ -5635,7 +5635,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.Extensions.DependencyInjection.ServerSideBlazorBuilderExtensions::AddCircuitOptions(Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
             "targetName": "AddCircuitOptions",
-            "metadataToken": 100663565,
+            "metadataToken": 100663566,
             "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
             "normalizedSignature": "AddCircuitOptions|(Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder|static=true",
             "emitScope": "ClassSurface",
@@ -5655,7 +5655,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.Extensions.DependencyInjection.ServerSideBlazorBuilderExtensions::AddHubOptions(Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder,System.Action_1[[Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
             "targetName": "AddHubOptions",
-            "metadataToken": 100663566,
+            "metadataToken": 100663567,
             "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder,System.Action_1[[Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
             "normalizedSignature": "AddHubOptions|(Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder,System.Action_1[[Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.AspNetCore.SignalR.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder|static=true",
             "emitScope": "ClassSurface",

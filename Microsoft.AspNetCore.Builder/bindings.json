@@ -581,7 +581,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder::Add(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
             "targetName": "Add",
-            "metadataToken": 100663605,
+            "metadataToken": 100663606,
             "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
             "normalizedSignature": "Add|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -601,7 +601,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder::Finally(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
             "targetName": "Finally",
-            "metadataToken": 100663606,
+            "metadataToken": 100663607,
             "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
             "normalizedSignature": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -5136,7 +5136,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Builder.ComponentEndpointRouteBuilderExtensions::MapBlazorHub(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder",
             "targetName": "MapBlazorHub",
-            "metadataToken": 100663607,
+            "metadataToken": 100663608,
             "canonicalSignature": "(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder",
             "normalizedSignature": "MapBlazorHub|(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder|static=true",
             "emitScope": "ClassSurface",
@@ -5156,7 +5156,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Builder.ComponentEndpointRouteBuilderExtensions::MapBlazorHub(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder",
             "targetName": "MapBlazorHub",
-            "metadataToken": 100663608,
+            "metadataToken": 100663609,
             "canonicalSignature": "(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder",
             "normalizedSignature": "MapBlazorHub|(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder|static=true",
             "emitScope": "ClassSurface",
@@ -5176,7 +5176,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Builder.ComponentEndpointRouteBuilderExtensions::MapBlazorHub(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.Action_1[[Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions,Microsoft.AspNetCore.Http.Connections,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder",
             "targetName": "MapBlazorHub",
-            "metadataToken": 100663609,
+            "metadataToken": 100663610,
             "canonicalSignature": "(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.Action_1[[Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions,Microsoft.AspNetCore.Http.Connections,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder",
             "normalizedSignature": "MapBlazorHub|(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.Action_1[[Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions,Microsoft.AspNetCore.Http.Connections,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder|static=true",
             "emitScope": "ClassSurface",
@@ -5196,7 +5196,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Builder.ComponentEndpointRouteBuilderExtensions::MapBlazorHub(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Action_1[[Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions,Microsoft.AspNetCore.Http.Connections,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder",
             "targetName": "MapBlazorHub",
-            "metadataToken": 100663610,
+            "metadataToken": 100663611,
             "canonicalSignature": "(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Action_1[[Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions,Microsoft.AspNetCore.Http.Connections,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder",
             "normalizedSignature": "MapBlazorHub|(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Action_1[[Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions,Microsoft.AspNetCore.Http.Connections,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder|static=true",
             "emitScope": "ClassSurface",
@@ -5686,7 +5686,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Builder.CookieRedirectEndpointConventionBuilderExtensions::DisableCookieRedirect(TBuilder):TBuilder",
             "targetName": "DisableCookieRedirect",
-            "metadataToken": 100663717,
+            "metadataToken": 100663718,
             "canonicalSignature": "(TBuilder):TBuilder",
             "normalizedSignature": "DisableCookieRedirect|(TBuilder):TBuilder|static=true",
             "emitScope": "ClassSurface",
@@ -5706,7 +5706,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Builder.CookieRedirectEndpointConventionBuilderExtensions::AllowCookieRedirect(TBuilder):TBuilder",
             "targetName": "AllowCookieRedirect",
-            "metadataToken": 100663718,
+            "metadataToken": 100663719,
             "canonicalSignature": "(TBuilder):TBuilder",
             "normalizedSignature": "AllowCookieRedirect|(TBuilder):TBuilder|static=true",
             "emitScope": "ClassSurface",
@@ -7521,7 +7521,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Builder.HttpMetricsEndpointConventionBuilderExtensions::DisableHttpMetrics(TBuilder):TBuilder",
             "targetName": "DisableHttpMetrics",
-            "metadataToken": 100663720,
+            "metadataToken": 100663721,
             "canonicalSignature": "(TBuilder):TBuilder",
             "normalizedSignature": "DisableHttpMetrics|(TBuilder):TBuilder|static=true",
             "emitScope": "ClassSurface",
@@ -9499,7 +9499,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Builder.ServerRazorComponentsEndpointConventionBuilderExtensions::AddInteractiveServerRenderMode(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder):Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder",
             "targetName": "AddInteractiveServerRenderMode",
-            "metadataToken": 100663611,
+            "metadataToken": 100663612,
             "canonicalSignature": "(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder):Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder",
             "normalizedSignature": "AddInteractiveServerRenderMode|(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder):Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder|static=true",
             "emitScope": "ClassSurface",
@@ -9519,7 +9519,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Builder.ServerRazorComponentsEndpointConventionBuilderExtensions::AddInteractiveServerRenderMode(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder,System.Action_1[[Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder",
             "targetName": "AddInteractiveServerRenderMode",
-            "metadataToken": 100663612,
+            "metadataToken": 100663613,
             "canonicalSignature": "(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder,System.Action_1[[Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder",
             "normalizedSignature": "AddInteractiveServerRenderMode|(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder,System.Action_1[[Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder|static=true",
             "emitScope": "ClassSurface",

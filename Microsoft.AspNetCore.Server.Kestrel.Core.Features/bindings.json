@@ -23,7 +23,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature::SetTimeout(System.TimeSpan):System.Void",
             "targetName": "SetTimeout",
-            "metadataToken": 100667497,
+            "metadataToken": 100667498,
             "canonicalSignature": "(System.TimeSpan):System.Void",
             "normalizedSignature": "SetTimeout|(System.TimeSpan):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -43,7 +43,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature::CancelTimeout():System.Void",
             "targetName": "CancelTimeout",
-            "metadataToken": 100667499,
+            "metadataToken": 100667500,
             "canonicalSignature": "():System.Void",
             "normalizedSignature": "CancelTimeout|():System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -81,7 +81,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature::ReleaseConnection():System.Void",
             "targetName": "ReleaseConnection",
-            "metadataToken": 100667500,
+            "metadataToken": 100667501,
             "canonicalSignature": "():System.Void",
             "normalizedSignature": "ReleaseConnection|():System.Void|static=false",
             "emitScope": "ClassSurface",

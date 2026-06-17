@@ -28,7 +28,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions::SerializerOptions:System.Text.Json.JsonSerializerOptions",
             "targetName": "SerializerOptions",
-            "metadataToken": 385876139,
+            "metadataToken": 385876140,
             "canonicalSignature": ":System.Text.Json.JsonSerializerOptions",
             "normalizedSignature": "SerializerOptions|:System.Text.Json.JsonSerializerOptions|static=false|accessor=get",
             "emitScope": "ClassSurface",
@@ -50,7 +50,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions::.ctor():void",
-            "metadataToken": 100664159,
+            "metadataToken": 100664160,
             "canonicalSignature": "():void",
             "normalizedSignature": "constructor|():void|static=false",
             "isStatic": false,
