@@ -3,7 +3,7 @@
 #
 # Prerequisites:
 #   - .NET 10 SDK installed
-#   - tsbindgen repository cloned at ../tsbindgen (sibling directory)
+#   - dotnet-bindgen repository cloned at ../dotnet-bindgen (sibling directory)
 #   - @tsonic/dotnet cloned at ../dotnet (sibling directory)
 #   - @tsonic/microsoft-extensions cloned at ../microsoft-extensions (sibling directory)
 #
@@ -14,7 +14,7 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
-TSBINDGEN_DIR="$PROJECT_DIR/../tsbindgen"
+DOTNET_BINDGEN_DIR="$PROJECT_DIR/../dotnet-bindgen"
 DOTNET_MAJOR="${DOTNET_MAJOR:-10}"
 DOTNET_LIB="$PROJECT_DIR/../dotnet/versions/$DOTNET_MAJOR"
 EXT_LIB="$PROJECT_DIR/../microsoft-extensions"
@@ -33,7 +33,7 @@ echo "  .NET Runtime:      $NETCORE_RUNTIME_PATH"
 echo "  ASP.NET Runtime:   $ASPNET_RUNTIME_PATH"
 echo "  BCL Library:       $DOTNET_LIB (external reference)"
 echo "  Extensions Library:$EXT_LIB (external reference)"
-echo "  tsbindgen:         $TSBINDGEN_DIR"
+echo "  dotnet-bindgen:         $DOTNET_BINDGEN_DIR"
 echo "  Output:            $PROJECT_DIR"
 echo "  Naming:            CLR (no transforms)"
 echo ""
@@ -51,9 +51,9 @@ if [ ! -d "$ASPNET_RUNTIME_PATH" ]; then
     exit 1
 fi
 
-if [ ! -d "$TSBINDGEN_DIR" ]; then
-    echo "ERROR: tsbindgen not found at $TSBINDGEN_DIR"
-    echo "Clone it: git clone https://github.com/tsoniclang/tsbindgen ../tsbindgen"
+if [ ! -d "$DOTNET_BINDGEN_DIR" ]; then
+    echo "ERROR: dotnet-bindgen not found at $DOTNET_BINDGEN_DIR"
+    echo "Clone it: git clone https://github.com/tsoniclang/dotnet-bindgen ../dotnet-bindgen"
     exit 1
 fi
 
@@ -88,10 +88,10 @@ rm -rf __internal Internal internal 2>/dev/null || true
 
 echo "  Done"
 
-# Build tsbindgen
-echo "[2/3] Building tsbindgen..."
-cd "$TSBINDGEN_DIR"
-dotnet build src/tsbindgen/tsbindgen.csproj -c Release --verbosity quiet
+# Build dotnet-bindgen
+echo "[2/3] Building dotnet-bindgen..."
+cd "$DOTNET_BINDGEN_DIR"
+dotnet build src/DotnetBindgen/DotnetBindgen.csproj -c Release --verbosity quiet
 echo "  Done"
 
 echo "[3/3] Generating TypeScript declarations..."
@@ -116,7 +116,7 @@ for dll in "${ASPNET_DLLS[@]}"; do
     GEN_ARGS+=( -a "$dll" )
 done
 
-dotnet run --project src/tsbindgen/tsbindgen.csproj --no-build -c Release -- \
+dotnet run --project src/DotnetBindgen/DotnetBindgen.csproj --no-build -c Release -- \
     generate "${GEN_ARGS[@]}" -d "$NETCORE_RUNTIME_PATH" -o "$PROJECT_DIR" \
     --lib "$DOTNET_LIB" \
     --lib "$EXT_LIB"

@@ -96,7 +96,7 @@ npm install
 The generation script requires:
 
 - .NET 10 SDK/runtime
-- `../tsbindgen`
+- `../dotnet-bindgen`
 - `../dotnet`
 - `../microsoft-extensions`
 
