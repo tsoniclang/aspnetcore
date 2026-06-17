@@ -593,4 +593,3 @@ export abstract class ViewComponentHelperExtensions$instance {
 
 
 export type ViewComponentHelperExtensions = ViewComponentHelperExtensions$instance;
-

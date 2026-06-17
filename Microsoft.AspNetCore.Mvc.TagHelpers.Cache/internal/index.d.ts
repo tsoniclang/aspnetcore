@@ -144,5 +144,3 @@ export interface __DistributedCacheTagHelperStorage$views {
 }
 
 export type DistributedCacheTagHelperStorage = DistributedCacheTagHelperStorage$instance & __DistributedCacheTagHelperStorage$views;
-
-

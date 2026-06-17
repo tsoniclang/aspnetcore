@@ -77,4 +77,3 @@ export interface ITlsApplicationProtocolFeature$instance {
 
 
 export type ITlsApplicationProtocolFeature = ITlsApplicationProtocolFeature$instance;
-

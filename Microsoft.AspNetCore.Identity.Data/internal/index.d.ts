@@ -174,4 +174,3 @@ export const TwoFactorResponse: {
 
 
 export type TwoFactorResponse = TwoFactorResponse$instance;
-

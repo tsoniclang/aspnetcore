@@ -3407,4 +3407,3 @@ export abstract class UrlHelperExtensions$instance {
 
 
 export type UrlHelperExtensions = UrlHelperExtensions$instance;
-

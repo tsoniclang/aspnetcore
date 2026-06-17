@@ -42,4 +42,3 @@ export abstract class GenericHostWebHostBuilderExtensions$instance {
 
 
 export type GenericHostWebHostBuilderExtensions = GenericHostWebHostBuilderExtensions$instance;
-

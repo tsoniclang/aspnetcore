@@ -211,5 +211,3 @@ export interface __ResponseCompressionProvider$views {
 }
 
 export type ResponseCompressionProvider = ResponseCompressionProvider$instance & __ResponseCompressionProvider$views;
-
-

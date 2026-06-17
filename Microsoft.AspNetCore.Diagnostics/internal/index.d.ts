@@ -324,4 +324,3 @@ export const WelcomePageMiddleware: {
 
 
 export type WelcomePageMiddleware = WelcomePageMiddleware$instance;
-

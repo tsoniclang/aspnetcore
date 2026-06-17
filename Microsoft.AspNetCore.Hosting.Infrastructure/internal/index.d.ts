@@ -34,4 +34,3 @@ export interface ISupportsStartup$instance {
 
 
 export type ISupportsStartup = ISupportsStartup$instance;
-

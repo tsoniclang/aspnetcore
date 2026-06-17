@@ -122,4 +122,3 @@ export abstract class RewriteOptionsExtensions$instance {
 
 
 export type RewriteOptionsExtensions = RewriteOptionsExtensions$instance;
-

@@ -2277,4 +2277,3 @@ export abstract class SecurityStampValidator$instance {
 
 
 export type SecurityStampValidator = SecurityStampValidator$instance;
-

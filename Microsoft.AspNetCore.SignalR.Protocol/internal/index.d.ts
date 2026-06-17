@@ -345,4 +345,3 @@ export abstract class HubProtocolExtensions$instance {
 
 
 export type HubProtocolExtensions = HubProtocolExtensions$instance;
-

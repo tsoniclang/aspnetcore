@@ -22,4 +22,3 @@ export interface IAntiforgeryValidationFailedResult$instance extends IActionResu
 export interface IAntiforgeryValidationFailedResult$instance extends Microsoft_AspNetCore_Mvc_Internal.IActionResult$instance {}
 
 export type IAntiforgeryValidationFailedResult = IAntiforgeryValidationFailedResult$instance;
-

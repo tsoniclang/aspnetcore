@@ -222,7 +222,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions::.ctor():void",
-            "metadataToken": 100663851,
+            "metadataToken": 100663852,
             "canonicalSignature": "():void",
             "normalizedSignature": "constructor|():void|static=false",
             "isStatic": false,
@@ -320,7 +320,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions::.ctor():void",
-            "metadataToken": 100663855,
+            "metadataToken": 100663856,
             "canonicalSignature": "():void",
             "normalizedSignature": "constructor|():void|static=false",
             "isStatic": false,
@@ -360,7 +360,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider::ValidateAuthenticationStateAsync(Microsoft.AspNetCore.Components.Authorization.AuthenticationState,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "ValidateAuthenticationStateAsync",
-            "metadataToken": 100663874,
+            "metadataToken": 100663875,
             "canonicalSignature": "(Microsoft.AspNetCore.Components.Authorization.AuthenticationState,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "ValidateAuthenticationStateAsync|(Microsoft.AspNetCore.Components.Authorization.AuthenticationState,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
             "emitScope": "ClassSurface",
@@ -380,7 +380,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider::Dispose(System.Boolean):System.Void",
             "targetName": "Dispose",
-            "metadataToken": 100663878,
+            "metadataToken": 100663879,
             "canonicalSignature": "(System.Boolean):System.Void",
             "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -445,7 +445,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider::.ctor(Microsoft.Extensions.Logging.ILoggerFactory):void",
-            "metadataToken": 100663872,
+            "metadataToken": 100663873,
             "canonicalSignature": "(Microsoft.Extensions.Logging.ILoggerFactory):void",
             "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
             "isStatic": false,
@@ -637,7 +637,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions::.ctor():void",
-            "metadataToken": 100663822,
+            "metadataToken": 100663823,
             "canonicalSignature": "():void",
             "normalizedSignature": "constructor|():void|static=false",
             "isStatic": false,

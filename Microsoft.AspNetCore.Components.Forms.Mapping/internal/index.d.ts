@@ -68,4 +68,3 @@ export abstract class SupplyParameterFromFormServiceCollectionExtensions$instanc
 
 
 export type SupplyParameterFromFormServiceCollectionExtensions = SupplyParameterFromFormServiceCollectionExtensions$instance;
-

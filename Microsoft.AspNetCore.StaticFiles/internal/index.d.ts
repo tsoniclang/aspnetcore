@@ -138,4 +138,3 @@ export const StaticFileResponseContext: {
 
 
 export type StaticFileResponseContext = StaticFileResponseContext$instance;
-

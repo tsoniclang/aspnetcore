@@ -434,4 +434,3 @@ export abstract class WebHostExtensions$instance {
 
 
 export type WebHostExtensions = WebHostExtensions$instance;
-

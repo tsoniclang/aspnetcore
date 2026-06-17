@@ -1922,4 +1922,3 @@ export type ExtensionMethods_System_Security_Claims<TShape> =
   TShape extends null | undefined ? TShape
   : TShape extends void ? void
   : TShape & __TsonicWithExt<TShape, "System.Security.Claims", __TsonicExtApplier_System_Security_Claims> & __TsonicExtMethods_System_Security_Claims;
-

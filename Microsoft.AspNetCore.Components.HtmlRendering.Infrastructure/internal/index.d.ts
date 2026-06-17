@@ -41,4 +41,3 @@ export const StaticHtmlRenderer: {
 
 
 export type StaticHtmlRenderer = StaticHtmlRenderer$instance;
-

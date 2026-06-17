@@ -79,4 +79,3 @@ export const HttpsRedirectionOptions: {
 
 
 export type HttpsRedirectionOptions = HttpsRedirectionOptions$instance;
-

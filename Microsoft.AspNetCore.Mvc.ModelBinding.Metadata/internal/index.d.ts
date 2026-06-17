@@ -562,4 +562,3 @@ export abstract class MetadataDetailsProviderExtensions$instance {
 
 
 export type MetadataDetailsProviderExtensions = MetadataDetailsProviderExtensions$instance;
-

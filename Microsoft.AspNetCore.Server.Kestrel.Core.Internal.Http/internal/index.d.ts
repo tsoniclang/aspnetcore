@@ -112,4 +112,3 @@ export const HttpParser_1: {
 
 
 export type HttpParser_1<TRequestHandler extends unknown & IHttpHeadersHandler & IHttpRequestLineHandler> = HttpParser_1$instance<TRequestHandler>;
-

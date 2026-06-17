@@ -508,4 +508,3 @@ export abstract class AuthorizationServiceExtensions$instance {
 
 
 export type AuthorizationServiceExtensions = AuthorizationServiceExtensions$instance;
-

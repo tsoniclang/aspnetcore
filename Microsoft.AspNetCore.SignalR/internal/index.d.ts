@@ -791,4 +791,3 @@ export abstract class SignalRConnectionBuilderExtensions$instance {
 
 
 export type SignalRConnectionBuilderExtensions = SignalRConnectionBuilderExtensions$instance;
-

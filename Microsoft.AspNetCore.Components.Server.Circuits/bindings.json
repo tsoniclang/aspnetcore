@@ -68,7 +68,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::OnCircuitOpenedAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
             "targetName": "OnCircuitOpenedAsync",
-            "metadataToken": 100663950,
+            "metadataToken": 100663951,
             "canonicalSignature": "(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
             "normalizedSignature": "OnCircuitOpenedAsync|(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
             "emitScope": "ClassSurface",
@@ -88,7 +88,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::OnConnectionUpAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
             "targetName": "OnConnectionUpAsync",
-            "metadataToken": 100663951,
+            "metadataToken": 100663952,
             "canonicalSignature": "(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
             "normalizedSignature": "OnConnectionUpAsync|(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
             "emitScope": "ClassSurface",
@@ -108,7 +108,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::OnConnectionDownAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
             "targetName": "OnConnectionDownAsync",
-            "metadataToken": 100663952,
+            "metadataToken": 100663953,
             "canonicalSignature": "(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
             "normalizedSignature": "OnConnectionDownAsync|(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
             "emitScope": "ClassSurface",
@@ -128,7 +128,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::OnCircuitClosedAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
             "targetName": "OnCircuitClosedAsync",
-            "metadataToken": 100663953,
+            "metadataToken": 100663954,
             "canonicalSignature": "(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task",
             "normalizedSignature": "OnCircuitClosedAsync|(Microsoft.AspNetCore.Components.Server.Circuits.Circuit,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
             "emitScope": "ClassSurface",
@@ -148,7 +148,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::CreateInboundActivityHandler(System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "CreateInboundActivityHandler",
-            "metadataToken": 100663954,
+            "metadataToken": 100663955,
             "canonicalSignature": "(System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "CreateInboundActivityHandler|(System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Func_2[[Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
             "emitScope": "ClassSurface",
@@ -192,7 +192,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::.ctor():void",
-            "metadataToken": 100663955,
+            "metadataToken": 100663956,
             "canonicalSignature": "():void",
             "normalizedSignature": "constructor|():void|static=false",
             "isStatic": false,

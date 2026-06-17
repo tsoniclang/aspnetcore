@@ -80,4 +80,3 @@ export const RootComponentMetadata: {
 
 
 export type RootComponentMetadata = RootComponentMetadata$instance;
-

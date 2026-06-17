@@ -173,4 +173,3 @@ export const W3CLoggerOptions: {
 
 
 export type W3CLoggerOptions = W3CLoggerOptions$instance;
-

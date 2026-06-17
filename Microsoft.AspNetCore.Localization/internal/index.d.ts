@@ -222,4 +222,3 @@ export const RequestLocalizationMiddleware: {
 
 
 export type RequestLocalizationMiddleware = RequestLocalizationMiddleware$instance;
-

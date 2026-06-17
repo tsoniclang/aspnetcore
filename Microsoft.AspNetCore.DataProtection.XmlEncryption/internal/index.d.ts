@@ -254,5 +254,3 @@ export interface __NullXmlEncryptor$views {
 }
 
 export type NullXmlEncryptor = NullXmlEncryptor$instance & __NullXmlEncryptor$views;
-
-

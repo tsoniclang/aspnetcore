@@ -71,4 +71,3 @@ export abstract class UriHelper$instance {
 
 
 export type UriHelper = UriHelper$instance;
-

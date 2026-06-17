@@ -31,4 +31,3 @@ export const QuicTransportOptions: {
 
 
 export type QuicTransportOptions = QuicTransportOptions$instance;
-

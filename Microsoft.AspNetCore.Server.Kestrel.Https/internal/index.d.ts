@@ -98,4 +98,3 @@ export abstract class CertificateLoader$instance {
 
 
 export type CertificateLoader = CertificateLoader$instance;
-

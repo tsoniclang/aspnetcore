@@ -362,4 +362,3 @@ export abstract class RateLimitPartition$instance {
 
 
 export type RateLimitPartition = RateLimitPartition$instance;
-

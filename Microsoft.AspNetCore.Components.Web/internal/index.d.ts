@@ -545,4 +545,3 @@ export abstract class WebRenderTreeBuilderExtensions$instance {
 
 
 export type WebRenderTreeBuilderExtensions = WebRenderTreeBuilderExtensions$instance;
-

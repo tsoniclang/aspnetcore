@@ -24,4 +24,3 @@ export const RazorInjectAttribute: {
 
 
 export type RazorInjectAttribute = RazorInjectAttribute$instance;
-

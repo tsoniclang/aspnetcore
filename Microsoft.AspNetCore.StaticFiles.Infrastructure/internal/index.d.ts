@@ -44,4 +44,3 @@ export const SharedOptionsBase: (abstract new(sharedOptions: SharedOptions) => S
 
 
 export type SharedOptionsBase = SharedOptionsBase$instance;
-

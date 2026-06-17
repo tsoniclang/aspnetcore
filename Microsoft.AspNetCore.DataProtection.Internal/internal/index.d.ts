@@ -18,4 +18,3 @@ export interface IActivator$instance {
 
 
 export type IActivator = IActivator$instance;
-

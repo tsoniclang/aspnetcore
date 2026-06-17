@@ -1238,4 +1238,3 @@ export abstract class RoutingHttpContextExtensions$instance {
 
 
 export type RoutingHttpContextExtensions = RoutingHttpContextExtensions$instance;
-

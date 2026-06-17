@@ -235,4 +235,3 @@ export interface ITransferFormatFeature$instance {
 
 
 export type ITransferFormatFeature = ITransferFormatFeature$instance;
-

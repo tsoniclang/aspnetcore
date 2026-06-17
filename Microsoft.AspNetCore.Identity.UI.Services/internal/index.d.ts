@@ -39,5 +39,3 @@ export interface __NoOpEmailSender$views {
 }
 
 export type NoOpEmailSender = NoOpEmailSender$instance & __NoOpEmailSender$views;
-
-

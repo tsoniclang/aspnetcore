@@ -690,4 +690,3 @@ export abstract class TagHelperOutputExtensions$instance {
 
 
 export type TagHelperOutputExtensions = TagHelperOutputExtensions$instance;
-

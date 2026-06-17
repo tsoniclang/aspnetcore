@@ -1392,4 +1392,3 @@ export abstract class SupplyParameterFromQueryProviderServiceCollectionExtension
 
 
 export type SupplyParameterFromQueryProviderServiceCollectionExtensions = SupplyParameterFromQueryProviderServiceCollectionExtensions$instance;
-

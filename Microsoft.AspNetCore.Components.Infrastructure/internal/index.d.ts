@@ -55,4 +55,3 @@ export abstract class RegisterPersistentComponentStateServiceCollectionExtension
 
 
 export type RegisterPersistentComponentStateServiceCollectionExtensions = RegisterPersistentComponentStateServiceCollectionExtensions$instance;
-

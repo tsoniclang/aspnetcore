@@ -83,4 +83,3 @@ export const ViewsFeature: {
 
 
 export type ViewsFeature = ViewsFeature$instance;
-

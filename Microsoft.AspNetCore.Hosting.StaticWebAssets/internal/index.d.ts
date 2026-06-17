@@ -25,4 +25,3 @@ export const StaticWebAssetsLoader: {
 
 
 export type StaticWebAssetsLoader = StaticWebAssetsLoader$instance;
-

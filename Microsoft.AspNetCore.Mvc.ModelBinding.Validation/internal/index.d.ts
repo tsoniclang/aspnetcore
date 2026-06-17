@@ -432,4 +432,3 @@ export abstract class ModelValidatorProviderExtensions$instance {
 
 
 export type ModelValidatorProviderExtensions = ModelValidatorProviderExtensions$instance;
-

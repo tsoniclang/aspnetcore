@@ -65,5 +65,3 @@ export interface __SectionOutlet$views {
 }
 
 export type SectionOutlet = SectionOutlet$instance & __SectionOutlet$views;
-
-

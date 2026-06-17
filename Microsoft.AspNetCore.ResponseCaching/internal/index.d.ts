@@ -76,4 +76,3 @@ export const ResponseCachingOptions: {
 
 
 export type ResponseCachingOptions = ResponseCachingOptions$instance;
-

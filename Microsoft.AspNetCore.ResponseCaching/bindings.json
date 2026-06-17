@@ -114,7 +114,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature::.ctor():void",
-            "metadataToken": 100663443,
+            "metadataToken": 100663445,
             "canonicalSignature": "():void",
             "normalizedSignature": "constructor|():void|static=false",
             "isStatic": false,
@@ -144,7 +144,7 @@
           {
             "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
             "targetName": "Invoke",
-            "metadataToken": 100663450,
+            "metadataToken": 100663453,
             "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
             "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
             "emitScope": "ClassSurface",
@@ -168,7 +168,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions,Microsoft.AspNetCore.ResponseCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.ObjectPool.ObjectPoolProvider):void",
-            "metadataToken": 100663448,
+            "metadataToken": 100663451,
             "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions,Microsoft.AspNetCore.ResponseCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.ObjectPool.ObjectPoolProvider):void",
             "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions,Microsoft.AspNetCore.ResponseCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.ObjectPool.ObjectPoolProvider):void|static=false",
             "isStatic": false,
@@ -259,7 +259,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions::.ctor():void",
-            "metadataToken": 100663473,
+            "metadataToken": 100663476,
             "canonicalSignature": "():void",
             "normalizedSignature": "constructor|():void|static=false",
             "isStatic": false,

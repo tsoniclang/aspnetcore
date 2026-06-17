@@ -86,4 +86,3 @@ export abstract class BearerTokenDefaults$instance {
 
 
 export type BearerTokenDefaults = BearerTokenDefaults$instance;
-

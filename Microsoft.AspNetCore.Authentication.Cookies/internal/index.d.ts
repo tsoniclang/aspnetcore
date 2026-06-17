@@ -269,4 +269,3 @@ export abstract class CookieAuthenticationDefaults$instance {
 
 
 export type CookieAuthenticationDefaults = CookieAuthenticationDefaults$instance;
-

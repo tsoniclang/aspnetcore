@@ -243,4 +243,3 @@ export const MinDataRate: {
 
 
 export type MinDataRate = MinDataRate$instance;
-

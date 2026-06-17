@@ -213,4 +213,3 @@ export abstract class HtmlLocalizerExtensions$instance {
 
 
 export type HtmlLocalizerExtensions = HtmlLocalizerExtensions$instance;
-

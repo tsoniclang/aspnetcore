@@ -67,4 +67,3 @@ export const TagHelperScopeManager: {
 
 
 export type TagHelperScopeManager = TagHelperScopeManager$instance;
-

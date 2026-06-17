@@ -207,4 +207,3 @@ export abstract class RoutePatternFactory$instance {
 
 
 export type RoutePatternFactory = RoutePatternFactory$instance;
-

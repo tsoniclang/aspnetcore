@@ -1363,5 +1363,3 @@ export interface __VirtualFileHttpResult$views {
 }
 
 export type VirtualFileHttpResult = VirtualFileHttpResult$instance & __VirtualFileHttpResult$views;
-
-

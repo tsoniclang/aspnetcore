@@ -1947,4 +1947,3 @@ export abstract class TypedResults$instance {
 
 
 export type TypedResults = TypedResults$instance;
-

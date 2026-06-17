@@ -1372,4 +1372,3 @@ export abstract class WelcomePageExtensions$instance {
 
 
 export type WelcomePageExtensions = WelcomePageExtensions$instance;
-

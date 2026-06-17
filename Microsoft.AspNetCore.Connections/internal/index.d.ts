@@ -492,4 +492,3 @@ export abstract class ConnectionBuilderExtensions$instance {
 
 
 export type ConnectionBuilderExtensions = ConnectionBuilderExtensions$instance;
-

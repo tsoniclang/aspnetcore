@@ -96,4 +96,3 @@ export abstract class RateLimiterOptionsExtensions$instance {
 
 
 export type RateLimiterOptionsExtensions = RateLimiterOptionsExtensions$instance;
-

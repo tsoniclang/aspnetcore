@@ -55,4 +55,3 @@ export const CircuitInboundActivityContext: {
 
 
 export type CircuitInboundActivityContext = CircuitInboundActivityContext$instance;
-

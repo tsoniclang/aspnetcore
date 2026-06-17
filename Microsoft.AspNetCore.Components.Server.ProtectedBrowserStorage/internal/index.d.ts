@@ -70,4 +70,3 @@ export const ProtectedSessionStorage: {
 
 
 export type ProtectedSessionStorage = ProtectedSessionStorage$instance;
-

@@ -102,4 +102,3 @@ export const SocketTransportOptions: {
 
 
 export type SocketTransportOptions = SocketTransportOptions$instance;
-

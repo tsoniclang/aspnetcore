@@ -652,4 +652,3 @@ export abstract class FilterScope$instance {
 
 
 export type FilterScope = FilterScope$instance;
-

@@ -198,4 +198,3 @@ export abstract class OAuthDefaults$instance {
 
 
 export type OAuthDefaults = OAuthDefaults$instance;
-

@@ -284,4 +284,3 @@ export const WebRenderer: (abstract new(serviceProvider: IServiceProvider, logge
 
 
 export type WebRenderer = WebRenderer$instance;
-

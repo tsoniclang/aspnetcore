@@ -23,4 +23,3 @@ export abstract class KeyDerivation$instance {
 
 
 export type KeyDerivation = KeyDerivation$instance;
-

@@ -21,4 +21,3 @@ export interface IInternalWebJSInProcessRuntime$instance {
 
 
 export type IInternalWebJSInProcessRuntime = IInternalWebJSInProcessRuntime$instance;
-

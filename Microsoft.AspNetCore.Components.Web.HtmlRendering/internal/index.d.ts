@@ -27,4 +27,3 @@ export const HtmlRootComponent: {
 
 
 export type HtmlRootComponent = HtmlRootComponent$instance;
-

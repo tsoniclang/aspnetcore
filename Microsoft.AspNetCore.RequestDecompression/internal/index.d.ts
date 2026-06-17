@@ -44,4 +44,3 @@ export const RequestDecompressionOptions: {
 
 
 export type RequestDecompressionOptions = RequestDecompressionOptions$instance;
-

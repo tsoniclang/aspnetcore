@@ -157,4 +157,3 @@ export abstract class RazorCompiledItemExtensions$instance {
 
 
 export type RazorCompiledItemExtensions = RazorCompiledItemExtensions$instance;
-

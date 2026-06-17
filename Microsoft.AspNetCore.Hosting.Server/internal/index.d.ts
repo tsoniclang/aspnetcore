@@ -67,5 +67,3 @@ export interface __ServerIntegratedAuth$views {
 }
 
 export type ServerIntegratedAuth = ServerIntegratedAuth$instance & __ServerIntegratedAuth$views;
-
-

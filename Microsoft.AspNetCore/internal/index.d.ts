@@ -27,4 +27,3 @@ export abstract class WebHost$instance {
 
 
 export type WebHost = WebHost$instance;
-

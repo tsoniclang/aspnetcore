@@ -17,4 +17,3 @@ export abstract class PrincipalExtensions$instance {
 
 
 export type PrincipalExtensions = PrincipalExtensions$instance;
-

@@ -385,4 +385,3 @@ export abstract class ApiDescriptionExtensions$instance {
 
 
 export type ApiDescriptionExtensions = ApiDescriptionExtensions$instance;
-

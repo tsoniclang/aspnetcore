@@ -166,5 +166,3 @@ export interface __UrlResolutionTagHelper$views {
 }
 
 export type UrlResolutionTagHelper = UrlResolutionTagHelper$instance & __UrlResolutionTagHelper$views;
-
-

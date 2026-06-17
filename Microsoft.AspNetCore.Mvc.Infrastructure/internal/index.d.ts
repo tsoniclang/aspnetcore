@@ -718,5 +718,3 @@ export interface __VirtualFileResultExecutor$views {
 }
 
 export type VirtualFileResultExecutor = VirtualFileResultExecutor$instance & __VirtualFileResultExecutor$views;
-
-

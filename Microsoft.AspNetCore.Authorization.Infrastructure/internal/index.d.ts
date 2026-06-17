@@ -173,5 +173,3 @@ export interface __RolesAuthorizationRequirement$views {
 }
 
 export type RolesAuthorizationRequirement = RolesAuthorizationRequirement$instance & __RolesAuthorizationRequirement$views;
-
-

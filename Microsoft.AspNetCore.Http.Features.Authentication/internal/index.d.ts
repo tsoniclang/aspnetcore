@@ -41,5 +41,3 @@ export interface __HttpAuthenticationFeature$views {
 }
 
 export type HttpAuthenticationFeature = HttpAuthenticationFeature$instance & __HttpAuthenticationFeature$views;
-
-

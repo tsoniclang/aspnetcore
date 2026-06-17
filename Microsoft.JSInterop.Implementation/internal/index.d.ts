@@ -104,4 +104,3 @@ export abstract class JSObjectReferenceJsonWorker$instance {
 
 
 export type JSObjectReferenceJsonWorker = JSObjectReferenceJsonWorker$instance;
-

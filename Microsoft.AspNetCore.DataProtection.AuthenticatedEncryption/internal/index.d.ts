@@ -128,5 +128,3 @@ export interface __ManagedAuthenticatedEncryptorFactory$views {
 }
 
 export type ManagedAuthenticatedEncryptorFactory = ManagedAuthenticatedEncryptorFactory$instance & __ManagedAuthenticatedEncryptorFactory$views;
-
-

@@ -87,4 +87,3 @@ export const UsePathBaseMiddleware: {
 
 
 export type UsePathBaseMiddleware = UsePathBaseMiddleware$instance;
-

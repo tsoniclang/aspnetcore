@@ -46,4 +46,3 @@ export const HealthCheckOptions: {
 
 
 export type HealthCheckOptions = HealthCheckOptions$instance;
-

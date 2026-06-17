@@ -96,5 +96,3 @@ export interface __StaticAssetsEndpointConventionBuilder$views {
 }
 
 export type StaticAssetsEndpointConventionBuilder = StaticAssetsEndpointConventionBuilder$instance & __StaticAssetsEndpointConventionBuilder$views;
-
-

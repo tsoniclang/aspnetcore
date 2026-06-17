@@ -415,4 +415,3 @@ export abstract class ViewComponentConventions$instance {
 
 
 export type ViewComponentConventions = ViewComponentConventions$instance;
-

@@ -127,5 +127,3 @@ export interface __RequireAntiforgeryTokenAttribute$views {
 }
 
 export type RequireAntiforgeryTokenAttribute = RequireAntiforgeryTokenAttribute$instance & __RequireAntiforgeryTokenAttribute$views;
-
-

@@ -971,4 +971,3 @@ export abstract class ViewDataEvaluator$instance {
 
 
 export type ViewDataEvaluator = ViewDataEvaluator$instance;
-

@@ -126,4 +126,3 @@ export abstract class ActionDescriptorExtensions$instance {
 
 
 export type ActionDescriptorExtensions = ActionDescriptorExtensions$instance;
-

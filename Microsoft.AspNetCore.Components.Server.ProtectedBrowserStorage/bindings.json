@@ -90,7 +90,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage::SetAsync(System.String,System.Object):System.Threading.Tasks.ValueTask",
             "targetName": "SetAsync",
-            "metadataToken": 100663908,
+            "metadataToken": 100663909,
             "canonicalSignature": "(System.String,System.Object):System.Threading.Tasks.ValueTask",
             "normalizedSignature": "SetAsync|(System.String,System.Object):System.Threading.Tasks.ValueTask|static=false",
             "emitScope": "ClassSurface",
@@ -110,7 +110,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage::SetAsync(System.String,System.String,System.Object):System.Threading.Tasks.ValueTask",
             "targetName": "SetAsync",
-            "metadataToken": 100663909,
+            "metadataToken": 100663910,
             "canonicalSignature": "(System.String,System.String,System.Object):System.Threading.Tasks.ValueTask",
             "normalizedSignature": "SetAsync|(System.String,System.String,System.Object):System.Threading.Tasks.ValueTask|static=false",
             "emitScope": "ClassSurface",
@@ -130,7 +130,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage::GetAsync(System.String):ValueTask_1",
             "targetName": "GetAsync",
-            "metadataToken": 100663910,
+            "metadataToken": 100663911,
             "canonicalSignature": "(System.String):ValueTask_1",
             "normalizedSignature": "GetAsync|(System.String):ValueTask_1|static=false",
             "emitScope": "ClassSurface",
@@ -150,7 +150,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage::GetAsync(System.String,System.String):ValueTask_1",
             "targetName": "GetAsync",
-            "metadataToken": 100663911,
+            "metadataToken": 100663912,
             "canonicalSignature": "(System.String,System.String):ValueTask_1",
             "normalizedSignature": "GetAsync|(System.String,System.String):ValueTask_1|static=false",
             "emitScope": "ClassSurface",
@@ -170,7 +170,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage::DeleteAsync(System.String):System.Threading.Tasks.ValueTask",
             "targetName": "DeleteAsync",
-            "metadataToken": 100663912,
+            "metadataToken": 100663913,
             "canonicalSignature": "(System.String):System.Threading.Tasks.ValueTask",
             "normalizedSignature": "DeleteAsync|(System.String):System.Threading.Tasks.ValueTask|static=false",
             "emitScope": "ClassSurface",
@@ -215,7 +215,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage::.ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider):void",
-            "metadataToken": 100663922,
+            "metadataToken": 100663923,
             "canonicalSignature": "(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider):void",
             "normalizedSignature": "constructor|(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider):void|static=false",
             "isStatic": false,
@@ -248,7 +248,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedSessionStorage::.ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider):void",
-            "metadataToken": 100663923,
+            "metadataToken": 100663924,
             "canonicalSignature": "(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider):void",
             "normalizedSignature": "constructor|(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider):void|static=false",
             "isStatic": false,

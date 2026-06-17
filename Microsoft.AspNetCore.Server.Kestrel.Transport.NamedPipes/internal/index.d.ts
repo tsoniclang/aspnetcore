@@ -51,4 +51,3 @@ export const NamedPipeTransportOptions: {
 
 
 export type NamedPipeTransportOptions = NamedPipeTransportOptions$instance;
-

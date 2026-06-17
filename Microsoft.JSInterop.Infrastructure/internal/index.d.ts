@@ -89,4 +89,3 @@ export abstract class DotNetDispatcher$instance {
 
 
 export type DotNetDispatcher = DotNetDispatcher$instance;
-

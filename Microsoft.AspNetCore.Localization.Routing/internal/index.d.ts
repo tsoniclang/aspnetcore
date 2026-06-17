@@ -36,5 +36,3 @@ export interface __RouteDataRequestCultureProvider$views {
 }
 
 export type RouteDataRequestCultureProvider = RouteDataRequestCultureProvider$instance & __RouteDataRequestCultureProvider$views;
-
-

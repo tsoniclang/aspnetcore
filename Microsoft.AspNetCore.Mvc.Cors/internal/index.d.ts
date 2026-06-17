@@ -42,5 +42,3 @@ export interface __CorsAuthorizationFilter$views {
 }
 
 export type CorsAuthorizationFilter = CorsAuthorizationFilter$instance & __CorsAuthorizationFilter$views;
-
-

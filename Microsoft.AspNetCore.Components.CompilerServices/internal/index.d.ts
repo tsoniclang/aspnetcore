@@ -26,4 +26,3 @@ export abstract class RuntimeHelpers$instance {
 
 
 export type RuntimeHelpers = RuntimeHelpers$instance;
-

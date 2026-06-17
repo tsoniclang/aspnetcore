@@ -70,5 +70,3 @@ export interface __AuthorizeFilter$views {
 }
 
 export type AuthorizeFilter = AuthorizeFilter$instance & __AuthorizeFilter$views;
-
-

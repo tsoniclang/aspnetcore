@@ -40,5 +40,3 @@ export interface __ApplicationBuilderFactory$views {
 }
 
 export type ApplicationBuilderFactory = ApplicationBuilderFactory$instance & __ApplicationBuilderFactory$views;
-
-

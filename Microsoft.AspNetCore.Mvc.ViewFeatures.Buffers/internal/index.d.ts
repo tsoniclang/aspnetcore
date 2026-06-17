@@ -37,4 +37,3 @@ export const ViewBufferValue: {
 
 
 export type ViewBufferValue = ViewBufferValue$instance;
-

@@ -25,4 +25,3 @@ export const TempDataSerializer: (abstract new() => TempDataSerializer) & {
 
 
 export type TempDataSerializer = TempDataSerializer$instance;
-

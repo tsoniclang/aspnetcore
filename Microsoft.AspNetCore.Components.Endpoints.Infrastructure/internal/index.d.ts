@@ -35,4 +35,3 @@ export abstract class ComponentEndpointConventionBuilderHelper$instance {
 
 
 export type ComponentEndpointConventionBuilderHelper = ComponentEndpointConventionBuilderHelper$instance;
-

@@ -499,4 +499,3 @@ export const RazorPagesOptions: {
 
 
 export type RazorPagesOptions = RazorPagesOptions$instance;
-

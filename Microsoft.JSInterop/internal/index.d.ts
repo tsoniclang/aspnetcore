@@ -327,4 +327,3 @@ export abstract class JSRuntimeExtensions$instance {
 
 
 export type JSRuntimeExtensions = JSRuntimeExtensions$instance;
-

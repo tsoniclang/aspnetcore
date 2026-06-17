@@ -17,4 +17,3 @@ export interface IHostContextContainer_1$instance<TContext extends unknown> {
 
 
 export type IHostContextContainer_1<TContext extends unknown> = IHostContextContainer_1$instance<TContext>;
-

@@ -188,4 +188,3 @@ export abstract class NegotiateProtocol$instance {
 
 
 export type NegotiateProtocol = NegotiateProtocol$instance;
-

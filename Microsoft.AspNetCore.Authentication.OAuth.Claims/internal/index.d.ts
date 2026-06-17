@@ -123,4 +123,3 @@ export const MapAllClaimsAction: {
 
 
 export type MapAllClaimsAction = MapAllClaimsAction$instance;
-

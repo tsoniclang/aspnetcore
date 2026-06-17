@@ -18,4 +18,3 @@ export interface IApplicationDiscriminator$instance {
 
 
 export type IApplicationDiscriminator = IApplicationDiscriminator$instance;
-

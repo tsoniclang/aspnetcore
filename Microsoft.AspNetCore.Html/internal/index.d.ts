@@ -157,4 +157,3 @@ export abstract class HtmlContentBuilderExtensions$instance {
 
 
 export type HtmlContentBuilderExtensions = HtmlContentBuilderExtensions$instance;
-

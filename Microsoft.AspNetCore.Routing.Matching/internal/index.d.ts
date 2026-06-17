@@ -238,4 +238,3 @@ export const PolicyJumpTable: (abstract new() => PolicyJumpTable) & {
 
 
 export type PolicyJumpTable = PolicyJumpTable$instance;
-

@@ -27,7 +27,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Get(System.String):T",
             "targetName": "Get",
-            "metadataToken": 100664112,
+            "metadataToken": 100664113,
             "canonicalSignature": "(System.String):T",
             "normalizedSignature": "Get|(System.String):T|static=false",
             "emitScope": "ClassSurface",
@@ -47,7 +47,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::GetList(System.String):IList_1",
             "targetName": "GetList",
-            "metadataToken": 100664113,
+            "metadataToken": 100664114,
             "canonicalSignature": "(System.String):IList_1",
             "normalizedSignature": "GetList|(System.String):IList_1|static=false",
             "emitScope": "ClassSurface",
@@ -67,7 +67,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Set(System.String,System.Object):System.Void",
             "targetName": "Set",
-            "metadataToken": 100664114,
+            "metadataToken": 100664115,
             "canonicalSignature": "(System.String,System.Object):System.Void",
             "normalizedSignature": "Set|(System.String,System.Object):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -87,7 +87,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::SetList(System.String,IList_1):System.Void",
             "targetName": "SetList",
-            "metadataToken": 100664115,
+            "metadataToken": 100664116,
             "canonicalSignature": "(System.String,IList_1):System.Void",
             "normalizedSignature": "SetList|(System.String,IList_1):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -107,7 +107,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Append(System.String,System.Object):System.Void",
             "targetName": "Append",
-            "metadataToken": 100664116,
+            "metadataToken": 100664117,
             "canonicalSignature": "(System.String,System.Object):System.Void",
             "normalizedSignature": "Append|(System.String,System.Object):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -127,7 +127,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::AppendList(System.String,IList_1):System.Void",
             "targetName": "AppendList",
-            "metadataToken": 100664117,
+            "metadataToken": 100664118,
             "canonicalSignature": "(System.String,IList_1):System.Void",
             "normalizedSignature": "AppendList|(System.String,IList_1):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -149,7 +149,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Headers:Microsoft.AspNetCore.Http.IHeaderDictionary",
             "targetName": "Headers",
-            "metadataToken": 385876099,
+            "metadataToken": 385876100,
             "canonicalSignature": ":Microsoft.AspNetCore.Http.IHeaderDictionary",
             "normalizedSignature": "Headers|:Microsoft.AspNetCore.Http.IHeaderDictionary|static=false|accessor=get",
             "emitScope": "ClassSurface",
@@ -168,7 +168,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Accept:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.MediaTypeHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "targetName": "Accept",
-            "metadataToken": 385876100,
+            "metadataToken": 385876101,
             "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.MediaTypeHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "normalizedSignature": "Accept|:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.MediaTypeHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -187,7 +187,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::AcceptCharset:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.StringWithQualityHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "targetName": "AcceptCharset",
-            "metadataToken": 385876101,
+            "metadataToken": 385876102,
             "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.StringWithQualityHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "normalizedSignature": "AcceptCharset|:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.StringWithQualityHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -206,7 +206,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::AcceptEncoding:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.StringWithQualityHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "targetName": "AcceptEncoding",
-            "metadataToken": 385876102,
+            "metadataToken": 385876103,
             "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.StringWithQualityHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "normalizedSignature": "AcceptEncoding|:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.StringWithQualityHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -225,7 +225,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::AcceptLanguage:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.StringWithQualityHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "targetName": "AcceptLanguage",
-            "metadataToken": 385876103,
+            "metadataToken": 385876104,
             "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.StringWithQualityHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "normalizedSignature": "AcceptLanguage|:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.StringWithQualityHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -244,7 +244,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::CacheControl:Microsoft.Net.Http.Headers.CacheControlHeaderValue",
             "targetName": "CacheControl",
-            "metadataToken": 385876104,
+            "metadataToken": 385876105,
             "canonicalSignature": ":Microsoft.Net.Http.Headers.CacheControlHeaderValue",
             "normalizedSignature": "CacheControl|:Microsoft.Net.Http.Headers.CacheControlHeaderValue|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -263,7 +263,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::ContentDisposition:Microsoft.Net.Http.Headers.ContentDispositionHeaderValue",
             "targetName": "ContentDisposition",
-            "metadataToken": 385876105,
+            "metadataToken": 385876106,
             "canonicalSignature": ":Microsoft.Net.Http.Headers.ContentDispositionHeaderValue",
             "normalizedSignature": "ContentDisposition|:Microsoft.Net.Http.Headers.ContentDispositionHeaderValue|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -282,7 +282,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::ContentLength:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "ContentLength",
-            "metadataToken": 385876106,
+            "metadataToken": 385876107,
             "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "ContentLength|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -301,7 +301,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::ContentRange:Microsoft.Net.Http.Headers.ContentRangeHeaderValue",
             "targetName": "ContentRange",
-            "metadataToken": 385876107,
+            "metadataToken": 385876108,
             "canonicalSignature": ":Microsoft.Net.Http.Headers.ContentRangeHeaderValue",
             "normalizedSignature": "ContentRange|:Microsoft.Net.Http.Headers.ContentRangeHeaderValue|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -320,7 +320,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::ContentType:Microsoft.Net.Http.Headers.MediaTypeHeaderValue",
             "targetName": "ContentType",
-            "metadataToken": 385876108,
+            "metadataToken": 385876109,
             "canonicalSignature": ":Microsoft.Net.Http.Headers.MediaTypeHeaderValue",
             "normalizedSignature": "ContentType|:Microsoft.Net.Http.Headers.MediaTypeHeaderValue|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -339,7 +339,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Cookie:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.CookieHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "targetName": "Cookie",
-            "metadataToken": 385876109,
+            "metadataToken": 385876110,
             "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.CookieHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "normalizedSignature": "Cookie|:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.CookieHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -358,7 +358,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Date:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "Date",
-            "metadataToken": 385876110,
+            "metadataToken": 385876111,
             "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "Date|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -377,7 +377,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Expires:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "Expires",
-            "metadataToken": 385876111,
+            "metadataToken": 385876112,
             "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "Expires|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -396,7 +396,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Host:Microsoft.AspNetCore.Http.HostString",
             "targetName": "Host",
-            "metadataToken": 385876112,
+            "metadataToken": 385876113,
             "canonicalSignature": ":Microsoft.AspNetCore.Http.HostString",
             "normalizedSignature": "Host|:Microsoft.AspNetCore.Http.HostString|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -415,7 +415,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::IfMatch:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.EntityTagHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "targetName": "IfMatch",
-            "metadataToken": 385876113,
+            "metadataToken": 385876114,
             "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.EntityTagHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "normalizedSignature": "IfMatch|:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.EntityTagHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -434,7 +434,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::IfModifiedSince:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "IfModifiedSince",
-            "metadataToken": 385876114,
+            "metadataToken": 385876115,
             "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "IfModifiedSince|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -453,7 +453,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::IfNoneMatch:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.EntityTagHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "targetName": "IfNoneMatch",
-            "metadataToken": 385876115,
+            "metadataToken": 385876116,
             "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.EntityTagHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "normalizedSignature": "IfNoneMatch|:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.EntityTagHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -472,7 +472,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::IfRange:Microsoft.Net.Http.Headers.RangeConditionHeaderValue",
             "targetName": "IfRange",
-            "metadataToken": 385876116,
+            "metadataToken": 385876117,
             "canonicalSignature": ":Microsoft.Net.Http.Headers.RangeConditionHeaderValue",
             "normalizedSignature": "IfRange|:Microsoft.Net.Http.Headers.RangeConditionHeaderValue|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -491,7 +491,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::IfUnmodifiedSince:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "IfUnmodifiedSince",
-            "metadataToken": 385876117,
+            "metadataToken": 385876118,
             "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "IfUnmodifiedSince|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -510,7 +510,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::LastModified:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "LastModified",
-            "metadataToken": 385876118,
+            "metadataToken": 385876119,
             "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "LastModified|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -529,7 +529,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Range:Microsoft.Net.Http.Headers.RangeHeaderValue",
             "targetName": "Range",
-            "metadataToken": 385876119,
+            "metadataToken": 385876120,
             "canonicalSignature": ":Microsoft.Net.Http.Headers.RangeHeaderValue",
             "normalizedSignature": "Range|:Microsoft.Net.Http.Headers.RangeHeaderValue|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -548,7 +548,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Referer:System.Uri",
             "targetName": "Referer",
-            "metadataToken": 385876120,
+            "metadataToken": 385876121,
             "canonicalSignature": ":System.Uri",
             "normalizedSignature": "Referer|:System.Uri|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -570,7 +570,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::.ctor(Microsoft.AspNetCore.Http.IHeaderDictionary):void",
-            "metadataToken": 100664068,
+            "metadataToken": 100664069,
             "canonicalSignature": "(Microsoft.AspNetCore.Http.IHeaderDictionary):void",
             "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.IHeaderDictionary):void|static=false",
             "isStatic": false,
@@ -600,7 +600,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Get(System.String):T",
             "targetName": "Get",
-            "metadataToken": 100664142,
+            "metadataToken": 100664143,
             "canonicalSignature": "(System.String):T",
             "normalizedSignature": "Get|(System.String):T|static=false",
             "emitScope": "ClassSurface",
@@ -620,7 +620,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::GetList(System.String):IList_1",
             "targetName": "GetList",
-            "metadataToken": 100664143,
+            "metadataToken": 100664144,
             "canonicalSignature": "(System.String):IList_1",
             "normalizedSignature": "GetList|(System.String):IList_1|static=false",
             "emitScope": "ClassSurface",
@@ -640,7 +640,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Set(System.String,System.Object):System.Void",
             "targetName": "Set",
-            "metadataToken": 100664144,
+            "metadataToken": 100664145,
             "canonicalSignature": "(System.String,System.Object):System.Void",
             "normalizedSignature": "Set|(System.String,System.Object):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -660,7 +660,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::SetList(System.String,IList_1):System.Void",
             "targetName": "SetList",
-            "metadataToken": 100664145,
+            "metadataToken": 100664146,
             "canonicalSignature": "(System.String,IList_1):System.Void",
             "normalizedSignature": "SetList|(System.String,IList_1):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -680,7 +680,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Append(System.String,System.Object):System.Void",
             "targetName": "Append",
-            "metadataToken": 100664146,
+            "metadataToken": 100664147,
             "canonicalSignature": "(System.String,System.Object):System.Void",
             "normalizedSignature": "Append|(System.String,System.Object):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -700,7 +700,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::AppendList(System.String,IList_1):System.Void",
             "targetName": "AppendList",
-            "metadataToken": 100664147,
+            "metadataToken": 100664148,
             "canonicalSignature": "(System.String,IList_1):System.Void",
             "normalizedSignature": "AppendList|(System.String,IList_1):System.Void|static=false",
             "emitScope": "ClassSurface",
@@ -722,7 +722,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Headers:Microsoft.AspNetCore.Http.IHeaderDictionary",
             "targetName": "Headers",
-            "metadataToken": 385876121,
+            "metadataToken": 385876122,
             "canonicalSignature": ":Microsoft.AspNetCore.Http.IHeaderDictionary",
             "normalizedSignature": "Headers|:Microsoft.AspNetCore.Http.IHeaderDictionary|static=false|accessor=get",
             "emitScope": "ClassSurface",
@@ -741,7 +741,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::CacheControl:Microsoft.Net.Http.Headers.CacheControlHeaderValue",
             "targetName": "CacheControl",
-            "metadataToken": 385876122,
+            "metadataToken": 385876123,
             "canonicalSignature": ":Microsoft.Net.Http.Headers.CacheControlHeaderValue",
             "normalizedSignature": "CacheControl|:Microsoft.Net.Http.Headers.CacheControlHeaderValue|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -760,7 +760,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::ContentDisposition:Microsoft.Net.Http.Headers.ContentDispositionHeaderValue",
             "targetName": "ContentDisposition",
-            "metadataToken": 385876123,
+            "metadataToken": 385876124,
             "canonicalSignature": ":Microsoft.Net.Http.Headers.ContentDispositionHeaderValue",
             "normalizedSignature": "ContentDisposition|:Microsoft.Net.Http.Headers.ContentDispositionHeaderValue|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -779,7 +779,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::ContentLength:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "ContentLength",
-            "metadataToken": 385876124,
+            "metadataToken": 385876125,
             "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "ContentLength|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -798,7 +798,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::ContentRange:Microsoft.Net.Http.Headers.ContentRangeHeaderValue",
             "targetName": "ContentRange",
-            "metadataToken": 385876125,
+            "metadataToken": 385876126,
             "canonicalSignature": ":Microsoft.Net.Http.Headers.ContentRangeHeaderValue",
             "normalizedSignature": "ContentRange|:Microsoft.Net.Http.Headers.ContentRangeHeaderValue|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -817,7 +817,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::ContentType:Microsoft.Net.Http.Headers.MediaTypeHeaderValue",
             "targetName": "ContentType",
-            "metadataToken": 385876126,
+            "metadataToken": 385876127,
             "canonicalSignature": ":Microsoft.Net.Http.Headers.MediaTypeHeaderValue",
             "normalizedSignature": "ContentType|:Microsoft.Net.Http.Headers.MediaTypeHeaderValue|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -836,7 +836,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Date:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "Date",
-            "metadataToken": 385876127,
+            "metadataToken": 385876128,
             "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "Date|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -855,7 +855,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::ETag:Microsoft.Net.Http.Headers.EntityTagHeaderValue",
             "targetName": "ETag",
-            "metadataToken": 385876128,
+            "metadataToken": 385876129,
             "canonicalSignature": ":Microsoft.Net.Http.Headers.EntityTagHeaderValue",
             "normalizedSignature": "ETag|:Microsoft.Net.Http.Headers.EntityTagHeaderValue|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -874,7 +874,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Expires:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "Expires",
-            "metadataToken": 385876129,
+            "metadataToken": 385876130,
             "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "Expires|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -893,7 +893,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::LastModified:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "targetName": "LastModified",
-            "metadataToken": 385876130,
+            "metadataToken": 385876131,
             "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
             "normalizedSignature": "LastModified|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -912,7 +912,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Location:System.Uri",
             "targetName": "Location",
-            "metadataToken": 385876131,
+            "metadataToken": 385876132,
             "canonicalSignature": ":System.Uri",
             "normalizedSignature": "Location|:System.Uri|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -931,7 +931,7 @@
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::SetCookie:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.SetCookieHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "targetName": "SetCookie",
-            "metadataToken": 385876132,
+            "metadataToken": 385876133,
             "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.SetCookieHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
             "normalizedSignature": "SetCookie|:System.Collections.Generic.IList_1[[Microsoft.Net.Http.Headers.SetCookieHeaderValue,Microsoft.Net.Http.Headers,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
             "emitScope": "ClassSurface",
@@ -953,7 +953,7 @@
         "constructors": [
           {
             "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::.ctor(Microsoft.AspNetCore.Http.IHeaderDictionary):void",
-            "metadataToken": 100664118,
+            "metadataToken": 100664119,
             "canonicalSignature": "(Microsoft.AspNetCore.Http.IHeaderDictionary):void",
             "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.IHeaderDictionary):void|static=false",
             "isStatic": false,

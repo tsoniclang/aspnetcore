@@ -680,5 +680,3 @@ export interface __XmlSerializerOutputFormatter$views {
 }
 
 export type XmlSerializerOutputFormatter = XmlSerializerOutputFormatter$instance & __XmlSerializerOutputFormatter$views;
-
-

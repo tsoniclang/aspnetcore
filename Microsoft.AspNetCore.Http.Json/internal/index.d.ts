@@ -24,4 +24,3 @@ export const JsonOptions: {
 
 
 export type JsonOptions = JsonOptions$instance;
-

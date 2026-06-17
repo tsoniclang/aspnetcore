@@ -25,4 +25,3 @@ export const DfaGraphWriter: {
 
 
 export type DfaGraphWriter = DfaGraphWriter$instance;
-

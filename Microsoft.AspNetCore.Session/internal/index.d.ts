@@ -123,4 +123,3 @@ export abstract class SessionDefaults$instance {
 
 
 export type SessionDefaults = SessionDefaults$instance;
-

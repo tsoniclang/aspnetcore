@@ -116,4 +116,3 @@ export abstract class ForwardedHeadersDefaults$instance {
 
 
 export type ForwardedHeadersDefaults = ForwardedHeadersDefaults$instance;
-

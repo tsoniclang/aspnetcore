@@ -222,4 +222,3 @@ export abstract class DataProtectionUtilityExtensions$instance {
 
 
 export type DataProtectionUtilityExtensions = DataProtectionUtilityExtensions$instance;
-

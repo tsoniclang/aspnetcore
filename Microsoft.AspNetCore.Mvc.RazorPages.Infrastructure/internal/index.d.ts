@@ -297,5 +297,3 @@ export interface __ServiceBasedPageModelActivatorProvider$views {
 }
 
 export type ServiceBasedPageModelActivatorProvider = ServiceBasedPageModelActivatorProvider$instance & __ServiceBasedPageModelActivatorProvider$views;
-
-

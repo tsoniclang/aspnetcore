@@ -888,4 +888,3 @@ export abstract class FeatureCollectionExtensions$instance {
 
 
 export type FeatureCollectionExtensions = FeatureCollectionExtensions$instance;
-

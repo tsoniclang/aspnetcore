@@ -56,4 +56,3 @@ export abstract class WebSocketsDependencyInjectionExtensions$instance {
 
 
 export type WebSocketsDependencyInjectionExtensions = WebSocketsDependencyInjectionExtensions$instance;
-

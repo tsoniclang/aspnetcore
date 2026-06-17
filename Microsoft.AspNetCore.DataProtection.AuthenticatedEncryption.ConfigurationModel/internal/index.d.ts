@@ -305,4 +305,3 @@ export abstract class XmlExtensions$instance {
 
 
 export type XmlExtensions = XmlExtensions$instance;
-

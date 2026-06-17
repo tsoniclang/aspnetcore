@@ -166,5 +166,3 @@ export interface __HttpMethodActionConstraint$views {
 }
 
 export type HttpMethodActionConstraint = HttpMethodActionConstraint$instance & __HttpMethodActionConstraint$views;
-
-

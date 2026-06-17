@@ -26,4 +26,3 @@ export const JSComponentInterop: {
 
 
 export type JSComponentInterop = JSComponentInterop$instance;
-

@@ -29,4 +29,3 @@ export interface IHttpTransportFeature$instance {
 
 
 export type IHttpTransportFeature = IHttpTransportFeature$instance;
-

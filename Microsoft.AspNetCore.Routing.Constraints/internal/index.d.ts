@@ -616,5 +616,3 @@ export interface __StringRouteConstraint$views {
 }
 
 export type StringRouteConstraint = StringRouteConstraint$instance & __StringRouteConstraint$views;
-
-

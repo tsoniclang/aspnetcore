@@ -21,4 +21,3 @@ export interface IStatefulReconnectFeature$instance {
 
 
 export type IStatefulReconnectFeature = IStatefulReconnectFeature$instance;
-

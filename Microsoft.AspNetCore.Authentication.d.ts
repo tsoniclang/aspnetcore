@@ -10,6 +10,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Cross-namespace type imports for constraints
+import type { BearerTokenEvents } from './Microsoft.AspNetCore.Authentication.BearerToken/internal/index.js';
 import type { ClaimActionCollection } from './Microsoft.AspNetCore.Authentication.OAuth.Claims/internal/index.js';
 import type { OAuthEvents } from './Microsoft.AspNetCore.Authentication.OAuth/internal/index.js';
 import type { IDataProtectionProvider, IDataProtector } from './Microsoft.AspNetCore.DataProtection/internal/index.js';

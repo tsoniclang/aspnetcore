@@ -261,4 +261,3 @@ export abstract class RazorComponentsEndpointHttpContextExtensions$instance {
 
 
 export type RazorComponentsEndpointHttpContextExtensions = RazorComponentsEndpointHttpContextExtensions$instance;
-

@@ -74,5 +74,3 @@ export interface __EnableCorsAttribute$views {
 }
 
 export type EnableCorsAttribute = EnableCorsAttribute$instance & __EnableCorsAttribute$views;
-
-

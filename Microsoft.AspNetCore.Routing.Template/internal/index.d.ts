@@ -170,4 +170,3 @@ export abstract class TemplateParser$instance {
 
 
 export type TemplateParser = TemplateParser$instance;
-

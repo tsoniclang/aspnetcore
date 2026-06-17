@@ -209,5 +209,3 @@ export interface __ServiceBasedControllerActivator$views {
 }
 
 export type ServiceBasedControllerActivator = ServiceBasedControllerActivator$instance & __ServiceBasedControllerActivator$views;
-
-

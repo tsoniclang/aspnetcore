@@ -290,4 +290,3 @@ export abstract class WrapperProviderFactoriesExtensions$instance {
 
 
 export type WrapperProviderFactoriesExtensions = WrapperProviderFactoriesExtensions$instance;
-

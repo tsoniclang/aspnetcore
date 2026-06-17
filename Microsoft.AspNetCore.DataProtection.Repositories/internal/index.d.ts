@@ -101,5 +101,3 @@ export interface __RegistryXmlRepository$views {
 }
 
 export type RegistryXmlRepository = RegistryXmlRepository$instance & __RegistryXmlRepository$views;
-
-

@@ -164,4 +164,3 @@ export const ValidationProviderAttribute: (abstract new() => ValidationProviderA
 
 
 export type ValidationProviderAttribute = ValidationProviderAttribute$instance;
-

@@ -20,4 +20,3 @@ export abstract class StaticAssetsEndpointDataSourceHelper$instance {
 
 
 export type StaticAssetsEndpointDataSourceHelper = StaticAssetsEndpointDataSourceHelper$instance;
-
