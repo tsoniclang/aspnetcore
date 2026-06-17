@@ -71,7 +71,7 @@ export type StartupBase<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.StartupBase :
-  [T1] extends [unknown] ? Internal.StartupBase_1<T1> : never;
+  Internal.StartupBase_1<T1>;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Hosting as ExtensionMethods } from './__internal/extensions/index.js';

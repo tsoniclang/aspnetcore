@@ -31,7 +31,7 @@ export interface ISessionStore$instance {
 
 export type ISessionStore = ISessionStore$instance;
 
-export interface DistributedSession$instance extends Microsoft_AspNetCore_Http_Internal.ISession$instance {
+export interface DistributedSession$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Session_DistributedSession: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_ISession: never;
@@ -60,7 +60,7 @@ export interface __DistributedSession$views {
 export type DistributedSession = DistributedSession$instance & __DistributedSession$views;
 
 
-export interface DistributedSessionStore$instance extends ISessionStore$instance {
+export interface DistributedSessionStore$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Session_DistributedSessionStore: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Session_ISessionStore: never;
@@ -81,7 +81,7 @@ export interface __DistributedSessionStore$views {
 export type DistributedSessionStore = DistributedSessionStore$instance & __DistributedSessionStore$views;
 
 
-export interface SessionFeature$instance extends Microsoft_AspNetCore_Http_Features_Internal.ISessionFeature$instance {
+export interface SessionFeature$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Session_SessionFeature: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_ISessionFeature: never;

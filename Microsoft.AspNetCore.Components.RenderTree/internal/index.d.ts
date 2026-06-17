@@ -9,7 +9,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Import types from other namespaces
 import type { ComponentState } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import type { JSComponentInterop } from "../../Microsoft.AspNetCore.Components.Web.Infrastructure/internal/index.js";
-import type { Dispatcher, ElementReference, ElementReferenceContext, IComponent, IComponentActivator, IComponentRenderMode, ParameterView, RendererInfo, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { Dispatcher, ElementReference, IComponent, IComponentActivator, IComponentRenderMode, RendererInfo, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
@@ -20,48 +20,57 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, Byte, Enum, EventArgs, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, IServiceProvider, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type, UInt64, UnhandledExceptionEventHandler, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
-export enum ComponentFrameFlags {
-    HasCallerSpecifiedRenderMode = 1
-}
+export type ComponentFrameFlags = number & { readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_ComponentFrameFlags: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ComponentFrameFlags: {
+    readonly HasCallerSpecifiedRenderMode: ComponentFrameFlags;
+};
 
 
-export enum NamedEventChangeType {
-    Added = 0,
-    Removed = 1
-}
+export type NamedEventChangeType = number & { readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_NamedEventChangeType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const NamedEventChangeType: {
+    readonly Added: NamedEventChangeType;
+    readonly Removed: NamedEventChangeType;
+};
 
 
-export enum RenderTreeEditType {
-    PrependFrame = 1,
-    RemoveFrame = 2,
-    SetAttribute = 3,
-    RemoveAttribute = 4,
-    UpdateText = 5,
-    StepIn = 6,
-    StepOut = 7,
-    UpdateMarkup = 8,
-    PermutationListEntry = 9,
-    PermutationListEnd = 10
-}
+export type RenderTreeEditType = number & { readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_RenderTreeEditType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const RenderTreeEditType: {
+    readonly PrependFrame: RenderTreeEditType;
+    readonly RemoveFrame: RenderTreeEditType;
+    readonly SetAttribute: RenderTreeEditType;
+    readonly RemoveAttribute: RenderTreeEditType;
+    readonly UpdateText: RenderTreeEditType;
+    readonly StepIn: RenderTreeEditType;
+    readonly StepOut: RenderTreeEditType;
+    readonly UpdateMarkup: RenderTreeEditType;
+    readonly PermutationListEntry: RenderTreeEditType;
+    readonly PermutationListEnd: RenderTreeEditType;
+};
 
 
-export enum RenderTreeFrameType {
-    None = 0,
-    Element = 1,
-    Text = 2,
-    Attribute = 3,
-    Component = 4,
-    Region = 5,
-    ElementReferenceCapture = 6,
-    ComponentReferenceCapture = 7,
-    Markup = 8,
-    ComponentRenderMode = 9,
-    NamedEvent = 10
-}
+export type RenderTreeFrameType = number & { readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_RenderTreeFrameType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const RenderTreeFrameType: {
+    readonly None: RenderTreeFrameType;
+    readonly Element: RenderTreeFrameType;
+    readonly Text: RenderTreeFrameType;
+    readonly Attribute: RenderTreeFrameType;
+    readonly Component: RenderTreeFrameType;
+    readonly Region: RenderTreeFrameType;
+    readonly ElementReferenceCapture: RenderTreeFrameType;
+    readonly ComponentReferenceCapture: RenderTreeFrameType;
+    readonly Markup: RenderTreeFrameType;
+    readonly ComponentRenderMode: RenderTreeFrameType;
+    readonly NamedEvent: RenderTreeFrameType;
+};
 
 
 export interface ArrayBuilderSegment_1$instance<T extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_ArrayBuilderSegment_1: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
@@ -81,6 +90,7 @@ export type ArrayBuilderSegment_1<T extends unknown> = ArrayBuilderSegment_1$ins
 
 export interface ArrayRange_1$instance<T extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_ArrayRange_1: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Array: T[];
     readonly Count: int;
@@ -97,6 +107,7 @@ export type ArrayRange_1<T extends unknown> = ArrayRange_1$instance<T>;
 
 export interface NamedEventChange$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_NamedEventChange: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly AssignedName: string;
     readonly ChangeType: NamedEventChangeType;
@@ -115,6 +126,7 @@ export type NamedEventChange = NamedEventChange$instance;
 
 export interface RenderBatch$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_RenderBatch: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly DisposedComponentIDs: ArrayRange_1<System_Internal.Int32>;
     readonly DisposedEventHandlerIDs: ArrayRange_1<System_Internal.UInt64>;
@@ -133,6 +145,7 @@ export type RenderBatch = RenderBatch$instance;
 
 export interface RenderTreeDiff$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_RenderTreeDiff: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly ComponentId: int;
     readonly Edits: ArrayBuilderSegment_1<RenderTreeEdit>;
@@ -148,6 +161,7 @@ export type RenderTreeDiff = RenderTreeDiff$instance;
 
 export interface RenderTreeEdit$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_RenderTreeEdit: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Type: RenderTreeEditType;
     readonly SiblingIndex: int;
@@ -166,6 +180,7 @@ export type RenderTreeEdit = RenderTreeEdit$instance;
 
 export interface RenderTreeFrame$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_RenderTreeFrame: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly AttributeEventHandlerId: ulong;
     readonly AttributeEventUpdatesAttributeName: string;
@@ -231,8 +246,8 @@ export interface Renderer$instance {
     CreateComponentState(componentId: int, component: IComponent, parentComponentState: ComponentState | null): ComponentState;
     DispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo | null, eventArgs: EventArgs): Task;
     DispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo | null, eventArgs: EventArgs, waitForQuiescence: boolean): Task;
-    Dispose(disposing: boolean): void;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     DisposeAsync(): ValueTask;
     GetComponentRenderMode(component: IComponent): IComponentRenderMode | null;
     GetEventArgsType(eventHandlerId: ulong): Type;
@@ -266,15 +281,15 @@ export const WebEventDescriptor: {
 
 export type WebEventDescriptor = WebEventDescriptor$instance;
 
-export interface WebRenderer$instance extends Renderer {
+export interface WebRenderer$instance extends Renderer$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_Renderer: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_WebRenderer: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
     AttachRootComponentToBrowser(componentId: int, domElementSelector: string): void;
-    Dispose(disposing: boolean): void;
-    Dispose(): void;
+    Dispose: Renderer$instance["Dispose"] & (() => void) & ((disposing: boolean) => void);
     GetWebRendererId(): int;
 }
 

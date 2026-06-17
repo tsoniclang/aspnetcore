@@ -12,7 +12,6 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Cross-namespace type imports for constraints
 import type { BearerTokenEvents } from './Microsoft.AspNetCore.Authentication.BearerToken/internal/index.js';
 import type { ClaimActionCollection } from './Microsoft.AspNetCore.Authentication.OAuth.Claims/internal/index.js';
-import type { OAuthEvents } from './Microsoft.AspNetCore.Authentication.OAuth/internal/index.js';
 import type { IDataProtectionProvider, IDataProtector } from './Microsoft.AspNetCore.DataProtection/internal/index.js';
 import type { CookieBuilder, CookieOptions, CookieSecurePolicy, HttpContext, HttpRequest, HttpResponse, PathString, RequestDelegate, SameSiteMode } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { IDictionary, IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
@@ -26,7 +25,7 @@ import type { JsonElement } from '@tsonic/dotnet/System.Text.Json.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { IConfiguration } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration.js';
 import type { IServiceCollection } from '@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js';
-import type { ILogger, ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
+import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 import type { IOptions, IOptionsMonitor } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

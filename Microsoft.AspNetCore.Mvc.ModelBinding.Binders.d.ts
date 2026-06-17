@@ -18,7 +18,7 @@ import type { IDictionary, IEnumerable, IList, KeyValuePair } from '@tsonic/dotn
 import type { DateTimeStyles, NumberStyles } from '@tsonic/dotnet/System.Globalization.js';
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Type, Void } from '@tsonic/dotnet/System.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
-import type { ILogger, ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
+import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { ArrayModelBinder_1 as ArrayModelBinder } from './Microsoft.AspNetCore.Mvc.ModelBinding.Binders/internal/index.js';

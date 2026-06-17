@@ -27,10 +27,12 @@ import type { ILogger } from "@tsonic/microsoft-extensions/Microsoft.Extensions.
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
-export enum RouteDirection {
-    IncomingRequest = 0,
-    UrlGeneration = 1
-}
+export type RouteDirection = number & { readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteDirection: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const RouteDirection: {
+    readonly IncomingRequest: RouteDirection;
+    readonly UrlGeneration: RouteDirection;
+};
 
 
 export interface IDataTokensMetadata$instance {
@@ -126,8 +128,9 @@ export interface IInlineConstraintResolver$instance {
 
 export type IInlineConstraintResolver = IInlineConstraintResolver$instance;
 
-export interface INamedRouter$instance extends IRouter {
+export interface INamedRouter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_INamedRouter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
     readonly Name: string | null;
     GetVirtualPath(context: VirtualPathContext): VirtualPathData | null;
@@ -139,8 +142,9 @@ export interface INamedRouter$instance extends IRouter$instance {}
 
 export type INamedRouter = INamedRouter$instance;
 
-export interface IOutboundParameterTransformer$instance extends IParameterPolicy {
+export interface IOutboundParameterTransformer$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IOutboundParameterTransformer: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
 
     TransformOutbound(value: unknown | null): string | null;
 }
@@ -172,8 +176,9 @@ export interface IRouteBuilder$instance {
 
 export type IRouteBuilder = IRouteBuilder$instance;
 
-export interface IRouteCollection$instance extends IRouter {
+export interface IRouteCollection$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteCollection: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
     Add(router: IRouter): void;
     GetVirtualPath(context: VirtualPathContext): VirtualPathData | null;
@@ -185,7 +190,8 @@ export interface IRouteCollection$instance extends IRouter$instance {}
 
 export type IRouteCollection = IRouteCollection$instance;
 
-export interface IRouteConstraint$instance extends IParameterPolicy {
+export interface IRouteConstraint$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
 
     Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
@@ -252,16 +258,16 @@ export interface ISuppressMatchingMetadata$instance {
 
 export type ISuppressMatchingMetadata = ISuppressMatchingMetadata$instance;
 
-export interface CompositeEndpointDataSource$instance extends EndpointDataSource {
+export interface CompositeEndpointDataSource$instance extends EndpointDataSource$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_CompositeEndpointDataSource: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_EndpointDataSource: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly DataSources: IEnumerable_1<EndpointDataSource>;
-    readonly Endpoints: IReadOnlyList_1<Endpoint>;
     Dispose(): void;
-    GetChangeToken(): IChangeToken;
-    GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList_1<Endpoint>;
+    GetChangeToken: EndpointDataSource$instance["GetChangeToken"] & (() => IChangeToken);
+    GetGroupedEndpoints: EndpointDataSource$instance["GetGroupedEndpoints"] & ((context: RouteGroupContext) => IReadOnlyList_1<Endpoint>);
 }
 
 
@@ -289,7 +295,7 @@ export const ContentEncodingMetadata: {
 
 export type ContentEncodingMetadata = ContentEncodingMetadata$instance;
 
-export interface DataTokensMetadata$instance extends IDataTokensMetadata$instance {
+export interface DataTokensMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_DataTokensMetadata: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IDataTokensMetadata: never;
@@ -311,11 +317,11 @@ export interface __DataTokensMetadata$views {
 export type DataTokensMetadata = DataTokensMetadata$instance & __DataTokensMetadata$views;
 
 
-export interface DefaultEndpointDataSource$instance extends EndpointDataSource {
+export interface DefaultEndpointDataSource$instance extends EndpointDataSource$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_DefaultEndpointDataSource: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_EndpointDataSource: never;
 
-    readonly Endpoints: IReadOnlyList_1<Endpoint>;
-    GetChangeToken(): IChangeToken;
+    GetChangeToken: EndpointDataSource$instance["GetChangeToken"] & (() => IChangeToken);
 }
 
 
@@ -327,7 +333,7 @@ export const DefaultEndpointDataSource: {
 
 export type DefaultEndpointDataSource = DefaultEndpointDataSource$instance;
 
-export interface DefaultInlineConstraintResolver$instance extends IInlineConstraintResolver$instance {
+export interface DefaultInlineConstraintResolver$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_DefaultInlineConstraintResolver: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IInlineConstraintResolver: never;
@@ -357,14 +363,15 @@ export interface EndpointDataSource$instance {
 }
 
 
-export const EndpointDataSource: (abstract new() => EndpointDataSource) & {
+export const EndpointDataSource: {
 };
 
 
 export type EndpointDataSource = EndpointDataSource$instance;
 
-export interface EndpointGroupNameAttribute$instance extends Attribute, IEndpointGroupNameMetadata$instance {
+export interface EndpointGroupNameAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_EndpointGroupNameAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata: never;
 
@@ -384,8 +391,9 @@ export interface __EndpointGroupNameAttribute$views {
 export type EndpointGroupNameAttribute = EndpointGroupNameAttribute$instance & __EndpointGroupNameAttribute$views;
 
 
-export interface EndpointNameAttribute$instance extends Attribute, IEndpointNameMetadata$instance {
+export interface EndpointNameAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_EndpointNameAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointNameMetadata: never;
 
@@ -405,7 +413,7 @@ export interface __EndpointNameAttribute$views {
 export type EndpointNameAttribute = EndpointNameAttribute$instance & __EndpointNameAttribute$views;
 
 
-export interface EndpointNameMetadata$instance extends IEndpointNameMetadata$instance {
+export interface EndpointNameMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_EndpointNameMetadata: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointNameMetadata: never;
@@ -427,8 +435,9 @@ export interface __EndpointNameMetadata$views {
 export type EndpointNameMetadata = EndpointNameMetadata$instance & __EndpointNameMetadata$views;
 
 
-export interface ExcludeFromDescriptionAttribute$instance extends Attribute, IExcludeFromDescriptionMetadata$instance {
+export interface ExcludeFromDescriptionAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_ExcludeFromDescriptionAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata: never;
 
@@ -449,8 +458,9 @@ export interface __ExcludeFromDescriptionAttribute$views {
 export type ExcludeFromDescriptionAttribute = ExcludeFromDescriptionAttribute$instance & __ExcludeFromDescriptionAttribute$views;
 
 
-export interface HostAttribute$instance extends Attribute, IHostMetadata$instance {
+export interface HostAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_HostAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IHostMetadata: never;
 
@@ -472,7 +482,7 @@ export interface __HostAttribute$views {
 export type HostAttribute = HostAttribute$instance & __HostAttribute$views;
 
 
-export interface HttpMethodMetadata$instance extends IHttpMethodMetadata$instance {
+export interface HttpMethodMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_HttpMethodMetadata: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IHttpMethodMetadata: never;
@@ -499,14 +509,14 @@ export type HttpMethodMetadata = HttpMethodMetadata$instance & __HttpMethodMetad
 export interface LinkGenerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_LinkGenerator: never;
 
-    GetPathByAddress<TAddress extends unknown>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary | null, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
     GetPathByAddress<TAddress extends unknown>(address: TAddress, values: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
-    GetUriByAddress<TAddress extends unknown>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary | null, scheme?: string | null, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    GetPathByAddress<TAddress extends unknown>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary | null, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
     GetUriByAddress<TAddress extends unknown>(address: TAddress, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    GetUriByAddress<TAddress extends unknown>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary | null, scheme?: string | null, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
 }
 
 
-export const LinkGenerator: (abstract new() => LinkGenerator) & {
+export const LinkGenerator: {
 };
 
 
@@ -538,7 +548,7 @@ export interface LinkParser$instance {
 }
 
 
-export const LinkParser: (abstract new() => LinkParser) & {
+export const LinkParser: {
 };
 
 
@@ -551,8 +561,7 @@ export interface MatcherPolicy$instance {
 }
 
 
-export const MatcherPolicy: (abstract new() => MatcherPolicy) & {
-    ContainsDynamicEndpoints(endpoints: IReadOnlyList_1<Endpoint>): boolean;
+export const MatcherPolicy: {
 };
 
 
@@ -567,7 +576,7 @@ export interface ParameterPolicyFactory$instance {
 }
 
 
-export const ParameterPolicyFactory: (abstract new() => ParameterPolicyFactory) & {
+export const ParameterPolicyFactory: {
 };
 
 
@@ -575,13 +584,14 @@ export type ParameterPolicyFactory = ParameterPolicyFactory$instance;
 
 export interface Route$instance extends RouteBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Route: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_INamedRouter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
     readonly RouteTemplate: string | null;
-    OnRouteMatched(context: RouteContext): Task;
-    OnVirtualPathGenerated(context: VirtualPathContext): VirtualPathData | null;
+    OnRouteMatched: RouteBase$instance["OnRouteMatched"] & ((context: RouteContext) => Task);
+    OnVirtualPathGenerated: RouteBase$instance["OnVirtualPathGenerated"] & ((context: VirtualPathContext) => VirtualPathData | null);
 }
 
 
@@ -622,8 +632,6 @@ export interface RouteBase$instance {
 
 
 export const RouteBase: (abstract new(template: string | null, name: string | null, constraintResolver: IInlineConstraintResolver, defaults: RouteValueDictionary | null, constraints: IDictionary_2<System_Internal.String, unknown> | null, dataTokens: RouteValueDictionary | null) => RouteBase) & {
-    GetConstraints(inlineConstraintResolver: IInlineConstraintResolver, parsedTemplate: RouteTemplate, constraints: IDictionary_2<System_Internal.String, unknown> | null): IDictionary_2<System_Internal.String, IRouteConstraint>;
-    GetDefaults(parsedTemplate: RouteTemplate, defaults: RouteValueDictionary | null): RouteValueDictionary;
 };
 
 
@@ -635,7 +643,7 @@ export interface __RouteBase$views {
 export type RouteBase = RouteBase$instance & __RouteBase$views;
 
 
-export interface RouteBuilder$instance extends IRouteBuilder$instance {
+export interface RouteBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteBuilder: never;
@@ -662,7 +670,7 @@ export interface __RouteBuilder$views {
 export type RouteBuilder = RouteBuilder$instance & __RouteBuilder$views;
 
 
-export interface RouteCollection$instance extends IRouteCollection$instance {
+export interface RouteCollection$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteCollection: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteCollection: never;
@@ -722,8 +730,9 @@ export const RouteContext: {
 
 export type RouteContext = RouteContext$instance;
 
-export interface RouteCreationException$instance extends Exception {
+export interface RouteCreationException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteCreationException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -759,6 +768,7 @@ export type RouteData = RouteData$instance;
 
 export interface RouteData_RouteDataSnapshot$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteData_RouteDataSnapshot: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     Restore(): void;
 }
@@ -771,7 +781,8 @@ export const RouteData_RouteDataSnapshot: {
 
 export type RouteData_RouteDataSnapshot = RouteData_RouteDataSnapshot$instance;
 
-export interface RouteEndpoint$instance extends Endpoint {
+export interface RouteEndpoint$instance extends Microsoft_AspNetCore_Http_Internal.Endpoint$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Endpoint: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteEndpoint: never;
 
     readonly Order: int;
@@ -786,12 +797,13 @@ export const RouteEndpoint: {
 
 export type RouteEndpoint = RouteEndpoint$instance;
 
-export interface RouteEndpointBuilder$instance extends EndpointBuilder {
+export interface RouteEndpointBuilder$instance extends Microsoft_AspNetCore_Builder_Internal.EndpointBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_EndpointBuilder: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteEndpointBuilder: never;
 
     Order: int;
     RoutePattern: RoutePattern;
-    Build(): Endpoint;
+    Build: Microsoft_AspNetCore_Builder_Internal.EndpointBuilder$instance["Build"] & (() => Endpoint);
 }
 
 
@@ -802,7 +814,7 @@ export const RouteEndpointBuilder: {
 
 export type RouteEndpointBuilder = RouteEndpointBuilder$instance;
 
-export interface RouteGroupBuilder$instance extends Microsoft_AspNetCore_Builder_Internal.IEndpointConventionBuilder$instance, IEndpointRouteBuilder$instance {
+export interface RouteGroupBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteGroupBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
@@ -840,7 +852,7 @@ export const RouteGroupContext: {
 
 export type RouteGroupContext = RouteGroupContext$instance;
 
-export interface RouteHandler$instance extends IRouteHandler$instance, IRouter$instance {
+export interface RouteHandler$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteHandler: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteHandler: never;
@@ -879,7 +891,7 @@ export const RouteHandlerOptions: {
 
 export type RouteHandlerOptions = RouteHandlerOptions$instance;
 
-export interface RouteNameMetadata$instance extends IRouteNameMetadata$instance {
+export interface RouteNameMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteNameMetadata: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteNameMetadata: never;
@@ -909,8 +921,8 @@ export interface RouteOptions$instance {
     LowercaseQueryStrings: boolean;
     LowercaseUrls: boolean;
     SuppressCheckForUnhandledSecurityMetadata: boolean;
-    SetParameterPolicy<T extends unknown & IParameterPolicy>(token: string): void;
     SetParameterPolicy(token: string, type: Type): void;
+    SetParameterPolicy<T extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never }>(token: string): void;
 }
 
 
@@ -960,12 +972,13 @@ export type RouteValueDictionary = RouteValueDictionary$instance & { [key: strin
 
 export interface RouteValueDictionary_Enumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteValueDictionary_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Current: KeyValuePair_2<System_Internal.String, unknown>;
+    readonly Current: KeyValuePair_2<System_Internal.String, unknown>;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -1016,7 +1029,7 @@ export const RouteValuesAddress: {
 
 export type RouteValuesAddress = RouteValuesAddress$instance;
 
-export interface RoutingFeature$instance extends IRoutingFeature$instance {
+export interface RoutingFeature$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RoutingFeature: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRoutingFeature: never;
@@ -1038,7 +1051,7 @@ export interface __RoutingFeature$views {
 export type RoutingFeature = RoutingFeature$instance & __RoutingFeature$views;
 
 
-export interface SuppressLinkGenerationMetadata$instance extends ISuppressLinkGenerationMetadata$instance {
+export interface SuppressLinkGenerationMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_SuppressLinkGenerationMetadata: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata: never;
@@ -1060,7 +1073,7 @@ export interface __SuppressLinkGenerationMetadata$views {
 export type SuppressLinkGenerationMetadata = SuppressLinkGenerationMetadata$instance & __SuppressLinkGenerationMetadata$views;
 
 
-export interface SuppressMatchingMetadata$instance extends ISuppressMatchingMetadata$instance {
+export interface SuppressMatchingMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_SuppressMatchingMetadata: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata: never;

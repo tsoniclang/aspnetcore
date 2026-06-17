@@ -12,8 +12,9 @@ import * as Microsoft_AspNetCore_Mvc_Internal from "../../Microsoft.AspNetCore.M
 import type { ActionContext, IActionResult } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 
-export interface IAntiforgeryValidationFailedResult$instance extends IActionResult {
+export interface IAntiforgeryValidationFailedResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidationFailedResult: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     ExecuteResultAsync(context: ActionContext): Task;
 }

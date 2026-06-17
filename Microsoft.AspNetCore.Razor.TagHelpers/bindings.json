@@ -898,12 +898,12 @@
             "targetName": "DictionaryAttributePrefixSet",
             "metadataToken": 385875974,
             "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "DictionaryAttributePrefixSet|:System.Boolean|static=false|accessor=getset",
+            "normalizedSignature": "DictionaryAttributePrefixSet|:System.Boolean|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -1506,26 +1506,6 @@
             "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
             "ownerIdentity": "Microsoft.AspNetCore.Razor",
             "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::NameEquals(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean",
-            "targetName": "NameEquals",
-            "metadataToken": 100663356,
-            "canonicalSignature": "(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean",
-            "normalizedSignature": "NameEquals|(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute):System.Boolean|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 2,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-            "ownerIdentity": "Microsoft.AspNetCore.Razor",
-            "isExtensionMethod": false
           }
         ],
         "properties": [
@@ -1552,17 +1532,6 @@
         "fields": [],
         "events": [],
         "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::.ctor():void",
-            "metadataToken": 100663349,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList",
-            "ownerIdentity": "Microsoft.AspNetCore.Razor"
-          },
           {
             "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList::.ctor(System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
             "metadataToken": 100663350,
@@ -1801,19 +1770,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper::.ctor():void",
-            "metadataToken": 100663363,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
-            "ownerIdentity": "Microsoft.AspNetCore.Razor"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute",
@@ -2574,19 +2531,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent::.ctor():void",
-            "metadataToken": 100663397,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent",
-            "ownerIdentity": "Microsoft.AspNetCore.Razor"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
@@ -3066,19 +3011,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent::.ctor():void",
-            "metadataToken": 100663419,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent",
-            "ownerIdentity": "Microsoft.AspNetCore.Razor"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext",
@@ -3143,12 +3076,12 @@
             "targetName": "TagName",
             "metadataToken": 385875994,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "TagName|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "TagName|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -3181,12 +3114,12 @@
             "targetName": "Items",
             "metadataToken": 385875996,
             "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "normalizedSignature": "Items|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+            "normalizedSignature": "Items|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -3200,12 +3133,12 @@
             "targetName": "UniqueId",
             "metadataToken": 385875997,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "UniqueId|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "UniqueId|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,

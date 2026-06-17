@@ -10,7 +10,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Cross-namespace type imports for constraints
-import type { IEnumerable, IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Attribute, Object as ClrObject, String as ClrString, Type } from '@tsonic/dotnet/System.js';
 import type { Assembly } from '@tsonic/dotnet/System.Reflection.js';
 

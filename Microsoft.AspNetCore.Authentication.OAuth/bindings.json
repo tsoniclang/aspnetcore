@@ -828,46 +828,7 @@
             "sourceInterface": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler`1::Backchannel:System.Net.Http.HttpClient",
-            "targetName": "Backchannel",
-            "metadataToken": 385875983,
-            "canonicalSignature": ":System.Net.Http.HttpClient",
-            "normalizedSignature": "Backchannel|:System.Net.Http.HttpClient|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler`1",
-            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler`1::Events:Microsoft.AspNetCore.Authentication.OAuth.OAuthEvents",
-            "targetName": "Events",
-            "metadataToken": 385875984,
-            "canonicalSignature": ":Microsoft.AspNetCore.Authentication.OAuth.OAuthEvents",
-            "normalizedSignature": "Events|:Microsoft.AspNetCore.Authentication.OAuth.OAuthEvents|static=false|accessor=getset",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler`1",
-            "ownerIdentity": "Microsoft.AspNetCore.Authentication.OAuth"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
         "constructors": [

@@ -42,5 +42,5 @@ export type IApplicationFeatureProvider<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.IApplicationFeatureProvider :
-  [T1] extends [unknown] ? Internal.IApplicationFeatureProvider_1<T1> : never;
+  Internal.IApplicationFeatureProvider_1<T1>;
 

@@ -14,8 +14,9 @@ import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/i
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { IFormatProvider, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IHtmlAsyncContent$instance extends IHtmlContent {
+export interface IHtmlAsyncContent$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlAsyncContent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
     WriteToAsync(writer: TextWriter): ValueTask;
@@ -35,8 +36,10 @@ export interface IHtmlContent$instance {
 
 export type IHtmlContent = IHtmlContent$instance;
 
-export interface IHtmlContentBuilder$instance extends IHtmlContentContainer, IHtmlContent {
+export interface IHtmlContentBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentBuilder: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
 
     Append(unencoded: string): IHtmlContentBuilder;
     AppendHtml(content: IHtmlContent): IHtmlContentBuilder;
@@ -50,7 +53,8 @@ export interface IHtmlContentBuilder$instance extends IHtmlContentContainer$inst
 
 export type IHtmlContentBuilder = IHtmlContentBuilder$instance;
 
-export interface IHtmlContentContainer$instance extends IHtmlContent {
+export interface IHtmlContentContainer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
 
     CopyTo(builder: IHtmlContentBuilder): void;
@@ -71,8 +75,8 @@ export interface HtmlContentBuilder$instance {
 
     readonly Count: int;
     Append(unencoded: string | null): IHtmlContentBuilder;
-    AppendHtml(htmlContent: IHtmlContent | null): IHtmlContentBuilder;
     AppendHtml(encoded: string | null): IHtmlContentBuilder;
+    AppendHtml(htmlContent: IHtmlContent | null): IHtmlContentBuilder;
     Clear(): IHtmlContentBuilder;
     CopyTo(destination: IHtmlContentBuilder): void;
     MoveTo(destination: IHtmlContentBuilder): void;
@@ -96,7 +100,7 @@ export interface __HtmlContentBuilder$views {
 export type HtmlContentBuilder = HtmlContentBuilder$instance & __HtmlContentBuilder$views;
 
 
-export interface HtmlFormattableString$instance extends IHtmlContent$instance {
+export interface HtmlFormattableString$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Html_HtmlFormattableString: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
@@ -118,7 +122,7 @@ export interface __HtmlFormattableString$views {
 export type HtmlFormattableString = HtmlFormattableString$instance & __HtmlFormattableString$views;
 
 
-export interface HtmlString$instance extends IHtmlContent$instance {
+export interface HtmlString$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Html_HtmlString: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;

@@ -20,10 +20,11 @@ import type { JsonDocument, JsonElement } from "@tsonic/dotnet/System.Text.Json/
 import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, DateTimeOffset, Exception, Func_2, IDisposable, Nullable_1, Object as ClrObject, String as ClrString, TimeProvider, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
-import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptionsMonitor_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export interface OAuthChallengeProperties$instance extends AuthenticationProperties {
+export interface OAuthChallengeProperties$instance extends Microsoft_AspNetCore_Authentication_Internal.AuthenticationProperties$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationProperties: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthChallengeProperties: never;
 
     Scope: ICollection_1<System_Internal.String>;
@@ -57,8 +58,10 @@ export const OAuthCodeExchangeContext: {
 
 export type OAuthCodeExchangeContext = OAuthCodeExchangeContext$instance;
 
-export interface OAuthCreatingTicketContext$instance extends ResultContext_1<OAuthOptions> {
+export interface OAuthCreatingTicketContext$instance extends Microsoft_AspNetCore_Authentication_Internal.ResultContext_1$instance<OAuthOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthCreatingTicketContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_ResultContext_1: never;
 
     readonly AccessToken: string | null;
     readonly Backchannel: HttpClient;
@@ -80,8 +83,9 @@ export const OAuthCreatingTicketContext: {
 
 export type OAuthCreatingTicketContext = OAuthCreatingTicketContext$instance;
 
-export interface OAuthEvents$instance extends RemoteAuthenticationEvents {
+export interface OAuthEvents$instance extends Microsoft_AspNetCore_Authentication_Internal.RemoteAuthenticationEvents$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthEvents: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationEvents: never;
 
     OnCreatingTicket: Func_2<OAuthCreatingTicketContext, Task>;
     OnRedirectToAuthorizationEndpoint: Func_2<RedirectContext_1<OAuthOptions>, Task>;
@@ -97,38 +101,42 @@ export const OAuthEvents: {
 
 export type OAuthEvents = OAuthEvents$instance;
 
-export interface OAuthHandler_1$instance<TOptions extends unknown & OAuthOptions> extends RemoteAuthenticationHandler_1<TOptions>, Microsoft_AspNetCore_Authentication_Internal.IAuthenticationRequestHandler$instance {
+export interface OAuthHandler_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }> extends Microsoft_AspNetCore_Authentication_Internal.RemoteAuthenticationHandler_1$instance<TOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
 
     BuildChallengeUrl(properties: AuthenticationProperties, redirectUri: string): string;
-    CreateEventsAsync(): Task_1<unknown>;
+    CreateEventsAsync: Microsoft_AspNetCore_Authentication_Internal.RemoteAuthenticationHandler_1$instance<TOptions>["CreateEventsAsync"] & (() => Task_1<unknown>);
     CreateTicketAsync(identity: ClaimsIdentity, properties: AuthenticationProperties, tokens: OAuthTokenResponse): Task_1<AuthenticationTicket>;
     ExchangeCodeAsync(context: OAuthCodeExchangeContext): Task_1<OAuthTokenResponse>;
-    FormatScope(scopes: IEnumerable_1<System_Internal.String>): string;
     FormatScope(): string;
-    HandleChallengeAsync(properties: AuthenticationProperties): Task;
-    HandleRemoteAuthenticateAsync(): Task_1<HandleRequestResult>;
+    FormatScope(scopes: IEnumerable_1<System_Internal.String>): string;
+    HandleChallengeAsync: Microsoft_AspNetCore_Authentication_Internal.RemoteAuthenticationHandler_1$instance<TOptions>["HandleChallengeAsync"] & ((properties: AuthenticationProperties) => Task);
+    HandleRemoteAuthenticateAsync: Microsoft_AspNetCore_Authentication_Internal.RemoteAuthenticationHandler_1$instance<TOptions>["HandleRemoteAuthenticateAsync"] & (() => Task_1<HandleRequestResult>);
 }
 
 
 export const OAuthHandler_1: {
-    new<TOptions extends unknown & OAuthOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock): OAuthHandler_1<TOptions>;
-    new<TOptions extends unknown & OAuthOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder): OAuthHandler_1<TOptions>;
+    new<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock): OAuthHandler_1<TOptions>;
+    new<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder): OAuthHandler_1<TOptions>;
 };
 
 
-export interface __OAuthHandler_1$views<TOptions extends unknown & OAuthOptions> {
+export interface __OAuthHandler_1$views<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }> {
     As_IAuthenticationHandler(): Microsoft_AspNetCore_Authentication_Internal.IAuthenticationHandler$instance;
 }
 
-export type OAuthHandler_1<TOptions extends unknown & OAuthOptions> = OAuthHandler_1$instance<TOptions> & __OAuthHandler_1$views<TOptions>;
+export type OAuthHandler_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }> = OAuthHandler_1$instance<TOptions> & __OAuthHandler_1$views<TOptions>;
 
 
-export interface OAuthOptions$instance extends RemoteAuthenticationOptions {
+export interface OAuthOptions$instance extends Microsoft_AspNetCore_Authentication_Internal.RemoteAuthenticationOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never;
 
     readonly AdditionalAuthorizationParameters: IDictionary_2<System_Internal.String, System_Internal.String>;
     AuthorizationEndpoint: string;
@@ -141,8 +149,7 @@ export interface OAuthOptions$instance extends RemoteAuthenticationOptions {
     TokenEndpoint: string;
     UsePkce: boolean;
     UserInformationEndpoint: string;
-    Validate(): void;
-    Validate(scheme: string): void;
+    Validate: Microsoft_AspNetCore_Authentication_Internal.RemoteAuthenticationOptions$instance["Validate"] & (() => void) & ((scheme: string) => void);
 }
 
 

@@ -24,16 +24,15 @@ export interface IHttpApplication_1$instance<TContext extends unknown> {
 
 export type IHttpApplication_1<TContext extends unknown> = IHttpApplication_1$instance<TContext>;
 
-export interface IServer$instance extends IDisposable {
+export interface IServer$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IServer: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
     readonly Features: IFeatureCollection;
     StartAsync<TContext extends unknown>(application: IHttpApplication_1<TContext>, cancellationToken: CancellationToken): Task;
     StopAsync(cancellationToken: CancellationToken): Task;
 }
 
-
-export interface IServer$instance extends System_Internal.IDisposable {}
 
 export type IServer = IServer$instance;
 

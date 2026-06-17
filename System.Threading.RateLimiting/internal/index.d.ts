@@ -13,14 +13,17 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Enum, Func_2, IAsyncDisposable, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum QueueProcessingOrder {
-    OldestFirst = 0,
-    NewestFirst = 1
-}
+export type QueueProcessingOrder = number & { readonly __tsonic_type_System_Threading_RateLimiting_QueueProcessingOrder: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const QueueProcessingOrder: {
+    readonly OldestFirst: QueueProcessingOrder;
+    readonly NewestFirst: QueueProcessingOrder;
+};
 
 
 export interface RateLimitPartition_1$instance<TKey extends unknown> {
     readonly __tsonic_type_System_Threading_RateLimiting_RateLimitPartition_1: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Factory: Func_2<TKey, RateLimiter>;
     readonly PartitionKey: TKey;
@@ -34,19 +37,18 @@ export const RateLimitPartition_1: {
 
 export type RateLimitPartition_1<TKey extends unknown> = RateLimitPartition_1$instance<TKey>;
 
-export interface ConcurrencyLimiter$instance extends RateLimiter {
+export interface ConcurrencyLimiter$instance extends RateLimiter$instance {
     readonly __tsonic_type_System_Threading_RateLimiting_ConcurrencyLimiter: never;
+    readonly __tsonic_type_System_Threading_RateLimiting_RateLimiter: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IdleDuration: Nullable_1<TimeSpan>;
-    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask_1<RateLimitLease>;
-    AttemptAcquireCore(permitCount: int): RateLimitLease;
-    Dispose(disposing: boolean): void;
-    Dispose(): void;
-    DisposeAsyncCore(): ValueTask;
-    GetStatistics(): RateLimiterStatistics | null;
+    AcquireAsyncCore: RateLimiter$instance["AcquireAsyncCore"] & ((permitCount: int, cancellationToken?: CancellationToken) => ValueTask_1<RateLimitLease>);
+    AttemptAcquireCore: RateLimiter$instance["AttemptAcquireCore"] & ((permitCount: int) => RateLimitLease);
+    Dispose: RateLimiter$instance["Dispose"] & (() => void) & ((disposing: boolean) => void);
+    DisposeAsyncCore: RateLimiter$instance["DisposeAsyncCore"] & (() => ValueTask);
+    GetStatistics: RateLimiter$instance["GetStatistics"] & (() => RateLimiterStatistics | null);
 }
 
 
@@ -73,22 +75,20 @@ export const ConcurrencyLimiterOptions: {
 
 export type ConcurrencyLimiterOptions = ConcurrencyLimiterOptions$instance;
 
-export interface FixedWindowRateLimiter$instance extends ReplenishingRateLimiter {
+export interface FixedWindowRateLimiter$instance extends ReplenishingRateLimiter$instance {
     readonly __tsonic_type_System_Threading_RateLimiting_FixedWindowRateLimiter: never;
+    readonly __tsonic_type_System_Threading_RateLimiting_RateLimiter: never;
+    readonly __tsonic_type_System_Threading_RateLimiting_ReplenishingRateLimiter: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IdleDuration: Nullable_1<TimeSpan>;
-    readonly IsAutoReplenishing: boolean;
-    readonly ReplenishmentPeriod: TimeSpan;
-    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask_1<RateLimitLease>;
-    AttemptAcquireCore(permitCount: int): RateLimitLease;
-    Dispose(disposing: boolean): void;
-    Dispose(): void;
-    DisposeAsyncCore(): ValueTask;
-    GetStatistics(): RateLimiterStatistics | null;
-    TryReplenish(): boolean;
+    AcquireAsyncCore: ReplenishingRateLimiter$instance["AcquireAsyncCore"] & ((permitCount: int, cancellationToken?: CancellationToken) => ValueTask_1<RateLimitLease>);
+    AttemptAcquireCore: ReplenishingRateLimiter$instance["AttemptAcquireCore"] & ((permitCount: int) => RateLimitLease);
+    Dispose: ReplenishingRateLimiter$instance["Dispose"] & (() => void) & ((disposing: boolean) => void);
+    DisposeAsyncCore: ReplenishingRateLimiter$instance["DisposeAsyncCore"] & (() => ValueTask);
+    GetStatistics: ReplenishingRateLimiter$instance["GetStatistics"] & (() => RateLimiterStatistics | null);
+    TryReplenish: ReplenishingRateLimiter$instance["TryReplenish"] & (() => boolean);
 }
 
 
@@ -147,8 +147,8 @@ export interface PartitionedRateLimiter_1$instance<TResource extends unknown> {
     AcquireAsyncCore(resource: TResource, permitCount: int, cancellationToken: CancellationToken): ValueTask_1<RateLimitLease>;
     AttemptAcquire(resource: TResource, permitCount?: int): RateLimitLease;
     AttemptAcquireCore(resource: TResource, permitCount: int): RateLimitLease;
-    Dispose(disposing: boolean): void;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     DisposeAsync(): ValueTask;
     DisposeAsyncCore(): ValueTask;
     GetStatistics(resource: TResource): RateLimiterStatistics | null;
@@ -156,7 +156,7 @@ export interface PartitionedRateLimiter_1$instance<TResource extends unknown> {
 }
 
 
-export const PartitionedRateLimiter_1: (abstract new<TResource extends unknown>() => PartitionedRateLimiter_1<TResource>) & {
+export const PartitionedRateLimiter_1: {
 };
 
 
@@ -173,15 +173,15 @@ export interface RateLimiter$instance {
     AcquireAsyncCore(permitCount: int, cancellationToken: CancellationToken): ValueTask_1<RateLimitLease>;
     AttemptAcquire(permitCount?: int): RateLimitLease;
     AttemptAcquireCore(permitCount: int): RateLimitLease;
-    Dispose(disposing: boolean): void;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     DisposeAsync(): ValueTask;
     DisposeAsyncCore(): ValueTask;
     GetStatistics(): RateLimiterStatistics | null;
 }
 
 
-export const RateLimiter: (abstract new() => RateLimiter) & {
+export const RateLimiter: {
     CreateChained(...limiters: RateLimiter[]): RateLimiter;
 };
 
@@ -220,13 +220,14 @@ export interface RateLimitLease$instance {
 }
 
 
-export const RateLimitLease: (abstract new() => RateLimitLease) & {
+export const RateLimitLease: {
 };
 
 
 export type RateLimitLease = RateLimitLease$instance;
 
-export interface ReplenishingRateLimiter$instance extends RateLimiter {
+export interface ReplenishingRateLimiter$instance extends RateLimiter$instance {
+    readonly __tsonic_type_System_Threading_RateLimiting_RateLimiter: never;
     readonly __tsonic_type_System_Threading_RateLimiting_ReplenishingRateLimiter: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -238,28 +239,26 @@ export interface ReplenishingRateLimiter$instance extends RateLimiter {
 }
 
 
-export const ReplenishingRateLimiter: (abstract new() => ReplenishingRateLimiter) & {
+export const ReplenishingRateLimiter: {
 };
 
 
 export type ReplenishingRateLimiter = ReplenishingRateLimiter$instance;
 
-export interface SlidingWindowRateLimiter$instance extends ReplenishingRateLimiter {
+export interface SlidingWindowRateLimiter$instance extends ReplenishingRateLimiter$instance {
+    readonly __tsonic_type_System_Threading_RateLimiting_RateLimiter: never;
+    readonly __tsonic_type_System_Threading_RateLimiting_ReplenishingRateLimiter: never;
     readonly __tsonic_type_System_Threading_RateLimiting_SlidingWindowRateLimiter: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IdleDuration: Nullable_1<TimeSpan>;
-    readonly IsAutoReplenishing: boolean;
-    readonly ReplenishmentPeriod: TimeSpan;
-    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask_1<RateLimitLease>;
-    AttemptAcquireCore(permitCount: int): RateLimitLease;
-    Dispose(disposing: boolean): void;
-    Dispose(): void;
-    DisposeAsyncCore(): ValueTask;
-    GetStatistics(): RateLimiterStatistics | null;
-    TryReplenish(): boolean;
+    AcquireAsyncCore: ReplenishingRateLimiter$instance["AcquireAsyncCore"] & ((permitCount: int, cancellationToken?: CancellationToken) => ValueTask_1<RateLimitLease>);
+    AttemptAcquireCore: ReplenishingRateLimiter$instance["AttemptAcquireCore"] & ((permitCount: int) => RateLimitLease);
+    Dispose: ReplenishingRateLimiter$instance["Dispose"] & (() => void) & ((disposing: boolean) => void);
+    DisposeAsyncCore: ReplenishingRateLimiter$instance["DisposeAsyncCore"] & (() => ValueTask);
+    GetStatistics: ReplenishingRateLimiter$instance["GetStatistics"] & (() => RateLimiterStatistics | null);
+    TryReplenish: ReplenishingRateLimiter$instance["TryReplenish"] & (() => boolean);
 }
 
 
@@ -289,22 +288,20 @@ export const SlidingWindowRateLimiterOptions: {
 
 export type SlidingWindowRateLimiterOptions = SlidingWindowRateLimiterOptions$instance;
 
-export interface TokenBucketRateLimiter$instance extends ReplenishingRateLimiter {
+export interface TokenBucketRateLimiter$instance extends ReplenishingRateLimiter$instance {
+    readonly __tsonic_type_System_Threading_RateLimiting_RateLimiter: never;
+    readonly __tsonic_type_System_Threading_RateLimiting_ReplenishingRateLimiter: never;
     readonly __tsonic_type_System_Threading_RateLimiting_TokenBucketRateLimiter: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IdleDuration: Nullable_1<TimeSpan>;
-    readonly IsAutoReplenishing: boolean;
-    readonly ReplenishmentPeriod: TimeSpan;
-    AcquireAsyncCore(tokenCount: int, cancellationToken?: CancellationToken): ValueTask_1<RateLimitLease>;
-    AttemptAcquireCore(tokenCount: int): RateLimitLease;
-    Dispose(disposing: boolean): void;
-    Dispose(): void;
-    DisposeAsyncCore(): ValueTask;
-    GetStatistics(): RateLimiterStatistics | null;
-    TryReplenish(): boolean;
+    AcquireAsyncCore: ReplenishingRateLimiter$instance["AcquireAsyncCore"] & ((tokenCount: int, cancellationToken?: CancellationToken) => ValueTask_1<RateLimitLease>);
+    AttemptAcquireCore: ReplenishingRateLimiter$instance["AttemptAcquireCore"] & ((tokenCount: int) => RateLimitLease);
+    Dispose: ReplenishingRateLimiter$instance["Dispose"] & (() => void) & ((disposing: boolean) => void);
+    DisposeAsyncCore: ReplenishingRateLimiter$instance["DisposeAsyncCore"] & (() => ValueTask);
+    GetStatistics: ReplenishingRateLimiter$instance["GetStatistics"] & (() => RateLimiterStatistics | null);
+    TryReplenish: ReplenishingRateLimiter$instance["TryReplenish"] & (() => boolean);
 }
 
 

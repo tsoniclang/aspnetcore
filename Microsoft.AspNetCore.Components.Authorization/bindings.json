@@ -412,26 +412,6 @@
             "ownerQualifiedName": "Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider",
             "ownerIdentity": "Microsoft.AspNetCore.Components.Authorization",
             "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider::NotifyAuthenticationStateChanged(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-            "targetName": "NotifyAuthenticationStateChanged",
-            "metadataToken": 100663325,
-            "canonicalSignature": "(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-            "normalizedSignature": "NotifyAuthenticationStateChanged|(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Components.Authorization",
-            "isExtensionMethod": false
           }
         ],
         "properties": [],
@@ -448,19 +428,7 @@
             "ownerIdentity": "Microsoft.AspNetCore.Components.Authorization"
           }
         ],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider::.ctor():void",
-            "metadataToken": 100663326,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Components.Authorization"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
@@ -1087,19 +1055,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.AuthorizeViewCore::.ctor():void",
-            "metadataToken": 100663381,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Authorization.AuthorizeViewCore",
-            "ownerIdentity": "Microsoft.AspNetCore.Components.Authorization"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState",

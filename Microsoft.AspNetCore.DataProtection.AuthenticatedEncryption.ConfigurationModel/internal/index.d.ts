@@ -38,18 +38,19 @@ export interface AlgorithmConfiguration$instance {
 }
 
 
-export const AlgorithmConfiguration: (abstract new() => AlgorithmConfiguration) & {
+export const AlgorithmConfiguration: {
 };
 
 
 export type AlgorithmConfiguration = AlgorithmConfiguration$instance;
 
-export interface AuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration {
+export interface AuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_AlgorithmConfiguration: never;
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_AuthenticatedEncryptorConfiguration: never;
 
     EncryptionAlgorithm: EncryptionAlgorithm;
     ValidationAlgorithm: ValidationAlgorithm;
-    CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
+    CreateNewDescriptor: AlgorithmConfiguration$instance["CreateNewDescriptor"] & (() => IAuthenticatedEncryptorDescriptor);
 }
 
 
@@ -60,7 +61,7 @@ export const AuthenticatedEncryptorConfiguration: {
 
 export type AuthenticatedEncryptorConfiguration = AuthenticatedEncryptorConfiguration$instance;
 
-export interface AuthenticatedEncryptorDescriptor$instance extends IAuthenticatedEncryptorDescriptor$instance {
+export interface AuthenticatedEncryptorDescriptor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_AuthenticatedEncryptorDescriptor: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor: never;
@@ -81,7 +82,7 @@ export interface __AuthenticatedEncryptorDescriptor$views {
 export type AuthenticatedEncryptorDescriptor = AuthenticatedEncryptorDescriptor$instance & __AuthenticatedEncryptorDescriptor$views;
 
 
-export interface AuthenticatedEncryptorDescriptorDeserializer$instance extends IAuthenticatedEncryptorDescriptorDeserializer$instance {
+export interface AuthenticatedEncryptorDescriptorDeserializer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_AuthenticatedEncryptorDescriptorDeserializer: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer: never;
@@ -102,7 +103,8 @@ export interface __AuthenticatedEncryptorDescriptorDeserializer$views {
 export type AuthenticatedEncryptorDescriptorDeserializer = AuthenticatedEncryptorDescriptorDeserializer$instance & __AuthenticatedEncryptorDescriptorDeserializer$views;
 
 
-export interface CngCbcAuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration {
+export interface CngCbcAuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_AlgorithmConfiguration: never;
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngCbcAuthenticatedEncryptorConfiguration: never;
 
     EncryptionAlgorithm: string;
@@ -112,7 +114,7 @@ export interface CngCbcAuthenticatedEncryptorConfiguration$instance extends Algo
     HashAlgorithm: string;
     get HashAlgorithmProvider(): string | null;
     set HashAlgorithmProvider(value: string | null);
-    CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
+    CreateNewDescriptor: AlgorithmConfiguration$instance["CreateNewDescriptor"] & (() => IAuthenticatedEncryptorDescriptor);
 }
 
 
@@ -123,7 +125,7 @@ export const CngCbcAuthenticatedEncryptorConfiguration: {
 
 export type CngCbcAuthenticatedEncryptorConfiguration = CngCbcAuthenticatedEncryptorConfiguration$instance;
 
-export interface CngCbcAuthenticatedEncryptorDescriptor$instance extends IAuthenticatedEncryptorDescriptor$instance {
+export interface CngCbcAuthenticatedEncryptorDescriptor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngCbcAuthenticatedEncryptorDescriptor: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor: never;
@@ -144,7 +146,7 @@ export interface __CngCbcAuthenticatedEncryptorDescriptor$views {
 export type CngCbcAuthenticatedEncryptorDescriptor = CngCbcAuthenticatedEncryptorDescriptor$instance & __CngCbcAuthenticatedEncryptorDescriptor$views;
 
 
-export interface CngCbcAuthenticatedEncryptorDescriptorDeserializer$instance extends IAuthenticatedEncryptorDescriptorDeserializer$instance {
+export interface CngCbcAuthenticatedEncryptorDescriptorDeserializer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngCbcAuthenticatedEncryptorDescriptorDeserializer: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer: never;
@@ -165,14 +167,15 @@ export interface __CngCbcAuthenticatedEncryptorDescriptorDeserializer$views {
 export type CngCbcAuthenticatedEncryptorDescriptorDeserializer = CngCbcAuthenticatedEncryptorDescriptorDeserializer$instance & __CngCbcAuthenticatedEncryptorDescriptorDeserializer$views;
 
 
-export interface CngGcmAuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration {
+export interface CngGcmAuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_AlgorithmConfiguration: never;
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngGcmAuthenticatedEncryptorConfiguration: never;
 
     EncryptionAlgorithm: string;
     EncryptionAlgorithmKeySize: int;
     get EncryptionAlgorithmProvider(): string | null;
     set EncryptionAlgorithmProvider(value: string | null);
-    CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
+    CreateNewDescriptor: AlgorithmConfiguration$instance["CreateNewDescriptor"] & (() => IAuthenticatedEncryptorDescriptor);
 }
 
 
@@ -183,7 +186,7 @@ export const CngGcmAuthenticatedEncryptorConfiguration: {
 
 export type CngGcmAuthenticatedEncryptorConfiguration = CngGcmAuthenticatedEncryptorConfiguration$instance;
 
-export interface CngGcmAuthenticatedEncryptorDescriptor$instance extends IAuthenticatedEncryptorDescriptor$instance {
+export interface CngGcmAuthenticatedEncryptorDescriptor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngGcmAuthenticatedEncryptorDescriptor: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor: never;
@@ -204,7 +207,7 @@ export interface __CngGcmAuthenticatedEncryptorDescriptor$views {
 export type CngGcmAuthenticatedEncryptorDescriptor = CngGcmAuthenticatedEncryptorDescriptor$instance & __CngGcmAuthenticatedEncryptorDescriptor$views;
 
 
-export interface CngGcmAuthenticatedEncryptorDescriptorDeserializer$instance extends IAuthenticatedEncryptorDescriptorDeserializer$instance {
+export interface CngGcmAuthenticatedEncryptorDescriptorDeserializer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngGcmAuthenticatedEncryptorDescriptorDeserializer: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer: never;
@@ -225,13 +228,14 @@ export interface __CngGcmAuthenticatedEncryptorDescriptorDeserializer$views {
 export type CngGcmAuthenticatedEncryptorDescriptorDeserializer = CngGcmAuthenticatedEncryptorDescriptorDeserializer$instance & __CngGcmAuthenticatedEncryptorDescriptorDeserializer$views;
 
 
-export interface ManagedAuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration {
+export interface ManagedAuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_AlgorithmConfiguration: never;
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_ManagedAuthenticatedEncryptorConfiguration: never;
 
     EncryptionAlgorithmKeySize: int;
     EncryptionAlgorithmType: Type;
     ValidationAlgorithmType: Type;
-    CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
+    CreateNewDescriptor: AlgorithmConfiguration$instance["CreateNewDescriptor"] & (() => IAuthenticatedEncryptorDescriptor);
 }
 
 
@@ -242,7 +246,7 @@ export const ManagedAuthenticatedEncryptorConfiguration: {
 
 export type ManagedAuthenticatedEncryptorConfiguration = ManagedAuthenticatedEncryptorConfiguration$instance;
 
-export interface ManagedAuthenticatedEncryptorDescriptor$instance extends IAuthenticatedEncryptorDescriptor$instance {
+export interface ManagedAuthenticatedEncryptorDescriptor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_ManagedAuthenticatedEncryptorDescriptor: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor: never;
@@ -263,7 +267,7 @@ export interface __ManagedAuthenticatedEncryptorDescriptor$views {
 export type ManagedAuthenticatedEncryptorDescriptor = ManagedAuthenticatedEncryptorDescriptor$instance & __ManagedAuthenticatedEncryptorDescriptor$views;
 
 
-export interface ManagedAuthenticatedEncryptorDescriptorDeserializer$instance extends IAuthenticatedEncryptorDescriptorDeserializer$instance {
+export interface ManagedAuthenticatedEncryptorDescriptorDeserializer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_ManagedAuthenticatedEncryptorDescriptorDeserializer: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer: never;

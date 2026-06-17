@@ -725,19 +725,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage::.ctor(System.String):void",
-            "metadataToken": 100663412,
-            "canonicalSignature": "(System.String):void",
-            "normalizedSignature": "constructor|(System.String):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "ownerIdentity": "Microsoft.AspNetCore.SignalR.Common"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
@@ -758,19 +746,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage::.ctor():void",
-            "metadataToken": 100663413,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
-            "ownerIdentity": "Microsoft.AspNetCore.SignalR.Common"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
@@ -849,30 +825,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage::.ctor(System.String,System.String,System.Object[],System.String[]):void",
-            "metadataToken": 100663417,
-            "canonicalSignature": "(System.String,System.String,System.Object[],System.String[]):void",
-            "normalizedSignature": "constructor|(System.String,System.String,System.Object[],System.String[]):void|static=false",
-            "isStatic": false,
-            "parameterCount": 4,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-            "ownerIdentity": "Microsoft.AspNetCore.SignalR.Common"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage::.ctor(System.String,System.String,System.Object[]):void",
-            "metadataToken": 100663418,
-            "canonicalSignature": "(System.String,System.String,System.Object[]):void",
-            "normalizedSignature": "constructor|(System.String,System.String,System.Object[]):void|static=false",
-            "isStatic": false,
-            "parameterCount": 3,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-            "ownerIdentity": "Microsoft.AspNetCore.SignalR.Common"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
@@ -1431,12 +1384,12 @@
             "targetName": "RawSerializedData",
             "metadataToken": 385875995,
             "canonicalSignature": ":System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "normalizedSignature": "RawSerializedData|:System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+            "normalizedSignature": "RawSerializedData|:System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,

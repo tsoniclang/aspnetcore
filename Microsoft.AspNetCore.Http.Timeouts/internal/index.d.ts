@@ -23,8 +23,9 @@ export interface IHttpRequestTimeoutFeature$instance {
 
 export type IHttpRequestTimeoutFeature = IHttpRequestTimeoutFeature$instance;
 
-export interface DisableRequestTimeoutAttribute$instance extends Attribute {
+export interface DisableRequestTimeoutAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Timeouts_DisableRequestTimeoutAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     ToString(): string;
 }
@@ -37,8 +38,9 @@ export const DisableRequestTimeoutAttribute: {
 
 export type DisableRequestTimeoutAttribute = DisableRequestTimeoutAttribute$instance;
 
-export interface RequestTimeoutAttribute$instance extends Attribute {
+export interface RequestTimeoutAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Timeouts_RequestTimeoutAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly PolicyName: string | null;
     readonly Timeout: Nullable_1<TimeSpan>;
@@ -59,8 +61,8 @@ export interface RequestTimeoutOptions$instance {
     get DefaultPolicy(): RequestTimeoutPolicy | null;
     set DefaultPolicy(value: RequestTimeoutPolicy | null);
     readonly Policies: IDictionary_2<System_Internal.String, RequestTimeoutPolicy>;
-    AddPolicy(policyName: string, timeout: TimeSpan): RequestTimeoutOptions;
     AddPolicy(policyName: string, policy: RequestTimeoutPolicy): RequestTimeoutOptions;
+    AddPolicy(policyName: string, timeout: TimeSpan): RequestTimeoutOptions;
 }
 
 

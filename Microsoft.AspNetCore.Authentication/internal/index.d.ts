@@ -9,7 +9,6 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Import types from other namespaces
 import type { BearerTokenEvents } from "../../Microsoft.AspNetCore.Authentication.BearerToken/internal/index.js";
 import type { ClaimActionCollection } from "../../Microsoft.AspNetCore.Authentication.OAuth.Claims/internal/index.js";
-import type { OAuthEvents } from "../../Microsoft.AspNetCore.Authentication.OAuth/internal/index.js";
 import type { IDataProtectionProvider, IDataProtector } from "../../Microsoft.AspNetCore.DataProtection/internal/index.js";
 import * as Microsoft_AspNetCore_Http_Internal from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { CookieBuilder, CookieOptions, CookieSecurePolicy, HttpContext, HttpRequest, HttpResponse, PathString, RequestDelegate, SameSiteMode } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -26,7 +25,7 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, Byte, DateTimeOffset, Exception, Func_2, Nullable_1, Object as ClrObject, String as ClrString, TimeProvider, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 import type { IConfiguration } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration/internal/index.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
-import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1, IOptionsMonitor_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface IAuthenticateResultFeature$instance {
@@ -78,7 +77,8 @@ export interface IAuthenticationHandlerProvider$instance {
 
 export type IAuthenticationHandlerProvider = IAuthenticationHandlerProvider$instance;
 
-export interface IAuthenticationRequestHandler$instance extends IAuthenticationHandler {
+export interface IAuthenticationRequestHandler$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
 
     ChallengeAsync(properties: AuthenticationProperties | null): Task;
@@ -116,8 +116,10 @@ export interface IAuthenticationService$instance {
 
 export type IAuthenticationService = IAuthenticationService$instance;
 
-export interface IAuthenticationSignInHandler$instance extends IAuthenticationSignOutHandler, IAuthenticationHandler {
+export interface IAuthenticationSignInHandler$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
 
     AuthenticateAsync(): Task_1<AuthenticateResult>;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
@@ -131,7 +133,8 @@ export interface IAuthenticationSignInHandler$instance extends IAuthenticationSi
 
 export type IAuthenticationSignInHandler = IAuthenticationSignInHandler$instance;
 
-export interface IAuthenticationSignOutHandler$instance extends IAuthenticationHandler {
+export interface IAuthenticationSignOutHandler$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
 
     AuthenticateAsync(): Task_1<AuthenticateResult>;
@@ -167,10 +170,10 @@ export type IDataSerializer_1<TModel extends unknown> = IDataSerializer_1$instan
 export interface ISecureDataFormat_1$instance<TData extends unknown> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1: never;
 
-    Protect(data: TData, purpose: string | null): string;
     Protect(data: TData): string;
-    Unprotect(protectedText: string | null, purpose: string | null): TData | null;
+    Protect(data: TData, purpose: string | null): string;
     Unprotect(protectedText: string | null): TData | null;
+    Unprotect(protectedText: string | null, purpose: string | null): TData | null;
 }
 
 
@@ -185,8 +188,10 @@ export interface ISystemClock$instance {
 
 export type ISystemClock = ISystemClock$instance;
 
-export interface AccessDeniedContext$instance extends HandleRequestContext_1<RemoteAuthenticationOptions> {
+export interface AccessDeniedContext$instance extends HandleRequestContext_1$instance<RemoteAuthenticationOptions> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AccessDeniedContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_HandleRequestContext_1: never;
 
     AccessDeniedPath: PathString;
     get Properties(): AuthenticationProperties | null;
@@ -207,20 +212,17 @@ export type AccessDeniedContext = AccessDeniedContext$instance;
 export interface AuthenticateResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticateResult: never;
 
-    get Failure(): Exception | null;
-    set Failure(value: Exception | null);
-    None: boolean;
+    readonly Failure: Exception | null;
+    readonly None: boolean;
     readonly Principal: ClaimsPrincipal | null;
-    get Properties(): AuthenticationProperties | null;
-    set Properties(value: AuthenticationProperties | null);
+    readonly Properties: AuthenticationProperties | null;
     readonly Succeeded: boolean;
-    get Ticket(): AuthenticationTicket | null;
-    set Ticket(value: AuthenticationTicket | null);
+    readonly Ticket: AuthenticationTicket | null;
     Clone(): AuthenticateResult;
 }
 
 
-export const AuthenticateResult: (abstract new() => AuthenticateResult) & {
+export const AuthenticateResult: {
     Fail(failure: Exception, properties: AuthenticationProperties | null): AuthenticateResult;
     Fail(failure: Exception): AuthenticateResult;
     Fail(failureMessage: string, properties: AuthenticationProperties | null): AuthenticateResult;
@@ -237,9 +239,9 @@ export interface AuthenticationBuilder$instance {
 
     readonly Services: IServiceCollection;
     AddPolicyScheme(authenticationScheme: string, displayName: string | null, configureOptions: Action_1<PolicySchemeOptions>): AuthenticationBuilder;
-    AddRemoteScheme<TOptions extends unknown & RemoteAuthenticationOptions, THandler extends unknown & RemoteAuthenticationHandler_1<TOptions>>(authenticationScheme: string, displayName: string | null, configureOptions: Action_1<TOptions> | null): AuthenticationBuilder;
-    AddScheme<TOptions extends unknown & AuthenticationSchemeOptions, THandler extends unknown & AuthenticationHandler_1<TOptions>>(authenticationScheme: string, displayName: string | null, configureOptions: Action_1<TOptions> | null): AuthenticationBuilder;
-    AddScheme<TOptions extends unknown & AuthenticationSchemeOptions, THandler extends unknown & AuthenticationHandler_1<TOptions>>(authenticationScheme: string, configureOptions: Action_1<TOptions> | null): AuthenticationBuilder;
+    AddRemoteScheme<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }, THandler extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1: never }>(authenticationScheme: string, displayName: string | null, configureOptions: Action_1<TOptions> | null): AuthenticationBuilder;
+    AddScheme<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }, THandler extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never }>(authenticationScheme: string, configureOptions: Action_1<TOptions> | null): AuthenticationBuilder;
+    AddScheme<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }, THandler extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never }>(authenticationScheme: string, displayName: string | null, configureOptions: Action_1<TOptions> | null): AuthenticationBuilder;
 }
 
 
@@ -250,8 +252,9 @@ export const AuthenticationBuilder: {
 
 export type AuthenticationBuilder = AuthenticationBuilder$instance;
 
-export interface AuthenticationFailureException$instance extends Exception {
+export interface AuthenticationFailureException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationFailureException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -266,7 +269,7 @@ export const AuthenticationFailureException: {
 
 export type AuthenticationFailureException = AuthenticationFailureException$instance;
 
-export interface AuthenticationFeature$instance extends IAuthenticationFeature$instance {
+export interface AuthenticationFeature$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationFeature: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationFeature: never;
@@ -288,15 +291,16 @@ export interface __AuthenticationFeature$views {
 export type AuthenticationFeature = AuthenticationFeature$instance & __AuthenticationFeature$views;
 
 
-export interface AuthenticationHandler_1$instance<TOptions extends unknown & AuthenticationSchemeOptions> extends IAuthenticationHandler$instance {
+export interface AuthenticationHandler_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
 
     readonly ClaimsIssuer: string;
-    Events: RemoteAuthenticationEvents | unknown;
-    Options: TOptions;
-    Scheme: AuthenticationScheme;
+    get Events(): unknown | null;
+    set Events(value: unknown | null);
+    readonly Options: TOptions;
+    readonly Scheme: AuthenticationScheme;
     AuthenticateAsync(): Task_1<AuthenticateResult>;
     ChallengeAsync(properties: AuthenticationProperties | null): Task;
     CreateEventsAsync(): Task_1<unknown>;
@@ -311,18 +315,18 @@ export interface AuthenticationHandler_1$instance<TOptions extends unknown & Aut
 }
 
 
-export const AuthenticationHandler_1: (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock) => AuthenticationHandler_1<TOptions>) & (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder) => AuthenticationHandler_1<TOptions>) & {
+export const AuthenticationHandler_1: {
 };
 
 
-export interface __AuthenticationHandler_1$views<TOptions extends unknown & AuthenticationSchemeOptions> {
+export interface __AuthenticationHandler_1$views<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> {
     As_IAuthenticationHandler(): IAuthenticationHandler$instance;
 }
 
-export type AuthenticationHandler_1<TOptions extends unknown & AuthenticationSchemeOptions> = AuthenticationHandler_1$instance<TOptions> & __AuthenticationHandler_1$views<TOptions>;
+export type AuthenticationHandler_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> = AuthenticationHandler_1$instance<TOptions> & __AuthenticationHandler_1$views<TOptions>;
 
 
-export interface AuthenticationHandlerProvider$instance extends IAuthenticationHandlerProvider$instance {
+export interface AuthenticationHandlerProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandlerProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandlerProvider: never;
@@ -378,7 +382,7 @@ export interface AuthenticationOptions$instance {
     readonly SchemeMap: IDictionary_2<System_Internal.String, AuthenticationSchemeBuilder>;
     readonly Schemes: IEnumerable_1<AuthenticationSchemeBuilder>;
     AddScheme(name: string, configureBuilder: Action_1<AuthenticationSchemeBuilder>): void;
-    AddScheme<THandler extends unknown & IAuthenticationHandler>(name: string, displayName: string | null): void;
+    AddScheme<THandler extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never }>(name: string, displayName: string | null): void;
 }
 
 
@@ -491,7 +495,7 @@ export const AuthenticationSchemeOptions: {
 
 export type AuthenticationSchemeOptions = AuthenticationSchemeOptions$instance;
 
-export interface AuthenticationSchemeProvider$instance extends IAuthenticationSchemeProvider$instance {
+export interface AuthenticationSchemeProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSchemeProvider: never;
@@ -522,7 +526,7 @@ export interface __AuthenticationSchemeProvider$views {
 export type AuthenticationSchemeProvider = AuthenticationSchemeProvider$instance & __AuthenticationSchemeProvider$views;
 
 
-export interface AuthenticationService$instance extends IAuthenticationService$instance {
+export interface AuthenticationService$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationService: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationService: never;
@@ -584,7 +588,7 @@ export const AuthenticationToken: {
 
 export type AuthenticationToken = AuthenticationToken$instance;
 
-export interface BaseContext_1$instance<TOptions extends unknown & AuthenticationSchemeOptions> {
+export interface BaseContext_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
 
     readonly HttpContext: HttpContext;
@@ -595,32 +599,34 @@ export interface BaseContext_1$instance<TOptions extends unknown & Authenticatio
 }
 
 
-export const BaseContext_1: (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions) => BaseContext_1<TOptions>) & {
+export const BaseContext_1: {
 };
 
 
-export type BaseContext_1<TOptions extends unknown & AuthenticationSchemeOptions> = BaseContext_1$instance<TOptions>;
+export type BaseContext_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> = BaseContext_1$instance<TOptions>;
 
-export interface HandleRequestContext_1$instance<TOptions extends unknown & AuthenticationSchemeOptions> extends BaseContext_1<TOptions> {
+export interface HandleRequestContext_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> extends BaseContext_1$instance<TOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_HandleRequestContext_1: never;
 
-    Result: HandleRequestResult;
+    readonly Result: HandleRequestResult;
     HandleResponse(): void;
     SkipHandler(): void;
 }
 
 
-export const HandleRequestContext_1: (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions) => HandleRequestContext_1<TOptions>) & {
+export const HandleRequestContext_1: {
 };
 
 
-export type HandleRequestContext_1<TOptions extends unknown & AuthenticationSchemeOptions> = HandleRequestContext_1$instance<TOptions>;
+export type HandleRequestContext_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> = HandleRequestContext_1$instance<TOptions>;
 
-export interface HandleRequestResult$instance extends AuthenticateResult {
+export interface HandleRequestResult$instance extends AuthenticateResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticateResult: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_HandleRequestResult: never;
 
-    Handled: boolean;
-    Skipped: boolean;
+    readonly Handled: boolean;
+    readonly Skipped: boolean;
 }
 
 
@@ -635,7 +641,7 @@ export const HandleRequestResult: {
 
 export type HandleRequestResult = HandleRequestResult$instance;
 
-export interface NoopClaimsTransformation$instance extends IClaimsTransformation$instance {
+export interface NoopClaimsTransformation$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_NoopClaimsTransformation: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IClaimsTransformation: never;
@@ -656,18 +662,21 @@ export interface __NoopClaimsTransformation$views {
 export type NoopClaimsTransformation = NoopClaimsTransformation$instance & __NoopClaimsTransformation$views;
 
 
-export interface PolicySchemeHandler$instance extends SignInAuthenticationHandler_1$instance<PolicySchemeOptions>, IAuthenticationSignInHandler$instance {
+export interface PolicySchemeHandler$instance extends SignInAuthenticationHandler_1$instance<PolicySchemeOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PolicySchemeHandler: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_SignInAuthenticationHandler_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_SignOutAuthenticationHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
 
-    HandleAuthenticateAsync(): Task_1<AuthenticateResult>;
-    HandleChallengeAsync(properties: AuthenticationProperties | null): Task;
-    HandleForbiddenAsync(properties: AuthenticationProperties | null): Task;
-    HandleSignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties | null): Task;
-    HandleSignOutAsync(properties: AuthenticationProperties | null): Task;
+    HandleAuthenticateAsync: SignInAuthenticationHandler_1$instance<PolicySchemeOptions>["HandleAuthenticateAsync"] & (() => Task_1<AuthenticateResult>);
+    HandleChallengeAsync: SignInAuthenticationHandler_1$instance<PolicySchemeOptions>["HandleChallengeAsync"] & ((properties: AuthenticationProperties | null) => Task);
+    HandleForbiddenAsync: SignInAuthenticationHandler_1$instance<PolicySchemeOptions>["HandleForbiddenAsync"] & ((properties: AuthenticationProperties | null) => Task);
+    HandleSignInAsync: SignInAuthenticationHandler_1$instance<PolicySchemeOptions>["HandleSignInAsync"] & ((user: ClaimsPrincipal, properties: AuthenticationProperties | null) => Task);
+    HandleSignOutAsync: SignInAuthenticationHandler_1$instance<PolicySchemeOptions>["HandleSignOutAsync"] & ((properties: AuthenticationProperties | null) => Task);
 }
 
 
@@ -685,7 +694,8 @@ export interface __PolicySchemeHandler$views {
 export type PolicySchemeHandler = PolicySchemeHandler$instance & __PolicySchemeHandler$views;
 
 
-export interface PolicySchemeOptions$instance extends AuthenticationSchemeOptions {
+export interface PolicySchemeOptions$instance extends AuthenticationSchemeOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PolicySchemeOptions: never;
 
 }
@@ -698,35 +708,39 @@ export const PolicySchemeOptions: {
 
 export type PolicySchemeOptions = PolicySchemeOptions$instance;
 
-export interface PrincipalContext_1$instance<TOptions extends unknown & AuthenticationSchemeOptions> extends PropertiesContext_1<TOptions> {
+export interface PrincipalContext_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> extends PropertiesContext_1$instance<TOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PrincipalContext_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PropertiesContext_1: never;
 
     get Principal(): ClaimsPrincipal | null;
     set Principal(value: ClaimsPrincipal | null);
 }
 
 
-export const PrincipalContext_1: (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions, properties: AuthenticationProperties | null) => PrincipalContext_1<TOptions>) & {
+export const PrincipalContext_1: {
 };
 
 
-export type PrincipalContext_1<TOptions extends unknown & AuthenticationSchemeOptions> = PrincipalContext_1$instance<TOptions>;
+export type PrincipalContext_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> = PrincipalContext_1$instance<TOptions>;
 
-export interface PropertiesContext_1$instance<TOptions extends unknown & AuthenticationSchemeOptions> extends BaseContext_1<TOptions> {
+export interface PropertiesContext_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> extends BaseContext_1$instance<TOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PropertiesContext_1: never;
 
     Properties: AuthenticationProperties;
 }
 
 
-export const PropertiesContext_1: (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions, properties: AuthenticationProperties | null) => PropertiesContext_1<TOptions>) & {
+export const PropertiesContext_1: {
 };
 
 
-export type PropertiesContext_1<TOptions extends unknown & AuthenticationSchemeOptions> = PropertiesContext_1$instance<TOptions>;
+export type PropertiesContext_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> = PropertiesContext_1$instance<TOptions>;
 
-export interface PropertiesDataFormat$instance extends SecureDataFormat_1$instance<AuthenticationProperties>, ISecureDataFormat_1$instance<AuthenticationProperties> {
+export interface PropertiesDataFormat$instance extends SecureDataFormat_1$instance<AuthenticationProperties> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PropertiesDataFormat: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_SecureDataFormat_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1: never;
 
@@ -770,7 +784,9 @@ export interface __PropertiesSerializer$views {
 export type PropertiesSerializer = PropertiesSerializer$instance & __PropertiesSerializer$views;
 
 
-export interface RedirectContext_1$instance<TOptions extends unknown & AuthenticationSchemeOptions> extends PropertiesContext_1<TOptions> {
+export interface RedirectContext_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> extends PropertiesContext_1$instance<TOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PropertiesContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RedirectContext_1: never;
 
     RedirectUri: string;
@@ -778,13 +794,15 @@ export interface RedirectContext_1$instance<TOptions extends unknown & Authentic
 
 
 export const RedirectContext_1: {
-    new<TOptions extends unknown & AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions, properties: AuthenticationProperties, redirectUri: string): RedirectContext_1<TOptions>;
+    new<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions, properties: AuthenticationProperties, redirectUri: string): RedirectContext_1<TOptions>;
 };
 
 
-export type RedirectContext_1<TOptions extends unknown & AuthenticationSchemeOptions> = RedirectContext_1$instance<TOptions>;
+export type RedirectContext_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> = RedirectContext_1$instance<TOptions>;
 
-export interface RemoteAuthenticationContext_1$instance<TOptions extends unknown & AuthenticationSchemeOptions> extends HandleRequestContext_1<TOptions> {
+export interface RemoteAuthenticationContext_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> extends HandleRequestContext_1$instance<TOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_HandleRequestContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationContext_1: never;
 
     get Principal(): ClaimsPrincipal | null;
@@ -797,11 +815,11 @@ export interface RemoteAuthenticationContext_1$instance<TOptions extends unknown
 }
 
 
-export const RemoteAuthenticationContext_1: (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions, properties: AuthenticationProperties | null) => RemoteAuthenticationContext_1<TOptions>) & {
+export const RemoteAuthenticationContext_1: {
 };
 
 
-export type RemoteAuthenticationContext_1<TOptions extends unknown & AuthenticationSchemeOptions> = RemoteAuthenticationContext_1$instance<TOptions>;
+export type RemoteAuthenticationContext_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> = RemoteAuthenticationContext_1$instance<TOptions>;
 
 export interface RemoteAuthenticationEvents$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationEvents: never;
@@ -822,17 +840,18 @@ export const RemoteAuthenticationEvents: {
 
 export type RemoteAuthenticationEvents = RemoteAuthenticationEvents$instance;
 
-export interface RemoteAuthenticationHandler_1$instance<TOptions extends unknown & RemoteAuthenticationOptions> extends AuthenticationHandler_1$instance<TOptions>, IAuthenticationRequestHandler$instance {
+export interface RemoteAuthenticationHandler_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }> extends AuthenticationHandler_1$instance<TOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
 
-    CreateEventsAsync(): Task_1<unknown>;
+    CreateEventsAsync: AuthenticationHandler_1$instance<TOptions>["CreateEventsAsync"] & (() => Task_1<unknown>);
     GenerateCorrelationId(properties: AuthenticationProperties): void;
     HandleAccessDeniedErrorAsync(properties: AuthenticationProperties): Task_1<HandleRequestResult>;
-    HandleAuthenticateAsync(): Task_1<AuthenticateResult>;
-    HandleForbiddenAsync(properties: AuthenticationProperties): Task;
+    HandleAuthenticateAsync: AuthenticationHandler_1$instance<TOptions>["HandleAuthenticateAsync"] & (() => Task_1<AuthenticateResult>);
+    HandleForbiddenAsync: AuthenticationHandler_1$instance<TOptions>["HandleForbiddenAsync"] & ((properties: AuthenticationProperties) => Task);
     HandleRemoteAuthenticateAsync(): Task_1<HandleRequestResult>;
     HandleRequestAsync(): Task_1<System_Internal.Boolean>;
     ShouldHandleRequestAsync(): Task_1<System_Internal.Boolean>;
@@ -840,18 +859,19 @@ export interface RemoteAuthenticationHandler_1$instance<TOptions extends unknown
 }
 
 
-export const RemoteAuthenticationHandler_1: (abstract new<TOptions extends unknown & RemoteAuthenticationOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock) => RemoteAuthenticationHandler_1<TOptions>) & (abstract new<TOptions extends unknown & RemoteAuthenticationOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder) => RemoteAuthenticationHandler_1<TOptions>) & {
+export const RemoteAuthenticationHandler_1: {
 };
 
 
-export interface __RemoteAuthenticationHandler_1$views<TOptions extends unknown & RemoteAuthenticationOptions> {
+export interface __RemoteAuthenticationHandler_1$views<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }> {
     As_IAuthenticationHandler(): IAuthenticationHandler$instance;
 }
 
-export type RemoteAuthenticationHandler_1<TOptions extends unknown & RemoteAuthenticationOptions> = RemoteAuthenticationHandler_1$instance<TOptions> & __RemoteAuthenticationHandler_1$views<TOptions>;
+export type RemoteAuthenticationHandler_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }> = RemoteAuthenticationHandler_1$instance<TOptions> & __RemoteAuthenticationHandler_1$views<TOptions>;
 
 
-export interface RemoteAuthenticationOptions$instance extends AuthenticationSchemeOptions {
+export interface RemoteAuthenticationOptions$instance extends AuthenticationSchemeOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never;
 
     AccessDeniedPath: PathString;
@@ -863,14 +883,13 @@ export interface RemoteAuthenticationOptions$instance extends AuthenticationSche
     CorrelationCookie: CookieBuilder;
     get DataProtectionProvider(): IDataProtectionProvider | null;
     set DataProtectionProvider(value: IDataProtectionProvider | null);
-    Events: OAuthEvents | RemoteAuthenticationEvents | unknown;
+    Events: RemoteAuthenticationEvents | unknown;
     RemoteAuthenticationTimeout: TimeSpan;
     ReturnUrlParameter: string;
     SaveTokens: boolean;
     get SignInScheme(): string | null;
     set SignInScheme(value: string | null);
-    Validate(scheme: string): void;
-    Validate(): void;
+    Validate: AuthenticationSchemeOptions$instance["Validate"] & (() => void) & ((scheme: string) => void);
 }
 
 
@@ -881,7 +900,9 @@ export const RemoteAuthenticationOptions: {
 
 export type RemoteAuthenticationOptions = RemoteAuthenticationOptions$instance;
 
-export interface RemoteFailureContext$instance extends HandleRequestContext_1<RemoteAuthenticationOptions> {
+export interface RemoteFailureContext$instance extends HandleRequestContext_1$instance<RemoteAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_HandleRequestContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteFailureContext: never;
 
     get Failure(): Exception | null;
@@ -898,12 +919,12 @@ export const RemoteFailureContext: {
 
 export type RemoteFailureContext = RemoteFailureContext$instance;
 
-export interface RequestPathBaseCookieBuilder$instance extends CookieBuilder {
+export interface RequestPathBaseCookieBuilder$instance extends Microsoft_AspNetCore_Http_Internal.CookieBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RequestPathBaseCookieBuilder: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_CookieBuilder: never;
 
     readonly AdditionalPath: string | null;
-    Build(context: HttpContext, expiresFrom: DateTimeOffset): CookieOptions;
-    Build(context: HttpContext): CookieOptions;
+    Build: Microsoft_AspNetCore_Http_Internal.CookieBuilder$instance["Build"] & ((context: HttpContext) => CookieOptions) & ((context: HttpContext, expiresFrom: DateTimeOffset) => CookieOptions);
 }
 
 
@@ -914,14 +935,14 @@ export const RequestPathBaseCookieBuilder: {
 
 export type RequestPathBaseCookieBuilder = RequestPathBaseCookieBuilder$instance;
 
-export interface ResultContext_1$instance<TOptions extends unknown & AuthenticationSchemeOptions> extends BaseContext_1<TOptions> {
+export interface ResultContext_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> extends BaseContext_1$instance<TOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_ResultContext_1: never;
 
     get Principal(): ClaimsPrincipal | null;
     set Principal(value: ClaimsPrincipal | null);
     Properties: AuthenticationProperties;
-    get Result(): AuthenticateResult | null;
-    set Result(value: AuthenticateResult | null);
+    readonly Result: AuthenticateResult | null;
     Fail(failure: Exception): void;
     Fail(failureMessage: string): void;
     NoResult(): void;
@@ -929,11 +950,11 @@ export interface ResultContext_1$instance<TOptions extends unknown & Authenticat
 }
 
 
-export const ResultContext_1: (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions) => ResultContext_1<TOptions>) & {
+export const ResultContext_1: {
 };
 
 
-export type ResultContext_1<TOptions extends unknown & AuthenticationSchemeOptions> = ResultContext_1$instance<TOptions>;
+export type ResultContext_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> = ResultContext_1$instance<TOptions>;
 
 export interface SecureDataFormat_1$instance<TData extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_SecureDataFormat_1: never;
@@ -959,8 +980,10 @@ export interface __SecureDataFormat_1$views<TData extends unknown> {
 export type SecureDataFormat_1<TData extends unknown> = SecureDataFormat_1$instance<TData> & __SecureDataFormat_1$views<TData>;
 
 
-export interface SignInAuthenticationHandler_1$instance<TOptions extends unknown & AuthenticationSchemeOptions> extends SignOutAuthenticationHandler_1$instance<TOptions>, IAuthenticationSignInHandler$instance {
+export interface SignInAuthenticationHandler_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> extends SignOutAuthenticationHandler_1$instance<TOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_SignInAuthenticationHandler_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_SignOutAuthenticationHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
@@ -971,19 +994,20 @@ export interface SignInAuthenticationHandler_1$instance<TOptions extends unknown
 }
 
 
-export const SignInAuthenticationHandler_1: (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock) => SignInAuthenticationHandler_1<TOptions>) & (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder) => SignInAuthenticationHandler_1<TOptions>) & {
+export const SignInAuthenticationHandler_1: (abstract new<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock) => SignInAuthenticationHandler_1<TOptions>) & (abstract new<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder) => SignInAuthenticationHandler_1<TOptions>) & {
 };
 
 
-export interface __SignInAuthenticationHandler_1$views<TOptions extends unknown & AuthenticationSchemeOptions> {
+export interface __SignInAuthenticationHandler_1$views<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> {
     As_IAuthenticationHandler(): IAuthenticationHandler$instance;
     As_IAuthenticationSignInHandler(): IAuthenticationSignInHandler$instance;
 }
 
-export type SignInAuthenticationHandler_1<TOptions extends unknown & AuthenticationSchemeOptions> = SignInAuthenticationHandler_1$instance<TOptions> & __SignInAuthenticationHandler_1$views<TOptions>;
+export type SignInAuthenticationHandler_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> = SignInAuthenticationHandler_1$instance<TOptions> & __SignInAuthenticationHandler_1$views<TOptions>;
 
 
-export interface SignOutAuthenticationHandler_1$instance<TOptions extends unknown & AuthenticationSchemeOptions> extends AuthenticationHandler_1$instance<TOptions>, IAuthenticationSignOutHandler$instance {
+export interface SignOutAuthenticationHandler_1$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> extends AuthenticationHandler_1$instance<TOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_SignOutAuthenticationHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
@@ -994,18 +1018,18 @@ export interface SignOutAuthenticationHandler_1$instance<TOptions extends unknow
 }
 
 
-export const SignOutAuthenticationHandler_1: (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock) => SignOutAuthenticationHandler_1<TOptions>) & (abstract new<TOptions extends unknown & AuthenticationSchemeOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder) => SignOutAuthenticationHandler_1<TOptions>) & {
+export const SignOutAuthenticationHandler_1: (abstract new<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock) => SignOutAuthenticationHandler_1<TOptions>) & (abstract new<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder) => SignOutAuthenticationHandler_1<TOptions>) & {
 };
 
 
-export interface __SignOutAuthenticationHandler_1$views<TOptions extends unknown & AuthenticationSchemeOptions> {
+export interface __SignOutAuthenticationHandler_1$views<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> {
     As_IAuthenticationHandler(): IAuthenticationHandler$instance;
 }
 
-export type SignOutAuthenticationHandler_1<TOptions extends unknown & AuthenticationSchemeOptions> = SignOutAuthenticationHandler_1$instance<TOptions> & __SignOutAuthenticationHandler_1$views<TOptions>;
+export type SignOutAuthenticationHandler_1<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never }> = SignOutAuthenticationHandler_1$instance<TOptions> & __SignOutAuthenticationHandler_1$views<TOptions>;
 
 
-export interface SystemClock$instance extends ISystemClock$instance {
+export interface SystemClock$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_SystemClock: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISystemClock: never;
@@ -1026,7 +1050,8 @@ export interface __SystemClock$views {
 export type SystemClock = SystemClock$instance & __SystemClock$views;
 
 
-export interface TicketDataFormat$instance extends SecureDataFormat_1$instance<AuthenticationTicket>, ISecureDataFormat_1$instance<AuthenticationTicket> {
+export interface TicketDataFormat$instance extends SecureDataFormat_1$instance<AuthenticationTicket> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_SecureDataFormat_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_TicketDataFormat: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1: never;
@@ -1046,7 +1071,10 @@ export interface __TicketDataFormat$views {
 export type TicketDataFormat = TicketDataFormat$instance & __TicketDataFormat$views;
 
 
-export interface TicketReceivedContext$instance extends RemoteAuthenticationContext_1<RemoteAuthenticationOptions> {
+export interface TicketReceivedContext$instance extends RemoteAuthenticationContext_1$instance<RemoteAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_HandleRequestContext_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_TicketReceivedContext: never;
 
     get ReturnUri(): string | null;

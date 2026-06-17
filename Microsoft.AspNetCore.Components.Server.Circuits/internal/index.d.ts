@@ -37,7 +37,7 @@ export interface CircuitHandler$instance {
 }
 
 
-export const CircuitHandler: (abstract new() => CircuitHandler) & {
+export const CircuitHandler: {
 };
 
 

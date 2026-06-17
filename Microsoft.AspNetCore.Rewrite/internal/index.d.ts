@@ -18,11 +18,13 @@ import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Exten
 import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export enum RuleResult {
-    ContinueRules = 0,
-    EndResponse = 1,
-    SkipRemainingRules = 2
-}
+export type RuleResult = number & { readonly __tsonic_type_Microsoft_AspNetCore_Rewrite_RuleResult: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const RuleResult: {
+    readonly ContinueRules: RuleResult;
+    readonly EndResponse: RuleResult;
+    readonly SkipRemainingRules: RuleResult;
+};
 
 
 export interface IRule$instance {

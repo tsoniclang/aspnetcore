@@ -25,8 +25,8 @@ export interface QueryBuilder$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    Add(key: string, values: IEnumerable_1<System_Internal.String>): void;
     Add(key: string, value: string): void;
+    Add(key: string, values: IEnumerable_1<System_Internal.String>): void;
     Equals(obj: unknown | null): boolean;
     GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
     GetHashCode(): int;

@@ -756,20 +756,7 @@
           }
         ],
         "properties": [],
-        "fields": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper::EmptyKeySystem.String",
-            "targetName": "EmptyKey",
-            "metadataToken": 67108903,
-            "normalizedSignature": "EmptyKey|System.String|static=true|const=false",
-            "isStatic": true,
-            "isReadOnly": true,
-            "isLiteral": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
-          }
-        ],
+        "fields": [],
         "events": [],
         "constructors": [
           {

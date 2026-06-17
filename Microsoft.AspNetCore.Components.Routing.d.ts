@@ -11,10 +11,10 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 // Cross-namespace type imports for constraints
 import type { RenderTreeBuilder } from './Microsoft.AspNetCore.Components.Rendering/internal/index.js';
-import type { ComponentBase, EventCallback_1, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection, RouteData } from './Microsoft.AspNetCore.Components/internal/index.js';
+import type { ComponentBase, EventCallback_1, EventCallbackWorkItem, IComponent, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle, RouteData } from './Microsoft.AspNetCore.Components/internal/index.js';
 import type { HttpContext } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { IEnumerable, IReadOnlyDictionary } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Action, Boolean as ClrBoolean, Enum, EventArgs, Exception, Func, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, Enum, EventArgs, Func, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from '@tsonic/dotnet/System.js';
 import type { Assembly } from '@tsonic/dotnet/System.Reflection.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';

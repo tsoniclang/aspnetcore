@@ -51,11 +51,12 @@ export const ClaimActionCollection: {
 
 export type ClaimActionCollection = ClaimActionCollection$instance;
 
-export interface CustomJsonClaimAction$instance extends ClaimAction {
+export interface CustomJsonClaimAction$instance extends ClaimAction$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_ClaimAction: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_CustomJsonClaimAction: never;
 
     readonly Resolver: Func_2<JsonElement, string | null>;
-    Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
+    Run: ClaimAction$instance["Run"] & ((userData: JsonElement, identity: ClaimsIdentity, issuer: string) => void);
 }
 
 
@@ -66,10 +67,11 @@ export const CustomJsonClaimAction: {
 
 export type CustomJsonClaimAction = CustomJsonClaimAction$instance;
 
-export interface DeleteClaimAction$instance extends ClaimAction {
+export interface DeleteClaimAction$instance extends ClaimAction$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_ClaimAction: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_DeleteClaimAction: never;
 
-    Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
+    Run: ClaimAction$instance["Run"] & ((userData: JsonElement, identity: ClaimsIdentity, issuer: string) => void);
 }
 
 
@@ -80,11 +82,12 @@ export const DeleteClaimAction: {
 
 export type DeleteClaimAction = DeleteClaimAction$instance;
 
-export interface JsonKeyClaimAction$instance extends ClaimAction {
+export interface JsonKeyClaimAction$instance extends ClaimAction$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_ClaimAction: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_JsonKeyClaimAction: never;
 
     readonly JsonKey: string;
-    Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
+    Run: ClaimAction$instance["Run"] & ((userData: JsonElement, identity: ClaimsIdentity, issuer: string) => void);
 }
 
 
@@ -95,11 +98,13 @@ export const JsonKeyClaimAction: {
 
 export type JsonKeyClaimAction = JsonKeyClaimAction$instance;
 
-export interface JsonSubKeyClaimAction$instance extends JsonKeyClaimAction {
+export interface JsonSubKeyClaimAction$instance extends JsonKeyClaimAction$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_ClaimAction: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_JsonKeyClaimAction: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_JsonSubKeyClaimAction: never;
 
     readonly SubKey: string;
-    Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
+    Run: JsonKeyClaimAction$instance["Run"] & ((userData: JsonElement, identity: ClaimsIdentity, issuer: string) => void);
 }
 
 
@@ -110,10 +115,11 @@ export const JsonSubKeyClaimAction: {
 
 export type JsonSubKeyClaimAction = JsonSubKeyClaimAction$instance;
 
-export interface MapAllClaimsAction$instance extends ClaimAction {
+export interface MapAllClaimsAction$instance extends ClaimAction$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_ClaimAction: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_MapAllClaimsAction: never;
 
-    Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
+    Run: ClaimAction$instance["Run"] & ((userData: JsonElement, identity: ClaimsIdentity, issuer: string) => void);
 }
 
 

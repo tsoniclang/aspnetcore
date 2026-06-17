@@ -33,15 +33,15 @@ export type EndpointConfiguration = EndpointConfiguration$instance;
 export interface KestrelConfigurationLoader$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_KestrelConfigurationLoader: never;
 
-    Configuration: IConfiguration;
+    readonly Configuration: IConfiguration;
     readonly Options: KestrelServerOptions;
     AnyIPEndpoint(port: int): KestrelConfigurationLoader;
     AnyIPEndpoint(port: int, configure: Action_1<ListenOptions>): KestrelConfigurationLoader;
-    Endpoint(name: string, configureOptions: Action_1<EndpointConfiguration>): KestrelConfigurationLoader;
     Endpoint(address: IPAddress, port: int): KestrelConfigurationLoader;
     Endpoint(address: IPAddress, port: int, configure: Action_1<ListenOptions>): KestrelConfigurationLoader;
     Endpoint(endPoint: IPEndPoint): KestrelConfigurationLoader;
     Endpoint(endPoint: IPEndPoint, configure: Action_1<ListenOptions>): KestrelConfigurationLoader;
+    Endpoint(name: string, configureOptions: Action_1<EndpointConfiguration>): KestrelConfigurationLoader;
     HandleEndpoint(handle: ulong): KestrelConfigurationLoader;
     HandleEndpoint(handle: ulong, configure: Action_1<ListenOptions>): KestrelConfigurationLoader;
     Load(): void;

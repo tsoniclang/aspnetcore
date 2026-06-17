@@ -25,7 +25,7 @@ export interface IResponseCachingFeature$instance {
 
 export type IResponseCachingFeature = IResponseCachingFeature$instance;
 
-export interface ResponseCachingFeature$instance extends IResponseCachingFeature$instance {
+export interface ResponseCachingFeature$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_ResponseCaching_ResponseCachingFeature: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature: never;

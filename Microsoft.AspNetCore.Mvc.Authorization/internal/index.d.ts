@@ -15,8 +15,9 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, IServiceProvider, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IAllowAnonymousFilter$instance extends IFilterMetadata {
+export interface IAllowAnonymousFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Authorization_IAllowAnonymousFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
 }
 
@@ -25,7 +26,7 @@ export interface IAllowAnonymousFilter$instance extends Microsoft_AspNetCore_Mvc
 
 export type IAllowAnonymousFilter = IAllowAnonymousFilter$instance;
 
-export interface AllowAnonymousFilter$instance extends IAllowAnonymousFilter {
+export interface AllowAnonymousFilter$instance extends IAllowAnonymousFilter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Authorization_AllowAnonymousFilter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Authorization_IAllowAnonymousFilter: never;
@@ -41,7 +42,7 @@ export const AllowAnonymousFilter: {
 
 export type AllowAnonymousFilter = AllowAnonymousFilter$instance;
 
-export interface AuthorizeFilter$instance extends Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncAuthorizationFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+export interface AuthorizeFilter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Authorization_AuthorizeFilter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncAuthorizationFilter: never;

@@ -9,20 +9,21 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Import types from other namespaces
 import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { ComponentBase, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { ComponentBase, EventCallbackWorkItem, IComponent, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { ICollection_1, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
 import type { Task, ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
-import type { Action, AsyncCallback, Boolean as ClrBoolean, Exception, Func_1, IAsyncDisposable, IAsyncResult, ICloneable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, Single, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { AsyncCallback, Boolean as ClrBoolean, IAsyncDisposable, IAsyncResult, ICloneable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, Single, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export type ItemsProviderDelegate_1<TItem extends unknown> = (request: ItemsProviderRequest) => ValueTask_1<ItemsProviderResult_1<TItem>>;
 
 
 export interface ItemsProviderRequest$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderRequest: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly CancellationToken: CancellationToken;
     readonly Count: int;
@@ -39,6 +40,7 @@ export type ItemsProviderRequest = ItemsProviderRequest$instance;
 
 export interface ItemsProviderResult_1$instance<TItem extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderResult_1: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Items: IEnumerable_1<TItem>;
     readonly TotalItemCount: int;
@@ -54,6 +56,7 @@ export type ItemsProviderResult_1<TItem extends unknown> = ItemsProviderResult_1
 
 export interface PlaceholderContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_PlaceholderContext: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Index: int;
     readonly Size: float;
@@ -67,7 +70,8 @@ export const PlaceholderContext: {
 
 export type PlaceholderContext = PlaceholderContext$instance;
 
-export interface Virtualize_1$instance<TItem extends unknown> extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IAsyncDisposable {
+export interface Virtualize_1$instance<TItem extends unknown> extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -92,10 +96,10 @@ export interface Virtualize_1$instance<TItem extends unknown> extends ComponentB
     get Placeholder(): RenderFragment_1<PlaceholderContext> | null;
     set Placeholder(value: RenderFragment_1<PlaceholderContext> | null);
     SpacerElement: string;
-    BuildRenderTree(builder: RenderTreeBuilder): void;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
     DisposeAsync(): ValueTask;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    OnParametersSet(): void;
+    OnAfterRenderAsync: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnAfterRenderAsync"] & ((firstRender: boolean) => Task);
+    OnParametersSet: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnParametersSet"] & (() => void);
     RefreshDataAsync(): Task;
 }
 

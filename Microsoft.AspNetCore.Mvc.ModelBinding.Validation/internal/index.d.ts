@@ -7,7 +7,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
-import type { IModelMetadataProvider, ModelMetadata, ModelStateDictionary } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
+import type { IModelMetadataProvider, ModelMetadata } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
 import type { ActionContext } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import type { ICollection_1, IDictionary_2, IEnumerable_1, IEnumerator_1, IList_1, IReadOnlyCollection_1, IReadOnlyDictionary_2, IReadOnlyList_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -34,8 +34,9 @@ export interface IClientModelValidatorProvider$instance {
 
 export type IClientModelValidatorProvider = IClientModelValidatorProvider$instance;
 
-export interface IMetadataBasedModelValidatorProvider$instance extends IModelValidatorProvider {
+export interface IMetadataBasedModelValidatorProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider: never;
 
     CreateValidators(context: ModelValidatorProviderContext): void;
     HasValidators(modelType: Type, validatorMetadata: IList_1<unknown>): boolean;
@@ -93,6 +94,7 @@ export type IValidationStrategy = IValidationStrategy$instance;
 
 export interface ValidationEntry$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ValidationEntry: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Key: string;
     readonly Metadata: ModelMetadata;
@@ -108,8 +110,9 @@ export const ValidationEntry: {
 
 export type ValidationEntry = ValidationEntry$instance;
 
-export interface ClientModelValidationContext$instance extends ModelValidationContextBase {
+export interface ClientModelValidationContext$instance extends ModelValidationContextBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ClientModelValidationContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ModelValidationContextBase: never;
 
     readonly Attributes: IDictionary_2<System_Internal.String, System_Internal.String>;
 }
@@ -170,7 +173,7 @@ export const ClientValidatorProviderContext: {
 
 export type ClientValidatorProviderContext = ClientValidatorProviderContext$instance;
 
-export interface CompositeClientModelValidatorProvider$instance extends IClientModelValidatorProvider$instance {
+export interface CompositeClientModelValidatorProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_CompositeClientModelValidatorProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidatorProvider: never;
@@ -192,7 +195,7 @@ export interface __CompositeClientModelValidatorProvider$views {
 export type CompositeClientModelValidatorProvider = CompositeClientModelValidatorProvider$instance & __CompositeClientModelValidatorProvider$views;
 
 
-export interface CompositeModelValidatorProvider$instance extends IModelValidatorProvider$instance {
+export interface CompositeModelValidatorProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_CompositeModelValidatorProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider: never;
@@ -214,8 +217,9 @@ export interface __CompositeModelValidatorProvider$views {
 export type CompositeModelValidatorProvider = CompositeModelValidatorProvider$instance & __CompositeModelValidatorProvider$views;
 
 
-export interface ModelValidationContext$instance extends ModelValidationContextBase {
+export interface ModelValidationContext$instance extends ModelValidationContextBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ModelValidationContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ModelValidationContextBase: never;
 
     readonly Container: unknown | null;
     readonly Model: unknown | null;
@@ -276,8 +280,9 @@ export const ModelValidatorProviderContext: {
 
 export type ModelValidatorProviderContext = ModelValidatorProviderContext$instance;
 
-export interface ValidateNeverAttribute$instance extends Attribute, IPropertyValidationFilter$instance {
+export interface ValidateNeverAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ValidateNeverAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IPropertyValidationFilter: never;
 
@@ -358,9 +363,9 @@ export interface ValidationVisitor$instance {
     ValidateComplexTypesIfChildValidationFails: boolean;
     GetValidationEntry(model: unknown | null): ValidationStateEntry | null;
     SuppressValidation(key: string): void;
-    Validate(metadata: ModelMetadata, key: string, model: unknown): boolean;
     Validate(metadata: ModelMetadata | null, key: string | null, model: unknown | null, alwaysValidateAtTopLevel: boolean): boolean;
     Validate(metadata: ModelMetadata | null, key: string | null, model: unknown | null, alwaysValidateAtTopLevel: boolean, container: unknown | null): boolean;
+    Validate(metadata: ModelMetadata, key: string, model: unknown): boolean;
     ValidateNode(): boolean;
     Visit(metadata: ModelMetadata, key: string | null, model: unknown | null): boolean;
     VisitChildren(strategy: IValidationStrategy): boolean;
@@ -378,6 +383,7 @@ export type ValidationVisitor = ValidationVisitor$instance;
 
 export interface ValidationVisitor_StateManager$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ValidationVisitor_StateManager: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -427,7 +433,7 @@ export type ValidatorItem = ValidatorItem$instance;
 
 export abstract class ModelValidatorProviderExtensions$instance {
     static RemoveType(list: IList_1<IModelValidatorProvider>, type: Type): void;
-    static RemoveType<TModelValidatorProvider extends unknown & IModelValidatorProvider>(list: IList_1<IModelValidatorProvider>): void;
+    static RemoveType<TModelValidatorProvider extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider: never }>(list: IList_1<IModelValidatorProvider>): void;
 }
 
 

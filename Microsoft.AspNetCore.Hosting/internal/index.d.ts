@@ -101,8 +101,9 @@ export interface IStartupFilter$instance {
 
 export type IStartupFilter = IStartupFilter$instance;
 
-export interface IWebHost$instance extends IDisposable {
+export interface IWebHost$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHost: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
     readonly ServerFeatures: IFeatureCollection;
     readonly Services: IServiceProvider;
@@ -110,8 +111,6 @@ export interface IWebHost$instance extends IDisposable {
     StartAsync(cancellationToken?: CancellationToken): Task;
 }
 
-
-export interface IWebHost$instance extends System_Internal.IDisposable {}
 
 export type IWebHost = IWebHost$instance;
 
@@ -128,24 +127,25 @@ export interface IWebHostBuilder$instance {
 
 export type IWebHostBuilder = IWebHostBuilder$instance;
 
-export interface IWebHostEnvironment$instance extends IHostEnvironment {
+export interface IWebHostEnvironment$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostEnvironment: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostEnvironment: never;
 
     WebRootPath: string;
     WebRootFileProvider: IFileProvider;
 }
 
 
-export interface IWebHostEnvironment$instance extends Microsoft_Extensions_Hosting_Internal.IHostEnvironment {}
-
 export type IWebHostEnvironment = IWebHostEnvironment$instance;
 
 export interface DelegateStartup$instance extends StartupBase_1$instance<IServiceCollection> {
     readonly __tsonic_type_Microsoft_AspNetCore_Hosting_DelegateStartup: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_StartupBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_StartupBase_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartup: never;
 
-    Configure(app: IApplicationBuilder): void;
+    Configure: StartupBase_1$instance<IServiceCollection>["Configure"] & ((app: IApplicationBuilder) => void);
 }
 
 
@@ -161,8 +161,9 @@ export interface __DelegateStartup$views {
 export type DelegateStartup = DelegateStartup$instance & __DelegateStartup$views;
 
 
-export interface HostingStartupAttribute$instance extends Attribute {
+export interface HostingStartupAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Hosting_HostingStartupAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly HostingStartupType: Type;
 }
@@ -186,7 +187,7 @@ export interface StartupBase$instance {
 }
 
 
-export const StartupBase: (abstract new() => StartupBase) & {
+export const StartupBase: {
 };
 
 
@@ -198,12 +199,13 @@ export type StartupBase = StartupBase$instance & __StartupBase$views;
 
 
 export interface StartupBase_1$instance<TBuilder extends unknown> extends StartupBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_StartupBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Hosting_StartupBase_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartup: never;
 
     ConfigureContainer(builder: TBuilder): void;
-    CreateServiceProvider(services: IServiceCollection): IServiceProvider;
+    CreateServiceProvider: StartupBase$instance["CreateServiceProvider"] & ((services: IServiceCollection) => IServiceProvider);
 }
 
 
@@ -218,7 +220,7 @@ export interface __StartupBase_1$views<TBuilder extends unknown> {
 export type StartupBase_1<TBuilder extends unknown> = StartupBase_1$instance<TBuilder> & __StartupBase_1$views<TBuilder>;
 
 
-export interface WebHostBuilder$instance extends IWebHostBuilder$instance {
+export interface WebHostBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Hosting_WebHostBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostBuilder: never;

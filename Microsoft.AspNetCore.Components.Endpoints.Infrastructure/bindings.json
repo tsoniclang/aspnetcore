@@ -68,19 +68,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.Infrastructure.RenderModeEndpointProvider::.ctor():void",
-            "metadataToken": 100664274,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure.RenderModeEndpointProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Components.Endpoints"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.Infrastructure.ComponentEndpointConventionBuilderHelper",

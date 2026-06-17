@@ -37,13 +37,14 @@ export interface IRequestCultureProvider$instance {
 
 export type IRequestCultureProvider = IRequestCultureProvider$instance;
 
-export interface AcceptLanguageHeaderRequestCultureProvider$instance extends RequestCultureProvider$instance, IRequestCultureProvider$instance {
+export interface AcceptLanguageHeaderRequestCultureProvider$instance extends RequestCultureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_AcceptLanguageHeaderRequestCultureProvider: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Localization_RequestCultureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
     MaximumAcceptLanguageHeaderValuesToTry: int;
-    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | null>;
+    DetermineProviderCultureResult: RequestCultureProvider$instance["DetermineProviderCultureResult"] & ((httpContext: HttpContext) => Task_1<ProviderCultureResult | null>);
 }
 
 
@@ -59,13 +60,14 @@ export interface __AcceptLanguageHeaderRequestCultureProvider$views {
 export type AcceptLanguageHeaderRequestCultureProvider = AcceptLanguageHeaderRequestCultureProvider$instance & __AcceptLanguageHeaderRequestCultureProvider$views;
 
 
-export interface CookieRequestCultureProvider$instance extends RequestCultureProvider$instance, IRequestCultureProvider$instance {
+export interface CookieRequestCultureProvider$instance extends RequestCultureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_CookieRequestCultureProvider: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Localization_RequestCultureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
     CookieName: string;
-    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | null>;
+    DetermineProviderCultureResult: RequestCultureProvider$instance["DetermineProviderCultureResult"] & ((httpContext: HttpContext) => Task_1<ProviderCultureResult | null>);
 }
 
 
@@ -84,12 +86,13 @@ export interface __CookieRequestCultureProvider$views {
 export type CookieRequestCultureProvider = CookieRequestCultureProvider$instance & __CookieRequestCultureProvider$views;
 
 
-export interface CustomRequestCultureProvider$instance extends RequestCultureProvider$instance, IRequestCultureProvider$instance {
+export interface CustomRequestCultureProvider$instance extends RequestCultureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_CustomRequestCultureProvider: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Localization_RequestCultureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
-    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | null>;
+    DetermineProviderCultureResult: RequestCultureProvider$instance["DetermineProviderCultureResult"] & ((httpContext: HttpContext) => Task_1<ProviderCultureResult | null>);
 }
 
 
@@ -123,14 +126,15 @@ export const ProviderCultureResult: {
 
 export type ProviderCultureResult = ProviderCultureResult$instance;
 
-export interface QueryStringRequestCultureProvider$instance extends RequestCultureProvider$instance, IRequestCultureProvider$instance {
+export interface QueryStringRequestCultureProvider$instance extends RequestCultureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_QueryStringRequestCultureProvider: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Localization_RequestCultureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
     QueryStringKey: string;
     UIQueryStringKey: string;
-    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | null>;
+    DetermineProviderCultureResult: RequestCultureProvider$instance["DetermineProviderCultureResult"] & ((httpContext: HttpContext) => Task_1<ProviderCultureResult | null>);
 }
 
 
@@ -164,7 +168,7 @@ export const RequestCulture: {
 
 export type RequestCulture = RequestCulture$instance;
 
-export interface RequestCultureFeature$instance extends IRequestCultureFeature$instance {
+export interface RequestCultureFeature$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_RequestCultureFeature: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureFeature: never;
@@ -186,7 +190,7 @@ export interface __RequestCultureFeature$views {
 export type RequestCultureFeature = RequestCultureFeature$instance & __RequestCultureFeature$views;
 
 
-export interface RequestCultureProvider$instance extends IRequestCultureProvider$instance {
+export interface RequestCultureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_RequestCultureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
@@ -197,8 +201,7 @@ export interface RequestCultureProvider$instance extends IRequestCultureProvider
 }
 
 
-export const RequestCultureProvider: (abstract new() => RequestCultureProvider) & {
-    readonly NullProviderCultureResult: Task_1<ProviderCultureResult | null>;
+export const RequestCultureProvider: {
 };
 
 

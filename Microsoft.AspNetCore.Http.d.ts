@@ -84,7 +84,7 @@ export type IFileHttpResult = Internal.IFileHttpResult;
 export type INestedHttpResult = Internal.INestedHttpResult;
 export type IResult = Internal.IResult;
 export type IStatusCodeHttpResult = Internal.IStatusCodeHttpResult;
-export type IBindableFromHttpContext<TSelf extends (object | null) & Internal.IBindableFromHttpContext_1<TSelf>> = Internal.IBindableFromHttpContext_1<TSelf>;
+export type IBindableFromHttpContext<TSelf extends (object | null) & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IBindableFromHttpContext_1: never }> = Internal.IBindableFromHttpContext_1<TSelf>;
 export type IEndpointFilter = Internal.IEndpointFilter;
 export type IHttpContextAccessor = Internal.IHttpContextAccessor;
 export type IHttpContextFactory = Internal.IHttpContextFactory;
@@ -148,7 +148,7 @@ export type IValueHttpResult<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.IValueHttpResult :
-  [T1] extends [unknown] ? Internal.IValueHttpResult_1<T1> : never;
+  Internal.IValueHttpResult_1<T1>;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Http as ExtensionMethods } from './__internal/extensions/index.js';

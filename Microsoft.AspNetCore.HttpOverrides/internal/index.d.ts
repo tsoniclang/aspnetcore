@@ -17,14 +17,16 @@ import type { Boolean as ClrBoolean, Char, Enum, Func_2, IComparable, IConvertib
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export enum ForwardedHeaders {
-    None = 0,
-    XForwardedFor = 1,
-    XForwardedHost = 2,
-    XForwardedProto = 4,
-    XForwardedPrefix = 8,
-    All = 15
-}
+export type ForwardedHeaders = number & { readonly __tsonic_type_Microsoft_AspNetCore_HttpOverrides_ForwardedHeaders: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ForwardedHeaders: {
+    readonly None: ForwardedHeaders;
+    readonly XForwardedFor: ForwardedHeaders;
+    readonly XForwardedHost: ForwardedHeaders;
+    readonly XForwardedProto: ForwardedHeaders;
+    readonly XForwardedPrefix: ForwardedHeaders;
+    readonly All: ForwardedHeaders;
+};
 
 
 export interface CertificateForwardingMiddleware$instance {

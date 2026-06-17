@@ -15,54 +15,58 @@ import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/i
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Attribute, Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum HttpLoggingFields {
-    None = 0,
-    RequestPath = 1,
-    RequestQuery = 2,
-    RequestProtocol = 4,
-    RequestMethod = 8,
-    RequestScheme = 16,
-    ResponseStatusCode = 32,
-    RequestHeaders = 64,
-    ResponseHeaders = 128,
-    RequestTrailers = 256,
-    ResponseTrailers = 512,
-    RequestBody = 1024,
-    ResponseBody = 2048,
-    Duration = 4096,
-    RequestProperties = 29,
-    RequestPropertiesAndHeaders = 93,
-    ResponsePropertiesAndHeaders = 160,
-    Request = 1117,
-    Response = 2208,
-    All = 7421
-}
+export type HttpLoggingFields = number & { readonly __tsonic_type_Microsoft_AspNetCore_HttpLogging_HttpLoggingFields: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const HttpLoggingFields: {
+    readonly None: HttpLoggingFields;
+    readonly RequestPath: HttpLoggingFields;
+    readonly RequestQuery: HttpLoggingFields;
+    readonly RequestProtocol: HttpLoggingFields;
+    readonly RequestMethod: HttpLoggingFields;
+    readonly RequestScheme: HttpLoggingFields;
+    readonly ResponseStatusCode: HttpLoggingFields;
+    readonly RequestHeaders: HttpLoggingFields;
+    readonly ResponseHeaders: HttpLoggingFields;
+    readonly RequestTrailers: HttpLoggingFields;
+    readonly ResponseTrailers: HttpLoggingFields;
+    readonly RequestBody: HttpLoggingFields;
+    readonly ResponseBody: HttpLoggingFields;
+    readonly Duration: HttpLoggingFields;
+    readonly RequestProperties: HttpLoggingFields;
+    readonly RequestPropertiesAndHeaders: HttpLoggingFields;
+    readonly ResponsePropertiesAndHeaders: HttpLoggingFields;
+    readonly Request: HttpLoggingFields;
+    readonly Response: HttpLoggingFields;
+    readonly All: HttpLoggingFields;
+};
 
 
-export enum W3CLoggingFields {
-    None = 0,
-    Date = 1,
-    Time = 2,
-    ClientIpAddress = 4,
-    UserName = 8,
-    ServerName = 16,
-    ServerIpAddress = 32,
-    ServerPort = 64,
-    Method = 128,
-    UriStem = 256,
-    UriQuery = 512,
-    ProtocolStatus = 1024,
-    TimeTaken = 2048,
-    ProtocolVersion = 4096,
-    Host = 8192,
-    UserAgent = 16384,
-    Cookie = 32768,
-    Referer = 65536,
-    ConnectionInfoFields = 100,
-    RequestHeaders = 90112,
-    Request = 95104,
-    All = 131071
-}
+export type W3CLoggingFields = number & { readonly __tsonic_type_Microsoft_AspNetCore_HttpLogging_W3CLoggingFields: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const W3CLoggingFields: {
+    readonly None: W3CLoggingFields;
+    readonly Date: W3CLoggingFields;
+    readonly Time: W3CLoggingFields;
+    readonly ClientIpAddress: W3CLoggingFields;
+    readonly UserName: W3CLoggingFields;
+    readonly ServerName: W3CLoggingFields;
+    readonly ServerIpAddress: W3CLoggingFields;
+    readonly ServerPort: W3CLoggingFields;
+    readonly Method: W3CLoggingFields;
+    readonly UriStem: W3CLoggingFields;
+    readonly UriQuery: W3CLoggingFields;
+    readonly ProtocolStatus: W3CLoggingFields;
+    readonly TimeTaken: W3CLoggingFields;
+    readonly ProtocolVersion: W3CLoggingFields;
+    readonly Host: W3CLoggingFields;
+    readonly UserAgent: W3CLoggingFields;
+    readonly Cookie: W3CLoggingFields;
+    readonly Referer: W3CLoggingFields;
+    readonly ConnectionInfoFields: W3CLoggingFields;
+    readonly RequestHeaders: W3CLoggingFields;
+    readonly Request: W3CLoggingFields;
+    readonly All: W3CLoggingFields;
+};
 
 
 export interface IHttpLoggingInterceptor$instance {
@@ -74,11 +78,12 @@ export interface IHttpLoggingInterceptor$instance {
 
 export type IHttpLoggingInterceptor = IHttpLoggingInterceptor$instance;
 
-export interface HttpLoggingAttribute$instance extends Attribute {
+export interface HttpLoggingAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_HttpLogging_HttpLoggingAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
-    IsRequestBodyLogLimitSet: boolean;
-    IsResponseBodyLogLimitSet: boolean;
+    readonly IsRequestBodyLogLimitSet: boolean;
+    readonly IsResponseBodyLogLimitSet: boolean;
     readonly LoggingFields: HttpLoggingFields;
     RequestBodyLogLimit: int;
     ResponseBodyLogLimit: int;
@@ -138,8 +143,8 @@ export type HttpLoggingOptions = HttpLoggingOptions$instance;
 export interface MediaTypeOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_HttpLogging_MediaTypeOptions: never;
 
-    AddBinary(mediaType: MediaTypeHeaderValue): void;
     AddBinary(contentType: string): void;
+    AddBinary(mediaType: MediaTypeHeaderValue): void;
     AddText(contentType: string): void;
     AddText(contentType: string, encoding: Encoding): void;
     Clear(): void;

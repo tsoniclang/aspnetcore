@@ -66,12 +66,12 @@ export const DirectoryBrowserMiddleware: {
 
 export type DirectoryBrowserMiddleware = DirectoryBrowserMiddleware$instance;
 
-export interface FileExtensionContentTypeProvider$instance extends IContentTypeProvider$instance {
+export interface FileExtensionContentTypeProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider: never;
 
-    Mappings: IDictionary_2<System_Internal.String, System_Internal.String>;
+    readonly Mappings: IDictionary_2<System_Internal.String, System_Internal.String>;
     TryGetContentType(subpath: string, contentType: string): boolean;
 }
 
@@ -89,7 +89,7 @@ export interface __FileExtensionContentTypeProvider$views {
 export type FileExtensionContentTypeProvider = FileExtensionContentTypeProvider$instance & __FileExtensionContentTypeProvider$views;
 
 
-export interface HtmlDirectoryFormatter$instance extends IDirectoryFormatter$instance {
+export interface HtmlDirectoryFormatter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_HtmlDirectoryFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter: never;

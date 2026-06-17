@@ -11,35 +11,41 @@ import type { SequenceReader_1 } from "@tsonic/dotnet/System.Buffers/internal/in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, ReadOnlySpan_1, SByte, Span_1, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum HttpMethod {
-    Get = 0,
-    Put = 1,
-    Delete = 2,
-    Post = 3,
-    Head = 4,
-    Trace = 5,
-    Patch = 6,
-    Connect = 7,
-    Options = 8,
-    Custom = 9,
-    None = 255
-}
+export type HttpMethod = number & { readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpMethod: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const HttpMethod: {
+    readonly Get: HttpMethod;
+    readonly Put: HttpMethod;
+    readonly Delete: HttpMethod;
+    readonly Post: HttpMethod;
+    readonly Head: HttpMethod;
+    readonly Trace: HttpMethod;
+    readonly Patch: HttpMethod;
+    readonly Connect: HttpMethod;
+    readonly Options: HttpMethod;
+    readonly Custom: HttpMethod;
+    readonly None: HttpMethod;
+};
 
 
-export enum HttpScheme {
-    Unknown = -1,
-    Http = 0,
-    Https = 1
-}
+export type HttpScheme = number & { readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpScheme: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const HttpScheme: {
+    readonly Unknown: HttpScheme;
+    readonly Http: HttpScheme;
+    readonly Https: HttpScheme;
+};
 
 
-export enum HttpVersion {
-    Unknown = -1,
-    Http10 = 0,
-    Http11 = 1,
-    Http2 = 2,
-    Http3 = 3
-}
+export type HttpVersion = number & { readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpVersion: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const HttpVersion: {
+    readonly Unknown: HttpVersion;
+    readonly Http10: HttpVersion;
+    readonly Http11: HttpVersion;
+    readonly Http2: HttpVersion;
+    readonly Http3: HttpVersion;
+};
 
 
 export interface IHttpHeadersHandler$instance {
@@ -47,8 +53,8 @@ export interface IHttpHeadersHandler$instance {
 
     OnHeader(name: ReadOnlySpan_1<System_Internal.Byte>, value: ReadOnlySpan_1<System_Internal.Byte>): void;
     OnHeadersComplete(endStream: boolean): void;
-    OnStaticIndexedHeader(index: int, value: ReadOnlySpan_1<System_Internal.Byte>): void;
     OnStaticIndexedHeader(index: int): void;
+    OnStaticIndexedHeader(index: int, value: ReadOnlySpan_1<System_Internal.Byte>): void;
 }
 
 
@@ -65,6 +71,7 @@ export type IHttpRequestLineHandler = IHttpRequestLineHandler$instance;
 
 export interface HttpVersionAndMethod$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpVersionAndMethod: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Method: HttpMethod;
     readonly MethodEnd: int;
@@ -81,6 +88,7 @@ export type HttpVersionAndMethod = HttpVersionAndMethod$instance;
 
 export interface TargetOffsetPathLength$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_TargetOffsetPathLength: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly IsEncoded: boolean;
     readonly Length: int;
@@ -95,7 +103,7 @@ export const TargetOffsetPathLength: {
 
 export type TargetOffsetPathLength = TargetOffsetPathLength$instance;
 
-export interface HttpParser_1$instance<TRequestHandler extends unknown & IHttpHeadersHandler & IHttpRequestLineHandler> {
+export interface HttpParser_1$instance<TRequestHandler extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler: never } & { readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler: never }> {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpParser_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpParser_1: never;
@@ -106,9 +114,9 @@ export interface HttpParser_1$instance<TRequestHandler extends unknown & IHttpHe
 
 
 export const HttpParser_1: {
-    new<TRequestHandler extends unknown & IHttpHeadersHandler & IHttpRequestLineHandler>(): HttpParser_1<TRequestHandler>;
-    new<TRequestHandler extends unknown & IHttpHeadersHandler & IHttpRequestLineHandler>(showErrorDetails: boolean): HttpParser_1<TRequestHandler>;
+    new<TRequestHandler extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler: never } & { readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler: never }>(): HttpParser_1<TRequestHandler>;
+    new<TRequestHandler extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler: never } & { readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler: never }>(showErrorDetails: boolean): HttpParser_1<TRequestHandler>;
 };
 
 
-export type HttpParser_1<TRequestHandler extends unknown & IHttpHeadersHandler & IHttpRequestLineHandler> = HttpParser_1$instance<TRequestHandler>;
+export type HttpParser_1<TRequestHandler extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler: never } & { readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler: never }> = HttpParser_1$instance<TRequestHandler>;

@@ -1604,19 +1604,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.InputFormatter::.ctor():void",
-            "metadataToken": 100666102,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatter",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext",
@@ -2436,19 +2424,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter::.ctor():void",
-            "metadataToken": 100666142,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext",
@@ -2565,19 +2541,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext::.ctor(Microsoft.AspNetCore.Http.HttpContext):void",
-            "metadataToken": 100663834,
-            "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):void",
-            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext",
@@ -3346,26 +3310,6 @@
             "isExtensionMethod": false
           },
           {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter::SelectCharacterEncoding(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext):System.Text.Encoding",
-            "targetName": "SelectCharacterEncoding",
-            "metadataToken": 100666161,
-            "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext):System.Text.Encoding",
-            "normalizedSignature": "SelectCharacterEncoding|(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext):System.Text.Encoding|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
-            "isExtensionMethod": false
-          },
-          {
             "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter::CanRead(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext):System.Boolean",
             "targetName": "CanRead",
             "metadataToken": 100663805,
@@ -3450,46 +3394,9 @@
             "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
           }
         ],
-        "fields": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter::UTF8EncodingWithoutBOMSystem.Text.Encoding",
-            "targetName": "UTF8EncodingWithoutBOM",
-            "metadataToken": 67109779,
-            "normalizedSignature": "UTF8EncodingWithoutBOM|System.Text.Encoding|static=true|const=false",
-            "isStatic": true,
-            "isReadOnly": true,
-            "isLiteral": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter::UTF16EncodingLittleEndianSystem.Text.Encoding",
-            "targetName": "UTF16EncodingLittleEndian",
-            "metadataToken": 67109780,
-            "normalizedSignature": "UTF16EncodingLittleEndian|System.Text.Encoding|static=true|const=false",
-            "isStatic": true,
-            "isReadOnly": true,
-            "isLiteral": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ],
+        "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter::.ctor():void",
-            "metadataToken": 100666162,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
@@ -3684,19 +3591,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter::.ctor():void",
-            "metadataToken": 100666164,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",

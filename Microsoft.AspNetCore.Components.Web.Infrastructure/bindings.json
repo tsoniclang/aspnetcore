@@ -45,26 +45,6 @@
             "isExtensionMethod": false
           },
           {
-            "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::SetRootComponentParameters(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void",
-            "targetName": "SetRootComponentParameters",
-            "metadataToken": 100663794,
-            "canonicalSignature": "(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void",
-            "normalizedSignature": "SetRootComponentParameters|(System.Int32,System.Int32,System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions):System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 4,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-            "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
-            "isExtensionMethod": false
-          },
-          {
             "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop::RemoveRootComponent(System.Int32):System.Void",
             "targetName": "RemoveRootComponent",
             "metadataToken": 100663795,

@@ -8,7 +8,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 // Import types from other namespaces
 import * as Microsoft_JSInterop_Internal from "../../Microsoft.JSInterop/internal/index.js";
-import type { IJSInProcessObjectReference, IJSObjectReference, IJSStreamReference, JSInProcessRuntime, JSRuntime } from "../../Microsoft.JSInterop/internal/index.js";
+import type { IJSInProcessObjectReference, IJSObjectReference, IJSStreamReference } from "../../Microsoft.JSInterop/internal/index.js";
 import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
 import type { Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
 import type { ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
@@ -16,8 +16,9 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { IAsyncDisposable, IDisposable, Int64, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface JSInProcessObjectReference$instance extends JSObjectReference$instance, Microsoft_JSInterop_Internal.IJSInProcessObjectReference$instance {
+export interface JSInProcessObjectReference$instance extends JSObjectReference$instance {
     readonly __tsonic_type_Microsoft_JSInterop_Implementation_JSInProcessObjectReference: never;
+    readonly __tsonic_type_Microsoft_JSInterop_Implementation_JSObjectReference: never;
 
     readonly __tsonic_iface_Microsoft_JSInterop_IJSInProcessObjectReference: never;
     readonly __tsonic_iface_Microsoft_JSInterop_IJSObjectReference: never;
@@ -33,7 +34,7 @@ export interface JSInProcessObjectReference$instance extends JSObjectReference$i
 }
 
 
-export const JSInProcessObjectReference: (abstract new(jsRuntime: JSInProcessRuntime, id: long) => JSInProcessObjectReference) & {
+export const JSInProcessObjectReference: {
 };
 
 
@@ -45,7 +46,7 @@ export interface __JSInProcessObjectReference$views {
 export type JSInProcessObjectReference = JSInProcessObjectReference$instance & __JSInProcessObjectReference$views;
 
 
-export interface JSObjectReference$instance extends Microsoft_JSInterop_Internal.IJSObjectReference$instance {
+export interface JSObjectReference$instance {
     readonly __tsonic_type_Microsoft_JSInterop_Implementation_JSObjectReference: never;
 
     readonly __tsonic_iface_Microsoft_JSInterop_IJSObjectReference: never;
@@ -63,7 +64,7 @@ export interface JSObjectReference$instance extends Microsoft_JSInterop_Internal
 }
 
 
-export const JSObjectReference: (abstract new(jsRuntime: JSRuntime, id: long) => JSObjectReference) & {
+export const JSObjectReference: {
 };
 
 
@@ -74,7 +75,8 @@ export interface __JSObjectReference$views {
 export type JSObjectReference = JSObjectReference$instance & __JSObjectReference$views;
 
 
-export interface JSStreamReference$instance extends JSObjectReference$instance, Microsoft_JSInterop_Internal.IJSObjectReference$instance, Microsoft_JSInterop_Internal.IJSStreamReference$instance {
+export interface JSStreamReference$instance extends JSObjectReference$instance {
+    readonly __tsonic_type_Microsoft_JSInterop_Implementation_JSObjectReference: never;
     readonly __tsonic_type_Microsoft_JSInterop_Implementation_JSStreamReference: never;
 
     readonly __tsonic_iface_Microsoft_JSInterop_IJSObjectReference: never;

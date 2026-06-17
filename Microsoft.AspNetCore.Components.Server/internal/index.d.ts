@@ -44,7 +44,7 @@ export const CircuitOptions: {
 
 export type CircuitOptions = CircuitOptions$instance;
 
-export interface CircuitRootComponentOptions$instance extends Microsoft_AspNetCore_Components_Web_Internal.IJSComponentConfiguration$instance {
+export interface CircuitRootComponentOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_CircuitRootComponentOptions: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Web_IJSComponentConfiguration: never;
@@ -66,8 +66,10 @@ export interface __CircuitRootComponentOptions$views {
 export type CircuitRootComponentOptions = CircuitRootComponentOptions$instance & __CircuitRootComponentOptions$views;
 
 
-export interface RevalidatingServerAuthenticationStateProvider$instance extends ServerAuthenticationStateProvider$instance, Microsoft_AspNetCore_Components_Authorization_Internal.IHostEnvironmentAuthenticationStateProvider$instance, System_Internal.IDisposable {
+export interface RevalidatingServerAuthenticationStateProvider$instance extends ServerAuthenticationStateProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateProvider: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_RevalidatingServerAuthenticationStateProvider: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ServerAuthenticationStateProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -89,12 +91,13 @@ export interface __RevalidatingServerAuthenticationStateProvider$views {
 export type RevalidatingServerAuthenticationStateProvider = RevalidatingServerAuthenticationStateProvider$instance & __RevalidatingServerAuthenticationStateProvider$views;
 
 
-export interface ServerAuthenticationStateProvider$instance extends AuthenticationStateProvider, Microsoft_AspNetCore_Components_Authorization_Internal.IHostEnvironmentAuthenticationStateProvider$instance {
+export interface ServerAuthenticationStateProvider$instance extends Microsoft_AspNetCore_Components_Authorization_Internal.AuthenticationStateProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateProvider: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ServerAuthenticationStateProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider: never;
 
-    GetAuthenticationStateAsync(): Task_1<AuthenticationState>;
+    GetAuthenticationStateAsync: Microsoft_AspNetCore_Components_Authorization_Internal.AuthenticationStateProvider$instance["GetAuthenticationStateAsync"] & (() => Task_1<AuthenticationState>);
     SetAuthenticationState(authenticationStateTask: Task_1<AuthenticationState>): void;
 }
 

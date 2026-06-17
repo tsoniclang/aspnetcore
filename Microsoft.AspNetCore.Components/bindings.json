@@ -2374,19 +2374,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.CascadingParameterAttributeBase::.ctor():void",
-            "metadataToken": 100663739,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.CascadingParameterAttributeBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.CascadingTypeParameterAttribute",
@@ -2947,26 +2935,6 @@
             "isExtensionMethod": false
           },
           {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase::StateHasChanged():System.Void",
-            "targetName": "StateHasChanged",
-            "metadataToken": 100663802,
-            "canonicalSignature": "():System.Void",
-            "normalizedSignature": "StateHasChanged|():System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 0,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.ComponentBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components",
-            "isExtensionMethod": false
-          },
-          {
             "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase::ShouldRender():System.Boolean",
             "targetName": "ShouldRender",
             "metadataToken": 100663803,
@@ -3019,66 +2987,6 @@
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.ComponentBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase::InvokeAsync(System.Action):System.Threading.Tasks.Task",
-            "targetName": "InvokeAsync",
-            "metadataToken": 100663806,
-            "canonicalSignature": "(System.Action):System.Threading.Tasks.Task",
-            "normalizedSignature": "InvokeAsync|(System.Action):System.Threading.Tasks.Task|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.ComponentBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase::InvokeAsync(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task",
-            "targetName": "InvokeAsync",
-            "metadataToken": 100663807,
-            "canonicalSignature": "(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task",
-            "normalizedSignature": "InvokeAsync|(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.ComponentBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase::DispatchExceptionAsync(System.Exception):System.Threading.Tasks.Task",
-            "targetName": "DispatchExceptionAsync",
-            "metadataToken": 100663808,
-            "canonicalSignature": "(System.Exception):System.Threading.Tasks.Task",
-            "normalizedSignature": "DispatchExceptionAsync|(System.Exception):System.Threading.Tasks.Task|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
             "isOverride": false,
             "isSealed": false,
             "visibility": "Protected",
@@ -3191,65 +3099,7 @@
             "sourceInterface": "Microsoft.AspNetCore.Components.IComponent"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase::RendererInfo:Microsoft.AspNetCore.Components.RendererInfo",
-            "targetName": "RendererInfo",
-            "metadataToken": 385876065,
-            "canonicalSignature": ":Microsoft.AspNetCore.Components.RendererInfo",
-            "normalizedSignature": "RendererInfo|:Microsoft.AspNetCore.Components.RendererInfo|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.ComponentBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase::Assets:Microsoft.AspNetCore.Components.ResourceAssetCollection",
-            "targetName": "Assets",
-            "metadataToken": 385876066,
-            "canonicalSignature": ":Microsoft.AspNetCore.Components.ResourceAssetCollection",
-            "normalizedSignature": "Assets|:Microsoft.AspNetCore.Components.ResourceAssetCollection|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.ComponentBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase::AssignedRenderMode:Microsoft.AspNetCore.Components.IComponentRenderMode",
-            "targetName": "AssignedRenderMode",
-            "metadataToken": 385876067,
-            "canonicalSignature": ":Microsoft.AspNetCore.Components.IComponentRenderMode",
-            "normalizedSignature": "AssignedRenderMode|:Microsoft.AspNetCore.Components.IComponentRenderMode|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.ComponentBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
         "constructors": [
@@ -3401,44 +3251,12 @@
             "ownerQualifiedName": "Microsoft.AspNetCore.Components.Dispatcher",
             "ownerIdentity": "Microsoft.AspNetCore.Components",
             "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Dispatcher::OnUnhandledException(System.UnhandledExceptionEventArgs):System.Void",
-            "targetName": "OnUnhandledException",
-            "metadataToken": 100663867,
-            "canonicalSignature": "(System.UnhandledExceptionEventArgs):System.Void",
-            "normalizedSignature": "OnUnhandledException|(System.UnhandledExceptionEventArgs):System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Dispatcher",
-            "ownerIdentity": "Microsoft.AspNetCore.Components",
-            "isExtensionMethod": false
           }
         ],
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Dispatcher::.ctor():void",
-            "metadataToken": 100663868,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Dispatcher",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.DynamicComponent",
@@ -3589,12 +3407,12 @@
             "targetName": "Instance",
             "metadataToken": 385876076,
             "canonicalSignature": ":System.Object",
-            "normalizedSignature": "Instance|:System.Object|static=false|accessor=getset",
+            "normalizedSignature": "Instance|:System.Object|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -3672,19 +3490,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ElementReferenceContext::.ctor():void",
-            "metadataToken": 100663888,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.ElementReferenceContext",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ErrorBoundaryBase",
@@ -3902,42 +3708,11 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.AspNetCore.Components.ErrorBoundaryBase",
             "ownerIdentity": "Microsoft.AspNetCore.Components"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ErrorBoundaryBase::CurrentException:System.Exception",
-            "targetName": "CurrentException",
-            "metadataToken": 385876082,
-            "canonicalSignature": ":System.Exception",
-            "normalizedSignature": "CurrentException|:System.Exception|static=false|accessor=getset",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.ErrorBoundaryBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
           }
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ErrorBoundaryBase::.ctor():void",
-            "metadataToken": 100663901,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.ErrorBoundaryBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.EventCallbackFactory",
@@ -4754,12 +4529,12 @@
             "targetName": "LayoutType",
             "metadataToken": 385876094,
             "canonicalSignature": ":System.Type",
-            "normalizedSignature": "LayoutType|:System.Type|static=false|accessor=getset",
+            "normalizedSignature": "LayoutType|:System.Type|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -4943,19 +4718,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.LayoutComponentBase::.ctor():void",
-            "metadataToken": 100664046,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.LayoutComponentBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.LayoutView",
@@ -5373,26 +5136,6 @@
             "isExtensionMethod": false
           },
           {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.NavigationManager::Initialize(System.String,System.String):System.Void",
-            "targetName": "Initialize",
-            "metadataToken": 100664083,
-            "canonicalSignature": "(System.String,System.String):System.Void",
-            "normalizedSignature": "Initialize|(System.String,System.String):System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 2,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.NavigationManager",
-            "ownerIdentity": "Microsoft.AspNetCore.Components",
-            "isExtensionMethod": false
-          },
-          {
             "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.NavigationManager::EnsureInitialized():System.Void",
             "targetName": "EnsureInitialized",
             "metadataToken": 100664084,
@@ -5448,46 +5191,6 @@
             "isOverride": false,
             "isSealed": false,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.NavigationManager",
-            "ownerIdentity": "Microsoft.AspNetCore.Components",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.NavigationManager::NotifyLocationChanged(System.Boolean):System.Void",
-            "targetName": "NotifyLocationChanged",
-            "metadataToken": 100664089,
-            "canonicalSignature": "(System.Boolean):System.Void",
-            "normalizedSignature": "NotifyLocationChanged|(System.Boolean):System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.NavigationManager",
-            "ownerIdentity": "Microsoft.AspNetCore.Components",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.NavigationManager::NotifyLocationChangingAsync(System.String,System.String,System.Boolean):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "targetName": "NotifyLocationChangingAsync",
-            "metadataToken": 100664090,
-            "canonicalSignature": "(System.String,System.String,System.Boolean):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "normalizedSignature": "NotifyLocationChangingAsync|(System.String,System.String,System.Boolean):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 3,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.AspNetCore.Components.NavigationManager",
             "ownerIdentity": "Microsoft.AspNetCore.Components",
             "isExtensionMethod": false
@@ -5559,12 +5262,12 @@
             "targetName": "BaseUri",
             "metadataToken": 385876100,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "BaseUri|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "BaseUri|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -5578,12 +5281,12 @@
             "targetName": "Uri",
             "metadataToken": 385876101,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "Uri|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "Uri|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -5597,12 +5300,12 @@
             "targetName": "HistoryEntryState",
             "metadataToken": 385876102,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "HistoryEntryState|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "HistoryEntryState|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -5635,19 +5338,7 @@
             "ownerIdentity": "Microsoft.AspNetCore.Components"
           }
         ],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.NavigationManager::.ctor():void",
-            "metadataToken": 100664099,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.NavigationManager",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.OwningComponentBase",
@@ -5812,61 +5503,10 @@
             "sourceInterface": "Microsoft.AspNetCore.Components.IHandleAfterRender"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.OwningComponentBase::IsDisposed:System.Boolean",
-            "targetName": "IsDisposed",
-            "metadataToken": 385876107,
-            "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "IsDisposed|:System.Boolean|static=false|accessor=getset",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.OwningComponentBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.OwningComponentBase::ScopedServices:System.IServiceProvider",
-            "targetName": "ScopedServices",
-            "metadataToken": 385876108,
-            "canonicalSignature": ":System.IServiceProvider",
-            "normalizedSignature": "ScopedServices|:System.IServiceProvider|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.OwningComponentBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.OwningComponentBase::.ctor():void",
-            "metadataToken": 100664166,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.OwningComponentBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.OwningComponentBase`1",
@@ -5994,42 +5634,10 @@
             "sourceInterface": "Microsoft.AspNetCore.Components.IHandleAfterRender"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.OwningComponentBase`1::Service:TService",
-            "targetName": "Service",
-            "metadataToken": 385876109,
-            "canonicalSignature": ":TService",
-            "normalizedSignature": "Service|:TService|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.OwningComponentBase`1",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.OwningComponentBase`1::.ctor():void",
-            "metadataToken": 100664168,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.OwningComponentBase`1",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ParameterAttribute",
@@ -6281,19 +5889,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.PersistentComponentStateSerializer`1::.ctor():void",
-            "metadataToken": 100664227,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.PersistentComponentStateSerializer`1",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.PersistentStateAttribute",
@@ -6478,19 +6074,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.RenderModeAttribute::.ctor():void",
-            "metadataToken": 100664278,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.RenderModeAttribute",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ResourceAsset",

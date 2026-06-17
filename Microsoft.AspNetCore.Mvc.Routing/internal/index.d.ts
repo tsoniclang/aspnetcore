@@ -87,14 +87,15 @@ export interface DynamicRouteValueTransformer$instance {
 }
 
 
-export const DynamicRouteValueTransformer: (abstract new() => DynamicRouteValueTransformer) & {
+export const DynamicRouteValueTransformer: {
 };
 
 
 export type DynamicRouteValueTransformer = DynamicRouteValueTransformer$instance;
 
-export interface HttpMethodAttribute$instance extends Attribute, IActionHttpMethodProvider$instance {
+export interface HttpMethodAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_HttpMethodAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
@@ -119,7 +120,7 @@ export interface __HttpMethodAttribute$views {
 export type HttpMethodAttribute = HttpMethodAttribute$instance & __HttpMethodAttribute$views;
 
 
-export interface KnownRouteValueConstraint$instance extends Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance {
+export interface KnownRouteValueConstraint$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_KnownRouteValueConstraint: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
@@ -141,8 +142,9 @@ export interface __KnownRouteValueConstraint$views {
 export type KnownRouteValueConstraint = KnownRouteValueConstraint$instance & __KnownRouteValueConstraint$views;
 
 
-export interface RouteValueAttribute$instance extends Attribute, IRouteValueProvider$instance {
+export interface RouteValueAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_RouteValueAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider: never;
 
@@ -151,7 +153,7 @@ export interface RouteValueAttribute$instance extends Attribute, IRouteValueProv
 }
 
 
-export const RouteValueAttribute: (abstract new(routeKey: string, routeValue: string) => RouteValueAttribute) & {
+export const RouteValueAttribute: {
 };
 
 
@@ -187,15 +189,16 @@ export const UrlActionContext: {
 
 export type UrlActionContext = UrlActionContext$instance;
 
-export interface UrlHelper$instance extends UrlHelperBase$instance, Microsoft_AspNetCore_Mvc_Internal.IUrlHelper$instance {
+export interface UrlHelper$instance extends UrlHelperBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlHelperBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IUrlHelper: never;
 
-    Action(actionContext: UrlActionContext): string | null;
-    GenerateUrl3(protocol: string | null, host: string | null, pathData: VirtualPathData | null, fragment: string | null): string | null;
+    Action: UrlHelperBase$instance["Action"] & ((actionContext: UrlActionContext) => string | null);
+    GenerateUrl(protocol: string | null, host: string | null, pathData: VirtualPathData | null, fragment: string | null): string | null;
     GetVirtualPathData(routeName: string | null, values: RouteValueDictionary): VirtualPathData | null;
-    RouteUrl(routeContext: UrlRouteContext): string | null;
+    RouteUrl: UrlHelperBase$instance["RouteUrl"] & ((routeContext: UrlRouteContext) => string | null);
 }
 
 
@@ -211,7 +214,7 @@ export interface __UrlHelper$views {
 export type UrlHelper = UrlHelper$instance & __UrlHelper$views;
 
 
-export interface UrlHelperBase$instance extends Microsoft_AspNetCore_Mvc_Internal.IUrlHelper$instance {
+export interface UrlHelperBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlHelperBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IUrlHelper: never;
@@ -225,7 +228,7 @@ export interface UrlHelperBase$instance extends Microsoft_AspNetCore_Mvc_Interna
 }
 
 
-export const UrlHelperBase: (abstract new(actionContext: ActionContext) => UrlHelperBase) & {
+export const UrlHelperBase: {
 };
 
 
@@ -236,7 +239,7 @@ export interface __UrlHelperBase$views {
 export type UrlHelperBase = UrlHelperBase$instance & __UrlHelperBase$views;
 
 
-export interface UrlHelperFactory$instance extends IUrlHelperFactory$instance {
+export interface UrlHelperFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlHelperFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory: never;

@@ -10,7 +10,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Cross-namespace type imports for constraints
-import type { IModelMetadataProvider, ModelMetadata, ModelStateDictionary } from './Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js';
+import type { IModelMetadataProvider, ModelMetadata } from './Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js';
 import type { ActionContext } from './Microsoft.AspNetCore.Mvc/internal/index.js';
 import type { ICollection, IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList, KeyValuePair } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';

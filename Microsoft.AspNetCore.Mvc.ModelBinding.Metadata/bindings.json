@@ -3260,46 +3260,7 @@
             "sourceInterface": "Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider::DetailsProvider:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ICompositeMetadataDetailsProvider",
-            "targetName": "DetailsProvider",
-            "metadataToken": 385876480,
-            "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ICompositeMetadataDetailsProvider",
-            "normalizedSignature": "DetailsProvider|:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ICompositeMetadataDetailsProvider|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider::ModelBindingMessageProvider:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
-            "targetName": "ModelBindingMessageProvider",
-            "metadataToken": 385876481,
-            "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
-            "normalizedSignature": "ModelBindingMessageProvider|:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
         "constructors": [
@@ -4260,19 +4221,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider::.ctor():void",
-            "metadataToken": 100663782,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.SystemTextJsonValidationMetadataProvider",

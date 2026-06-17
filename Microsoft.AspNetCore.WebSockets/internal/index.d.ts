@@ -17,15 +17,12 @@ import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export interface ExtendedWebSocketAcceptContext$instance extends WebSocketAcceptContext {
+export interface ExtendedWebSocketAcceptContext$instance extends Microsoft_AspNetCore_Http_Internal.WebSocketAcceptContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_WebSocketAcceptContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_WebSockets_ExtendedWebSocketAcceptContext: never;
 
-    get KeepAliveInterval(): Nullable_1<TimeSpan>;
-    set KeepAliveInterval(value: Nullable_1<TimeSpan> | TimeSpan);
     get ReceiveBufferSize(): Nullable_1<System_Internal.Int32>;
     set ReceiveBufferSize(value: Nullable_1<System_Internal.Int32> | int);
-    get SubProtocol(): string | null;
-    set SubProtocol(value: string | null);
 }
 
 

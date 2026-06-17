@@ -102,8 +102,8 @@ export type IAuthorizationRequirementData = IAuthorizationRequirementData$instan
 export interface IAuthorizationService$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationService: never;
 
-    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown | null, requirements: IEnumerable_1<IAuthorizationRequirement>): Task_1<AuthorizationResult>;
     AuthorizeAsync(user: ClaimsPrincipal, resource: unknown | null, policyName: string): Task_1<AuthorizationResult>;
+    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown | null, requirements: IEnumerable_1<IAuthorizationRequirement>): Task_1<AuthorizationResult>;
 }
 
 
@@ -123,8 +123,9 @@ export interface IAuthorizeData$instance {
 
 export type IAuthorizeData = IAuthorizeData$instance;
 
-export interface AllowAnonymousAttribute$instance extends Attribute, IAllowAnonymous {
+export interface AllowAnonymousAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_AllowAnonymousAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAllowAnonymous: never;
 
@@ -143,12 +144,12 @@ export interface AuthorizationBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_AuthorizationBuilder: never;
 
     readonly Services: IServiceCollection;
-    AddDefaultPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
     AddDefaultPolicy(name: string, configurePolicy: Action_1<AuthorizationPolicyBuilder>): AuthorizationBuilder;
-    AddFallbackPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
+    AddDefaultPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
     AddFallbackPolicy(name: string, configurePolicy: Action_1<AuthorizationPolicyBuilder>): AuthorizationBuilder;
-    AddPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
+    AddFallbackPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
     AddPolicy(name: string, configurePolicy: Action_1<AuthorizationPolicyBuilder>): AuthorizationBuilder;
+    AddPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
     SetDefaultPolicy(policy: AuthorizationPolicy): AuthorizationBuilder;
     SetFallbackPolicy(policy: AuthorizationPolicy | null): AuthorizationBuilder;
     SetInvokeHandlersAfterFailure(invoke: boolean): AuthorizationBuilder;
@@ -165,9 +166,9 @@ export type AuthorizationBuilder = AuthorizationBuilder$instance;
 export interface AuthorizationFailure$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_AuthorizationFailure: never;
 
-    FailCalled: boolean;
-    FailedRequirements: IEnumerable_1<IAuthorizationRequirement>;
-    FailureReasons: IEnumerable_1<AuthorizationFailureReason>;
+    readonly FailCalled: boolean;
+    readonly FailedRequirements: IEnumerable_1<IAuthorizationRequirement>;
+    readonly FailureReasons: IEnumerable_1<AuthorizationFailureReason>;
 }
 
 
@@ -195,7 +196,7 @@ export const AuthorizationFailureReason: {
 
 export type AuthorizationFailureReason = AuthorizationFailureReason$instance;
 
-export interface AuthorizationHandler_1$instance<TRequirement extends unknown & IAuthorizationRequirement> extends IAuthorizationHandler$instance {
+export interface AuthorizationHandler_1$instance<TRequirement extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never }> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_AuthorizationHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
@@ -205,18 +206,18 @@ export interface AuthorizationHandler_1$instance<TRequirement extends unknown & 
 }
 
 
-export const AuthorizationHandler_1: (abstract new<TRequirement extends unknown & IAuthorizationRequirement>() => AuthorizationHandler_1<TRequirement>) & {
+export const AuthorizationHandler_1: {
 };
 
 
-export interface __AuthorizationHandler_1$views<TRequirement extends unknown & IAuthorizationRequirement> {
+export interface __AuthorizationHandler_1$views<TRequirement extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never }> {
     As_IAuthorizationHandler(): IAuthorizationHandler$instance;
 }
 
-export type AuthorizationHandler_1<TRequirement extends unknown & IAuthorizationRequirement> = AuthorizationHandler_1$instance<TRequirement> & __AuthorizationHandler_1$views<TRequirement>;
+export type AuthorizationHandler_1<TRequirement extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never }> = AuthorizationHandler_1$instance<TRequirement> & __AuthorizationHandler_1$views<TRequirement>;
 
 
-export interface AuthorizationHandler_2$instance<TRequirement extends unknown & IAuthorizationRequirement, TResource extends unknown> extends IAuthorizationHandler$instance {
+export interface AuthorizationHandler_2$instance<TRequirement extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never }, TResource extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_AuthorizationHandler_2: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
@@ -226,15 +227,15 @@ export interface AuthorizationHandler_2$instance<TRequirement extends unknown & 
 }
 
 
-export const AuthorizationHandler_2: (abstract new<TRequirement extends unknown & IAuthorizationRequirement, TResource extends unknown>() => AuthorizationHandler_2<TRequirement, TResource>) & {
+export const AuthorizationHandler_2: {
 };
 
 
-export interface __AuthorizationHandler_2$views<TRequirement extends unknown & IAuthorizationRequirement, TResource extends unknown> {
+export interface __AuthorizationHandler_2$views<TRequirement extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never }, TResource extends unknown> {
     As_IAuthorizationHandler(): IAuthorizationHandler$instance;
 }
 
-export type AuthorizationHandler_2<TRequirement extends unknown & IAuthorizationRequirement, TResource extends unknown> = AuthorizationHandler_2$instance<TRequirement, TResource> & __AuthorizationHandler_2$views<TRequirement, TResource>;
+export type AuthorizationHandler_2<TRequirement extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never }, TResource extends unknown> = AuthorizationHandler_2$instance<TRequirement, TResource> & __AuthorizationHandler_2$views<TRequirement, TResource>;
 
 
 export interface AuthorizationHandlerContext$instance {
@@ -283,8 +284,8 @@ export interface AuthorizationOptions$instance {
     get FallbackPolicy(): AuthorizationPolicy | null;
     set FallbackPolicy(value: AuthorizationPolicy | null);
     InvokeHandlersAfterFailure: boolean;
-    AddPolicy(name: string, policy: AuthorizationPolicy): void;
     AddPolicy(name: string, configurePolicy: Action_1<AuthorizationPolicyBuilder>): void;
+    AddPolicy(name: string, policy: AuthorizationPolicy): void;
     GetPolicy(name: string): AuthorizationPolicy | null;
 }
 
@@ -327,9 +328,9 @@ export interface AuthorizationPolicyBuilder$instance {
     RequireAssertion(handler: Func_2<AuthorizationHandlerContext, System_Internal.Boolean>): AuthorizationPolicyBuilder;
     RequireAssertion(handler: Func_2<AuthorizationHandlerContext, Task_1<System_Internal.Boolean>>): AuthorizationPolicyBuilder;
     RequireAuthenticatedUser(): AuthorizationPolicyBuilder;
+    RequireClaim(claimType: string): AuthorizationPolicyBuilder;
     RequireClaim(claimType: string, ...allowedValues: string[]): AuthorizationPolicyBuilder;
     RequireClaim(claimType: string, allowedValues: IEnumerable_1<System_Internal.String>): AuthorizationPolicyBuilder;
-    RequireClaim(claimType: string): AuthorizationPolicyBuilder;
     RequireRole(...roles: string[]): AuthorizationPolicyBuilder;
     RequireRole(roles: IEnumerable_1<System_Internal.String>): AuthorizationPolicyBuilder;
     RequireUserName(userName: string): AuthorizationPolicyBuilder;
@@ -347,9 +348,8 @@ export type AuthorizationPolicyBuilder = AuthorizationPolicyBuilder$instance;
 export interface AuthorizationResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_AuthorizationResult: never;
 
-    get Failure(): AuthorizationFailure | null;
-    set Failure(value: AuthorizationFailure | null);
-    Succeeded: boolean;
+    readonly Failure: AuthorizationFailure | null;
+    readonly Succeeded: boolean;
 }
 
 
@@ -362,8 +362,9 @@ export const AuthorizationResult: {
 
 export type AuthorizationResult = AuthorizationResult$instance;
 
-export interface AuthorizeAttribute$instance extends Attribute, IAuthorizeData$instance {
+export interface AuthorizeAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_AuthorizeAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizeData: never;
 
@@ -390,7 +391,7 @@ export interface __AuthorizeAttribute$views {
 export type AuthorizeAttribute = AuthorizeAttribute$instance & __AuthorizeAttribute$views;
 
 
-export interface DefaultAuthorizationEvaluator$instance extends IAuthorizationEvaluator$instance {
+export interface DefaultAuthorizationEvaluator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_DefaultAuthorizationEvaluator: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationEvaluator: never;
@@ -411,7 +412,7 @@ export interface __DefaultAuthorizationEvaluator$views {
 export type DefaultAuthorizationEvaluator = DefaultAuthorizationEvaluator$instance & __DefaultAuthorizationEvaluator$views;
 
 
-export interface DefaultAuthorizationHandlerContextFactory$instance extends IAuthorizationHandlerContextFactory$instance {
+export interface DefaultAuthorizationHandlerContextFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_DefaultAuthorizationHandlerContextFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandlerContextFactory: never;
@@ -432,7 +433,7 @@ export interface __DefaultAuthorizationHandlerContextFactory$views {
 export type DefaultAuthorizationHandlerContextFactory = DefaultAuthorizationHandlerContextFactory$instance & __DefaultAuthorizationHandlerContextFactory$views;
 
 
-export interface DefaultAuthorizationHandlerProvider$instance extends IAuthorizationHandlerProvider$instance {
+export interface DefaultAuthorizationHandlerProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_DefaultAuthorizationHandlerProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandlerProvider: never;
@@ -453,7 +454,7 @@ export interface __DefaultAuthorizationHandlerProvider$views {
 export type DefaultAuthorizationHandlerProvider = DefaultAuthorizationHandlerProvider$instance & __DefaultAuthorizationHandlerProvider$views;
 
 
-export interface DefaultAuthorizationPolicyProvider$instance extends IAuthorizationPolicyProvider$instance {
+export interface DefaultAuthorizationPolicyProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_DefaultAuthorizationPolicyProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationPolicyProvider: never;
@@ -482,8 +483,8 @@ export interface DefaultAuthorizationService$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationService: never;
 
-    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown | null, requirements: IEnumerable_1<IAuthorizationRequirement>): Task_1<AuthorizationResult>;
     AuthorizeAsync(user: ClaimsPrincipal, resource: unknown | null, policyName: string): Task_1<AuthorizationResult>;
+    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown | null, requirements: IEnumerable_1<IAuthorizationRequirement>): Task_1<AuthorizationResult>;
 }
 
 

@@ -221,7 +221,7 @@ export interface ITagsMetadata$instance {
 
 export type ITagsMetadata = ITagsMetadata$instance;
 
-export interface AcceptsMetadata$instance extends IAcceptsMetadata$instance {
+export interface AcceptsMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Metadata_AcceptsMetadata: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata: never;

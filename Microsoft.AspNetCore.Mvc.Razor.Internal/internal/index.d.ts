@@ -10,8 +10,9 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Attribute, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface RazorInjectAttribute$instance extends Attribute {
+export interface RazorInjectAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_Internal_RazorInjectAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     get Key(): unknown | null;
     set Key(value: unknown | null);

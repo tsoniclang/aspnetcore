@@ -12,7 +12,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Cross-namespace type imports for constraints
 import type { CookieAuthenticationOptions, CookieValidatePrincipalContext } from './Microsoft.AspNetCore.Authentication.Cookies/internal/index.js';
 import type { AuthenticationBuilder, AuthenticationProperties, AuthenticationScheme, AuthenticationToken, IAuthenticationSchemeProvider, ISystemClock } from './Microsoft.AspNetCore.Authentication/internal/index.js';
-import type { IDataProtectionProvider, IDataProtector } from './Microsoft.AspNetCore.DataProtection/internal/index.js';
+import type { IDataProtectionProvider } from './Microsoft.AspNetCore.DataProtection/internal/index.js';
 import type { HttpContext, IHttpContextAccessor } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { Dictionary, IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Action, Attribute, Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Enum, Exception, Func, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlyMemory, String as ClrString, TimeProvider, TimeSpan, Type, UInt32, Version, Void } from '@tsonic/dotnet/System.js';
@@ -128,6 +128,7 @@ export { IdentityUserRole_1 as IdentityUserRole } from './Microsoft.AspNetCore.I
 export { IdentityUserToken_1 as IdentityUserToken } from './Microsoft.AspNetCore.Identity/internal/index.js';
 export { RoleStoreBase_4 as RoleStoreBase } from './Microsoft.AspNetCore.Identity/internal/index.js';
 export { UserStoreBase_5 as UserStoreBase } from './Microsoft.AspNetCore.Identity/internal/index.js';
+export { UserStoreBase_8 as UserStoreBase_8 } from './Microsoft.AspNetCore.Identity/internal/index.js';
 
 // Multi-arity family value exports (arity-0 constructors/static namespaces)
 export const IdentityRole: typeof Internal.IdentityRole;
@@ -140,16 +141,16 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type IdentityRole<
-  T1 extends unknown & IEquatable<T1> | __ = __,
+  T1 extends (unknown & (IEquatable<Exclude<T1, __>> | number | string | boolean)) | __ = __,
 > =
   [T1] extends [__] ? Internal.IdentityRole :
-  [T1] extends [unknown & IEquatable<T1>] ? Internal.IdentityRole_1<T1> : never;
+  [T1] extends [unknown & (IEquatable<Exclude<T1, __>> | number | string | boolean)] ? Internal.IdentityRole_1<T1> : never;
 
 export type IdentityUser<
-  T1 extends unknown & IEquatable<T1> | __ = __,
+  T1 extends (unknown & (IEquatable<Exclude<T1, __>> | number | string | boolean)) | __ = __,
 > =
   [T1] extends [__] ? Internal.IdentityUser :
-  [T1] extends [unknown & IEquatable<T1>] ? Internal.IdentityUser_1<T1> : never;
+  [T1] extends [unknown & (IEquatable<Exclude<T1, __>> | number | string | boolean)] ? Internal.IdentityUser_1<T1> : never;
 
 export type PasskeyAssertionResult<
   T1 extends (object | null) | __ = __,

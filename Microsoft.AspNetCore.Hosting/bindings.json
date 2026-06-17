@@ -1026,19 +1026,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase::.ctor():void",
-            "metadataToken": 100663725,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Hosting.StartupBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Hosting"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StartupBase`1",

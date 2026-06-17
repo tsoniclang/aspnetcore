@@ -55,7 +55,7 @@ export const SocketConnectionFactoryOptions: {
 
 export type SocketConnectionFactoryOptions = SocketConnectionFactoryOptions$instance;
 
-export interface SocketTransportFactory$instance extends Microsoft_AspNetCore_Connections_Internal.IConnectionListenerFactory$instance, Microsoft_AspNetCore_Connections_Internal.IConnectionListenerFactorySelector$instance {
+export interface SocketTransportFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketTransportFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListenerFactory: never;

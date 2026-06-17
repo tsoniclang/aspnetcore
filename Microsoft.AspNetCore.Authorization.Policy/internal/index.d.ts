@@ -25,7 +25,7 @@ export interface IPolicyEvaluator$instance {
 
 export type IPolicyEvaluator = IPolicyEvaluator$instance;
 
-export interface AuthorizationMiddlewareResultHandler$instance extends Microsoft_AspNetCore_Authorization_Internal.IAuthorizationMiddlewareResultHandler$instance {
+export interface AuthorizationMiddlewareResultHandler$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_Policy_AuthorizationMiddlewareResultHandler: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationMiddlewareResultHandler: never;
@@ -49,11 +49,10 @@ export type AuthorizationMiddlewareResultHandler = AuthorizationMiddlewareResult
 export interface PolicyAuthorizationResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_Policy_PolicyAuthorizationResult: never;
 
-    get AuthorizationFailure(): AuthorizationFailure | null;
-    set AuthorizationFailure(value: AuthorizationFailure | null);
-    Challenged: boolean;
-    Forbidden: boolean;
-    Succeeded: boolean;
+    readonly AuthorizationFailure: AuthorizationFailure | null;
+    readonly Challenged: boolean;
+    readonly Forbidden: boolean;
+    readonly Succeeded: boolean;
 }
 
 
@@ -67,7 +66,7 @@ export const PolicyAuthorizationResult: {
 
 export type PolicyAuthorizationResult = PolicyAuthorizationResult$instance;
 
-export interface PolicyEvaluator$instance extends IPolicyEvaluator$instance {
+export interface PolicyEvaluator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_Policy_PolicyEvaluator: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator: never;

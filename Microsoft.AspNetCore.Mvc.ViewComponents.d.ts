@@ -12,6 +12,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Cross-namespace type imports for constraints
 import type { IHtmlContent } from './Microsoft.AspNetCore.Html/internal/index.js';
 import type { ApplicationPart, ApplicationPartManager, IApplicationFeatureProvider, IApplicationFeatureProvider_1 } from './Microsoft.AspNetCore.Mvc.ApplicationParts/internal/index.js';
+import type { ControllerFeature } from './Microsoft.AspNetCore.Mvc.Controllers/internal/index.js';
 import type { ViewContext } from './Microsoft.AspNetCore.Mvc.Rendering/internal/index.js';
 import type { IViewEngine } from './Microsoft.AspNetCore.Mvc.ViewEngines/internal/index.js';
 import type { IViewBufferScope } from './Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers/internal/index.js';

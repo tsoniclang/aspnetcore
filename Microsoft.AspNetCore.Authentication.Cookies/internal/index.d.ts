@@ -17,7 +17,7 @@ import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/interna
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Func_2, Int32, Nullable_1, Object as ClrObject, String as ClrString, TimeProvider, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
-import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 import type { IOptionsMonitor_1, IPostConfigureOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
@@ -35,24 +35,24 @@ export type ICookieManager = ICookieManager$instance;
 export interface ITicketStore$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_Cookies_ITicketStore: never;
 
-    RemoveAsync(key: string, httpContext: HttpContext, cancellationToken: CancellationToken): Task;
-    RemoveAsync(key: string, cancellationToken: CancellationToken): Task;
     RemoveAsync(key: string): Task;
-    RenewAsync(key: string, ticket: AuthenticationTicket, httpContext: HttpContext, cancellationToken: CancellationToken): Task;
-    RenewAsync(key: string, ticket: AuthenticationTicket, cancellationToken: CancellationToken): Task;
+    RemoveAsync(key: string, cancellationToken: CancellationToken): Task;
+    RemoveAsync(key: string, httpContext: HttpContext, cancellationToken: CancellationToken): Task;
     RenewAsync(key: string, ticket: AuthenticationTicket): Task;
-    RetrieveAsync(key: string, httpContext: HttpContext, cancellationToken: CancellationToken): Task_1<AuthenticationTicket | null>;
-    RetrieveAsync(key: string, cancellationToken: CancellationToken): Task_1<AuthenticationTicket | null>;
+    RenewAsync(key: string, ticket: AuthenticationTicket, cancellationToken: CancellationToken): Task;
+    RenewAsync(key: string, ticket: AuthenticationTicket, httpContext: HttpContext, cancellationToken: CancellationToken): Task;
     RetrieveAsync(key: string): Task_1<AuthenticationTicket | null>;
-    StoreAsync(ticket: AuthenticationTicket, httpContext: HttpContext, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
-    StoreAsync(ticket: AuthenticationTicket, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
+    RetrieveAsync(key: string, cancellationToken: CancellationToken): Task_1<AuthenticationTicket | null>;
+    RetrieveAsync(key: string, httpContext: HttpContext, cancellationToken: CancellationToken): Task_1<AuthenticationTicket | null>;
     StoreAsync(ticket: AuthenticationTicket): Task_1<System_Internal.String>;
+    StoreAsync(ticket: AuthenticationTicket, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
+    StoreAsync(ticket: AuthenticationTicket, httpContext: HttpContext, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
 }
 
 
 export type ITicketStore = ITicketStore$instance;
 
-export interface ChunkingCookieManager$instance extends ICookieManager$instance {
+export interface ChunkingCookieManager$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_ChunkingCookieManager: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_Cookies_ICookieManager: never;
@@ -110,21 +110,24 @@ export const CookieAuthenticationEvents: {
 
 export type CookieAuthenticationEvents = CookieAuthenticationEvents$instance;
 
-export interface CookieAuthenticationHandler$instance extends SignInAuthenticationHandler_1<CookieAuthenticationOptions>, Microsoft_AspNetCore_Authentication_Internal.IAuthenticationSignInHandler$instance {
+export interface CookieAuthenticationHandler$instance extends Microsoft_AspNetCore_Authentication_Internal.SignInAuthenticationHandler_1$instance<CookieAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieAuthenticationHandler: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_SignInAuthenticationHandler_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_SignOutAuthenticationHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
 
-    CreateEventsAsync(): Task_1<unknown>;
+    CreateEventsAsync: Microsoft_AspNetCore_Authentication_Internal.SignInAuthenticationHandler_1$instance<CookieAuthenticationOptions>["CreateEventsAsync"] & (() => Task_1<unknown>);
     FinishResponseAsync(): Task;
-    HandleAuthenticateAsync(): Task_1<AuthenticateResult>;
-    HandleChallengeAsync(properties: AuthenticationProperties): Task;
-    HandleForbiddenAsync(properties: AuthenticationProperties): Task;
-    HandleSignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties | null): Task;
-    HandleSignOutAsync(properties: AuthenticationProperties | null): Task;
-    InitializeHandlerAsync(): Task;
+    HandleAuthenticateAsync: Microsoft_AspNetCore_Authentication_Internal.SignInAuthenticationHandler_1$instance<CookieAuthenticationOptions>["HandleAuthenticateAsync"] & (() => Task_1<AuthenticateResult>);
+    HandleChallengeAsync: Microsoft_AspNetCore_Authentication_Internal.SignInAuthenticationHandler_1$instance<CookieAuthenticationOptions>["HandleChallengeAsync"] & ((properties: AuthenticationProperties) => Task);
+    HandleForbiddenAsync: Microsoft_AspNetCore_Authentication_Internal.SignInAuthenticationHandler_1$instance<CookieAuthenticationOptions>["HandleForbiddenAsync"] & ((properties: AuthenticationProperties) => Task);
+    HandleSignInAsync: Microsoft_AspNetCore_Authentication_Internal.SignInAuthenticationHandler_1$instance<CookieAuthenticationOptions>["HandleSignInAsync"] & ((user: ClaimsPrincipal, properties: AuthenticationProperties | null) => Task);
+    HandleSignOutAsync: Microsoft_AspNetCore_Authentication_Internal.SignInAuthenticationHandler_1$instance<CookieAuthenticationOptions>["HandleSignOutAsync"] & ((properties: AuthenticationProperties | null) => Task);
+    InitializeHandlerAsync: Microsoft_AspNetCore_Authentication_Internal.SignInAuthenticationHandler_1$instance<CookieAuthenticationOptions>["InitializeHandlerAsync"] & (() => Task);
 }
 
 
@@ -142,7 +145,8 @@ export interface __CookieAuthenticationHandler$views {
 export type CookieAuthenticationHandler = CookieAuthenticationHandler$instance & __CookieAuthenticationHandler$views;
 
 
-export interface CookieAuthenticationOptions$instance extends AuthenticationSchemeOptions {
+export interface CookieAuthenticationOptions$instance extends Microsoft_AspNetCore_Authentication_Internal.AuthenticationSchemeOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieAuthenticationOptions: never;
 
     AccessDeniedPath: PathString;
@@ -169,8 +173,11 @@ export const CookieAuthenticationOptions: {
 
 export type CookieAuthenticationOptions = CookieAuthenticationOptions$instance;
 
-export interface CookieSignedInContext$instance extends PrincipalContext_1<CookieAuthenticationOptions> {
+export interface CookieSignedInContext$instance extends Microsoft_AspNetCore_Authentication_Internal.PrincipalContext_1$instance<CookieAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieSignedInContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PrincipalContext_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PropertiesContext_1: never;
 
 }
 
@@ -182,8 +189,11 @@ export const CookieSignedInContext: {
 
 export type CookieSignedInContext = CookieSignedInContext$instance;
 
-export interface CookieSigningInContext$instance extends PrincipalContext_1<CookieAuthenticationOptions> {
+export interface CookieSigningInContext$instance extends Microsoft_AspNetCore_Authentication_Internal.PrincipalContext_1$instance<CookieAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieSigningInContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PrincipalContext_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PropertiesContext_1: never;
 
     CookieOptions: CookieOptions;
 }
@@ -196,8 +206,10 @@ export const CookieSigningInContext: {
 
 export type CookieSigningInContext = CookieSigningInContext$instance;
 
-export interface CookieSigningOutContext$instance extends PropertiesContext_1<CookieAuthenticationOptions> {
+export interface CookieSigningOutContext$instance extends Microsoft_AspNetCore_Authentication_Internal.PropertiesContext_1$instance<CookieAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieSigningOutContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PropertiesContext_1: never;
 
     CookieOptions: CookieOptions;
 }
@@ -210,8 +222,11 @@ export const CookieSigningOutContext: {
 
 export type CookieSigningOutContext = CookieSigningOutContext$instance;
 
-export interface CookieSlidingExpirationContext$instance extends PrincipalContext_1<CookieAuthenticationOptions> {
+export interface CookieSlidingExpirationContext$instance extends Microsoft_AspNetCore_Authentication_Internal.PrincipalContext_1$instance<CookieAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieSlidingExpirationContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PrincipalContext_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PropertiesContext_1: never;
 
     readonly ElapsedTime: TimeSpan;
     readonly RemainingTime: TimeSpan;
@@ -226,8 +241,11 @@ export const CookieSlidingExpirationContext: {
 
 export type CookieSlidingExpirationContext = CookieSlidingExpirationContext$instance;
 
-export interface CookieValidatePrincipalContext$instance extends PrincipalContext_1<CookieAuthenticationOptions> {
+export interface CookieValidatePrincipalContext$instance extends Microsoft_AspNetCore_Authentication_Internal.PrincipalContext_1$instance<CookieAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieValidatePrincipalContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PrincipalContext_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PropertiesContext_1: never;
 
     ShouldRenew: boolean;
     RejectPrincipal(): void;

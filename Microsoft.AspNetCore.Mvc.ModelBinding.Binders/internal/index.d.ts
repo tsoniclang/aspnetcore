@@ -18,18 +18,19 @@ import type { DateTimeStyles, NumberStyles } from "@tsonic/dotnet/System.Globali
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
-import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
-export interface ArrayModelBinder_1$instance<TElement extends unknown> extends CollectionModelBinder_1$instance<TElement>, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.ICollectionModelBinder$instance {
+export interface ArrayModelBinder_1$instance<TElement extends unknown> extends CollectionModelBinder_1$instance<TElement> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_ArrayModelBinder_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_CollectionModelBinder_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
 
-    CanCreateInstance(targetType: Type): boolean;
-    ConvertToCollectionType(targetType: Type, collection: IEnumerable_1<TElement | null>): unknown | null;
-    CopyToModel(target: unknown, sourceCollection: IEnumerable_1<TElement | null>): void;
-    CreateEmptyCollection(targetType: Type): unknown;
+    CanCreateInstance: CollectionModelBinder_1$instance<TElement>["CanCreateInstance"] & ((targetType: Type) => boolean);
+    ConvertToCollectionType: CollectionModelBinder_1$instance<TElement>["ConvertToCollectionType"] & ((targetType: Type, collection: IEnumerable_1<TElement | null>) => unknown | null);
+    CopyToModel: CollectionModelBinder_1$instance<TElement>["CopyToModel"] & ((target: unknown, sourceCollection: IEnumerable_1<TElement | null>) => void);
+    CreateEmptyCollection: CollectionModelBinder_1$instance<TElement>["CreateEmptyCollection"] & ((targetType: Type) => unknown);
 }
 
 
@@ -48,7 +49,7 @@ export interface __ArrayModelBinder_1$views<TElement extends unknown> {
 export type ArrayModelBinder_1<TElement extends unknown> = ArrayModelBinder_1$instance<TElement> & __ArrayModelBinder_1$views<TElement>;
 
 
-export interface ArrayModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface ArrayModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_ArrayModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -69,7 +70,7 @@ export interface __ArrayModelBinderProvider$views {
 export type ArrayModelBinderProvider = ArrayModelBinderProvider$instance & __ArrayModelBinderProvider$views;
 
 
-export interface BinderTypeModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface BinderTypeModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_BinderTypeModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -90,7 +91,7 @@ export interface __BinderTypeModelBinder$views {
 export type BinderTypeModelBinder = BinderTypeModelBinder$instance & __BinderTypeModelBinder$views;
 
 
-export interface BinderTypeModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface BinderTypeModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_BinderTypeModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -111,7 +112,7 @@ export interface __BinderTypeModelBinderProvider$views {
 export type BinderTypeModelBinderProvider = BinderTypeModelBinderProvider$instance & __BinderTypeModelBinderProvider$views;
 
 
-export interface BodyModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface BodyModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_BodyModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -134,7 +135,7 @@ export interface __BodyModelBinder$views {
 export type BodyModelBinder = BodyModelBinder$instance & __BodyModelBinder$views;
 
 
-export interface BodyModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface BodyModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_BodyModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -157,7 +158,7 @@ export interface __BodyModelBinderProvider$views {
 export type BodyModelBinderProvider = BodyModelBinderProvider$instance & __BodyModelBinderProvider$views;
 
 
-export interface ByteArrayModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface ByteArrayModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_ByteArrayModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -178,7 +179,7 @@ export interface __ByteArrayModelBinder$views {
 export type ByteArrayModelBinder = ByteArrayModelBinder$instance & __ByteArrayModelBinder$views;
 
 
-export interface ByteArrayModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface ByteArrayModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_ByteArrayModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -199,7 +200,7 @@ export interface __ByteArrayModelBinderProvider$views {
 export type ByteArrayModelBinderProvider = ByteArrayModelBinderProvider$instance & __ByteArrayModelBinderProvider$views;
 
 
-export interface CancellationTokenModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface CancellationTokenModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_CancellationTokenModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -220,7 +221,7 @@ export interface __CancellationTokenModelBinder$views {
 export type CancellationTokenModelBinder = CancellationTokenModelBinder$instance & __CancellationTokenModelBinder$views;
 
 
-export interface CancellationTokenModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface CancellationTokenModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_CancellationTokenModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -241,7 +242,7 @@ export interface __CancellationTokenModelBinderProvider$views {
 export type CancellationTokenModelBinderProvider = CancellationTokenModelBinderProvider$instance & __CancellationTokenModelBinderProvider$views;
 
 
-export interface CollectionModelBinder_1$instance<TElement extends unknown> extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.ICollectionModelBinder$instance {
+export interface CollectionModelBinder_1$instance<TElement extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_CollectionModelBinder_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder: never;
@@ -270,7 +271,7 @@ export interface __CollectionModelBinder_1$views<TElement extends unknown> {
 export type CollectionModelBinder_1<TElement extends unknown> = CollectionModelBinder_1$instance<TElement> & __CollectionModelBinder_1$views<TElement>;
 
 
-export interface CollectionModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface CollectionModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_CollectionModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -291,7 +292,7 @@ export interface __CollectionModelBinderProvider$views {
 export type CollectionModelBinderProvider = CollectionModelBinderProvider$instance & __CollectionModelBinderProvider$views;
 
 
-export interface ComplexObjectModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface ComplexObjectModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_ComplexObjectModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -311,7 +312,7 @@ export interface __ComplexObjectModelBinder$views {
 export type ComplexObjectModelBinder = ComplexObjectModelBinder$instance & __ComplexObjectModelBinder$views;
 
 
-export interface ComplexObjectModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface ComplexObjectModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_ComplexObjectModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -332,7 +333,7 @@ export interface __ComplexObjectModelBinderProvider$views {
 export type ComplexObjectModelBinderProvider = ComplexObjectModelBinderProvider$instance & __ComplexObjectModelBinderProvider$views;
 
 
-export interface ComplexTypeModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface ComplexTypeModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_ComplexTypeModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -358,7 +359,7 @@ export interface __ComplexTypeModelBinder$views {
 export type ComplexTypeModelBinder = ComplexTypeModelBinder$instance & __ComplexTypeModelBinder$views;
 
 
-export interface ComplexTypeModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface ComplexTypeModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_ComplexTypeModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -379,7 +380,7 @@ export interface __ComplexTypeModelBinderProvider$views {
 export type ComplexTypeModelBinderProvider = ComplexTypeModelBinderProvider$instance & __ComplexTypeModelBinderProvider$views;
 
 
-export interface DateTimeModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface DateTimeModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_DateTimeModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -400,7 +401,7 @@ export interface __DateTimeModelBinder$views {
 export type DateTimeModelBinder = DateTimeModelBinder$instance & __DateTimeModelBinder$views;
 
 
-export interface DateTimeModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface DateTimeModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_DateTimeModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -421,7 +422,7 @@ export interface __DateTimeModelBinderProvider$views {
 export type DateTimeModelBinderProvider = DateTimeModelBinderProvider$instance & __DateTimeModelBinderProvider$views;
 
 
-export interface DecimalModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface DecimalModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_DecimalModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -442,16 +443,17 @@ export interface __DecimalModelBinder$views {
 export type DecimalModelBinder = DecimalModelBinder$instance & __DecimalModelBinder$views;
 
 
-export interface DictionaryModelBinder_2$instance<TKey extends unknown, TValue extends unknown> extends CollectionModelBinder_1$instance<KeyValuePair_2<TKey, TValue>>, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.ICollectionModelBinder$instance {
+export interface DictionaryModelBinder_2$instance<TKey extends unknown, TValue extends unknown> extends CollectionModelBinder_1$instance<KeyValuePair_2<TKey, TValue>> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_CollectionModelBinder_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_DictionaryModelBinder_2: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
 
-    BindModelAsync(bindingContext: ModelBindingContext): Task;
-    CanCreateInstance(targetType: Type): boolean;
-    ConvertToCollectionType(targetType: Type, collection: IEnumerable_1<KeyValuePair_2<TKey, TValue>>): unknown | null;
-    CreateEmptyCollection(targetType: Type): unknown;
+    BindModelAsync: CollectionModelBinder_1$instance<KeyValuePair_2<TKey, TValue>>["BindModelAsync"] & ((bindingContext: ModelBindingContext) => Task);
+    CanCreateInstance: CollectionModelBinder_1$instance<KeyValuePair_2<TKey, TValue>>["CanCreateInstance"] & ((targetType: Type) => boolean);
+    ConvertToCollectionType: CollectionModelBinder_1$instance<KeyValuePair_2<TKey, TValue>>["ConvertToCollectionType"] & ((targetType: Type, collection: IEnumerable_1<KeyValuePair_2<TKey, TValue>>) => unknown | null);
+    CreateEmptyCollection: CollectionModelBinder_1$instance<KeyValuePair_2<TKey, TValue>>["CreateEmptyCollection"] & ((targetType: Type) => unknown);
 }
 
 
@@ -470,7 +472,7 @@ export interface __DictionaryModelBinder_2$views<TKey extends unknown, TValue ex
 export type DictionaryModelBinder_2<TKey extends unknown, TValue extends unknown> = DictionaryModelBinder_2$instance<TKey, TValue> & __DictionaryModelBinder_2$views<TKey, TValue>;
 
 
-export interface DictionaryModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface DictionaryModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_DictionaryModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -491,7 +493,7 @@ export interface __DictionaryModelBinderProvider$views {
 export type DictionaryModelBinderProvider = DictionaryModelBinderProvider$instance & __DictionaryModelBinderProvider$views;
 
 
-export interface DoubleModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface DoubleModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_DoubleModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -512,12 +514,13 @@ export interface __DoubleModelBinder$views {
 export type DoubleModelBinder = DoubleModelBinder$instance & __DoubleModelBinder$views;
 
 
-export interface EnumTypeModelBinder$instance extends SimpleTypeModelBinder$instance, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface EnumTypeModelBinder$instance extends SimpleTypeModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_EnumTypeModelBinder: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_SimpleTypeModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
 
-    CheckModel(bindingContext: ModelBindingContext, valueProviderResult: ValueProviderResult, model: unknown | null): void;
+    CheckModel: SimpleTypeModelBinder$instance["CheckModel"] & ((bindingContext: ModelBindingContext, valueProviderResult: ValueProviderResult, model: unknown | null) => void);
 }
 
 
@@ -533,7 +536,7 @@ export interface __EnumTypeModelBinder$views {
 export type EnumTypeModelBinder = EnumTypeModelBinder$instance & __EnumTypeModelBinder$views;
 
 
-export interface EnumTypeModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface EnumTypeModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_EnumTypeModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -554,7 +557,7 @@ export interface __EnumTypeModelBinderProvider$views {
 export type EnumTypeModelBinderProvider = EnumTypeModelBinderProvider$instance & __EnumTypeModelBinderProvider$views;
 
 
-export interface FloatingPointTypeModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface FloatingPointTypeModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_FloatingPointTypeModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -575,7 +578,7 @@ export interface __FloatingPointTypeModelBinderProvider$views {
 export type FloatingPointTypeModelBinderProvider = FloatingPointTypeModelBinderProvider$instance & __FloatingPointTypeModelBinderProvider$views;
 
 
-export interface FloatModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface FloatModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_FloatModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -596,7 +599,7 @@ export interface __FloatModelBinder$views {
 export type FloatModelBinder = FloatModelBinder$instance & __FloatModelBinder$views;
 
 
-export interface FormCollectionModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface FormCollectionModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_FormCollectionModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -617,7 +620,7 @@ export interface __FormCollectionModelBinder$views {
 export type FormCollectionModelBinder = FormCollectionModelBinder$instance & __FormCollectionModelBinder$views;
 
 
-export interface FormCollectionModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface FormCollectionModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_FormCollectionModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -638,7 +641,7 @@ export interface __FormCollectionModelBinderProvider$views {
 export type FormCollectionModelBinderProvider = FormCollectionModelBinderProvider$instance & __FormCollectionModelBinderProvider$views;
 
 
-export interface FormFileModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface FormFileModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_FormFileModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -659,7 +662,7 @@ export interface __FormFileModelBinder$views {
 export type FormFileModelBinder = FormFileModelBinder$instance & __FormFileModelBinder$views;
 
 
-export interface FormFileModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface FormFileModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_FormFileModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -680,7 +683,7 @@ export interface __FormFileModelBinderProvider$views {
 export type FormFileModelBinderProvider = FormFileModelBinderProvider$instance & __FormFileModelBinderProvider$views;
 
 
-export interface HeaderModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface HeaderModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_HeaderModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -702,7 +705,7 @@ export interface __HeaderModelBinder$views {
 export type HeaderModelBinder = HeaderModelBinder$instance & __HeaderModelBinder$views;
 
 
-export interface HeaderModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface HeaderModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_HeaderModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -723,7 +726,7 @@ export interface __HeaderModelBinderProvider$views {
 export type HeaderModelBinderProvider = HeaderModelBinderProvider$instance & __HeaderModelBinderProvider$views;
 
 
-export interface KeyValuePairModelBinder_2$instance<TKey extends unknown, TValue extends unknown> extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface KeyValuePairModelBinder_2$instance<TKey extends unknown, TValue extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_KeyValuePairModelBinder_2: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -744,7 +747,7 @@ export interface __KeyValuePairModelBinder_2$views<TKey extends unknown, TValue 
 export type KeyValuePairModelBinder_2<TKey extends unknown, TValue extends unknown> = KeyValuePairModelBinder_2$instance<TKey, TValue> & __KeyValuePairModelBinder_2$views<TKey, TValue>;
 
 
-export interface KeyValuePairModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface KeyValuePairModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_KeyValuePairModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -765,7 +768,7 @@ export interface __KeyValuePairModelBinderProvider$views {
 export type KeyValuePairModelBinderProvider = KeyValuePairModelBinderProvider$instance & __KeyValuePairModelBinderProvider$views;
 
 
-export interface ServicesModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface ServicesModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_ServicesModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -786,7 +789,7 @@ export interface __ServicesModelBinder$views {
 export type ServicesModelBinder = ServicesModelBinder$instance & __ServicesModelBinder$views;
 
 
-export interface ServicesModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface ServicesModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_ServicesModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -807,7 +810,7 @@ export interface __ServicesModelBinderProvider$views {
 export type ServicesModelBinderProvider = ServicesModelBinderProvider$instance & __ServicesModelBinderProvider$views;
 
 
-export interface SimpleTypeModelBinder$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
+export interface SimpleTypeModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_SimpleTypeModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
@@ -829,7 +832,7 @@ export interface __SimpleTypeModelBinder$views {
 export type SimpleTypeModelBinder = SimpleTypeModelBinder$instance & __SimpleTypeModelBinder$views;
 
 
-export interface SimpleTypeModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface SimpleTypeModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_SimpleTypeModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
@@ -850,7 +853,7 @@ export interface __SimpleTypeModelBinderProvider$views {
 export type SimpleTypeModelBinderProvider = SimpleTypeModelBinderProvider$instance & __SimpleTypeModelBinderProvider$views;
 
 
-export interface TryParseModelBinderProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinderProvider$instance {
+export interface TryParseModelBinderProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_TryParseModelBinderProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;

@@ -15,8 +15,9 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export interface ICompositeViewEngine$instance extends IViewEngine {
+export interface ICompositeViewEngine$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_ICompositeViewEngine: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine: never;
 
     readonly ViewEngines: IReadOnlyList_1<IViewEngine>;
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
@@ -48,7 +49,7 @@ export interface IViewEngine$instance {
 
 export type IViewEngine = IViewEngine$instance;
 
-export interface CompositeViewEngine$instance extends ICompositeViewEngine$instance {
+export interface CompositeViewEngine$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewEngines_CompositeViewEngine: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_ICompositeViewEngine: never;
@@ -76,11 +77,10 @@ export type CompositeViewEngine = CompositeViewEngine$instance & __CompositeView
 export interface ViewEngineResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewEngines_ViewEngineResult: never;
 
-    SearchedLocations: IEnumerable_1<System_Internal.String>;
+    readonly SearchedLocations: IEnumerable_1<System_Internal.String>;
     readonly Success: boolean;
-    get View(): IView | null;
-    set View(value: IView | null);
-    ViewName: string;
+    readonly View: IView | null;
+    readonly ViewName: string;
     EnsureSuccessful(originalLocations: IEnumerable_1<System_Internal.String> | null): ViewEngineResult;
 }
 

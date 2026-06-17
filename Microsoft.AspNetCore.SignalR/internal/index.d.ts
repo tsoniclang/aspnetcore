@@ -48,7 +48,7 @@ export interface IGroupManager$instance {
 
 export type IGroupManager = IGroupManager$instance;
 
-export interface IHubActivator_1$instance<THub extends unknown & Hub> {
+export interface IHubActivator_1$instance<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> {
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubActivator_1: never;
 
     Create(): THub;
@@ -56,10 +56,12 @@ export interface IHubActivator_1$instance<THub extends unknown & Hub> {
 }
 
 
-export type IHubActivator_1<THub extends unknown & Hub> = IHubActivator_1$instance<THub>;
+export type IHubActivator_1<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> = IHubActivator_1$instance<THub>;
 
-export interface IHubCallerClients$instance extends IHubCallerClients_1<IClientProxy>, IHubClients_1<IClientProxy> {
+export interface IHubCallerClients$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubCallerClients: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubCallerClients_1: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubClients_1: never;
 
     readonly Caller: ISingleClientProxy;
     readonly Others: IClientProxy;
@@ -74,8 +76,9 @@ export interface IHubCallerClients$instance extends IHubCallerClients_1<IClientP
 
 export type IHubCallerClients = IHubCallerClients$instance;
 
-export interface IHubCallerClients_1$instance<T extends unknown> extends IHubClients_1<T> {
+export interface IHubCallerClients_1$instance<T extends unknown> {
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubCallerClients_1: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubClients_1: never;
 
     readonly Caller: T;
     readonly Others: T;
@@ -91,13 +94,14 @@ export interface IHubCallerClients_1$instance<T extends unknown> extends IHubCli
 
 export type IHubCallerClients_1<T extends unknown> = IHubCallerClients_1$instance<T>;
 
-export interface IHubClients$instance extends IHubClients_1<IClientProxy> {
+export interface IHubClients$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubClients: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubClients_1: never;
 
     readonly All: IClientProxy;
     AllExcept(excludedConnectionIds: IReadOnlyList_1<System_Internal.String>): IClientProxy;
-    Client(connectionId: string): ISingleClientProxy;
     Client(connectionId: string): IClientProxy;
+    Client(connectionId: string): ISingleClientProxy;
     GroupExcept(groupName: string, excludedConnectionIds: IReadOnlyList_1<System_Internal.String>): IClientProxy;
 }
 
@@ -126,7 +130,7 @@ export interface IHubContext$instance {
 
 export type IHubContext = IHubContext$instance;
 
-export interface IHubContext_1$instance<THub extends unknown & Hub> {
+export interface IHubContext_1$instance<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> {
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubContext_1: never;
 
     readonly Clients: IHubClients;
@@ -134,9 +138,9 @@ export interface IHubContext_1$instance<THub extends unknown & Hub> {
 }
 
 
-export type IHubContext_1<THub extends unknown & Hub> = IHubContext_1$instance<THub>;
+export type IHubContext_1<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> = IHubContext_1$instance<THub>;
 
-export interface IHubContext_2$instance<THub extends unknown & Hub_1<T>, T extends (object | null)> {
+export interface IHubContext_2$instance<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never } & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub_1: never }, T extends (object | null)> {
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubContext_2: never;
 
     readonly Clients: IHubClients_1<T>;
@@ -144,7 +148,7 @@ export interface IHubContext_2$instance<THub extends unknown & Hub_1<T>, T exten
 }
 
 
-export type IHubContext_2<THub extends unknown & Hub_1<T>, T extends (object | null)> = IHubContext_2$instance<THub, T>;
+export type IHubContext_2<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never } & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub_1: never }, T extends (object | null)> = IHubContext_2$instance<THub, T>;
 
 export interface IHubFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubFilter: never;
@@ -187,7 +191,8 @@ export interface ISignalRBuilder$instance {
 
 export type ISignalRBuilder = ISignalRBuilder$instance;
 
-export interface ISignalRServerBuilder$instance extends ISignalRBuilder {
+export interface ISignalRServerBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_ISignalRBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_ISignalRServerBuilder: never;
 
     readonly Services: IServiceCollection;
@@ -198,7 +203,8 @@ export interface ISignalRServerBuilder$instance extends ISignalRBuilder$instance
 
 export type ISignalRServerBuilder = ISignalRServerBuilder$instance;
 
-export interface ISingleClientProxy$instance extends IClientProxy {
+export interface ISingleClientProxy$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IClientProxy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_ISingleClientProxy: never;
 
     InvokeCoreAsync<T extends unknown>(method: string, args: (unknown | null)[], cancellationToken: CancellationToken): Task_1<T>;
@@ -221,6 +227,7 @@ export type IUserIdProvider = IUserIdProvider$instance;
 
 export interface SerializedMessage$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_SerializedMessage: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly ProtocolName: string;
     readonly Serialized: ReadOnlyMemory_1<System_Internal.Byte>;
@@ -234,37 +241,37 @@ export const SerializedMessage: {
 
 export type SerializedMessage = SerializedMessage$instance;
 
-export interface DefaultHubLifetimeManager_1$instance<THub extends unknown & Hub> extends HubLifetimeManager_1<THub> {
+export interface DefaultHubLifetimeManager_1$instance<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> extends HubLifetimeManager_1$instance<THub> {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubLifetimeManager_1: never;
 
-    AddToGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
-    InvokeConnectionAsync<T extends unknown>(connectionId: string, methodName: string, args: (unknown | null)[], cancellationToken: CancellationToken): Task_1<T>;
-    InvokeConnectionAsync<T extends unknown>(connectionId: string, methodName: string, args: (unknown | null)[], cancellationToken: CancellationToken): Task_1<T>;
-    OnConnectedAsync(connection: HubConnectionContext): Task;
-    OnDisconnectedAsync(connection: HubConnectionContext): Task;
-    RemoveFromGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
-    SendAllAsync(methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken): Task;
-    SendAllExceptAsync(methodName: string, args: (unknown | null)[], excludedConnectionIds: IReadOnlyList_1<System_Internal.String>, cancellationToken?: CancellationToken): Task;
-    SendConnectionAsync(connectionId: string, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken): Task;
-    SendConnectionsAsync(connectionIds: IReadOnlyList_1<System_Internal.String>, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken): Task;
-    SendGroupAsync(groupName: string, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken): Task;
-    SendGroupExceptAsync(groupName: string, methodName: string, args: (unknown | null)[], excludedConnectionIds: IReadOnlyList_1<System_Internal.String>, cancellationToken?: CancellationToken): Task;
-    SendGroupsAsync(groupNames: IReadOnlyList_1<System_Internal.String>, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken): Task;
-    SendUserAsync(userId: string, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken): Task;
-    SendUsersAsync(userIds: IReadOnlyList_1<System_Internal.String>, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken): Task;
-    SetConnectionResultAsync(connectionId: string, result: CompletionMessage): Task;
-    TryGetReturnType(invocationId: string, type: Type | null): boolean;
+    AddToGroupAsync: HubLifetimeManager_1$instance<THub>["AddToGroupAsync"] & ((connectionId: string, groupName: string, cancellationToken?: CancellationToken) => Task);
+    InvokeConnectionAsync: HubLifetimeManager_1$instance<THub>["InvokeConnectionAsync"] & (<T extends unknown>(connectionId: string, methodName: string, args: (unknown | null)[], cancellationToken: CancellationToken) => Task_1<T>);
+    OnConnectedAsync: HubLifetimeManager_1$instance<THub>["OnConnectedAsync"] & ((connection: HubConnectionContext) => Task);
+    OnDisconnectedAsync: HubLifetimeManager_1$instance<THub>["OnDisconnectedAsync"] & ((connection: HubConnectionContext) => Task);
+    RemoveFromGroupAsync: HubLifetimeManager_1$instance<THub>["RemoveFromGroupAsync"] & ((connectionId: string, groupName: string, cancellationToken?: CancellationToken) => Task);
+    SendAllAsync: HubLifetimeManager_1$instance<THub>["SendAllAsync"] & ((methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken) => Task);
+    SendAllExceptAsync: HubLifetimeManager_1$instance<THub>["SendAllExceptAsync"] & ((methodName: string, args: (unknown | null)[], excludedConnectionIds: IReadOnlyList_1<System_Internal.String>, cancellationToken?: CancellationToken) => Task);
+    SendConnectionAsync: HubLifetimeManager_1$instance<THub>["SendConnectionAsync"] & ((connectionId: string, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken) => Task);
+    SendConnectionsAsync: HubLifetimeManager_1$instance<THub>["SendConnectionsAsync"] & ((connectionIds: IReadOnlyList_1<System_Internal.String>, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken) => Task);
+    SendGroupAsync: HubLifetimeManager_1$instance<THub>["SendGroupAsync"] & ((groupName: string, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken) => Task);
+    SendGroupExceptAsync: HubLifetimeManager_1$instance<THub>["SendGroupExceptAsync"] & ((groupName: string, methodName: string, args: (unknown | null)[], excludedConnectionIds: IReadOnlyList_1<System_Internal.String>, cancellationToken?: CancellationToken) => Task);
+    SendGroupsAsync: HubLifetimeManager_1$instance<THub>["SendGroupsAsync"] & ((groupNames: IReadOnlyList_1<System_Internal.String>, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken) => Task);
+    SendUserAsync: HubLifetimeManager_1$instance<THub>["SendUserAsync"] & ((userId: string, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken) => Task);
+    SendUsersAsync: HubLifetimeManager_1$instance<THub>["SendUsersAsync"] & ((userIds: IReadOnlyList_1<System_Internal.String>, methodName: string, args: (unknown | null)[], cancellationToken?: CancellationToken) => Task);
+    SetConnectionResultAsync: HubLifetimeManager_1$instance<THub>["SetConnectionResultAsync"] & ((connectionId: string, result: CompletionMessage) => Task);
+    TryGetReturnType: HubLifetimeManager_1$instance<THub>["TryGetReturnType"] & ((invocationId: string, type: Type | null) => boolean);
 }
 
 
 export const DefaultHubLifetimeManager_1: {
-    new<THub extends unknown & Hub>(logger: ILogger_1<DefaultHubLifetimeManager_1<THub>>): DefaultHubLifetimeManager_1<THub>;
+    new<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }>(logger: ILogger_1<DefaultHubLifetimeManager_1<THub>>): DefaultHubLifetimeManager_1<THub>;
 };
 
 
-export type DefaultHubLifetimeManager_1<THub extends unknown & Hub> = DefaultHubLifetimeManager_1$instance<THub>;
+export type DefaultHubLifetimeManager_1<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> = DefaultHubLifetimeManager_1$instance<THub>;
 
-export interface DefaultUserIdProvider$instance extends IUserIdProvider$instance {
+export interface DefaultUserIdProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_DefaultUserIdProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IUserIdProvider: never;
@@ -285,8 +292,9 @@ export interface __DefaultUserIdProvider$views {
 export type DefaultUserIdProvider = DefaultUserIdProvider$instance & __DefaultUserIdProvider$views;
 
 
-export interface DynamicHub$instance extends Hub {
+export interface DynamicHub$instance extends Hub$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_DynamicHub: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -294,7 +302,7 @@ export interface DynamicHub$instance extends Hub {
 }
 
 
-export const DynamicHub: (abstract new() => DynamicHub) & {
+export const DynamicHub: {
 };
 
 
@@ -333,29 +341,29 @@ export interface Hub$instance {
     Clients: DynamicHubClients | IHubCallerClients;
     Context: HubCallerContext;
     Groups: IGroupManager;
-    Dispose(disposing: boolean): void;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     OnConnectedAsync(): Task;
     OnDisconnectedAsync(exception: Exception | null): Task;
 }
 
 
-export const Hub: (abstract new() => Hub) & {
+export const Hub: {
 };
 
 
 export type Hub = Hub$instance;
 
-export interface Hub_1$instance<T extends (object | null)> extends Hub {
+export interface Hub_1$instance<T extends (object | null)> extends Hub$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never;
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub_1: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Clients: IHubCallerClients_1<T>;
 }
 
 
-export const Hub_1: (abstract new<T extends (object | null)>() => Hub_1<T>) & {
+export const Hub_1: {
 };
 
 
@@ -374,7 +382,7 @@ export interface HubCallerContext$instance {
 }
 
 
-export const HubCallerContext: (abstract new() => HubCallerContext) & {
+export const HubCallerContext: {
 };
 
 
@@ -423,19 +431,20 @@ export const HubConnectionContextOptions: {
 
 export type HubConnectionContextOptions = HubConnectionContextOptions$instance;
 
-export interface HubConnectionHandler_1$instance<THub extends unknown & Hub> extends ConnectionHandler {
+export interface HubConnectionHandler_1$instance<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> extends Microsoft_AspNetCore_Connections_Internal.ConnectionHandler$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Connections_ConnectionHandler: never;
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubConnectionHandler_1: never;
 
-    OnConnectedAsync(connection: ConnectionContext): Task;
+    OnConnectedAsync: Microsoft_AspNetCore_Connections_Internal.ConnectionHandler$instance["OnConnectedAsync"] & ((connection: ConnectionContext) => Task);
 }
 
 
 export const HubConnectionHandler_1: {
-    new<THub extends unknown & Hub>(lifetimeManager: HubLifetimeManager_1<THub>, protocolResolver: IHubProtocolResolver, globalHubOptions: IOptions_1<HubOptions>, hubOptions: IOptions_1<HubOptions_1<THub>>, loggerFactory: ILoggerFactory, userIdProvider: IUserIdProvider, serviceScopeFactory: IServiceScopeFactory): HubConnectionHandler_1<THub>;
+    new<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }>(lifetimeManager: HubLifetimeManager_1<THub>, protocolResolver: IHubProtocolResolver, globalHubOptions: IOptions_1<HubOptions>, hubOptions: IOptions_1<HubOptions_1<THub>>, loggerFactory: ILoggerFactory, userIdProvider: IUserIdProvider, serviceScopeFactory: IServiceScopeFactory): HubConnectionHandler_1<THub>;
 };
 
 
-export type HubConnectionHandler_1<THub extends unknown & Hub> = HubConnectionHandler_1$instance<THub>;
+export type HubConnectionHandler_1<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> = HubConnectionHandler_1$instance<THub>;
 
 export interface HubConnectionStore$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubConnectionStore: never;
@@ -456,6 +465,7 @@ export type HubConnectionStore = HubConnectionStore$instance & { readonly [conne
 
 export interface HubConnectionStore_Enumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubConnectionStore_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
@@ -475,8 +485,9 @@ export const HubConnectionStore_Enumerator: {
 
 export type HubConnectionStore_Enumerator = HubConnectionStore_Enumerator$instance;
 
-export interface HubException$instance extends Exception {
+export interface HubException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -528,7 +539,7 @@ export const HubLifetimeContext: {
 
 export type HubLifetimeContext = HubLifetimeContext$instance;
 
-export interface HubLifetimeManager_1$instance<THub extends unknown & Hub> {
+export interface HubLifetimeManager_1$instance<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubLifetimeManager_1: never;
 
     AddToGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
@@ -550,11 +561,11 @@ export interface HubLifetimeManager_1$instance<THub extends unknown & Hub> {
 }
 
 
-export const HubLifetimeManager_1: (abstract new<THub extends unknown & Hub>() => HubLifetimeManager_1<THub>) & {
+export const HubLifetimeManager_1: {
 };
 
 
-export type HubLifetimeManager_1<THub extends unknown & Hub> = HubLifetimeManager_1$instance<THub>;
+export type HubLifetimeManager_1<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> = HubLifetimeManager_1$instance<THub>;
 
 export interface HubMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubMetadata: never;
@@ -570,8 +581,9 @@ export const HubMetadata: {
 
 export type HubMetadata = HubMetadata$instance;
 
-export interface HubMethodNameAttribute$instance extends Attribute {
+export interface HubMethodNameAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubMethodNameAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly Name: string;
 }
@@ -614,18 +626,19 @@ export const HubOptions: {
 
 export type HubOptions = HubOptions$instance;
 
-export interface HubOptions_1$instance<THub extends unknown & Hub> extends HubOptions {
+export interface HubOptions_1$instance<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> extends HubOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubOptions: never;
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubOptions_1: never;
 
 }
 
 
 export const HubOptions_1: {
-    new<THub extends unknown & Hub>(): HubOptions_1<THub>;
+    new<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }>(): HubOptions_1<THub>;
 };
 
 
-export type HubOptions_1<THub extends unknown & Hub> = HubOptions_1$instance<THub>;
+export type HubOptions_1<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> = HubOptions_1$instance<THub>;
 
 export interface HubOptionsSetup$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubOptionsSetup: never;
@@ -643,7 +656,7 @@ export const HubOptionsSetup: {
 
 export type HubOptionsSetup = HubOptionsSetup$instance;
 
-export interface HubOptionsSetup_1$instance<THub extends unknown & Hub> {
+export interface HubOptionsSetup_1$instance<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubOptionsSetup_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
@@ -653,11 +666,11 @@ export interface HubOptionsSetup_1$instance<THub extends unknown & Hub> {
 
 
 export const HubOptionsSetup_1: {
-    new<THub extends unknown & Hub>(options: IOptions_1<HubOptions>): HubOptionsSetup_1<THub>;
+    new<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }>(options: IOptions_1<HubOptions>): HubOptionsSetup_1<THub>;
 };
 
 
-export type HubOptionsSetup_1<THub extends unknown & Hub> = HubOptionsSetup_1$instance<THub>;
+export type HubOptionsSetup_1<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> = HubOptionsSetup_1$instance<THub>;
 
 export interface JsonHubProtocolOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_JsonHubProtocolOptions: never;
@@ -779,14 +792,14 @@ export type HubClientsExtensions = HubClientsExtensions$instance;
 export abstract class HubOptionsExtensions$instance {
     static AddFilter(options: HubOptions, hubFilter: IHubFilter): void;
     static AddFilter(options: HubOptions, filterType: Type): void;
-    static AddFilter<TFilter extends unknown & IHubFilter>(options: HubOptions): void;
+    static AddFilter<TFilter extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubFilter: never }>(options: HubOptions): void;
 }
 
 
 export type HubOptionsExtensions = HubOptionsExtensions$instance;
 
 export abstract class SignalRConnectionBuilderExtensions$instance {
-    static UseHub<THub extends unknown & Hub>(connectionBuilder: IConnectionBuilder): IConnectionBuilder;
+    static UseHub<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }>(connectionBuilder: IConnectionBuilder): IConnectionBuilder;
 }
 
 

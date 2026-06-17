@@ -28,8 +28,8 @@ export interface ISupportsStartup$instance {
 
     Configure(configure: Action_1<IApplicationBuilder>): IWebHostBuilder;
     Configure(configure: Action_2<WebHostBuilderContext, IApplicationBuilder>): IWebHostBuilder;
-    UseStartup<TStartup extends unknown>(startupFactory: Func_2<WebHostBuilderContext, TStartup>): IWebHostBuilder;
     UseStartup(startupType: Type): IWebHostBuilder;
+    UseStartup<TStartup extends unknown>(startupFactory: Func_2<WebHostBuilderContext, TStartup>): IWebHostBuilder;
 }
 
 

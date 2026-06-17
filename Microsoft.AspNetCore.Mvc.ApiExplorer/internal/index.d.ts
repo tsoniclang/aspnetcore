@@ -20,22 +20,28 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Attribute, Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export enum ApiConventionNameMatchBehavior {
-    Any = 0,
-    Exact = 1,
-    Prefix = 2,
-    Suffix = 3
-}
+export type ApiConventionNameMatchBehavior = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiConventionNameMatchBehavior: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ApiConventionNameMatchBehavior: {
+    readonly Any: ApiConventionNameMatchBehavior;
+    readonly Exact: ApiConventionNameMatchBehavior;
+    readonly Prefix: ApiConventionNameMatchBehavior;
+    readonly Suffix: ApiConventionNameMatchBehavior;
+};
 
 
-export enum ApiConventionTypeMatchBehavior {
-    Any = 0,
-    AssignableFrom = 1
-}
+export type ApiConventionTypeMatchBehavior = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiConventionTypeMatchBehavior: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ApiConventionTypeMatchBehavior: {
+    readonly Any: ApiConventionTypeMatchBehavior;
+    readonly AssignableFrom: ApiConventionTypeMatchBehavior;
+};
 
 
-export interface IApiDefaultResponseMetadataProvider$instance extends IApiResponseMetadataProvider, IFilterMetadata {
+export interface IApiDefaultResponseMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadataProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     readonly Type: Type;
     readonly Description: string | null;
@@ -94,8 +100,9 @@ export interface IApiRequestFormatMetadataProvider$instance {
 
 export type IApiRequestFormatMetadataProvider = IApiRequestFormatMetadataProvider$instance;
 
-export interface IApiRequestMetadataProvider$instance extends IFilterMetadata {
+export interface IApiRequestMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
@@ -105,8 +112,9 @@ export interface IApiRequestMetadataProvider$instance extends Microsoft_AspNetCo
 
 export type IApiRequestMetadataProvider = IApiRequestMetadataProvider$instance;
 
-export interface IApiResponseMetadataProvider$instance extends IFilterMetadata {
+export interface IApiResponseMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     readonly Type: Type;
     readonly Description: string | null;
@@ -128,8 +136,9 @@ export interface IApiResponseTypeMetadataProvider$instance {
 
 export type IApiResponseTypeMetadataProvider = IApiResponseTypeMetadataProvider$instance;
 
-export interface ApiConventionNameMatchAttribute$instance extends Attribute {
+export interface ApiConventionNameMatchAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiConventionNameMatchAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly MatchBehavior: ApiConventionNameMatchBehavior;
 }
@@ -156,8 +165,9 @@ export const ApiConventionResult: {
 
 export type ApiConventionResult = ApiConventionResult$instance;
 
-export interface ApiConventionTypeMatchAttribute$instance extends Attribute {
+export interface ApiConventionTypeMatchAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiConventionTypeMatchAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly MatchBehavior: ApiConventionTypeMatchBehavior;
 }
@@ -224,7 +234,7 @@ export const ApiDescriptionGroupCollection: {
 
 export type ApiDescriptionGroupCollection = ApiDescriptionGroupCollection$instance;
 
-export interface ApiDescriptionGroupCollectionProvider$instance extends IApiDescriptionGroupCollectionProvider$instance {
+export interface ApiDescriptionGroupCollectionProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescriptionGroupCollectionProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider: never;
@@ -355,7 +365,7 @@ export const ApiResponseType: {
 
 export type ApiResponseType = ApiResponseType$instance;
 
-export interface DefaultApiDescriptionProvider$instance extends IApiDescriptionProvider$instance {
+export interface DefaultApiDescriptionProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_DefaultApiDescriptionProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionProvider: never;

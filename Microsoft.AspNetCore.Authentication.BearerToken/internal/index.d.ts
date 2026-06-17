@@ -47,7 +47,8 @@ export const BearerTokenEvents: {
 
 export type BearerTokenEvents = BearerTokenEvents$instance;
 
-export interface BearerTokenOptions$instance extends AuthenticationSchemeOptions {
+export interface BearerTokenOptions$instance extends Microsoft_AspNetCore_Authentication_Internal.AuthenticationSchemeOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BearerToken_BearerTokenOptions: never;
 
     BearerTokenExpiration: TimeSpan;
@@ -65,8 +66,10 @@ export const BearerTokenOptions: {
 
 export type BearerTokenOptions = BearerTokenOptions$instance;
 
-export interface MessageReceivedContext$instance extends ResultContext_1<BearerTokenOptions> {
+export interface MessageReceivedContext$instance extends Microsoft_AspNetCore_Authentication_Internal.ResultContext_1$instance<BearerTokenOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BaseContext_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BearerToken_MessageReceivedContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_ResultContext_1: never;
 
     get Token(): string | null;
     set Token(value: string | null);

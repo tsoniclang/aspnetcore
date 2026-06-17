@@ -457,26 +457,6 @@
             "isExtensionMethod": false
           },
           {
-            "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider::BuildModel():System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-            "targetName": "BuildModel",
-            "metadataToken": 100663982,
-            "canonicalSignature": "():System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-            "normalizedSignature": "BuildModel|():System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 0,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "isExtensionMethod": false
-          },
-          {
             "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider::OnProvidersExecuted(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
             "targetName": "OnProvidersExecuted",
             "metadataToken": 100663983,
@@ -741,19 +721,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader::.ctor():void",
-            "metadataToken": 100664057,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.RazorPages"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageModelAttribute",
@@ -840,26 +808,6 @@
             "isOverride": false,
             "isSealed": false,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor::ExecuteAsync(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1<System.Int32>):System.Threading.Tasks.Task",
-            "targetName": "ExecuteAsync",
-            "metadataToken": 0,
-            "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1<System.Int32>):System.Threading.Tasks.Task",
-            "normalizedSignature": "ExecuteAsync|(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1<System.Int32>):System.Threading.Tasks.Task|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "BaseOverload",
-            "arity": 0,
-            "parameterCount": 3,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
             "ownerIdentity": "Microsoft.AspNetCore.Mvc.RazorPages",
             "isExtensionMethod": false

@@ -5181,12 +5181,12 @@
             "targetName": "Name",
             "metadataToken": 385877011,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "Name|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -5237,30 +5237,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase::.ctor(System.Type,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
-            "metadataToken": 100666806,
-            "canonicalSignature": "(System.Type,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
-            "normalizedSignature": "constructor|(System.Type,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase::.ctor(Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase):void",
-            "metadataToken": 100666807,
-            "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase):void",
-            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.PropertyModel",

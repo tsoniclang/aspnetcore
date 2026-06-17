@@ -13,7 +13,7 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface SectionContent$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance, System_Internal.IDisposable {
+export interface SectionContent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Sections_SectionContent: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -41,7 +41,7 @@ export interface __SectionContent$views {
 export type SectionContent = SectionContent$instance & __SectionContent$views;
 
 
-export interface SectionOutlet$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance, System_Internal.IDisposable {
+export interface SectionOutlet$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Sections_SectionOutlet: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;

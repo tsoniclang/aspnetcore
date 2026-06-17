@@ -90,8 +90,10 @@ export interface IPageModelFactoryProvider$instance {
 
 export type IPageModelFactoryProvider = IPageModelFactoryProvider$instance;
 
-export interface CompiledPageActionDescriptor$instance extends PageActionDescriptor {
+export interface CompiledPageActionDescriptor$instance extends PageActionDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_CompiledPageActionDescriptor: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_PageActionDescriptor: never;
 
     get DeclaredModelTypeInfo(): TypeInfo | null;
     set DeclaredModelTypeInfo(value: TypeInfo | null);
@@ -113,8 +115,9 @@ export const CompiledPageActionDescriptor: {
 
 export type CompiledPageActionDescriptor = CompiledPageActionDescriptor$instance;
 
-export interface NonHandlerAttribute$instance extends Attribute {
+export interface NonHandlerAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_NonHandlerAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
 }
 
@@ -126,15 +129,17 @@ export const NonHandlerAttribute: {
 
 export type NonHandlerAttribute = NonHandlerAttribute$instance;
 
-export interface Page$instance extends PageBase$instance, Microsoft_AspNetCore_Mvc_Razor_Internal.IRazorPage$instance {
+export interface Page$instance extends PageBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Page: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_PageBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
 
 }
 
 
-export const Page: (abstract new() => Page) & {
+export const Page: {
 };
 
 
@@ -145,13 +150,12 @@ export interface __Page$views {
 export type Page = Page$instance & __Page$views;
 
 
-export interface PageActionDescriptor$instance extends ActionDescriptor {
+export interface PageActionDescriptor$instance extends Microsoft_AspNetCore_Mvc_Abstractions_Internal.ActionDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_PageActionDescriptor: never;
 
     get AreaName(): string | null;
     set AreaName(value: string | null);
-    get DisplayName(): string | null;
-    set DisplayName(value: string | null);
     RelativePath: string;
     ViewEnginePath: string;
 }
@@ -165,7 +169,8 @@ export const PageActionDescriptor: {
 
 export type PageActionDescriptor = PageActionDescriptor$instance;
 
-export interface PageBase$instance extends RazorPageBase, Microsoft_AspNetCore_Mvc_Razor_Internal.IRazorPage$instance {
+export interface PageBase$instance extends Microsoft_AspNetCore_Mvc_Razor_Internal.RazorPageBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_PageBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
@@ -177,21 +182,20 @@ export interface PageBase$instance extends RazorPageBase, Microsoft_AspNetCore_M
     readonly Request: HttpRequest;
     readonly Response: HttpResponse;
     readonly RouteData: RouteData;
-    ViewContext: ViewContext;
     BadRequest(): BadRequestResult;
     BadRequest(error: unknown): BadRequestObjectResult;
     BadRequest(modelState: ModelStateDictionary): BadRequestObjectResult;
-    BeginContext(position: int, length: int, isLiteral: boolean): void;
+    BeginContext: Microsoft_AspNetCore_Mvc_Razor_Internal.RazorPageBase$instance["BeginContext"] & ((position: int, length: int, isLiteral: boolean) => void);
     Challenge(): ChallengeResult;
     Challenge(...authenticationSchemes: string[]): ChallengeResult;
     Challenge(properties: AuthenticationProperties): ChallengeResult;
     Challenge(properties: AuthenticationProperties, ...authenticationSchemes: string[]): ChallengeResult;
     Content(content: string): ContentResult;
+    Content(content: string, contentType: MediaTypeHeaderValue | null): ContentResult;
     Content(content: string, contentType: string): ContentResult;
     Content(content: string, contentType: string, contentEncoding: Encoding): ContentResult;
-    Content(content: string, contentType: MediaTypeHeaderValue | null): ContentResult;
-    EndContext(): void;
-    EnsureRenderedBodyOrSections(): void;
+    EndContext: Microsoft_AspNetCore_Mvc_Razor_Internal.RazorPageBase$instance["EndContext"] & (() => void);
+    EnsureRenderedBodyOrSections: Microsoft_AspNetCore_Mvc_Razor_Internal.RazorPageBase$instance["EnsureRenderedBodyOrSections"] & (() => void);
     File(fileContents: byte[], contentType: string): FileContentResult;
     File(fileContents: byte[], contentType: string, fileDownloadName: string | null): FileContentResult;
     File(fileStream: Stream, contentType: string): FileStreamResult;
@@ -218,44 +222,44 @@ export interface PageBase$instance extends RazorPageBase, Microsoft_AspNetCore_M
     RedirectPermanentPreserveMethod(url: string): RedirectResult;
     RedirectPreserveMethod(url: string): RedirectResult;
     RedirectToAction(actionName: string | null): RedirectToActionResult;
-    RedirectToAction(actionName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToAction(actionName: string | null, controllerName: string | null): RedirectToActionResult;
-    RedirectToAction(actionName: string | null, controllerName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToAction(actionName: string | null, controllerName: string | null, fragment: string | null): RedirectToActionResult;
+    RedirectToAction(actionName: string | null, controllerName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToAction(actionName: string | null, controllerName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToActionResult;
+    RedirectToAction(actionName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null): RedirectToActionResult;
-    RedirectToActionPermanent(actionName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null, controllerName: string | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null, controllerName: string | null, fragment: string | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null, controllerName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null, controllerName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToActionResult;
+    RedirectToActionPermanent(actionName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToActionPermanentPreserveMethod(actionName?: string | null, controllerName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToActionResult;
     RedirectToActionPreserveMethod(actionName?: string | null, controllerName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToActionResult;
     RedirectToPage(): RedirectToPageResult;
-    RedirectToPage(routeValues: unknown | null): RedirectToPageResult;
     RedirectToPage(pageName: string | null): RedirectToPageResult;
     RedirectToPage(pageName: string | null, pageHandler: string | null): RedirectToPageResult;
-    RedirectToPage(pageName: string | null, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPage(pageName: string | null, pageHandler: string | null, fragment: string | null): RedirectToPageResult;
     RedirectToPage(pageName: string | null, pageHandler: string | null, routeValues: unknown | null, fragment: string | null): RedirectToPageResult;
+    RedirectToPage(pageName: string | null, routeValues: unknown | null): RedirectToPageResult;
+    RedirectToPage(routeValues: unknown | null): RedirectToPageResult;
     RedirectToPagePermanent(pageName: string | null): RedirectToPageResult;
-    RedirectToPagePermanent(pageName: string | null, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPagePermanent(pageName: string | null, pageHandler: string | null): RedirectToPageResult;
-    RedirectToPagePermanent(pageName: string | null, pageHandler: string | null, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPagePermanent(pageName: string | null, pageHandler: string | null, fragment: string | null): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string | null, pageHandler: string | null, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPagePermanent(pageName: string | null, pageHandler: string | null, routeValues: unknown | null, fragment: string | null): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string | null, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPagePermanentPreserveMethod(pageName?: string | null, pageHandler?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToPageResult;
     RedirectToPagePreserveMethod(pageName?: string | null, pageHandler?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToPageResult;
     RedirectToRoute(routeName: string | null): RedirectToRouteResult;
-    RedirectToRoute(routeValues: unknown | null): RedirectToRouteResult;
-    RedirectToRoute(routeName: string | null, routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoute(routeName: string | null, fragment: string | null): RedirectToRouteResult;
+    RedirectToRoute(routeName: string | null, routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoute(routeName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToRouteResult;
+    RedirectToRoute(routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoutePermanent(routeName: string | null): RedirectToRouteResult;
-    RedirectToRoutePermanent(routeValues: unknown | null): RedirectToRouteResult;
-    RedirectToRoutePermanent(routeName: string | null, routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoutePermanent(routeName: string | null, fragment: string | null): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeName: string | null, routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoutePermanent(routeName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoutePermanentPreserveMethod(routeName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToRouteResult;
     RedirectToRoutePreserveMethod(routeName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToRouteResult;
     SignIn(principal: ClaimsPrincipal, authenticationScheme: string): SignInResult;
@@ -264,26 +268,26 @@ export interface PageBase$instance extends RazorPageBase, Microsoft_AspNetCore_M
     SignOut(properties: AuthenticationProperties, ...authenticationSchemes: string[]): SignOutResult;
     StatusCode(statusCode: int): StatusCodeResult;
     StatusCode(statusCode: int, value: unknown): ObjectResult;
-    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, valueProvider: IValueProvider): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, ...includeExpressions: Expression_1<Func_2<TModel, unknown | null>>[]): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, valueProvider: IValueProvider, ...includeExpressions: Expression_1<Func_2<TModel, unknown | null>>[]): Task_1<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, valueProvider: IValueProvider, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
     TryUpdateModelAsync(model: unknown, modelType: Type, prefix: string): Task_1<System_Internal.Boolean>;
     TryUpdateModelAsync(model: unknown, modelType: Type, prefix: string, valueProvider: IValueProvider, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, ...includeExpressions: Expression_1<Func_2<TModel, unknown | null>>[]): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, valueProvider: IValueProvider): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, valueProvider: IValueProvider, ...includeExpressions: Expression_1<Func_2<TModel, unknown | null>>[]): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel extends (object | null)>(model: TModel, prefix: string, valueProvider: IValueProvider, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
     TryValidateModel(model: unknown): boolean;
     TryValidateModel(model: unknown, prefix: string | null): boolean;
     Unauthorized(): UnauthorizedResult;
     ViewComponent(componentName: string): ViewComponentResult;
-    ViewComponent(componentType: Type): ViewComponentResult;
     ViewComponent(componentName: string, arguments: unknown | null): ViewComponentResult;
+    ViewComponent(componentType: Type): ViewComponentResult;
     ViewComponent(componentType: Type, arguments: unknown | null): ViewComponentResult;
 }
 
 
-export const PageBase: (abstract new() => PageBase) & {
+export const PageBase: {
 };
 
 
@@ -294,7 +298,8 @@ export interface __PageBase$views {
 export type PageBase = PageBase$instance & __PageBase$views;
 
 
-export interface PageContext$instance extends ActionContext {
+export interface PageContext$instance extends Microsoft_AspNetCore_Mvc_Internal.ActionContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_PageContext: never;
 
     ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
@@ -312,8 +317,9 @@ export const PageContext: {
 
 export type PageContext = PageContext$instance;
 
-export interface PageContextAttribute$instance extends Attribute {
+export interface PageContextAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_PageContextAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
 }
 
@@ -325,7 +331,7 @@ export const PageContextAttribute: {
 
 export type PageContextAttribute = PageContextAttribute$instance;
 
-export interface PageModel$instance extends Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncPageFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IPageFilter$instance {
+export interface PageModel$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_PageModel: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncPageFilter: never;
@@ -351,9 +357,9 @@ export interface PageModel$instance extends Microsoft_AspNetCore_Mvc_Filters_Int
     Challenge(properties: AuthenticationProperties): ChallengeResult;
     Challenge(properties: AuthenticationProperties, ...authenticationSchemes: string[]): ChallengeResult;
     Content(content: string): ContentResult;
+    Content(content: string, contentType: MediaTypeHeaderValue | null): ContentResult;
     Content(content: string, contentType: string): ContentResult;
     Content(content: string, contentType: string, contentEncoding: Encoding): ContentResult;
-    Content(content: string, contentType: MediaTypeHeaderValue | null): ContentResult;
     File(fileContents: byte[], contentType: string): FileContentResult;
     File(fileContents: byte[], contentType: string, fileDownloadName: string | null): FileContentResult;
     File(fileStream: Stream, contentType: string): FileStreamResult;
@@ -384,46 +390,46 @@ export interface PageModel$instance extends Microsoft_AspNetCore_Mvc_Filters_Int
     RedirectPermanentPreserveMethod(url: string): RedirectResult;
     RedirectPreserveMethod(url: string): RedirectResult;
     RedirectToAction(actionName: string | null): RedirectToActionResult;
-    RedirectToAction(actionName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToAction(actionName: string | null, controllerName: string | null): RedirectToActionResult;
-    RedirectToAction(actionName: string | null, controllerName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToAction(actionName: string | null, controllerName: string | null, fragment: string | null): RedirectToActionResult;
+    RedirectToAction(actionName: string | null, controllerName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToAction(actionName: string | null, controllerName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToActionResult;
+    RedirectToAction(actionName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null): RedirectToActionResult;
-    RedirectToActionPermanent(actionName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null, controllerName: string | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null, controllerName: string | null, fragment: string | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null, controllerName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToActionPermanent(actionName: string | null, controllerName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToActionResult;
+    RedirectToActionPermanent(actionName: string | null, routeValues: unknown | null): RedirectToActionResult;
     RedirectToActionPermanentPreserveMethod(actionName?: string | null, controllerName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToActionResult;
     RedirectToActionPreserveMethod(actionName?: string | null, controllerName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToActionResult;
     RedirectToPage(): RedirectToPageResult;
-    RedirectToPage(routeValues: unknown | null): RedirectToPageResult;
     RedirectToPage(pageName: string | null): RedirectToPageResult;
     RedirectToPage(pageName: string | null, pageHandler: string | null): RedirectToPageResult;
-    RedirectToPage(pageName: string | null, pageHandler: string | null, routeValues: unknown | null): RedirectToPageResult;
-    RedirectToPage(pageName: string | null, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPage(pageName: string | null, pageHandler: string | null, fragment: string | null): RedirectToPageResult;
+    RedirectToPage(pageName: string | null, pageHandler: string | null, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPage(pageName: string | null, pageHandler: string | null, routeValues: unknown | null, fragment: string | null): RedirectToPageResult;
+    RedirectToPage(pageName: string | null, routeValues: unknown | null): RedirectToPageResult;
+    RedirectToPage(routeValues: unknown | null): RedirectToPageResult;
     RedirectToPagePermanent(pageName: string | null): RedirectToPageResult;
-    RedirectToPagePermanent(pageName: string | null, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPagePermanent(pageName: string | null, pageHandler: string | null): RedirectToPageResult;
-    RedirectToPagePermanent(pageName: string | null, pageHandler: string | null, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPagePermanent(pageName: string | null, pageHandler: string | null, fragment: string | null): RedirectToPageResult;
-    RedirectToPagePermanent(pageName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string | null, pageHandler: string | null, routeValues: unknown | null): RedirectToPageResult;
     RedirectToPagePermanent(pageName: string | null, pageHandler: string | null, routeValues: unknown | null, fragment: string | null): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string | null, routeValues: unknown | null): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToPageResult;
     RedirectToPagePermanentPreserveMethod(pageName?: string | null, pageHandler?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToPageResult;
     RedirectToPagePreserveMethod(pageName?: string | null, pageHandler?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToPageResult;
     RedirectToRoute(routeName: string | null): RedirectToRouteResult;
-    RedirectToRoute(routeValues: unknown | null): RedirectToRouteResult;
-    RedirectToRoute(routeName: string | null, routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoute(routeName: string | null, fragment: string | null): RedirectToRouteResult;
+    RedirectToRoute(routeName: string | null, routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoute(routeName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToRouteResult;
+    RedirectToRoute(routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoutePermanent(routeName: string | null): RedirectToRouteResult;
-    RedirectToRoutePermanent(routeValues: unknown | null): RedirectToRouteResult;
-    RedirectToRoutePermanent(routeName: string | null, routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoutePermanent(routeName: string | null, fragment: string | null): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeName: string | null, routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoutePermanent(routeName: string | null, routeValues: unknown | null, fragment: string | null): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeValues: unknown | null): RedirectToRouteResult;
     RedirectToRoutePermanentPreserveMethod(routeName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToRouteResult;
     RedirectToRoutePreserveMethod(routeName?: string | null, routeValues?: unknown | null, fragment?: string | null): RedirectToRouteResult;
     SignIn(principal: ClaimsPrincipal, authenticationScheme: string): SignInResult;
@@ -436,13 +442,13 @@ export interface PageModel$instance extends Microsoft_AspNetCore_Mvc_Filters_Int
     TryValidateModel(model: unknown, name: string | null): boolean;
     Unauthorized(): UnauthorizedResult;
     ViewComponent(componentName: string): ViewComponentResult;
-    ViewComponent(componentType: Type): ViewComponentResult;
     ViewComponent(componentName: string, arguments: unknown | null): ViewComponentResult;
+    ViewComponent(componentType: Type): ViewComponentResult;
     ViewComponent(componentType: Type, arguments: unknown | null): ViewComponentResult;
 }
 
 
-export const PageModel: (abstract new() => PageModel) & {
+export const PageModel: {
 };
 
 
@@ -454,7 +460,8 @@ export interface __PageModel$views {
 export type PageModel = PageModel$instance & __PageModel$views;
 
 
-export interface PageResult$instance extends ActionResult, Microsoft_AspNetCore_Mvc_Internal.IActionResult$instance {
+export interface PageResult$instance extends Microsoft_AspNetCore_Mvc_Internal.ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionResult: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_PageResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
@@ -466,7 +473,7 @@ export interface PageResult$instance extends ActionResult, Microsoft_AspNetCore_
     get StatusCode(): Nullable_1<System_Internal.Int32>;
     set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     ViewData: ViewDataDictionary;
-    ExecuteResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync: Microsoft_AspNetCore_Mvc_Internal.ActionResult$instance["ExecuteResultAsync"] & ((context: ActionContext) => Task);
 }
 
 
@@ -488,7 +495,7 @@ export interface RazorPagesOptions$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    Conventions: PageConventionCollection;
+    readonly Conventions: PageConventionCollection;
     RootDirectory: string;
 }
 

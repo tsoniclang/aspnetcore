@@ -21,7 +21,7 @@ export interface IApplicationBuilderFactory$instance {
 
 export type IApplicationBuilderFactory = IApplicationBuilderFactory$instance;
 
-export interface ApplicationBuilderFactory$instance extends IApplicationBuilderFactory$instance {
+export interface ApplicationBuilderFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Hosting_Builder_ApplicationBuilderFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Builder_IApplicationBuilderFactory: never;

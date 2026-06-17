@@ -14,12 +14,14 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, DateTimeOffset, Double, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 import type { StringSegment, StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
-export enum SameSiteMode {
-    Unspecified = -1,
-    None = 0,
-    Lax = 1,
-    Strict = 2
-}
+export type SameSiteMode = number & { readonly __tsonic_type_Microsoft_Net_Http_Headers_SameSiteMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SameSiteMode: {
+    readonly Unspecified: SameSiteMode;
+    readonly None: SameSiteMode;
+    readonly Lax: SameSiteMode;
+    readonly Strict: SameSiteMode;
+};
 
 
 export interface CacheControlHeaderValue$instance {
@@ -108,14 +110,11 @@ export type ContentDispositionHeaderValue = ContentDispositionHeaderValue$instan
 export interface ContentRangeHeaderValue$instance {
     readonly __tsonic_type_Microsoft_Net_Http_Headers_ContentRangeHeaderValue: never;
 
-    get From(): Nullable_1<System_Internal.Int64>;
-    set From(value: Nullable_1<System_Internal.Int64> | long);
+    readonly From: Nullable_1<System_Internal.Int64>;
     readonly HasLength: boolean;
     readonly HasRange: boolean;
-    get Length(): Nullable_1<System_Internal.Int64>;
-    set Length(value: Nullable_1<System_Internal.Int64> | long);
-    get To(): Nullable_1<System_Internal.Int64>;
-    set To(value: Nullable_1<System_Internal.Int64> | long);
+    readonly Length: Nullable_1<System_Internal.Int64>;
+    readonly To: Nullable_1<System_Internal.Int64>;
     Unit: StringSegment;
     Equals(obj: unknown | null): boolean;
     GetHashCode(): int;

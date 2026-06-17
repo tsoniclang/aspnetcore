@@ -28,22 +28,27 @@ import type { IConfiguration } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export enum HttpProtocols {
-    None = 0,
-    Http1 = 1,
-    Http2 = 2,
-    Http1AndHttp2 = 3,
-    Http3 = 4,
-    Http1AndHttp2AndHttp3 = 7
-}
+export type HttpProtocols = number & { readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_HttpProtocols: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const HttpProtocols: {
+    readonly None: HttpProtocols;
+    readonly Http1: HttpProtocols;
+    readonly Http2: HttpProtocols;
+    readonly Http1AndHttp2: HttpProtocols;
+    readonly Http3: HttpProtocols;
+    readonly Http1AndHttp2AndHttp3: HttpProtocols;
+};
 
 
-export interface BadHttpRequestException$instance extends BadHttpRequestException_Http {
+export interface BadHttpRequestException$instance extends Microsoft_AspNetCore_Http_Internal.BadHttpRequestException$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_BadHttpRequestException: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_BadHttpRequestException: never;
+    readonly __tsonic_type_System_Exception: never;
+    readonly __tsonic_type_System_IO_IOException: never;
+    readonly __tsonic_type_System_SystemException: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
-    readonly StatusCode: int;
 }
 
 
@@ -88,7 +93,7 @@ export const Http3Limits: {
 
 export type Http3Limits = Http3Limits$instance;
 
-export interface KestrelServer$instance extends Microsoft_AspNetCore_Hosting_Server_Internal.IServer$instance {
+export interface KestrelServer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServer: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IServer: never;
@@ -171,10 +176,10 @@ export interface KestrelServerOptions$instance {
     ConfigureHttpsDefaults(configureOptions: Action_1<HttpsConnectionAdapterOptions>): void;
     Listen(address: IPAddress, port: int): void;
     Listen(address: IPAddress, port: int, configure: Action_1<ListenOptions>): void;
-    Listen(endPoint: IPEndPoint): void;
     Listen(endPoint: EndPoint): void;
-    Listen(endPoint: IPEndPoint, configure: Action_1<ListenOptions>): void;
     Listen(endPoint: EndPoint, configure: Action_1<ListenOptions>): void;
+    Listen(endPoint: IPEndPoint): void;
+    Listen(endPoint: IPEndPoint, configure: Action_1<ListenOptions>): void;
     ListenAnyIP(port: int): void;
     ListenAnyIP(port: int, configure: Action_1<ListenOptions>): void;
     ListenHandle(handle: ulong): void;
@@ -195,7 +200,7 @@ export const KestrelServerOptions: {
 
 export type KestrelServerOptions = KestrelServerOptions$instance;
 
-export interface ListenOptions$instance extends Microsoft_AspNetCore_Connections_Internal.IConnectionBuilder$instance {
+export interface ListenOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_ListenOptions: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionBuilder: never;
@@ -203,10 +208,10 @@ export interface ListenOptions$instance extends Microsoft_AspNetCore_Connections
 
     readonly ApplicationServices: IServiceProvider;
     DisableAltSvcHeader: boolean;
-    EndPoint: EndPoint;
+    readonly EndPoint: EndPoint;
     readonly FileHandle: ulong;
     readonly IPEndPoint: IPEndPoint | null;
-    KestrelServerOptions: KestrelServerOptions;
+    readonly KestrelServerOptions: KestrelServerOptions;
     readonly PipeName: string | null;
     Protocols: HttpProtocols;
     readonly SocketPath: string | null;

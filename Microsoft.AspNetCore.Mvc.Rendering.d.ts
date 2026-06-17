@@ -68,7 +68,7 @@ export type IHtmlHelper<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.IHtmlHelper :
-  [T1] extends [unknown] ? Internal.IHtmlHelper_1<T1> : never;
+  Internal.IHtmlHelper_1<T1>;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering as ExtensionMethods } from './__internal/extensions/index.js';

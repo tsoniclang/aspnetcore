@@ -15,6 +15,7 @@ import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, V
 
 export interface ProtectedBrowserStorageResult_1$instance<TValue extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedBrowserStorageResult_1: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Success: boolean;
     readonly Value: TValue | null;
@@ -45,7 +46,8 @@ export const ProtectedBrowserStorage: {
 
 export type ProtectedBrowserStorage = ProtectedBrowserStorage$instance;
 
-export interface ProtectedLocalStorage$instance extends ProtectedBrowserStorage {
+export interface ProtectedLocalStorage$instance extends ProtectedBrowserStorage$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedBrowserStorage: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedLocalStorage: never;
 
 }
@@ -58,7 +60,8 @@ export const ProtectedLocalStorage: {
 
 export type ProtectedLocalStorage = ProtectedLocalStorage$instance;
 
-export interface ProtectedSessionStorage$instance extends ProtectedBrowserStorage {
+export interface ProtectedSessionStorage$instance extends ProtectedBrowserStorage$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedBrowserStorage: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedSessionStorage: never;
 
 }

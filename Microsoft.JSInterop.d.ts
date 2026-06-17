@@ -12,9 +12,8 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Cross-namespace type imports for constraints
 import type { DotNetInvocationInfo, DotNetInvocationResult, JSInvocationInfo } from './Microsoft.JSInterop.Infrastructure/internal/index.js';
 import type { Stream } from '@tsonic/dotnet/System.IO.js';
-import type { Attribute, Boolean as ClrBoolean, Byte, Enum, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Void } from '@tsonic/dotnet/System.js';
+import type { Attribute, Boolean as ClrBoolean, Byte, Enum, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, TimeSpan, Void } from '@tsonic/dotnet/System.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
-import type { JsonSerializerOptions } from '@tsonic/dotnet/System.Text.Json.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 

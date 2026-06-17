@@ -30,14 +30,15 @@ import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/inter
 import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_2, AsyncCallback, Boolean as ClrBoolean, Enum, Func_1, Func_2, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
-import type { IMemoryCache } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Memory/internal/index.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export enum LanguageViewLocationExpanderFormat {
-    SubFolder = 0,
-    Suffix = 1
-}
+export type LanguageViewLocationExpanderFormat = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_LanguageViewLocationExpanderFormat: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const LanguageViewLocationExpanderFormat: {
+    readonly SubFolder: LanguageViewLocationExpanderFormat;
+    readonly Suffix: LanguageViewLocationExpanderFormat;
+};
 
 
 export type RenderAsyncDelegate = () => Task;
@@ -80,8 +81,9 @@ export interface IRazorPageFactoryProvider$instance {
 
 export type IRazorPageFactoryProvider = IRazorPageFactoryProvider$instance;
 
-export interface IRazorViewEngine$instance extends IViewEngine {
+export interface IRazorViewEngine$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine: never;
 
     FindPage(context: ActionContext, pageName: string): RazorPageResult;
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
@@ -98,7 +100,7 @@ export type IRazorViewEngine = IRazorViewEngine$instance;
 export interface ITagHelperActivator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_ITagHelperActivator: never;
 
-    Create<TTagHelper extends unknown & ITagHelper>(context: ViewContext): TTagHelper;
+    Create<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }>(context: ViewContext): TTagHelper;
 }
 
 
@@ -107,20 +109,20 @@ export type ITagHelperActivator = ITagHelperActivator$instance;
 export interface ITagHelperFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_ITagHelperFactory: never;
 
-    CreateTagHelper<TTagHelper extends unknown & ITagHelper>(context: ViewContext): TTagHelper;
+    CreateTagHelper<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }>(context: ViewContext): TTagHelper;
 }
 
 
 export type ITagHelperFactory = ITagHelperFactory$instance;
 
-export interface ITagHelperInitializer_1$instance<TTagHelper extends unknown & ITagHelper> {
+export interface ITagHelperInitializer_1$instance<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1: never;
 
     Initialize(helper: TTagHelper, context: ViewContext): void;
 }
 
 
-export type ITagHelperInitializer_1<TTagHelper extends unknown & ITagHelper> = ITagHelperInitializer_1$instance<TTagHelper>;
+export type ITagHelperInitializer_1<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }> = ITagHelperInitializer_1$instance<TTagHelper>;
 
 export interface IViewLocationExpander$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander: never;
@@ -134,6 +136,7 @@ export type IViewLocationExpander = IViewLocationExpander$instance;
 
 export interface RazorPageFactoryResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageFactoryResult: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly RazorPageFactory: Func_1<IRazorPage> | null;
     readonly Success: boolean;
@@ -150,6 +153,7 @@ export type RazorPageFactoryResult = RazorPageFactoryResult$instance;
 
 export interface RazorPageResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageResult: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Name: string;
     readonly Page: IRazorPage | null;
@@ -165,7 +169,7 @@ export const RazorPageResult: {
 
 export type RazorPageResult = RazorPageResult$instance;
 
-export interface HelperResult$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance {
+export interface HelperResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_HelperResult: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
@@ -187,7 +191,7 @@ export interface __HelperResult$views {
 export type HelperResult = HelperResult$instance & __HelperResult$views;
 
 
-export interface LanguageViewLocationExpander$instance extends IViewLocationExpander$instance {
+export interface LanguageViewLocationExpander$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_LanguageViewLocationExpander: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander: never;
@@ -210,16 +214,17 @@ export interface __LanguageViewLocationExpander$views {
 export type LanguageViewLocationExpander = LanguageViewLocationExpander$instance & __LanguageViewLocationExpander$views;
 
 
-export interface RazorPage$instance extends RazorPageBase$instance, IRazorPage$instance {
+export interface RazorPage$instance extends RazorPageBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPage: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
 
     readonly Context: HttpContext;
-    BeginContext(position: int, length: int, isLiteral: boolean): void;
-    DefineSection2(name: string, section: RenderAsyncDelegate): void;
-    EndContext(): void;
-    EnsureRenderedBodyOrSections(): void;
+    BeginContext: RazorPageBase$instance["BeginContext"] & ((position: int, length: int, isLiteral: boolean) => void);
+    DefineSection: RazorPageBase$instance["DefineSection"] & ((name: string, section: RenderAsyncDelegate) => void);
+    EndContext: RazorPageBase$instance["EndContext"] & (() => void);
+    EnsureRenderedBodyOrSections: RazorPageBase$instance["EnsureRenderedBodyOrSections"] & (() => void);
     IgnoreBody(): void;
     IgnoreSection(sectionName: string): void;
     IsSectionDefined(name: string): boolean;
@@ -231,7 +236,7 @@ export interface RazorPage$instance extends RazorPageBase$instance, IRazorPage$i
 }
 
 
-export const RazorPage: (abstract new() => RazorPage) & {
+export const RazorPage: {
 };
 
 
@@ -242,7 +247,9 @@ export interface __RazorPage$views {
 export type RazorPage = RazorPage$instance & __RazorPage$views;
 
 
-export interface RazorPage_1$instance<TModel extends unknown> extends RazorPage$instance, IRazorPage$instance {
+export interface RazorPage_1$instance<TModel extends unknown> extends RazorPage$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPage: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPage_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
@@ -252,7 +259,7 @@ export interface RazorPage_1$instance<TModel extends unknown> extends RazorPage$
 }
 
 
-export const RazorPage_1: (abstract new<TModel extends unknown>() => RazorPage_1<TModel>) & {
+export const RazorPage_1: {
 };
 
 
@@ -263,7 +270,7 @@ export interface __RazorPage_1$views<TModel extends unknown> {
 export type RazorPage_1<TModel extends unknown> = RazorPage_1$instance<TModel> & __RazorPage_1$views<TModel>;
 
 
-export interface RazorPageActivator$instance extends IRazorPageActivator$instance {
+export interface RazorPageActivator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageActivator: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPageActivator: never;
@@ -284,7 +291,7 @@ export interface __RazorPageActivator$views {
 export type RazorPageActivator = RazorPageActivator$instance & __RazorPageActivator$views;
 
 
-export interface RazorPageBase$instance extends IRazorPage$instance {
+export interface RazorPageBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
@@ -309,7 +316,7 @@ export interface RazorPageBase$instance extends IRazorPage$instance {
     BeginContext(position: int, length: int, isLiteral: boolean): void;
     BeginWriteAttribute(name: string, prefix: string, prefixOffset: int, suffix: string, suffixOffset: int, attributeValuesCount: int): void;
     BeginWriteTagHelperAttribute(): void;
-    CreateTagHelper<TTagHelper extends unknown & ITagHelper>(): TTagHelper;
+    CreateTagHelper<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }>(): TTagHelper;
     DefineSection(name: string, section: RenderAsyncDelegate): void;
     EndAddHtmlAttributeValues(executionContext: TagHelperExecutionContext): void;
     EndContext(): void;
@@ -325,15 +332,15 @@ export interface RazorPageBase$instance extends IRazorPage$instance {
     PushWriter(writer: TextWriter): void;
     SetAntiforgeryCookieAndHeader(): HtmlString;
     StartTagHelperWritingScope(encoder: HtmlEncoder): void;
-    Write(value: unknown | null): void;
     Write(value: string | null): void;
+    Write(value: unknown | null): void;
     WriteAttributeValue(prefix: string, prefixOffset: int, value: unknown | null, valueOffset: int, valueLength: int, isLiteral: boolean): void;
-    WriteLiteral(value: unknown | null): void;
     WriteLiteral(value: string | null): void;
+    WriteLiteral(value: unknown | null): void;
 }
 
 
-export const RazorPageBase: (abstract new() => RazorPageBase) & {
+export const RazorPageBase: {
 };
 
 
@@ -344,7 +351,7 @@ export interface __RazorPageBase$views {
 export type RazorPageBase = RazorPageBase$instance & __RazorPageBase$views;
 
 
-export interface RazorView$instance extends Microsoft_AspNetCore_Mvc_ViewEngines_Internal.IView$instance {
+export interface RazorView$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorView: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_IView: never;
@@ -368,7 +375,7 @@ export interface __RazorView$views {
 export type RazorView = RazorView$instance & __RazorView$views;
 
 
-export interface RazorViewEngine$instance extends IRazorViewEngine$instance {
+export interface RazorViewEngine$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorViewEngine: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine: never;
@@ -415,7 +422,7 @@ export const RazorViewEngineOptions: {
 
 export type RazorViewEngineOptions = RazorViewEngineOptions$instance;
 
-export interface TagHelperInitializer_1$instance<TTagHelper extends unknown & ITagHelper> extends ITagHelperInitializer_1$instance<TTagHelper> {
+export interface TagHelperInitializer_1$instance<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelperInitializer_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1: never;
@@ -425,15 +432,15 @@ export interface TagHelperInitializer_1$instance<TTagHelper extends unknown & IT
 
 
 export const TagHelperInitializer_1: {
-    new<TTagHelper extends unknown & ITagHelper>(action: Action_2<TTagHelper, ViewContext>): TagHelperInitializer_1<TTagHelper>;
+    new<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }>(action: Action_2<TTagHelper, ViewContext>): TagHelperInitializer_1<TTagHelper>;
 };
 
 
-export interface __TagHelperInitializer_1$views<TTagHelper extends unknown & ITagHelper> {
+export interface __TagHelperInitializer_1$views<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }> {
     As_ITagHelperInitializer_1(): ITagHelperInitializer_1$instance<TTagHelper>;
 }
 
-export type TagHelperInitializer_1<TTagHelper extends unknown & ITagHelper> = TagHelperInitializer_1$instance<TTagHelper> & __TagHelperInitializer_1$views<TTagHelper>;
+export type TagHelperInitializer_1<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }> = TagHelperInitializer_1$instance<TTagHelper> & __TagHelperInitializer_1$views<TTagHelper>;
 
 
 export interface ViewLocationExpanderContext$instance {

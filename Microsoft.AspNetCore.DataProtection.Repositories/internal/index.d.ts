@@ -26,8 +26,9 @@ export interface IDeletableElement$instance {
 
 export type IDeletableElement = IDeletableElement$instance;
 
-export interface IDeletableXmlRepository$instance extends IXmlRepository {
+export interface IDeletableXmlRepository$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableXmlRepository: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository: never;
 
     DeleteElements(chooseElements: Action_1<IReadOnlyCollection_1<IDeletableElement>>): boolean;
     GetAllElements(): IReadOnlyCollection_1<XElement>;
@@ -49,7 +50,7 @@ export interface IXmlRepository$instance {
 
 export type IXmlRepository = IXmlRepository$instance;
 
-export interface FileSystemXmlRepository$instance extends IDeletableXmlRepository$instance {
+export interface FileSystemXmlRepository$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_Repositories_FileSystemXmlRepository: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableXmlRepository: never;
@@ -76,7 +77,7 @@ export interface __FileSystemXmlRepository$views {
 export type FileSystemXmlRepository = FileSystemXmlRepository$instance & __FileSystemXmlRepository$views;
 
 
-export interface RegistryXmlRepository$instance extends IDeletableXmlRepository$instance {
+export interface RegistryXmlRepository$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_Repositories_RegistryXmlRepository: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableXmlRepository: never;

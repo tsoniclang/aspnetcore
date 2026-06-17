@@ -9,26 +9,28 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Import types from other namespaces
 import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { ComponentBase, EventCallback_1, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection, RouteData } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { ComponentBase, EventCallback_1, EventCallbackWorkItem, IComponent, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle, RouteData } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { IEnumerable_1, IReadOnlyDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import type { Assembly } from "@tsonic/dotnet/System.Reflection/internal/index.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
-import type { Action, Boolean as ClrBoolean, Enum, EventArgs, Exception, Func_1, Func_2, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Enum, EventArgs, Func_2, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum NavLinkMatch {
-    Prefix = 0,
-    All = 1
-}
+export type NavLinkMatch = number & { readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_NavLinkMatch: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const NavLinkMatch: {
+    readonly Prefix: NavLinkMatch;
+    readonly All: NavLinkMatch;
+};
 
 
 export interface IHostEnvironmentNavigationManager$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Routing_IHostEnvironmentNavigationManager: never;
 
-    Initialize(baseUri: string, uri: string, onNavigateTo: Func_2<System_Internal.String, Task>): void;
     Initialize(baseUri: string, uri: string): void;
+    Initialize(baseUri: string, uri: string, onNavigateTo: Func_2<System_Internal.String, Task>): void;
 }
 
 
@@ -61,7 +63,8 @@ export interface IScrollToLocationHash$instance {
 
 export type IScrollToLocationHash = IScrollToLocationHash$instance;
 
-export interface FocusOnNavigate$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface FocusOnNavigate$instance extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_FocusOnNavigate: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -72,9 +75,9 @@ export interface FocusOnNavigate$instance extends ComponentBase, Microsoft_AspNe
     set RouteData(value: RouteData | null);
     get Selector(): string | null;
     set Selector(value: string | null);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    OnParametersSet(): void;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    OnAfterRenderAsync: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnAfterRenderAsync"] & ((firstRender: boolean) => Task);
+    OnParametersSet: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnParametersSet"] & (() => void);
 }
 
 
@@ -92,11 +95,11 @@ export interface __FocusOnNavigate$views {
 export type FocusOnNavigate = FocusOnNavigate$instance & __FocusOnNavigate$views;
 
 
-export interface LocationChangedEventArgs$instance extends EventArgs {
+export interface LocationChangedEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_LocationChangedEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
-    get HistoryEntryState(): string | null;
-    set HistoryEntryState(value: string | null);
+    readonly HistoryEntryState: string | null;
     readonly IsNavigationIntercepted: boolean;
     readonly Location: string;
 }
@@ -142,7 +145,7 @@ export const NavigationContext: {
 
 export type NavigationContext = NavigationContext$instance;
 
-export interface NavigationLock$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, System_Internal.IAsyncDisposable {
+export interface NavigationLock$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_NavigationLock: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -167,7 +170,8 @@ export interface __NavigationLock$views {
 export type NavigationLock = NavigationLock$instance & __NavigationLock$views;
 
 
-export interface NavLink$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface NavLink$instance extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_NavLink: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -182,10 +186,10 @@ export interface NavLink$instance extends ComponentBase, Microsoft_AspNetCore_Co
     get ChildContent(): RenderFragment | null;
     set ChildContent(value: RenderFragment | null);
     Match: NavLinkMatch;
-    BuildRenderTree(builder: RenderTreeBuilder): void;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
     Dispose(): void;
-    OnInitialized(): void;
-    OnParametersSet(): void;
+    OnInitialized: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnInitialized"] & (() => void);
+    OnParametersSet: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnParametersSet"] & (() => void);
     ShouldMatch(uriAbsolute: string): boolean;
 }
 
@@ -204,8 +208,9 @@ export interface __NavLink$views {
 export type NavLink = NavLink$instance & __NavLink$views;
 
 
-export interface NotFoundEventArgs$instance extends EventArgs {
+export interface NotFoundEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_NotFoundEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     get Path(): string | null;
     set Path(value: string | null);
@@ -219,7 +224,7 @@ export const NotFoundEventArgs: {
 
 export type NotFoundEventArgs = NotFoundEventArgs$instance;
 
-export interface Router$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, System_Internal.IDisposable {
+export interface Router$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_Router: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;

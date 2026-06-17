@@ -15,10 +15,12 @@ import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattab
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export enum HttpOnlyPolicy {
-    None = 0,
-    Always = 1
-}
+export type HttpOnlyPolicy = number & { readonly __tsonic_type_Microsoft_AspNetCore_CookiePolicy_HttpOnlyPolicy: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const HttpOnlyPolicy: {
+    readonly None: HttpOnlyPolicy;
+    readonly Always: HttpOnlyPolicy;
+};
 
 
 export interface AppendCookieContext$instance {
@@ -28,8 +30,8 @@ export interface AppendCookieContext$instance {
     CookieName: string;
     readonly CookieOptions: CookieOptions;
     CookieValue: string;
-    HasConsent: boolean;
-    IsConsentNeeded: boolean;
+    readonly HasConsent: boolean;
+    readonly IsConsentNeeded: boolean;
     IssueCookie: boolean;
 }
 
@@ -63,8 +65,8 @@ export interface DeleteCookieContext$instance {
     readonly Context: HttpContext;
     CookieName: string;
     readonly CookieOptions: CookieOptions;
-    HasConsent: boolean;
-    IsConsentNeeded: boolean;
+    readonly HasConsent: boolean;
+    readonly IsConsentNeeded: boolean;
     IssueCookie: boolean;
 }
 

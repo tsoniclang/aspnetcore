@@ -22,30 +22,37 @@ import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/interna
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Attribute, Boolean as ClrBoolean, Char, Enum, Func_3, IComparable, IConvertible, IFormatProvider, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum HtmlAttributeValueStyle {
-    DoubleQuotes = 0,
-    SingleQuotes = 1,
-    NoQuotes = 2,
-    Minimized = 3
-}
+export type HtmlAttributeValueStyle = number & { readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_HtmlAttributeValueStyle: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const HtmlAttributeValueStyle: {
+    readonly DoubleQuotes: HtmlAttributeValueStyle;
+    readonly SingleQuotes: HtmlAttributeValueStyle;
+    readonly NoQuotes: HtmlAttributeValueStyle;
+    readonly Minimized: HtmlAttributeValueStyle;
+};
 
 
-export enum TagMode {
-    StartTagAndEndTag = 0,
-    SelfClosing = 1,
-    StartTagOnly = 2
-}
+export type TagMode = number & { readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const TagMode: {
+    readonly StartTagAndEndTag: TagMode;
+    readonly SelfClosing: TagMode;
+    readonly StartTagOnly: TagMode;
+};
 
 
-export enum TagStructure {
-    Unspecified = 0,
-    NormalOrSelfClosing = 1,
-    WithoutEndTag = 2
-}
+export type TagStructure = number & { readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagStructure: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const TagStructure: {
+    readonly Unspecified: TagStructure;
+    readonly NormalOrSelfClosing: TagStructure;
+    readonly WithoutEndTag: TagStructure;
+};
 
 
-export interface ITagHelper$instance extends ITagHelperComponent {
+export interface ITagHelper$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     readonly Order: int;
     Init(context: TagHelperContext): void;
@@ -70,23 +77,20 @@ export type ITagHelperComponent = ITagHelperComponent$instance;
 
 export interface DefaultTagHelperContent$instance extends TagHelperContent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_DefaultTagHelperContent: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContent: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
 
-    readonly IsEmptyOrWhiteSpace: boolean;
-    readonly IsModified: boolean;
-    Append(unencoded: string): TagHelperContent;
-    AppendHtml(htmlContent: IHtmlContent): TagHelperContent;
-    AppendHtml(encoded: string): TagHelperContent;
-    Clear(): TagHelperContent;
-    CopyTo(destination: IHtmlContentBuilder): void;
-    GetContent(): string;
-    GetContent(encoder: HtmlEncoder): string;
-    MoveTo(destination: IHtmlContentBuilder): void;
-    Reinitialize(): void;
-    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    Append: TagHelperContent$instance["Append"] & ((unencoded: string) => TagHelperContent);
+    AppendHtml: TagHelperContent$instance["AppendHtml"] & ((encoded: string) => TagHelperContent) & ((htmlContent: IHtmlContent) => TagHelperContent);
+    Clear: TagHelperContent$instance["Clear"] & (() => TagHelperContent);
+    CopyTo: TagHelperContent$instance["CopyTo"] & ((destination: IHtmlContentBuilder) => void);
+    GetContent: TagHelperContent$instance["GetContent"] & (() => string) & ((encoder: HtmlEncoder) => string);
+    MoveTo: TagHelperContent$instance["MoveTo"] & ((destination: IHtmlContentBuilder) => void);
+    Reinitialize: TagHelperContent$instance["Reinitialize"] & (() => void);
+    WriteTo: TagHelperContent$instance["WriteTo"] & ((writer: TextWriter, encoder: HtmlEncoder) => void);
 }
 
 
@@ -104,11 +108,12 @@ export interface __DefaultTagHelperContent$views {
 export type DefaultTagHelperContent = DefaultTagHelperContent$instance & __DefaultTagHelperContent$views;
 
 
-export interface HtmlAttributeNameAttribute$instance extends Attribute {
+export interface HtmlAttributeNameAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_HtmlAttributeNameAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     DictionaryAttributePrefix: string;
-    DictionaryAttributePrefixSet: boolean;
+    readonly DictionaryAttributePrefixSet: boolean;
     readonly Name: string;
 }
 
@@ -121,8 +126,9 @@ export const HtmlAttributeNameAttribute: {
 
 export type HtmlAttributeNameAttribute = HtmlAttributeNameAttribute$instance;
 
-export interface HtmlAttributeNotBoundAttribute$instance extends Attribute {
+export interface HtmlAttributeNotBoundAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_HtmlAttributeNotBoundAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
 }
 
@@ -134,8 +140,9 @@ export const HtmlAttributeNotBoundAttribute: {
 
 export type HtmlAttributeNotBoundAttribute = HtmlAttributeNotBoundAttribute$instance;
 
-export interface HtmlTargetElementAttribute$instance extends Attribute {
+export interface HtmlTargetElementAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_HtmlTargetElementAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     Attributes: string;
     ParentTag: string;
@@ -153,16 +160,15 @@ export const HtmlTargetElementAttribute: {
 
 export type HtmlTargetElementAttribute = HtmlTargetElementAttribute$instance;
 
-export interface NullHtmlEncoder$instance extends HtmlEncoder {
+export interface NullHtmlEncoder$instance extends System_Text_Encodings_Web_Internal.HtmlEncoder {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_NullHtmlEncoder: never;
+    readonly __tsonic_type_System_Text_Encodings_Web_HtmlEncoder: never;
+    readonly __tsonic_type_System_Text_Encodings_Web_TextEncoder: never;
 
-    readonly MaxOutputCharactersPerInputCharacter: int;
-    Encode(value: string): string;
-    Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
-    Encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
-    FindFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
-    TryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
-    WillEncode(unicodeScalar: int): boolean;
+    Encode: System_Text_Encodings_Web_Internal.HtmlEncoder["Encode"] & ((output: TextWriter, value: char[], startIndex: int, characterCount: int) => void) & ((output: TextWriter, value: string, startIndex: int, characterCount: int) => void) & ((value: string) => string);
+    FindFirstCharacterToEncode: System_Text_Encodings_Web_Internal.HtmlEncoder["FindFirstCharacterToEncode"] & ((text: ptr<char>, textLength: int) => int);
+    TryEncodeUnicodeScalar: System_Text_Encodings_Web_Internal.HtmlEncoder["TryEncodeUnicodeScalar"] & ((unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int) => boolean);
+    WillEncode: System_Text_Encodings_Web_Internal.HtmlEncoder["WillEncode"] & ((unicodeScalar: int) => boolean);
 }
 
 
@@ -173,8 +179,9 @@ export const NullHtmlEncoder: {
 
 export type NullHtmlEncoder = NullHtmlEncoder$instance;
 
-export interface OutputElementHintAttribute$instance extends Attribute {
+export interface OutputElementHintAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_OutputElementHintAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly OutputElement: string;
 }
@@ -187,8 +194,9 @@ export const OutputElementHintAttribute: {
 
 export type OutputElementHintAttribute = OutputElementHintAttribute$instance;
 
-export interface ReadOnlyTagHelperAttributeList$instance extends ReadOnlyCollection_1<TagHelperAttribute> {
+export interface ReadOnlyTagHelperAttributeList$instance extends System_Collections_ObjectModel_Internal.ReadOnlyCollection_1<TagHelperAttribute> {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_ReadOnlyCollection_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -206,15 +214,15 @@ export interface ReadOnlyTagHelperAttributeList$instance extends ReadOnlyCollect
 }
 
 
-export const ReadOnlyTagHelperAttributeList: (abstract new() => ReadOnlyTagHelperAttributeList) & (abstract new(attributes: IList_1<TagHelperAttribute>) => ReadOnlyTagHelperAttributeList) & {
-    NameEquals(name: string, attribute: TagHelperAttribute): boolean;
+export const ReadOnlyTagHelperAttributeList: (abstract new(attributes: IList_1<TagHelperAttribute>) => ReadOnlyTagHelperAttributeList) & {
 };
 
 
 export type ReadOnlyTagHelperAttributeList = ReadOnlyTagHelperAttributeList$instance & { readonly [name: string]: TagHelperAttribute; };
 
-export interface RestrictChildrenAttribute$instance extends Attribute {
+export interface RestrictChildrenAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_RestrictChildrenAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly ChildTags: IEnumerable_1<System_Internal.String>;
 }
@@ -227,7 +235,7 @@ export const RestrictChildrenAttribute: {
 
 export type RestrictChildrenAttribute = RestrictChildrenAttribute$instance;
 
-export interface TagHelper$instance extends ITagHelper, ITagHelper$instance {
+export interface TagHelper$instance extends ITagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
@@ -240,7 +248,7 @@ export interface TagHelper$instance extends ITagHelper, ITagHelper$instance {
 }
 
 
-export const TagHelper: (abstract new() => TagHelper) & {
+export const TagHelper: {
 };
 
 
@@ -251,7 +259,7 @@ export interface __TagHelper$views {
 export type TagHelper = TagHelper$instance & __TagHelper$views;
 
 
-export interface TagHelperAttribute$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContentContainer$instance {
+export interface TagHelperAttribute$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
@@ -261,8 +269,8 @@ export interface TagHelperAttribute$instance extends Microsoft_AspNetCore_Html_I
     readonly Value: unknown;
     readonly ValueStyle: HtmlAttributeValueStyle;
     CopyTo(destination: IHtmlContentBuilder): void;
-    Equals(other: TagHelperAttribute): boolean;
     Equals(obj: unknown): boolean;
+    Equals(other: TagHelperAttribute): boolean;
     GetHashCode(): int;
     MoveTo(destination: IHtmlContentBuilder): void;
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
@@ -284,8 +292,10 @@ export interface __TagHelperAttribute$views {
 export type TagHelperAttribute = TagHelperAttribute$instance & __TagHelperAttribute$views;
 
 
-export interface TagHelperAttributeList$instance extends ReadOnlyTagHelperAttributeList {
+export interface TagHelperAttributeList$instance extends ReadOnlyTagHelperAttributeList$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_ReadOnlyCollection_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -296,15 +306,15 @@ export interface TagHelperAttributeList$instance extends ReadOnlyTagHelperAttrib
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    Add(name: string, value: unknown): void;
     Add(attribute: TagHelperAttribute): void;
+    Add(name: string, value: unknown): void;
     Clear(): void;
     Insert(index: int, attribute: TagHelperAttribute): void;
     Remove(attribute: TagHelperAttribute): boolean;
     RemoveAll(name: string): boolean;
     RemoveAt(index: int): void;
-    SetAttribute(name: string, value: unknown): void;
     SetAttribute(attribute: TagHelperAttribute): void;
+    SetAttribute(name: string, value: unknown): void;
 }
 
 
@@ -317,7 +327,7 @@ export const TagHelperAttributeList: {
 
 export type TagHelperAttributeList = TagHelperAttributeList$instance & { [index: number]: TagHelperAttribute; };
 
-export interface TagHelperComponent$instance extends ITagHelperComponent$instance {
+export interface TagHelperComponent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperComponent: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -329,7 +339,7 @@ export interface TagHelperComponent$instance extends ITagHelperComponent$instanc
 }
 
 
-export const TagHelperComponent: (abstract new() => TagHelperComponent) & {
+export const TagHelperComponent: {
 };
 
 
@@ -352,8 +362,8 @@ export interface TagHelperContent$instance {
     Append(unencoded: string): TagHelperContent;
     AppendFormat(format: string, ...args: unknown[]): TagHelperContent;
     AppendFormat(provider: IFormatProvider, format: string, ...args: unknown[]): TagHelperContent;
-    AppendHtml(htmlContent: IHtmlContent): TagHelperContent;
     AppendHtml(encoded: string): TagHelperContent;
+    AppendHtml(htmlContent: IHtmlContent): TagHelperContent;
     Clear(): TagHelperContent;
     CopyTo(destination: IHtmlContentBuilder): void;
     GetContent(): string;
@@ -361,13 +371,13 @@ export interface TagHelperContent$instance {
     MoveTo(destination: IHtmlContentBuilder): void;
     Reinitialize(): void;
     SetContent(unencoded: string): TagHelperContent;
-    SetHtmlContent(htmlContent: IHtmlContent): TagHelperContent;
     SetHtmlContent(encoded: string): TagHelperContent;
+    SetHtmlContent(htmlContent: IHtmlContent): TagHelperContent;
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
-export const TagHelperContent: (abstract new() => TagHelperContent) & {
+export const TagHelperContent: {
 };
 
 
@@ -384,11 +394,11 @@ export interface TagHelperContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext: never;
 
     readonly AllAttributes: ReadOnlyTagHelperAttributeList;
-    Items: IDictionary_2<unknown, unknown>;
-    TagName: string;
-    UniqueId: string;
-    Reinitialize(tagName: string, items: IDictionary_2<unknown, unknown>, uniqueId: string): void;
+    readonly Items: IDictionary_2<unknown, unknown>;
+    readonly TagName: string;
+    readonly UniqueId: string;
     Reinitialize(items: IDictionary_2<unknown, unknown>, uniqueId: string): void;
+    Reinitialize(tagName: string, items: IDictionary_2<unknown, unknown>, uniqueId: string): void;
 }
 
 
@@ -400,7 +410,7 @@ export const TagHelperContext: {
 
 export type TagHelperContext = TagHelperContext$instance;
 
-export interface TagHelperOutput$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContentContainer$instance {
+export interface TagHelperOutput$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
@@ -416,8 +426,8 @@ export interface TagHelperOutput$instance extends Microsoft_AspNetCore_Html_Inte
     TagMode: TagMode;
     TagName: string;
     GetChildContentAsync(): Task_1<TagHelperContent>;
-    GetChildContentAsync(useCachedResult: boolean): Task_1<TagHelperContent>;
     GetChildContentAsync(encoder: HtmlEncoder): Task_1<TagHelperContent>;
+    GetChildContentAsync(useCachedResult: boolean): Task_1<TagHelperContent>;
     GetChildContentAsync(useCachedResult: boolean, encoder: HtmlEncoder): Task_1<TagHelperContent>;
     Reinitialize(tagName: string, tagMode: TagMode): void;
     SuppressOutput(): void;

@@ -10,11 +10,13 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum KeyDerivationPrf {
-    HMACSHA1 = 0,
-    HMACSHA256 = 1,
-    HMACSHA512 = 2
-}
+export type KeyDerivationPrf = number & { readonly __tsonic_type_Microsoft_AspNetCore_Cryptography_KeyDerivation_KeyDerivationPrf: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const KeyDerivationPrf: {
+    readonly HMACSHA1: KeyDerivationPrf;
+    readonly HMACSHA256: KeyDerivationPrf;
+    readonly HMACSHA512: KeyDerivationPrf;
+};
 
 
 export abstract class KeyDerivation$instance {

@@ -9,72 +9,81 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Import types from other namespaces
 import type { BigInteger } from "@tsonic/dotnet/System.Numerics/internal/index.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Decimal, Double, Enum, Exception, Half, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, Single, Span_1, String as ClrString, UInt32, UInt64, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum CborConformanceMode {
-    Lax = 0,
-    Strict = 1,
-    Canonical = 2,
-    Ctap2Canonical = 3
-}
+export type CborConformanceMode = number & { readonly __tsonic_type_System_Formats_Cbor_CborConformanceMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const CborConformanceMode: {
+    readonly Lax: CborConformanceMode;
+    readonly Strict: CborConformanceMode;
+    readonly Canonical: CborConformanceMode;
+    readonly Ctap2Canonical: CborConformanceMode;
+};
 
 
-export enum CborReaderState {
-    Undefined = 0,
-    UnsignedInteger = 1,
-    NegativeInteger = 2,
-    ByteString = 3,
-    StartIndefiniteLengthByteString = 4,
-    EndIndefiniteLengthByteString = 5,
-    TextString = 6,
-    StartIndefiniteLengthTextString = 7,
-    EndIndefiniteLengthTextString = 8,
-    StartArray = 9,
-    EndArray = 10,
-    StartMap = 11,
-    EndMap = 12,
-    Tag = 13,
-    SimpleValue = 14,
-    HalfPrecisionFloat = 15,
-    SinglePrecisionFloat = 16,
-    DoublePrecisionFloat = 17,
-    Null = 18,
-    Boolean = 19,
-    Finished = 20
-}
+export type CborReaderState = number & { readonly __tsonic_type_System_Formats_Cbor_CborReaderState: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const CborReaderState: {
+    readonly Undefined: CborReaderState;
+    readonly UnsignedInteger: CborReaderState;
+    readonly NegativeInteger: CborReaderState;
+    readonly ByteString: CborReaderState;
+    readonly StartIndefiniteLengthByteString: CborReaderState;
+    readonly EndIndefiniteLengthByteString: CborReaderState;
+    readonly TextString: CborReaderState;
+    readonly StartIndefiniteLengthTextString: CborReaderState;
+    readonly EndIndefiniteLengthTextString: CborReaderState;
+    readonly StartArray: CborReaderState;
+    readonly EndArray: CborReaderState;
+    readonly StartMap: CborReaderState;
+    readonly EndMap: CborReaderState;
+    readonly Tag: CborReaderState;
+    readonly SimpleValue: CborReaderState;
+    readonly HalfPrecisionFloat: CborReaderState;
+    readonly SinglePrecisionFloat: CborReaderState;
+    readonly DoublePrecisionFloat: CborReaderState;
+    readonly Null: CborReaderState;
+    readonly Boolean: CborReaderState;
+    readonly Finished: CborReaderState;
+};
 
 
-export enum CborSimpleValue {
-    False = 20,
-    True = 21,
-    Null = 22,
-    Undefined = 23
-}
+export type CborSimpleValue = number & { readonly __tsonic_type_System_Formats_Cbor_CborSimpleValue: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const CborSimpleValue: {
+    readonly False: CborSimpleValue;
+    readonly True: CborSimpleValue;
+    readonly Null: CborSimpleValue;
+    readonly Undefined: CborSimpleValue;
+};
 
 
-export enum CborTag {
-    DateTimeString = 0,
-    UnixTimeSeconds = 1,
-    UnsignedBigNum = 2,
-    NegativeBigNum = 3,
-    DecimalFraction = 4,
-    BigFloat = 5,
-    Base64UrlLaterEncoding = 21,
-    Base64StringLaterEncoding = 22,
-    Base16StringLaterEncoding = 23,
-    EncodedCborDataItem = 24,
-    Uri = 32,
-    Base64Url = 33,
-    Base64 = 34,
-    Regex = 35,
-    MimeMessage = 36,
-    SelfDescribeCbor = 55799
-}
+export type CborTag = number & { readonly __tsonic_type_System_Formats_Cbor_CborTag: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const CborTag: {
+    readonly DateTimeString: CborTag;
+    readonly UnixTimeSeconds: CborTag;
+    readonly UnsignedBigNum: CborTag;
+    readonly NegativeBigNum: CborTag;
+    readonly DecimalFraction: CborTag;
+    readonly BigFloat: CborTag;
+    readonly Base64UrlLaterEncoding: CborTag;
+    readonly Base64StringLaterEncoding: CborTag;
+    readonly Base16StringLaterEncoding: CborTag;
+    readonly EncodedCborDataItem: CborTag;
+    readonly Uri: CborTag;
+    readonly Base64Url: CborTag;
+    readonly Base64: CborTag;
+    readonly Regex: CborTag;
+    readonly MimeMessage: CborTag;
+    readonly SelfDescribeCbor: CborTag;
+};
 
 
-export interface CborContentException$instance extends Exception {
+export interface CborContentException$instance extends System_Internal.Exception {
+    readonly __tsonic_type_System_Exception: never;
     readonly __tsonic_type_System_Formats_Cbor_CborContentException: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
@@ -158,8 +167,8 @@ export interface CborWriter$instance {
     TryEncode(destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
     WriteBigInteger(value: BigInteger): void;
     WriteBoolean(value: boolean): void;
-    WriteByteString(value: byte[]): void;
     WriteByteString(value: ReadOnlySpan_1<System_Internal.Byte>): void;
+    WriteByteString(value: byte[]): void;
     WriteCborNegativeIntegerRepresentation(value: ulong): void;
     WriteDateTimeOffset(value: DateTimeOffset): void;
     WriteDecimal(value: decimal): void;
@@ -180,12 +189,12 @@ export interface CborWriter$instance {
     WriteStartIndefiniteLengthTextString(): void;
     WriteStartMap(definiteLength: Nullable_1<System_Internal.Int32>): void;
     WriteTag(tag: CborTag): void;
-    WriteTextString(value: string): void;
     WriteTextString(value: ReadOnlySpan_1<System_Internal.Char>): void;
+    WriteTextString(value: string): void;
     WriteUInt32(value: uint): void;
     WriteUInt64(value: ulong): void;
-    WriteUnixTimeSeconds(seconds: long): void;
     WriteUnixTimeSeconds(seconds: double): void;
+    WriteUnixTimeSeconds(seconds: long): void;
 }
 
 

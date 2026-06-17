@@ -29,54 +29,68 @@ import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/interna
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Enum, Func_2, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum CheckBoxHiddenInputRenderMode {
-    None = 0,
-    Inline = 1,
-    EndOfForm = 2
-}
+export type CheckBoxHiddenInputRenderMode = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_CheckBoxHiddenInputRenderMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const CheckBoxHiddenInputRenderMode: {
+    readonly None: CheckBoxHiddenInputRenderMode;
+    readonly Inline: CheckBoxHiddenInputRenderMode;
+    readonly EndOfForm: CheckBoxHiddenInputRenderMode;
+};
 
 
-export enum FormInputRenderMode {
-    DetectCultureFromInputType = 0,
-    AlwaysUseCurrentCulture = 1
-}
+export type FormInputRenderMode = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_FormInputRenderMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const FormInputRenderMode: {
+    readonly DetectCultureFromInputType: FormInputRenderMode;
+    readonly AlwaysUseCurrentCulture: FormInputRenderMode;
+};
 
 
-export enum FormMethod {
-    Get = 0,
-    Post = 1,
-    Dialog = 2
-}
+export type FormMethod = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_FormMethod: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const FormMethod: {
+    readonly Get: FormMethod;
+    readonly Post: FormMethod;
+    readonly Dialog: FormMethod;
+};
 
 
-export enum Html5DateRenderingMode {
-    Rfc3339 = 0,
-    CurrentCulture = 1
-}
+export type Html5DateRenderingMode = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_Html5DateRenderingMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const Html5DateRenderingMode: {
+    readonly Rfc3339: Html5DateRenderingMode;
+    readonly CurrentCulture: Html5DateRenderingMode;
+};
 
 
-export enum RenderMode {
-    Static = 1,
-    Server = 2,
-    ServerPrerendered = 3,
-    WebAssembly = 4,
-    WebAssemblyPrerendered = 5
-}
+export type RenderMode = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_RenderMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const RenderMode: {
+    readonly Static: RenderMode;
+    readonly Server: RenderMode;
+    readonly ServerPrerendered: RenderMode;
+    readonly WebAssembly: RenderMode;
+    readonly WebAssemblyPrerendered: RenderMode;
+};
 
 
-export enum TagRenderMode {
-    Normal = 0,
-    StartTag = 1,
-    EndTag = 2,
-    SelfClosing = 3
-}
+export type TagRenderMode = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_TagRenderMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const TagRenderMode: {
+    readonly Normal: TagRenderMode;
+    readonly StartTag: TagRenderMode;
+    readonly EndTag: TagRenderMode;
+    readonly SelfClosing: TagRenderMode;
+};
 
 
-export enum ValidationSummary {
-    None = 0,
-    ModelOnly = 1,
-    All = 2
-}
+export type ValidationSummary = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_ValidationSummary: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ValidationSummary: {
+    readonly None: ValidationSummary;
+    readonly ModelOnly: ValidationSummary;
+    readonly All: ValidationSummary;
+};
 
 
 export interface IHtmlHelper$instance {
@@ -101,15 +115,15 @@ export interface IHtmlHelper$instance {
     Encode(value: unknown): string;
     EndForm(): void;
     FormatValue(value: unknown, format: string): string;
-    GetEnumSelectList<TEnum extends NonNullable<unknown>>(): IEnumerable_1<SelectListItem>;
     GetEnumSelectList(enumType: Type): IEnumerable_1<SelectListItem>;
+    GetEnumSelectList<TEnum extends { readonly __tsonic_type_System_ValueType: never }>(): IEnumerable_1<SelectListItem>;
     Hidden(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
     Label(expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
     ListBox(expression: string, selectList: IEnumerable_1<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
     PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task_1<IHtmlContent>;
     RadioButton(expression: string, value: unknown, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
-    Raw(value: unknown): IHtmlContent;
     Raw(value: string): IHtmlContent;
+    Raw(value: unknown): IHtmlContent;
     RenderPartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task;
     RouteLink(linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
     TextArea(expression: string, value: string, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
@@ -122,7 +136,8 @@ export interface IHtmlHelper$instance {
 
 export type IHtmlHelper = IHtmlHelper$instance;
 
-export interface IHtmlHelper_1$instance<TModel extends unknown> extends IHtmlHelper {
+export interface IHtmlHelper_1$instance<TModel extends unknown> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_1: never;
 
     readonly ViewData: ViewDataDictionary_1<TModel>;
@@ -144,13 +159,12 @@ export interface IHtmlHelper_1$instance<TModel extends unknown> extends IHtmlHel
     DisplayNameFor<TResult extends unknown>(expression: Expression_1<Func_2<TModel, TResult>>): string;
     DropDownList(expression: string, selectList: IEnumerable_1<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
     DropDownListFor<TResult extends unknown>(expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
-    Encode(value: unknown): string;
     Encode(value: string): string;
+    Encode(value: unknown): string;
     EndForm(): void;
     FormatValue(value: unknown, format: string): string;
-    GetEnumSelectList<TEnum extends NonNullable<unknown>>(): IEnumerable_1<SelectListItem>;
     GetEnumSelectList(enumType: Type): IEnumerable_1<SelectListItem>;
-    GetEnumSelectList<TEnum>(): IEnumerable_1<SelectListItem>;
+    GetEnumSelectList<TEnum extends { readonly __tsonic_type_System_ValueType: never }>(): IEnumerable_1<SelectListItem>;
     Hidden(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
     Label(expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
     LabelFor<TResult extends unknown>(expression: Expression_1<Func_2<TModel, TResult>>, labelText: string, htmlAttributes: unknown): IHtmlContent;
@@ -159,8 +173,8 @@ export interface IHtmlHelper_1$instance<TModel extends unknown> extends IHtmlHel
     PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task_1<IHtmlContent>;
     RadioButton(expression: string, value: unknown, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
     RadioButtonFor<TResult extends unknown>(expression: Expression_1<Func_2<TModel, TResult>>, value: unknown, htmlAttributes: unknown): IHtmlContent;
-    Raw(value: unknown): IHtmlContent;
     Raw(value: string): IHtmlContent;
+    Raw(value: unknown): IHtmlContent;
     RenderPartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task;
     RouteLink(linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
     TextArea(expression: string, value: string, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
@@ -230,7 +244,8 @@ export const MvcForm: {
 
 export type MvcForm = MvcForm$instance;
 
-export interface SelectList$instance extends MultiSelectList {
+export interface SelectList$instance extends MultiSelectList$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_MultiSelectList: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_SelectList: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -287,7 +302,7 @@ export const SelectListItem: {
 
 export type SelectListItem = SelectListItem$instance;
 
-export interface TagBuilder$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance {
+export interface TagBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_TagBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
@@ -325,7 +340,8 @@ export interface __TagBuilder$views {
 export type TagBuilder = TagBuilder$instance & __TagBuilder$views;
 
 
-export interface ViewContext$instance extends ActionContext {
+export interface ViewContext$instance extends Microsoft_AspNetCore_Mvc_Internal.ActionContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_ViewContext: never;
 
     CheckBoxHiddenInputRenderMode: CheckBoxHiddenInputRenderMode;
@@ -355,8 +371,8 @@ export const ViewContext: {
 export type ViewContext = ViewContext$instance;
 
 export abstract class HtmlHelperComponentExtensions$instance {
-    static RenderComponentAsync<TComponent extends unknown & IComponent>(htmlHelper: IHtmlHelper, renderMode: RenderMode, parameters: unknown): Task_1<IHtmlContent>;
-    static RenderComponentAsync<TComponent extends unknown & IComponent>(htmlHelper: IHtmlHelper, renderMode: RenderMode): Task_1<IHtmlContent>;
+    static RenderComponentAsync<TComponent extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never }>(htmlHelper: IHtmlHelper, renderMode: RenderMode, parameters: unknown): Task_1<IHtmlContent>;
+    static RenderComponentAsync<TComponent extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never }>(htmlHelper: IHtmlHelper, renderMode: RenderMode): Task_1<IHtmlContent>;
     static RenderComponentAsync(htmlHelper: IHtmlHelper, componentType: Type, renderMode: RenderMode, parameters: unknown): Task_1<IHtmlContent>;
 }
 

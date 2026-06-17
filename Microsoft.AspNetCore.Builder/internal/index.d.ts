@@ -79,7 +79,8 @@ export interface IEndpointConventionBuilder$instance {
 
 export type IEndpointConventionBuilder = IEndpointConventionBuilder$instance;
 
-export interface IHubEndpointConventionBuilder$instance extends IEndpointConventionBuilder {
+export interface IHubEndpointConventionBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder: never;
 
     Add(convention: Action_1<EndpointBuilder>): void;
@@ -90,7 +91,7 @@ export interface IHubEndpointConventionBuilder$instance extends IEndpointConvent
 
 export type IHubEndpointConventionBuilder = IHubEndpointConventionBuilder$instance;
 
-export interface ApplicationBuilder$instance extends IApplicationBuilder$instance {
+export interface ApplicationBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_ApplicationBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IApplicationBuilder: never;
@@ -117,7 +118,7 @@ export interface __ApplicationBuilder$views {
 export type ApplicationBuilder = ApplicationBuilder$instance & __ApplicationBuilder$views;
 
 
-export interface ComponentEndpointConventionBuilder$instance extends IHubEndpointConventionBuilder, IHubEndpointConventionBuilder$instance {
+export interface ComponentEndpointConventionBuilder$instance extends IHubEndpointConventionBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_ComponentEndpointConventionBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
@@ -139,7 +140,7 @@ export interface __ComponentEndpointConventionBuilder$views {
 export type ComponentEndpointConventionBuilder = ComponentEndpointConventionBuilder$instance & __ComponentEndpointConventionBuilder$views;
 
 
-export interface ConfigureHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsConfigureWebHost$instance, Microsoft_Extensions_Hosting_Lib_tsonic_microsoft_extensions.IHostBuilder {
+export interface ConfigureHostBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_ConfigureHostBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsConfigureWebHost: never;
@@ -150,8 +151,8 @@ export interface ConfigureHostBuilder$instance extends Microsoft_AspNetCore_Host
     ConfigureContainer<TContainerBuilder extends unknown>(configureDelegate: Action_2<HostBuilderContext, TContainerBuilder>): IHostBuilder;
     ConfigureHostConfiguration(configureDelegate: Action_1<IConfigurationBuilder>): IHostBuilder;
     ConfigureServices(configureDelegate: Action_2<HostBuilderContext, IServiceCollection>): IHostBuilder;
-    UseServiceProviderFactory<TContainerBuilder extends unknown>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
     UseServiceProviderFactory<TContainerBuilder extends unknown>(factory: Func_2<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder extends unknown>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
 }
 
 
@@ -166,15 +167,15 @@ export interface __ConfigureHostBuilder$views {
 export type ConfigureHostBuilder = ConfigureHostBuilder$instance & __ConfigureHostBuilder$views;
 
 
-export interface ConfigureWebHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsStartup$instance, Microsoft_AspNetCore_Hosting_Internal.IWebHostBuilder$instance {
+export interface ConfigureWebHostBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_ConfigureWebHostBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsStartup: never;
 
     ConfigureAppConfiguration(configureDelegate: Action_2<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
-    ConfigureServices(configureServices: Action_2<WebHostBuilderContext, IServiceCollection>): IWebHostBuilder;
     ConfigureServices(configureServices: Action_1<IServiceCollection>): IWebHostBuilder;
+    ConfigureServices(configureServices: Action_2<WebHostBuilderContext, IServiceCollection>): IWebHostBuilder;
     GetSetting(key: string): string | null;
     UseSetting(key: string, value: string | null): IWebHostBuilder;
 }
@@ -192,7 +193,7 @@ export interface __ConfigureWebHostBuilder$views {
 export type ConfigureWebHostBuilder = ConfigureWebHostBuilder$instance & __ConfigureWebHostBuilder$views;
 
 
-export interface ConnectionEndpointRouteBuilder$instance extends IEndpointConventionBuilder$instance {
+export interface ConnectionEndpointRouteBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_ConnectionEndpointRouteBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
@@ -213,7 +214,7 @@ export interface __ConnectionEndpointRouteBuilder$views {
 export type ConnectionEndpointRouteBuilder = ConnectionEndpointRouteBuilder$instance & __ConnectionEndpointRouteBuilder$views;
 
 
-export interface ControllerActionEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {
+export interface ControllerActionEndpointConventionBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_ControllerActionEndpointConventionBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
@@ -258,8 +259,9 @@ export const CookiePolicyOptions: {
 
 export type CookiePolicyOptions = CookiePolicyOptions$instance;
 
-export interface DefaultFilesOptions$instance extends SharedOptionsBase {
+export interface DefaultFilesOptions$instance extends Microsoft_AspNetCore_StaticFiles_Infrastructure_Internal.SharedOptionsBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_DefaultFilesOptions: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_Infrastructure_SharedOptionsBase: never;
 
     DefaultFileNames: IList_1<System_Internal.String>;
 }
@@ -289,8 +291,9 @@ export const DeveloperExceptionPageOptions: {
 
 export type DeveloperExceptionPageOptions = DeveloperExceptionPageOptions$instance;
 
-export interface DirectoryBrowserOptions$instance extends SharedOptionsBase {
+export interface DirectoryBrowserOptions$instance extends Microsoft_AspNetCore_StaticFiles_Infrastructure_Internal.SharedOptionsBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_DirectoryBrowserOptions: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_Infrastructure_SharedOptionsBase: never;
 
     get Formatter(): IDirectoryFormatter | null;
     set Formatter(value: IDirectoryFormatter | null);
@@ -319,7 +322,7 @@ export interface EndpointBuilder$instance {
 }
 
 
-export const EndpointBuilder: (abstract new() => EndpointBuilder) & {
+export const EndpointBuilder: {
 };
 
 
@@ -347,14 +350,15 @@ export const ExceptionHandlerOptions: {
 
 export type ExceptionHandlerOptions = ExceptionHandlerOptions$instance;
 
-export interface FileServerOptions$instance extends SharedOptionsBase {
+export interface FileServerOptions$instance extends Microsoft_AspNetCore_StaticFiles_Infrastructure_Internal.SharedOptionsBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_FileServerOptions: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_Infrastructure_SharedOptionsBase: never;
 
-    DefaultFilesOptions: DefaultFilesOptions;
-    DirectoryBrowserOptions: DirectoryBrowserOptions;
+    readonly DefaultFilesOptions: DefaultFilesOptions;
+    readonly DirectoryBrowserOptions: DirectoryBrowserOptions;
     EnableDefaultFiles: boolean;
     EnableDirectoryBrowsing: boolean;
-    StaticFileOptions: StaticFileOptions;
+    readonly StaticFileOptions: StaticFileOptions;
 }
 
 
@@ -409,7 +413,7 @@ export const HttpMethodOverrideOptions: {
 
 export type HttpMethodOverrideOptions = HttpMethodOverrideOptions$instance;
 
-export interface HubEndpointConventionBuilder$instance extends IHubEndpointConventionBuilder, IHubEndpointConventionBuilder$instance {
+export interface HubEndpointConventionBuilder$instance extends IHubEndpointConventionBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_HubEndpointConventionBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
@@ -448,7 +452,7 @@ export const IISOptions: {
 
 export type IISOptions = IISOptions$instance;
 
-export interface PageActionEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {
+export interface PageActionEndpointConventionBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_PageActionEndpointConventionBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
@@ -469,7 +473,7 @@ export interface __PageActionEndpointConventionBuilder$views {
 export type PageActionEndpointConventionBuilder = PageActionEndpointConventionBuilder$instance & __PageActionEndpointConventionBuilder$views;
 
 
-export interface RazorComponentsEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {
+export interface RazorComponentsEndpointConventionBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_RazorComponentsEndpointConventionBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
@@ -516,7 +520,7 @@ export const RequestLocalizationOptions: {
 
 export type RequestLocalizationOptions = RequestLocalizationOptions$instance;
 
-export interface RouteHandlerBuilder$instance extends IEndpointConventionBuilder$instance {
+export interface RouteHandlerBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_RouteHandlerBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
@@ -568,8 +572,9 @@ export const SessionOptions: {
 
 export type SessionOptions = SessionOptions$instance;
 
-export interface StaticFileOptions$instance extends SharedOptionsBase {
+export interface StaticFileOptions$instance extends Microsoft_AspNetCore_StaticFiles_Infrastructure_Internal.SharedOptionsBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_StaticFileOptions: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_Infrastructure_SharedOptionsBase: never;
 
     ContentTypeProvider: IContentTypeProvider;
     get DefaultContentType(): string | null;
@@ -604,7 +609,7 @@ export const StatusCodePagesOptions: {
 
 export type StatusCodePagesOptions = StatusCodePagesOptions$instance;
 
-export interface WebApplication$instance extends IApplicationBuilder$instance, Microsoft_AspNetCore_Routing_Internal.IEndpointRouteBuilder$instance, Microsoft_Extensions_Hosting_Lib_tsonic_microsoft_extensions.IHost, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
+export interface WebApplication$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_WebApplication: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IApplicationBuilder: never;
@@ -654,12 +659,12 @@ export interface WebApplicationBuilder$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationBuilder: never;
 
     readonly Configuration: ConfigurationManager;
-    Environment: IWebHostEnvironment;
-    Host: ConfigureHostBuilder;
+    readonly Environment: IWebHostEnvironment;
+    readonly Host: ConfigureHostBuilder;
     readonly Logging: ILoggingBuilder;
     readonly Metrics: IMetricsBuilder;
     readonly Services: IServiceCollection;
-    WebHost: ConfigureWebHostBuilder;
+    readonly WebHost: ConfigureWebHostBuilder;
     Build(): WebApplication;
 }
 
@@ -756,12 +761,12 @@ export abstract class AuthorizationAppBuilderExtensions$instance {
 export type AuthorizationAppBuilderExtensions = AuthorizationAppBuilderExtensions$instance;
 
 export abstract class AuthorizationEndpointConventionBuilderExtensions$instance {
-    static AllowAnonymous<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
-    static RequireAuthorization<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, policy: AuthorizationPolicy): TBuilder;
-    static RequireAuthorization<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, ...authorizeData: IAuthorizeData[]): TBuilder;
-    static RequireAuthorization<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, configurePolicy: Action_1<AuthorizationPolicyBuilder>): TBuilder;
-    static RequireAuthorization<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, ...policyNames: string[]): TBuilder;
-    static RequireAuthorization<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
+    static AllowAnonymous<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder): TBuilder;
+    static RequireAuthorization<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, policy: AuthorizationPolicy): TBuilder;
+    static RequireAuthorization<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, ...authorizeData: IAuthorizeData[]): TBuilder;
+    static RequireAuthorization<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, configurePolicy: Action_1<AuthorizationPolicyBuilder>): TBuilder;
+    static RequireAuthorization<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, ...policyNames: string[]): TBuilder;
+    static RequireAuthorization<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder): TBuilder;
 }
 
 
@@ -785,8 +790,8 @@ export abstract class ComponentEndpointRouteBuilderExtensions$instance {
 export type ComponentEndpointRouteBuilderExtensions = ComponentEndpointRouteBuilderExtensions$instance;
 
 export abstract class ConnectionEndpointRouteBuilderExtensions$instance {
-    static MapConnectionHandler<TConnectionHandler extends unknown & ConnectionHandler>(endpoints: IEndpointRouteBuilder, pattern: string, configureOptions: Action_1<HttpConnectionDispatcherOptions> | null): ConnectionEndpointRouteBuilder;
-    static MapConnectionHandler<TConnectionHandler extends unknown & ConnectionHandler>(endpoints: IEndpointRouteBuilder, pattern: string): ConnectionEndpointRouteBuilder;
+    static MapConnectionHandler<TConnectionHandler extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Connections_ConnectionHandler: never }>(endpoints: IEndpointRouteBuilder, pattern: string, configureOptions: Action_1<HttpConnectionDispatcherOptions> | null): ConnectionEndpointRouteBuilder;
+    static MapConnectionHandler<TConnectionHandler extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Connections_ConnectionHandler: never }>(endpoints: IEndpointRouteBuilder, pattern: string): ConnectionEndpointRouteBuilder;
     static MapConnections(endpoints: IEndpointRouteBuilder, pattern: string, options: HttpConnectionDispatcherOptions, configure: Action_1<IConnectionBuilder>): ConnectionEndpointRouteBuilder;
     static MapConnections(endpoints: IEndpointRouteBuilder, pattern: string, configure: Action_1<IConnectionBuilder>): ConnectionEndpointRouteBuilder;
 }
@@ -806,9 +811,9 @@ export abstract class ControllerEndpointRouteBuilderExtensions$instance {
     static MapControllerRoute(endpoints: IEndpointRouteBuilder, name: string, pattern: string, defaults?: unknown | null, constraints?: unknown | null, dataTokens?: unknown | null): ControllerActionEndpointConventionBuilder;
     static MapControllers(endpoints: IEndpointRouteBuilder): ControllerActionEndpointConventionBuilder;
     static MapDefaultControllerRoute(endpoints: IEndpointRouteBuilder): ControllerActionEndpointConventionBuilder;
-    static MapDynamicControllerRoute<TTransformer extends unknown & DynamicRouteValueTransformer>(endpoints: IEndpointRouteBuilder, pattern: string, state: unknown, order: int): void;
-    static MapDynamicControllerRoute<TTransformer extends unknown & DynamicRouteValueTransformer>(endpoints: IEndpointRouteBuilder, pattern: string, state: unknown | null): void;
-    static MapDynamicControllerRoute<TTransformer extends unknown & DynamicRouteValueTransformer>(endpoints: IEndpointRouteBuilder, pattern: string): void;
+    static MapDynamicControllerRoute<TTransformer extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_DynamicRouteValueTransformer: never }>(endpoints: IEndpointRouteBuilder, pattern: string, state: unknown, order: int): void;
+    static MapDynamicControllerRoute<TTransformer extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_DynamicRouteValueTransformer: never }>(endpoints: IEndpointRouteBuilder, pattern: string, state: unknown | null): void;
+    static MapDynamicControllerRoute<TTransformer extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_DynamicRouteValueTransformer: never }>(endpoints: IEndpointRouteBuilder, pattern: string): void;
     static MapFallbackToAreaController(endpoints: IEndpointRouteBuilder, pattern: string, action: string, controller: string, area: string): IEndpointConventionBuilder;
     static MapFallbackToAreaController(endpoints: IEndpointRouteBuilder, action: string, controller: string, area: string): IEndpointConventionBuilder;
     static MapFallbackToController(endpoints: IEndpointRouteBuilder, pattern: string, action: string, controller: string): IEndpointConventionBuilder;
@@ -827,17 +832,17 @@ export abstract class CookiePolicyAppBuilderExtensions$instance {
 export type CookiePolicyAppBuilderExtensions = CookiePolicyAppBuilderExtensions$instance;
 
 export abstract class CookieRedirectEndpointConventionBuilderExtensions$instance {
-    static AllowCookieRedirect<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
-    static DisableCookieRedirect<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
+    static AllowCookieRedirect<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder): TBuilder;
+    static DisableCookieRedirect<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder): TBuilder;
 }
 
 
 export type CookieRedirectEndpointConventionBuilderExtensions = CookieRedirectEndpointConventionBuilderExtensions$instance;
 
 export abstract class CorsEndpointConventionBuilderExtensions$instance {
-    static RequireCors<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, configurePolicy: Action_1<CorsPolicyBuilder>): TBuilder;
-    static RequireCors<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, policyName: string): TBuilder;
-    static RequireCors<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
+    static RequireCors<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, configurePolicy: Action_1<CorsPolicyBuilder>): TBuilder;
+    static RequireCors<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, policyName: string): TBuilder;
+    static RequireCors<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder): TBuilder;
 }
 
 
@@ -1007,7 +1012,7 @@ export abstract class HttpLoggingBuilderExtensions$instance {
 export type HttpLoggingBuilderExtensions = HttpLoggingBuilderExtensions$instance;
 
 export abstract class HttpLoggingEndpointConventionBuilderExtensions$instance {
-    static WithHttpLogging<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, loggingFields: HttpLoggingFields, requestBodyLogLimit?: Nullable_1<System_Internal.Int32>, responseBodyLogLimit?: Nullable_1<System_Internal.Int32>): TBuilder;
+    static WithHttpLogging<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, loggingFields: HttpLoggingFields, requestBodyLogLimit?: Nullable_1<System_Internal.Int32>, responseBodyLogLimit?: Nullable_1<System_Internal.Int32>): TBuilder;
 }
 
 
@@ -1022,7 +1027,7 @@ export abstract class HttpMethodOverrideExtensions$instance {
 export type HttpMethodOverrideExtensions = HttpMethodOverrideExtensions$instance;
 
 export abstract class HttpMetricsEndpointConventionBuilderExtensions$instance {
-    static DisableHttpMetrics<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
+    static DisableHttpMetrics<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder): TBuilder;
 }
 
 
@@ -1043,8 +1048,8 @@ export abstract class HttpsRedirectionServicesExtensions$instance {
 export type HttpsRedirectionServicesExtensions = HttpsRedirectionServicesExtensions$instance;
 
 export abstract class HubEndpointRouteBuilderExtensions$instance {
-    static MapHub<THub extends unknown & Hub>(endpoints: IEndpointRouteBuilder, pattern: string, configureOptions: Action_1<HttpConnectionDispatcherOptions> | null): HubEndpointConventionBuilder;
-    static MapHub<THub extends unknown & Hub>(endpoints: IEndpointRouteBuilder, pattern: string): HubEndpointConventionBuilder;
+    static MapHub<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }>(endpoints: IEndpointRouteBuilder, pattern: string, configureOptions: Action_1<HttpConnectionDispatcherOptions> | null): HubEndpointConventionBuilder;
+    static MapHub<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }>(endpoints: IEndpointRouteBuilder, pattern: string): HubEndpointConventionBuilder;
 }
 
 
@@ -1118,9 +1123,9 @@ export abstract class RateLimiterApplicationBuilderExtensions$instance {
 export type RateLimiterApplicationBuilderExtensions = RateLimiterApplicationBuilderExtensions$instance;
 
 export abstract class RateLimiterEndpointConventionBuilderExtensions$instance {
-    static DisableRateLimiting<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
-    static RequireRateLimiting<TBuilder extends unknown & IEndpointConventionBuilder, TPartitionKey extends unknown>(builder: TBuilder, policy: IRateLimiterPolicy_1<TPartitionKey>): TBuilder;
-    static RequireRateLimiting<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, policyName: string): TBuilder;
+    static DisableRateLimiting<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder): TBuilder;
+    static RequireRateLimiting<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }, TPartitionKey extends unknown>(builder: TBuilder, policy: IRateLimiterPolicy_1<TPartitionKey>): TBuilder;
+    static RequireRateLimiting<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, policyName: string): TBuilder;
 }
 
 
@@ -1150,9 +1155,9 @@ export abstract class RazorComponentsEndpointRouteBuilderExtensions$instance {
 export type RazorComponentsEndpointRouteBuilderExtensions = RazorComponentsEndpointRouteBuilderExtensions$instance;
 
 export abstract class RazorPagesEndpointRouteBuilderExtensions$instance {
-    static MapDynamicPageRoute<TTransformer extends unknown & DynamicRouteValueTransformer>(endpoints: IEndpointRouteBuilder, pattern: string, state: unknown, order: int): void;
-    static MapDynamicPageRoute<TTransformer extends unknown & DynamicRouteValueTransformer>(endpoints: IEndpointRouteBuilder, pattern: string, state: unknown | null): void;
-    static MapDynamicPageRoute<TTransformer extends unknown & DynamicRouteValueTransformer>(endpoints: IEndpointRouteBuilder, pattern: string): void;
+    static MapDynamicPageRoute<TTransformer extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_DynamicRouteValueTransformer: never }>(endpoints: IEndpointRouteBuilder, pattern: string, state: unknown, order: int): void;
+    static MapDynamicPageRoute<TTransformer extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_DynamicRouteValueTransformer: never }>(endpoints: IEndpointRouteBuilder, pattern: string, state: unknown | null): void;
+    static MapDynamicPageRoute<TTransformer extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_DynamicRouteValueTransformer: never }>(endpoints: IEndpointRouteBuilder, pattern: string): void;
     static MapFallbackToAreaPage(endpoints: IEndpointRouteBuilder, pattern: string, page: string, area: string): IEndpointConventionBuilder;
     static MapFallbackToAreaPage(endpoints: IEndpointRouteBuilder, page: string, area: string): IEndpointConventionBuilder;
     static MapFallbackToPage(endpoints: IEndpointRouteBuilder, pattern: string, page: string): IEndpointConventionBuilder;
@@ -1240,16 +1245,16 @@ export abstract class RoutingBuilderExtensions$instance {
 export type RoutingBuilderExtensions = RoutingBuilderExtensions$instance;
 
 export abstract class RoutingEndpointConventionBuilderExtensions$instance {
-    static DisableAntiforgery<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
-    static RequireHost<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, ...hosts: string[]): TBuilder;
-    static WithDisplayName<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, func: Func_2<EndpointBuilder, System_Internal.String>): TBuilder;
-    static WithDisplayName<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, displayName: string): TBuilder;
-    static WithFormMappingOptions<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, maxCollectionSize?: Nullable_1<System_Internal.Int32>, maxRecursionDepth?: Nullable_1<System_Internal.Int32>, maxKeySize?: Nullable_1<System_Internal.Int32>): TBuilder;
-    static WithFormOptions<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, bufferBody?: Nullable_1<System_Internal.Boolean>, memoryBufferThreshold?: Nullable_1<System_Internal.Int32>, bufferBodyLengthLimit?: Nullable_1<System_Internal.Int64>, valueCountLimit?: Nullable_1<System_Internal.Int32>, keyLengthLimit?: Nullable_1<System_Internal.Int32>, valueLengthLimit?: Nullable_1<System_Internal.Int32>, multipartBoundaryLengthLimit?: Nullable_1<System_Internal.Int32>, multipartHeadersCountLimit?: Nullable_1<System_Internal.Int32>, multipartHeadersLengthLimit?: Nullable_1<System_Internal.Int32>, multipartBodyLengthLimit?: Nullable_1<System_Internal.Int64>): TBuilder;
-    static WithGroupName<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, endpointGroupName: string): TBuilder;
-    static WithMetadata<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, ...items: unknown[]): TBuilder;
-    static WithName<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, endpointName: string): TBuilder;
-    static WithOrder<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, order: int): TBuilder;
+    static DisableAntiforgery<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder): TBuilder;
+    static RequireHost<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, ...hosts: string[]): TBuilder;
+    static WithDisplayName<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, func: Func_2<EndpointBuilder, System_Internal.String>): TBuilder;
+    static WithDisplayName<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, displayName: string): TBuilder;
+    static WithFormMappingOptions<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, maxCollectionSize?: Nullable_1<System_Internal.Int32>, maxRecursionDepth?: Nullable_1<System_Internal.Int32>, maxKeySize?: Nullable_1<System_Internal.Int32>): TBuilder;
+    static WithFormOptions<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, bufferBody?: Nullable_1<System_Internal.Boolean>, memoryBufferThreshold?: Nullable_1<System_Internal.Int32>, bufferBodyLengthLimit?: Nullable_1<System_Internal.Int64>, valueCountLimit?: Nullable_1<System_Internal.Int32>, keyLengthLimit?: Nullable_1<System_Internal.Int32>, valueLengthLimit?: Nullable_1<System_Internal.Int32>, multipartBoundaryLengthLimit?: Nullable_1<System_Internal.Int32>, multipartHeadersCountLimit?: Nullable_1<System_Internal.Int32>, multipartHeadersLengthLimit?: Nullable_1<System_Internal.Int32>, multipartBodyLengthLimit?: Nullable_1<System_Internal.Int64>): TBuilder;
+    static WithGroupName<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, endpointGroupName: string): TBuilder;
+    static WithMetadata<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, ...items: unknown[]): TBuilder;
+    static WithName<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, endpointName: string): TBuilder;
+    static WithOrder<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, order: int): TBuilder;
 }
 
 
@@ -1349,7 +1354,7 @@ export abstract class UseWhenExtensions$instance {
 export type UseWhenExtensions = UseWhenExtensions$instance;
 
 export abstract class ValidationEndpointConventionBuilderExtensions$instance {
-    static DisableValidation<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
+    static DisableValidation<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder): TBuilder;
 }
 
 

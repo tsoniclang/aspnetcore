@@ -68,14 +68,13 @@ export interface IControllerFactoryProvider$instance {
 
 export type IControllerFactoryProvider = IControllerFactoryProvider$instance;
 
-export interface ControllerActionDescriptor$instance extends ActionDescriptor {
+export interface ControllerActionDescriptor$instance extends Microsoft_AspNetCore_Mvc_Abstractions_Internal.ActionDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerActionDescriptor: never;
 
     ActionName: string;
     ControllerName: string;
     ControllerTypeInfo: TypeInfo;
-    get DisplayName(): string | null;
-    set DisplayName(value: string | null);
     MethodInfo: MethodInfo;
 }
 
@@ -87,7 +86,7 @@ export const ControllerActionDescriptor: {
 
 export type ControllerActionDescriptor = ControllerActionDescriptor$instance;
 
-export interface ControllerActivatorProvider$instance extends IControllerActivatorProvider$instance {
+export interface ControllerActivatorProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerActivatorProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider: never;
@@ -110,7 +109,8 @@ export interface __ControllerActivatorProvider$views {
 export type ControllerActivatorProvider = ControllerActivatorProvider$instance & __ControllerActivatorProvider$views;
 
 
-export interface ControllerBoundPropertyDescriptor$instance extends ParameterDescriptor {
+export interface ControllerBoundPropertyDescriptor$instance extends Microsoft_AspNetCore_Mvc_Abstractions_Internal.ParameterDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ParameterDescriptor: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerBoundPropertyDescriptor: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor: never;
@@ -145,7 +145,7 @@ export const ControllerFeature: {
 
 export type ControllerFeature = ControllerFeature$instance;
 
-export interface ControllerFeatureProvider$instance extends Microsoft_AspNetCore_Mvc_ApplicationParts_Internal.IApplicationFeatureProvider_1$instance<ControllerFeature> {
+export interface ControllerFeatureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerFeatureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider: never;
@@ -168,7 +168,8 @@ export interface __ControllerFeatureProvider$views {
 export type ControllerFeatureProvider = ControllerFeatureProvider$instance & __ControllerFeatureProvider$views;
 
 
-export interface ControllerParameterDescriptor$instance extends ParameterDescriptor {
+export interface ControllerParameterDescriptor$instance extends Microsoft_AspNetCore_Mvc_Abstractions_Internal.ParameterDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ParameterDescriptor: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerParameterDescriptor: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor: never;
@@ -189,7 +190,7 @@ export interface __ControllerParameterDescriptor$views {
 export type ControllerParameterDescriptor = ControllerParameterDescriptor$instance & __ControllerParameterDescriptor$views;
 
 
-export interface ServiceBasedControllerActivator$instance extends IControllerActivator$instance {
+export interface ServiceBasedControllerActivator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ServiceBasedControllerActivator: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator: never;

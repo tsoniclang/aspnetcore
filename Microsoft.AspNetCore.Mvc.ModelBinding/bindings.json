@@ -2371,27 +2371,7 @@
             "sourceInterface": "Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.BindingSourceValueProvider::BindingSource:Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource",
-            "targetName": "BindingSource",
-            "metadataToken": 385876329,
-            "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource",
-            "normalizedSignature": "BindingSource|:Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.BindingSourceValueProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
         "constructors": [
@@ -3943,25 +3923,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.FormValueProvider",
             "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.FormValueProvider::PrefixContainer:Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer",
-            "targetName": "PrefixContainer",
-            "metadataToken": 385876353,
-            "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer",
-            "normalizedSignature": "PrefixContainer|:Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.FormValueProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
           }
         ],
         "fields": [],
@@ -4816,42 +4777,11 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.JQueryValueProvider",
             "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.JQueryValueProvider::PrefixContainer:Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer",
-            "targetName": "PrefixContainer",
-            "metadataToken": 385876355,
-            "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer",
-            "normalizedSignature": "PrefixContainer|:Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.JQueryValueProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
           }
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.JQueryValueProvider::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Globalization.CultureInfo):void",
-            "metadataToken": 100664884,
-            "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Globalization.CultureInfo):void",
-            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Globalization.CultureInfo):void|static=false",
-            "isStatic": false,
-            "parameterCount": 3,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.JQueryValueProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.ModelAttributes",
@@ -5361,19 +5291,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderProviderContext::.ctor():void",
-            "metadataToken": 100663452,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderProviderContext",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext",
@@ -5629,12 +5547,12 @@
             "targetName": "OriginalModelName",
             "metadataToken": 385876026,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "OriginalModelName|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "OriginalModelName|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -5760,19 +5678,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext::.ctor():void",
-            "metadataToken": 100663486,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext+NestedScope",
@@ -6377,25 +6283,6 @@
             "isVirtual": false,
             "isOverride": false,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata::Identity:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
-            "targetName": "Identity",
-            "metadataToken": 385876045,
-            "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
-            "normalizedSignature": "Identity|:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "ProtectedInternal",
             "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
             "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
           },
@@ -7126,12 +7013,12 @@
             "targetName": "ElementType",
             "metadataToken": 385876087,
             "canonicalSignature": ":System.Type",
-            "normalizedSignature": "ElementType|:System.Type|static=false|accessor=getset",
+            "normalizedSignature": "ElementType|:System.Type|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -7164,12 +7051,12 @@
             "targetName": "IsNullableValueType",
             "metadataToken": 385876089,
             "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "IsNullableValueType|:System.Boolean|static=false|accessor=getset",
+            "normalizedSignature": "IsNullableValueType|:System.Boolean|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -7183,12 +7070,12 @@
             "targetName": "IsCollectionType",
             "metadataToken": 385876090,
             "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "IsCollectionType|:System.Boolean|static=false|accessor=getset",
+            "normalizedSignature": "IsCollectionType|:System.Boolean|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -7202,12 +7089,12 @@
             "targetName": "IsEnumerableType",
             "metadataToken": 385876091,
             "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "IsEnumerableType|:System.Boolean|static=false|accessor=getset",
+            "normalizedSignature": "IsEnumerableType|:System.Boolean|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -7221,12 +7108,12 @@
             "targetName": "IsReferenceOrNullableType",
             "metadataToken": 385876092,
             "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "IsReferenceOrNullableType|:System.Boolean|static=false|accessor=getset",
+            "normalizedSignature": "IsReferenceOrNullableType|:System.Boolean|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -7240,12 +7127,12 @@
             "targetName": "UnderlyingOrModelType",
             "metadataToken": 385876093,
             "canonicalSignature": ":System.Type",
-            "normalizedSignature": "UnderlyingOrModelType|:System.Type|static=false|accessor=getset",
+            "normalizedSignature": "UnderlyingOrModelType|:System.Type|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -7327,19 +7214,7 @@
           }
         ],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):void",
-            "metadataToken": 100663507,
-            "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):void",
-            "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadataProvider",
@@ -7529,19 +7404,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadataProvider::.ctor():void",
-            "metadataToken": 100663602,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadataProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelPropertyCollection",
@@ -8162,12 +8025,12 @@
             "targetName": "ErrorCount",
             "metadataToken": 385876107,
             "canonicalSignature": ":System.Int32",
-            "normalizedSignature": "ErrorCount|:System.Int32|static=false|accessor=getset",
+            "normalizedSignature": "ErrorCount|:System.Int32|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -8181,12 +8044,12 @@
             "targetName": "Count",
             "metadataToken": 385876108,
             "canonicalSignature": ":System.Int32",
-            "normalizedSignature": "Count|:System.Int32|static=false|accessor=getset",
+            "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -8640,12 +8503,12 @@
             "targetName": "Current",
             "metadataToken": 385876352,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "Current|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "Current|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -8905,12 +8768,12 @@
             "targetName": "Current",
             "metadataToken": 385876354,
             "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry",
-            "normalizedSignature": "Current|:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry|static=false|accessor=getset",
+            "normalizedSignature": "Current|:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -9091,19 +8954,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry::.ctor():void",
-            "metadataToken": 100663669,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator",
@@ -9303,27 +9154,7 @@
             "isExtensionMethod": false
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder::Logger:Microsoft.Extensions.Logging.ILogger",
-            "targetName": "Logger",
-            "metadataToken": 385876363,
-            "canonicalSignature": ":Microsoft.Extensions.Logging.ILogger",
-            "normalizedSignature": "Logger|:Microsoft.Extensions.Logging.ILogger|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
         "constructors": [
@@ -9608,25 +9439,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.QueryStringValueProvider",
             "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.QueryStringValueProvider::PrefixContainer:Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer",
-            "targetName": "PrefixContainer",
-            "metadataToken": 385876366,
-            "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer",
-            "normalizedSignature": "PrefixContainer|:Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.QueryStringValueProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
           }
         ],
         "fields": [],
@@ -9856,46 +9668,7 @@
             "sourceInterface": "Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.RouteValueProvider::PrefixContainer:Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer",
-            "targetName": "PrefixContainer",
-            "metadataToken": 385876367,
-            "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer",
-            "normalizedSignature": "PrefixContainer|:Microsoft.AspNetCore.Mvc.ModelBinding.PrefixContainer|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.RouteValueProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.RouteValueProvider::Culture:System.Globalization.CultureInfo",
-            "targetName": "Culture",
-            "metadataToken": 385876368,
-            "canonicalSignature": ":System.Globalization.CultureInfo",
-            "normalizedSignature": "Culture|:System.Globalization.CultureInfo|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ModelBinding.RouteValueProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
         "constructors": [

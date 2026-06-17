@@ -39,7 +39,7 @@ export interface SharedOptionsBase$instance {
 }
 
 
-export const SharedOptionsBase: (abstract new(sharedOptions: SharedOptions) => SharedOptionsBase) & {
+export const SharedOptionsBase: {
 };
 
 

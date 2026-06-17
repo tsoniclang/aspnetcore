@@ -39,13 +39,13 @@ export type HtmlLocalizer<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.HtmlLocalizer :
-  [T1] extends [unknown] ? Internal.HtmlLocalizer_1<T1> : never;
+  Internal.HtmlLocalizer_1<T1>;
 
 export type IHtmlLocalizer<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.IHtmlLocalizer :
-  [T1] extends [unknown] ? Internal.IHtmlLocalizer_1<T1> : never;
+  Internal.IHtmlLocalizer_1<T1>;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Mvc_Localization as ExtensionMethods } from './__internal/extensions/index.js';

@@ -11,12 +11,14 @@ import type { JSCallResultType, JSRuntime } from "../../Microsoft.JSInterop/inte
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, Enum, Exception, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum JSCallType {
-    FunctionCall = 1,
-    ConstructorCall = 2,
-    GetValue = 3,
-    SetValue = 4
-}
+export type JSCallType = number & { readonly __tsonic_type_Microsoft_JSInterop_Infrastructure_JSCallType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const JSCallType: {
+    readonly FunctionCall: JSCallType;
+    readonly ConstructorCall: JSCallType;
+    readonly GetValue: JSCallType;
+    readonly SetValue: JSCallType;
+};
 
 
 export interface IJSVoidResult$instance {
@@ -29,6 +31,7 @@ export type IJSVoidResult = IJSVoidResult$instance;
 
 export interface DotNetInvocationInfo$instance {
     readonly __tsonic_type_Microsoft_JSInterop_Infrastructure_DotNetInvocationInfo: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly AssemblyName: string | null;
     readonly CallId: string | null;
@@ -46,6 +49,7 @@ export type DotNetInvocationInfo = DotNetInvocationInfo$instance;
 
 export interface DotNetInvocationResult$instance {
     readonly __tsonic_type_Microsoft_JSInterop_Infrastructure_DotNetInvocationResult: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly ErrorKind: string | null;
     readonly Exception: Exception | null;
@@ -63,6 +67,7 @@ export type DotNetInvocationResult = DotNetInvocationResult$instance;
 
 export interface JSInvocationInfo$instance {
     readonly __tsonic_type_Microsoft_JSInterop_Infrastructure_JSInvocationInfo: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     ArgsJson: string;
     AsyncHandle: long;

@@ -10,21 +10,23 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import type { FormMappingError } from "../../Microsoft.AspNetCore.Components.Forms.Mapping/internal/index.js";
 import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { ComponentBase, ElementReference, EventCallback_1, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { ComponentBase, ElementReference, EventCallback_1, EventCallbackWorkItem, IComponent, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { IDictionary_2, IEnumerable_1, IReadOnlyDictionary_2, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
-import type { Expression_1, LambdaExpression } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import type { Expression_1 } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
 import type { Task, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
-import type { Action, Boolean as ClrBoolean, DateTimeOffset, Enum, EventArgs, EventHandler_1, Exception, Func_1, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, Int64, IServiceProvider, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, DateTimeOffset, Enum, EventArgs, EventHandler_1, Func_1, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, Int64, IServiceProvider, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum InputDateType {
-    Date = 0,
-    DateTimeLocal = 1,
-    Month = 2,
-    Time = 3
-}
+export type InputDateType = number & { readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputDateType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const InputDateType: {
+    readonly Date: InputDateType;
+    readonly DateTimeLocal: InputDateType;
+    readonly Month: InputDateType;
+    readonly Time: InputDateType;
+};
 
 
 export interface IBrowserFile$instance {
@@ -42,6 +44,7 @@ export type IBrowserFile = IBrowserFile$instance;
 
 export interface FieldIdentifier$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_FieldIdentifier: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -83,13 +86,13 @@ export interface AntiforgeryStateProvider$instance {
 }
 
 
-export const AntiforgeryStateProvider: (abstract new() => AntiforgeryStateProvider) & {
+export const AntiforgeryStateProvider: {
 };
 
 
 export type AntiforgeryStateProvider = AntiforgeryStateProvider$instance;
 
-export interface AntiforgeryToken$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance {
+export interface AntiforgeryToken$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_AntiforgeryToken: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -109,7 +112,8 @@ export interface __AntiforgeryToken$views {
 export type AntiforgeryToken = AntiforgeryToken$instance & __AntiforgeryToken$views;
 
 
-export interface DataAnnotationsValidator$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface DataAnnotationsValidator$instance extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_DataAnnotationsValidator: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -118,8 +122,8 @@ export interface DataAnnotationsValidator$instance extends ComponentBase, Micros
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(disposing: boolean): void;
-    OnInitialized(): void;
-    OnParametersSet(): void;
+    OnInitialized: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnInitialized"] & (() => void);
+    OnParametersSet: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnParametersSet"] & (() => void);
 }
 
 
@@ -145,15 +149,15 @@ export interface EditContext$instance {
     ShouldUseFieldIdentifiers: boolean;
     Field(fieldName: string): FieldIdentifier;
     GetValidationMessages(): IEnumerable_1<System_Internal.String>;
-    GetValidationMessages(fieldIdentifier: FieldIdentifier): IEnumerable_1<System_Internal.String>;
     GetValidationMessages(accessor: Expression_1<Func_1<unknown>>): IEnumerable_1<System_Internal.String>;
+    GetValidationMessages(fieldIdentifier: FieldIdentifier): IEnumerable_1<System_Internal.String>;
     IsModified(): boolean;
-    IsModified(fieldIdentifier: FieldIdentifier): boolean;
     IsModified(accessor: Expression_1<Func_1<unknown>>): boolean;
-    IsValid(fieldIdentifier: FieldIdentifier): boolean;
+    IsModified(fieldIdentifier: FieldIdentifier): boolean;
     IsValid(accessor: Expression_1<Func_1<unknown>>): boolean;
-    MarkAsUnmodified(fieldIdentifier: FieldIdentifier): void;
+    IsValid(fieldIdentifier: FieldIdentifier): boolean;
     MarkAsUnmodified(): void;
+    MarkAsUnmodified(fieldIdentifier: FieldIdentifier): void;
     NotifyFieldChanged(fieldIdentifier: FieldIdentifier): void;
     NotifyValidationStateChanged(): void;
     Validate(): boolean;
@@ -183,7 +187,8 @@ export const EditContextProperties: {
 
 export type EditContextProperties = EditContextProperties$instance;
 
-export interface EditForm$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface EditForm$instance extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_EditForm: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -204,8 +209,8 @@ export interface EditForm$instance extends ComponentBase, Microsoft_AspNetCore_C
     OnInvalidSubmit: EventCallback_1<EditContext>;
     OnSubmit: EventCallback_1<EditContext>;
     OnValidSubmit: EventCallback_1<EditContext>;
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    OnParametersSet(): void;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    OnParametersSet: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnParametersSet"] & (() => void);
 }
 
 
@@ -223,7 +228,8 @@ export interface __EditForm$views {
 export type EditForm = EditForm$instance & __EditForm$views;
 
 
-export interface Editor_1$instance<T extends unknown> extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface Editor_1$instance<T extends unknown> extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_Editor_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_ICascadingValueSupplier: never;
@@ -234,11 +240,11 @@ export interface Editor_1$instance<T extends unknown> extends ComponentBase, Mic
     Value: T;
     ValueChanged: EventCallback_1<T>;
     ValueExpression: Expression_1<Func_1<T>>;
-    OnParametersSet(): void;
+    OnParametersSet: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnParametersSet"] & (() => void);
 }
 
 
-export const Editor_1: (abstract new<T extends unknown>() => Editor_1<T>) & {
+export const Editor_1: {
 };
 
 
@@ -251,8 +257,9 @@ export interface __Editor_1$views<T extends unknown> {
 export type Editor_1<T extends unknown> = Editor_1$instance<T> & __Editor_1$views<T>;
 
 
-export interface FieldChangedEventArgs$instance extends EventArgs {
+export interface FieldChangedEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly FieldIdentifier: FieldIdentifier;
 }
@@ -285,10 +292,10 @@ export interface FormMappingContext$instance {
     readonly MappingScopeName: string;
     GetAllErrors(): IEnumerable_1<FormMappingError>;
     GetAllErrors(formName: string): IEnumerable_1<FormMappingError>;
-    GetAttemptedValue(key: string): string | null;
     GetAttemptedValue(formName: string, key: string): string | null;
-    GetErrors(key: string): FormMappingError | null;
+    GetAttemptedValue(key: string): string | null;
     GetErrors(formName: string, key: string): FormMappingError | null;
+    GetErrors(key: string): FormMappingError | null;
 }
 
 
@@ -298,7 +305,7 @@ export const FormMappingContext: {
 
 export type FormMappingContext = FormMappingContext$instance;
 
-export interface FormMappingScope$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance {
+export interface FormMappingScope$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_FormMappingScope: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_ICascadingValueSupplier: never;
@@ -321,7 +328,8 @@ export interface __FormMappingScope$views {
 export type FormMappingScope = FormMappingScope$instance & __FormMappingScope$views;
 
 
-export interface InputBase_1$instance<TValue extends unknown> extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface InputBase_1$instance<TValue extends unknown> extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputBase_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -339,12 +347,12 @@ export interface InputBase_1$instance<TValue extends unknown> extends ComponentB
     set ValueExpression(value: Expression_1<Func_1<TValue>> | null);
     Dispose(disposing: boolean): void;
     FormatValueAsString(value: TValue | null): string | null;
-    SetParametersAsync(parameters: ParameterView): Task;
+    SetParametersAsync: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["SetParametersAsync"] & ((parameters: ParameterView) => Task);
     TryParseValueFromString(value: string | null, result: TValue, validationErrorMessage: string | null): boolean;
 }
 
 
-export const InputBase_1: (abstract new<TValue extends unknown>() => InputBase_1<TValue>) & {
+export const InputBase_1: {
 };
 
 
@@ -357,7 +365,9 @@ export interface __InputBase_1$views<TValue extends unknown> {
 export type InputBase_1<TValue extends unknown> = InputBase_1$instance<TValue> & __InputBase_1$views<TValue>;
 
 
-export interface InputCheckbox$instance extends InputBase_1$instance<System_Internal.Boolean>, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface InputCheckbox$instance extends InputBase_1$instance<System_Internal.Boolean> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputBase_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputCheckbox: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -365,10 +375,9 @@ export interface InputCheckbox$instance extends InputBase_1$instance<System_Inte
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get Element(): Nullable_1<ElementReference>;
-    set Element(value: Nullable_1<ElementReference> | ElementReference);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    TryParseValueFromString(value: string | null, result: boolean, validationErrorMessage: string | null): boolean;
+    readonly Element: Nullable_1<ElementReference>;
+    BuildRenderTree: InputBase_1$instance<System_Internal.Boolean>["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    TryParseValueFromString: InputBase_1$instance<System_Internal.Boolean>["TryParseValueFromString"] & ((value: string | null, result: boolean, validationErrorMessage: string | null) => boolean);
 }
 
 
@@ -386,7 +395,9 @@ export interface __InputCheckbox$views {
 export type InputCheckbox = InputCheckbox$instance & __InputCheckbox$views;
 
 
-export interface InputDate_1$instance<TValue extends unknown> extends InputBase_1$instance<TValue>, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface InputDate_1$instance<TValue extends unknown> extends InputBase_1$instance<TValue> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputBase_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputDate_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -394,14 +405,13 @@ export interface InputDate_1$instance<TValue extends unknown> extends InputBase_
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get Element(): Nullable_1<ElementReference>;
-    set Element(value: Nullable_1<ElementReference> | ElementReference);
+    readonly Element: Nullable_1<ElementReference>;
     ParsingErrorMessage: string;
     Type: InputDateType;
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    FormatValueAsString(value: TValue | null): string;
-    OnParametersSet(): void;
-    TryParseValueFromString(value: string | null, result: TValue, validationErrorMessage: string | null): boolean;
+    BuildRenderTree: InputBase_1$instance<TValue>["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    FormatValueAsString: InputBase_1$instance<TValue>["FormatValueAsString"] & ((value: TValue | null) => string);
+    OnParametersSet: InputBase_1$instance<TValue>["OnParametersSet"] & (() => void);
+    TryParseValueFromString: InputBase_1$instance<TValue>["TryParseValueFromString"] & ((value: string | null, result: TValue, validationErrorMessage: string | null) => boolean);
 }
 
 
@@ -419,7 +429,8 @@ export interface __InputDate_1$views<TValue extends unknown> {
 export type InputDate_1<TValue extends unknown> = InputDate_1$instance<TValue> & __InputDate_1$views<TValue>;
 
 
-export interface InputFile$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface InputFile$instance extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputFile: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Forms_IInputFileJsCallbacks: never;
@@ -430,11 +441,10 @@ export interface InputFile$instance extends ComponentBase, Microsoft_AspNetCore_
 
     get AdditionalAttributes(): IDictionary_2<System_Internal.String, unknown> | null;
     set AdditionalAttributes(value: IDictionary_2<System_Internal.String, unknown> | null);
-    get Element(): Nullable_1<ElementReference>;
-    set Element(value: Nullable_1<ElementReference> | ElementReference);
+    readonly Element: Nullable_1<ElementReference>;
     OnChange: EventCallback_1<InputFileChangeEventArgs>;
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    OnAfterRenderAsync(firstRender: boolean): Task;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    OnAfterRenderAsync: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnAfterRenderAsync"] & ((firstRender: boolean) => Task);
 }
 
 
@@ -452,8 +462,9 @@ export interface __InputFile$views {
 export type InputFile = InputFile$instance & __InputFile$views;
 
 
-export interface InputFileChangeEventArgs$instance extends EventArgs {
+export interface InputFileChangeEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputFileChangeEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly File: IBrowserFile;
     readonly FileCount: int;
@@ -468,7 +479,9 @@ export const InputFileChangeEventArgs: {
 
 export type InputFileChangeEventArgs = InputFileChangeEventArgs$instance;
 
-export interface InputHidden$instance extends InputBase_1$instance<System_Internal.String>, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface InputHidden$instance extends InputBase_1$instance<System_Internal.String> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputBase_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputHidden: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -476,10 +489,9 @@ export interface InputHidden$instance extends InputBase_1$instance<System_Intern
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get Element(): Nullable_1<ElementReference>;
-    set Element(value: Nullable_1<ElementReference> | ElementReference);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    TryParseValueFromString(value: string | null, result: string | null, validationErrorMessage: string | null): boolean;
+    readonly Element: Nullable_1<ElementReference>;
+    BuildRenderTree: InputBase_1$instance<System_Internal.String>["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    TryParseValueFromString: InputBase_1$instance<System_Internal.String>["TryParseValueFromString"] & ((value: string | null, result: string | null, validationErrorMessage: string | null) => boolean);
 }
 
 
@@ -497,7 +509,9 @@ export interface __InputHidden$views {
 export type InputHidden = InputHidden$instance & __InputHidden$views;
 
 
-export interface InputNumber_1$instance<TValue extends unknown> extends InputBase_1$instance<TValue>, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface InputNumber_1$instance<TValue extends unknown> extends InputBase_1$instance<TValue> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputBase_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputNumber_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -505,12 +519,11 @@ export interface InputNumber_1$instance<TValue extends unknown> extends InputBas
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get Element(): Nullable_1<ElementReference>;
-    set Element(value: Nullable_1<ElementReference> | ElementReference);
+    readonly Element: Nullable_1<ElementReference>;
     ParsingErrorMessage: string;
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    FormatValueAsString(value: TValue | null): string | null;
-    TryParseValueFromString(value: string | null, result: TValue, validationErrorMessage: string | null): boolean;
+    BuildRenderTree: InputBase_1$instance<TValue>["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    FormatValueAsString: InputBase_1$instance<TValue>["FormatValueAsString"] & ((value: TValue | null) => string | null);
+    TryParseValueFromString: InputBase_1$instance<TValue>["TryParseValueFromString"] & ((value: string | null, result: TValue, validationErrorMessage: string | null) => boolean);
 }
 
 
@@ -528,7 +541,8 @@ export interface __InputNumber_1$views<TValue extends unknown> {
 export type InputNumber_1<TValue extends unknown> = InputNumber_1$instance<TValue> & __InputNumber_1$views<TValue>;
 
 
-export interface InputRadio_1$instance<TValue extends unknown> extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface InputRadio_1$instance<TValue extends unknown> extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputRadio_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -537,13 +551,12 @@ export interface InputRadio_1$instance<TValue extends unknown> extends Component
 
     get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, unknown> | null;
     set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | null);
-    get Element(): Nullable_1<ElementReference>;
-    set Element(value: Nullable_1<ElementReference> | ElementReference);
+    readonly Element: Nullable_1<ElementReference>;
     get Name(): string | null;
     set Name(value: string | null);
     Value: TValue | null;
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    OnParametersSet(): void;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    OnParametersSet: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnParametersSet"] & (() => void);
 }
 
 
@@ -561,7 +574,9 @@ export interface __InputRadio_1$views<TValue extends unknown> {
 export type InputRadio_1<TValue extends unknown> = InputRadio_1$instance<TValue> & __InputRadio_1$views<TValue>;
 
 
-export interface InputRadioGroup_1$instance<TValue extends unknown> extends InputBase_1$instance<TValue>, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface InputRadioGroup_1$instance<TValue extends unknown> extends InputBase_1$instance<TValue> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputBase_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputRadioGroup_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -574,9 +589,9 @@ export interface InputRadioGroup_1$instance<TValue extends unknown> extends Inpu
     set ChildContent(value: RenderFragment | null);
     get Name(): string | null;
     set Name(value: string | null);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    OnParametersSet(): void;
-    TryParseValueFromString(value: string | null, result: TValue, validationErrorMessage: string | null): boolean;
+    BuildRenderTree: InputBase_1$instance<TValue>["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    OnParametersSet: InputBase_1$instance<TValue>["OnParametersSet"] & (() => void);
+    TryParseValueFromString: InputBase_1$instance<TValue>["TryParseValueFromString"] & ((value: string | null, result: TValue, validationErrorMessage: string | null) => boolean);
 }
 
 
@@ -594,7 +609,9 @@ export interface __InputRadioGroup_1$views<TValue extends unknown> {
 export type InputRadioGroup_1<TValue extends unknown> = InputRadioGroup_1$instance<TValue> & __InputRadioGroup_1$views<TValue>;
 
 
-export interface InputSelect_1$instance<TValue extends unknown> extends InputBase_1$instance<TValue>, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface InputSelect_1$instance<TValue extends unknown> extends InputBase_1$instance<TValue> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputBase_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputSelect_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -604,11 +621,10 @@ export interface InputSelect_1$instance<TValue extends unknown> extends InputBas
 
     get ChildContent(): RenderFragment | null;
     set ChildContent(value: RenderFragment | null);
-    get Element(): Nullable_1<ElementReference>;
-    set Element(value: Nullable_1<ElementReference> | ElementReference);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    FormatValueAsString(value: TValue | null): string | null;
-    TryParseValueFromString(value: string | null, result: TValue, validationErrorMessage: string | null): boolean;
+    readonly Element: Nullable_1<ElementReference>;
+    BuildRenderTree: InputBase_1$instance<TValue>["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    FormatValueAsString: InputBase_1$instance<TValue>["FormatValueAsString"] & ((value: TValue | null) => string | null);
+    TryParseValueFromString: InputBase_1$instance<TValue>["TryParseValueFromString"] & ((value: string | null, result: TValue, validationErrorMessage: string | null) => boolean);
 }
 
 
@@ -626,7 +642,9 @@ export interface __InputSelect_1$views<TValue extends unknown> {
 export type InputSelect_1<TValue extends unknown> = InputSelect_1$instance<TValue> & __InputSelect_1$views<TValue>;
 
 
-export interface InputText$instance extends InputBase_1$instance<System_Internal.String>, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface InputText$instance extends InputBase_1$instance<System_Internal.String> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputBase_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputText: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -634,10 +652,9 @@ export interface InputText$instance extends InputBase_1$instance<System_Internal
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get Element(): Nullable_1<ElementReference>;
-    set Element(value: Nullable_1<ElementReference> | ElementReference);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    TryParseValueFromString(value: string | null, result: string | null, validationErrorMessage: string | null): boolean;
+    readonly Element: Nullable_1<ElementReference>;
+    BuildRenderTree: InputBase_1$instance<System_Internal.String>["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    TryParseValueFromString: InputBase_1$instance<System_Internal.String>["TryParseValueFromString"] & ((value: string | null, result: string | null, validationErrorMessage: string | null) => boolean);
 }
 
 
@@ -655,7 +672,9 @@ export interface __InputText$views {
 export type InputText = InputText$instance & __InputText$views;
 
 
-export interface InputTextArea$instance extends InputBase_1$instance<System_Internal.String>, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface InputTextArea$instance extends InputBase_1$instance<System_Internal.String> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputBase_1: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_InputTextArea: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -663,10 +682,9 @@ export interface InputTextArea$instance extends InputBase_1$instance<System_Inte
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get Element(): Nullable_1<ElementReference>;
-    set Element(value: Nullable_1<ElementReference> | ElementReference);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    TryParseValueFromString(value: string | null, result: string | null, validationErrorMessage: string | null): boolean;
+    readonly Element: Nullable_1<ElementReference>;
+    BuildRenderTree: InputBase_1$instance<System_Internal.String>["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    TryParseValueFromString: InputBase_1$instance<System_Internal.String>["TryParseValueFromString"] & ((value: string | null, result: string | null, validationErrorMessage: string | null) => boolean);
 }
 
 
@@ -700,7 +718,8 @@ export const RemoteBrowserFileStreamOptions: {
 
 export type RemoteBrowserFileStreamOptions = RemoteBrowserFileStreamOptions$instance;
 
-export interface ValidationMessage_1$instance<TValue extends unknown> extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface ValidationMessage_1$instance<TValue extends unknown> extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_ValidationMessage_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -712,9 +731,9 @@ export interface ValidationMessage_1$instance<TValue extends unknown> extends Co
     set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | null);
     get For(): Expression_1<Func_1<TValue>> | null;
     set For(value: Expression_1<Func_1<TValue>> | null);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
     Dispose(disposing: boolean): void;
-    OnParametersSet(): void;
+    OnParametersSet: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnParametersSet"] & (() => void);
 }
 
 
@@ -735,15 +754,15 @@ export type ValidationMessage_1<TValue extends unknown> = ValidationMessage_1$in
 export interface ValidationMessageStore$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_ValidationMessageStore: never;
 
-    Add(fieldIdentifier: FieldIdentifier, message: string): void;
     Add(accessor: Expression_1<Func_1<unknown>>, message: string): void;
-    Add(fieldIdentifier: FieldIdentifier, messages: IEnumerable_1<System_Internal.String>): void;
     Add(accessor: Expression_1<Func_1<unknown>>, messages: IEnumerable_1<System_Internal.String>): void;
+    Add(fieldIdentifier: FieldIdentifier, message: string): void;
+    Add(fieldIdentifier: FieldIdentifier, messages: IEnumerable_1<System_Internal.String>): void;
     Clear(): void;
     Clear(accessor: Expression_1<Func_1<unknown>>): void;
     Clear(fieldIdentifier: FieldIdentifier): void;
-    get_Item(fieldIdentifier: FieldIdentifier): IEnumerable_1<System_Internal.String>;
     get_Item(accessor: Expression_1<Func_1<unknown>>): IEnumerable_1<System_Internal.String>;
+    get_Item(fieldIdentifier: FieldIdentifier): IEnumerable_1<System_Internal.String>;
 }
 
 
@@ -754,8 +773,9 @@ export const ValidationMessageStore: {
 
 export type ValidationMessageStore = ValidationMessageStore$instance;
 
-export interface ValidationRequestedEventArgs$instance extends EventArgs {
+export interface ValidationRequestedEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_ValidationRequestedEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
 }
 
@@ -768,8 +788,9 @@ export const ValidationRequestedEventArgs: {
 
 export type ValidationRequestedEventArgs = ValidationRequestedEventArgs$instance;
 
-export interface ValidationStateChangedEventArgs$instance extends EventArgs {
+export interface ValidationStateChangedEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_ValidationStateChangedEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
 }
 
@@ -782,7 +803,8 @@ export const ValidationStateChangedEventArgs: {
 
 export type ValidationStateChangedEventArgs = ValidationStateChangedEventArgs$instance;
 
-export interface ValidationSummary$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface ValidationSummary$instance extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_ValidationSummary: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -794,9 +816,9 @@ export interface ValidationSummary$instance extends ComponentBase, Microsoft_Asp
     set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | null);
     get Model(): unknown | null;
     set Model(value: unknown | null);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
     Dispose(disposing: boolean): void;
-    OnParametersSet(): void;
+    OnParametersSet: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnParametersSet"] & (() => void);
 }
 
 

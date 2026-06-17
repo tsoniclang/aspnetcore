@@ -57,11 +57,11 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type AuthorizationHandler<
-  T1 extends unknown & Internal.IAuthorizationRequirement | __ = __,
+  T1 extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never } | __ = __,
   T2 extends unknown | __ = __,
 > =
-  [T2] extends [__] ? [T1] extends [unknown & Internal.IAuthorizationRequirement] ? Internal.AuthorizationHandler_1<T1> : never :
-  [T1] extends [unknown & Internal.IAuthorizationRequirement] ? [T2] extends [unknown] ? Internal.AuthorizationHandler_2<T1, T2> : never : never;
+  [T2] extends [__] ? [T1] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never }] ? Internal.AuthorizationHandler_1<T1> : never :
+  [T1] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never }] ? Internal.AuthorizationHandler_2<T1, T2> : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Authorization as ExtensionMethods } from './__internal/extensions/index.js';
