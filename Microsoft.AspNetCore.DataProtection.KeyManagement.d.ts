@@ -13,6 +13,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import type { AlgorithmConfiguration, IAuthenticatedEncryptorDescriptor } from './Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel/internal/index.js';
 import type { IAuthenticatedEncryptor, IAuthenticatedEncryptorFactory } from './Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption/internal/index.js';
 import type { IActivator } from './Microsoft.AspNetCore.DataProtection.Internal/internal/index.js';
+import type { IInternalXmlKeyManager } from './Microsoft.AspNetCore.DataProtection.KeyManagement.Internal/internal/index.js';
 import type { IXmlRepository } from './Microsoft.AspNetCore.DataProtection.Repositories/internal/index.js';
 import type { IXmlEncryptor } from './Microsoft.AspNetCore.DataProtection.XmlEncryption/internal/index.js';
 import type { IList, IReadOnlyCollection } from '@tsonic/dotnet/System.Collections.Generic.js';

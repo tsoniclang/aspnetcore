@@ -9,28 +9,27 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Import types from other namespaces
 import type { ComponentState } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_RenderTree_Internal from "../../Microsoft.AspNetCore.Components.RenderTree/internal/index.js";
-import type { ArrayRange_1, EventFieldInfo, RenderBatch, Renderer, RenderTreeFrame } from "../../Microsoft.AspNetCore.Components.RenderTree/internal/index.js";
+import type { EventFieldInfo, RenderBatch, Renderer, RenderTreeFrame } from "../../Microsoft.AspNetCore.Components.RenderTree/internal/index.js";
 import type { HtmlRootComponent } from "../../Microsoft.AspNetCore.Components.Web.HtmlRendering/internal/index.js";
-import type { Dispatcher, ElementReferenceContext, IComponent, IComponentActivator, IComponentRenderMode, ParameterView, RendererInfo, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { Dispatcher, IComponent, IComponentActivator, IComponentRenderMode, ParameterView, RendererInfo, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { TextWriter } from "@tsonic/dotnet/System.IO/internal/index.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
-import type { Boolean as ClrBoolean, EventArgs, Exception, IAsyncDisposable, IDisposable, Int32, IServiceProvider, Nullable_1, String as ClrString, Type, UInt64, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, EventArgs, Exception, IAsyncDisposable, IDisposable, Int32, IServiceProvider, Nullable_1, Type, UInt64, Void } from "@tsonic/dotnet/System/internal/index.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
-export interface StaticHtmlRenderer$instance extends Renderer {
+export interface StaticHtmlRenderer$instance extends Microsoft_AspNetCore_Components_RenderTree_Internal.Renderer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_HtmlRendering_Infrastructure_StaticHtmlRenderer: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_Renderer: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Dispatcher: Dispatcher;
-    readonly RendererInfo: RendererInfo;
-    BeginRenderingComponent(componentType: Type, initialParameters: ParameterView): HtmlRootComponent;
     BeginRenderingComponent(component: IComponent, initialParameters: ParameterView): HtmlRootComponent;
-    HandleException(exception: Exception): void;
+    BeginRenderingComponent(componentType: Type, initialParameters: ParameterView): HtmlRootComponent;
+    HandleException: Microsoft_AspNetCore_Components_RenderTree_Internal.Renderer$instance["HandleException"] & ((exception: Exception) => void);
     RenderChildComponent(output: TextWriter, componentFrame: RenderTreeFrame): void;
-    UpdateDisplayAsync(renderBatch: RenderBatch): Task;
+    UpdateDisplayAsync: Microsoft_AspNetCore_Components_RenderTree_Internal.Renderer$instance["UpdateDisplayAsync"] & ((renderBatch: RenderBatch) => Task);
     WriteComponentHtml(componentId: int, output: TextWriter): void;
 }
 

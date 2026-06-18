@@ -189,49 +189,49 @@ export type ActionResult<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ActionResult :
-  [T1] extends [unknown] ? Internal.ActionResult_1<T1> : never;
+  Internal.ActionResult_1<T1>;
 
 export type MiddlewareFilterAttribute<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.MiddlewareFilterAttribute :
-  [T1] extends [unknown] ? Internal.MiddlewareFilterAttribute_1<T1> : never;
+  Internal.MiddlewareFilterAttribute_1<T1>;
 
 export type ModelBinderAttribute<
-  T1 extends unknown & IModelBinder | __ = __,
+  T1 extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never } | __ = __,
 > =
   [T1] extends [__] ? Internal.ModelBinderAttribute :
-  [T1] extends [unknown & IModelBinder] ? Internal.ModelBinderAttribute_1<T1> : never;
+  [T1] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never }] ? Internal.ModelBinderAttribute_1<T1> : never;
 
 export type ModelMetadataTypeAttribute<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ModelMetadataTypeAttribute :
-  [T1] extends [unknown] ? Internal.ModelMetadataTypeAttribute_1<T1> : never;
+  Internal.ModelMetadataTypeAttribute_1<T1>;
 
 export type ProducesAttribute<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ProducesAttribute :
-  [T1] extends [unknown] ? Internal.ProducesAttribute_1<T1> : never;
+  Internal.ProducesAttribute_1<T1>;
 
 export type ProducesResponseTypeAttribute<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ProducesResponseTypeAttribute :
-  [T1] extends [unknown] ? Internal.ProducesResponseTypeAttribute_1<T1> : never;
+  Internal.ProducesResponseTypeAttribute_1<T1>;
 
 export type ServiceFilterAttribute<
-  T1 extends unknown & IFilterMetadata | __ = __,
+  T1 extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never } | __ = __,
 > =
   [T1] extends [__] ? Internal.ServiceFilterAttribute :
-  [T1] extends [unknown & IFilterMetadata] ? Internal.ServiceFilterAttribute_1<T1> : never;
+  [T1] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never }] ? Internal.ServiceFilterAttribute_1<T1> : never;
 
 export type TypeFilterAttribute<
-  T1 extends unknown & IFilterMetadata | __ = __,
+  T1 extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never } | __ = __,
 > =
   [T1] extends [__] ? Internal.TypeFilterAttribute :
-  [T1] extends [unknown & IFilterMetadata] ? Internal.TypeFilterAttribute_1<T1> : never;
+  [T1] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never }] ? Internal.TypeFilterAttribute_1<T1> : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Mvc as ExtensionMethods } from './__internal/extensions/index.js';

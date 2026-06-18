@@ -7,7 +7,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
-import type { IEnumerable_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import type { Assembly } from "@tsonic/dotnet/System.Reflection/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Attribute, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System/internal/index.js";
@@ -33,14 +33,15 @@ export interface RazorCompiledItem$instance {
 }
 
 
-export const RazorCompiledItem: (abstract new() => RazorCompiledItem) & {
+export const RazorCompiledItem: {
 };
 
 
 export type RazorCompiledItem = RazorCompiledItem$instance;
 
-export interface RazorCompiledItemAttribute$instance extends Attribute {
+export interface RazorCompiledItemAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItemAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly Identifier: string;
     readonly Kind: string;
@@ -70,8 +71,9 @@ export const RazorCompiledItemLoader: {
 
 export type RazorCompiledItemLoader = RazorCompiledItemLoader$instance;
 
-export interface RazorCompiledItemMetadataAttribute$instance extends Attribute {
+export interface RazorCompiledItemMetadataAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItemMetadataAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly Key: string;
     readonly Value: string;
@@ -85,8 +87,9 @@ export const RazorCompiledItemMetadataAttribute: {
 
 export type RazorCompiledItemMetadataAttribute = RazorCompiledItemMetadataAttribute$instance;
 
-export interface RazorConfigurationNameAttribute$instance extends Attribute {
+export interface RazorConfigurationNameAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorConfigurationNameAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly ConfigurationName: string;
 }
@@ -99,8 +102,9 @@ export const RazorConfigurationNameAttribute: {
 
 export type RazorConfigurationNameAttribute = RazorConfigurationNameAttribute$instance;
 
-export interface RazorExtensionAssemblyNameAttribute$instance extends Attribute {
+export interface RazorExtensionAssemblyNameAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorExtensionAssemblyNameAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly AssemblyName: string;
     readonly ExtensionName: string;
@@ -114,8 +118,9 @@ export const RazorExtensionAssemblyNameAttribute: {
 
 export type RazorExtensionAssemblyNameAttribute = RazorExtensionAssemblyNameAttribute$instance;
 
-export interface RazorLanguageVersionAttribute$instance extends Attribute {
+export interface RazorLanguageVersionAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorLanguageVersionAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly LanguageVersion: string;
 }
@@ -128,8 +133,9 @@ export const RazorLanguageVersionAttribute: {
 
 export type RazorLanguageVersionAttribute = RazorLanguageVersionAttribute$instance;
 
-export interface RazorSourceChecksumAttribute$instance extends Attribute, IRazorSourceChecksumMetadata$instance {
+export interface RazorSourceChecksumAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorSourceChecksumAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata: never;
 

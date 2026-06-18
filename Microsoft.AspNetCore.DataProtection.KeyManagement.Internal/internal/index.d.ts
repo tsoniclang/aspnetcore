@@ -66,6 +66,7 @@ export type IKeyRingProvider = IKeyRingProvider$instance;
 
 export interface DefaultKeyResolution$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_DefaultKeyResolution: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     DefaultKey: IKey | null;
     FallbackKey: IKey | null;

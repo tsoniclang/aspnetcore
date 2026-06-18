@@ -23,7 +23,8 @@ export interface ICorsMetadata$instance {
 
 export type ICorsMetadata = ICorsMetadata$instance;
 
-export interface ICorsPolicyMetadata$instance extends ICorsMetadata {
+export interface ICorsPolicyMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata: never;
 
     readonly Policy: CorsPolicy;
@@ -53,7 +54,8 @@ export interface ICorsService$instance {
 
 export type ICorsService = ICorsService$instance;
 
-export interface IDisableCorsAttribute$instance extends ICorsMetadata {
+export interface IDisableCorsAttribute$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute: never;
 
 }
@@ -63,7 +65,8 @@ export interface IDisableCorsAttribute$instance extends ICorsMetadata$instance {
 
 export type IDisableCorsAttribute = IDisableCorsAttribute$instance;
 
-export interface IEnableCorsAttribute$instance extends ICorsMetadata {
+export interface IEnableCorsAttribute$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute: never;
 
     get PolicyName(): string | null;
@@ -95,10 +98,10 @@ export interface CorsOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Cors_Infrastructure_CorsOptions: never;
 
     DefaultPolicyName: string;
-    AddDefaultPolicy(policy: CorsPolicy): void;
     AddDefaultPolicy(configurePolicy: Action_1<CorsPolicyBuilder>): void;
-    AddPolicy(name: string, policy: CorsPolicy): void;
+    AddDefaultPolicy(policy: CorsPolicy): void;
     AddPolicy(name: string, configurePolicy: Action_1<CorsPolicyBuilder>): void;
+    AddPolicy(name: string, policy: CorsPolicy): void;
     GetPolicy(name: string): CorsPolicy | null;
 }
 
@@ -187,14 +190,14 @@ export const CorsResult: {
 
 export type CorsResult = CorsResult$instance;
 
-export interface CorsService$instance extends ICorsService$instance {
+export interface CorsService$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Cors_Infrastructure_CorsService: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService: never;
 
     ApplyResult(result: CorsResult, response: HttpResponse): void;
-    EvaluatePolicy(context: HttpContext, policyName: string): CorsResult;
     EvaluatePolicy(context: HttpContext, policy: CorsPolicy): CorsResult;
+    EvaluatePolicy(context: HttpContext, policyName: string): CorsResult;
     EvaluatePreflightRequest(context: HttpContext, policy: CorsPolicy, result: CorsResult): void;
     EvaluateRequest(context: HttpContext, policy: CorsPolicy, result: CorsResult): void;
 }
@@ -212,7 +215,7 @@ export interface __CorsService$views {
 export type CorsService = CorsService$instance & __CorsService$views;
 
 
-export interface DefaultCorsPolicyProvider$instance extends ICorsPolicyProvider$instance {
+export interface DefaultCorsPolicyProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Cors_Infrastructure_DefaultCorsPolicyProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider: never;

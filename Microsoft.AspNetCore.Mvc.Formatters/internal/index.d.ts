@@ -36,10 +36,12 @@ import type { ILogger_1, ILoggerFactory } from "@tsonic/microsoft-extensions/Mic
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 import type { StringSegment } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
-export enum InputFormatterExceptionPolicy {
-    AllExceptions = 0,
-    MalformedInputExceptions = 1
-}
+export type InputFormatterExceptionPolicy = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_InputFormatterExceptionPolicy: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const InputFormatterExceptionPolicy: {
+    readonly AllExceptions: InputFormatterExceptionPolicy;
+    readonly MalformedInputExceptions: InputFormatterExceptionPolicy;
+};
 
 
 export interface IInputFormatter$instance {
@@ -73,6 +75,7 @@ export type IOutputFormatter = IOutputFormatter$instance;
 
 export interface MediaType$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_MediaType: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Charset: StringSegment;
     readonly Encoding: Encoding | null;
@@ -84,8 +87,8 @@ export interface MediaType$instance {
     readonly SubTypeSuffix: StringSegment;
     readonly SubTypeWithoutSuffix: StringSegment;
     readonly Type: StringSegment;
-    GetParameter(parameterName: string): StringSegment;
     GetParameter(parameterName: StringSegment): StringSegment;
+    GetParameter(parameterName: string): StringSegment;
     IsSubsetOf(set: MediaType): boolean;
 }
 
@@ -106,6 +109,7 @@ export type MediaType = MediaType$instance;
 
 export interface MediaTypeSegmentWithQuality$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_MediaTypeSegmentWithQuality: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly MediaType: StringSegment;
     readonly Quality: double;
@@ -120,7 +124,7 @@ export const MediaTypeSegmentWithQuality: {
 
 export type MediaTypeSegmentWithQuality = MediaTypeSegmentWithQuality$instance;
 
-export interface FormatFilter$instance extends Microsoft_AspNetCore_Mvc_Filters_Internal.IResourceFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IResultFilter$instance {
+export interface FormatFilter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_FormatFilter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
@@ -149,8 +153,9 @@ export interface __FormatFilter$views {
 export type FormatFilter = FormatFilter$instance & __FormatFilter$views;
 
 
-export interface FormatterCollection_1$instance<TFormatter extends unknown> extends Collection_1<TFormatter> {
+export interface FormatterCollection_1$instance<TFormatter extends unknown> extends System_Collections_ObjectModel_Internal.Collection_1<TFormatter> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_FormatterCollection_1: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_Collection_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -161,8 +166,8 @@ export interface FormatterCollection_1$instance<TFormatter extends unknown> exte
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    RemoveType<T extends unknown & TFormatter>(): void;
     RemoveType(formatterType: Type): void;
+    RemoveType<T extends unknown & TFormatter>(): void;
 }
 
 
@@ -179,8 +184,8 @@ export interface FormatterMappings$instance {
 
     ClearMediaTypeMappingForFormat(format: string): boolean;
     GetMediaTypeMappingForFormat(format: string): string | null;
-    SetMediaTypeMappingForFormat(format: string, contentType: string): void;
     SetMediaTypeMappingForFormat(format: string, contentType: MediaTypeHeaderValue): void;
+    SetMediaTypeMappingForFormat(format: string, contentType: string): void;
 }
 
 
@@ -191,7 +196,7 @@ export const FormatterMappings: {
 
 export type FormatterMappings = FormatterMappings$instance;
 
-export interface HttpNoContentOutputFormatter$instance extends IOutputFormatter$instance {
+export interface HttpNoContentOutputFormatter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_HttpNoContentOutputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_IOutputFormatter: never;
@@ -214,7 +219,7 @@ export interface __HttpNoContentOutputFormatter$views {
 export type HttpNoContentOutputFormatter = HttpNoContentOutputFormatter$instance & __HttpNoContentOutputFormatter$views;
 
 
-export interface InputFormatter$instance extends Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiRequestFormatMetadataProvider$instance, IInputFormatter$instance {
+export interface InputFormatter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_InputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider: never;
@@ -230,7 +235,7 @@ export interface InputFormatter$instance extends Microsoft_AspNetCore_Mvc_ApiExp
 }
 
 
-export const InputFormatter: (abstract new() => InputFormatter) & {
+export const InputFormatter: {
 };
 
 
@@ -263,8 +268,9 @@ export const InputFormatterContext: {
 
 export type InputFormatterContext = InputFormatterContext$instance;
 
-export interface InputFormatterException$instance extends Exception {
+export interface InputFormatterException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_InputFormatterException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -301,8 +307,9 @@ export const InputFormatterResult: {
 
 export type InputFormatterResult = InputFormatterResult$instance;
 
-export interface MediaTypeCollection$instance extends Collection_1<System_Internal.String> {
+export interface MediaTypeCollection$instance extends System_Collections_ObjectModel_Internal.Collection_1<System_Internal.String> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_MediaTypeCollection: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_Collection_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -313,9 +320,9 @@ export interface MediaTypeCollection$instance extends Collection_1<System_Intern
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    Add(item: MediaTypeHeaderValue): void;
-    Insert(index: int, item: MediaTypeHeaderValue): void;
-    Remove(item: MediaTypeHeaderValue): boolean;
+    Add: System_Collections_ObjectModel_Internal.Collection_1<System_Internal.String>["Add"] & ((item: MediaTypeHeaderValue) => void);
+    Insert: System_Collections_ObjectModel_Internal.Collection_1<System_Internal.String>["Insert"] & ((index: int, item: MediaTypeHeaderValue) => void);
+    Remove: System_Collections_ObjectModel_Internal.Collection_1<System_Internal.String>["Remove"] & ((item: MediaTypeHeaderValue) => boolean);
 }
 
 
@@ -326,7 +333,7 @@ export const MediaTypeCollection: {
 
 export type MediaTypeCollection = MediaTypeCollection$instance;
 
-export interface OutputFormatter$instance extends Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiResponseTypeMetadataProvider$instance, IOutputFormatter$instance {
+export interface OutputFormatter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_OutputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider: never;
@@ -342,7 +349,7 @@ export interface OutputFormatter$instance extends Microsoft_AspNetCore_Mvc_ApiEx
 }
 
 
-export const OutputFormatter: (abstract new() => OutputFormatter) & {
+export const OutputFormatter: {
 };
 
 
@@ -367,13 +374,14 @@ export interface OutputFormatterCanWriteContext$instance {
 }
 
 
-export const OutputFormatterCanWriteContext: (abstract new(httpContext: HttpContext) => OutputFormatterCanWriteContext) & {
+export const OutputFormatterCanWriteContext: {
 };
 
 
 export type OutputFormatterCanWriteContext = OutputFormatterCanWriteContext$instance;
 
-export interface OutputFormatterWriteContext$instance extends OutputFormatterCanWriteContext {
+export interface OutputFormatterWriteContext$instance extends OutputFormatterCanWriteContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_OutputFormatterCanWriteContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_OutputFormatterWriteContext: never;
 
     WriterFactory: Func_3<Stream, Encoding, TextWriter>;
@@ -387,7 +395,7 @@ export const OutputFormatterWriteContext: {
 
 export type OutputFormatterWriteContext = OutputFormatterWriteContext$instance;
 
-export interface StreamOutputFormatter$instance extends IOutputFormatter$instance {
+export interface StreamOutputFormatter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_StreamOutputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_IOutputFormatter: never;
@@ -409,15 +417,16 @@ export interface __StreamOutputFormatter$views {
 export type StreamOutputFormatter = StreamOutputFormatter$instance & __StreamOutputFormatter$views;
 
 
-export interface StringOutputFormatter$instance extends TextOutputFormatter$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiResponseTypeMetadataProvider$instance, IOutputFormatter$instance {
+export interface StringOutputFormatter$instance extends TextOutputFormatter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_OutputFormatter: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_StringOutputFormatter: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_TextOutputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_IOutputFormatter: never;
 
-    CanWriteResult(context: OutputFormatterCanWriteContext): boolean;
-    WriteResponseBodyAsync(context: OutputFormatterWriteContext, encoding: Encoding): Task;
-    WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
+    CanWriteResult: TextOutputFormatter$instance["CanWriteResult"] & ((context: OutputFormatterCanWriteContext) => boolean);
+    WriteResponseBodyAsync: TextOutputFormatter$instance["WriteResponseBodyAsync"] & ((context: OutputFormatterWriteContext) => Task) & ((context: OutputFormatterWriteContext, encoding: Encoding) => Task);
 }
 
 
@@ -434,16 +443,17 @@ export interface __StringOutputFormatter$views {
 export type StringOutputFormatter = StringOutputFormatter$instance & __StringOutputFormatter$views;
 
 
-export interface SystemTextJsonInputFormatter$instance extends TextInputFormatter$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiRequestFormatMetadataProvider$instance, IInputFormatter$instance, IInputFormatterExceptionPolicy$instance {
+export interface SystemTextJsonInputFormatter$instance extends TextInputFormatter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_InputFormatter: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_SystemTextJsonInputFormatter: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_TextInputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_IInputFormatter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_IInputFormatterExceptionPolicy: never;
 
     readonly SerializerOptions: JsonSerializerOptions;
-    ReadRequestBodyAsync(context: InputFormatterContext, encoding: Encoding): Task_1<InputFormatterResult>;
-    ReadRequestBodyAsync(context: InputFormatterContext): Task_1<InputFormatterResult>;
+    ReadRequestBodyAsync: TextInputFormatter$instance["ReadRequestBodyAsync"] & ((context: InputFormatterContext) => Task_1<InputFormatterResult>) & ((context: InputFormatterContext, encoding: Encoding) => Task_1<InputFormatterResult>);
 }
 
 
@@ -461,15 +471,16 @@ export interface __SystemTextJsonInputFormatter$views {
 export type SystemTextJsonInputFormatter = SystemTextJsonInputFormatter$instance & __SystemTextJsonInputFormatter$views;
 
 
-export interface SystemTextJsonOutputFormatter$instance extends TextOutputFormatter$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiResponseTypeMetadataProvider$instance, IOutputFormatter$instance {
+export interface SystemTextJsonOutputFormatter$instance extends TextOutputFormatter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_OutputFormatter: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_SystemTextJsonOutputFormatter: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_TextOutputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_IOutputFormatter: never;
 
     readonly SerializerOptions: JsonSerializerOptions;
-    WriteResponseBodyAsync(context: OutputFormatterWriteContext, selectedEncoding: Encoding): Task;
-    WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
+    WriteResponseBodyAsync: TextOutputFormatter$instance["WriteResponseBodyAsync"] & ((context: OutputFormatterWriteContext) => Task) & ((context: OutputFormatterWriteContext, selectedEncoding: Encoding) => Task);
 }
 
 
@@ -486,21 +497,19 @@ export interface __SystemTextJsonOutputFormatter$views {
 export type SystemTextJsonOutputFormatter = SystemTextJsonOutputFormatter$instance & __SystemTextJsonOutputFormatter$views;
 
 
-export interface TextInputFormatter$instance extends InputFormatter$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiRequestFormatMetadataProvider$instance, IInputFormatter$instance {
+export interface TextInputFormatter$instance extends InputFormatter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_InputFormatter: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_TextInputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_IInputFormatter: never;
 
     readonly SupportedEncodings: IList_1<Encoding>;
-    ReadRequestBodyAsync(context: InputFormatterContext): Task_1<InputFormatterResult>;
-    ReadRequestBodyAsync(context: InputFormatterContext, encoding: Encoding): Task_1<InputFormatterResult>;
+    ReadRequestBodyAsync: InputFormatter$instance["ReadRequestBodyAsync"] & ((context: InputFormatterContext) => Task_1<InputFormatterResult>) & ((context: InputFormatterContext, encoding: Encoding) => Task_1<InputFormatterResult>);
 }
 
 
-export const TextInputFormatter: (abstract new() => TextInputFormatter) & {
-    readonly UTF8EncodingWithoutBOM: Encoding;
-    readonly UTF16EncodingLittleEndian: Encoding;
+export const TextInputFormatter: {
 };
 
 
@@ -512,7 +521,8 @@ export interface __TextInputFormatter$views {
 export type TextInputFormatter = TextInputFormatter$instance & __TextInputFormatter$views;
 
 
-export interface TextOutputFormatter$instance extends OutputFormatter$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiResponseTypeMetadataProvider$instance, IOutputFormatter$instance {
+export interface TextOutputFormatter$instance extends OutputFormatter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_OutputFormatter: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_TextOutputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider: never;
@@ -520,13 +530,12 @@ export interface TextOutputFormatter$instance extends OutputFormatter$instance, 
 
     readonly SupportedEncodings: IList_1<Encoding>;
     SelectCharacterEncoding(context: OutputFormatterWriteContext): Encoding;
-    WriteAsync(context: OutputFormatterWriteContext): Task;
-    WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
-    WriteResponseBodyAsync(context: OutputFormatterWriteContext, selectedEncoding: Encoding): Task;
+    WriteAsync: OutputFormatter$instance["WriteAsync"] & ((context: OutputFormatterWriteContext) => Task);
+    WriteResponseBodyAsync: OutputFormatter$instance["WriteResponseBodyAsync"] & ((context: OutputFormatterWriteContext) => Task) & ((context: OutputFormatterWriteContext, selectedEncoding: Encoding) => Task);
 }
 
 
-export const TextOutputFormatter: (abstract new() => TextOutputFormatter) & {
+export const TextOutputFormatter: {
 };
 
 
@@ -538,7 +547,9 @@ export interface __TextOutputFormatter$views {
 export type TextOutputFormatter = TextOutputFormatter$instance & __TextOutputFormatter$views;
 
 
-export interface XmlDataContractSerializerInputFormatter$instance extends TextInputFormatter$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiRequestFormatMetadataProvider$instance, IInputFormatter$instance, IInputFormatterExceptionPolicy$instance {
+export interface XmlDataContractSerializerInputFormatter$instance extends TextInputFormatter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_InputFormatter: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_TextInputFormatter: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_XmlDataContractSerializerInputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider: never;
@@ -550,13 +561,12 @@ export interface XmlDataContractSerializerInputFormatter$instance extends TextIn
     SerializerSettings: DataContractSerializerSettings;
     readonly WrapperProviderFactories: IList_1<IWrapperProviderFactory>;
     readonly XmlDictionaryReaderQuotas: XmlDictionaryReaderQuotas;
-    CanReadType(type: Type): boolean;
+    CanReadType: TextInputFormatter$instance["CanReadType"] & ((type: Type) => boolean);
     CreateSerializer(type: Type): DataContractSerializer | null;
     CreateXmlReader(readStream: Stream, encoding: Encoding): XmlReader;
     GetCachedSerializer(type: Type): DataContractSerializer;
     GetSerializableType(declaredType: Type): Type;
-    ReadRequestBodyAsync(context: InputFormatterContext, encoding: Encoding): Task_1<InputFormatterResult>;
-    ReadRequestBodyAsync(context: InputFormatterContext): Task_1<InputFormatterResult>;
+    ReadRequestBodyAsync: TextInputFormatter$instance["ReadRequestBodyAsync"] & ((context: InputFormatterContext) => Task_1<InputFormatterResult>) & ((context: InputFormatterContext, encoding: Encoding) => Task_1<InputFormatterResult>);
 }
 
 
@@ -574,7 +584,9 @@ export interface __XmlDataContractSerializerInputFormatter$views {
 export type XmlDataContractSerializerInputFormatter = XmlDataContractSerializerInputFormatter$instance & __XmlDataContractSerializerInputFormatter$views;
 
 
-export interface XmlDataContractSerializerOutputFormatter$instance extends TextOutputFormatter$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiResponseTypeMetadataProvider$instance, IOutputFormatter$instance {
+export interface XmlDataContractSerializerOutputFormatter$instance extends TextOutputFormatter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_OutputFormatter: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_TextOutputFormatter: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_XmlDataContractSerializerOutputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider: never;
@@ -583,14 +595,13 @@ export interface XmlDataContractSerializerOutputFormatter$instance extends TextO
     SerializerSettings: DataContractSerializerSettings;
     readonly WrapperProviderFactories: IList_1<IWrapperProviderFactory>;
     readonly WriterSettings: XmlWriterSettings;
-    CanWriteType(type: Type | null): boolean;
+    CanWriteType: TextOutputFormatter$instance["CanWriteType"] & ((type: Type | null) => boolean);
     CreateSerializer(type: Type): DataContractSerializer | null;
-    CreateXmlWriter(writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
     CreateXmlWriter(context: OutputFormatterWriteContext, writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
+    CreateXmlWriter(writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
     GetCachedSerializer(type: Type): DataContractSerializer;
     GetSerializableType(type: Type): Type;
-    WriteResponseBodyAsync(context: OutputFormatterWriteContext, selectedEncoding: Encoding): Task;
-    WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
+    WriteResponseBodyAsync: TextOutputFormatter$instance["WriteResponseBodyAsync"] & ((context: OutputFormatterWriteContext) => Task) & ((context: OutputFormatterWriteContext, selectedEncoding: Encoding) => Task);
 }
 
 
@@ -610,7 +621,9 @@ export interface __XmlDataContractSerializerOutputFormatter$views {
 export type XmlDataContractSerializerOutputFormatter = XmlDataContractSerializerOutputFormatter$instance & __XmlDataContractSerializerOutputFormatter$views;
 
 
-export interface XmlSerializerInputFormatter$instance extends TextInputFormatter$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiRequestFormatMetadataProvider$instance, IInputFormatter$instance, IInputFormatterExceptionPolicy$instance {
+export interface XmlSerializerInputFormatter$instance extends TextInputFormatter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_InputFormatter: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_TextInputFormatter: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_XmlSerializerInputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider: never;
@@ -621,14 +634,13 @@ export interface XmlSerializerInputFormatter$instance extends TextInputFormatter
     MaxDepth: int;
     readonly WrapperProviderFactories: IList_1<IWrapperProviderFactory>;
     readonly XmlDictionaryReaderQuotas: XmlDictionaryReaderQuotas;
-    CanReadType(type: Type): boolean;
+    CanReadType: TextInputFormatter$instance["CanReadType"] & ((type: Type) => boolean);
     CreateSerializer(type: Type): XmlSerializer | null;
-    CreateXmlReader(readStream: Stream, encoding: Encoding, type: Type): XmlReader;
     CreateXmlReader(readStream: Stream, encoding: Encoding): XmlReader;
+    CreateXmlReader(readStream: Stream, encoding: Encoding, type: Type): XmlReader;
     GetCachedSerializer(type: Type): XmlSerializer;
     GetSerializableType(declaredType: Type): Type;
-    ReadRequestBodyAsync(context: InputFormatterContext, encoding: Encoding): Task_1<InputFormatterResult>;
-    ReadRequestBodyAsync(context: InputFormatterContext): Task_1<InputFormatterResult>;
+    ReadRequestBodyAsync: TextInputFormatter$instance["ReadRequestBodyAsync"] & ((context: InputFormatterContext) => Task_1<InputFormatterResult>) & ((context: InputFormatterContext, encoding: Encoding) => Task_1<InputFormatterResult>);
 }
 
 
@@ -646,7 +658,9 @@ export interface __XmlSerializerInputFormatter$views {
 export type XmlSerializerInputFormatter = XmlSerializerInputFormatter$instance & __XmlSerializerInputFormatter$views;
 
 
-export interface XmlSerializerOutputFormatter$instance extends TextOutputFormatter$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiResponseTypeMetadataProvider$instance, IOutputFormatter$instance {
+export interface XmlSerializerOutputFormatter$instance extends TextOutputFormatter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_OutputFormatter: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_TextOutputFormatter: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_XmlSerializerOutputFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider: never;
@@ -654,15 +668,14 @@ export interface XmlSerializerOutputFormatter$instance extends TextOutputFormatt
 
     readonly WrapperProviderFactories: IList_1<IWrapperProviderFactory>;
     readonly WriterSettings: XmlWriterSettings;
-    CanWriteType(type: Type | null): boolean;
+    CanWriteType: TextOutputFormatter$instance["CanWriteType"] & ((type: Type | null) => boolean);
     CreateSerializer(type: Type): XmlSerializer | null;
-    CreateXmlWriter(writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
     CreateXmlWriter(context: OutputFormatterWriteContext, writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
+    CreateXmlWriter(writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
     GetCachedSerializer(type: Type): XmlSerializer;
     GetSerializableType(type: Type): Type;
     Serialize(xmlSerializer: XmlSerializer, xmlWriter: XmlWriter, value: unknown | null): void;
-    WriteResponseBodyAsync(context: OutputFormatterWriteContext, selectedEncoding: Encoding): Task;
-    WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
+    WriteResponseBodyAsync: TextOutputFormatter$instance["WriteResponseBodyAsync"] & ((context: OutputFormatterWriteContext) => Task) & ((context: OutputFormatterWriteContext, selectedEncoding: Encoding) => Task);
 }
 
 

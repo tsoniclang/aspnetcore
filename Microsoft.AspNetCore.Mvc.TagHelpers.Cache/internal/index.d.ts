@@ -67,7 +67,7 @@ export const CacheTagKey: {
 
 export type CacheTagKey = CacheTagKey$instance;
 
-export interface DistributedCacheTagHelperFormatter$instance extends IDistributedCacheTagHelperFormatter$instance {
+export interface DistributedCacheTagHelperFormatter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_DistributedCacheTagHelperFormatter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperFormatter: never;
@@ -103,7 +103,7 @@ export const DistributedCacheTagHelperFormattingContext: {
 
 export type DistributedCacheTagHelperFormattingContext = DistributedCacheTagHelperFormattingContext$instance;
 
-export interface DistributedCacheTagHelperService$instance extends IDistributedCacheTagHelperService$instance {
+export interface DistributedCacheTagHelperService$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_DistributedCacheTagHelperService: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperService: never;
@@ -124,7 +124,7 @@ export interface __DistributedCacheTagHelperService$views {
 export type DistributedCacheTagHelperService = DistributedCacheTagHelperService$instance & __DistributedCacheTagHelperService$views;
 
 
-export interface DistributedCacheTagHelperStorage$instance extends IDistributedCacheTagHelperStorage$instance {
+export interface DistributedCacheTagHelperStorage$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_DistributedCacheTagHelperStorage: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperStorage: never;

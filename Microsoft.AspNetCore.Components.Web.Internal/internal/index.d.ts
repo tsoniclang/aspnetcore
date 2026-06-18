@@ -15,8 +15,8 @@ import type { Int64, String as ClrString } from "@tsonic/dotnet/System/internal/
 export interface IInternalWebJSInProcessRuntime$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Web_Internal_IInternalWebJSInProcessRuntime: never;
 
-    InvokeJS(invocationInfo: JSInvocationInfo): string;
     InvokeJS(identifier: string, argsJson: string | null, resultType: JSCallResultType, targetInstanceId: long): string;
+    InvokeJS(invocationInfo: JSInvocationInfo): string;
 }
 
 

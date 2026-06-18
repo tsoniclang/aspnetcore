@@ -971,34 +971,9 @@
             "ownerIdentity": "Microsoft.AspNetCore.Localization"
           }
         ],
-        "fields": [
-          {
-            "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider::NullProviderCultureResultSystem.Threading.Tasks.Task`1[[Microsoft.AspNetCore.Localization.ProviderCultureResult, Microsoft.AspNetCore.Localization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
-            "targetName": "NullProviderCultureResult",
-            "metadataToken": 67108888,
-            "normalizedSignature": "NullProviderCultureResult|System.Threading.Tasks.Task`1[[Microsoft.AspNetCore.Localization.ProviderCultureResult, Microsoft.AspNetCore.Localization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]|static=true|const=false",
-            "isStatic": true,
-            "isReadOnly": true,
-            "isLiteral": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Localization"
-          }
-        ],
+        "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider::.ctor():void",
-            "metadataToken": 100663364,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Localization"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware",

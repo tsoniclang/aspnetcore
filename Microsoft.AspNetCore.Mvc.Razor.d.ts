@@ -29,7 +29,6 @@ import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.
 import type { ClaimsPrincipal } from '@tsonic/dotnet/System.Security.Claims.js';
 import type { HtmlEncoder } from '@tsonic/dotnet/System.Text.Encodings.Web.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
-import type { IMemoryCache } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Memory.js';
 import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 import type { IOptions } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js';
 
@@ -41,7 +40,7 @@ export type IRazorPageFactoryProvider = Internal.IRazorPageFactoryProvider;
 export type IRazorViewEngine = Internal.IRazorViewEngine;
 export type ITagHelperActivator = Internal.ITagHelperActivator;
 export type ITagHelperFactory = Internal.ITagHelperFactory;
-export type ITagHelperInitializer<TTagHelper extends unknown & Internal.ITagHelper> = Internal.ITagHelperInitializer_1<TTagHelper>;
+export type ITagHelperInitializer<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }> = Internal.ITagHelperInitializer_1<TTagHelper>;
 export type IViewLocationExpander = Internal.IViewLocationExpander;
 export { LanguageViewLocationExpander as LanguageViewLocationExpander } from './Microsoft.AspNetCore.Mvc.Razor/internal/index.js';
 export { LanguageViewLocationExpanderFormat as LanguageViewLocationExpanderFormat } from './Microsoft.AspNetCore.Mvc.Razor/internal/index.js';
@@ -67,5 +66,5 @@ export type RazorPage<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.RazorPage :
-  [T1] extends [unknown] ? Internal.RazorPage_1<T1> : never;
+  Internal.RazorPage_1<T1>;
 

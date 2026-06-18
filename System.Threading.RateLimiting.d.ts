@@ -43,17 +43,17 @@ export type MetadataName<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.MetadataName :
-  [T1] extends [unknown] ? Internal.MetadataName_1<T1> : never;
+  Internal.MetadataName_1<T1>;
 
 export type PartitionedRateLimiter<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.PartitionedRateLimiter :
-  [T1] extends [unknown] ? Internal.PartitionedRateLimiter_1<T1> : never;
+  Internal.PartitionedRateLimiter_1<T1>;
 
 export type RateLimitPartition<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.RateLimitPartition :
-  [T1] extends [unknown] ? Internal.RateLimitPartition_1<T1> : never;
+  Internal.RateLimitPartition_1<T1>;
 

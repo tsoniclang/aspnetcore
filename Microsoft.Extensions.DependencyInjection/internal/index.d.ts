@@ -82,7 +82,8 @@ export interface IRazorComponentsBuilder$instance {
 
 export type IRazorComponentsBuilder = IRazorComponentsBuilder$instance;
 
-export interface IServerSideBlazorBuilder$instance extends IRazorComponentsBuilder {
+export interface IServerSideBlazorBuilder$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IRazorComponentsBuilder: never;
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder: never;
 
     readonly Services: IServiceCollection;
@@ -93,7 +94,7 @@ export interface IServerSideBlazorBuilder$instance extends IRazorComponentsBuild
 
 export type IServerSideBlazorBuilder = IServerSideBlazorBuilder$instance;
 
-export interface OAuthPostConfigureOptions_2$instance<TOptions extends unknown & OAuthOptions, THandler extends unknown & OAuthHandler_1<TOptions>> {
+export interface OAuthPostConfigureOptions_2$instance<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }, THandler extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1: never }> {
     readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_OAuthPostConfigureOptions_2: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
@@ -103,11 +104,11 @@ export interface OAuthPostConfigureOptions_2$instance<TOptions extends unknown &
 
 
 export const OAuthPostConfigureOptions_2: {
-    new<TOptions extends unknown & OAuthOptions, THandler extends unknown & OAuthHandler_1<TOptions>>(dataProtection: IDataProtectionProvider): OAuthPostConfigureOptions_2<TOptions, THandler>;
+    new<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }, THandler extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1: never }>(dataProtection: IDataProtectionProvider): OAuthPostConfigureOptions_2<TOptions, THandler>;
 };
 
 
-export type OAuthPostConfigureOptions_2<TOptions extends unknown & OAuthOptions, THandler extends unknown & OAuthHandler_1<TOptions>> = OAuthPostConfigureOptions_2$instance<TOptions, THandler>;
+export type OAuthPostConfigureOptions_2<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }, THandler extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1: never }> = OAuthPostConfigureOptions_2$instance<TOptions, THandler>;
 
 export abstract class AntiforgeryServiceCollectionExtensions$instance {
     static AddAntiforgery(services: IServiceCollection, setupAction: Action_1<AntiforgeryOptions>): IServiceCollection;
@@ -123,7 +124,7 @@ export abstract class ApplicationModelConventionExtensions$instance {
     static Add(conventions: IList_1<IApplicationModelConvention>, parameterModelConvention: IParameterModelBaseConvention): void;
     static Add(conventions: IList_1<IApplicationModelConvention>, parameterModelConvention: IParameterModelConvention): void;
     static RemoveType(list: IList_1<IApplicationModelConvention>, type: Type): void;
-    static RemoveType<TApplicationModelConvention extends unknown & IApplicationModelConvention>(list: IList_1<IApplicationModelConvention>): void;
+    static RemoveType<TApplicationModelConvention extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention: never }>(list: IList_1<IApplicationModelConvention>): void;
 }
 
 
@@ -255,7 +256,7 @@ export type EndpointMetadataApiExplorerServiceCollectionExtensions = EndpointMet
 export abstract class ExceptionHandlerServiceCollectionExtensions$instance {
     static AddExceptionHandler<TService extends (object | null)>(services: IServiceCollection, configureOptions: Action_2<ExceptionHandlerOptions, TService>): IServiceCollection;
     static AddExceptionHandler(services: IServiceCollection, configureOptions: Action_1<ExceptionHandlerOptions>): IServiceCollection;
-    static AddExceptionHandler<T extends (object | null) & IExceptionHandler>(services: IServiceCollection): IServiceCollection;
+    static AddExceptionHandler<T extends (object | null) & { readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandler: never }>(services: IServiceCollection): IServiceCollection;
 }
 
 
@@ -271,7 +272,7 @@ export type HttpJsonServiceExtensions = HttpJsonServiceExtensions$instance;
 export abstract class HttpLoggingServicesExtensions$instance {
     static AddHttpLogging(services: IServiceCollection, configureOptions: Action_1<HttpLoggingOptions>): IServiceCollection;
     static AddHttpLogging(services: IServiceCollection): IServiceCollection;
-    static AddHttpLoggingInterceptor<T extends (object | null) & IHttpLoggingInterceptor>(services: IServiceCollection): IServiceCollection;
+    static AddHttpLoggingInterceptor<T extends (object | null) & { readonly __tsonic_iface_Microsoft_AspNetCore_HttpLogging_IHttpLoggingInterceptor: never }>(services: IServiceCollection): IServiceCollection;
     static AddW3CLogging(services: IServiceCollection, configureOptions: Action_1<W3CLoggerOptions>): IServiceCollection;
 }
 
@@ -306,8 +307,8 @@ export abstract class IdentityServiceCollectionExtensions2$instance {
 export type IdentityServiceCollectionExtensions2 = IdentityServiceCollectionExtensions2$instance;
 
 export abstract class JsonProtocolDependencyInjectionExtensions$instance {
-    static AddJsonProtocol<TBuilder extends unknown & ISignalRBuilder>(builder: TBuilder, configure: Action_1<JsonHubProtocolOptions>): TBuilder;
-    static AddJsonProtocol<TBuilder extends unknown & ISignalRBuilder>(builder: TBuilder): TBuilder;
+    static AddJsonProtocol<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_ISignalRBuilder: never }>(builder: TBuilder, configure: Action_1<JsonHubProtocolOptions>): TBuilder;
+    static AddJsonProtocol<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_ISignalRBuilder: never }>(builder: TBuilder): TBuilder;
 }
 
 
@@ -424,7 +425,7 @@ export type MvcLocalizationMvcCoreBuilderExtensions = MvcLocalizationMvcCoreBuil
 export abstract class MvcRazorMvcBuilderExtensions$instance {
     static AddRazorOptions(builder: IMvcBuilder, setupAction: Action_1<RazorViewEngineOptions>): IMvcBuilder;
     static AddTagHelpersAsServices(builder: IMvcBuilder): IMvcBuilder;
-    static InitializeTagHelper<TTagHelper extends unknown & ITagHelper>(builder: IMvcBuilder, initialize: Action_2<TTagHelper, ViewContext>): IMvcBuilder;
+    static InitializeTagHelper<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }>(builder: IMvcBuilder, initialize: Action_2<TTagHelper, ViewContext>): IMvcBuilder;
 }
 
 
@@ -434,7 +435,7 @@ export abstract class MvcRazorMvcCoreBuilderExtensions$instance {
     static AddRazorViewEngine(builder: IMvcCoreBuilder, setupAction: Action_1<RazorViewEngineOptions>): IMvcCoreBuilder;
     static AddRazorViewEngine(builder: IMvcCoreBuilder): IMvcCoreBuilder;
     static AddTagHelpersAsServices(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static InitializeTagHelper<TTagHelper extends unknown & ITagHelper>(builder: IMvcCoreBuilder, initialize: Action_2<TTagHelper, ViewContext>): IMvcCoreBuilder;
+    static InitializeTagHelper<TTagHelper extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never }>(builder: IMvcCoreBuilder, initialize: Action_2<TTagHelper, ViewContext>): IMvcCoreBuilder;
 }
 
 
@@ -517,9 +518,9 @@ export abstract class MvcXmlMvcCoreBuilderExtensions$instance {
 export type MvcXmlMvcCoreBuilderExtensions = MvcXmlMvcCoreBuilderExtensions$instance;
 
 export abstract class OAuthExtensions$instance {
-    static AddOAuth<TOptions extends unknown & OAuthOptions, THandler extends unknown & OAuthHandler_1<TOptions>>(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action_1<TOptions>): AuthenticationBuilder;
+    static AddOAuth<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }, THandler extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1: never }>(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action_1<TOptions>): AuthenticationBuilder;
     static AddOAuth(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action_1<OAuthOptions>): AuthenticationBuilder;
-    static AddOAuth<TOptions extends unknown & OAuthOptions, THandler extends unknown & OAuthHandler_1<TOptions>>(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action_1<TOptions>): AuthenticationBuilder;
+    static AddOAuth<TOptions extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions: never }, THandler extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationHandler_1: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1: never } & { readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1: never }>(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action_1<TOptions>): AuthenticationBuilder;
     static AddOAuth(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action_1<OAuthOptions>): AuthenticationBuilder;
 }
 
@@ -527,11 +528,11 @@ export abstract class OAuthExtensions$instance {
 export type OAuthExtensions = OAuthExtensions$instance;
 
 export abstract class OutputCacheConventionBuilderExtensions$instance {
-    static CacheOutput<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, policy: IOutputCachePolicy): TBuilder;
-    static CacheOutput<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, policy: Action_1<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): TBuilder;
-    static CacheOutput<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, policy: Action_1<OutputCachePolicyBuilder>): TBuilder;
-    static CacheOutput<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, policyName: string): TBuilder;
-    static CacheOutput<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
+    static CacheOutput<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, policy: IOutputCachePolicy): TBuilder;
+    static CacheOutput<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, policy: Action_1<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): TBuilder;
+    static CacheOutput<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, policy: Action_1<OutputCachePolicyBuilder>): TBuilder;
+    static CacheOutput<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, policyName: string): TBuilder;
+    static CacheOutput<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder): TBuilder;
 }
 
 
@@ -665,7 +666,7 @@ export abstract class SessionServiceCollectionExtensions$instance {
 export type SessionServiceCollectionExtensions = SessionServiceCollectionExtensions$instance;
 
 export abstract class SignalRDependencyInjectionExtensions$instance {
-    static AddHubOptions<THub extends unknown & Hub>(signalrBuilder: ISignalRServerBuilder, configure: Action_1<HubOptions_1<THub>>): ISignalRServerBuilder;
+    static AddHubOptions<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }>(signalrBuilder: ISignalRServerBuilder, configure: Action_1<HubOptions_1<THub>>): ISignalRServerBuilder;
     static AddSignalR(services: IServiceCollection, configure: Action_1<HubOptions>): ISignalRServerBuilder;
     static AddSignalR(services: IServiceCollection): ISignalRServerBuilder;
 }

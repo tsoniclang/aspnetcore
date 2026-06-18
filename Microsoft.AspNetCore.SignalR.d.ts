@@ -52,7 +52,7 @@ export { HubMethodNameAttribute as HubMethodNameAttribute } from './Microsoft.As
 export { HubOptionsExtensions$instance as HubOptionsExtensions } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 export type IClientProxy = Internal.IClientProxy;
 export type IGroupManager = Internal.IGroupManager;
-export type IHubActivator<THub extends unknown & Internal.Hub> = Internal.IHubActivator_1<THub>;
+export type IHubActivator<THub extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }> = Internal.IHubActivator_1<THub>;
 export type IHubFilter = Internal.IHubFilter;
 export type IHubProtocolResolver = Internal.IHubProtocolResolver;
 export type ISignalRServerBuilder = Internal.ISignalRServerBuilder;
@@ -79,36 +79,36 @@ export type Hub<
   [T1] extends [(object | null)] ? Internal.Hub_1<T1> : never;
 
 export type HubOptions<
-  T1 extends unknown & Internal.Hub | __ = __,
+  T1 extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never } | __ = __,
 > =
   [T1] extends [__] ? Internal.HubOptions :
-  [T1] extends [unknown & Internal.Hub] ? Internal.HubOptions_1<T1> : never;
+  [T1] extends [unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }] ? Internal.HubOptions_1<T1> : never;
 
 export type HubOptionsSetup<
-  T1 extends unknown & Internal.Hub | __ = __,
+  T1 extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never } | __ = __,
 > =
   [T1] extends [__] ? Internal.HubOptionsSetup :
-  [T1] extends [unknown & Internal.Hub] ? Internal.HubOptionsSetup_1<T1> : never;
+  [T1] extends [unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }] ? Internal.HubOptionsSetup_1<T1> : never;
 
 export type IHubCallerClients<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.IHubCallerClients :
-  [T1] extends [unknown] ? Internal.IHubCallerClients_1<T1> : never;
+  Internal.IHubCallerClients_1<T1>;
 
 export type IHubClients<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.IHubClients :
-  [T1] extends [unknown] ? Internal.IHubClients_1<T1> : never;
+  Internal.IHubClients_1<T1>;
 
 export type IHubContext<
-  T1 extends unknown & Internal.Hub_1<T> | __ = __,
+  T1 extends unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never } & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub_1: never } | __ = __,
   T2 extends (object | null) | __ = __,
 > =
   [T1] extends [__] ? Internal.IHubContext :
-  [T2] extends [__] ? [T1] extends [unknown & Internal.Hub] ? Internal.IHubContext_1<T1> : never :
-  [T1] extends [unknown & Internal.Hub_1<T>] ? [T2] extends [(object | null)] ? Internal.IHubContext_2<T1, T2> : never : never;
+  [T2] extends [__] ? [T1] extends [unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never }] ? Internal.IHubContext_1<T1> : never :
+  [T1] extends [unknown & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub: never } & { readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Hub_1: never }] ? [T2] extends [(object | null)] ? Internal.IHubContext_2<T1, T2> : never : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_SignalR as ExtensionMethods } from './__internal/extensions/index.js';

@@ -1485,26 +1485,6 @@
             "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
             "isExtensionMethod": false,
             "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.RazorPage::DefineSection(System.String,System.Func_2<System.Object,System.Threading.Tasks.Task>):System.Void",
-            "targetName": "DefineSection",
-            "metadataToken": 0,
-            "canonicalSignature": "(System.String,System.Func_2<System.Object,System.Threading.Tasks.Task>):System.Void",
-            "normalizedSignature": "DefineSection|(System.String,System.Func_2<System.Object,System.Threading.Tasks.Task>):System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "BaseOverload",
-            "arity": 0,
-            "parameterCount": 2,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.RazorPage",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
-            "isExtensionMethod": false
           }
         ],
         "properties": [
@@ -1670,19 +1650,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.RazorPage::.ctor():void",
-            "metadataToken": 100663385,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.RazorPage",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.RazorPage`1",
@@ -1934,19 +1902,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.RazorPage`1::.ctor():void",
-            "metadataToken": 100663454,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.RazorPage`1",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator",
@@ -2247,26 +2203,6 @@
             "isOverride": false,
             "isSealed": false,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.RazorPageBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.RazorPageBase::DefineSection(System.String,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-            "targetName": "DefineSection",
-            "metadataToken": 100663425,
-            "canonicalSignature": "(System.String,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-            "normalizedSignature": "DefineSection|(System.String,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 2,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.RazorPageBase",
             "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor",
             "isExtensionMethod": false
@@ -3025,19 +2961,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.RazorPageBase::.ctor():void",
-            "metadataToken": 100663446,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.RazorPageBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.RazorView",
@@ -3450,27 +3374,7 @@
             "sourceInterface": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine::ViewLookupCache:Microsoft.Extensions.Caching.Memory.IMemoryCache",
-            "targetName": "ViewLookupCache",
-            "metadataToken": 385876019,
-            "canonicalSignature": ":Microsoft.Extensions.Caching.Memory.IMemoryCache",
-            "normalizedSignature": "ViewLookupCache|:Microsoft.Extensions.Caching.Memory.IMemoryCache|static=false|accessor=getset",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Razor"
-          }
-        ],
+        "properties": [],
         "fields": [
           {
             "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine::ViewExtensionSystem.String",

@@ -12,20 +12,24 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { ArraySegment_1, Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
-export enum EncryptionAlgorithm {
-    AES_128_CBC = 0,
-    AES_192_CBC = 1,
-    AES_256_CBC = 2,
-    AES_128_GCM = 3,
-    AES_192_GCM = 4,
-    AES_256_GCM = 5
-}
+export type EncryptionAlgorithm = number & { readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_EncryptionAlgorithm: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const EncryptionAlgorithm: {
+    readonly AES_128_CBC: EncryptionAlgorithm;
+    readonly AES_192_CBC: EncryptionAlgorithm;
+    readonly AES_256_CBC: EncryptionAlgorithm;
+    readonly AES_128_GCM: EncryptionAlgorithm;
+    readonly AES_192_GCM: EncryptionAlgorithm;
+    readonly AES_256_GCM: EncryptionAlgorithm;
+};
 
 
-export enum ValidationAlgorithm {
-    HMACSHA256 = 0,
-    HMACSHA512 = 1
-}
+export type ValidationAlgorithm = number & { readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ValidationAlgorithm: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ValidationAlgorithm: {
+    readonly HMACSHA256: ValidationAlgorithm;
+    readonly HMACSHA512: ValidationAlgorithm;
+};
 
 
 export interface IAuthenticatedEncryptor$instance {
@@ -46,7 +50,7 @@ export interface IAuthenticatedEncryptorFactory$instance {
 
 export type IAuthenticatedEncryptorFactory = IAuthenticatedEncryptorFactory$instance;
 
-export interface AuthenticatedEncryptorFactory$instance extends IAuthenticatedEncryptorFactory$instance {
+export interface AuthenticatedEncryptorFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_AuthenticatedEncryptorFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
@@ -67,7 +71,7 @@ export interface __AuthenticatedEncryptorFactory$views {
 export type AuthenticatedEncryptorFactory = AuthenticatedEncryptorFactory$instance & __AuthenticatedEncryptorFactory$views;
 
 
-export interface CngCbcAuthenticatedEncryptorFactory$instance extends IAuthenticatedEncryptorFactory$instance {
+export interface CngCbcAuthenticatedEncryptorFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_CngCbcAuthenticatedEncryptorFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
@@ -88,7 +92,7 @@ export interface __CngCbcAuthenticatedEncryptorFactory$views {
 export type CngCbcAuthenticatedEncryptorFactory = CngCbcAuthenticatedEncryptorFactory$instance & __CngCbcAuthenticatedEncryptorFactory$views;
 
 
-export interface CngGcmAuthenticatedEncryptorFactory$instance extends IAuthenticatedEncryptorFactory$instance {
+export interface CngGcmAuthenticatedEncryptorFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_CngGcmAuthenticatedEncryptorFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
@@ -109,7 +113,7 @@ export interface __CngGcmAuthenticatedEncryptorFactory$views {
 export type CngGcmAuthenticatedEncryptorFactory = CngGcmAuthenticatedEncryptorFactory$instance & __CngGcmAuthenticatedEncryptorFactory$views;
 
 
-export interface ManagedAuthenticatedEncryptorFactory$instance extends IAuthenticatedEncryptorFactory$instance {
+export interface ManagedAuthenticatedEncryptorFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ManagedAuthenticatedEncryptorFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;

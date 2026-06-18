@@ -25,8 +25,9 @@ import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface AfterActionEventData$instance extends EventData {
+export interface AfterActionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -34,7 +35,6 @@ export interface AfterActionEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly HttpContext: HttpContext;
     readonly RouteData: RouteData;
 }
@@ -48,8 +48,9 @@ export const AfterActionEventData: {
 
 export type AfterActionEventData = AfterActionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterActionFilterOnActionExecutedEventData$instance extends EventData {
+export interface AfterActionFilterOnActionExecutedEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionFilterOnActionExecutedEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -58,7 +59,6 @@ export interface AfterActionFilterOnActionExecutedEventData$instance extends Eve
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutedContext: ActionExecutedContext;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
 }
 
@@ -71,8 +71,9 @@ export const AfterActionFilterOnActionExecutedEventData: {
 
 export type AfterActionFilterOnActionExecutedEventData = AfterActionFilterOnActionExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterActionFilterOnActionExecutingEventData$instance extends EventData {
+export interface AfterActionFilterOnActionExecutingEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionFilterOnActionExecutingEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -81,7 +82,6 @@ export interface AfterActionFilterOnActionExecutingEventData$instance extends Ev
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutingContext: ActionExecutingContext;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
 }
 
@@ -94,8 +94,9 @@ export const AfterActionFilterOnActionExecutingEventData: {
 
 export type AfterActionFilterOnActionExecutingEventData = AfterActionFilterOnActionExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterActionFilterOnActionExecutionEventData$instance extends EventData {
+export interface AfterActionFilterOnActionExecutionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionFilterOnActionExecutionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -104,7 +105,6 @@ export interface AfterActionFilterOnActionExecutionEventData$instance extends Ev
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutedContext: ActionExecutedContext;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
 }
 
@@ -117,8 +117,9 @@ export const AfterActionFilterOnActionExecutionEventData: {
 
 export type AfterActionFilterOnActionExecutionEventData = AfterActionFilterOnActionExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterActionResultEventData$instance extends EventData {
+export interface AfterActionResultEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionResultEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -126,7 +127,6 @@ export interface AfterActionResultEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionContext: ActionContext;
-    readonly Count: int;
     readonly Result: IActionResult;
 }
 
@@ -139,8 +139,9 @@ export const AfterActionResultEventData: {
 
 export type AfterActionResultEventData = AfterActionResultEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterAuthorizationFilterOnAuthorizationEventData$instance extends EventData {
+export interface AfterAuthorizationFilterOnAuthorizationEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterAuthorizationFilterOnAuthorizationEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -149,7 +150,6 @@ export interface AfterAuthorizationFilterOnAuthorizationEventData$instance exten
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly AuthorizationContext: AuthorizationFilterContext;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
 }
 
@@ -162,8 +162,9 @@ export const AfterAuthorizationFilterOnAuthorizationEventData: {
 
 export type AfterAuthorizationFilterOnAuthorizationEventData = AfterAuthorizationFilterOnAuthorizationEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterControllerActionMethodEventData$instance extends EventData {
+export interface AfterControllerActionMethodEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterControllerActionMethodEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -173,7 +174,6 @@ export interface AfterControllerActionMethodEventData$instance extends EventData
     readonly ActionContext: ActionContext;
     readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     readonly Controller: unknown;
-    readonly Count: int;
     readonly Result: IActionResult;
 }
 
@@ -186,8 +186,9 @@ export const AfterControllerActionMethodEventData: {
 
 export type AfterControllerActionMethodEventData = AfterControllerActionMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterExceptionFilterOnExceptionEventData$instance extends EventData {
+export interface AfterExceptionFilterOnExceptionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterExceptionFilterOnExceptionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -195,7 +196,6 @@ export interface AfterExceptionFilterOnExceptionEventData$instance extends Event
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly ExceptionContext: ExceptionContext;
     readonly Filter: IFilterMetadata;
 }
@@ -209,8 +209,9 @@ export const AfterExceptionFilterOnExceptionEventData: {
 
 export type AfterExceptionFilterOnExceptionEventData = AfterExceptionFilterOnExceptionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterHandlerMethodEventData$instance extends EventData {
+export interface AfterHandlerMethodEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterHandlerMethodEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -219,7 +220,6 @@ export interface AfterHandlerMethodEventData$instance extends EventData {
 
     readonly ActionContext: ActionContext;
     readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, unknown | null>;
-    readonly Count: int;
     readonly HandlerMethodDescriptor: HandlerMethodDescriptor;
     readonly Instance: unknown;
     readonly Result: IActionResult | null;
@@ -234,8 +234,9 @@ export const AfterHandlerMethodEventData: {
 
 export type AfterHandlerMethodEventData = AfterHandlerMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterPageFilterOnPageHandlerExecutedEventData$instance extends EventData {
+export interface AfterPageFilterOnPageHandlerExecutedEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutedEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -243,7 +244,6 @@ export interface AfterPageFilterOnPageHandlerExecutedEventData$instance extends 
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: CompiledPageActionDescriptor;
-    readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerExecutedContext: PageHandlerExecutedContext;
 }
@@ -257,8 +257,9 @@ export const AfterPageFilterOnPageHandlerExecutedEventData: {
 
 export type AfterPageFilterOnPageHandlerExecutedEventData = AfterPageFilterOnPageHandlerExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterPageFilterOnPageHandlerExecutingEventData$instance extends EventData {
+export interface AfterPageFilterOnPageHandlerExecutingEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutingEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -266,7 +267,6 @@ export interface AfterPageFilterOnPageHandlerExecutingEventData$instance extends
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: CompiledPageActionDescriptor;
-    readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerExecutingContext: PageHandlerExecutingContext;
 }
@@ -280,8 +280,9 @@ export const AfterPageFilterOnPageHandlerExecutingEventData: {
 
 export type AfterPageFilterOnPageHandlerExecutingEventData = AfterPageFilterOnPageHandlerExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterPageFilterOnPageHandlerExecutionEventData$instance extends EventData {
+export interface AfterPageFilterOnPageHandlerExecutionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -289,7 +290,6 @@ export interface AfterPageFilterOnPageHandlerExecutionEventData$instance extends
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: CompiledPageActionDescriptor;
-    readonly Count: int;
     readonly Filter: IAsyncPageFilter;
     readonly HandlerExecutedContext: PageHandlerExecutedContext;
 }
@@ -303,8 +303,9 @@ export const AfterPageFilterOnPageHandlerExecutionEventData: {
 
 export type AfterPageFilterOnPageHandlerExecutionEventData = AfterPageFilterOnPageHandlerExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterPageFilterOnPageHandlerSelectedEventData$instance extends EventData {
+export interface AfterPageFilterOnPageHandlerSelectedEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerSelectedEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -312,7 +313,6 @@ export interface AfterPageFilterOnPageHandlerSelectedEventData$instance extends 
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: CompiledPageActionDescriptor;
-    readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerSelectedContext: PageHandlerSelectedContext;
 }
@@ -326,8 +326,9 @@ export const AfterPageFilterOnPageHandlerSelectedEventData: {
 
 export type AfterPageFilterOnPageHandlerSelectedEventData = AfterPageFilterOnPageHandlerSelectedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterPageFilterOnPageHandlerSelectionEventData$instance extends EventData {
+export interface AfterPageFilterOnPageHandlerSelectionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerSelectionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -335,7 +336,6 @@ export interface AfterPageFilterOnPageHandlerSelectionEventData$instance extends
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: CompiledPageActionDescriptor;
-    readonly Count: int;
     readonly Filter: IAsyncPageFilter;
     readonly HandlerSelectedContext: PageHandlerSelectedContext;
 }
@@ -349,8 +349,9 @@ export const AfterPageFilterOnPageHandlerSelectionEventData: {
 
 export type AfterPageFilterOnPageHandlerSelectionEventData = AfterPageFilterOnPageHandlerSelectionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterResourceFilterOnResourceExecutedEventData$instance extends EventData {
+export interface AfterResourceFilterOnResourceExecutedEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResourceFilterOnResourceExecutedEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -358,7 +359,6 @@ export interface AfterResourceFilterOnResourceExecutedEventData$instance extends
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResourceExecutedContext: ResourceExecutedContext;
 }
@@ -372,8 +372,9 @@ export const AfterResourceFilterOnResourceExecutedEventData: {
 
 export type AfterResourceFilterOnResourceExecutedEventData = AfterResourceFilterOnResourceExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterResourceFilterOnResourceExecutingEventData$instance extends EventData {
+export interface AfterResourceFilterOnResourceExecutingEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResourceFilterOnResourceExecutingEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -381,7 +382,6 @@ export interface AfterResourceFilterOnResourceExecutingEventData$instance extend
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResourceExecutingContext: ResourceExecutingContext;
 }
@@ -395,8 +395,9 @@ export const AfterResourceFilterOnResourceExecutingEventData: {
 
 export type AfterResourceFilterOnResourceExecutingEventData = AfterResourceFilterOnResourceExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterResourceFilterOnResourceExecutionEventData$instance extends EventData {
+export interface AfterResourceFilterOnResourceExecutionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResourceFilterOnResourceExecutionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -404,7 +405,6 @@ export interface AfterResourceFilterOnResourceExecutionEventData$instance extend
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResourceExecutedContext: ResourceExecutedContext;
 }
@@ -418,8 +418,9 @@ export const AfterResourceFilterOnResourceExecutionEventData: {
 
 export type AfterResourceFilterOnResourceExecutionEventData = AfterResourceFilterOnResourceExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterResultFilterOnResultExecutedEventData$instance extends EventData {
+export interface AfterResultFilterOnResultExecutedEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResultFilterOnResultExecutedEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -427,7 +428,6 @@ export interface AfterResultFilterOnResultExecutedEventData$instance extends Eve
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResultExecutedContext: ResultExecutedContext;
 }
@@ -441,8 +441,9 @@ export const AfterResultFilterOnResultExecutedEventData: {
 
 export type AfterResultFilterOnResultExecutedEventData = AfterResultFilterOnResultExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterResultFilterOnResultExecutingEventData$instance extends EventData {
+export interface AfterResultFilterOnResultExecutingEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResultFilterOnResultExecutingEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -450,7 +451,6 @@ export interface AfterResultFilterOnResultExecutingEventData$instance extends Ev
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResultExecutingContext: ResultExecutingContext;
 }
@@ -464,8 +464,9 @@ export const AfterResultFilterOnResultExecutingEventData: {
 
 export type AfterResultFilterOnResultExecutingEventData = AfterResultFilterOnResultExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterResultFilterOnResultExecutionEventData$instance extends EventData {
+export interface AfterResultFilterOnResultExecutionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResultFilterOnResultExecutionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -473,7 +474,6 @@ export interface AfterResultFilterOnResultExecutionEventData$instance extends Ev
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResultExecutedContext: ResultExecutedContext;
 }
@@ -487,8 +487,9 @@ export const AfterResultFilterOnResultExecutionEventData: {
 
 export type AfterResultFilterOnResultExecutionEventData = AfterResultFilterOnResultExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterViewComponentEventData$instance extends EventData {
+export interface AfterViewComponentEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewComponentEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -496,7 +497,6 @@ export interface AfterViewComponentEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly ViewComponent: unknown;
     readonly ViewComponentContext: ViewComponentContext;
     readonly ViewComponentResult: IViewComponentResult;
@@ -511,15 +511,15 @@ export const AfterViewComponentEventData: {
 
 export type AfterViewComponentEventData = AfterViewComponentEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterViewEventData$instance extends EventData {
+export interface AfterViewEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly Count: int;
     readonly View: IView;
     readonly ViewContext: ViewContext;
 }
@@ -533,8 +533,9 @@ export const AfterViewEventData: {
 
 export type AfterViewEventData = AfterViewEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface AfterViewPageEventData$instance extends EventData {
+export interface AfterViewPageEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewPageEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -542,7 +543,6 @@ export interface AfterViewPageEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly HttpContext: HttpContext;
     readonly Page: IRazorPage;
     readonly ViewContext: ViewContext;
@@ -557,8 +557,9 @@ export const AfterViewPageEventData: {
 
 export type AfterViewPageEventData = AfterViewPageEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeActionEventData$instance extends EventData {
+export interface BeforeActionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeActionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -566,7 +567,6 @@ export interface BeforeActionEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly HttpContext: HttpContext;
     readonly RouteData: RouteData;
 }
@@ -580,8 +580,9 @@ export const BeforeActionEventData: {
 
 export type BeforeActionEventData = BeforeActionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeActionFilterOnActionExecutedEventData$instance extends EventData {
+export interface BeforeActionFilterOnActionExecutedEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeActionFilterOnActionExecutedEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -590,7 +591,6 @@ export interface BeforeActionFilterOnActionExecutedEventData$instance extends Ev
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutedContext: ActionExecutedContext;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
 }
 
@@ -603,8 +603,9 @@ export const BeforeActionFilterOnActionExecutedEventData: {
 
 export type BeforeActionFilterOnActionExecutedEventData = BeforeActionFilterOnActionExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeActionFilterOnActionExecutingEventData$instance extends EventData {
+export interface BeforeActionFilterOnActionExecutingEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeActionFilterOnActionExecutingEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -613,7 +614,6 @@ export interface BeforeActionFilterOnActionExecutingEventData$instance extends E
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutingContext: ActionExecutingContext;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
 }
 
@@ -626,8 +626,9 @@ export const BeforeActionFilterOnActionExecutingEventData: {
 
 export type BeforeActionFilterOnActionExecutingEventData = BeforeActionFilterOnActionExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeActionFilterOnActionExecutionEventData$instance extends EventData {
+export interface BeforeActionFilterOnActionExecutionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeActionFilterOnActionExecutionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -636,7 +637,6 @@ export interface BeforeActionFilterOnActionExecutionEventData$instance extends E
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutingContext: ActionExecutingContext;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
 }
 
@@ -649,8 +649,9 @@ export const BeforeActionFilterOnActionExecutionEventData: {
 
 export type BeforeActionFilterOnActionExecutionEventData = BeforeActionFilterOnActionExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeActionResultEventData$instance extends EventData {
+export interface BeforeActionResultEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeActionResultEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -658,7 +659,6 @@ export interface BeforeActionResultEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionContext: ActionContext;
-    readonly Count: int;
     readonly Result: IActionResult;
 }
 
@@ -671,8 +671,9 @@ export const BeforeActionResultEventData: {
 
 export type BeforeActionResultEventData = BeforeActionResultEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeAuthorizationFilterOnAuthorizationEventData$instance extends EventData {
+export interface BeforeAuthorizationFilterOnAuthorizationEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeAuthorizationFilterOnAuthorizationEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -681,7 +682,6 @@ export interface BeforeAuthorizationFilterOnAuthorizationEventData$instance exte
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly AuthorizationContext: AuthorizationFilterContext;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
 }
 
@@ -694,8 +694,9 @@ export const BeforeAuthorizationFilterOnAuthorizationEventData: {
 
 export type BeforeAuthorizationFilterOnAuthorizationEventData = BeforeAuthorizationFilterOnAuthorizationEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeControllerActionMethodEventData$instance extends EventData {
+export interface BeforeControllerActionMethodEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeControllerActionMethodEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -705,7 +706,6 @@ export interface BeforeControllerActionMethodEventData$instance extends EventDat
     readonly ActionArguments: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     readonly ActionContext: ActionContext;
     readonly Controller: unknown;
-    readonly Count: int;
 }
 
 
@@ -717,8 +717,9 @@ export const BeforeControllerActionMethodEventData: {
 
 export type BeforeControllerActionMethodEventData = BeforeControllerActionMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeExceptionFilterOnException$instance extends EventData {
+export interface BeforeExceptionFilterOnException$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeExceptionFilterOnException: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -726,7 +727,6 @@ export interface BeforeExceptionFilterOnException$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly ExceptionContext: ExceptionContext;
     readonly Filter: IFilterMetadata;
 }
@@ -740,8 +740,9 @@ export const BeforeExceptionFilterOnException: {
 
 export type BeforeExceptionFilterOnException = BeforeExceptionFilterOnException$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeHandlerMethodEventData$instance extends EventData {
+export interface BeforeHandlerMethodEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeHandlerMethodEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -750,7 +751,6 @@ export interface BeforeHandlerMethodEventData$instance extends EventData {
 
     readonly ActionContext: ActionContext;
     readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, unknown | null>;
-    readonly Count: int;
     readonly HandlerMethodDescriptor: HandlerMethodDescriptor;
     readonly Instance: unknown;
 }
@@ -764,8 +764,9 @@ export const BeforeHandlerMethodEventData: {
 
 export type BeforeHandlerMethodEventData = BeforeHandlerMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforePageFilterOnPageHandlerExecutedEventData$instance extends EventData {
+export interface BeforePageFilterOnPageHandlerExecutedEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutedEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -773,7 +774,6 @@ export interface BeforePageFilterOnPageHandlerExecutedEventData$instance extends
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: CompiledPageActionDescriptor;
-    readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerExecutedContext: PageHandlerExecutedContext;
 }
@@ -787,8 +787,9 @@ export const BeforePageFilterOnPageHandlerExecutedEventData: {
 
 export type BeforePageFilterOnPageHandlerExecutedEventData = BeforePageFilterOnPageHandlerExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforePageFilterOnPageHandlerExecutingEventData$instance extends EventData {
+export interface BeforePageFilterOnPageHandlerExecutingEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutingEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -796,7 +797,6 @@ export interface BeforePageFilterOnPageHandlerExecutingEventData$instance extend
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: CompiledPageActionDescriptor;
-    readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerExecutingContext: PageHandlerExecutingContext;
 }
@@ -810,8 +810,9 @@ export const BeforePageFilterOnPageHandlerExecutingEventData: {
 
 export type BeforePageFilterOnPageHandlerExecutingEventData = BeforePageFilterOnPageHandlerExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforePageFilterOnPageHandlerExecutionEventData$instance extends EventData {
+export interface BeforePageFilterOnPageHandlerExecutionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -819,7 +820,6 @@ export interface BeforePageFilterOnPageHandlerExecutionEventData$instance extend
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: CompiledPageActionDescriptor;
-    readonly Count: int;
     readonly Filter: IAsyncPageFilter;
     readonly HandlerExecutionContext: PageHandlerExecutingContext;
 }
@@ -833,8 +833,9 @@ export const BeforePageFilterOnPageHandlerExecutionEventData: {
 
 export type BeforePageFilterOnPageHandlerExecutionEventData = BeforePageFilterOnPageHandlerExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforePageFilterOnPageHandlerSelectedEventData$instance extends EventData {
+export interface BeforePageFilterOnPageHandlerSelectedEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerSelectedEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -842,7 +843,6 @@ export interface BeforePageFilterOnPageHandlerSelectedEventData$instance extends
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: CompiledPageActionDescriptor;
-    readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerSelectedContext: PageHandlerSelectedContext;
 }
@@ -856,8 +856,9 @@ export const BeforePageFilterOnPageHandlerSelectedEventData: {
 
 export type BeforePageFilterOnPageHandlerSelectedEventData = BeforePageFilterOnPageHandlerSelectedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforePageFilterOnPageHandlerSelectionEventData$instance extends EventData {
+export interface BeforePageFilterOnPageHandlerSelectionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerSelectionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -865,7 +866,6 @@ export interface BeforePageFilterOnPageHandlerSelectionEventData$instance extend
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: CompiledPageActionDescriptor;
-    readonly Count: int;
     readonly Filter: IAsyncPageFilter;
     readonly HandlerSelectedContext: PageHandlerSelectedContext;
 }
@@ -879,8 +879,9 @@ export const BeforePageFilterOnPageHandlerSelectionEventData: {
 
 export type BeforePageFilterOnPageHandlerSelectionEventData = BeforePageFilterOnPageHandlerSelectionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeResourceFilterOnResourceExecutedEventData$instance extends EventData {
+export interface BeforeResourceFilterOnResourceExecutedEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResourceFilterOnResourceExecutedEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -888,7 +889,6 @@ export interface BeforeResourceFilterOnResourceExecutedEventData$instance extend
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResourceExecutedContext: ResourceExecutedContext;
 }
@@ -902,8 +902,9 @@ export const BeforeResourceFilterOnResourceExecutedEventData: {
 
 export type BeforeResourceFilterOnResourceExecutedEventData = BeforeResourceFilterOnResourceExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeResourceFilterOnResourceExecutingEventData$instance extends EventData {
+export interface BeforeResourceFilterOnResourceExecutingEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResourceFilterOnResourceExecutingEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -911,7 +912,6 @@ export interface BeforeResourceFilterOnResourceExecutingEventData$instance exten
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResourceExecutingContext: ResourceExecutingContext;
 }
@@ -925,8 +925,9 @@ export const BeforeResourceFilterOnResourceExecutingEventData: {
 
 export type BeforeResourceFilterOnResourceExecutingEventData = BeforeResourceFilterOnResourceExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeResourceFilterOnResourceExecutionEventData$instance extends EventData {
+export interface BeforeResourceFilterOnResourceExecutionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResourceFilterOnResourceExecutionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -934,7 +935,6 @@ export interface BeforeResourceFilterOnResourceExecutionEventData$instance exten
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResourceExecutingContext: ResourceExecutingContext;
 }
@@ -948,8 +948,9 @@ export const BeforeResourceFilterOnResourceExecutionEventData: {
 
 export type BeforeResourceFilterOnResourceExecutionEventData = BeforeResourceFilterOnResourceExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeResultFilterOnResultExecutedEventData$instance extends EventData {
+export interface BeforeResultFilterOnResultExecutedEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResultFilterOnResultExecutedEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -957,7 +958,6 @@ export interface BeforeResultFilterOnResultExecutedEventData$instance extends Ev
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResultExecutedContext: ResultExecutedContext;
 }
@@ -971,8 +971,9 @@ export const BeforeResultFilterOnResultExecutedEventData: {
 
 export type BeforeResultFilterOnResultExecutedEventData = BeforeResultFilterOnResultExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeResultFilterOnResultExecutingEventData$instance extends EventData {
+export interface BeforeResultFilterOnResultExecutingEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResultFilterOnResultExecutingEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -980,7 +981,6 @@ export interface BeforeResultFilterOnResultExecutingEventData$instance extends E
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResultExecutingContext: ResultExecutingContext;
 }
@@ -994,8 +994,9 @@ export const BeforeResultFilterOnResultExecutingEventData: {
 
 export type BeforeResultFilterOnResultExecutingEventData = BeforeResultFilterOnResultExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeResultFilterOnResultExecutionEventData$instance extends EventData {
+export interface BeforeResultFilterOnResultExecutionEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResultFilterOnResultExecutionEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -1003,7 +1004,6 @@ export interface BeforeResultFilterOnResultExecutionEventData$instance extends E
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly Filter: IFilterMetadata;
     readonly ResultExecutingContext: ResultExecutingContext;
 }
@@ -1017,8 +1017,9 @@ export const BeforeResultFilterOnResultExecutionEventData: {
 
 export type BeforeResultFilterOnResultExecutionEventData = BeforeResultFilterOnResultExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeViewComponentEventData$instance extends EventData {
+export interface BeforeViewComponentEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewComponentEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -1026,7 +1027,6 @@ export interface BeforeViewComponentEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly ViewComponent: unknown;
     readonly ViewComponentContext: ViewComponentContext;
 }
@@ -1040,15 +1040,15 @@ export const BeforeViewComponentEventData: {
 
 export type BeforeViewComponentEventData = BeforeViewComponentEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeViewEventData$instance extends EventData {
+export interface BeforeViewEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly Count: int;
     readonly View: IView;
     readonly ViewContext: ViewContext;
 }
@@ -1062,8 +1062,9 @@ export const BeforeViewEventData: {
 
 export type BeforeViewEventData = BeforeViewEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface BeforeViewPageEventData$instance extends EventData {
+export interface BeforeViewPageEventData$instance extends EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewPageEventData: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -1071,7 +1072,6 @@ export interface BeforeViewPageEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly HttpContext: HttpContext;
     readonly Page: IRazorPage;
     readonly ViewContext: ViewContext;
@@ -1098,8 +1098,7 @@ export interface EventData$instance {
 }
 
 
-export const EventData: (abstract new() => EventData) & {
-    readonly EventNamespace: string;
+export const EventData: {
 };
 
 
@@ -1107,12 +1106,13 @@ export type EventData = EventData$instance & { readonly [index: number]: KeyValu
 
 export interface EventData_Enumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Current: KeyValuePair_2<System_Internal.String, unknown>;
+    readonly Current: KeyValuePair_2<System_Internal.String, unknown>;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -1126,7 +1126,8 @@ export const EventData_Enumerator: {
 
 export type EventData_Enumerator = EventData_Enumerator$instance;
 
-export interface ViewComponentAfterViewExecuteEventData$instance extends EventData {
+export interface ViewComponentAfterViewExecuteEventData$instance extends EventData$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentAfterViewExecuteEventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -1135,7 +1136,6 @@ export interface ViewComponentAfterViewExecuteEventData$instance extends EventDa
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly View: IView;
     readonly ViewComponentContext: ViewComponentContext;
 }
@@ -1149,7 +1149,8 @@ export const ViewComponentAfterViewExecuteEventData: {
 
 export type ViewComponentAfterViewExecuteEventData = ViewComponentAfterViewExecuteEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface ViewComponentBeforeViewExecuteEventData$instance extends EventData {
+export interface ViewComponentBeforeViewExecuteEventData$instance extends EventData$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentBeforeViewExecuteEventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -1158,7 +1159,6 @@ export interface ViewComponentBeforeViewExecuteEventData$instance extends EventD
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionDescriptor: ActionDescriptor;
-    readonly Count: int;
     readonly View: IView;
     readonly ViewComponentContext: ViewComponentContext;
 }
@@ -1172,7 +1172,8 @@ export const ViewComponentBeforeViewExecuteEventData: {
 
 export type ViewComponentBeforeViewExecuteEventData = ViewComponentBeforeViewExecuteEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface ViewFoundEventData$instance extends EventData {
+export interface ViewFoundEventData$instance extends EventData$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_ViewFoundEventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -1181,7 +1182,6 @@ export interface ViewFoundEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionContext: ActionContext;
-    readonly Count: int;
     readonly IsMainPage: boolean;
     readonly Result: ActionResult;
     readonly View: IView;
@@ -1197,7 +1197,8 @@ export const ViewFoundEventData: {
 
 export type ViewFoundEventData = ViewFoundEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
-export interface ViewNotFoundEventData$instance extends EventData {
+export interface ViewNotFoundEventData$instance extends EventData$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_ViewNotFoundEventData: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -1206,7 +1207,6 @@ export interface ViewNotFoundEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionContext: ActionContext;
-    readonly Count: int;
     readonly IsMainPage: boolean;
     readonly Result: ActionResult;
     readonly SearchedLocations: IEnumerable_1<System_Internal.String>;

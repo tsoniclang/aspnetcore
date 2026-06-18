@@ -47,7 +47,8 @@ export interface INodeBuilderPolicy$instance {
 
 export type INodeBuilderPolicy = INodeBuilderPolicy$instance;
 
-export interface IParameterLiteralNodeMatchingPolicy$instance extends IParameterPolicy {
+export interface IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
     MatchesLiteral(parameterName: string, literal: string): boolean;
@@ -60,11 +61,11 @@ export type IParameterLiteralNodeMatchingPolicy = IParameterLiteralNodeMatchingP
 
 export interface CandidateState$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_CandidateState: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Endpoint: Endpoint;
     readonly Score: int;
-    get Values(): RouteValueDictionary | null;
-    set Values(value: RouteValueDictionary | null);
+    readonly Values: RouteValueDictionary | null;
 }
 
 
@@ -77,6 +78,7 @@ export type CandidateState = CandidateState$instance;
 
 export interface PolicyJumpTableEdge$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Destination: int;
     readonly State: unknown;
@@ -92,6 +94,7 @@ export type PolicyJumpTableEdge = PolicyJumpTableEdge$instance;
 
 export interface PolicyNodeEdge$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Endpoints: IReadOnlyList_1<Endpoint>;
     readonly State: unknown;
@@ -148,7 +151,7 @@ export interface EndpointMetadataComparer_1$instance<TMetadata extends (object |
 }
 
 
-export const EndpointMetadataComparer_1: (abstract new<TMetadata extends (object | null)>() => EndpointMetadataComparer_1<TMetadata>) & {
+export const EndpointMetadataComparer_1: {
     readonly Default: <TMetadata extends (object | null)>() => EndpointMetadataComparer_1<TMetadata>;
 };
 
@@ -162,13 +165,14 @@ export interface EndpointSelector$instance {
 }
 
 
-export const EndpointSelector: (abstract new() => EndpointSelector) & {
+export const EndpointSelector: {
 };
 
 
 export type EndpointSelector = EndpointSelector$instance;
 
-export interface HostMatcherPolicy$instance extends MatcherPolicy, IEndpointComparerPolicy$instance, IEndpointSelectorPolicy$instance, INodeBuilderPolicy$instance {
+export interface HostMatcherPolicy$instance extends Microsoft_AspNetCore_Routing_Internal.MatcherPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_MatcherPolicy: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_HostMatcherPolicy: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy: never;
@@ -176,7 +180,6 @@ export interface HostMatcherPolicy$instance extends MatcherPolicy, IEndpointComp
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy: never;
 
     readonly Comparer: IComparer_1<Endpoint>;
-    readonly Order: int;
     ApplyAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
     BuildJumpTable(exitDestination: int, edges: IReadOnlyList_1<PolicyJumpTableEdge>): PolicyJumpTable;
     GetEdges(endpoints: IReadOnlyList_1<Endpoint>): IReadOnlyList_1<PolicyNodeEdge>;
@@ -197,7 +200,8 @@ export interface __HostMatcherPolicy$views {
 export type HostMatcherPolicy = HostMatcherPolicy$instance & __HostMatcherPolicy$views;
 
 
-export interface HttpMethodMatcherPolicy$instance extends MatcherPolicy, IEndpointComparerPolicy$instance, IEndpointSelectorPolicy$instance, INodeBuilderPolicy$instance {
+export interface HttpMethodMatcherPolicy$instance extends Microsoft_AspNetCore_Routing_Internal.MatcherPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_MatcherPolicy: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_HttpMethodMatcherPolicy: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy: never;
@@ -205,7 +209,6 @@ export interface HttpMethodMatcherPolicy$instance extends MatcherPolicy, IEndpoi
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy: never;
 
     readonly Comparer: IComparer_1<Endpoint>;
-    readonly Order: int;
     ApplyAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
     BuildJumpTable(exitDestination: int, edges: IReadOnlyList_1<PolicyJumpTableEdge>): PolicyJumpTable;
     GetEdges(endpoints: IReadOnlyList_1<Endpoint>): IReadOnlyList_1<PolicyNodeEdge>;
@@ -233,7 +236,7 @@ export interface PolicyJumpTable$instance {
 }
 
 
-export const PolicyJumpTable: (abstract new() => PolicyJumpTable) & {
+export const PolicyJumpTable: {
 };
 
 

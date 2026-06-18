@@ -17,8 +17,9 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Attribute, Boolean as ClrBoolean, Byte, DateTimeOffset, Func_2, Func_3, Int32, Int64, IServiceProvider, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
-export interface IOutputCacheBufferStore$instance extends IOutputCacheStore {
+export interface IOutputCacheBufferStore$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_OutputCaching_IOutputCacheBufferStore: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_OutputCaching_IOutputCacheStore: never;
 
     EvictByTagAsync(tag: string, cancellationToken: CancellationToken): ValueTask;
     GetAsync(key: string, cancellationToken: CancellationToken): ValueTask_1<byte[]>;
@@ -79,8 +80,9 @@ export const CacheVaryByRules: {
 
 export type CacheVaryByRules = CacheVaryByRules$instance;
 
-export interface OutputCacheAttribute$instance extends Attribute {
+export interface OutputCacheAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_OutputCaching_OutputCacheAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     Duration: int;
     NoStore: boolean;
@@ -131,17 +133,17 @@ export type OutputCacheContext = OutputCacheContext$instance;
 export interface OutputCacheOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_OutputCaching_OutputCacheOptions: never;
 
-    ApplicationServices: IServiceProvider;
+    readonly ApplicationServices: IServiceProvider;
     DefaultExpirationTimeSpan: TimeSpan;
     MaximumBodySize: long;
     SizeLimit: long;
     UseCaseSensitivePaths: boolean;
-    AddBasePolicy(policy: IOutputCachePolicy): void;
     AddBasePolicy(build: Action_1<OutputCachePolicyBuilder>): void;
     AddBasePolicy(build: Action_1<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): void;
-    AddPolicy(name: string, policy: IOutputCachePolicy): void;
+    AddBasePolicy(policy: IOutputCachePolicy): void;
     AddPolicy(name: string, build: Action_1<OutputCachePolicyBuilder>): void;
     AddPolicy(name: string, build: Action_1<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): void;
+    AddPolicy(name: string, policy: IOutputCachePolicy): void;
 }
 
 
@@ -156,13 +158,13 @@ export interface OutputCachePolicyBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_OutputCaching_OutputCachePolicyBuilder: never;
 
     AddPolicy(policyType: Type): OutputCachePolicyBuilder;
-    AddPolicy<T extends unknown & IOutputCachePolicy>(): OutputCachePolicyBuilder;
+    AddPolicy<T extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_OutputCaching_IOutputCachePolicy: never }>(): OutputCachePolicyBuilder;
     Cache(): OutputCachePolicyBuilder;
     Expire(expiration: TimeSpan): OutputCachePolicyBuilder;
     NoCache(): OutputCachePolicyBuilder;
-    SetCacheKeyPrefix(keyPrefix: string): OutputCachePolicyBuilder;
     SetCacheKeyPrefix(keyPrefix: Func_2<HttpContext, System_Internal.String>): OutputCachePolicyBuilder;
     SetCacheKeyPrefix(keyPrefix: Func_3<HttpContext, CancellationToken, ValueTask_1<System_Internal.String>>): OutputCachePolicyBuilder;
+    SetCacheKeyPrefix(keyPrefix: string): OutputCachePolicyBuilder;
     SetLocking(enabled: boolean): OutputCachePolicyBuilder;
     SetVaryByHeader(headerName: string, ...headerNames: string[]): OutputCachePolicyBuilder;
     SetVaryByHeader(headerNames: string[]): OutputCachePolicyBuilder;
@@ -175,8 +177,8 @@ export interface OutputCachePolicyBuilder$instance {
     VaryByValue(key: string, value: string): OutputCachePolicyBuilder;
     VaryByValue(varyBy: Func_2<HttpContext, KeyValuePair_2<System_Internal.String, System_Internal.String>>): OutputCachePolicyBuilder;
     VaryByValue(varyBy: Func_3<HttpContext, CancellationToken, ValueTask_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>>): OutputCachePolicyBuilder;
-    With(predicate: Func_3<OutputCacheContext, CancellationToken, ValueTask_1<System_Internal.Boolean>>): OutputCachePolicyBuilder;
     With(predicate: Func_2<OutputCacheContext, System_Internal.Boolean>): OutputCachePolicyBuilder;
+    With(predicate: Func_3<OutputCacheContext, CancellationToken, ValueTask_1<System_Internal.Boolean>>): OutputCachePolicyBuilder;
 }
 
 

@@ -987,19 +987,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Patterns.RoutePatternTransformer::.ctor():void",
-            "metadataToken": 100664286,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Routing.Patterns.RoutePatternTransformer",
-            "ownerIdentity": "Microsoft.AspNetCore.Routing"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory",

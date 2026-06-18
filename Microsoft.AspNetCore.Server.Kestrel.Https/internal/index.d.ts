@@ -17,12 +17,14 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_2, Boolean as ClrBoolean, Byte, Enum, Func_2, Func_3, Func_4, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum ClientCertificateMode {
-    NoCertificate = 0,
-    AllowCertificate = 1,
-    RequireCertificate = 2,
-    DelayCertificate = 3
-}
+export type ClientCertificateMode = number & { readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Https_ClientCertificateMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ClientCertificateMode: {
+    readonly NoCertificate: ClientCertificateMode;
+    readonly AllowCertificate: ClientCertificateMode;
+    readonly RequireCertificate: ClientCertificateMode;
+    readonly DelayCertificate: ClientCertificateMode;
+};
 
 
 export interface HttpsConnectionAdapterOptions$instance {
@@ -59,12 +61,11 @@ export interface TlsHandshakeCallbackContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Https_TlsHandshakeCallbackContext: never;
 
     AllowDelayedClientCertificateNegotation: boolean;
-    CancellationToken: CancellationToken;
-    ClientHelloInfo: SslClientHelloInfo;
-    Connection: ConnectionContext;
-    SslStream: SslStream;
-    get State(): unknown | null;
-    set State(value: unknown | null);
+    readonly CancellationToken: CancellationToken;
+    readonly ClientHelloInfo: SslClientHelloInfo;
+    readonly Connection: ConnectionContext;
+    readonly SslStream: SslStream;
+    readonly State: unknown | null;
 }
 
 

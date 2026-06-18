@@ -70,79 +70,79 @@ export type Accepted<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Accepted :
-  [T1] extends [unknown] ? Internal.Accepted_1<T1> : never;
+  Internal.Accepted_1<T1>;
 
 export type AcceptedAtRoute<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.AcceptedAtRoute :
-  [T1] extends [unknown] ? Internal.AcceptedAtRoute_1<T1> : never;
+  Internal.AcceptedAtRoute_1<T1>;
 
 export type BadRequest<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.BadRequest :
-  [T1] extends [unknown] ? Internal.BadRequest_1<T1> : never;
+  Internal.BadRequest_1<T1>;
 
 export type Conflict<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Conflict :
-  [T1] extends [unknown] ? Internal.Conflict_1<T1> : never;
+  Internal.Conflict_1<T1>;
 
 export type Created<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Created :
-  [T1] extends [unknown] ? Internal.Created_1<T1> : never;
+  Internal.Created_1<T1>;
 
 export type CreatedAtRoute<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.CreatedAtRoute :
-  [T1] extends [unknown] ? Internal.CreatedAtRoute_1<T1> : never;
+  Internal.CreatedAtRoute_1<T1>;
 
 export type InternalServerError<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.InternalServerError :
-  [T1] extends [unknown] ? Internal.InternalServerError_1<T1> : never;
+  Internal.InternalServerError_1<T1>;
 
 export type NotFound<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.NotFound :
-  [T1] extends [unknown] ? Internal.NotFound_1<T1> : never;
+  Internal.NotFound_1<T1>;
 
 export type Ok<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Ok :
-  [T1] extends [unknown] ? Internal.Ok_1<T1> : never;
+  Internal.Ok_1<T1>;
 
 export type RazorComponentResult<
-  T1 extends unknown & IComponent | __ = __,
+  T1 extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never } | __ = __,
 > =
   [T1] extends [__] ? Internal.RazorComponentResult :
-  [T1] extends [unknown & IComponent] ? Internal.RazorComponentResult_1<T1> : never;
+  [T1] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never }] ? Internal.RazorComponentResult_1<T1> : never;
 
 export type Results<
-  T1 extends unknown & IResult | __ = __,
-  T2 extends unknown & IResult | __ = __,
-  T3 extends unknown & IResult | __ = __,
-  T4 extends unknown & IResult | __ = __,
-  T5 extends unknown & IResult | __ = __,
-  T6 extends unknown & IResult | __ = __,
+  T1 extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never } | __ = __,
+  T2 extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never } | __ = __,
+  T3 extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never } | __ = __,
+  T4 extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never } | __ = __,
+  T5 extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never } | __ = __,
+  T6 extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never } | __ = __,
 > =
-  [T3] extends [__] ? [T1] extends [unknown & IResult] ? [T2] extends [unknown & IResult] ? Internal.Results_2<T1, T2> : never : never :
-  [T4] extends [__] ? [T1] extends [unknown & IResult] ? [T2] extends [unknown & IResult] ? [T3] extends [unknown & IResult] ? Internal.Results_3<T1, T2, T3> : never : never : never :
-  [T5] extends [__] ? [T1] extends [unknown & IResult] ? [T2] extends [unknown & IResult] ? [T3] extends [unknown & IResult] ? [T4] extends [unknown & IResult] ? Internal.Results_4<T1, T2, T3, T4> : never : never : never : never :
-  [T6] extends [__] ? [T1] extends [unknown & IResult] ? [T2] extends [unknown & IResult] ? [T3] extends [unknown & IResult] ? [T4] extends [unknown & IResult] ? [T5] extends [unknown & IResult] ? Internal.Results_5<T1, T2, T3, T4, T5> : never : never : never : never : never :
-  [T1] extends [unknown & IResult] ? [T2] extends [unknown & IResult] ? [T3] extends [unknown & IResult] ? [T4] extends [unknown & IResult] ? [T5] extends [unknown & IResult] ? [T6] extends [unknown & IResult] ? Internal.Results_6<T1, T2, T3, T4, T5, T6> : never : never : never : never : never : never;
+  [T3] extends [__] ? [T1] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T2] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? Internal.Results_2<T1, T2> : never : never :
+  [T4] extends [__] ? [T1] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T2] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T3] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? Internal.Results_3<T1, T2, T3> : never : never : never :
+  [T5] extends [__] ? [T1] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T2] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T3] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T4] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? Internal.Results_4<T1, T2, T3, T4> : never : never : never : never :
+  [T6] extends [__] ? [T1] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T2] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T3] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T4] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T5] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? Internal.Results_5<T1, T2, T3, T4, T5> : never : never : never : never : never :
+  [T1] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T2] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T3] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T4] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T5] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? [T6] extends [unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never }] ? Internal.Results_6<T1, T2, T3, T4, T5, T6> : never : never : never : never : never : never;
 
 export type UnprocessableEntity<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.UnprocessableEntity :
-  [T1] extends [unknown] ? Internal.UnprocessableEntity_1<T1> : never;
+  Internal.UnprocessableEntity_1<T1>;
 

@@ -1224,19 +1224,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter`1::.ctor():void",
-            "metadataToken": 100663438,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Threading.RateLimiting.PartitionedRateLimiter`1",
-            "ownerIdentity": "System.Threading.RateLimiting"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter",
@@ -1488,19 +1476,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::.ctor():void",
-            "metadataToken": 100663450,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Threading.RateLimiting.RateLimiter",
-            "ownerIdentity": "System.Threading.RateLimiting"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiterStatistics",
@@ -1789,19 +1765,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitLease::.ctor():void",
-            "metadataToken": 100663469,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Threading.RateLimiting.RateLimitLease",
-            "ownerIdentity": "System.Threading.RateLimiting"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter",
@@ -1892,19 +1856,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter::.ctor():void",
-            "metadataToken": 100663482,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Threading.RateLimiting.ReplenishingRateLimiter",
-            "ownerIdentity": "System.Threading.RateLimiting"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter",

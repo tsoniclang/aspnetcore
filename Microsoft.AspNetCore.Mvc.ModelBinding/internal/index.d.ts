@@ -12,7 +12,7 @@ import type { ParameterDescriptor } from "../../Microsoft.AspNetCore.Mvc.Abstrac
 import * as Microsoft_AspNetCore_Mvc_Filters_Internal from "../../Microsoft.AspNetCore.Mvc.Filters/internal/index.js";
 import type { ActionExecutedContext, ActionExecutingContext, IActionFilter, IFilterMetadata, IOrderedFilter } from "../../Microsoft.AspNetCore.Mvc.Filters/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_Internal from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js";
-import type { DefaultMetadataDetails, DefaultModelBindingMessageProvider, DefaultModelMetadataProvider, ICompositeMetadataDetailsProvider, IMetadataDetailsProvider, IValidationMetadataProvider, ModelBindingMessageProvider, ModelMetadataIdentity, ModelMetadataKind, ValidationMetadataProviderContext } from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js";
+import type { DefaultMetadataDetails, DefaultModelMetadataProvider, IMetadataDetailsProvider, IValidationMetadataProvider, ModelBindingMessageProvider, ModelMetadataIdentity, ModelMetadataKind, ValidationMetadataProviderContext } from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js";
 import type { IModelValidatorProvider, IObjectModelValidator, IPropertyValidationFilter, ValidationStateDictionary, ValidationVisitor, ValidatorCache } from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js";
 import type { ActionContext, ControllerContext, MvcOptions } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
@@ -31,34 +31,41 @@ import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/
 import type { Task, Task_1, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_2, Attribute, Boolean as ClrBoolean, Enum, Exception, Func_1, Func_2, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, IServiceProvider, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
-import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
-export enum BindingBehavior {
-    Optional = 0,
-    Never = 1,
-    Required = 2
-}
+export type BindingBehavior = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingBehavior: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const BindingBehavior: {
+    readonly Optional: BindingBehavior;
+    readonly Never: BindingBehavior;
+    readonly Required: BindingBehavior;
+};
 
 
-export enum EmptyBodyBehavior {
-    Default = 0,
-    Allow = 1,
-    Disallow = 2
-}
+export type EmptyBodyBehavior = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_EmptyBodyBehavior: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const EmptyBodyBehavior: {
+    readonly Default: EmptyBodyBehavior;
+    readonly Allow: EmptyBodyBehavior;
+    readonly Disallow: EmptyBodyBehavior;
+};
 
 
-export enum ModelValidationState {
-    Unvalidated = 0,
-    Invalid = 1,
-    Valid = 2,
-    Skipped = 3
-}
+export type ModelValidationState = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelValidationState: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ModelValidationState: {
+    readonly Unvalidated: ModelValidationState;
+    readonly Invalid: ModelValidationState;
+    readonly Valid: ModelValidationState;
+    readonly Skipped: ModelValidationState;
+};
 
 
-export interface IBinderTypeProviderMetadata$instance extends IBindingSourceMetadata {
+export interface IBinderTypeProviderMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBinderTypeProviderMetadata: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceMetadata: never;
 
     readonly BinderType: Type | null;
     readonly BindingSource: BindingSource;
@@ -78,8 +85,9 @@ export interface IBindingSourceMetadata$instance {
 
 export type IBindingSourceMetadata = IBindingSourceMetadata$instance;
 
-export interface IBindingSourceValueProvider$instance extends IValueProvider {
+export interface IBindingSourceValueProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
 
     ContainsPrefix(prefix: string): boolean;
     Filter(bindingSource: BindingSource): IValueProvider | null;
@@ -91,8 +99,9 @@ export interface IBindingSourceValueProvider$instance extends IValueProvider$ins
 
 export type IBindingSourceValueProvider = IBindingSourceValueProvider$instance;
 
-export interface ICollectionModelBinder$instance extends IModelBinder {
+export interface ICollectionModelBinder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
 
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     CanCreateInstance(targetType: Type): boolean;
@@ -103,8 +112,9 @@ export interface ICollectionModelBinder$instance extends IModelBinder$instance {
 
 export type ICollectionModelBinder = ICollectionModelBinder$instance;
 
-export interface IEnumerableValueProvider$instance extends IValueProvider {
+export interface IEnumerableValueProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
 
     ContainsPrefix(prefix: string): boolean;
     GetKeysFromPrefix(prefix: string): IDictionary_2<System_Internal.String, System_Internal.String>;
@@ -116,8 +126,9 @@ export interface IEnumerableValueProvider$instance extends IValueProvider$instan
 
 export type IEnumerableValueProvider = IEnumerableValueProvider$instance;
 
-export interface IKeyRewriterValueProvider$instance extends IValueProvider {
+export interface IKeyRewriterValueProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
 
     ContainsPrefix(prefix: string): boolean;
     Filter(): IValueProvider | null;
@@ -214,6 +225,7 @@ export type IValueProviderFactory = IValueProviderFactory$instance;
 
 export interface EnumGroupAndName$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_EnumGroupAndName: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Group: string;
     readonly Name: string;
@@ -230,6 +242,7 @@ export type EnumGroupAndName = EnumGroupAndName$instance;
 
 export interface ModelBindingResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelBindingResult: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -253,6 +266,7 @@ export type ModelBindingResult = ModelBindingResult$instance;
 
 export interface ValueProviderResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ValueProviderResult: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
@@ -279,8 +293,9 @@ export const ValueProviderResult: {
 
 export type ValueProviderResult = ValueProviderResult$instance;
 
-export interface BindingBehaviorAttribute$instance extends Attribute {
+export interface BindingBehaviorAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingBehaviorAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly Behavior: BindingBehavior;
 }
@@ -333,8 +348,8 @@ export interface BindingSource$instance {
     readonly IsFromRequest: boolean;
     readonly IsGreedy: boolean;
     CanAcceptDataFrom(bindingSource: BindingSource): boolean;
-    Equals(other: BindingSource | null): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: BindingSource | null): boolean;
     GetHashCode(): int;
 }
 
@@ -356,7 +371,7 @@ export const BindingSource: {
 
 export type BindingSource = BindingSource$instance;
 
-export interface BindingSourceValueProvider$instance extends IBindingSourceValueProvider$instance {
+export interface BindingSourceValueProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingSourceValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
@@ -380,8 +395,10 @@ export interface __BindingSourceValueProvider$views {
 export type BindingSourceValueProvider = BindingSourceValueProvider$instance & __BindingSourceValueProvider$views;
 
 
-export interface BindNeverAttribute$instance extends BindingBehaviorAttribute {
+export interface BindNeverAttribute$instance extends BindingBehaviorAttribute$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindNeverAttribute: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingBehaviorAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
 }
 
@@ -393,8 +410,10 @@ export const BindNeverAttribute: {
 
 export type BindNeverAttribute = BindNeverAttribute$instance;
 
-export interface BindRequiredAttribute$instance extends BindingBehaviorAttribute {
+export interface BindRequiredAttribute$instance extends BindingBehaviorAttribute$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindRequiredAttribute: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingBehaviorAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
 }
 
@@ -406,13 +425,14 @@ export const BindRequiredAttribute: {
 
 export type BindRequiredAttribute = BindRequiredAttribute$instance;
 
-export interface CompositeBindingSource$instance extends BindingSource {
+export interface CompositeBindingSource$instance extends BindingSource$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingSource: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_CompositeBindingSource: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly BindingSources: IEnumerable_1<BindingSource>;
-    CanAcceptDataFrom(bindingSource: BindingSource): boolean;
+    CanAcceptDataFrom: BindingSource$instance["CanAcceptDataFrom"] & ((bindingSource: BindingSource) => boolean);
 }
 
 
@@ -423,8 +443,9 @@ export const CompositeBindingSource: {
 
 export type CompositeBindingSource = CompositeBindingSource$instance;
 
-export interface CompositeValueProvider$instance extends Collection_1<IValueProvider>, IEnumerableValueProvider$instance, System_Collections_Generic_Internal.ICollection_1<IValueProvider>, System_Collections_Generic_Internal.IEnumerable_1<IValueProvider>, System_Collections_Generic_Internal.IList_1<IValueProvider>, System_Collections_Generic_Internal.IReadOnlyCollection_1<IValueProvider>, System_Collections_Generic_Internal.IReadOnlyList_1<IValueProvider> {
+export interface CompositeValueProvider$instance extends System_Collections_ObjectModel_Internal.Collection_1<IValueProvider> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_CompositeValueProvider: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_Collection_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider: never;
@@ -440,12 +461,12 @@ export interface CompositeValueProvider$instance extends Collection_1<IValueProv
     readonly __tsonic_iface_System_Collections_IList: never;
 
     ContainsPrefix(prefix: string): boolean;
-    Filter(bindingSource: BindingSource): IValueProvider | null;
     Filter(): IValueProvider | null;
+    Filter(bindingSource: BindingSource): IValueProvider | null;
     GetKeysFromPrefix(prefix: string): IDictionary_2<System_Internal.String, System_Internal.String>;
     GetValue(key: string): ValueProviderResult;
-    InsertItem(index: int, item: IValueProvider): void;
-    SetItem(index: int, item: IValueProvider): void;
+    InsertItem: System_Collections_ObjectModel_Internal.Collection_1<IValueProvider>["InsertItem"] & ((index: int, item: IValueProvider) => void);
+    SetItem: System_Collections_ObjectModel_Internal.Collection_1<IValueProvider>["SetItem"] & ((index: int, item: IValueProvider) => void);
 }
 
 
@@ -467,30 +488,13 @@ export interface __CompositeValueProvider$views {
 export type CompositeValueProvider = CompositeValueProvider$instance & __CompositeValueProvider$views;
 
 
-export interface DefaultModelBindingContext$instance extends ModelBindingContext {
+export interface DefaultModelBindingContext$instance extends ModelBindingContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_DefaultModelBindingContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelBindingContext: never;
 
-    ActionContext: ActionContext;
-    get BinderModelName(): string | null;
-    set BinderModelName(value: string | null);
-    get BindingSource(): BindingSource | null;
-    set BindingSource(value: BindingSource | null);
-    FieldName: string;
-    IsTopLevelObject: boolean;
-    get Model(): unknown | null;
-    set Model(value: unknown | null);
-    ModelMetadata: ModelMetadata;
-    ModelName: string;
-    ModelState: ModelStateDictionary;
     OriginalValueProvider: IValueProvider;
-    get PropertyFilter(): Func_2<ModelMetadata, System_Internal.Boolean> | null;
-    set PropertyFilter(value: Func_2<ModelMetadata, System_Internal.Boolean> | null);
-    Result: ModelBindingResult;
-    ValidationState: ValidationStateDictionary;
-    ValueProvider: IValueProvider;
-    EnterNestedScope(modelMetadata: ModelMetadata, fieldName: string, modelName: string, model: unknown | null): ModelBindingContext_NestedScope;
-    EnterNestedScope(): ModelBindingContext_NestedScope;
-    ExitNestedScope(): void;
+    EnterNestedScope: ModelBindingContext$instance["EnterNestedScope"] & (() => ModelBindingContext_NestedScope) & ((modelMetadata: ModelMetadata, fieldName: string, modelName: string, model: unknown | null) => ModelBindingContext_NestedScope);
+    ExitNestedScope: ModelBindingContext$instance["ExitNestedScope"] & (() => void);
 }
 
 
@@ -502,7 +506,7 @@ export const DefaultModelBindingContext: {
 
 export type DefaultModelBindingContext = DefaultModelBindingContext$instance;
 
-export interface DefaultPropertyFilterProvider_1$instance<TModel extends (object | null)> extends IPropertyFilterProvider$instance {
+export interface DefaultPropertyFilterProvider_1$instance<TModel extends (object | null)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_DefaultPropertyFilterProvider_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IPropertyFilterProvider: never;
@@ -525,8 +529,10 @@ export interface __DefaultPropertyFilterProvider_1$views<TModel extends (object 
 export type DefaultPropertyFilterProvider_1<TModel extends (object | null)> = DefaultPropertyFilterProvider_1$instance<TModel> & __DefaultPropertyFilterProvider_1$views<TModel>;
 
 
-export interface EmptyModelMetadataProvider$instance extends DefaultModelMetadataProvider, IModelMetadataProvider$instance {
+export interface EmptyModelMetadataProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_Internal.DefaultModelMetadataProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_EmptyModelMetadataProvider: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_DefaultModelMetadataProvider: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelMetadataProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider: never;
 
@@ -545,7 +551,7 @@ export interface __EmptyModelMetadataProvider$views {
 export type EmptyModelMetadataProvider = EmptyModelMetadataProvider$instance & __EmptyModelMetadataProvider$views;
 
 
-export interface FormFileValueProvider$instance extends IValueProvider$instance {
+export interface FormFileValueProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_FormFileValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
@@ -567,7 +573,7 @@ export interface __FormFileValueProvider$views {
 export type FormFileValueProvider = FormFileValueProvider$instance & __FormFileValueProvider$views;
 
 
-export interface FormFileValueProviderFactory$instance extends IValueProviderFactory$instance {
+export interface FormFileValueProviderFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_FormFileValueProviderFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProviderFactory: never;
@@ -588,7 +594,8 @@ export interface __FormFileValueProviderFactory$views {
 export type FormFileValueProviderFactory = FormFileValueProviderFactory$instance & __FormFileValueProviderFactory$views;
 
 
-export interface FormValueProvider$instance extends BindingSourceValueProvider$instance, IBindingSourceValueProvider$instance, IEnumerableValueProvider$instance {
+export interface FormValueProvider$instance extends BindingSourceValueProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingSourceValueProvider: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_FormValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
@@ -596,9 +603,9 @@ export interface FormValueProvider$instance extends BindingSourceValueProvider$i
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
 
     readonly Culture: CultureInfo | null;
-    ContainsPrefix(prefix: string): boolean;
+    ContainsPrefix: BindingSourceValueProvider$instance["ContainsPrefix"] & ((prefix: string) => boolean);
     GetKeysFromPrefix(prefix: string): IDictionary_2<System_Internal.String, System_Internal.String>;
-    GetValue(key: string): ValueProviderResult;
+    GetValue: BindingSourceValueProvider$instance["GetValue"] & ((key: string) => ValueProviderResult);
 }
 
 
@@ -616,7 +623,7 @@ export interface __FormValueProvider$views {
 export type FormValueProvider = FormValueProvider$instance & __FormValueProvider$views;
 
 
-export interface FormValueProviderFactory$instance extends IValueProviderFactory$instance {
+export interface FormValueProviderFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_FormValueProviderFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProviderFactory: never;
@@ -637,15 +644,17 @@ export interface __FormValueProviderFactory$views {
 export type FormValueProviderFactory = FormValueProviderFactory$instance & __FormValueProviderFactory$views;
 
 
-export interface JQueryFormValueProvider$instance extends JQueryValueProvider$instance, IBindingSourceValueProvider$instance, IEnumerableValueProvider$instance {
+export interface JQueryFormValueProvider$instance extends JQueryValueProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingSourceValueProvider: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_JQueryFormValueProvider: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_JQueryValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
 
-    GetValue(key: string): ValueProviderResult;
+    GetValue: JQueryValueProvider$instance["GetValue"] & ((key: string) => ValueProviderResult);
 }
 
 
@@ -664,7 +673,7 @@ export interface __JQueryFormValueProvider$views {
 export type JQueryFormValueProvider = JQueryFormValueProvider$instance & __JQueryFormValueProvider$views;
 
 
-export interface JQueryFormValueProviderFactory$instance extends IValueProviderFactory$instance {
+export interface JQueryFormValueProviderFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_JQueryFormValueProviderFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProviderFactory: never;
@@ -685,8 +694,10 @@ export interface __JQueryFormValueProviderFactory$views {
 export type JQueryFormValueProviderFactory = JQueryFormValueProviderFactory$instance & __JQueryFormValueProviderFactory$views;
 
 
-export interface JQueryQueryStringValueProvider$instance extends JQueryValueProvider$instance, IBindingSourceValueProvider$instance, IEnumerableValueProvider$instance {
+export interface JQueryQueryStringValueProvider$instance extends JQueryValueProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingSourceValueProvider: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_JQueryQueryStringValueProvider: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_JQueryValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider: never;
@@ -711,7 +722,7 @@ export interface __JQueryQueryStringValueProvider$views {
 export type JQueryQueryStringValueProvider = JQueryQueryStringValueProvider$instance & __JQueryQueryStringValueProvider$views;
 
 
-export interface JQueryQueryStringValueProviderFactory$instance extends IValueProviderFactory$instance {
+export interface JQueryQueryStringValueProviderFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_JQueryQueryStringValueProviderFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProviderFactory: never;
@@ -732,7 +743,8 @@ export interface __JQueryQueryStringValueProviderFactory$views {
 export type JQueryQueryStringValueProviderFactory = JQueryQueryStringValueProviderFactory$instance & __JQueryQueryStringValueProviderFactory$views;
 
 
-export interface JQueryValueProvider$instance extends BindingSourceValueProvider$instance, IBindingSourceValueProvider$instance, IEnumerableValueProvider$instance {
+export interface JQueryValueProvider$instance extends BindingSourceValueProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingSourceValueProvider: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_JQueryValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
@@ -741,15 +753,14 @@ export interface JQueryValueProvider$instance extends BindingSourceValueProvider
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
 
     readonly Culture: CultureInfo | null;
-    ContainsPrefix(prefix: string): boolean;
-    Filter(): IValueProvider | null;
-    Filter(bindingSource: BindingSource): IValueProvider | null;
+    ContainsPrefix: BindingSourceValueProvider$instance["ContainsPrefix"] & ((prefix: string) => boolean);
+    Filter: BindingSourceValueProvider$instance["Filter"] & (() => IValueProvider | null) & ((bindingSource: BindingSource) => IValueProvider | null);
     GetKeysFromPrefix(prefix: string): IDictionary_2<System_Internal.String, System_Internal.String>;
-    GetValue(key: string): ValueProviderResult;
+    GetValue: BindingSourceValueProvider$instance["GetValue"] & ((key: string) => ValueProviderResult);
 }
 
 
-export const JQueryValueProvider: (abstract new(bindingSource: BindingSource, values: IDictionary_2<System_Internal.String, StringValues>, culture: CultureInfo | null) => JQueryValueProvider) & {
+export const JQueryValueProvider: {
 };
 
 
@@ -784,7 +795,7 @@ export const ModelAttributes: {
 
 export type ModelAttributes = ModelAttributes$instance;
 
-export interface ModelBinderFactory$instance extends IModelBinderFactory$instance {
+export interface ModelBinderFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelBinderFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory: never;
@@ -835,7 +846,7 @@ export interface ModelBinderProviderContext$instance {
 }
 
 
-export const ModelBinderProviderContext: (abstract new() => ModelBinderProviderContext) & {
+export const ModelBinderProviderContext: {
 };
 
 
@@ -858,19 +869,19 @@ export interface ModelBindingContext$instance {
     ModelName: string;
     ModelState: ModelStateDictionary;
     readonly ModelType: Type;
-    OriginalModelName: string;
+    readonly OriginalModelName: string;
     get PropertyFilter(): Func_2<ModelMetadata, System_Internal.Boolean> | null;
     set PropertyFilter(value: Func_2<ModelMetadata, System_Internal.Boolean> | null);
     Result: ModelBindingResult;
     ValidationState: ValidationStateDictionary;
     ValueProvider: IValueProvider;
-    EnterNestedScope(modelMetadata: ModelMetadata, fieldName: string, modelName: string, model: unknown | null): ModelBindingContext_NestedScope;
     EnterNestedScope(): ModelBindingContext_NestedScope;
+    EnterNestedScope(modelMetadata: ModelMetadata, fieldName: string, modelName: string, model: unknown | null): ModelBindingContext_NestedScope;
     ExitNestedScope(): void;
 }
 
 
-export const ModelBindingContext: (abstract new() => ModelBindingContext) & {
+export const ModelBindingContext: {
 };
 
 
@@ -878,6 +889,7 @@ export type ModelBindingContext = ModelBindingContext$instance;
 
 export interface ModelBindingContext_NestedScope$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelBindingContext_NestedScope: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -909,8 +921,9 @@ export const ModelError: {
 
 export type ModelError = ModelError$instance;
 
-export interface ModelErrorCollection$instance extends Collection_1<ModelError> {
+export interface ModelErrorCollection$instance extends System_Collections_ObjectModel_Internal.Collection_1<ModelError> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelErrorCollection: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_Collection_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -921,8 +934,7 @@ export interface ModelErrorCollection$instance extends Collection_1<ModelError> 
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    Add(exception: Exception): void;
-    Add(errorMessage: string): void;
+    Add: System_Collections_ObjectModel_Internal.Collection_1<ModelError>["Add"] & ((errorMessage: string) => void) & ((exception: Exception) => void);
 }
 
 
@@ -933,7 +945,7 @@ export const ModelErrorCollection: {
 
 export type ModelErrorCollection = ModelErrorCollection$instance;
 
-export interface ModelMetadata$instance extends IModelMetadataProvider$instance, System_Internal.IEquatable_1<ModelMetadata> {
+export interface ModelMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelMetadata: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider: never;
@@ -955,8 +967,7 @@ export interface ModelMetadata$instance extends IModelMetadataProvider$instance,
     readonly DisplayName: string | null;
     readonly EditFormatString: string | null;
     readonly ElementMetadata: ModelMetadata | null;
-    get ElementType(): Type | null;
-    set ElementType(value: Type | null);
+    readonly ElementType: Type | null;
     readonly EnumGroupedDisplayNamesAndValues: IEnumerable_1<KeyValuePair_2<EnumGroupAndName, System_Internal.String>> | null;
     readonly EnumNamesAndValues: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | null;
     readonly HasNonDefaultEditFormat: boolean;
@@ -965,14 +976,14 @@ export interface ModelMetadata$instance extends IModelMetadataProvider$instance,
     readonly HtmlEncode: boolean;
     readonly IsBindingAllowed: boolean;
     readonly IsBindingRequired: boolean;
-    IsCollectionType: boolean;
+    readonly IsCollectionType: boolean;
     readonly IsComplexType: boolean;
     readonly IsEnum: boolean;
-    IsEnumerableType: boolean;
+    readonly IsEnumerableType: boolean;
     readonly IsFlagsEnum: boolean;
-    IsNullableValueType: boolean;
+    readonly IsNullableValueType: boolean;
     readonly IsReadOnly: boolean;
-    IsReferenceOrNullableType: boolean;
+    readonly IsReferenceOrNullableType: boolean;
     readonly IsRequired: boolean;
     readonly MetadataKind: ModelMetadataKind;
     readonly ModelBindingMessageProvider: ModelBindingMessageProvider;
@@ -992,11 +1003,11 @@ export interface ModelMetadata$instance extends IModelMetadataProvider$instance,
     readonly ShowForEdit: boolean;
     readonly SimpleDisplayProperty: string | null;
     readonly TemplateHint: string | null;
-    UnderlyingOrModelType: Type;
+    readonly UnderlyingOrModelType: Type;
     readonly ValidateChildren: boolean;
     readonly ValidatorMetadata: IReadOnlyList_1<unknown>;
-    Equals(other: ModelMetadata | null): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: ModelMetadata | null): boolean;
     GetDisplayName(): string;
     GetHashCode(): int;
     GetMetadataForProperties(modelType: Type): IEnumerable_1<ModelMetadata>;
@@ -1004,7 +1015,7 @@ export interface ModelMetadata$instance extends IModelMetadataProvider$instance,
 }
 
 
-export const ModelMetadata: (abstract new(identity: ModelMetadataIdentity) => ModelMetadata) & {
+export const ModelMetadata: {
     readonly DefaultOrder: int;
 };
 
@@ -1016,7 +1027,7 @@ export interface __ModelMetadata$views {
 export type ModelMetadata = ModelMetadata$instance & __ModelMetadata$views;
 
 
-export interface ModelMetadataProvider$instance extends IModelMetadataProvider$instance {
+export interface ModelMetadataProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelMetadataProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider: never;
@@ -1030,7 +1041,7 @@ export interface ModelMetadataProvider$instance extends IModelMetadataProvider$i
 }
 
 
-export const ModelMetadataProvider: (abstract new() => ModelMetadataProvider) & {
+export const ModelMetadataProvider: {
 };
 
 
@@ -1041,8 +1052,9 @@ export interface __ModelMetadataProvider$views {
 export type ModelMetadataProvider = ModelMetadataProvider$instance & __ModelMetadataProvider$views;
 
 
-export interface ModelPropertyCollection$instance extends ReadOnlyCollection_1<ModelMetadata> {
+export interface ModelPropertyCollection$instance extends System_Collections_ObjectModel_Internal.ReadOnlyCollection_1<ModelMetadata> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelPropertyCollection: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_ReadOnlyCollection_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -1071,8 +1083,8 @@ export interface ModelStateDictionary$instance {
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyDictionary_2: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    Count: int;
-    ErrorCount: int;
+    readonly Count: int;
+    readonly ErrorCount: int;
     readonly HasReachedMaxErrors: boolean;
     readonly IsValid: boolean;
     readonly Keys: ModelStateDictionary_KeyEnumerable;
@@ -1080,8 +1092,8 @@ export interface ModelStateDictionary$instance {
     readonly Root: ModelStateEntry;
     readonly ValidationState: ModelValidationState;
     readonly Values: ModelStateDictionary_ValueEnumerable;
-    AddModelError(key: string, exception: Exception, metadata: ModelMetadata): void;
     AddModelError(key: string, errorMessage: string): void;
+    AddModelError(key: string, exception: Exception, metadata: ModelMetadata): void;
     Clear(): void;
     ClearValidationState(key: string): void;
     ContainsKey(key: string): boolean;
@@ -1095,8 +1107,8 @@ export interface ModelStateDictionary$instance {
     Remove(key: string): boolean;
     SetModelValue(key: string, rawValue: unknown | null, attemptedValue: string | null): void;
     SetModelValue(key: string, valueProviderResult: ValueProviderResult): void;
-    TryAddModelError(key: string, exception: Exception, metadata: ModelMetadata): boolean;
     TryAddModelError(key: string, errorMessage: string): boolean;
+    TryAddModelError(key: string, exception: Exception, metadata: ModelMetadata): boolean;
     TryAddModelException(key: string, exception: Exception): boolean;
     TryGetValue(key: string, value: ModelStateEntry | null): boolean;
 }
@@ -1115,6 +1127,7 @@ export type ModelStateDictionary = ModelStateDictionary$instance & { readonly [k
 
 export interface ModelStateDictionary_Enumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
@@ -1136,6 +1149,7 @@ export type ModelStateDictionary_Enumerator = ModelStateDictionary_Enumerator$in
 
 export interface ModelStateDictionary_KeyEnumerable$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_KeyEnumerable: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
@@ -1153,12 +1167,13 @@ export type ModelStateDictionary_KeyEnumerable = ModelStateDictionary_KeyEnumera
 
 export interface ModelStateDictionary_KeyEnumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_KeyEnumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Current: string;
+    readonly Current: string;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -1174,6 +1189,7 @@ export type ModelStateDictionary_KeyEnumerator = ModelStateDictionary_KeyEnumera
 
 export interface ModelStateDictionary_PrefixEnumerable$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_PrefixEnumerable: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
@@ -1191,6 +1207,7 @@ export type ModelStateDictionary_PrefixEnumerable = ModelStateDictionary_PrefixE
 
 export interface ModelStateDictionary_ValueEnumerable$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_ValueEnumerable: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
@@ -1208,12 +1225,13 @@ export type ModelStateDictionary_ValueEnumerable = ModelStateDictionary_ValueEnu
 
 export interface ModelStateDictionary_ValueEnumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_ValueEnumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Current: ModelStateEntry;
+    readonly Current: ModelStateEntry;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -1242,7 +1260,7 @@ export interface ModelStateEntry$instance {
 }
 
 
-export const ModelStateEntry: (abstract new() => ModelStateEntry) & {
+export const ModelStateEntry: {
 };
 
 
@@ -1301,7 +1319,8 @@ export const PrefixContainer: {
 
 export type PrefixContainer = PrefixContainer$instance;
 
-export interface QueryStringValueProvider$instance extends BindingSourceValueProvider$instance, IBindingSourceValueProvider$instance, IEnumerableValueProvider$instance {
+export interface QueryStringValueProvider$instance extends BindingSourceValueProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingSourceValueProvider: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_QueryStringValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
@@ -1309,9 +1328,9 @@ export interface QueryStringValueProvider$instance extends BindingSourceValuePro
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
 
     readonly Culture: CultureInfo | null;
-    ContainsPrefix(prefix: string): boolean;
+    ContainsPrefix: BindingSourceValueProvider$instance["ContainsPrefix"] & ((prefix: string) => boolean);
     GetKeysFromPrefix(prefix: string): IDictionary_2<System_Internal.String, System_Internal.String>;
-    GetValue(key: string): ValueProviderResult;
+    GetValue: BindingSourceValueProvider$instance["GetValue"] & ((key: string) => ValueProviderResult);
 }
 
 
@@ -1329,7 +1348,7 @@ export interface __QueryStringValueProvider$views {
 export type QueryStringValueProvider = QueryStringValueProvider$instance & __QueryStringValueProvider$views;
 
 
-export interface QueryStringValueProviderFactory$instance extends IValueProviderFactory$instance {
+export interface QueryStringValueProviderFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_QueryStringValueProviderFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProviderFactory: never;
@@ -1350,14 +1369,15 @@ export interface __QueryStringValueProviderFactory$views {
 export type QueryStringValueProviderFactory = QueryStringValueProviderFactory$instance & __QueryStringValueProviderFactory$views;
 
 
-export interface RouteValueProvider$instance extends BindingSourceValueProvider$instance, IBindingSourceValueProvider$instance {
+export interface RouteValueProvider$instance extends BindingSourceValueProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_BindingSourceValueProvider: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_RouteValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
 
-    ContainsPrefix(key: string): boolean;
-    GetValue(key: string): ValueProviderResult;
+    ContainsPrefix: BindingSourceValueProvider$instance["ContainsPrefix"] & ((key: string) => boolean);
+    GetValue: BindingSourceValueProvider$instance["GetValue"] & ((key: string) => ValueProviderResult);
 }
 
 
@@ -1375,7 +1395,7 @@ export interface __RouteValueProvider$views {
 export type RouteValueProvider = RouteValueProvider$instance & __RouteValueProvider$views;
 
 
-export interface RouteValueProviderFactory$instance extends IValueProviderFactory$instance {
+export interface RouteValueProviderFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_RouteValueProviderFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProviderFactory: never;
@@ -1396,7 +1416,7 @@ export interface __RouteValueProviderFactory$views {
 export type RouteValueProviderFactory = RouteValueProviderFactory$instance & __RouteValueProviderFactory$views;
 
 
-export interface SuppressChildValidationMetadataProvider$instance extends Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_Internal.IValidationMetadataProvider$instance {
+export interface SuppressChildValidationMetadataProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_SuppressChildValidationMetadataProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider: never;
@@ -1421,8 +1441,9 @@ export interface __SuppressChildValidationMetadataProvider$views {
 export type SuppressChildValidationMetadataProvider = SuppressChildValidationMetadataProvider$instance & __SuppressChildValidationMetadataProvider$views;
 
 
-export interface TooManyModelErrorsException$instance extends Exception {
+export interface TooManyModelErrorsException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_TooManyModelErrorsException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -1436,8 +1457,9 @@ export const TooManyModelErrorsException: {
 
 export type TooManyModelErrorsException = TooManyModelErrorsException$instance;
 
-export interface UnsupportedContentTypeException$instance extends Exception {
+export interface UnsupportedContentTypeException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_UnsupportedContentTypeException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -1451,7 +1473,7 @@ export const UnsupportedContentTypeException: {
 
 export type UnsupportedContentTypeException = UnsupportedContentTypeException$instance;
 
-export interface UnsupportedContentTypeFilter$instance extends Microsoft_AspNetCore_Mvc_Filters_Internal.IActionFilter$instance {
+export interface UnsupportedContentTypeFilter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_UnsupportedContentTypeFilter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IActionFilter: never;
@@ -1477,8 +1499,9 @@ export interface __UnsupportedContentTypeFilter$views {
 export type UnsupportedContentTypeFilter = UnsupportedContentTypeFilter$instance & __UnsupportedContentTypeFilter$views;
 
 
-export interface ValueProviderException$instance extends Exception {
+export interface ValueProviderException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_ValueProviderException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -1510,7 +1533,7 @@ export type ValueProviderFactoryContext = ValueProviderFactoryContext$instance;
 
 export abstract class ModelBinderProviderExtensions$instance {
     static RemoveType(list: IList_1<IModelBinderProvider>, type: Type): void;
-    static RemoveType<TModelBinderProvider extends unknown & IModelBinderProvider>(list: IList_1<IModelBinderProvider>): void;
+    static RemoveType<TModelBinderProvider extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never }>(list: IList_1<IModelBinderProvider>): void;
 }
 
 
@@ -1545,7 +1568,7 @@ export type ModelStateDictionaryExtensions = ModelStateDictionaryExtensions$inst
 
 export abstract class ValueProviderFactoryExtensions$instance {
     static RemoveType(list: IList_1<IValueProviderFactory>, type: Type): void;
-    static RemoveType<TValueProviderFactory extends unknown & IValueProviderFactory>(list: IList_1<IValueProviderFactory>): void;
+    static RemoveType<TValueProviderFactory extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProviderFactory: never }>(list: IList_1<IValueProviderFactory>): void;
 }
 
 

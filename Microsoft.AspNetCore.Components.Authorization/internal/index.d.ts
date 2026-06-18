@@ -10,14 +10,14 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import type { IAuthorizeData } from "../../Microsoft.AspNetCore.Authorization/internal/index.js";
 import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { ComponentBase, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection, RouteData, RouteView } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { ComponentBase, EventCallbackWorkItem, IComponent, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle, RouteData, RouteView } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
 import type { Claim, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
 import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
-import type { Action, AsyncCallback, Boolean as ClrBoolean, Exception, Func_1, IAsyncResult, ICloneable, IDisposable, IntPtr, MulticastDelegate, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { AsyncCallback, Boolean as ClrBoolean, IAsyncResult, ICloneable, IDisposable, IntPtr, MulticastDelegate, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export type AuthenticationStateChangedHandler = (task: Task_1<AuthenticationState>) => void;
 
@@ -33,6 +33,7 @@ export type IHostEnvironmentAuthenticationStateProvider = IHostEnvironmentAuthen
 
 export interface ClaimData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_ClaimData: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Type: string;
     readonly Value: string;
@@ -84,14 +85,15 @@ export interface AuthenticationStateProvider$instance {
 }
 
 
-export const AuthenticationStateProvider: (abstract new() => AuthenticationStateProvider) & {
+export const AuthenticationStateProvider: {
 };
 
 
 export type AuthenticationStateProvider = AuthenticationStateProvider$instance;
 
-export interface AuthorizeRouteView$instance extends RouteView, Microsoft_AspNetCore_Components_Internal.IComponent$instance {
+export interface AuthorizeRouteView$instance extends Microsoft_AspNetCore_Components_Internal.RouteView$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthorizeRouteView: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RouteView: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
 
@@ -101,7 +103,7 @@ export interface AuthorizeRouteView$instance extends RouteView, Microsoft_AspNet
     set NotAuthorized(value: RenderFragment_1<AuthenticationState> | null);
     get Resource(): unknown | null;
     set Resource(value: unknown | null);
-    Render(builder: RenderTreeBuilder): void;
+    Render: Microsoft_AspNetCore_Components_Internal.RouteView$instance["Render"] & ((builder: RenderTreeBuilder) => void);
 }
 
 
@@ -117,8 +119,10 @@ export interface __AuthorizeRouteView$views {
 export type AuthorizeRouteView = AuthorizeRouteView$instance & __AuthorizeRouteView$views;
 
 
-export interface AuthorizeView$instance extends AuthorizeViewCore$instance, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface AuthorizeView$instance extends AuthorizeViewCore$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthorizeView: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthorizeViewCore: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
@@ -128,7 +132,7 @@ export interface AuthorizeView$instance extends AuthorizeViewCore$instance, Micr
     set Policy(value: string | null);
     get Roles(): string | null;
     set Roles(value: string | null);
-    GetAuthorizeData(): IAuthorizeData[];
+    GetAuthorizeData: AuthorizeViewCore$instance["GetAuthorizeData"] & (() => IAuthorizeData[]);
 }
 
 
@@ -146,8 +150,9 @@ export interface __AuthorizeView$views {
 export type AuthorizeView = AuthorizeView$instance & __AuthorizeView$views;
 
 
-export interface AuthorizeViewCore$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface AuthorizeViewCore$instance extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthorizeViewCore: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
@@ -163,13 +168,13 @@ export interface AuthorizeViewCore$instance extends ComponentBase, Microsoft_Asp
     set NotAuthorized(value: RenderFragment_1<AuthenticationState> | null);
     get Resource(): unknown | null;
     set Resource(value: unknown | null);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
     GetAuthorizeData(): IAuthorizeData[] | null;
-    OnParametersSetAsync(): Task;
+    OnParametersSetAsync: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnParametersSetAsync"] & (() => Task);
 }
 
 
-export const AuthorizeViewCore: (abstract new() => AuthorizeViewCore) & {
+export const AuthorizeViewCore: {
 };
 
 
@@ -182,8 +187,9 @@ export interface __AuthorizeViewCore$views {
 export type AuthorizeViewCore = AuthorizeViewCore$instance & __AuthorizeViewCore$views;
 
 
-export interface CascadingAuthenticationState$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface CascadingAuthenticationState$instance extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_CascadingAuthenticationState: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
@@ -192,8 +198,8 @@ export interface CascadingAuthenticationState$instance extends ComponentBase, Mi
 
     get ChildContent(): RenderFragment | null;
     set ChildContent(value: RenderFragment | null);
-    BuildRenderTree(__builder: RenderTreeBuilder): void;
-    OnInitialized(): void;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((__builder: RenderTreeBuilder) => void);
+    OnInitialized: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnInitialized"] & (() => void);
 }
 
 

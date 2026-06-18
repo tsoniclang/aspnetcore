@@ -43,7 +43,7 @@ export interface IResponseCompressionProvider$instance {
 
 export type IResponseCompressionProvider = IResponseCompressionProvider$instance;
 
-export interface BrotliCompressionProvider$instance extends ICompressionProvider$instance {
+export interface BrotliCompressionProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_BrotliCompressionProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider: never;
@@ -82,8 +82,9 @@ export const BrotliCompressionProviderOptions: {
 
 export type BrotliCompressionProviderOptions = BrotliCompressionProviderOptions$instance;
 
-export interface CompressionProviderCollection$instance extends Collection_1<ICompressionProvider> {
+export interface CompressionProviderCollection$instance extends System_Collections_ObjectModel_Internal.Collection_1<ICompressionProvider> {
     readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_CompressionProviderCollection: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_Collection_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -94,8 +95,7 @@ export interface CompressionProviderCollection$instance extends Collection_1<ICo
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    Add<TCompressionProvider extends unknown & ICompressionProvider>(): void;
-    Add(providerType: Type): void;
+    Add: System_Collections_ObjectModel_Internal.Collection_1<ICompressionProvider>["Add"] & ((providerType: Type) => void) & (<TCompressionProvider extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider: never }>() => void);
 }
 
 
@@ -106,7 +106,7 @@ export const CompressionProviderCollection: {
 
 export type CompressionProviderCollection = CompressionProviderCollection$instance;
 
-export interface GzipCompressionProvider$instance extends ICompressionProvider$instance {
+export interface GzipCompressionProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_GzipCompressionProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider: never;
@@ -190,7 +190,7 @@ export const ResponseCompressionOptions: {
 
 export type ResponseCompressionOptions = ResponseCompressionOptions$instance;
 
-export interface ResponseCompressionProvider$instance extends IResponseCompressionProvider$instance {
+export interface ResponseCompressionProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider: never;

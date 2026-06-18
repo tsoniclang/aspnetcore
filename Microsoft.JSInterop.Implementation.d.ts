@@ -10,7 +10,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Cross-namespace type imports for constraints
-import type { IJSInProcessObjectReference, IJSObjectReference, IJSStreamReference, JSInProcessRuntime, JSRuntime } from './Microsoft.JSInterop/internal/index.js';
+import type { IJSInProcessObjectReference, IJSObjectReference, IJSStreamReference } from './Microsoft.JSInterop/internal/index.js';
 import type { Stream } from '@tsonic/dotnet/System.IO.js';
 import type { IAsyncDisposable, IDisposable, Int64, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { Utf8JsonReader, Utf8JsonWriter } from '@tsonic/dotnet/System.Text.Json.js';

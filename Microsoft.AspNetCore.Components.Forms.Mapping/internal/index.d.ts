@@ -26,7 +26,7 @@ export interface FormMappingError$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_Mapping_FormMappingError: never;
 
     readonly AttemptedValue: string | null;
-    Container: unknown;
+    readonly Container: unknown;
     readonly ErrorMessages: IReadOnlyList_1<FormattableString>;
     readonly Name: string;
     readonly Path: string;
@@ -49,8 +49,7 @@ export interface FormValueMappingContext$instance {
     get OnError(): Action_3<System_Internal.String, FormattableString, string | null> | null;
     set OnError(value: Action_3<System_Internal.String, FormattableString, string | null> | null);
     readonly ParameterName: string;
-    get Result(): unknown | null;
-    set Result(value: unknown | null);
+    readonly Result: unknown | null;
     readonly ValueType: Type;
     SetResult(result: unknown | null): void;
 }

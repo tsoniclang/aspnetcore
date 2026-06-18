@@ -165,32 +165,6 @@
                 "modifier": "ref"
               }
             ]
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer::TryCreateScopeQualifiedEventName(System.Int32,System.String,System.String&):System.Boolean",
-            "targetName": "TryCreateScopeQualifiedEventName",
-            "metadataToken": 100663435,
-            "canonicalSignature": "(System.Int32,System.String,System.String&):System.Boolean",
-            "normalizedSignature": "TryCreateScopeQualifiedEventName|(System.Int32,System.String,System.String&):System.Boolean|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 3,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer",
-            "ownerIdentity": "Microsoft.AspNetCore.Components.Web",
-            "isExtensionMethod": false,
-            "parameterModifiers": [
-              {
-                "index": 2,
-                "modifier": "out"
-              }
-            ]
           }
         ],
         "properties": [

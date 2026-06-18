@@ -1244,27 +1244,7 @@
             "sourceInterface": "Microsoft.AspNetCore.Authentication.IAuthenticationHandler"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::Events:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-            "targetName": "Events",
-            "metadataToken": 385875978,
-            "canonicalSignature": ":Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents",
-            "normalizedSignature": "Events|:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents|static=false|accessor=getset",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler",
-            "ownerIdentity": "Microsoft.AspNetCore.Authentication.Cookies"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
         "constructors": [

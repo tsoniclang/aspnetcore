@@ -22,10 +22,11 @@ import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extens
 
 export interface KeyValueAccumulator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_KeyValueAccumulator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly HasValues: boolean;
     readonly KeyCount: int;
-    ValueCount: int;
+    readonly ValueCount: int;
     Append(key: string, value: string): void;
     GetResults(): Dictionary_2<System_Internal.String, StringValues>;
 }
@@ -40,6 +41,7 @@ export type KeyValueAccumulator = KeyValueAccumulator$instance;
 
 export interface QueryStringEnumerable$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_QueryStringEnumerable: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     GetEnumerator(): QueryStringEnumerable_Enumerator;
 }
@@ -55,6 +57,7 @@ export type QueryStringEnumerable = QueryStringEnumerable$instance;
 
 export interface QueryStringEnumerable_EncodedNameValuePair$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_QueryStringEnumerable_EncodedNameValuePair: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly EncodedName: ReadOnlyMemory_1<System_Internal.Char>;
     readonly EncodedValue: ReadOnlyMemory_1<System_Internal.Char>;
@@ -72,8 +75,9 @@ export type QueryStringEnumerable_EncodedNameValuePair = QueryStringEnumerable_E
 
 export interface QueryStringEnumerable_Enumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_QueryStringEnumerable_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
-    Current: QueryStringEnumerable_EncodedNameValuePair;
+    readonly Current: QueryStringEnumerable_EncodedNameValuePair;
     MoveNext(): boolean;
 }
 
@@ -85,36 +89,30 @@ export const QueryStringEnumerable_Enumerator: {
 
 export type QueryStringEnumerable_Enumerator = QueryStringEnumerable_Enumerator$instance;
 
-export interface BufferedReadStream$instance extends Stream {
+export interface BufferedReadStream$instance extends System_IO_Internal.Stream {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_BufferedReadStream: never;
+    readonly __tsonic_type_System_IO_Stream: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly BufferedData: ArraySegment_1<System_Internal.Byte>;
-    readonly CanRead: boolean;
-    readonly CanSeek: boolean;
-    readonly CanTimeout: boolean;
-    readonly CanWrite: boolean;
-    readonly Length: long;
-    Position: long;
-    Dispose(disposing: boolean): void;
+    Dispose: System_IO_Internal.Stream["Dispose"] & ((disposing: boolean) => void);
     EnsureBuffered(): boolean;
     EnsureBuffered(minCount: int): boolean;
     EnsureBufferedAsync(cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
     EnsureBufferedAsync(minCount: int, cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
-    Flush(): void;
-    FlushAsync(cancellationToken: CancellationToken): Task;
-    Read(buffer: byte[], offset: int, count: int): int;
-    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
-    ReadAsync(buffer: Memory_1<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask_1<System_Internal.Int32>;
+    Flush: System_IO_Internal.Stream["Flush"] & (() => void);
+    FlushAsync: System_IO_Internal.Stream["FlushAsync"] & ((cancellationToken: CancellationToken) => Task);
+    Read: System_IO_Internal.Stream["Read"] & ((buffer: byte[], offset: int, count: int) => int);
+    ReadAsync: System_IO_Internal.Stream["ReadAsync"] & ((buffer: Memory_1<System_Internal.Byte>, cancellationToken: CancellationToken) => ValueTask_1<System_Internal.Int32>) & ((buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken) => Task_1<System_Internal.Int32>);
     ReadLine(lengthLimit: int): string;
     ReadLineAsync(lengthLimit: int, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
-    Seek(offset: long, origin: SeekOrigin): long;
-    SetLength(value: long): void;
-    Write(buffer: byte[], offset: int, count: int): void;
-    WriteAsync(buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask;
-    WriteAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
+    Seek: System_IO_Internal.Stream["Seek"] & ((offset: long, origin: SeekOrigin) => long);
+    SetLength: System_IO_Internal.Stream["SetLength"] & ((value: long) => void);
+    Write: System_IO_Internal.Stream["Write"] & ((buffer: byte[], offset: int, count: int) => void);
+    WriteAsync: System_IO_Internal.Stream["WriteAsync"] & ((buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken: CancellationToken) => ValueTask) & ((buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken) => Task);
 }
 
 
@@ -126,33 +124,27 @@ export const BufferedReadStream: {
 
 export type BufferedReadStream = BufferedReadStream$instance;
 
-export interface FileBufferingReadStream$instance extends Stream {
+export interface FileBufferingReadStream$instance extends System_IO_Internal.Stream {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_FileBufferingReadStream: never;
+    readonly __tsonic_type_System_IO_Stream: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly CanRead: boolean;
-    readonly CanSeek: boolean;
-    readonly CanWrite: boolean;
     readonly InMemory: boolean;
-    readonly Length: long;
     readonly MemoryThreshold: int;
-    Position: long;
     readonly TempFileName: string | null;
-    CopyToAsync(destination: Stream, bufferSize: int, cancellationToken: CancellationToken): Task;
-    Dispose(disposing: boolean): void;
-    DisposeAsync(): ValueTask;
-    Flush(): void;
-    Read(buffer: Span_1<System_Internal.Byte>): int;
-    Read(buffer: byte[], offset: int, count: int): int;
-    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
-    ReadAsync(buffer: Memory_1<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask_1<System_Internal.Int32>;
-    Seek(offset: long, origin: SeekOrigin): long;
-    SetLength(value: long): void;
-    Write(buffer: byte[], offset: int, count: int): void;
-    WriteAsync(buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask;
-    WriteAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
+    CopyToAsync: System_IO_Internal.Stream["CopyToAsync"] & ((destination: Stream, bufferSize: int, cancellationToken: CancellationToken) => Task);
+    Dispose: System_IO_Internal.Stream["Dispose"] & ((disposing: boolean) => void);
+    DisposeAsync: System_IO_Internal.Stream["DisposeAsync"] & (() => ValueTask);
+    Flush: System_IO_Internal.Stream["Flush"] & (() => void);
+    Read: System_IO_Internal.Stream["Read"] & ((buffer: Span_1<System_Internal.Byte>) => int) & ((buffer: byte[], offset: int, count: int) => int);
+    ReadAsync: System_IO_Internal.Stream["ReadAsync"] & ((buffer: Memory_1<System_Internal.Byte>, cancellationToken?: CancellationToken) => ValueTask_1<System_Internal.Int32>) & ((buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken) => Task_1<System_Internal.Int32>);
+    Seek: System_IO_Internal.Stream["Seek"] & ((offset: long, origin: SeekOrigin) => long);
+    SetLength: System_IO_Internal.Stream["SetLength"] & ((value: long) => void);
+    Write: System_IO_Internal.Stream["Write"] & ((buffer: byte[], offset: int, count: int) => void);
+    WriteAsync: System_IO_Internal.Stream["WriteAsync"] & ((buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken: CancellationToken) => ValueTask) & ((buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken) => Task);
 }
 
 
@@ -167,32 +159,27 @@ export const FileBufferingReadStream: {
 
 export type FileBufferingReadStream = FileBufferingReadStream$instance;
 
-export interface FileBufferingWriteStream$instance extends Stream {
+export interface FileBufferingWriteStream$instance extends System_IO_Internal.Stream {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_FileBufferingWriteStream: never;
+    readonly __tsonic_type_System_IO_Stream: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly CanRead: boolean;
-    readonly CanSeek: boolean;
-    readonly CanWrite: boolean;
-    readonly Length: long;
     readonly MemoryThreshold: int;
-    Position: long;
-    Dispose(disposing: boolean): void;
-    DisposeAsync(): ValueTask;
-    DrainBufferAsync(destination: Stream, cancellationToken?: CancellationToken): Task;
+    Dispose: System_IO_Internal.Stream["Dispose"] & ((disposing: boolean) => void);
+    DisposeAsync: System_IO_Internal.Stream["DisposeAsync"] & (() => ValueTask);
     DrainBufferAsync(destination: PipeWriter, cancellationToken?: CancellationToken): Task;
-    Flush(): void;
-    FlushAsync(cancellationToken: CancellationToken): Task;
-    Read(buffer: byte[], offset: int, count: int): int;
-    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
-    ReadAsync(buffer: Memory_1<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask_1<System_Internal.Int32>;
-    Seek(offset: long, origin: SeekOrigin): long;
-    SetLength(value: long): void;
-    Write(buffer: byte[], offset: int, count: int): void;
-    WriteAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
-    WriteAsync(buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
+    DrainBufferAsync(destination: Stream, cancellationToken?: CancellationToken): Task;
+    Flush: System_IO_Internal.Stream["Flush"] & (() => void);
+    FlushAsync: System_IO_Internal.Stream["FlushAsync"] & ((cancellationToken: CancellationToken) => Task);
+    Read: System_IO_Internal.Stream["Read"] & ((buffer: byte[], offset: int, count: int) => int);
+    ReadAsync: System_IO_Internal.Stream["ReadAsync"] & ((buffer: Memory_1<System_Internal.Byte>, cancellationToken: CancellationToken) => ValueTask_1<System_Internal.Int32>) & ((buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken) => Task_1<System_Internal.Int32>);
+    Seek: System_IO_Internal.Stream["Seek"] & ((offset: long, origin: SeekOrigin) => long);
+    SetLength: System_IO_Internal.Stream["SetLength"] & ((value: long) => void);
+    Write: System_IO_Internal.Stream["Write"] & ((buffer: byte[], offset: int, count: int) => void);
+    WriteAsync: System_IO_Internal.Stream["WriteAsync"] & ((buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken?: CancellationToken) => ValueTask) & ((buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken) => Task);
 }
 
 
@@ -287,21 +274,20 @@ export const FormReader: {
 
 export type FormReader = FormReader$instance;
 
-export interface HttpRequestStreamReader$instance extends TextReader {
+export interface HttpRequestStreamReader$instance extends System_IO_Internal.TextReader {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_HttpRequestStreamReader: never;
+    readonly __tsonic_type_System_IO_TextReader: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Dispose(disposing: boolean): void;
-    Peek(): int;
-    Read(): int;
-    Read(buffer: char[], index: int, count: int): int;
-    Read(buffer: Span_1<System_Internal.Char>): int;
-    ReadAsync(buffer: char[], index: int, count: int): Task_1<System_Internal.Int32>;
-    ReadAsync(buffer: Memory_1<System_Internal.Char>, cancellationToken?: CancellationToken): ValueTask_1<System_Internal.Int32>;
-    ReadLine(): string | null;
-    ReadLineAsync(): Task_1<string | null>;
-    ReadToEndAsync(): Task_1<System_Internal.String>;
+    Dispose: System_IO_Internal.TextReader["Dispose"] & ((disposing: boolean) => void);
+    Peek: System_IO_Internal.TextReader["Peek"] & (() => int);
+    Read: System_IO_Internal.TextReader["Read"] & (() => int) & ((buffer: Span_1<System_Internal.Char>) => int) & ((buffer: char[], index: int, count: int) => int);
+    ReadAsync: System_IO_Internal.TextReader["ReadAsync"] & ((buffer: Memory_1<System_Internal.Char>, cancellationToken?: CancellationToken) => ValueTask_1<System_Internal.Int32>) & ((buffer: char[], index: int, count: int) => Task_1<System_Internal.Int32>);
+    ReadLine: System_IO_Internal.TextReader["ReadLine"] & (() => string | null);
+    ReadLineAsync: System_IO_Internal.TextReader["ReadLineAsync"] & (() => Task_1<string | null>);
+    ReadToEndAsync: System_IO_Internal.TextReader["ReadToEndAsync"] & (() => Task_1<System_Internal.String>);
 }
 
 
@@ -314,30 +300,22 @@ export const HttpRequestStreamReader: {
 
 export type HttpRequestStreamReader = HttpRequestStreamReader$instance;
 
-export interface HttpResponseStreamWriter$instance extends TextWriter {
+export interface HttpResponseStreamWriter$instance extends System_IO_Internal.TextWriter {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_HttpResponseStreamWriter: never;
+    readonly __tsonic_type_System_IO_TextWriter: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Encoding: Encoding;
-    Dispose(disposing: boolean): void;
-    DisposeAsync(): ValueTask;
-    Flush(): void;
-    FlushAsync(): Task;
-    Write(value: char): void;
-    Write(values: char[], index: int, count: int): void;
-    Write(value: ReadOnlySpan_1<System_Internal.Char>): void;
-    Write(value: string | null): void;
-    WriteAsync(value: char): Task;
-    WriteAsync(values: char[], index: int, count: int): Task;
-    WriteAsync(value: string | null): Task;
-    WriteAsync(value: ReadOnlyMemory_1<System_Internal.Char>, cancellationToken?: CancellationToken): Task;
-    WriteLine(value: ReadOnlySpan_1<System_Internal.Char>): void;
-    WriteLineAsync(value: ReadOnlyMemory_1<System_Internal.Char>, cancellationToken?: CancellationToken): Task;
-    WriteLineAsync(values: char[], index: int, count: int): Task;
-    WriteLineAsync(value: char): Task;
-    WriteLineAsync(value: string | null): Task;
+    Dispose: System_IO_Internal.TextWriter["Dispose"] & ((disposing: boolean) => void);
+    DisposeAsync: System_IO_Internal.TextWriter["DisposeAsync"] & (() => ValueTask);
+    Flush: System_IO_Internal.TextWriter["Flush"] & (() => void);
+    FlushAsync: System_IO_Internal.TextWriter["FlushAsync"] & (() => Task);
+    Write: System_IO_Internal.TextWriter["Write"] & ((value: ReadOnlySpan_1<System_Internal.Char>) => void) & ((value: char) => void) & ((value: string | null) => void) & ((values: char[], index: int, count: int) => void);
+    WriteAsync: System_IO_Internal.TextWriter["WriteAsync"] & ((value: ReadOnlyMemory_1<System_Internal.Char>, cancellationToken?: CancellationToken) => Task) & ((value: char) => Task) & ((value: string | null) => Task) & ((values: char[], index: int, count: int) => Task);
+    WriteLine: System_IO_Internal.TextWriter["WriteLine"] & ((value: ReadOnlySpan_1<System_Internal.Char>) => void);
+    WriteLineAsync: System_IO_Internal.TextWriter["WriteLineAsync"] & ((value: ReadOnlyMemory_1<System_Internal.Char>, cancellationToken?: CancellationToken) => Task) & ((value: char) => Task) & ((value: string | null) => Task) & ((values: char[], index: int, count: int) => Task);
 }
 
 

@@ -89,7 +89,7 @@ export const DelegatingEnumerator_2: {
 
 export type DelegatingEnumerator_2<TWrapped extends unknown, TDeclared extends unknown> = DelegatingEnumerator_2$instance<TWrapped, TDeclared>;
 
-export interface EnumerableWrapperProvider$instance extends IWrapperProvider$instance {
+export interface EnumerableWrapperProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_Xml_EnumerableWrapperProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider: never;
@@ -111,7 +111,7 @@ export interface __EnumerableWrapperProvider$views {
 export type EnumerableWrapperProvider = EnumerableWrapperProvider$instance & __EnumerableWrapperProvider$views;
 
 
-export interface EnumerableWrapperProviderFactory$instance extends IWrapperProviderFactory$instance {
+export interface EnumerableWrapperProviderFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_Xml_EnumerableWrapperProviderFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory: never;
@@ -148,7 +148,7 @@ export const MvcXmlOptions: {
 
 export type MvcXmlOptions = MvcXmlOptions$instance;
 
-export interface ProblemDetailsWrapper$instance extends IUnwrappable$instance, System_Xml_Serialization_Internal.IXmlSerializable {
+export interface ProblemDetailsWrapper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_Xml_ProblemDetailsWrapper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable: never;
@@ -164,7 +164,6 @@ export interface ProblemDetailsWrapper$instance extends IUnwrappable$instance, S
 export const ProblemDetailsWrapper: {
     new(): ProblemDetailsWrapper;
     new(problemDetails: ProblemDetails): ProblemDetailsWrapper;
-    readonly EmptyKey: string;
 };
 
 
@@ -175,7 +174,7 @@ export interface __ProblemDetailsWrapper$views {
 export type ProblemDetailsWrapper = ProblemDetailsWrapper$instance & __ProblemDetailsWrapper$views;
 
 
-export interface SerializableErrorWrapper$instance extends IUnwrappable$instance, System_Xml_Serialization_Internal.IXmlSerializable {
+export interface SerializableErrorWrapper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_Xml_SerializableErrorWrapper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable: never;
@@ -202,7 +201,7 @@ export interface __SerializableErrorWrapper$views {
 export type SerializableErrorWrapper = SerializableErrorWrapper$instance & __SerializableErrorWrapper$views;
 
 
-export interface SerializableErrorWrapperProvider$instance extends IWrapperProvider$instance {
+export interface SerializableErrorWrapperProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_Xml_SerializableErrorWrapperProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider: never;
@@ -224,7 +223,7 @@ export interface __SerializableErrorWrapperProvider$views {
 export type SerializableErrorWrapperProvider = SerializableErrorWrapperProvider$instance & __SerializableErrorWrapperProvider$views;
 
 
-export interface SerializableErrorWrapperProviderFactory$instance extends IWrapperProviderFactory$instance {
+export interface SerializableErrorWrapperProviderFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_Xml_SerializableErrorWrapperProviderFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory: never;
@@ -245,14 +244,15 @@ export interface __SerializableErrorWrapperProviderFactory$views {
 export type SerializableErrorWrapperProviderFactory = SerializableErrorWrapperProviderFactory$instance & __SerializableErrorWrapperProviderFactory$views;
 
 
-export interface ValidationProblemDetailsWrapper$instance extends ProblemDetailsWrapper$instance, IUnwrappable$instance, System_Xml_Serialization_Internal.IXmlSerializable {
+export interface ValidationProblemDetailsWrapper$instance extends ProblemDetailsWrapper$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_Xml_ProblemDetailsWrapper: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_Xml_ValidationProblemDetailsWrapper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable: never;
     readonly __tsonic_iface_System_Xml_Serialization_IXmlSerializable: never;
 
-    ReadValue(reader: XmlReader, name: string): void;
-    WriteXml(writer: XmlWriter): void;
+    ReadValue: ProblemDetailsWrapper$instance["ReadValue"] & ((reader: XmlReader, name: string) => void);
+    WriteXml: ProblemDetailsWrapper$instance["WriteXml"] & ((writer: XmlWriter) => void);
 }
 
 

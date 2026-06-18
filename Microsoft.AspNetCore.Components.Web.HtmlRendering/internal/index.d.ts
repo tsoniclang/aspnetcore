@@ -14,6 +14,7 @@ import type { String as ClrString, ValueType, Void } from "@tsonic/dotnet/System
 
 export interface HtmlRootComponent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_HtmlRendering_HtmlRootComponent: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly QuiescenceTask: Task;
     ToHtmlString(): string;

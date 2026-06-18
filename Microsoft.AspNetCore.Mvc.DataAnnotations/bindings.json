@@ -496,26 +496,6 @@
             "isExtensionMethod": false
           },
           {
-            "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1::MergeAttribute(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String):System.Boolean",
-            "targetName": "MergeAttribute",
-            "metadataToken": 100663379,
-            "canonicalSignature": "(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String):System.Boolean",
-            "normalizedSignature": "MergeAttribute|(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String):System.Boolean|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 3,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations",
-            "isExtensionMethod": false
-          },
-          {
             "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String",
             "targetName": "GetErrorMessage",
             "metadataToken": 100663380,
@@ -715,19 +695,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationProviderAttribute::.ctor():void",
-            "metadataToken": 100663384,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationProviderAttribute",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.DataAnnotations"
-          }
-        ]
+        "constructors": []
       }
     ]
   }

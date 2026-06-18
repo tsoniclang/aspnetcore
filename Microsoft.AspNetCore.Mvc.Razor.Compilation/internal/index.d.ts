@@ -55,8 +55,9 @@ export const CompiledViewDescriptor: {
 
 export type CompiledViewDescriptor = CompiledViewDescriptor$instance;
 
-export interface RazorViewAttribute$instance extends Attribute {
+export interface RazorViewAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_Compilation_RazorViewAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly Path: string;
     readonly ViewType: Type;

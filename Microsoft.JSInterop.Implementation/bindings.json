@@ -356,19 +356,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSInProcessObjectReference::.ctor(Microsoft.JSInterop.JSInProcessRuntime,System.Int64):void",
-            "metadataToken": 100663500,
-            "canonicalSignature": "(Microsoft.JSInterop.JSInProcessRuntime,System.Int64):void",
-            "normalizedSignature": "constructor|(Microsoft.JSInterop.JSInProcessRuntime,System.Int64):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
-            "ownerIdentity": "Microsoft.JSInterop"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReference",
@@ -577,26 +565,6 @@
             "isExtensionMethod": false
           },
           {
-            "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReference::ThrowIfDisposed():System.Void",
-            "targetName": "ThrowIfDisposed",
-            "metadataToken": 100663521,
-            "canonicalSignature": "():System.Void",
-            "normalizedSignature": "ThrowIfDisposed|():System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 0,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.JSInterop.Implementation.JSObjectReference",
-            "ownerIdentity": "Microsoft.JSInterop",
-            "isExtensionMethod": false
-          },
-          {
             "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.IJSObjectReference::InvokeAsync(System.String,System.Object[]):ValueTask_1",
             "targetName": "InvokeAsync",
             "metadataToken": 100663321,
@@ -723,42 +691,10 @@
             "sourceInterface": "Microsoft.JSInterop.IJSObjectReference"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReference::Id:System.Int64",
-            "targetName": "Id",
-            "metadataToken": 385876003,
-            "canonicalSignature": ":System.Int64",
-            "normalizedSignature": "Id|:System.Int64|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Microsoft.JSInterop.Implementation.JSObjectReference",
-            "ownerIdentity": "Microsoft.JSInterop"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReference::.ctor(Microsoft.JSInterop.JSRuntime,System.Int64):void",
-            "metadataToken": 100663511,
-            "canonicalSignature": "(Microsoft.JSInterop.JSRuntime,System.Int64):void",
-            "normalizedSignature": "constructor|(Microsoft.JSInterop.JSRuntime,System.Int64):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Microsoft.JSInterop.Implementation.JSObjectReference",
-            "ownerIdentity": "Microsoft.JSInterop"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSStreamReference",

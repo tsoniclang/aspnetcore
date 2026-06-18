@@ -9,7 +9,6 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Import types from other namespaces
 import type { ImportMapDefinition } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { IWebHostEnvironment } from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
-import type { IHtmlContent } from "../../Microsoft.AspNetCore.Html/internal/index.js";
 import type { PathString } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { TagHelperMemoryCacheProvider } from "../../Microsoft.AspNetCore.Mvc.Razor.Infrastructure/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Razor_TagHelpers_Internal from "../../Microsoft.AspNetCore.Mvc.Razor.TagHelpers/internal/index.js";
@@ -19,7 +18,7 @@ import type { IUrlHelperFactory } from "../../Microsoft.AspNetCore.Mvc.Routing/i
 import type { IDistributedCacheTagHelperService } from "../../Microsoft.AspNetCore.Mvc.TagHelpers.Cache/internal/index.js";
 import type { ICompositeViewEngine } from "../../Microsoft.AspNetCore.Mvc.ViewEngines/internal/index.js";
 import type { IViewBufferScope } from "../../Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers/internal/index.js";
-import type { IFileVersionProvider, IHtmlGenerator, ModelExplorer, ModelExpression, ViewDataDictionary } from "../../Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js";
+import type { IFileVersionProvider, IHtmlGenerator, ModelExpression, ViewDataDictionary } from "../../Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js";
 import * as Microsoft_AspNetCore_Razor_TagHelpers_Internal from "../../Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js";
 import type { ITagHelper, ITagHelperComponent, TagHelper, TagHelperAttribute, TagHelperContext, TagHelperOutput } from "../../Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js";
 import type { IDictionary_2, IEnumerable_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -31,14 +30,17 @@ import type { CacheItemPriority, IMemoryCache } from "@tsonic/microsoft-extensio
 import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export enum PersistenceMode {
-    Server = 0,
-    WebAssembly = 1
-}
+export type PersistenceMode = number & { readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_PersistenceMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const PersistenceMode: {
+    readonly Server: PersistenceMode;
+    readonly WebAssembly: PersistenceMode;
+};
 
 
-export interface AnchorTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface AnchorTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -48,14 +50,13 @@ export interface AnchorTagHelper$instance extends TagHelper, Microsoft_AspNetCor
     Controller: string;
     Fragment: string;
     Host: string;
-    readonly Order: int;
     Page: string;
     PageHandler: string;
     Protocol: string;
     Route: string;
     RouteValues: IDictionary_2<System_Internal.String, System_Internal.String>;
     ViewContext: ViewContext;
-    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    Process: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Process"] & ((context: TagHelperContext, output: TagHelperOutput) => void);
 }
 
 
@@ -71,15 +72,17 @@ export interface __AnchorTagHelper$views {
 export type AnchorTagHelper = AnchorTagHelper$instance & __AnchorTagHelper$views;
 
 
-export interface CacheTagHelper$instance extends CacheTagHelperBase$instance, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface CacheTagHelper$instance extends CacheTagHelperBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_CacheTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_CacheTagHelperBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     get Priority(): Nullable_1<CacheItemPriority>;
     set Priority(value: Nullable_1<CacheItemPriority> | CacheItemPriority);
-    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    ProcessAsync: CacheTagHelperBase$instance["ProcessAsync"] & ((context: TagHelperContext, output: TagHelperOutput) => Task);
 }
 
 
@@ -96,8 +99,9 @@ export interface __CacheTagHelper$views {
 export type CacheTagHelper = CacheTagHelper$instance & __CacheTagHelper$views;
 
 
-export interface CacheTagHelperBase$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface CacheTagHelperBase$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_CacheTagHelperBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -109,7 +113,6 @@ export interface CacheTagHelperBase$instance extends TagHelper, Microsoft_AspNet
     set ExpiresOn(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     get ExpiresSliding(): Nullable_1<TimeSpan>;
     set ExpiresSliding(value: Nullable_1<TimeSpan> | TimeSpan);
-    readonly Order: int;
     VaryBy: string;
     VaryByCookie: string;
     VaryByCulture: boolean;
@@ -161,8 +164,9 @@ export const CacheTagHelperOptions: {
 
 export type CacheTagHelperOptions = CacheTagHelperOptions$instance;
 
-export interface ComponentTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface ComponentTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_ComponentTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -171,7 +175,7 @@ export interface ComponentTagHelper$instance extends TagHelper, Microsoft_AspNet
     Parameters: IDictionary_2<System_Internal.String, unknown>;
     RenderMode: RenderMode;
     ViewContext: ViewContext;
-    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    ProcessAsync: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["ProcessAsync"] & ((context: TagHelperContext, output: TagHelperOutput) => Task);
 }
 
 
@@ -187,14 +191,16 @@ export interface __ComponentTagHelper$views {
 export type ComponentTagHelper = ComponentTagHelper$instance & __ComponentTagHelper$views;
 
 
-export interface DistributedCacheTagHelper$instance extends CacheTagHelperBase$instance, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface DistributedCacheTagHelper$instance extends CacheTagHelperBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_CacheTagHelperBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_DistributedCacheTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     Name: string;
-    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    ProcessAsync: CacheTagHelperBase$instance["ProcessAsync"] & ((context: TagHelperContext, output: TagHelperOutput) => Task);
 }
 
 
@@ -211,8 +217,9 @@ export interface __DistributedCacheTagHelper$views {
 export type DistributedCacheTagHelper = DistributedCacheTagHelper$instance & __DistributedCacheTagHelper$views;
 
 
-export interface EnvironmentTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface EnvironmentTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_EnvironmentTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -220,8 +227,7 @@ export interface EnvironmentTagHelper$instance extends TagHelper, Microsoft_AspN
     Exclude: string;
     Include: string;
     Names: string;
-    readonly Order: int;
-    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    Process: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Process"] & ((context: TagHelperContext, output: TagHelperOutput) => void);
 }
 
 
@@ -237,8 +243,9 @@ export interface __EnvironmentTagHelper$views {
 export type EnvironmentTagHelper = EnvironmentTagHelper$instance & __EnvironmentTagHelper$views;
 
 
-export interface FormActionTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface FormActionTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_FormActionTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -247,13 +254,12 @@ export interface FormActionTagHelper$instance extends TagHelper, Microsoft_AspNe
     Area: string;
     Controller: string;
     Fragment: string;
-    readonly Order: int;
     Page: string;
     PageHandler: string;
     Route: string;
     RouteValues: IDictionary_2<System_Internal.String, System_Internal.String>;
     ViewContext: ViewContext;
-    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    Process: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Process"] & ((context: TagHelperContext, output: TagHelperOutput) => void);
 }
 
 
@@ -269,8 +275,9 @@ export interface __FormActionTagHelper$views {
 export type FormActionTagHelper = FormActionTagHelper$instance & __FormActionTagHelper$views;
 
 
-export interface FormTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface FormTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -282,13 +289,12 @@ export interface FormTagHelper$instance extends TagHelper, Microsoft_AspNetCore_
     Controller: string;
     Fragment: string;
     Method: string;
-    readonly Order: int;
     Page: string;
     PageHandler: string;
     Route: string;
     RouteValues: IDictionary_2<System_Internal.String, System_Internal.String>;
     ViewContext: ViewContext;
-    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    Process: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Process"] & ((context: TagHelperContext, output: TagHelperOutput) => void);
 }
 
 
@@ -321,16 +327,17 @@ export const GlobbingUrlBuilder: {
 
 export type GlobbingUrlBuilder = GlobbingUrlBuilder$instance;
 
-export interface ImageTagHelper$instance extends UrlResolutionTagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface ImageTagHelper$instance extends Microsoft_AspNetCore_Mvc_Razor_TagHelpers_Internal.UrlResolutionTagHelper$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     AppendVersion: boolean;
-    readonly Order: int;
     Src: string;
-    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    Process: Microsoft_AspNetCore_Mvc_Razor_TagHelpers_Internal.UrlResolutionTagHelper$instance["Process"] & ((context: TagHelperContext, output: TagHelperOutput) => void);
 }
 
 
@@ -347,8 +354,9 @@ export interface __ImageTagHelper$views {
 export type ImageTagHelper = ImageTagHelper$instance & __ImageTagHelper$views;
 
 
-export interface InputTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface InputTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -358,10 +366,9 @@ export interface InputTagHelper$instance extends TagHelper, Microsoft_AspNetCore
     FormName: string;
     InputTypeName: string;
     Name: string;
-    readonly Order: int;
     Value: string;
     ViewContext: ViewContext;
-    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    Process: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Process"] & ((context: TagHelperContext, output: TagHelperOutput) => void);
 }
 
 
@@ -377,16 +384,16 @@ export interface __InputTagHelper$views {
 export type InputTagHelper = InputTagHelper$instance & __InputTagHelper$views;
 
 
-export interface LabelTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface LabelTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     For: ModelExpression;
-    readonly Order: int;
     ViewContext: ViewContext;
-    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    ProcessAsync: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["ProcessAsync"] & ((context: TagHelperContext, output: TagHelperOutput) => Task);
 }
 
 
@@ -402,8 +409,10 @@ export interface __LabelTagHelper$views {
 export type LabelTagHelper = LabelTagHelper$instance & __LabelTagHelper$views;
 
 
-export interface LinkTagHelper$instance extends UrlResolutionTagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface LinkTagHelper$instance extends Microsoft_AspNetCore_Mvc_Razor_TagHelpers_Internal.UrlResolutionTagHelper$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -419,9 +428,8 @@ export interface LinkTagHelper$instance extends UrlResolutionTagHelper, Microsof
     Href: string;
     HrefExclude: string;
     HrefInclude: string;
-    readonly Order: int;
     SuppressFallbackIntegrity: boolean;
-    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    Process: Microsoft_AspNetCore_Mvc_Razor_TagHelpers_Internal.UrlResolutionTagHelper$instance["Process"] & ((context: TagHelperContext, output: TagHelperOutput) => void);
 }
 
 
@@ -437,16 +445,16 @@ export interface __LinkTagHelper$views {
 export type LinkTagHelper = LinkTagHelper$instance & __LinkTagHelper$views;
 
 
-export interface OptionTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface OptionTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
-    readonly Order: int;
     Value: string;
     ViewContext: ViewContext;
-    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    ProcessAsync: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["ProcessAsync"] & ((context: TagHelperContext, output: TagHelperOutput) => Task);
 }
 
 
@@ -462,8 +470,9 @@ export interface __OptionTagHelper$views {
 export type OptionTagHelper = OptionTagHelper$instance & __OptionTagHelper$views;
 
 
-export interface PartialTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface PartialTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -475,7 +484,7 @@ export interface PartialTagHelper$instance extends TagHelper, Microsoft_AspNetCo
     Optional: boolean;
     ViewContext: ViewContext;
     ViewData: ViewDataDictionary;
-    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    ProcessAsync: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["ProcessAsync"] & ((context: TagHelperContext, output: TagHelperOutput) => Task);
 }
 
 
@@ -491,8 +500,9 @@ export interface __PartialTagHelper$views {
 export type PartialTagHelper = PartialTagHelper$instance & __PartialTagHelper$views;
 
 
-export interface PersistComponentStateTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface PersistComponentStateTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_PersistComponentStateTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -500,7 +510,7 @@ export interface PersistComponentStateTagHelper$instance extends TagHelper, Micr
     get PersistenceMode(): Nullable_1<PersistenceMode>;
     set PersistenceMode(value: Nullable_1<PersistenceMode> | PersistenceMode);
     ViewContext: ViewContext;
-    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    ProcessAsync: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["ProcessAsync"] & ((context: TagHelperContext, output: TagHelperOutput) => Task);
 }
 
 
@@ -516,16 +526,16 @@ export interface __PersistComponentStateTagHelper$views {
 export type PersistComponentStateTagHelper = PersistComponentStateTagHelper$instance & __PersistComponentStateTagHelper$views;
 
 
-export interface RenderAtEndOfFormTagHelper$instance extends TagHelper, ITagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface RenderAtEndOfFormTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
-    readonly Order: int;
     ViewContext: ViewContext;
-    Init(context: TagHelperContext): void;
-    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    Init: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Init"] & ((context: TagHelperContext) => void);
+    ProcessAsync: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["ProcessAsync"] & ((context: TagHelperContext, output: TagHelperOutput) => Task);
 }
 
 
@@ -541,8 +551,10 @@ export interface __RenderAtEndOfFormTagHelper$views {
 export type RenderAtEndOfFormTagHelper = RenderAtEndOfFormTagHelper$instance & __RenderAtEndOfFormTagHelper$views;
 
 
-export interface ScriptTagHelper$instance extends UrlResolutionTagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface ScriptTagHelper$instance extends Microsoft_AspNetCore_Mvc_Razor_TagHelpers_Internal.UrlResolutionTagHelper$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_ScriptTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -554,13 +566,12 @@ export interface ScriptTagHelper$instance extends UrlResolutionTagHelper, Micros
     FallbackSrcInclude: string;
     FallbackTestExpression: string;
     ImportMap: ImportMapDefinition;
-    readonly Order: int;
     Src: string;
     SrcExclude: string;
     SrcInclude: string;
     SuppressFallbackIntegrity: boolean;
     Type: string;
-    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    ProcessAsync: Microsoft_AspNetCore_Mvc_Razor_TagHelpers_Internal.UrlResolutionTagHelper$instance["ProcessAsync"] & ((context: TagHelperContext, output: TagHelperOutput) => Task);
 }
 
 
@@ -576,8 +587,9 @@ export interface __ScriptTagHelper$views {
 export type ScriptTagHelper = ScriptTagHelper$instance & __ScriptTagHelper$views;
 
 
-export interface SelectTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface SelectTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -585,10 +597,9 @@ export interface SelectTagHelper$instance extends TagHelper, Microsoft_AspNetCor
     For: ModelExpression;
     Items: IEnumerable_1<SelectListItem>;
     Name: string;
-    readonly Order: int;
     ViewContext: ViewContext;
-    Init(context: TagHelperContext): void;
-    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    Init: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Init"] & ((context: TagHelperContext) => void);
+    Process: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Process"] & ((context: TagHelperContext, output: TagHelperOutput) => void);
 }
 
 
@@ -604,17 +615,17 @@ export interface __SelectTagHelper$views {
 export type SelectTagHelper = SelectTagHelper$instance & __SelectTagHelper$views;
 
 
-export interface TextAreaTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface TextAreaTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_TextAreaTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     For: ModelExpression;
     Name: string;
-    readonly Order: int;
     ViewContext: ViewContext;
-    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    Process: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Process"] & ((context: TagHelperContext, output: TagHelperOutput) => void);
 }
 
 
@@ -630,16 +641,16 @@ export interface __TextAreaTagHelper$views {
 export type TextAreaTagHelper = TextAreaTagHelper$instance & __TextAreaTagHelper$views;
 
 
-export interface ValidationMessageTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface ValidationMessageTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     For: ModelExpression;
-    readonly Order: int;
     ViewContext: ViewContext;
-    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    ProcessAsync: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["ProcessAsync"] & ((context: TagHelperContext, output: TagHelperOutput) => Task);
 }
 
 
@@ -655,16 +666,16 @@ export interface __ValidationMessageTagHelper$views {
 export type ValidationMessageTagHelper = ValidationMessageTagHelper$instance & __ValidationMessageTagHelper$views;
 
 
-export interface ValidationSummaryTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface ValidationSummaryTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
-    readonly Order: int;
     ValidationSummary: ValidationSummary;
     ViewContext: ViewContext;
-    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    Process: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Process"] & ((context: TagHelperContext, output: TagHelperOutput) => void);
 }
 
 

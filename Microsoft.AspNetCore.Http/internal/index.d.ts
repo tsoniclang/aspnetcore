@@ -47,19 +47,23 @@ import type { IFileInfo } from "@tsonic/microsoft-extensions/Microsoft.Extension
 import * as Microsoft_Extensions_Primitives_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 import type { StringSegment, StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
-export enum CookieSecurePolicy {
-    SameAsRequest = 0,
-    Always = 1,
-    None = 2
-}
+export type CookieSecurePolicy = number & { readonly __tsonic_type_Microsoft_AspNetCore_Http_CookieSecurePolicy: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const CookieSecurePolicy: {
+    readonly SameAsRequest: CookieSecurePolicy;
+    readonly Always: CookieSecurePolicy;
+    readonly None: CookieSecurePolicy;
+};
 
 
-export enum SameSiteMode {
-    Unspecified = -1,
-    None = 0,
-    Lax = 1,
-    Strict = 2
-}
+export type SameSiteMode = number & { readonly __tsonic_type_Microsoft_AspNetCore_Http_SameSiteMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SameSiteMode: {
+    readonly Unspecified: SameSiteMode;
+    readonly None: SameSiteMode;
+    readonly Lax: SameSiteMode;
+    readonly Strict: SameSiteMode;
+};
 
 
 export type EndpointFilterDelegate = (context: EndpointFilterInvocationContext) => ValueTask_1<unknown>;
@@ -68,13 +72,13 @@ export type EndpointFilterDelegate = (context: EndpointFilterInvocationContext) 
 export type RequestDelegate = (context: HttpContext) => Task;
 
 
-export interface IBindableFromHttpContext_1$instance<TSelf extends (object | null) & IBindableFromHttpContext_1<TSelf>> {
+export interface IBindableFromHttpContext_1$instance<TSelf extends (object | null) & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IBindableFromHttpContext_1: never }> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IBindableFromHttpContext_1: never;
 
 }
 
 
-export type IBindableFromHttpContext_1<TSelf extends (object | null) & IBindableFromHttpContext_1<TSelf>> = IBindableFromHttpContext_1$instance<TSelf>;
+export type IBindableFromHttpContext_1<TSelf extends (object | null) & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IBindableFromHttpContext_1: never }> = IBindableFromHttpContext_1$instance<TSelf>;
 
 export interface IContentTypeHttpResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
@@ -104,8 +108,10 @@ export interface IFileHttpResult$instance {
 
 export type IFileHttpResult = IFileHttpResult$instance;
 
-export interface IFormCollection$instance extends IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>>, IEnumerable {
+export interface IFormCollection$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IFormCollection: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
     readonly Keys: ICollection_1<System_Internal.String>;
@@ -114,8 +120,6 @@ export interface IFormCollection$instance extends IEnumerable_1<KeyValuePair_2<S
     TryGetValue(key: string, value: StringValues): boolean;
 }
 
-
-export interface IFormCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>> {}
 
 export type IFormCollection = IFormCollection$instance & { readonly [key: string]: StringValues; };
 
@@ -136,20 +140,26 @@ export interface IFormFile$instance {
 
 export type IFormFile = IFormFile$instance;
 
-export interface IFormFileCollection$instance extends IReadOnlyList_1<IFormFile>, IEnumerable_1<IFormFile>, IEnumerable, IReadOnlyCollection_1<IFormFile> {
+export interface IFormFileCollection$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IFormFileCollection: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     GetFile(name: string): IFormFile | null;
     GetFiles(name: string): IReadOnlyList_1<IFormFile>;
 }
 
 
-export interface IFormFileCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<IFormFile>, System_Collections_Generic_Internal.IReadOnlyCollection_1<IFormFile>, System_Collections_Generic_Internal.IReadOnlyList_1<IFormFile> {}
-
 export type IFormFileCollection = IFormFileCollection$instance & { readonly [name: string]: IFormFile | null; };
 
-export interface IHeaderDictionary$instance extends IDictionary_2<System_Internal.String, StringValues>, ICollection_1<KeyValuePair_2<System_Internal.String, StringValues>>, IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>>, IEnumerable {
+export interface IHeaderDictionary$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IHeaderDictionary: never;
+    readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     get ContentLength(): Nullable_1<System_Internal.Int64>;
     set ContentLength(value: Nullable_1<System_Internal.Int64> | long);
@@ -245,8 +255,6 @@ export interface IHeaderDictionary$instance extends IDictionary_2<System_Interna
 }
 
 
-export interface IHeaderDictionary$instance extends System_Collections_Generic_Internal.ICollection_1<KeyValuePair_2<System_Internal.String, StringValues>>, System_Collections_Generic_Internal.IDictionary_2<System_Internal.String, StringValues>, System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>> {}
-
 export type IHeaderDictionary = IHeaderDictionary$instance & { [key: string]: StringValues; };
 
 export interface IHttpContextAccessor$instance {
@@ -317,8 +325,10 @@ export interface IProblemDetailsWriter$instance {
 
 export type IProblemDetailsWriter = IProblemDetailsWriter$instance;
 
-export interface IQueryCollection$instance extends IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>>, IEnumerable {
+export interface IQueryCollection$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IQueryCollection: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
     readonly Keys: ICollection_1<System_Internal.String>;
@@ -327,12 +337,12 @@ export interface IQueryCollection$instance extends IEnumerable_1<KeyValuePair_2<
 }
 
 
-export interface IQueryCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>> {}
-
 export type IQueryCollection = IQueryCollection$instance & { readonly [key: string]: StringValues; };
 
-export interface IRequestCookieCollection$instance extends IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>, IEnumerable {
+export interface IRequestCookieCollection$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IRequestCookieCollection: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
     readonly Keys: ICollection_1<System_Internal.String>;
@@ -341,18 +351,16 @@ export interface IRequestCookieCollection$instance extends IEnumerable_1<KeyValu
 }
 
 
-export interface IRequestCookieCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> {}
-
 export type IRequestCookieCollection = IRequestCookieCollection$instance & { readonly [key: string]: string | null; };
 
 export interface IResponseCookies$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResponseCookies: never;
 
-    Append(keyValuePairs: ReadOnlySpan_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>, options: CookieOptions): void;
-    Append(key: string, value: string, options: CookieOptions): void;
     Append(key: string, value: string): void;
-    Delete(key: string, options: CookieOptions): void;
+    Append(key: string, value: string, options: CookieOptions): void;
+    Append(keyValuePairs: ReadOnlySpan_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>, options: CookieOptions): void;
     Delete(key: string): void;
+    Delete(key: string, options: CookieOptions): void;
 }
 
 
@@ -420,13 +428,14 @@ export type IValueHttpResult_1<TValue extends unknown> = IValueHttpResult_1$inst
 
 export interface FragmentString$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_FragmentString: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly HasValue: boolean;
     readonly Value: string;
-    Equals(other: FragmentString): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: FragmentString): boolean;
     GetHashCode(): int;
     ToString(): string;
     ToUriComponent(): string;
@@ -445,6 +454,7 @@ export type FragmentString = FragmentString$instance;
 
 export interface HostString$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_HostString: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -452,8 +462,8 @@ export interface HostString$instance {
     readonly Host: string;
     readonly Port: Nullable_1<System_Internal.Int32>;
     readonly Value: string | null;
-    Equals(other: HostString): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: HostString): boolean;
     GetHashCode(): int;
     ToString(): string;
     ToUriComponent(): string;
@@ -473,6 +483,7 @@ export type HostString = HostString$instance;
 
 export interface PathString$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_PathString: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -480,16 +491,16 @@ export interface PathString$instance {
     readonly Value: string | null;
     Add(other: PathString): PathString;
     Add(other: QueryString): string;
+    Equals(obj: unknown | null): boolean;
     Equals(other: PathString): boolean;
     Equals(other: PathString, comparisonType: StringComparison): boolean;
-    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     StartsWithSegments(other: PathString): boolean;
     StartsWithSegments(other: PathString, comparisonType: StringComparison): boolean;
-    StartsWithSegments(other: PathString, remaining: PathString): boolean;
+    StartsWithSegments(other: PathString, comparisonType: StringComparison, matched: PathString, remaining: PathString): boolean;
     StartsWithSegments(other: PathString, comparisonType: StringComparison, remaining: PathString): boolean;
     StartsWithSegments(other: PathString, matched: PathString, remaining: PathString): boolean;
-    StartsWithSegments(other: PathString, comparisonType: StringComparison, matched: PathString, remaining: PathString): boolean;
+    StartsWithSegments(other: PathString, remaining: PathString): boolean;
     ToString(): string;
     ToUriComponent(): string;
 }
@@ -507,15 +518,16 @@ export type PathString = PathString$instance;
 
 export interface QueryString$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_QueryString: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly HasValue: boolean;
     readonly Value: string | null;
-    Add(other: QueryString): QueryString;
     Add(name: string, value: string): QueryString;
-    Equals(other: QueryString): boolean;
+    Add(other: QueryString): QueryString;
     Equals(obj: unknown | null): boolean;
+    Equals(other: QueryString): boolean;
     GetHashCode(): int;
     ToString(): string;
     ToUriComponent(): string;
@@ -535,8 +547,9 @@ export const QueryString: {
 
 export type QueryString = QueryString$instance;
 
-export interface AllowCookieRedirectAttribute$instance extends Attribute, IAllowCookieRedirectMetadata {
+export interface AllowCookieRedirectAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_AllowCookieRedirectAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IAllowCookieRedirectMetadata: never;
 
@@ -550,8 +563,9 @@ export const AllowCookieRedirectAttribute: {
 
 export type AllowCookieRedirectAttribute = AllowCookieRedirectAttribute$instance;
 
-export interface AsParametersAttribute$instance extends Attribute {
+export interface AsParametersAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_AsParametersAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
 }
 
@@ -563,8 +577,11 @@ export const AsParametersAttribute: {
 
 export type AsParametersAttribute = AsParametersAttribute$instance;
 
-export interface BadHttpRequestException$instance extends IOException {
+export interface BadHttpRequestException$instance extends System_IO_Internal.IOException {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_BadHttpRequestException: never;
+    readonly __tsonic_type_System_Exception: never;
+    readonly __tsonic_type_System_IO_IOException: never;
+    readonly __tsonic_type_System_SystemException: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -624,7 +641,7 @@ export interface ConnectionInfo$instance {
 }
 
 
-export const ConnectionInfo: (abstract new() => ConnectionInfo) & {
+export const ConnectionInfo: {
 };
 
 
@@ -688,12 +705,11 @@ export const CookieOptions: {
 
 export type CookieOptions = CookieOptions$instance;
 
-export interface DefaultEndpointFilterInvocationContext$instance extends EndpointFilterInvocationContext {
+export interface DefaultEndpointFilterInvocationContext$instance extends EndpointFilterInvocationContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_DefaultEndpointFilterInvocationContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_EndpointFilterInvocationContext: never;
 
-    readonly Arguments: IList_1<unknown | null>;
-    readonly HttpContext: HttpContext;
-    GetArgument<T extends unknown>(index: int): T;
+    GetArgument: EndpointFilterInvocationContext$instance["GetArgument"] & (<T extends unknown>(index: int) => T);
 }
 
 
@@ -704,24 +720,14 @@ export const DefaultEndpointFilterInvocationContext: {
 
 export type DefaultEndpointFilterInvocationContext = DefaultEndpointFilterInvocationContext$instance;
 
-export interface DefaultHttpContext$instance extends HttpContext {
+export interface DefaultHttpContext$instance extends HttpContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_DefaultHttpContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_HttpContext: never;
 
-    readonly Connection: ConnectionInfo;
-    readonly Features: IFeatureCollection;
     FormOptions: FormOptions;
     readonly HttpContext: HttpContext;
-    Items: IDictionary_2<unknown, unknown | null>;
-    readonly Request: HttpRequest;
-    RequestAborted: CancellationToken;
-    RequestServices: IServiceProvider;
-    readonly Response: HttpResponse;
     ServiceScopeFactory: IServiceScopeFactory;
-    Session: ISession;
-    TraceIdentifier: string;
-    User: ClaimsPrincipal;
-    readonly WebSockets: WebSocketManager;
-    Abort(): void;
+    Abort: HttpContext$instance["Abort"] & (() => void);
     Initialize(features: IFeatureCollection): void;
     Uninitialize(): void;
 }
@@ -735,7 +741,7 @@ export const DefaultHttpContext: {
 
 export type DefaultHttpContext = DefaultHttpContext$instance;
 
-export interface DefaultHttpContextFactory$instance extends IHttpContextFactory$instance {
+export interface DefaultHttpContextFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_DefaultHttpContextFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IHttpContextFactory: never;
@@ -757,8 +763,9 @@ export interface __DefaultHttpContextFactory$views {
 export type DefaultHttpContextFactory = DefaultHttpContextFactory$instance & __DefaultHttpContextFactory$views;
 
 
-export interface DisableHttpMetricsAttribute$instance extends Attribute, IDisableHttpMetricsMetadata {
+export interface DisableHttpMetricsAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_DisableHttpMetricsAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IDisableHttpMetricsMetadata: never;
 
@@ -790,8 +797,9 @@ export const Endpoint: {
 
 export type Endpoint = Endpoint$instance;
 
-export interface EndpointDescriptionAttribute$instance extends Attribute, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointDescriptionMetadata$instance {
+export interface EndpointDescriptionAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_EndpointDescriptionAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointDescriptionMetadata: never;
 
@@ -836,7 +844,7 @@ export interface EndpointFilterInvocationContext$instance {
 }
 
 
-export const EndpointFilterInvocationContext: (abstract new() => EndpointFilterInvocationContext) & {
+export const EndpointFilterInvocationContext: {
     Create<T extends unknown>(httpContext: HttpContext, arg: T): EndpointFilterInvocationContext;
     Create<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6, arg7: T7, arg8: T8): EndpointFilterInvocationContext;
     Create<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6, arg7: T7): EndpointFilterInvocationContext;
@@ -878,6 +886,7 @@ export type EndpointMetadataCollection = EndpointMetadataCollection$instance & {
 
 export interface EndpointMetadataCollection_Enumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_EndpointMetadataCollection_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
@@ -897,8 +906,9 @@ export const EndpointMetadataCollection_Enumerator: {
 
 export type EndpointMetadataCollection_Enumerator = EndpointMetadataCollection_Enumerator$instance;
 
-export interface EndpointSummaryAttribute$instance extends Attribute, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointSummaryMetadata$instance {
+export interface EndpointSummaryAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_EndpointSummaryAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointSummaryMetadata: never;
 
@@ -927,7 +937,7 @@ export interface FormCollection$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
-    Files: IFormFileCollection;
+    readonly Files: IFormFileCollection;
     readonly Keys: ICollection_1<System_Internal.String>;
     ContainsKey(key: string): boolean;
     GetEnumerator(): FormCollection_Enumerator;
@@ -950,6 +960,7 @@ export type FormCollection = FormCollection$instance & __FormCollection$views & 
 
 export interface FormCollection_Enumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_FormCollection_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
@@ -998,8 +1009,9 @@ export interface __FormFile$views {
 export type FormFile = FormFile$instance & __FormFile$views;
 
 
-export interface FormFileCollection$instance extends List_1<IFormFile>, IFormFileCollection$instance, System_Collections_Generic_Internal.ICollection_1<IFormFile>, System_Collections_Generic_Internal.IList_1<IFormFile> {
+export interface FormFileCollection$instance extends System_Collections_Generic_Internal.List_1<IFormFile> {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_FormFileCollection: never;
+    readonly __tsonic_type_System_Collections_Generic_List_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IFormFileCollection: never;
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
@@ -1028,7 +1040,7 @@ export interface __FormFileCollection$views {
 export type FormFileCollection = FormFileCollection$instance & __FormFileCollection$views & { readonly [name: string]: IFormFile | null; };
 
 
-export interface HeaderDictionary$instance extends IHeaderDictionary$instance {
+export interface HeaderDictionary$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_HeaderDictionary: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IHeaderDictionary: never;
@@ -1072,6 +1084,7 @@ export type HeaderDictionary = HeaderDictionary$instance & __HeaderDictionary$vi
 
 export interface HeaderDictionary_Enumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_HeaderDictionary_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
@@ -1109,13 +1122,13 @@ export interface HttpContext$instance {
 }
 
 
-export const HttpContext: (abstract new() => HttpContext) & {
+export const HttpContext: {
 };
 
 
 export type HttpContext = HttpContext$instance;
 
-export interface HttpContextAccessor$instance extends IHttpContextAccessor$instance {
+export interface HttpContextAccessor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_HttpContextAccessor: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IHttpContextAccessor: never;
@@ -1165,7 +1178,7 @@ export interface HttpRequest$instance {
 }
 
 
-export const HttpRequest: (abstract new() => HttpRequest) & {
+export const HttpRequest: {
 };
 
 
@@ -1186,10 +1199,10 @@ export interface HttpResponse$instance {
     readonly HttpContext: HttpContext;
     StatusCode: int;
     CompleteAsync(): Task;
-    OnCompleted(callback: Func_2<unknown, Task>, state: unknown): void;
     OnCompleted(callback: Func_1<Task>): void;
-    OnStarting(callback: Func_2<unknown, Task>, state: unknown): void;
+    OnCompleted(callback: Func_2<unknown, Task>, state: unknown): void;
     OnStarting(callback: Func_1<Task>): void;
+    OnStarting(callback: Func_2<unknown, Task>, state: unknown): void;
     Redirect(location: string): void;
     Redirect(location: string, permanent: boolean): void;
     RegisterForDispose(disposable: IDisposable): void;
@@ -1198,14 +1211,15 @@ export interface HttpResponse$instance {
 }
 
 
-export const HttpResponse: (abstract new() => HttpResponse) & {
+export const HttpResponse: {
 };
 
 
 export type HttpResponse = HttpResponse$instance;
 
-export interface HttpValidationProblemDetails$instance extends ProblemDetails {
+export interface HttpValidationProblemDetails$instance extends Microsoft_AspNetCore_Mvc_Internal.ProblemDetails$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_HttpValidationProblemDetails: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProblemDetails: never;
 
     Errors: IDictionary_2<System_Internal.String, string[]>;
 }
@@ -1220,7 +1234,7 @@ export const HttpValidationProblemDetails: {
 
 export type HttpValidationProblemDetails = HttpValidationProblemDetails$instance;
 
-export interface MiddlewareFactory$instance extends IMiddlewareFactory$instance {
+export interface MiddlewareFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_MiddlewareFactory: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IMiddlewareFactory: never;
@@ -1281,12 +1295,11 @@ export interface ProducesResponseTypeMetadata$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IProducesResponseTypeMetadata: never;
 
-    ContentTypes: IEnumerable_1<System_Internal.String>;
+    readonly ContentTypes: IEnumerable_1<System_Internal.String>;
     get Description(): string | null;
     set Description(value: string | null);
-    StatusCode: int;
-    get Type(): Type | null;
-    set Type(value: Type | null);
+    readonly StatusCode: int;
+    readonly Type: Type | null;
     ToString(): string;
 }
 
@@ -1303,7 +1316,7 @@ export interface __ProducesResponseTypeMetadata$views {
 export type ProducesResponseTypeMetadata = ProducesResponseTypeMetadata$instance & __ProducesResponseTypeMetadata$views;
 
 
-export interface QueryCollection$instance extends IQueryCollection$instance {
+export interface QueryCollection$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_QueryCollection: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IQueryCollection: never;
@@ -1336,6 +1349,7 @@ export type QueryCollection = QueryCollection$instance & __QueryCollection$views
 
 export interface QueryCollection_Enumerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_QueryCollection_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
@@ -1434,8 +1448,9 @@ export interface __StreamResponseBodyFeature$views {
 export type StreamResponseBodyFeature = StreamResponseBodyFeature$instance & __StreamResponseBodyFeature$views;
 
 
-export interface TagsAttribute$instance extends Attribute, Microsoft_AspNetCore_Http_Metadata_Internal.ITagsMetadata$instance {
+export interface TagsAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_TagsAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_ITagsMetadata: never;
 
@@ -1484,24 +1499,24 @@ export interface WebSocketManager$instance {
     readonly IsWebSocketRequest: boolean;
     readonly WebSocketRequestedProtocols: IList_1<System_Internal.String>;
     AcceptWebSocketAsync(): Task_1<WebSocket>;
-    AcceptWebSocketAsync(subProtocol: string | null): Task_1<WebSocket>;
     AcceptWebSocketAsync(acceptContext: WebSocketAcceptContext): Task_1<WebSocket>;
+    AcceptWebSocketAsync(subProtocol: string | null): Task_1<WebSocket>;
 }
 
 
-export const WebSocketManager: (abstract new() => WebSocketManager) & {
+export const WebSocketManager: {
 };
 
 
 export type WebSocketManager = WebSocketManager$instance;
 
 export abstract class EndpointFilterExtensions$instance {
-    static AddEndpointFilter<TFilterType extends unknown & IEndpointFilter>(builder: RouteHandlerBuilder): RouteHandlerBuilder;
-    static AddEndpointFilter<TFilterType extends unknown & IEndpointFilter>(builder: RouteGroupBuilder): RouteGroupBuilder;
-    static AddEndpointFilter<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, filter: IEndpointFilter): TBuilder;
-    static AddEndpointFilter<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, routeHandlerFilter: Func_3<EndpointFilterInvocationContext, EndpointFilterDelegate, ValueTask_1<unknown>>): TBuilder;
-    static AddEndpointFilter<TBuilder extends unknown & IEndpointConventionBuilder, TFilterType extends unknown & IEndpointFilter>(builder: TBuilder): TBuilder;
-    static AddEndpointFilterFactory<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, filterFactory: Func_3<EndpointFilterFactoryContext, EndpointFilterDelegate, EndpointFilterDelegate>): TBuilder;
+    static AddEndpointFilter<TFilterType extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IEndpointFilter: never }>(builder: RouteHandlerBuilder): RouteHandlerBuilder;
+    static AddEndpointFilter<TFilterType extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IEndpointFilter: never }>(builder: RouteGroupBuilder): RouteGroupBuilder;
+    static AddEndpointFilter<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, filter: IEndpointFilter): TBuilder;
+    static AddEndpointFilter<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, routeHandlerFilter: Func_3<EndpointFilterInvocationContext, EndpointFilterDelegate, ValueTask_1<unknown>>): TBuilder;
+    static AddEndpointFilter<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }, TFilterType extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Http_IEndpointFilter: never }>(builder: TBuilder): TBuilder;
+    static AddEndpointFilterFactory<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, filterFactory: Func_3<EndpointFilterFactoryContext, EndpointFilterDelegate, EndpointFilterDelegate>): TBuilder;
 }
 
 
@@ -1639,17 +1654,17 @@ export abstract class OpenApiRouteHandlerBuilderExtensions$instance {
     static Accepts(builder: RouteHandlerBuilder, requestType: Type, isOptional: boolean, contentType: string, ...additionalContentTypes: string[]): RouteHandlerBuilder;
     static Accepts(builder: RouteHandlerBuilder, requestType: Type, contentType: string, ...additionalContentTypes: string[]): RouteHandlerBuilder;
     static ExcludeFromDescription(builder: RouteHandlerBuilder): RouteHandlerBuilder;
-    static ExcludeFromDescription<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
+    static ExcludeFromDescription<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder): TBuilder;
     static Produces<TResponse extends unknown>(builder: RouteHandlerBuilder, statusCode?: int, contentType?: string | null, ...additionalContentTypes: string[]): RouteHandlerBuilder;
     static Produces(builder: RouteHandlerBuilder, statusCode: int, responseType?: Type | null, contentType?: string | null, ...additionalContentTypes: string[]): RouteHandlerBuilder;
     static ProducesProblem(builder: RouteHandlerBuilder, statusCode: int, contentType?: string | null): RouteHandlerBuilder;
-    static ProducesProblem<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, statusCode: int, contentType?: string | null): TBuilder;
+    static ProducesProblem<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, statusCode: int, contentType?: string | null): TBuilder;
     static ProducesValidationProblem(builder: RouteHandlerBuilder, statusCode?: int, contentType?: string | null): RouteHandlerBuilder;
-    static ProducesValidationProblem<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, statusCode?: int, contentType?: string | null): TBuilder;
-    static WithDescription<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, description: string): TBuilder;
-    static WithSummary<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, summary: string): TBuilder;
+    static ProducesValidationProblem<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, statusCode?: int, contentType?: string | null): TBuilder;
+    static WithDescription<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, description: string): TBuilder;
+    static WithSummary<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, summary: string): TBuilder;
     static WithTags(builder: RouteHandlerBuilder, ...tags: string[]): RouteHandlerBuilder;
-    static WithTags<TBuilder extends unknown & IEndpointConventionBuilder>(builder: TBuilder, ...tags: string[]): TBuilder;
+    static WithTags<TBuilder extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never }>(builder: TBuilder, ...tags: string[]): TBuilder;
 }
 
 

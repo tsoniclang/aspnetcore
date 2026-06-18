@@ -88,19 +88,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer::.ctor():void",
-            "metadataToken": 100664711,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
-          }
-        ]
+        "constructors": []
       }
     ]
   }

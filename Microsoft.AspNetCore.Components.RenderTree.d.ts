@@ -12,7 +12,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Cross-namespace type imports for constraints
 import type { ComponentState } from './Microsoft.AspNetCore.Components.Rendering/internal/index.js';
 import type { JSComponentInterop } from './Microsoft.AspNetCore.Components.Web.Infrastructure/internal/index.js';
-import type { Dispatcher, ElementReference, ElementReferenceContext, IComponent, IComponentActivator, IComponentRenderMode, ParameterView, RendererInfo, ResourceAssetCollection } from './Microsoft.AspNetCore.Components/internal/index.js';
+import type { Dispatcher, ElementReference, IComponent, IComponentActivator, IComponentRenderMode, RendererInfo, ResourceAssetCollection } from './Microsoft.AspNetCore.Components/internal/index.js';
 import type { IEnumerable as IEnumerable__System_Collections_Generic } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';
 import type { Action, Boolean as ClrBoolean, Byte, Enum, EventArgs, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, UInt64, UnhandledExceptionEventHandler, ValueType, Void } from '@tsonic/dotnet/System.js';

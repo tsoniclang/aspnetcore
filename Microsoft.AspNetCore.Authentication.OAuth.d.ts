@@ -21,7 +21,7 @@ import type { ClaimsIdentity, ClaimsPrincipal } from '@tsonic/dotnet/System.Secu
 import type { UrlEncoder } from '@tsonic/dotnet/System.Text.Encodings.Web.js';
 import type { JsonDocument, JsonElement } from '@tsonic/dotnet/System.Text.Json.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
-import type { ILogger, ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
+import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 import type { IOptionsMonitor } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

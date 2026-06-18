@@ -14,18 +14,22 @@ import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Decimal, Enum, Exception, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum RoutePatternParameterKind {
-    Standard = 0,
-    Optional = 1,
-    CatchAll = 2
-}
+export type RoutePatternParameterKind = number & { readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternParameterKind: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const RoutePatternParameterKind: {
+    readonly Standard: RoutePatternParameterKind;
+    readonly Optional: RoutePatternParameterKind;
+    readonly CatchAll: RoutePatternParameterKind;
+};
 
 
-export enum RoutePatternPartKind {
-    Literal = 0,
-    Parameter = 1,
-    Separator = 2
-}
+export type RoutePatternPartKind = number & { readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternPartKind: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const RoutePatternPartKind: {
+    readonly Literal: RoutePatternPartKind;
+    readonly Parameter: RoutePatternPartKind;
+    readonly Separator: RoutePatternPartKind;
+};
 
 
 export interface RoutePattern$instance {
@@ -50,13 +54,14 @@ export const RoutePattern: {
 
 export type RoutePattern = RoutePattern$instance;
 
-export interface RoutePatternException$instance extends Exception {
+export interface RoutePatternException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly Pattern: string;
-    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
+    GetObjectData: System_Internal.Exception["GetObjectData"] & ((info: SerializationInfo, context: StreamingContext) => void);
 }
 
 
@@ -67,8 +72,9 @@ export const RoutePatternException: {
 
 export type RoutePatternException = RoutePatternException$instance;
 
-export interface RoutePatternLiteralPart$instance extends RoutePatternPart {
+export interface RoutePatternLiteralPart$instance extends RoutePatternPart$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternLiteralPart: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternPart: never;
 
     readonly Content: string;
 }
@@ -80,8 +86,9 @@ export const RoutePatternLiteralPart: {
 
 export type RoutePatternLiteralPart = RoutePatternLiteralPart$instance;
 
-export interface RoutePatternParameterPart$instance extends RoutePatternPart {
+export interface RoutePatternParameterPart$instance extends RoutePatternPart$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternParameterPart: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternPart: never;
 
     readonly Default: unknown | null;
     readonly EncodeSlashes: boolean;
@@ -143,7 +150,8 @@ export const RoutePatternPathSegment: {
 
 export type RoutePatternPathSegment = RoutePatternPathSegment$instance;
 
-export interface RoutePatternSeparatorPart$instance extends RoutePatternPart {
+export interface RoutePatternSeparatorPart$instance extends RoutePatternPart$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternPart: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternSeparatorPart: never;
 
     readonly Content: string;
@@ -159,12 +167,12 @@ export type RoutePatternSeparatorPart = RoutePatternSeparatorPart$instance;
 export interface RoutePatternTransformer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternTransformer: never;
 
-    SubstituteRequiredValues(original: RoutePattern, requiredValues: unknown): RoutePattern | null;
     SubstituteRequiredValues(original: RoutePattern, requiredValues: RouteValueDictionary): RoutePattern | null;
+    SubstituteRequiredValues(original: RoutePattern, requiredValues: unknown): RoutePattern | null;
 }
 
 
-export const RoutePatternTransformer: (abstract new() => RoutePatternTransformer) & {
+export const RoutePatternTransformer: {
 };
 
 

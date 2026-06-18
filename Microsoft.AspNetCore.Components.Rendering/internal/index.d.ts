@@ -40,23 +40,23 @@ export interface RenderTreeBuilder$instance {
 
     readonly __tsonic_iface_System_IDisposable: never;
 
+    AddAttribute(sequence: int, frame: RenderTreeFrame): void;
     AddAttribute(sequence: int, name: string): void;
+    AddAttribute(sequence: int, name: string, value: EventCallback): void;
+    AddAttribute(sequence: int, name: string, value: Function | null): void;
     AddAttribute(sequence: int, name: string, value: boolean): void;
     AddAttribute(sequence: int, name: string, value: string | null): void;
-    AddAttribute(sequence: int, name: string, value: Function | null): void;
-    AddAttribute(sequence: int, name: string, value: EventCallback): void;
-    AddAttribute<TArgument extends unknown>(sequence: int, name: string, value: EventCallback_1<TArgument>): void;
     AddAttribute(sequence: int, name: string, value: unknown | null): void;
-    AddAttribute(sequence: int, frame: RenderTreeFrame): void;
+    AddAttribute<TArgument extends unknown>(sequence: int, name: string, value: EventCallback_1<TArgument>): void;
     AddComponentParameter(sequence: int, name: string, value: unknown | null): void;
     AddComponentReferenceCapture(sequence: int, componentReferenceCaptureAction: Action_1<unknown>): void;
     AddComponentRenderMode(renderMode: IComponentRenderMode | null): void;
-    AddContent(sequence: int, textContent: string | null): void;
     AddContent(sequence: int, fragment: RenderFragment | null): void;
-    AddContent<TValue extends unknown>(sequence: int, fragment: RenderFragment_1<TValue> | null, value: TValue): void;
-    AddContent(sequence: int, markupContent: Nullable_1<MarkupString>): void;
     AddContent(sequence: int, markupContent: MarkupString): void;
+    AddContent(sequence: int, markupContent: Nullable_1<MarkupString>): void;
+    AddContent(sequence: int, textContent: string | null): void;
     AddContent(sequence: int, textContent: unknown | null): void;
+    AddContent<TValue extends unknown>(sequence: int, fragment: RenderFragment_1<TValue> | null, value: TValue): void;
     AddElementReferenceCapture(sequence: int, elementReferenceCaptureAction: Action_1<ElementReference>): void;
     AddMarkupContent(sequence: int, markupContent: string | null): void;
     AddMultipleAttributes(sequence: int, attributes: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>> | null): void;
@@ -67,8 +67,8 @@ export interface RenderTreeBuilder$instance {
     CloseRegion(): void;
     Dispose(): void;
     GetFrames(): ArrayRange_1<RenderTreeFrame>;
-    OpenComponent<TComponent extends unknown & IComponent>(sequence: int): void;
     OpenComponent(sequence: int, componentType: Type): void;
+    OpenComponent<TComponent extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never }>(sequence: int): void;
     OpenElement(sequence: int, elementName: string): void;
     OpenRegion(sequence: int): void;
     SetKey(value: unknown | null): void;

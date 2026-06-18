@@ -68,12 +68,12 @@ export type TemplateBinder = TemplateBinder$instance;
 export interface TemplateBinderFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_TemplateBinderFactory: never;
 
-    Create(template: RouteTemplate, defaults: RouteValueDictionary): TemplateBinder;
     Create(pattern: RoutePattern): TemplateBinder;
+    Create(template: RouteTemplate, defaults: RouteValueDictionary): TemplateBinder;
 }
 
 
-export const TemplateBinderFactory: (abstract new() => TemplateBinderFactory) & {
+export const TemplateBinderFactory: {
 };
 
 
@@ -98,18 +98,15 @@ export type TemplateMatcher = TemplateMatcher$instance;
 export interface TemplatePart$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_TemplatePart: never;
 
-    get DefaultValue(): unknown | null;
-    set DefaultValue(value: unknown | null);
-    InlineConstraints: IEnumerable_1<InlineConstraint>;
-    IsCatchAll: boolean;
-    IsLiteral: boolean;
-    IsOptional: boolean;
+    readonly DefaultValue: unknown | null;
+    readonly InlineConstraints: IEnumerable_1<InlineConstraint>;
+    readonly IsCatchAll: boolean;
+    readonly IsLiteral: boolean;
+    readonly IsOptional: boolean;
     IsOptionalSeperator: boolean;
-    IsParameter: boolean;
-    get Name(): string | null;
-    set Name(value: string | null);
-    get Text(): string | null;
-    set Text(value: string | null);
+    readonly IsParameter: boolean;
+    readonly Name: string | null;
+    readonly Text: string | null;
     ToRoutePatternPart(): RoutePatternPart;
 }
 

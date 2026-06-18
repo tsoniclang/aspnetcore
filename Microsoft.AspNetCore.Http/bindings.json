@@ -5806,19 +5806,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.ConnectionInfo::.ctor():void",
-            "metadataToken": 100663500,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Http.ConnectionInfo",
-            "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.CookieBuilder",
@@ -7512,19 +7500,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointFilterInvocationContext::.ctor():void",
-            "metadataToken": 100663548,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Http.EndpointFilterInvocationContext",
-            "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointMetadataCollection",
@@ -8103,12 +8079,12 @@
             "targetName": "Files",
             "metadataToken": 385876032,
             "canonicalSignature": ":Microsoft.AspNetCore.Http.IFormFileCollection",
-            "normalizedSignature": "Files|:Microsoft.AspNetCore.Http.IFormFileCollection|static=false|accessor=getset",
+            "normalizedSignature": "Files|:Microsoft.AspNetCore.Http.IFormFileCollection|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -11551,19 +11527,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.HttpContext::.ctor():void",
-            "metadataToken": 100663916,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Http.HttpContext",
-            "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.HttpContextAccessor",
@@ -12046,19 +12010,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.HttpRequest::.ctor():void",
-            "metadataToken": 100663973,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Http.HttpRequest",
-            "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.HttpResponse",
@@ -12452,19 +12404,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.HttpResponse::.ctor():void",
-            "metadataToken": 100663998,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Http.HttpResponse",
-            "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.HttpValidationProblemDetails",
@@ -12875,12 +12815,12 @@
             "targetName": "Type",
             "metadataToken": 385876198,
             "canonicalSignature": ":System.Type",
-            "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
+            "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -12894,12 +12834,12 @@
             "targetName": "StatusCode",
             "metadataToken": 385876199,
             "canonicalSignature": ":System.Int32",
-            "normalizedSignature": "StatusCode|:System.Int32|static=false|accessor=getset",
+            "normalizedSignature": "StatusCode|:System.Int32|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -12932,28 +12872,9 @@
             "targetName": "ContentTypes",
             "metadataToken": 385876201,
             "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "normalizedSignature": "ContentTypes|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+            "normalizedSignature": "ContentTypes|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": true,
-            "isOverride": false,
-            "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Http.ProducesResponseTypeMetadata",
-            "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata::ContentTypes:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "targetName": "ContentTypes",
-            "metadataToken": 385876273,
-            "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "normalizedSignature": "ContentTypes|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-            "emitScope": "ViewOnly",
-            "provenance": "ExplicitView",
             "isIndexer": false,
             "hasGetter": true,
             "hasSetter": false,
@@ -12962,8 +12883,7 @@
             "isVirtual": true,
             "isOverride": false,
             "visibility": "Public",
-            "sourceInterface": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Http.ProducesResponseTypeMetadata",
             "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
           },
           {
@@ -13012,6 +12932,26 @@
             "metadataToken": 385876272,
             "canonicalSignature": ":System.String",
             "normalizedSignature": "Description|:System.String|static=false|accessor=get",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "sourceInterface": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+            "ownerQualifiedName": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+            "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
+          },
+          {
+            "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata::ContentTypes:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "targetName": "ContentTypes",
+            "metadataToken": 385876273,
+            "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "normalizedSignature": "ContentTypes|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
             "emitScope": "ViewOnly",
             "provenance": "ExplicitView",
             "isIndexer": false,
@@ -14425,19 +14365,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.WebSocketManager::.ctor():void",
-            "metadataToken": 100664162,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Http.WebSocketManager",
-            "ownerIdentity": "Microsoft.AspNetCore.Http.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Http.EndpointFilterExtensions",

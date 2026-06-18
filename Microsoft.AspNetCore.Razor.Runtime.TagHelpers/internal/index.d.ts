@@ -19,14 +19,14 @@ export interface TagHelperExecutionContext$instance {
 
     readonly ChildContentRetrieved: boolean;
     readonly Context: TagHelperContext;
-    Items: IDictionary_2<unknown, unknown>;
-    Output: TagHelperOutput;
+    readonly Items: IDictionary_2<unknown, unknown>;
+    readonly Output: TagHelperOutput;
     readonly TagHelpers: IList_1<ITagHelper>;
     Add(tagHelper: ITagHelper): void;
-    AddHtmlAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
     AddHtmlAttribute(attribute: TagHelperAttribute): void;
-    AddTagHelperAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
+    AddHtmlAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
     AddTagHelperAttribute(attribute: TagHelperAttribute): void;
+    AddTagHelperAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
     Reinitialize(tagName: string, tagMode: TagMode, items: IDictionary_2<unknown, unknown>, uniqueId: string, executeChildContentAsync: Func_1<Task>): void;
     SetOutputContentAsync(): Task;
 }

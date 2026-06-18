@@ -1486,19 +1486,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.JSInProcessRuntime::.ctor():void",
-            "metadataToken": 100663351,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.JSInterop.JSInProcessRuntime",
-            "ownerIdentity": "Microsoft.JSInterop"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.JSInvokableAttribute",
@@ -1939,61 +1927,10 @@
             "isExtensionMethod": false
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.JSRuntime::JsonSerializerOptions:System.Text.Json.JsonSerializerOptions",
-            "targetName": "JsonSerializerOptions",
-            "metadataToken": 385875978,
-            "canonicalSignature": ":System.Text.Json.JsonSerializerOptions",
-            "normalizedSignature": "JsonSerializerOptions|:System.Text.Json.JsonSerializerOptions|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Microsoft.JSInterop.JSRuntime",
-            "ownerIdentity": "Microsoft.JSInterop"
-          },
-          {
-            "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.JSRuntime::DefaultAsyncTimeout:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "targetName": "DefaultAsyncTimeout",
-            "metadataToken": 385875979,
-            "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "normalizedSignature": "DefaultAsyncTimeout|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.JSInterop.JSRuntime",
-            "ownerIdentity": "Microsoft.JSInterop"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.JSRuntime::.ctor():void",
-            "metadataToken": 100663367,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.JSInterop.JSRuntime",
-            "ownerIdentity": "Microsoft.JSInterop"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.DotNetObjectReference",

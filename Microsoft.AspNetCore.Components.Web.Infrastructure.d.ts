@@ -12,7 +12,6 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Cross-namespace type imports for constraints
 import type { JSComponentConfigurationStore } from './Microsoft.AspNetCore.Components.Web/internal/index.js';
 import type { Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
-import type { JsonElement, JsonSerializerOptions } from '@tsonic/dotnet/System.Text.Json.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { JSComponentInterop as JSComponentInterop } from './Microsoft.AspNetCore.Components.Web.Infrastructure/internal/index.js';

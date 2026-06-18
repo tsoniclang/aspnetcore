@@ -10,10 +10,10 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import type { HtmlRootComponent } from "../../Microsoft.AspNetCore.Components.Web.HtmlRendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { ComponentBase, Dispatcher, ErrorBoundaryBase, EventCallback_1, EventCallbackFactory, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { ComponentBase, Dispatcher, ErrorBoundaryBase, EventCallback_1, EventCallbackFactory, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { Task, Task_1, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
-import type { Action, Action_1, Boolean as ClrBoolean, Double, EventArgs, Exception, Func_1, Func_2, IAsyncDisposable, IDisposable, Int32, Int64, IServiceProvider, Object as ClrObject, Single, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Double, EventArgs, Exception, Func_2, IAsyncDisposable, IDisposable, Int32, Int64, IServiceProvider, Object as ClrObject, Single, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface IErrorBoundaryLogger$instance {
@@ -34,8 +34,9 @@ export interface IJSComponentConfiguration$instance {
 
 export type IJSComponentConfiguration = IJSComponentConfiguration$instance;
 
-export interface ClipboardEventArgs$instance extends EventArgs {
+export interface ClipboardEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_ClipboardEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     Type: string;
 }
@@ -82,8 +83,10 @@ export const DataTransferItem: {
 
 export type DataTransferItem = DataTransferItem$instance;
 
-export interface DragEventArgs$instance extends MouseEventArgs {
+export interface DragEventArgs$instance extends MouseEventArgs$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_DragEventArgs: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_MouseEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     DataTransfer: DataTransfer;
 }
@@ -96,7 +99,9 @@ export const DragEventArgs: {
 
 export type DragEventArgs = DragEventArgs$instance;
 
-export interface ErrorBoundary$instance extends ErrorBoundaryBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface ErrorBoundary$instance extends Microsoft_AspNetCore_Components_Internal.ErrorBoundaryBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ErrorBoundaryBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_ErrorBoundary: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -104,8 +109,8 @@ export interface ErrorBoundary$instance extends ErrorBoundaryBase, Microsoft_Asp
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    OnErrorAsync(exception: Exception): Task;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ErrorBoundaryBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    OnErrorAsync: Microsoft_AspNetCore_Components_Internal.ErrorBoundaryBase$instance["OnErrorAsync"] & ((exception: Exception) => Task);
 }
 
 
@@ -123,8 +128,9 @@ export interface __ErrorBoundary$views {
 export type ErrorBoundary = ErrorBoundary$instance & __ErrorBoundary$views;
 
 
-export interface ErrorEventArgs$instance extends EventArgs {
+export interface ErrorEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_ErrorEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     Colno: int;
     get Filename(): string | null;
@@ -144,8 +150,9 @@ export const ErrorEventArgs: {
 
 export type ErrorEventArgs = ErrorEventArgs$instance;
 
-export interface FocusEventArgs$instance extends EventArgs {
+export interface FocusEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_FocusEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     get Type(): string | null;
     set Type(value: string | null);
@@ -159,7 +166,8 @@ export const FocusEventArgs: {
 
 export type FocusEventArgs = FocusEventArgs$instance;
 
-export interface HeadContent$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface HeadContent$instance extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_HeadContent: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -168,7 +176,7 @@ export interface HeadContent$instance extends ComponentBase, Microsoft_AspNetCor
 
     get ChildContent(): RenderFragment | null;
     set ChildContent(value: RenderFragment | null);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
 }
 
 
@@ -186,15 +194,16 @@ export interface __HeadContent$views {
 export type HeadContent = HeadContent$instance & __HeadContent$views;
 
 
-export interface HeadOutlet$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface HeadOutlet$instance extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_HeadOutlet: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    BuildRenderTree(builder: RenderTreeBuilder): void;
-    OnAfterRenderAsync(firstRender: boolean): Task;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
+    OnAfterRenderAsync: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["OnAfterRenderAsync"] & ((firstRender: boolean) => Task);
 }
 
 
@@ -219,16 +228,16 @@ export interface HtmlRenderer$instance {
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly Dispatcher: Dispatcher;
-    BeginRenderingComponent<TComponent extends unknown & IComponent>(): HtmlRootComponent;
-    BeginRenderingComponent<TComponent extends unknown & IComponent>(parameters: ParameterView): HtmlRootComponent;
     BeginRenderingComponent(componentType: Type): HtmlRootComponent;
     BeginRenderingComponent(componentType: Type, parameters: ParameterView): HtmlRootComponent;
+    BeginRenderingComponent<TComponent extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never }>(): HtmlRootComponent;
+    BeginRenderingComponent<TComponent extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never }>(parameters: ParameterView): HtmlRootComponent;
     Dispose(): void;
     DisposeAsync(): ValueTask;
-    RenderComponentAsync<TComponent extends unknown & IComponent>(): Task_1<HtmlRootComponent>;
     RenderComponentAsync(componentType: Type): Task_1<HtmlRootComponent>;
-    RenderComponentAsync<TComponent extends unknown & IComponent>(parameters: ParameterView): Task_1<HtmlRootComponent>;
     RenderComponentAsync(componentType: Type, parameters: ParameterView): Task_1<HtmlRootComponent>;
+    RenderComponentAsync<TComponent extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never }>(): Task_1<HtmlRootComponent>;
+    RenderComponentAsync<TComponent extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never }>(parameters: ParameterView): Task_1<HtmlRootComponent>;
 }
 
 
@@ -239,7 +248,7 @@ export const HtmlRenderer: {
 
 export type HtmlRenderer = HtmlRenderer$instance;
 
-export interface InteractiveAutoRenderMode$instance extends IComponentRenderMode {
+export interface InteractiveAutoRenderMode$instance extends Microsoft_AspNetCore_Components_Internal.IComponentRenderMode$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_InteractiveAutoRenderMode: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponentRenderMode: never;
@@ -256,7 +265,7 @@ export const InteractiveAutoRenderMode: {
 
 export type InteractiveAutoRenderMode = InteractiveAutoRenderMode$instance;
 
-export interface InteractiveServerRenderMode$instance extends IComponentRenderMode {
+export interface InteractiveServerRenderMode$instance extends Microsoft_AspNetCore_Components_Internal.IComponentRenderMode$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_InteractiveServerRenderMode: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponentRenderMode: never;
@@ -273,7 +282,7 @@ export const InteractiveServerRenderMode: {
 
 export type InteractiveServerRenderMode = InteractiveServerRenderMode$instance;
 
-export interface InteractiveWebAssemblyRenderMode$instance extends IComponentRenderMode {
+export interface InteractiveWebAssemblyRenderMode$instance extends Microsoft_AspNetCore_Components_Internal.IComponentRenderMode$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_InteractiveWebAssemblyRenderMode: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponentRenderMode: never;
@@ -303,8 +312,9 @@ export const JSComponentConfigurationStore: {
 
 export type JSComponentConfigurationStore = JSComponentConfigurationStore$instance;
 
-export interface KeyboardEventArgs$instance extends EventArgs {
+export interface KeyboardEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_KeyboardEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     AltKey: boolean;
     Code: string;
@@ -326,8 +336,9 @@ export const KeyboardEventArgs: {
 
 export type KeyboardEventArgs = KeyboardEventArgs$instance;
 
-export interface MouseEventArgs$instance extends EventArgs {
+export interface MouseEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_MouseEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     AltKey: boolean;
     Button: long;
@@ -357,7 +368,8 @@ export const MouseEventArgs: {
 
 export type MouseEventArgs = MouseEventArgs$instance;
 
-export interface PageTitle$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface PageTitle$instance extends Microsoft_AspNetCore_Components_Internal.ComponentBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_PageTitle: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -366,7 +378,7 @@ export interface PageTitle$instance extends ComponentBase, Microsoft_AspNetCore_
 
     get ChildContent(): RenderFragment | null;
     set ChildContent(value: RenderFragment | null);
-    BuildRenderTree(builder: RenderTreeBuilder): void;
+    BuildRenderTree: Microsoft_AspNetCore_Components_Internal.ComponentBase$instance["BuildRenderTree"] & ((builder: RenderTreeBuilder) => void);
 }
 
 
@@ -384,8 +396,10 @@ export interface __PageTitle$views {
 export type PageTitle = PageTitle$instance & __PageTitle$views;
 
 
-export interface PointerEventArgs$instance extends MouseEventArgs {
+export interface PointerEventArgs$instance extends MouseEventArgs$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_MouseEventArgs: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_PointerEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     Height: float;
     IsPrimary: boolean;
@@ -405,8 +419,9 @@ export const PointerEventArgs: {
 
 export type PointerEventArgs = PointerEventArgs$instance;
 
-export interface ProgressEventArgs$instance extends EventArgs {
+export interface ProgressEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_ProgressEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     LengthComputable: boolean;
     Loaded: long;
@@ -422,8 +437,9 @@ export const ProgressEventArgs: {
 
 export type ProgressEventArgs = ProgressEventArgs$instance;
 
-export interface TouchEventArgs$instance extends EventArgs {
+export interface TouchEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_TouchEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     AltKey: boolean;
     ChangedTouches: TouchPoint[];
@@ -464,8 +480,10 @@ export const TouchPoint: {
 
 export type TouchPoint = TouchPoint$instance;
 
-export interface WheelEventArgs$instance extends MouseEventArgs {
+export interface WheelEventArgs$instance extends MouseEventArgs$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_MouseEventArgs: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_WheelEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     DeltaMode: long;
     DeltaX: double;
@@ -494,8 +512,8 @@ export abstract class EventHandlers$instance {
 export type EventHandlers = EventHandlers$instance;
 
 export abstract class JSComponentConfigurationExtensions$instance {
-    static RegisterForJavaScript<TComponent extends unknown & IComponent>(configuration: IJSComponentConfiguration, identifier: string, javaScriptInitializer: string): void;
-    static RegisterForJavaScript<TComponent extends unknown & IComponent>(configuration: IJSComponentConfiguration, identifier: string): void;
+    static RegisterForJavaScript<TComponent extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never }>(configuration: IJSComponentConfiguration, identifier: string, javaScriptInitializer: string): void;
+    static RegisterForJavaScript<TComponent extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never }>(configuration: IJSComponentConfiguration, identifier: string): void;
     static RegisterForJavaScript(configuration: IJSComponentConfiguration, componentType: Type, identifier: string, javaScriptInitializer: string): void;
     static RegisterForJavaScript(configuration: IJSComponentConfiguration, componentType: Type, identifier: string): void;
 }

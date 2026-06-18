@@ -15,7 +15,7 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
-export interface CorsAuthorizationFilter$instance extends Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncAuthorizationFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IOrderedFilter$instance {
+export interface CorsAuthorizationFilter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Cors_CorsAuthorizationFilter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Cors_ICorsAuthorizationFilter: never;

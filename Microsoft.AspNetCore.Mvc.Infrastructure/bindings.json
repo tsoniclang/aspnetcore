@@ -1008,19 +1008,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.ActionDescriptorCollectionProvider::.ctor():void",
-            "metadataToken": 100665754,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.ActionDescriptorCollectionProvider",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.ActionResultObjectValueAttribute",
@@ -1124,17 +1112,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.AmbiguousActionException",
             "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.AmbiguousActionException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100665788,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.AmbiguousActionException",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
           }
         ]
       },
@@ -1169,12 +1146,12 @@
             "targetName": "IsValueSet",
             "metadataToken": 385876673,
             "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "IsValueSet|:System.Boolean|static=false|accessor=getset",
+            "normalizedSignature": "IsValueSet|:System.Boolean|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -1377,42 +1354,11 @@
             "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.ConfigureCompatibilityOptions`1",
             "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.ConfigureCompatibilityOptions`1::Version:Microsoft.AspNetCore.Mvc.CompatibilityVersion",
-            "targetName": "Version",
-            "metadataToken": 385876678,
-            "canonicalSignature": ":Microsoft.AspNetCore.Mvc.CompatibilityVersion",
-            "normalizedSignature": "Version|:Microsoft.AspNetCore.Mvc.CompatibilityVersion|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.ConfigureCompatibilityOptions`1",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
           }
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.ConfigureCompatibilityOptions`1::.ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.Infrastructure.MvcCompatibilityOptions,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-            "metadataToken": 100665809,
-            "canonicalSignature": "(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.Infrastructure.MvcCompatibilityOptions,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
-            "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.Infrastructure.MvcCompatibilityOptions,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.ConfigureCompatibilityOptions`1",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor",
@@ -1818,83 +1764,10 @@
             "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.FileResultExecutorBase",
             "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
             "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.FileResultExecutorBase::CreateLogger(Microsoft.Extensions.Logging.ILoggerFactory):Microsoft.Extensions.Logging.ILogger",
-            "targetName": "CreateLogger",
-            "metadataToken": 100665905,
-            "canonicalSignature": "(Microsoft.Extensions.Logging.ILoggerFactory):Microsoft.Extensions.Logging.ILogger",
-            "normalizedSignature": "CreateLogger|(Microsoft.Extensions.Logging.ILoggerFactory):Microsoft.Extensions.Logging.ILogger|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 1,
-            "parameterCount": 1,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.FileResultExecutorBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.FileResultExecutorBase::WriteFileAsync(Microsoft.AspNetCore.Http.HttpContext,System.IO.Stream,Microsoft.Net.Http.Headers.RangeItemHeaderValue,System.Int64):System.Threading.Tasks.Task",
-            "targetName": "WriteFileAsync",
-            "metadataToken": 100665906,
-            "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.IO.Stream,Microsoft.Net.Http.Headers.RangeItemHeaderValue,System.Int64):System.Threading.Tasks.Task",
-            "normalizedSignature": "WriteFileAsync|(Microsoft.AspNetCore.Http.HttpContext,System.IO.Stream,Microsoft.Net.Http.Headers.RangeItemHeaderValue,System.Int64):System.Threading.Tasks.Task|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 4,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.FileResultExecutorBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core",
-            "isExtensionMethod": false
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.FileResultExecutorBase::Logger:Microsoft.Extensions.Logging.ILogger",
-            "targetName": "Logger",
-            "metadataToken": 385876702,
-            "canonicalSignature": ":Microsoft.Extensions.Logging.ILogger",
-            "normalizedSignature": "Logger|:Microsoft.Extensions.Logging.ILogger|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.FileResultExecutorBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ],
-        "fields": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.FileResultExecutorBase::BufferSizeSystem.Int32",
-            "targetName": "BufferSize",
-            "metadataToken": 67109701,
-            "normalizedSignature": "BufferSize|System.Int32|static=true|const=true",
-            "isStatic": true,
-            "isReadOnly": false,
-            "isLiteral": true,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.FileResultExecutorBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ],
+        "properties": [],
+        "fields": [],
         "events": [],
         "constructors": [
           {
@@ -2407,65 +2280,7 @@
             "sourceInterface": "Microsoft.AspNetCore.Mvc.Infrastructure.IActionResultExecutor`1"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor::Logger:Microsoft.Extensions.Logging.ILogger",
-            "targetName": "Logger",
-            "metadataToken": 385876724,
-            "canonicalSignature": ":Microsoft.Extensions.Logging.ILogger",
-            "normalizedSignature": "Logger|:Microsoft.Extensions.Logging.ILogger|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor::FormatterSelector:Microsoft.AspNetCore.Mvc.Infrastructure.OutputFormatterSelector",
-            "targetName": "FormatterSelector",
-            "metadataToken": 385876725,
-            "canonicalSignature": ":Microsoft.AspNetCore.Mvc.Infrastructure.OutputFormatterSelector",
-            "normalizedSignature": "FormatterSelector|:Microsoft.AspNetCore.Mvc.Infrastructure.OutputFormatterSelector|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor::WriterFactory:System.Func_3[[System.IO.Stream,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Text.Encoding,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.IO.TextWriter,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "targetName": "WriterFactory",
-            "metadataToken": 385876726,
-            "canonicalSignature": ":System.Func_3[[System.IO.Stream,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Text.Encoding,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.IO.TextWriter,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "normalizedSignature": "WriterFactory|:System.Func_3[[System.IO.Stream,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Text.Encoding,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.IO.TextWriter,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
         "constructors": [
@@ -2522,19 +2337,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.OutputFormatterSelector::.ctor():void",
-            "metadataToken": 100665993,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.OutputFormatterSelector",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.PhysicalFileResultExecutor",
@@ -2831,19 +2634,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory::.ctor():void",
-            "metadataToken": 100666007,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor",

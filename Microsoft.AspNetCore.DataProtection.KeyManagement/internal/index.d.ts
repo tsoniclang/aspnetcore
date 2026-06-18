@@ -10,6 +10,8 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import type { AlgorithmConfiguration, IAuthenticatedEncryptorDescriptor } from "../../Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel/internal/index.js";
 import type { IAuthenticatedEncryptor, IAuthenticatedEncryptorFactory } from "../../Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption/internal/index.js";
 import type { IActivator } from "../../Microsoft.AspNetCore.DataProtection.Internal/internal/index.js";
+import * as Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_Internal from "../../Microsoft.AspNetCore.DataProtection.KeyManagement.Internal/internal/index.js";
+import type { IInternalXmlKeyManager } from "../../Microsoft.AspNetCore.DataProtection.KeyManagement.Internal/internal/index.js";
 import type { IXmlRepository } from "../../Microsoft.AspNetCore.DataProtection.Repositories/internal/index.js";
 import type { IXmlEncryptor } from "../../Microsoft.AspNetCore.DataProtection.XmlEncryption/internal/index.js";
 import type { IList_1, IReadOnlyCollection_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -20,8 +22,9 @@ import type { Boolean as ClrBoolean, DateTimeOffset, Func_2, Guid, Object as Clr
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export interface IDeletableKeyManager$instance extends IKeyManager {
+export interface IDeletableKeyManager$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IDeletableKeyManager: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager: never;
 
     readonly CanDeleteKeys: boolean;
     CreateNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
@@ -97,7 +100,7 @@ export const KeyManagementOptions: {
 
 export type KeyManagementOptions = KeyManagementOptions$instance;
 
-export interface XmlKeyManager$instance extends IKeyManager$instance {
+export interface XmlKeyManager$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_KeyManagement_XmlKeyManager: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager: never;

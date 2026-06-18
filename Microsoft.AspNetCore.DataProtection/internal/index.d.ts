@@ -37,7 +37,8 @@ export interface IDataProtectionProvider$instance {
 
 export type IDataProtectionProvider = IDataProtectionProvider$instance;
 
-export interface IDataProtector$instance extends IDataProtectionProvider {
+export interface IDataProtector$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtector: never;
 
     CreateProtector(purpose: string): IDataProtector;
@@ -49,7 +50,9 @@ export interface IDataProtector$instance extends IDataProtectionProvider$instanc
 
 export type IDataProtector = IDataProtector$instance;
 
-export interface IPersistedDataProtector$instance extends IDataProtector, IDataProtectionProvider {
+export interface IPersistedDataProtector$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtector: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector: never;
 
     CreateProtector(purpose: string): IDataProtector;
@@ -62,19 +65,20 @@ export interface IPersistedDataProtector$instance extends IDataProtector$instanc
 
 export type IPersistedDataProtector = IPersistedDataProtector$instance;
 
-export interface ISecret$instance extends IDisposable {
+export interface ISecret$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_ISecret: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
     readonly Length: int;
     WriteSecretIntoBuffer(buffer: ArraySegment_1<System_Internal.Byte>): void;
 }
 
 
-export interface ISecret$instance extends System_Internal.IDisposable {}
-
 export type ISecret = ISecret$instance;
 
-export interface ITimeLimitedDataProtector$instance extends IDataProtector, IDataProtectionProvider {
+export interface ITimeLimitedDataProtector$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtector: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector: never;
 
     CreateProtector(purpose: string): IDataProtector;
@@ -102,7 +106,7 @@ export const DataProtectionOptions: {
 
 export type DataProtectionOptions = DataProtectionOptions$instance;
 
-export interface EphemeralDataProtectionProvider$instance extends IDataProtectionProvider$instance {
+export interface EphemeralDataProtectionProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_EphemeralDataProtectionProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider: never;
@@ -167,7 +171,7 @@ export type DataProtectionAdvancedExtensions = DataProtectionAdvancedExtensions$
 export abstract class DataProtectionBuilderExtensions$instance {
     static AddKeyEscrowSink(builder: IDataProtectionBuilder, sink: IKeyEscrowSink): IDataProtectionBuilder;
     static AddKeyEscrowSink(builder: IDataProtectionBuilder, factory: Func_2<IServiceProvider, IKeyEscrowSink>): IDataProtectionBuilder;
-    static AddKeyEscrowSink<TImplementation extends (object | null) & IKeyEscrowSink>(builder: IDataProtectionBuilder): IDataProtectionBuilder;
+    static AddKeyEscrowSink<TImplementation extends (object | null) & { readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink: never }>(builder: IDataProtectionBuilder): IDataProtectionBuilder;
     static AddKeyManagementOptions(builder: IDataProtectionBuilder, setupAction: Action_1<KeyManagementOptions>): IDataProtectionBuilder;
     static DisableAutomaticKeyGeneration(builder: IDataProtectionBuilder): IDataProtectionBuilder;
     static PersistKeysToFileSystem(builder: IDataProtectionBuilder, directory: DirectoryInfo): IDataProtectionBuilder;

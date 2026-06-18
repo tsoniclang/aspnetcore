@@ -14,7 +14,7 @@ import type { IMemoryCache } from "@tsonic/microsoft-extensions/Microsoft.Extens
 export interface TagHelperMemoryCacheProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_Infrastructure_TagHelperMemoryCacheProvider: never;
 
-    Cache: IMemoryCache;
+    readonly Cache: IMemoryCache;
 }
 
 

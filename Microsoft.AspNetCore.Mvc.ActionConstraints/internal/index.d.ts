@@ -14,8 +14,9 @@ import type { IEnumerable_1, IList_1, IReadOnlyList_1 } from "@tsonic/dotnet/Sys
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Attribute, Boolean as ClrBoolean, Int32, IServiceProvider, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IActionConstraint$instance extends IActionConstraintMetadata {
+export interface IActionConstraint$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintMetadata: never;
 
     readonly Order: int;
     Accept(context: ActionConstraintContext): boolean;
@@ -26,8 +27,9 @@ export interface IActionConstraint$instance extends IActionConstraintMetadata$in
 
 export type IActionConstraint = IActionConstraint$instance;
 
-export interface IActionConstraintFactory$instance extends IActionConstraintMetadata {
+export interface IActionConstraintFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintFactory: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintMetadata: never;
 
     readonly IsReusable: boolean;
     CreateInstance(services: IServiceProvider): IActionConstraint;
@@ -58,6 +60,7 @@ export type IActionConstraintProvider = IActionConstraintProvider$instance;
 
 export interface ActionSelectorCandidate$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionConstraints_ActionSelectorCandidate: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Action: ActionDescriptor;
     readonly Constraints: IReadOnlyList_1<IActionConstraint> | null;
@@ -120,8 +123,9 @@ export const ActionConstraintProviderContext: {
 
 export type ActionConstraintProviderContext = ActionConstraintProviderContext$instance;
 
-export interface ActionMethodSelectorAttribute$instance extends Attribute {
+export interface ActionMethodSelectorAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionConstraints_ActionMethodSelectorAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintMetadata: never;
@@ -132,7 +136,7 @@ export interface ActionMethodSelectorAttribute$instance extends Attribute {
 }
 
 
-export const ActionMethodSelectorAttribute: (abstract new() => ActionMethodSelectorAttribute) & {
+export const ActionMethodSelectorAttribute: {
 };
 
 
@@ -143,7 +147,7 @@ export interface __ActionMethodSelectorAttribute$views {
 export type ActionMethodSelectorAttribute = ActionMethodSelectorAttribute$instance & __ActionMethodSelectorAttribute$views;
 
 
-export interface HttpMethodActionConstraint$instance extends IActionConstraint$instance {
+export interface HttpMethodActionConstraint$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionConstraints_HttpMethodActionConstraint: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint: never;

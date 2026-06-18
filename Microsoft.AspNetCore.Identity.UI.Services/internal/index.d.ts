@@ -20,7 +20,7 @@ export interface IEmailSender$instance {
 
 export type IEmailSender = IEmailSender$instance;
 
-export interface NoOpEmailSender$instance extends IEmailSender$instance {
+export interface NoOpEmailSender$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_UI_Services_NoOpEmailSender: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_UI_Services_IEmailSender: never;

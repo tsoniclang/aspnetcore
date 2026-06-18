@@ -179,19 +179,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem::.ctor():void",
-            "metadataToken": 100663387,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem",
-            "ownerIdentity": "Microsoft.AspNetCore.Razor.Runtime"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute",
@@ -333,26 +321,6 @@
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemLoader",
-            "ownerIdentity": "Microsoft.AspNetCore.Razor.Runtime",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemLoader::LoadAttributes(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-            "targetName": "LoadAttributes",
-            "metadataToken": 100663395,
-            "canonicalSignature": "(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-            "normalizedSignature": "LoadAttributes|(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
             "isOverride": false,
             "isSealed": false,
             "visibility": "Protected",

@@ -189,19 +189,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler::.ctor():void",
-            "metadataToken": 100663956,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Server.Circuits.CircuitHandler",
-            "ownerIdentity": "Microsoft.AspNetCore.Components.Server"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.Circuits.CircuitInboundActivityContext",

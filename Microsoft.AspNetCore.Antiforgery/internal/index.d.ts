@@ -92,8 +92,9 @@ export const AntiforgeryTokenSet: {
 
 export type AntiforgeryTokenSet = AntiforgeryTokenSet$instance;
 
-export interface AntiforgeryValidationException$instance extends Exception {
+export interface AntiforgeryValidationException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_AspNetCore_Antiforgery_AntiforgeryValidationException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -108,8 +109,9 @@ export const AntiforgeryValidationException: {
 
 export type AntiforgeryValidationException = AntiforgeryValidationException$instance;
 
-export interface RequireAntiforgeryTokenAttribute$instance extends Attribute, IAntiforgeryMetadata$instance {
+export interface RequireAntiforgeryTokenAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Antiforgery_RequireAntiforgeryTokenAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Antiforgery_IAntiforgeryMetadata: never;
 

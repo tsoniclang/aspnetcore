@@ -35,7 +35,7 @@ export const IISDefaults: {
 
 export type IISDefaults = IISDefaults$instance;
 
-export interface IISHostingStartup$instance extends Microsoft_AspNetCore_Hosting_Internal.IHostingStartup$instance {
+export interface IISHostingStartup$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_IISIntegration_IISHostingStartup: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IHostingStartup: never;

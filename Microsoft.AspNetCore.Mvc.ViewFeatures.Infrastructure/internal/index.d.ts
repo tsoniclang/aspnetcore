@@ -20,7 +20,7 @@ export interface TempDataSerializer$instance {
 }
 
 
-export const TempDataSerializer: (abstract new() => TempDataSerializer) & {
+export const TempDataSerializer: {
 };
 
 

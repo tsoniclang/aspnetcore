@@ -117,25 +117,6 @@
         "methods": [],
         "properties": [
           {
-            "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase::SharedOptions:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
-            "targetName": "SharedOptions",
-            "metadataToken": 385876004,
-            "canonicalSignature": ":Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
-            "normalizedSignature": "SharedOptions|:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions|static=false|accessor=getset",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase",
-            "ownerIdentity": "Microsoft.AspNetCore.StaticFiles"
-          },
-          {
             "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase::RequestPath:Microsoft.AspNetCore.Http.PathString",
             "targetName": "RequestPath",
             "metadataToken": 385876005,
@@ -195,19 +176,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase::.ctor(Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions):void",
-            "metadataToken": 100663445,
-            "canonicalSignature": "(Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions):void",
-            "normalizedSignature": "constructor|(Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase",
-            "ownerIdentity": "Microsoft.AspNetCore.StaticFiles"
-          }
-        ]
+        "constructors": []
       }
     ]
   }

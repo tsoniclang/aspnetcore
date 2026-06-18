@@ -106,7 +106,7 @@ export const TreeRouteBuilder: {
 
 export type TreeRouteBuilder = TreeRouteBuilder$instance;
 
-export interface TreeRouter$instance extends Microsoft_AspNetCore_Routing_Internal.IRouter$instance {
+export interface TreeRouter$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Tree_TreeRouter: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;

@@ -803,17 +803,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "System.Formats.Cbor.CborContentException",
             "ownerIdentity": "System.Formats.Cbor"
-          },
-          {
-            "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborContentException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663530,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Formats.Cbor.CborContentException",
-            "ownerIdentity": "System.Formats.Cbor"
           }
         ]
       },

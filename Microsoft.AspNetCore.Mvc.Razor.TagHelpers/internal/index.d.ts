@@ -7,9 +7,10 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
-import type { IHtmlContent } from "../../Microsoft.AspNetCore.Html/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_ApplicationParts_Internal from "../../Microsoft.AspNetCore.Mvc.ApplicationParts/internal/index.js";
 import type { ApplicationPart, IApplicationFeatureProvider, IApplicationFeatureProvider_1 } from "../../Microsoft.AspNetCore.Mvc.ApplicationParts/internal/index.js";
+import * as Microsoft_AspNetCore_Mvc_Controllers_Internal from "../../Microsoft.AspNetCore.Mvc.Controllers/internal/index.js";
+import type { ControllerFeature } from "../../Microsoft.AspNetCore.Mvc.Controllers/internal/index.js";
 import type { ViewContext } from "../../Microsoft.AspNetCore.Mvc.Rendering/internal/index.js";
 import type { IUrlHelperFactory } from "../../Microsoft.AspNetCore.Mvc.Routing/internal/index.js";
 import * as Microsoft_AspNetCore_Razor_TagHelpers_Internal from "../../Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js";
@@ -19,7 +20,7 @@ import type { TypeInfo } from "@tsonic/dotnet/System.Reflection/internal/index.j
 import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface ITagHelperComponentManager$instance {
@@ -40,8 +41,10 @@ export interface ITagHelperComponentPropertyActivator$instance {
 
 export type ITagHelperComponentPropertyActivator = ITagHelperComponentPropertyActivator$instance;
 
-export interface BodyTagHelper$instance extends TagHelperComponentTagHelper$instance, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface BodyTagHelper$instance extends TagHelperComponentTagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperComponentTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -61,8 +64,10 @@ export interface __BodyTagHelper$views {
 export type BodyTagHelper = BodyTagHelper$instance & __BodyTagHelper$views;
 
 
-export interface HeadTagHelper$instance extends TagHelperComponentTagHelper$instance, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface HeadTagHelper$instance extends TagHelperComponentTagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperComponentTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
@@ -82,16 +87,17 @@ export interface __HeadTagHelper$views {
 export type HeadTagHelper = HeadTagHelper$instance & __HeadTagHelper$views;
 
 
-export interface TagHelperComponentTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface TagHelperComponentTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperComponentTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     PropertyActivator: ITagHelperComponentPropertyActivator;
     ViewContext: ViewContext;
-    Init(context: TagHelperContext): void;
-    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    Init: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Init"] & ((context: TagHelperContext) => void);
+    ProcessAsync: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["ProcessAsync"] & ((context: TagHelperContext, output: TagHelperOutput) => Task);
 }
 
 
@@ -120,7 +126,7 @@ export const TagHelperFeature: {
 
 export type TagHelperFeature = TagHelperFeature$instance;
 
-export interface TagHelperFeatureProvider$instance extends Microsoft_AspNetCore_Mvc_ApplicationParts_Internal.IApplicationFeatureProvider_1$instance<TagHelperFeature> {
+export interface TagHelperFeatureProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperFeatureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider: never;
@@ -144,15 +150,15 @@ export interface __TagHelperFeatureProvider$views {
 export type TagHelperFeatureProvider = TagHelperFeatureProvider$instance & __TagHelperFeatureProvider$views;
 
 
-export interface UrlResolutionTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+export interface UrlResolutionTagHelper$instance extends Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
-    readonly Order: int;
     ViewContext: ViewContext;
-    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    Process: Microsoft_AspNetCore_Razor_TagHelpers_Internal.TagHelper$instance["Process"] & ((context: TagHelperContext, output: TagHelperOutput) => void);
 }
 
 

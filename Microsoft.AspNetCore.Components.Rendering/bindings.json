@@ -147,25 +147,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
             "ownerIdentity": "Microsoft.AspNetCore.Components"
-          },
-          {
-            "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState::Renderer:Microsoft.AspNetCore.Components.RenderTree.Renderer",
-            "targetName": "Renderer",
-            "metadataToken": 385876305,
-            "canonicalSignature": ":Microsoft.AspNetCore.Components.RenderTree.Renderer",
-            "normalizedSignature": "Renderer|:Microsoft.AspNetCore.Components.RenderTree.Renderer|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
-            "ownerIdentity": "Microsoft.AspNetCore.Components"
           }
         ],
         "fields": [],

@@ -17,12 +17,14 @@ import type { Boolean as ClrBoolean, Byte, Enum, Func_2, IComparable, IConvertib
 import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 import type { IConfigureOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export enum HttpTransportType {
-    None = 0,
-    WebSockets = 1,
-    ServerSentEvents = 2,
-    LongPolling = 4
-}
+export type HttpTransportType = number & { readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_HttpTransportType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const HttpTransportType: {
+    readonly None: HttpTransportType;
+    readonly WebSockets: HttpTransportType;
+    readonly ServerSentEvents: HttpTransportType;
+    readonly LongPolling: HttpTransportType;
+};
 
 
 export interface AvailableTransport$instance {

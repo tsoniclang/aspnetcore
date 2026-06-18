@@ -20,13 +20,15 @@ import type { Boolean as ClrBoolean, Enum, Exception, Func_2, IComparable, IConv
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
-export enum ExceptionHandledType {
-    Unhandled = 0,
-    ExceptionHandlerService = 1,
-    ProblemDetailsService = 2,
-    ExceptionHandlerDelegate = 3,
-    ExceptionHandlingPath = 4
-}
+export type ExceptionHandledType = number & { readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_ExceptionHandledType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ExceptionHandledType: {
+    readonly Unhandled: ExceptionHandledType;
+    readonly ExceptionHandlerService: ExceptionHandledType;
+    readonly ProblemDetailsService: ExceptionHandledType;
+    readonly ExceptionHandlerDelegate: ExceptionHandledType;
+    readonly ExceptionHandlingPath: ExceptionHandledType;
+};
 
 
 export interface ICompilationException$instance {
@@ -68,7 +70,8 @@ export interface IExceptionHandlerFeature$instance {
 
 export type IExceptionHandlerFeature = IExceptionHandlerFeature$instance;
 
-export interface IExceptionHandlerPathFeature$instance extends IExceptionHandlerFeature {
+export interface IExceptionHandlerPathFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature: never;
 
     readonly Path: string;
@@ -234,9 +237,9 @@ export type ExceptionHandlerSuppressDiagnosticsContext = ExceptionHandlerSuppres
 export interface StatusCodeContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_StatusCodeContext: never;
 
-    HttpContext: HttpContext;
-    Next: RequestDelegate;
-    Options: StatusCodePagesOptions;
+    readonly HttpContext: HttpContext;
+    readonly Next: RequestDelegate;
+    readonly Options: StatusCodePagesOptions;
 }
 
 
@@ -247,7 +250,7 @@ export const StatusCodeContext: {
 
 export type StatusCodeContext = StatusCodeContext$instance;
 
-export interface StatusCodePagesFeature$instance extends IStatusCodePagesFeature$instance {
+export interface StatusCodePagesFeature$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_StatusCodePagesFeature: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature: never;
@@ -293,7 +296,7 @@ export interface StatusCodeReExecuteFeature$instance {
     OriginalPathBase: string;
     get OriginalQueryString(): string | null;
     set OriginalQueryString(value: string | null);
-    OriginalStatusCode: int;
+    readonly OriginalStatusCode: int;
     get RouteValues(): RouteValueDictionary | null;
     set RouteValues(value: RouteValueDictionary | null);
 }

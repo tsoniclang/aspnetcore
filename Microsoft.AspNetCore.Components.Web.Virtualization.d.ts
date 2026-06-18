@@ -11,9 +11,9 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 // Cross-namespace type imports for constraints
 import type { RenderTreeBuilder } from './Microsoft.AspNetCore.Components.Rendering/internal/index.js';
-import type { ComponentBase, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection } from './Microsoft.AspNetCore.Components/internal/index.js';
+import type { ComponentBase, EventCallbackWorkItem, IComponent, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle } from './Microsoft.AspNetCore.Components/internal/index.js';
 import type { ICollection, IEnumerable } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Action, AsyncCallback, Boolean as ClrBoolean, Exception, Func, IAsyncDisposable, IAsyncResult, ICloneable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, Single, String as ClrString, ValueType, Void } from '@tsonic/dotnet/System.js';
+import type { AsyncCallback, Boolean as ClrBoolean, IAsyncDisposable, IAsyncResult, ICloneable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, Single, String as ClrString, ValueType, Void } from '@tsonic/dotnet/System.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';

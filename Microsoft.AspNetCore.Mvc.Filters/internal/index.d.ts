@@ -40,8 +40,9 @@ export type ResourceExecutionDelegate = () => Task_1<ResourceExecutedContext>;
 export type ResultExecutionDelegate = () => Task_1<ResultExecutedContext>;
 
 
-export interface IActionFilter$instance extends IFilterMetadata {
+export interface IActionFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IActionFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     OnActionExecuted(context: ActionExecutedContext): void;
     OnActionExecuting(context: ActionExecutingContext): void;
@@ -52,8 +53,10 @@ export interface IActionFilter$instance extends IFilterMetadata$instance {}
 
 export type IActionFilter = IActionFilter$instance;
 
-export interface IAlwaysRunResultFilter$instance extends IResultFilter, IFilterMetadata {
+export interface IAlwaysRunResultFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAlwaysRunResultFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IResultFilter: never;
 
     OnResultExecuted(context: ResultExecutedContext): void;
     OnResultExecuting(context: ResultExecutingContext): void;
@@ -64,8 +67,9 @@ export interface IAlwaysRunResultFilter$instance extends IResultFilter$instance 
 
 export type IAlwaysRunResultFilter = IAlwaysRunResultFilter$instance;
 
-export interface IAsyncActionFilter$instance extends IFilterMetadata {
+export interface IAsyncActionFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncActionFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     OnActionExecutionAsync(context: ActionExecutingContext, next: ActionExecutionDelegate): Task;
 }
@@ -75,8 +79,10 @@ export interface IAsyncActionFilter$instance extends IFilterMetadata$instance {}
 
 export type IAsyncActionFilter = IAsyncActionFilter$instance;
 
-export interface IAsyncAlwaysRunResultFilter$instance extends IAsyncResultFilter, IFilterMetadata {
+export interface IAsyncAlwaysRunResultFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncAlwaysRunResultFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncResultFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     OnResultExecutionAsync(context: ResultExecutingContext, next: ResultExecutionDelegate): Task;
 }
@@ -86,8 +92,9 @@ export interface IAsyncAlwaysRunResultFilter$instance extends IAsyncResultFilter
 
 export type IAsyncAlwaysRunResultFilter = IAsyncAlwaysRunResultFilter$instance;
 
-export interface IAsyncAuthorizationFilter$instance extends IFilterMetadata {
+export interface IAsyncAuthorizationFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncAuthorizationFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     OnAuthorizationAsync(context: AuthorizationFilterContext): Task;
 }
@@ -97,8 +104,9 @@ export interface IAsyncAuthorizationFilter$instance extends IFilterMetadata$inst
 
 export type IAsyncAuthorizationFilter = IAsyncAuthorizationFilter$instance;
 
-export interface IAsyncExceptionFilter$instance extends IFilterMetadata {
+export interface IAsyncExceptionFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncExceptionFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     OnExceptionAsync(context: ExceptionContext): Task;
 }
@@ -108,8 +116,9 @@ export interface IAsyncExceptionFilter$instance extends IFilterMetadata$instance
 
 export type IAsyncExceptionFilter = IAsyncExceptionFilter$instance;
 
-export interface IAsyncPageFilter$instance extends IFilterMetadata {
+export interface IAsyncPageFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncPageFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     OnPageHandlerExecutionAsync(context: PageHandlerExecutingContext, next: PageHandlerExecutionDelegate): Task;
     OnPageHandlerSelectionAsync(context: PageHandlerSelectedContext): Task;
@@ -120,8 +129,9 @@ export interface IAsyncPageFilter$instance extends IFilterMetadata$instance {}
 
 export type IAsyncPageFilter = IAsyncPageFilter$instance;
 
-export interface IAsyncResourceFilter$instance extends IFilterMetadata {
+export interface IAsyncResourceFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncResourceFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     OnResourceExecutionAsync(context: ResourceExecutingContext, next: ResourceExecutionDelegate): Task;
 }
@@ -131,8 +141,9 @@ export interface IAsyncResourceFilter$instance extends IFilterMetadata$instance 
 
 export type IAsyncResourceFilter = IAsyncResourceFilter$instance;
 
-export interface IAsyncResultFilter$instance extends IFilterMetadata {
+export interface IAsyncResultFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncResultFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     OnResultExecutionAsync(context: ResultExecutingContext, next: ResultExecutionDelegate): Task;
 }
@@ -142,8 +153,9 @@ export interface IAsyncResultFilter$instance extends IFilterMetadata$instance {}
 
 export type IAsyncResultFilter = IAsyncResultFilter$instance;
 
-export interface IAuthorizationFilter$instance extends IFilterMetadata {
+export interface IAuthorizationFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAuthorizationFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     OnAuthorization(context: AuthorizationFilterContext): void;
 }
@@ -153,8 +165,9 @@ export interface IAuthorizationFilter$instance extends IFilterMetadata$instance 
 
 export type IAuthorizationFilter = IAuthorizationFilter$instance;
 
-export interface IExceptionFilter$instance extends IFilterMetadata {
+export interface IExceptionFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IExceptionFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     OnException(context: ExceptionContext): void;
 }
@@ -173,8 +186,9 @@ export interface IFilterContainer$instance {
 
 export type IFilterContainer = IFilterContainer$instance;
 
-export interface IFilterFactory$instance extends IFilterMetadata {
+export interface IFilterFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
     readonly IsReusable: boolean;
     CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
@@ -203,7 +217,8 @@ export interface IFilterProvider$instance {
 
 export type IFilterProvider = IFilterProvider$instance;
 
-export interface IOrderedFilter$instance extends IFilterMetadata {
+export interface IOrderedFilter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
 
     readonly Order: int;
@@ -214,7 +229,8 @@ export interface IOrderedFilter$instance extends IFilterMetadata$instance {}
 
 export type IOrderedFilter = IOrderedFilter$instance;
 
-export interface IPageFilter$instance extends IFilterMetadata {
+export interface IPageFilter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IPageFilter: never;
 
     OnPageHandlerExecuted(context: PageHandlerExecutedContext): void;
@@ -227,7 +243,8 @@ export interface IPageFilter$instance extends IFilterMetadata$instance {}
 
 export type IPageFilter = IPageFilter$instance;
 
-export interface IResourceFilter$instance extends IFilterMetadata {
+export interface IResourceFilter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IResourceFilter: never;
 
     OnResourceExecuted(context: ResourceExecutedContext): void;
@@ -239,7 +256,8 @@ export interface IResourceFilter$instance extends IFilterMetadata$instance {}
 
 export type IResourceFilter = IResourceFilter$instance;
 
-export interface IResultFilter$instance extends IFilterMetadata {
+export interface IResultFilter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IResultFilter: never;
 
     OnResultExecuted(context: ResultExecutedContext): void;
@@ -251,8 +269,10 @@ export interface IResultFilter$instance extends IFilterMetadata$instance {}
 
 export type IResultFilter = IResultFilter$instance;
 
-export interface ActionExecutedContext$instance extends FilterContext {
+export interface ActionExecutedContext$instance extends FilterContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ActionExecutedContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
 
     Canceled: boolean;
     readonly Controller: unknown;
@@ -273,8 +293,10 @@ export const ActionExecutedContext: {
 
 export type ActionExecutedContext = ActionExecutedContext$instance;
 
-export interface ActionExecutingContext$instance extends FilterContext {
+export interface ActionExecutingContext$instance extends FilterContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ActionExecutingContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
 
     readonly ActionArguments: IDictionary_2<System_Internal.String, unknown | null>;
     readonly Controller: unknown;
@@ -290,8 +312,9 @@ export const ActionExecutingContext: {
 
 export type ActionExecutingContext = ActionExecutingContext$instance;
 
-export interface ActionFilterAttribute$instance extends Attribute, IActionFilter$instance, IAsyncActionFilter$instance, IAsyncResultFilter$instance, IResultFilter$instance {
+export interface ActionFilterAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ActionFilterAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IActionFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncActionFilter: never;
@@ -310,7 +333,7 @@ export interface ActionFilterAttribute$instance extends Attribute, IActionFilter
 }
 
 
-export const ActionFilterAttribute: (abstract new() => ActionFilterAttribute) & {
+export const ActionFilterAttribute: {
 };
 
 
@@ -325,8 +348,10 @@ export interface __ActionFilterAttribute$views {
 export type ActionFilterAttribute = ActionFilterAttribute$instance & __ActionFilterAttribute$views;
 
 
-export interface AuthorizationFilterContext$instance extends FilterContext {
+export interface AuthorizationFilterContext$instance extends FilterContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_AuthorizationFilterContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
 
     get Result(): IActionResult | null;
     set Result(value: IActionResult | null);
@@ -340,8 +365,10 @@ export const AuthorizationFilterContext: {
 
 export type AuthorizationFilterContext = AuthorizationFilterContext$instance;
 
-export interface ExceptionContext$instance extends FilterContext {
+export interface ExceptionContext$instance extends FilterContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ExceptionContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
 
     Exception: Exception;
     get ExceptionDispatchInfo(): ExceptionDispatchInfo | null;
@@ -359,8 +386,9 @@ export const ExceptionContext: {
 
 export type ExceptionContext = ExceptionContext$instance;
 
-export interface ExceptionFilterAttribute$instance extends Attribute, IAsyncExceptionFilter$instance, IExceptionFilter$instance {
+export interface ExceptionFilterAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ExceptionFilterAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncExceptionFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IExceptionFilter: never;
@@ -373,7 +401,7 @@ export interface ExceptionFilterAttribute$instance extends Attribute, IAsyncExce
 }
 
 
-export const ExceptionFilterAttribute: (abstract new() => ExceptionFilterAttribute) & {
+export const ExceptionFilterAttribute: {
 };
 
 
@@ -386,8 +414,9 @@ export interface __ExceptionFilterAttribute$views {
 export type ExceptionFilterAttribute = ExceptionFilterAttribute$instance & __ExceptionFilterAttribute$views;
 
 
-export interface FilterCollection$instance extends Collection_1<IFilterMetadata> {
+export interface FilterCollection$instance extends System_Collections_ObjectModel_Internal.Collection_1<IFilterMetadata> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterCollection: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_Collection_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -398,14 +427,11 @@ export interface FilterCollection$instance extends Collection_1<IFilterMetadata>
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    Add<TFilterType extends unknown & IFilterMetadata>(): IFilterMetadata;
-    Add(filterType: Type): IFilterMetadata;
-    Add<TFilterType extends unknown & IFilterMetadata>(order: int): IFilterMetadata;
-    Add(filterType: Type, order: int): IFilterMetadata;
-    AddService<TFilterType extends unknown & IFilterMetadata>(): IFilterMetadata;
+    Add: System_Collections_ObjectModel_Internal.Collection_1<IFilterMetadata>["Add"] & ((filterType: Type) => IFilterMetadata) & ((filterType: Type, order: int) => IFilterMetadata) & (<TFilterType extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never }>() => IFilterMetadata) & (<TFilterType extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never }>(order: int) => IFilterMetadata);
     AddService(filterType: Type): IFilterMetadata;
-    AddService<TFilterType extends unknown & IFilterMetadata>(order: int): IFilterMetadata;
     AddService(filterType: Type, order: int): IFilterMetadata;
+    AddService<TFilterType extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never }>(): IFilterMetadata;
+    AddService<TFilterType extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never }>(order: int): IFilterMetadata;
 }
 
 
@@ -416,12 +442,13 @@ export const FilterCollection: {
 
 export type FilterCollection = FilterCollection$instance;
 
-export interface FilterContext$instance extends ActionContext {
+export interface FilterContext$instance extends Microsoft_AspNetCore_Mvc_Internal.ActionContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
 
     readonly Filters: IList_1<IFilterMetadata>;
-    FindEffectivePolicy<TMetadata extends unknown & IFilterMetadata>(): TMetadata;
-    IsEffectivePolicy<TMetadata extends unknown & IFilterMetadata>(policy: TMetadata): boolean;
+    FindEffectivePolicy<TMetadata extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never }>(): TMetadata;
+    IsEffectivePolicy<TMetadata extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never }>(policy: TMetadata): boolean;
 }
 
 
@@ -480,7 +507,9 @@ export const FilterProviderContext: {
 
 export type FilterProviderContext = FilterProviderContext$instance;
 
-export interface PageHandlerExecutedContext$instance extends FilterContext {
+export interface PageHandlerExecutedContext$instance extends FilterContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_PageHandlerExecutedContext: never;
 
     readonly ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
@@ -504,7 +533,9 @@ export const PageHandlerExecutedContext: {
 
 export type PageHandlerExecutedContext = PageHandlerExecutedContext$instance;
 
-export interface PageHandlerExecutingContext$instance extends FilterContext {
+export interface PageHandlerExecutingContext$instance extends FilterContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_PageHandlerExecutingContext: never;
 
     readonly ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
@@ -523,7 +554,9 @@ export const PageHandlerExecutingContext: {
 
 export type PageHandlerExecutingContext = PageHandlerExecutingContext$instance;
 
-export interface PageHandlerSelectedContext$instance extends FilterContext {
+export interface PageHandlerSelectedContext$instance extends FilterContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_PageHandlerSelectedContext: never;
 
     readonly ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
@@ -540,7 +573,9 @@ export const PageHandlerSelectedContext: {
 
 export type PageHandlerSelectedContext = PageHandlerSelectedContext$instance;
 
-export interface ResourceExecutedContext$instance extends FilterContext {
+export interface ResourceExecutedContext$instance extends FilterContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ResourceExecutedContext: never;
 
     Canceled: boolean;
@@ -561,7 +596,9 @@ export const ResourceExecutedContext: {
 
 export type ResourceExecutedContext = ResourceExecutedContext$instance;
 
-export interface ResourceExecutingContext$instance extends FilterContext {
+export interface ResourceExecutingContext$instance extends FilterContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ResourceExecutingContext: never;
 
     get Result(): IActionResult | null;
@@ -577,7 +614,9 @@ export const ResourceExecutingContext: {
 
 export type ResourceExecutingContext = ResourceExecutingContext$instance;
 
-export interface ResultExecutedContext$instance extends FilterContext {
+export interface ResultExecutedContext$instance extends FilterContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ResultExecutedContext: never;
 
     Canceled: boolean;
@@ -598,7 +637,9 @@ export const ResultExecutedContext: {
 
 export type ResultExecutedContext = ResultExecutedContext$instance;
 
-export interface ResultExecutingContext$instance extends FilterContext {
+export interface ResultExecutingContext$instance extends FilterContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterContext: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ResultExecutingContext: never;
 
     Cancel: boolean;
@@ -614,8 +655,9 @@ export const ResultExecutingContext: {
 
 export type ResultExecutingContext = ResultExecutingContext$instance;
 
-export interface ResultFilterAttribute$instance extends Attribute, IAsyncResultFilter$instance, IResultFilter$instance {
+export interface ResultFilterAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ResultFilterAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncResultFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
@@ -629,7 +671,7 @@ export interface ResultFilterAttribute$instance extends Attribute, IAsyncResultF
 }
 
 
-export const ResultFilterAttribute: (abstract new() => ResultFilterAttribute) & {
+export const ResultFilterAttribute: {
 };
 
 

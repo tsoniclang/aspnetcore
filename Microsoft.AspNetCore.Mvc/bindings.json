@@ -1618,19 +1618,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ActionResult::.ctor():void",
-            "metadataToken": 100663678,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ActionResult",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ActionResult`1",
@@ -4821,19 +4809,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.Controller::.ctor():void",
-            "metadataToken": 100663367,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.Controller",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ControllerAttribute",
@@ -8376,19 +8352,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ControllerBase::.ctor():void",
-            "metadataToken": 100663986,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ControllerBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ControllerContext",
@@ -9590,19 +9554,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.FileResult::.ctor(System.String):void",
-            "metadataToken": 100664043,
-            "canonicalSignature": "(System.String):void",
-            "normalizedSignature": "constructor|(System.String):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.FileResult",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.FileStreamResult",
@@ -17369,41 +17321,10 @@
             "sourceInterface": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.RemoteAttribute::RouteName:System.String",
-            "targetName": "RouteName",
-            "metadataToken": 385875993,
-            "canonicalSignature": ":System.String",
-            "normalizedSignature": "RouteName|:System.String|static=false|accessor=getset",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.RemoteAttribute",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
         "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.RemoteAttribute::.ctor():void",
-            "metadataToken": 100663408,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.RemoteAttribute",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
-          },
           {
             "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.RemoteAttribute::.ctor(System.String):void",
             "metadataToken": 100663409,
@@ -17605,25 +17526,6 @@
         ],
         "properties": [
           {
-            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.RemoteAttributeBase::RouteData:Microsoft.AspNetCore.Routing.RouteValueDictionary",
-            "targetName": "RouteData",
-            "metadataToken": 385875994,
-            "canonicalSignature": ":Microsoft.AspNetCore.Routing.RouteValueDictionary",
-            "normalizedSignature": "RouteData|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.RemoteAttributeBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
-          },
-          {
             "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.RemoteAttributeBase::HttpMethod:System.String",
             "targetName": "HttpMethod",
             "metadataToken": 385875995,
@@ -17664,19 +17566,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.RemoteAttributeBase::.ctor():void",
-            "metadataToken": 100663415,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.RemoteAttributeBase",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.RequestFormLimitsAttribute",
@@ -21533,19 +21423,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponent::.ctor():void",
-            "metadataToken": 100663463,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.AspNetCore.Mvc.ViewComponent",
-            "ownerIdentity": "Microsoft.AspNetCore.Mvc.ViewFeatures"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponentAttribute",

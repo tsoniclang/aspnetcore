@@ -21,10 +21,10 @@ import type { ClientValidatorCache } from './Microsoft.AspNetCore.Mvc.ModelBindi
 import type { IModelMetadataProvider, ModelMetadata, ModelStateDictionary } from './Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js';
 import type { CheckBoxHiddenInputRenderMode, FormInputRenderMode, FormMethod, Html5DateRenderingMode, IHtmlHelper, IHtmlHelper_1, MvcForm, SelectListItem, TagBuilder, ViewContext } from './Microsoft.AspNetCore.Mvc.Rendering/internal/index.js';
 import type { IUrlHelperFactory } from './Microsoft.AspNetCore.Mvc.Routing/internal/index.js';
-import type { ICompositeViewEngine, IView, IViewEngine, ViewEngineResult } from './Microsoft.AspNetCore.Mvc.ViewEngines/internal/index.js';
+import type { ICompositeViewEngine, IView, ViewEngineResult } from './Microsoft.AspNetCore.Mvc.ViewEngines/internal/index.js';
 import type { IViewBufferScope } from './Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers/internal/index.js';
 import type { TempDataSerializer } from './Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure/internal/index.js';
-import type { ActionContext, ControllerContext, CookieTempDataProviderOptions, IActionResult, MvcViewOptions, PartialViewResult, ViewComponentResult, ViewResult } from './Microsoft.AspNetCore.Mvc/internal/index.js';
+import type { ActionContext, ContentResult, ControllerContext, CookieTempDataProviderOptions, IActionResult, MvcViewOptions, PartialViewResult, ViewComponentResult, ViewResult } from './Microsoft.AspNetCore.Mvc/internal/index.js';
 import type { ICollection, IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic, IList, IReadOnlyCollection, IReadOnlyDictionary, KeyValuePair } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable, IEnumerator } from '@tsonic/dotnet/System.Collections.js';
 import type { DiagnosticListener } from '@tsonic/dotnet/System.Diagnostics.js';
@@ -35,7 +35,7 @@ import type { PropertyInfo } from '@tsonic/dotnet/System.Reflection.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { HtmlEncoder, UrlEncoder } from '@tsonic/dotnet/System.Text.Encodings.Web.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
-import type { ILogger, ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
+import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 import type { IOptions } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
@@ -94,13 +94,13 @@ export type HtmlHelper<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.HtmlHelper :
-  [T1] extends [unknown] ? Internal.HtmlHelper_1<T1> : never;
+  Internal.HtmlHelper_1<T1>;
 
 export type ViewDataDictionary<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ViewDataDictionary :
-  [T1] extends [unknown] ? Internal.ViewDataDictionary_1<T1> : never;
+  Internal.ViewDataDictionary_1<T1>;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Mvc_ViewFeatures as ExtensionMethods } from './__internal/extensions/index.js';

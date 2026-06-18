@@ -24,8 +24,9 @@ export interface IRateLimiterPolicy_1$instance<TPartitionKey extends unknown> {
 
 export type IRateLimiterPolicy_1<TPartitionKey extends unknown> = IRateLimiterPolicy_1$instance<TPartitionKey>;
 
-export interface DisableRateLimitingAttribute$instance extends Attribute {
+export interface DisableRateLimitingAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_RateLimiting_DisableRateLimitingAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
 }
 
@@ -37,8 +38,9 @@ export const DisableRateLimitingAttribute: {
 
 export type DisableRateLimitingAttribute = DisableRateLimitingAttribute$instance;
 
-export interface EnableRateLimitingAttribute$instance extends Attribute {
+export interface EnableRateLimitingAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_RateLimiting_EnableRateLimitingAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly PolicyName: string | null;
 }
@@ -74,8 +76,8 @@ export interface RateLimiterOptions$instance {
     get OnRejected(): Func_3<OnRejectedContext, CancellationToken, ValueTask> | null;
     set OnRejected(value: Func_3<OnRejectedContext, CancellationToken, ValueTask> | null);
     RejectionStatusCode: int;
+    AddPolicy<TPartitionKey extends unknown, TPolicy extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_RateLimiting_IRateLimiterPolicy_1: never }>(policyName: string): RateLimiterOptions;
     AddPolicy<TPartitionKey extends unknown>(policyName: string, partitioner: Func_2<HttpContext, RateLimitPartition_1<TPartitionKey>>): RateLimiterOptions;
-    AddPolicy<TPartitionKey extends unknown, TPolicy extends unknown & IRateLimiterPolicy_1<TPartitionKey>>(policyName: string): RateLimiterOptions;
     AddPolicy<TPartitionKey extends unknown>(policyName: string, policy: IRateLimiterPolicy_1<TPartitionKey>): RateLimiterOptions;
 }
 

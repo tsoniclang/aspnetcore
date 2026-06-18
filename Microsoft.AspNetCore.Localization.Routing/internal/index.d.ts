@@ -15,14 +15,15 @@ import type { IRequestCultureProvider, ProviderCultureResult, RequestCultureProv
 import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import type { String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface RouteDataRequestCultureProvider$instance extends RequestCultureProvider, Microsoft_AspNetCore_Localization_Internal.IRequestCultureProvider$instance {
+export interface RouteDataRequestCultureProvider$instance extends Microsoft_AspNetCore_Localization_Internal.RequestCultureProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Localization_RequestCultureProvider: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Localization_Routing_RouteDataRequestCultureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
     RouteDataStringKey: string;
     UIRouteDataStringKey: string;
-    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | null>;
+    DetermineProviderCultureResult: Microsoft_AspNetCore_Localization_Internal.RequestCultureProvider$instance["DetermineProviderCultureResult"] & ((httpContext: HttpContext) => Task_1<ProviderCultureResult | null>);
 }
 
 

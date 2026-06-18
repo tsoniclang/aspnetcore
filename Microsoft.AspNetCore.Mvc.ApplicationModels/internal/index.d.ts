@@ -72,8 +72,9 @@ export interface IBindingModel$instance {
 
 export type IBindingModel = IBindingModel$instance;
 
-export interface ICommonModel$instance extends IPropertyModel {
+export interface ICommonModel$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel: never;
 
     readonly Attributes: IReadOnlyList_1<unknown>;
     readonly MemberInfo: MemberInfo;
@@ -104,8 +105,9 @@ export interface IFilterModel$instance {
 
 export type IFilterModel = IFilterModel$instance;
 
-export interface IPageApplicationModelConvention$instance extends IPageConvention {
+export interface IPageApplicationModelConvention$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPageApplicationModelConvention: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPageConvention: never;
 
     Apply(model: PageApplicationModel): void;
 }
@@ -145,7 +147,8 @@ export interface IPageConvention$instance {
 
 export type IPageConvention = IPageConvention$instance;
 
-export interface IPageHandlerModelConvention$instance extends IPageConvention {
+export interface IPageHandlerModelConvention$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPageConvention: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPageHandlerModelConvention: never;
 
     Apply(model: PageHandlerModel): void;
@@ -156,7 +159,8 @@ export interface IPageHandlerModelConvention$instance extends IPageConvention$in
 
 export type IPageHandlerModelConvention = IPageHandlerModelConvention$instance;
 
-export interface IPageRouteModelConvention$instance extends IPageConvention {
+export interface IPageRouteModelConvention$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPageConvention: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPageRouteModelConvention: never;
 
     Apply(model: PageRouteModel): void;
@@ -204,7 +208,7 @@ export interface IPropertyModel$instance {
 
 export type IPropertyModel = IPropertyModel$instance;
 
-export interface ActionModel$instance extends IApiExplorerModel$instance, ICommonModel$instance, IFilterModel$instance {
+export interface ActionModel$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ActionModel: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel: never;
@@ -244,7 +248,7 @@ export interface __ActionModel$views {
 export type ActionModel = ActionModel$instance & __ActionModel$views;
 
 
-export interface ApiConventionApplicationModelConvention$instance extends IActionModelConvention$instance {
+export interface ApiConventionApplicationModelConvention$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ApiConventionApplicationModelConvention: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention: never;
@@ -285,7 +289,7 @@ export const ApiExplorerModel: {
 
 export type ApiExplorerModel = ApiExplorerModel$instance;
 
-export interface ApiVisibilityConvention$instance extends IActionModelConvention$instance {
+export interface ApiVisibilityConvention$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ApiVisibilityConvention: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention: never;
@@ -307,7 +311,7 @@ export interface __ApiVisibilityConvention$views {
 export type ApiVisibilityConvention = ApiVisibilityConvention$instance & __ApiVisibilityConvention$views;
 
 
-export interface ApplicationModel$instance extends IApiExplorerModel$instance, IFilterModel$instance, IPropertyModel$instance {
+export interface ApplicationModel$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ApplicationModel: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel: never;
@@ -380,7 +384,7 @@ export const AttributeRouteModel: {
 
 export type AttributeRouteModel = AttributeRouteModel$instance;
 
-export interface ClientErrorResultFilterConvention$instance extends IActionModelConvention$instance {
+export interface ClientErrorResultFilterConvention$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ClientErrorResultFilterConvention: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention: never;
@@ -402,7 +406,7 @@ export interface __ClientErrorResultFilterConvention$views {
 export type ClientErrorResultFilterConvention = ClientErrorResultFilterConvention$instance & __ClientErrorResultFilterConvention$views;
 
 
-export interface ConsumesConstraintForFormFileParameterConvention$instance extends IActionModelConvention$instance {
+export interface ConsumesConstraintForFormFileParameterConvention$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ConsumesConstraintForFormFileParameterConvention: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention: never;
@@ -424,7 +428,7 @@ export interface __ConsumesConstraintForFormFileParameterConvention$views {
 export type ConsumesConstraintForFormFileParameterConvention = ConsumesConstraintForFormFileParameterConvention$instance & __ConsumesConstraintForFormFileParameterConvention$views;
 
 
-export interface ControllerModel$instance extends IApiExplorerModel$instance, ICommonModel$instance, IFilterModel$instance {
+export interface ControllerModel$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ControllerModel: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel: never;
@@ -464,7 +468,7 @@ export interface __ControllerModel$views {
 export type ControllerModel = ControllerModel$instance & __ControllerModel$views;
 
 
-export interface InferParameterBindingInfoConvention$instance extends IActionModelConvention$instance {
+export interface InferParameterBindingInfoConvention$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_InferParameterBindingInfoConvention: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention: never;
@@ -487,7 +491,7 @@ export interface __InferParameterBindingInfoConvention$views {
 export type InferParameterBindingInfoConvention = InferParameterBindingInfoConvention$instance & __InferParameterBindingInfoConvention$views;
 
 
-export interface InvalidModelStateFilterConvention$instance extends IActionModelConvention$instance {
+export interface InvalidModelStateFilterConvention$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_InvalidModelStateFilterConvention: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention: never;
@@ -556,8 +560,9 @@ export const PageApplicationModelProviderContext: {
 
 export type PageApplicationModelProviderContext = PageApplicationModelProviderContext$instance;
 
-export interface PageConventionCollection$instance extends Collection_1<IPageConvention> {
+export interface PageConventionCollection$instance extends System_Collections_ObjectModel_Internal.Collection_1<IPageConvention> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_PageConventionCollection: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_Collection_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -576,8 +581,8 @@ export interface PageConventionCollection$instance extends Collection_1<IPageCon
     AddFolderRouteModelConvention(folderPath: string, action: Action_1<PageRouteModel>): IPageRouteModelConvention;
     AddPageApplicationModelConvention(pageName: string, action: Action_1<PageApplicationModel>): IPageApplicationModelConvention;
     AddPageRouteModelConvention(pageName: string, action: Action_1<PageRouteModel>): IPageRouteModelConvention;
-    RemoveType<TPageConvention extends unknown & IPageConvention>(): void;
     RemoveType(pageConventionType: Type): void;
+    RemoveType<TPageConvention extends unknown & { readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPageConvention: never }>(): void;
 }
 
 
@@ -621,8 +626,9 @@ export interface __PageHandlerModel$views {
 export type PageHandlerModel = PageHandlerModel$instance & __PageHandlerModel$views;
 
 
-export interface PageParameterModel$instance extends ParameterModelBase$instance, IBindingModel$instance {
+export interface PageParameterModel$instance extends ParameterModelBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_PageParameterModel: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ParameterModelBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel: never;
@@ -649,8 +655,9 @@ export interface __PageParameterModel$views {
 export type PageParameterModel = PageParameterModel$instance & __PageParameterModel$views;
 
 
-export interface PagePropertyModel$instance extends ParameterModelBase$instance, IBindingModel$instance {
+export interface PagePropertyModel$instance extends ParameterModelBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_PagePropertyModel: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ParameterModelBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel: never;
@@ -729,7 +736,7 @@ export const PageRouteModelProviderContext: {
 
 export type PageRouteModelProviderContext = PageRouteModelProviderContext$instance;
 
-export interface PageRouteTransformerConvention$instance extends IPageRouteModelConvention$instance {
+export interface PageRouteTransformerConvention$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_PageRouteTransformerConvention: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPageConvention: never;
@@ -752,19 +759,18 @@ export interface __PageRouteTransformerConvention$views {
 export type PageRouteTransformerConvention = PageRouteTransformerConvention$instance & __PageRouteTransformerConvention$views;
 
 
-export interface ParameterModel$instance extends ParameterModelBase$instance, IBindingModel$instance {
+export interface ParameterModel$instance extends ParameterModelBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ParameterModel: never;
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ParameterModelBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel: never;
 
     Action: ActionModel;
-    readonly Attributes: IReadOnlyList_1<unknown>;
     readonly DisplayName: string;
     readonly ParameterInfo: ParameterInfo;
     ParameterName: string;
-    readonly Properties: IDictionary_2<unknown, unknown | null>;
 }
 
 
@@ -783,7 +789,7 @@ export interface __ParameterModel$views {
 export type ParameterModel = ParameterModel$instance & __ParameterModel$views;
 
 
-export interface ParameterModelBase$instance extends IBindingModel$instance {
+export interface ParameterModelBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ParameterModelBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel: never;
@@ -791,13 +797,13 @@ export interface ParameterModelBase$instance extends IBindingModel$instance {
     readonly Attributes: IReadOnlyList_1<unknown>;
     get BindingInfo(): BindingInfo | null;
     set BindingInfo(value: BindingInfo | null);
-    Name: string;
+    readonly Name: string;
     readonly ParameterType: Type;
     readonly Properties: IDictionary_2<unknown, unknown | null>;
 }
 
 
-export const ParameterModelBase: (abstract new(parameterType: Type, attributes: IReadOnlyList_1<unknown>) => ParameterModelBase) & (abstract new(other: ParameterModelBase) => ParameterModelBase) & {
+export const ParameterModelBase: {
 };
 
 
@@ -808,16 +814,15 @@ export interface __ParameterModelBase$views {
 export type ParameterModelBase = ParameterModelBase$instance & __ParameterModelBase$views;
 
 
-export interface PropertyModel$instance extends ParameterModelBase$instance, IBindingModel$instance {
+export interface PropertyModel$instance extends ParameterModelBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ParameterModelBase: never;
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_PropertyModel: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel: never;
 
-    readonly Attributes: IReadOnlyList_1<unknown>;
     Controller: ControllerModel;
-    readonly Properties: IDictionary_2<unknown, unknown | null>;
     readonly PropertyInfo: PropertyInfo;
     PropertyName: string;
 }
@@ -838,7 +843,7 @@ export interface __PropertyModel$views {
 export type PropertyModel = PropertyModel$instance & __PropertyModel$views;
 
 
-export interface RouteTokenTransformerConvention$instance extends IActionModelConvention$instance {
+export interface RouteTokenTransformerConvention$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_RouteTokenTransformerConvention: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention: never;
